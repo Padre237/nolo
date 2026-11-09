@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-2201, FR-2202, FR-2203, FR-2204, NFR-2201 |
-| État d'implémentation | Non implémenté |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -25,7 +25,7 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-016-01-01, TEST-016-01-02, TEST-016-01-03 réussis
 - Tests : TEST-016-01-01, TEST-016-01-02, TEST-016-01-03
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `app/tests/conseiller.test.mjs`, `tools/exporter_classements.py` (oracle)
 
 ### TASK-016-01-02 — BM25 et glossaire en JavaScript
 - Exigences : FR-2201, FR-2202, FR-2203, FR-2204
@@ -36,5 +36,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : SF-011-08
 - Condition de fin : TEST-016-01-01, TEST-016-01-02, TEST-016-01-03 réussis
 - Tests : TEST-016-01-01, TEST-016-01-02, TEST-016-01-03
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `app/js/agents/conseiller/bm25.js`, `app/js/agents/conseiller/glossaire.js` (glossaire 1.2.0, champ `courant_fr`, DES-016-01-03)
 

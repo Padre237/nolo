@@ -4,6 +4,8 @@ import { SIGNES, libelle, questionsDanger, profil } from '../../domain/engine.js
 import { urgencesProches } from '../../domain/facilities.js';
 import { ligneStructure } from '../../ui/components.js';
 import { icone } from '../../ui/icons.js';
+import { panneauDecision } from '../../ui/decision.js';
+import { agents } from '../../agents/nolo.js';
 
 export default {
   id: 'urgence',
@@ -35,6 +37,7 @@ export default {
         <div class="lignes">${urgencesProches(p.enfant).map((e) => ligneStructure(e, t))}</div>
         <p class="note">${t('commun.position')} ${t('commun.numeroFictif')}.</p>
         <p class="note">${t('urgence.masquees')}</p>
+        ${panneauDecision(c.trace, t, agents()?.base)}
         <a class="bouton bouton--discret" href="#/verifier">${icone('retour', { taille: 20 })}${t('urgence.retour')}</a>
       </section>
     </div>`;

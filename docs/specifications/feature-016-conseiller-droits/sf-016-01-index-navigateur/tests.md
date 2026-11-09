@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : comparaison JS/Python
 - Alors : mêmes top 5
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/conseiller.test.mjs` › « TEST-016-01-01 : mêmes 5 fragments, dans le même ordre, que kb/bm25.py (40 questions) » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-016-01-02 — Textes camerounais d'abord
 - Type : Unitaire
@@ -34,8 +34,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `chercher`
 - Alors : `CMR-` en tête
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/conseiller.test.mjs` › « TEST-016-01-02 : textes camerounais d’abord » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-016-01-03 — Question en anglais
 - Type : Unitaire
@@ -45,8 +45,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `enrichir` puis `chercher`
 - Alors : `CMR-LOI-90-036` au top 5
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/conseiller.test.mjs` › « TEST-016-01-03 : question en anglais enrichie par le glossaire » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-016-01-04 — Recherche rapide
 - Type : Performance
@@ -56,6 +56,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : 40 questions
 - Alors : ≤ 50 ms chacune
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/conseiller.test.mjs` › « TEST-016-01-04 : recherche rapide (≤ 50 ms par question) » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 

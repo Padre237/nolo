@@ -5,8 +5,8 @@
 | Fonctionnalité | F-007 Gouvernance, conformité, audit et agents |
 | Sous-fonctionnalité | SF-007-19 |
 | Version | 2.0.0 |
-| Statut | UNDER_REVIEW |
-| État d'implémentation | Non implémenté |
+| Statut | IN_TESTING |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 | Origine | AG-07 ; FR-711 ; exigences du hackathon (coordination multi-agents) |
 | Bloquant | Aucun |
 | Dépend de | SF-007-15, SF-007-17, SF-002-04 |

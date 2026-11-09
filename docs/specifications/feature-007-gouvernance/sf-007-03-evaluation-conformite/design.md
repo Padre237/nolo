@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-702, FR-703, FR-730, FR-731, FR-732 |
 | ADR | — |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) ; constitution 2.0.0 (D-033) toujours à ratifier |
 
 ## 1. Vue d'ensemble
 —

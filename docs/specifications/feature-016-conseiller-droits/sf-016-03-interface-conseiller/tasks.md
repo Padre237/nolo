@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-2211, FR-2212, FR-2213 |
-| État d'implémentation | Non implémenté |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -25,5 +25,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : SF-016-02
 - Condition de fin : TEST-016-03-01, TEST-016-03-02, TEST-016-03-03 réussis
 - Tests : TEST-016-03-01, TEST-016-03-02, TEST-016-03-03
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `app/js/screens/patient/droits.js`, route `#/droits`, liens depuis l'accueil, le tableau de bord et la console ; catalogues `droits.*`
 

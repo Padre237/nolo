@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-1521, FR-1522, FR-1523, FR-1524, FR-1525, FR-1526, FR-1527, FR-1528 |
 | ADR | — |
-| État d'implémentation | Partiellement implémenté — rétro-spécifié le 2026-11-09 ; écarts au §9 de design.md |
+| État d'implémentation | Implémenté (2026-11-09, D-038) ; table de démonstration en attendant DDXPlus (SF-001-19) |
 
 ## 1. Vue d'ensemble
 —
@@ -45,6 +45,4 @@ Aucun contrat propre.
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- FR-1521 : le module est toujours actif (aucune lecture du mode ni de `diagnostic_poc.actif`).
-- FR-1526, FR-1527 : aucune décision de Conformité ni journal dans Nolo (AG-01, SF-007-17).
-- FR-1528 : la mention « table de démonstration » figure dans le code, pas à l'écran.
+- Aucun écart connu (écarts résolus le 2026-11-09 : garde du module, décision de Conformité et journal minimal, mention à l'écran).

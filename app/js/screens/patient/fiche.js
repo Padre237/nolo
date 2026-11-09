@@ -6,7 +6,7 @@ import { logo, icone } from '../../ui/icons.js';
 import { nomPiste } from './pistes.js';
 import { encadre } from '../../etat.js';
 
-const RETOUR = { pistes: '#/pistes', art48: '#/confidentiel', hors_champ: '#/hors-champ' };
+const RETOUR = { pistes: '#/pistes', art48: '#/confidentiel', hors_champ: '#/hors-champ', orientation: '#/ou-aller' };
 
 export default {
   id: 'fiche',

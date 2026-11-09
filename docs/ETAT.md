@@ -1,13 +1,14 @@
 # État du projet Nolo
 
-Mis à jour le 2026-11-09 (session de la vague A, D-037). **À lire juste après `CLAUDE.md`, à chaque session.** À mettre à jour à la fin de chaque tâche (CLAUDE.md §11, étape 6).
+Mis à jour le 2026-11-09 (session des vagues B et C, D-038). **À lire juste après `CLAUDE.md`, à chaque session.** À mettre à jour à la fin de chaque tâche (CLAUDE.md §11, étape 6).
 
 ## 1. En bref
 
 - Le code existant (application Nolo, gouvernance Python, service des établissements, moteur v1, base v9) est réuni dans ce dépôt et **rétro-spécifié** : 146 dossiers de sous-fonctionnalités.
-- **Vague A approuvée (D-037)** et livrée le 2026-11-09 : contrôle avant publication (`tools/controle_publication.py`, TASK-017-02-02) et rapport technique (`docs/submission/rapport-technique-en.md`, PDF de 5 pages hors du dépôt, TASK-017-01-01). SF-017-02 est `IN_TESTING`, SF-017-01 `IN_PROGRESS` (TASK-017-01-02 attend la décision sur Q-017-01-01 et Q-017-01-02). Les 144 autres dossiers restent `UNDER_REVIEW`.
-- Toutes les suites passent (preuve `docs/quality/preuve-2026-11-09-vague-a.txt`, §4).
-- **Rien d'autre ne s'implémente** tant que le propriétaire n'a pas approuvé la vague suivante (§2).
+- **Vague A (D-037)** livrée : contrôle avant publication, rapport technique (Q-017-01-01 et Q-017-01-02 tranchées par D-038).
+- **Vagues B et C approuvées (D-038)**. Livré le 2026-11-09 : **les agents dans Nolo** — politique 1.4.0 convertie (`app/data/politique.json`), Conformité et orchestrateur en JavaScript (parité exacte avec Python sur 3 908 décisions), journal chaîné (mêmes empreintes que Python), panneau « Comment Nolo a décidé » sur six écrans, cellule de coordination, rejeu avec ou sans gouvernance (6 violations contre 0), base embarquée et conseiller « Mes droits santé » (`#/droits`) ; côté vague C : actions du module POC (SF-007-03), garde et journal du module des pistes (SF-001-15), politique de la console en source unique (SF-015-04). 13 dossiers passés à `IN_TESTING`.
+- Toutes les suites passent (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`, §4).
+- Reste : le gros de la vague C (écarts de l'existant), la vague D (DDXPlus, S4 Python, carte publique, vidéo).
 - Soumission du hackathon : **10 novembre 2026**. À compléter par l'équipe dans le rapport : coordonnées de l'équipe et lien de la vidéo.
 
 ## 2. Décision attendue du propriétaire (porte G5)
@@ -36,32 +37,30 @@ Carte complète : `CLAUDE.md` §4. Sources de vérité : `CLAUDE.md` §5. En deu
 
 | Mesure | Valeur | Preuve |
 |---|---|---|
-| pytest (gouvernance, scénarios, service D-029 / D-032, contrôles des livrables) | 116 réussis (84 + 32 de la vague A) | `docs/quality/preuve-2026-11-09-vague-a.txt` |
-| `node --test tests/js/*.test.mjs` (moteur v1, catalogues D-029) | 15 réussis | `docs/quality/preuve-2026-11-09-vague-a.txt` |
-| `cd app && node --test tests/*.test.mjs` (Nolo) | 33 réussis | idem |
-| Scénarios S1 à S3 avec gouvernance ; S2, S3 sans gouvernance ; deux variantes « et si » | conformes (S1 sans gouvernance : code 1 attendu, Q-007-14-01) | idem |
-| Règles de triage v2 | 390 / 390 témoins ; 0 violation de monotonie sur 5 000 | idem |
-| Évaluation de la recherche (BM25, version publique) | document attendu 33/40 ; référence exacte 29/40 | idem |
-| Base publique | 2 034 fragments, 21 documents (11 camerounais, 10 internationaux) ; 22 fiches dans `kb/sources.json` dont 1 de métadonnées seulement ; 48 lignes de correspondance ; reconstruction identique ; 0 PDF | `docs/quality/preuve-2026-11-09-vague-a.txt` |
-| Inspection visuelle (39 états × 4 largeurs) | 156 mesures, 0 défaut, 0 erreur de console | `docs/quality/preuve-2026-11-09-inspection-visuelle.txt` |
-| Contrôle avant publication (`tools/controle_publication.py`) | 1 488 fichiers ; 0 PDF, 0 secret, 0 fragment, référence ni page de INT-OMS-AFRO-SBC-2014 | `docs/quality/preuve-2026-11-09-vague-a.txt` |
-| Rapport technique (`tools/verifier_rapport.py`) | 6 sections dans l'ordre ; PDF de 5 pages (`pdfinfo`) ; 0 terme périmé ; 36 états concordants | `docs/quality/preuve-2026-11-09-vague-a.txt` |
-| Spécifications | 146 dossiers, 483 exigences, 279 tâches, 415 tests ; `trace.py` : 0 erreur | `docs/quality/preuve-2026-11-09-vague-a.txt` |
-| Statuts de test (415) | 111 « Exécuté » avec la preuve des suites (croisés : 0 problème), 4 avec la preuve de la vague A (croisés : 0 problème), 5 avec l'inspection, 7 autres (revues, croisement, 1 du 2026-11-03) ; 76 « état capturé » ; 212 non exécutés | `docs/quality/preuve-2026-11-09-croisement.txt`, `python3 tools/croiser_preuves.py docs/quality/preuve-2026-11-09-vague-a.txt` |
-| Tâches restantes | 113 (vague A : 1, TASK-017-01-02 en attente de décision ; B : 18 ; C : 79 ; D : 15) ; 39 écarts | `docs/specifications/INDEX-TACHES.md`, `ECARTS.md` |
+| pytest (gouvernance, scénarios, service D-029 / D-032, livrables, actions du POC) | 118 réussis | `docs/quality/preuve-2026-11-09-vague-b.txt` |
+| `node --test tests/js/*.test.mjs` (moteur v1, catalogues D-029) | 15 réussis | idem |
+| `cd app && node --test tests/*.test.mjs` (Nolo, agents compris) | 77 réussis | idem |
+| Parité Conformité JavaScript ↔ Python | 3 908 cas (S1 à S3 × 3 politiques, grille de 26 actions), 0 écart | idem |
+| Journal chaîné : empreintes JavaScript ↔ Python | identiques sur les 3 journaux de scénarios | idem |
+| Rejeu avec ou sans gouvernance (S1 à S4, dans Nolo) | 0 violation avec, 6 sans | idem |
+| Recherche du conseiller : parité BM25 JavaScript ↔ `kb/bm25.py` | 40 questions, mêmes 5 fragments dans le même ordre | idem |
+| Évaluation du conseiller (Q23 à Q40, base embarquée de 816 fragments) | document 18/18 ; référence exacte 15/18 (12/18 sans les expressions `courant_fr`, ajoutées en voyant Q23, Q26, Q30) ; anglais 5/5 | `docs/quality/eval-conseiller-2026-11-09.txt` |
+| Règles de triage v2 | 390 / 390 témoins ; 0 violation de monotonie sur 5 000 | `docs/quality/preuve-2026-11-09-vague-a.txt` |
+| Évaluation de la recherche (BM25, `kb/`, version publique) | document attendu 33/40 ; référence exacte 29/40 | idem |
+| Base publique | 2 034 fragments, 21 documents ; base embarquée : 816 fragments (tous les `CMR-` et 50 `INT-` cités), 1,04 Mo | `preuve-2026-11-09-vague-a.txt`, `preuve-2026-11-09-vague-b.txt` |
+| Inspection visuelle (46 états × 4 largeurs) | 184 mesures, 0 défaut, 0 erreur de console | `docs/quality/preuve-2026-11-09-vague-b.txt` |
+| Contrôle avant publication | 0 PDF, 0 secret, 0 fragment réservé | à relancer avant chaque envoi |
+| Spécifications | 146 dossiers, 483 exigences, 279 tâches, 415 tests ; `trace.py` : 0 erreur | `python3 tools/trace.py` |
+| Tâches restantes | 89 ; 33 écarts | `docs/specifications/INDEX-TACHES.md`, `ECARTS.md` |
 
 ## 5. Prochaine tâche, par vague
 
-Une tâche ne démarre qu'après approbation de son dossier (§2). Ordre conseillé :
-
-| Vague | Prochaine tâche | Dossier | Vérification | Dépend de |
-|---|---|---|---|---|
-| **Prochaine** — B, agents dans Nolo (à approuver) | **TASK-011-08-01** Base embarquée (export de `kb/` vers `app/data/base.json`) | `feature-011-base-connaissances/sf-011-08-base-embarquee/` | `cd app && node --test tests/*.test.mjs` ; `python3 tools/controle_publication.py` (aucun fragment réservé exporté) | approbation de la vague B |
-| A — reste | **TASK-017-01-02** Appliquer les décisions Q-017-01-01 (chiffre 2 055) et Q-017-01-02 (place du PDF) | `feature-017-livrables/sf-017-01-rapport/` | `python3 tools/verifier_rapport.py` | décision du propriétaire |
-| A — reste | TEST-017-02-01 : suivre le README sur une machine propre | `feature-017-livrables/sf-017-02-depot/` | revue | poste propre |
-| B | puis SF-007-17 (gouvernance dans le navigateur, parité avec Python) → SF-007-21 (journal chaîné) → SF-007-18 (« Comment Nolo a décidé ») → SF-007-19 (cellule de coordination) → SF-007-20 (rejouer sans gouvernance) → SF-016-01 à SF-016-04 (conseiller) | `feature-007-gouvernance/`, `feature-016-conseiller-droits/` | tests de parité `app/tests/*parite*` | SF-011-08 |
-| C — écarts de l'existant | Au choix dans `ECARTS.md` ; prioritaires pour la démo : SF-007-17 (politique 1.3.2 de Nolo ≠ `policy.yaml` 1.3.0, à régler par la conversion), SF-001-15 (POC toujours actif), SF-001-12 (numéros d'urgence écrits en dur), SF-003-02 (rayon : 1 résultat au lieu de 3), SF-005-02 (appel au don) | dossiers cités | tests des dossiers | — |
-| D — suite | DDXPlus (SF-001-19), scénario S4 (SF-012-05), carte publique (SF-002-08), vidéo (SF-017-03)… | voir `INDEX-TACHES.md` | — | B pour S4 |
+| Vague | Prochaine tâche | Vérification |
+|---|---|---|
+| C — écarts de l'existant (approuvée, D-038) | Au choix dans `INDEX-TACHES.md` ; prioritaires pour la démo : SF-001-12 (numéros lus dans la politique), SF-003-02 (rayon : 3 résultats), SF-005-02 (appel au don), SF-006-01 (quatre choix), SF-008-06 (droits sur les écrans de résultat, attend D-014) | tests des dossiers ; `cd app && node --test tests/*.test.mjs` |
+| C — tâches de l'équipe | validation clinique (TASK-001-05-01, TASK-001-06-01), avis du juriste (TASK-001-06-02), ChromaDB (TASK-011-03-02) | hors de l'environnement de Claude |
+| D — à approuver | DDXPlus (SF-001-19 ; les deux JSON manquants sont arrivés dans `../ddxplus-english/`), scénario S4 Python (SF-012-05), carte publique (SF-002-08), vidéo (SF-017-03) | — |
+| Décisions | Q-016-02-01 (seuil de pertinence du conseiller), constitution 2.0.0 (D-033), Q-007-14-01, Q-013-10-01, Q-017-02-01 | `docs/product/decisions.md` |
 
 ## 6. Points de vigilance (à ne pas oublier)
 
@@ -84,4 +83,5 @@ Une tâche ne démarre qu'après approbation de son dossier (§2). Ordre conseil
 | 2026-11-07 | Consentement (D-028), inscription et fiches (D-029), tendances (D-032), base v9 | `docs/quality/2026-11-07-*` |
 | 2026-11-08 → 11-09 | Application Nolo (D-034), hôpital, centres spécialisés et console du ministère (D-035) | inspection visuelle |
 | 2026-11-09 | Assemblage du dépôt (MT-002) ; rédaction SDD complète, catalogue v2, rétro-spécification, `CLAUDE.md`, `ETAT.md`, commandes `.claude/commands/` (D-036) ; suites relancées ; 76 statuts d'interface corrigés en « état capturé » | `preuve-2026-11-09-suites.txt`, `-inspection-visuelle.txt`, `-croisement.txt` |
+| 2026-11-09 | Envoi du dépôt sur GitHub (jeton fourni par le propriétaire). Vagues B et C approuvées (D-038) : politique 1.4.0 et `tools/politique_json.py` ; base embarquée (`tools/exporter_base.py`) ; Conformité, orchestrateur, journal, parcours, cellule, A/B et conseiller en JavaScript ; oracles `--exporter-attendus` et `tools/exporter_classements.py` ; panneau « Comment Nolo a décidé » ; vues journal, cellule et A/B de la console ; `#/droits` ; `tools/evaluer_conseiller.mjs` ; `tools/inspecter.py` : 46 états, variable `NOLO_CHROME` ; 44 tests ajoutés (rouge puis vert, sauf 5 écrits avec le code, signalés dans la preuve) | `preuve-2026-11-09-vague-b.txt`, `eval-conseiller-2026-11-09.txt` |
 | 2026-11-09 | Vague A approuvée (D-037) : `tools/controle_publication.py` (TASK-017-02-02) ; README : quatre verdicts (FR-2306) ; rapport technique anglais rédigé depuis le dépôt, PDF de 5 pages, `tools/rapport_pdf.py`, `tools/verifier_rapport.py` (TASK-017-01-01) ; 32 tests ajoutés (rouge puis vert) ; Q-017-01-01, Q-017-01-02, Q-017-02-01 ouvertes ; `.venv` par uv ; dépôt git initialisé | `preuve-2026-11-09-vague-a.txt` |

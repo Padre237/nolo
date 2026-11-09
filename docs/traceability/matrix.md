@@ -2,16 +2,18 @@
 
 Générée par `python3 tools/trace.py` — ne pas modifier à la main.
 
-Sous-fonctionnalités : 146 · Exigences possédées : 483 · Éléments de conception : 276 · Tâches : 279 · Tests : 415
+Sous-fonctionnalités : 146 · Exigences possédées : 483 · Éléments de conception : 277 · Tâches : 279 · Tests : 415
 Erreurs : 0 · Avertissements : 0
 
 ## Statut des dossiers
 
 | Statut | Nombre |
 |---|---|
+| APPROVED | 4 |
 | IN_PROGRESS | 1 |
-| IN_TESTING | 1 |
-| UNDER_REVIEW | 144 |
+| IN_TESTING | 14 |
+| READY_FOR_DEV | 49 |
+| UNDER_REVIEW | 78 |
 
 ## Exigence → conception → tâches → tests → implémentation → vérification
 
@@ -183,7 +185,7 @@ Erreurs : 0 · Avertissements : 0
 | FR-726 | SF-007-02 | UNDER_REVIEW | DES-007-02-01 | TASK-007-02-01 | TEST-007-02-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-730 | SF-007-03 | UNDER_REVIEW | DES-007-03-01 | TASK-007-03-01 | TEST-007-03-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-731 | SF-007-03 | UNDER_REVIEW | DES-007-03-01 | TASK-007-03-01 | TEST-007-03-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-732 | SF-007-03 | UNDER_REVIEW | DES-007-03-02 | TASK-007-03-02 | TEST-007-03-05 | Non commencé | 0/1 exécutés et réussis |
+| FR-732 | SF-007-03 | UNDER_REVIEW | DES-007-03-02 | TASK-007-03-02 | TEST-007-03-05 | Fait (2026-11-09) — `diagnostic.afficher_hypotheses`, `orientation.recommander_structure` (26 actions) ; `config/policy.yaml` 1.4.0 (`diagnostic_poc`, `tendances`) | 1/1 exécutés et réussis |
 | FR-735 | SF-007-04 | UNDER_REVIEW | DES-007-04-01 | TASK-007-04-01 | TEST-007-04-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-738 | SF-007-05 | UNDER_REVIEW | DES-007-05-01 | TASK-007-05-01 | TEST-007-05-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-741 | SF-007-06 | UNDER_REVIEW | DES-007-06-01 | TASK-007-06-01 | TEST-007-06-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
@@ -302,9 +304,9 @@ Erreurs : 0 · Avertissements : 0
 | FR-1123 | SF-011-07 | UNDER_REVIEW | DES-011-07-01 | TASK-011-07-01 | TEST-011-07-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1124 | SF-011-07 | UNDER_REVIEW | DES-011-07-01 | TASK-011-07-01 | TEST-011-07-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1125 | SF-011-07 | UNDER_REVIEW | DES-011-07-02 | TASK-011-07-02 | TEST-011-07-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-1127 | SF-011-08 | UNDER_REVIEW | DES-011-08-01 | TASK-011-08-01 | TEST-011-08-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-1128 | SF-011-08 | UNDER_REVIEW | DES-011-08-02 | TASK-011-08-01 | TEST-011-08-02 | Non commencé | 0/1 exécutés et réussis |
-| FR-1129 | SF-011-08 | UNDER_REVIEW | DES-011-08-02 | TASK-011-08-01 | TEST-011-08-03 | Non commencé | 0/1 exécutés et réussis |
+| FR-1127 | SF-011-08 | UNDER_REVIEW | DES-011-08-01 | TASK-011-08-01 | TEST-011-08-01 | Fait (2026-11-09) — `tools/exporter_base.py` → `app/data/base.json` (816 fragments, 1,04 Mo) et `app/data/glossaire.json` ; `app/js/domain/base.js` ; `app/sw.js` | 1/1 exécutés et réussis |
+| FR-1128 | SF-011-08 | UNDER_REVIEW | DES-011-08-02 | TASK-011-08-01 | TEST-011-08-02 | Fait (2026-11-09) — `tools/exporter_base.py` → `app/data/base.json` (816 fragments, 1,04 Mo) et `app/data/glossaire.json` ; `app/js/domain/base.js` ; `app/sw.js` | 1/1 exécutés et réussis |
+| FR-1129 | SF-011-08 | UNDER_REVIEW | DES-011-08-02 | TASK-011-08-01 | TEST-011-08-03 | Fait (2026-11-09) — `tools/exporter_base.py` → `app/data/base.json` (816 fragments, 1,04 Mo) et `app/data/glossaire.json` ; `app/js/domain/base.js` ; `app/sw.js` | 1/1 exécutés et réussis |
 | FR-1201 | SF-012-01 | UNDER_REVIEW | DES-012-01-01 | TASK-012-01-01 | TEST-012-01-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1202 | SF-012-01 | UNDER_REVIEW | DES-012-01-01 | TASK-012-01-01 | TEST-012-01-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1204 | SF-012-02 | UNDER_REVIEW | DES-012-02-01 | TASK-012-02-01 | TEST-012-02-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
@@ -377,14 +379,14 @@ Erreurs : 0 · Avertissements : 0
 | FR-1513 | SF-001-14 | UNDER_REVIEW | DES-001-14-01 | TASK-001-14-01 | TEST-001-14-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1514 | SF-001-14 | UNDER_REVIEW | DES-001-14-03 | TASK-001-14-03 | TEST-001-14-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1515 | SF-001-14 | UNDER_REVIEW | DES-001-14-03 | TASK-001-14-03 | TEST-001-14-05 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-1521 | SF-001-15 | UNDER_REVIEW | DES-001-15-03 | TASK-001-15-03 | TEST-001-15-01 | Non commencé | 0/1 exécutés et réussis |
+| FR-1521 | SF-001-15 | UNDER_REVIEW | DES-001-15-03 | TASK-001-15-03 | TEST-001-15-01 | Fait (2026-11-09) — `moduleActif` (`app/js/domain/politique.js`) ; route `#/pistes` absente hors démonstration ; parcours Vérifier → Où aller sans piste | 1/1 exécutés et réussis |
 | FR-1522 | SF-001-15 | UNDER_REVIEW | DES-001-15-01 | TASK-001-15-01 | TEST-001-15-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1523 | SF-001-15 | UNDER_REVIEW | DES-001-15-02 | TASK-001-15-02 | TEST-001-15-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1524 | SF-001-15 | UNDER_REVIEW | DES-001-15-02 | TASK-001-15-02 | TEST-001-15-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1525 | SF-001-15 | UNDER_REVIEW | DES-001-15-01 | TASK-001-15-01 | TEST-001-15-05 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-1526 | SF-001-15 | UNDER_REVIEW | DES-001-15-03 | TASK-001-15-04 | TEST-001-15-06 | Non commencé | 0/1 exécutés et réussis |
-| FR-1527 | SF-001-15 | UNDER_REVIEW | DES-001-15-03 | TASK-001-15-04 | TEST-001-15-06 | Non commencé | 0/1 exécutés et réussis |
-| FR-1528 | SF-001-15 | UNDER_REVIEW | DES-001-15-02 | TASK-001-15-05 | TEST-001-15-07 | Non commencé | 0/1 exécutés et réussis |
+| FR-1526 | SF-001-15 | UNDER_REVIEW | DES-001-15-03 | TASK-001-15-04 | TEST-001-15-06 | Fait (2026-11-09) — `deciderResultat` (`app/js/agents/parcours.js`) appelé par « Vérifier » avant tout affichage ; journal : module, empreinte, nombre | 1/1 exécutés et réussis |
+| FR-1527 | SF-001-15 | UNDER_REVIEW | DES-001-15-03 | TASK-001-15-04 | TEST-001-15-06 | Fait (2026-11-09) — `deciderResultat` (`app/js/agents/parcours.js`) appelé par « Vérifier » avant tout affichage ; journal : module, empreinte, nombre | 1/1 exécutés et réussis |
+| FR-1528 | SF-001-15 | UNDER_REVIEW | DES-001-15-02 | TASK-001-15-05 | TEST-001-15-07 | Fait (2026-11-09) — clé `pistes.tableDemo` affichée en tête de l'encart d'origine | 1/1 exécutés et réussis |
 | FR-1536 | SF-001-16 | UNDER_REVIEW | DES-001-16-01 | TASK-001-16-01 | TEST-001-16-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1537 | SF-001-16 | UNDER_REVIEW | DES-001-16-02 | TASK-001-16-01 | TEST-001-16-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1538 | SF-001-16 | UNDER_REVIEW | DES-001-16-03 | TASK-001-16-02 | TEST-001-16-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
@@ -409,28 +411,28 @@ Erreurs : 0 · Avertissements : 0
 | FR-1609 | SF-002-12 | UNDER_REVIEW | DES-002-12-01 | TASK-002-12-01 | TEST-002-12-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1610 | SF-002-12 | UNDER_REVIEW | DES-002-12-04 | TASK-002-12-04 | TEST-002-12-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1611 | SF-002-12 | UNDER_REVIEW | DES-002-12-02 | TASK-002-12-02 | TEST-002-12-05 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-1901 | SF-007-17 | UNDER_REVIEW | DES-007-17-01 | TASK-007-17-01, TASK-007-17-04 | TEST-007-17-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-1902 | SF-007-17 | UNDER_REVIEW | DES-007-17-02 | TASK-007-17-01, TASK-007-17-04 | TEST-007-17-02 | Non commencé | 0/1 exécutés et réussis |
-| FR-1903 | SF-007-17 | UNDER_REVIEW | DES-007-17-03 | TASK-007-17-03 | TEST-007-17-03 | Non commencé | 0/1 exécutés et réussis |
-| FR-1904 | SF-007-17 | UNDER_REVIEW | DES-007-17-02, DES-007-17-04 | TASK-007-17-01, TASK-007-17-02, TASK-007-17-04 | TEST-007-17-04 | Non commencé | 0/1 exécutés et réussis |
-| FR-1905 | SF-007-17 | UNDER_REVIEW | DES-007-17-01 | TASK-007-17-01, TASK-007-17-04 | TEST-007-17-05 | Non commencé | 0/1 exécutés et réussis |
-| FR-1911 | SF-007-18 | UNDER_REVIEW | DES-007-18-01 | TASK-007-18-01, TASK-007-18-02 | TEST-007-18-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-1912 | SF-007-18 | UNDER_REVIEW | DES-007-18-01 | TASK-007-18-01, TASK-007-18-02 | TEST-007-18-02 | Non commencé | 0/1 exécutés et réussis |
-| FR-1913 | SF-007-18 | UNDER_REVIEW | DES-007-18-02 | TASK-007-18-01, TASK-007-18-02 | TEST-007-18-03 | Non commencé | 0/1 exécutés et réussis |
-| FR-1914 | SF-007-18 | UNDER_REVIEW | DES-007-18-01 | TASK-007-18-01, TASK-007-18-02 | TEST-007-18-04 | Non commencé | 0/1 exécutés et réussis |
-| FR-1915 | SF-007-18 | UNDER_REVIEW | DES-007-18-02 | TASK-007-18-01, TASK-007-18-02 | TEST-007-18-05 | Non commencé | 0/1 exécutés et réussis |
-| FR-1921 | SF-007-19 | UNDER_REVIEW | DES-007-19-01 | TASK-007-19-01, TASK-007-19-02 | TEST-007-19-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-1922 | SF-007-19 | UNDER_REVIEW | DES-007-19-01 | TASK-007-19-01, TASK-007-19-02 | TEST-007-19-02 | Non commencé | 0/1 exécutés et réussis |
-| FR-1923 | SF-007-19 | UNDER_REVIEW | DES-007-19-02 | TASK-007-19-01, TASK-007-19-02 | TEST-007-19-03 | Non commencé | 0/1 exécutés et réussis |
-| FR-1924 | SF-007-19 | UNDER_REVIEW | DES-007-19-01 | TASK-007-19-01, TASK-007-19-02 | TEST-007-19-04 | Non commencé | 0/1 exécutés et réussis |
-| FR-1925 | SF-007-19 | UNDER_REVIEW | DES-007-19-03 | TASK-007-19-01, TASK-007-19-03 | TEST-007-19-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-1931 | SF-007-20 | UNDER_REVIEW | DES-007-20-01 | TASK-007-20-01 | TEST-007-20-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-1932 | SF-007-20 | UNDER_REVIEW | DES-007-20-01 | TASK-007-20-01 | TEST-007-20-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-1933 | SF-007-20 | UNDER_REVIEW | DES-007-20-01 | TASK-007-20-01 | TEST-007-20-02 | Non commencé | 0/1 exécutés et réussis |
-| FR-1941 | SF-007-21 | UNDER_REVIEW | DES-007-21-01 | TASK-007-21-01 | TEST-007-21-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-1942 | SF-007-21 | UNDER_REVIEW | DES-007-21-02 | TASK-007-21-02 | TEST-007-21-02 | Non commencé | 0/1 exécutés et réussis |
-| FR-1943 | SF-007-21 | UNDER_REVIEW | DES-007-21-02 | TASK-007-21-02 | TEST-007-21-02 | Non commencé | 0/1 exécutés et réussis |
-| FR-1944 | SF-007-21 | UNDER_REVIEW | DES-007-21-01 | TASK-007-21-01 | TEST-007-21-03 | Non commencé | 0/1 exécutés et réussis |
+| FR-1901 | SF-007-17 | UNDER_REVIEW | DES-007-17-01 | TASK-007-17-01, TASK-007-17-04 | TEST-007-17-01 | Fait (2026-11-09) — `app/js/agents/conformite.js`, `app/js/agents/orchestrateur.js`, `app/js/agents/parcours.js`, `app/js/agents/nolo.js` ; 0 écart de parité, Fait (2026-11-09) — `app/tests/parite_conformite.test.mjs`, `app/tests/orchestrateur.test.mjs` (rouges avant le code) | 1/1 exécutés et réussis |
+| FR-1902 | SF-007-17 | UNDER_REVIEW | DES-007-17-02 | TASK-007-17-01, TASK-007-17-04 | TEST-007-17-02 | Fait (2026-11-09) — `app/js/agents/conformite.js`, `app/js/agents/orchestrateur.js`, `app/js/agents/parcours.js`, `app/js/agents/nolo.js` ; 0 écart de parité, Fait (2026-11-09) — `app/tests/parite_conformite.test.mjs`, `app/tests/orchestrateur.test.mjs` (rouges avant le code) | 1/1 exécutés et réussis |
+| FR-1903 | SF-007-17 | UNDER_REVIEW | DES-007-17-03 | TASK-007-17-03 | TEST-007-17-03 | Fait (2026-11-09) — `tools/politique_json.py` (et `--verifier`), `app/data/politique.json` 1.4.0, `app/js/domain/politique.js` | 1/1 exécutés et réussis |
+| FR-1904 | SF-007-17 | UNDER_REVIEW | DES-007-17-02, DES-007-17-04 | TASK-007-17-01, TASK-007-17-02, TASK-007-17-04 | TEST-007-17-04 | Fait (2026-11-09) — `app/js/agents/conformite.js`, `app/js/agents/orchestrateur.js`, `app/js/agents/parcours.js`, `app/js/agents/nolo.js` ; 0 écart de parité, Fait (2026-11-09) — `app/tests/parite_conformite.test.mjs`, `app/tests/orchestrateur.test.mjs` (rouges avant le code), Fait (2026-11-09) — `tools/scenarios/executer.py --exporter-attendus` : 3 908 cas, 89 décisions distinctes (S1 à S3 × 3 politiques, grille de 26 actions) | 1/1 exécutés et réussis |
+| FR-1905 | SF-007-17 | UNDER_REVIEW | DES-007-17-01 | TASK-007-17-01, TASK-007-17-04 | TEST-007-17-05 | Fait (2026-11-09) — `app/js/agents/conformite.js`, `app/js/agents/orchestrateur.js`, `app/js/agents/parcours.js`, `app/js/agents/nolo.js` ; 0 écart de parité, Fait (2026-11-09) — `app/tests/parite_conformite.test.mjs`, `app/tests/orchestrateur.test.mjs` (rouges avant le code) | 1/1 exécutés et réussis |
+| FR-1911 | SF-007-18 | UNDER_REVIEW | DES-007-18-01 | TASK-007-18-01, TASK-007-18-02 | TEST-007-18-01 | Fait (2026-11-09) — `app/js/ui/decision.js` ; panneau sur pistes, urgence, confidentiel, hors champ, Où aller, recherche ; catalogues `decision.*`, Fait (2026-11-09) — `app/tests/decision.test.mjs` | 1/1 exécutés et réussis |
+| FR-1912 | SF-007-18 | UNDER_REVIEW | DES-007-18-01 | TASK-007-18-01, TASK-007-18-02 | TEST-007-18-02 | Fait (2026-11-09) — `app/js/ui/decision.js` ; panneau sur pistes, urgence, confidentiel, hors champ, Où aller, recherche ; catalogues `decision.*`, Fait (2026-11-09) — `app/tests/decision.test.mjs` | 1/1 exécutés et réussis |
+| FR-1913 | SF-007-18 | UNDER_REVIEW | DES-007-18-02 | TASK-007-18-01, TASK-007-18-02 | TEST-007-18-03 | Fait (2026-11-09) — `app/js/ui/decision.js` ; panneau sur pistes, urgence, confidentiel, hors champ, Où aller, recherche ; catalogues `decision.*`, Fait (2026-11-09) — `app/tests/decision.test.mjs` | 1/1 exécutés et réussis |
+| FR-1914 | SF-007-18 | UNDER_REVIEW | DES-007-18-01 | TASK-007-18-01, TASK-007-18-02 | TEST-007-18-04 | Fait (2026-11-09) — `app/js/ui/decision.js` ; panneau sur pistes, urgence, confidentiel, hors champ, Où aller, recherche ; catalogues `decision.*`, Fait (2026-11-09) — `app/tests/decision.test.mjs` | 1/1 exécutés et réussis |
+| FR-1915 | SF-007-18 | UNDER_REVIEW | DES-007-18-02 | TASK-007-18-01, TASK-007-18-02 | TEST-007-18-05 | Fait (2026-11-09) — `app/js/ui/decision.js` ; panneau sur pistes, urgence, confidentiel, hors champ, Où aller, recherche ; catalogues `decision.*`, Fait (2026-11-09) — `app/tests/decision.test.mjs` | 1/1 exécutés et réussis |
+| FR-1921 | SF-007-19 | UNDER_REVIEW | DES-007-19-01 | TASK-007-19-01, TASK-007-19-02 | TEST-007-19-01 | Fait (2026-11-09) — `app/js/agents/cellule.js` (`derouler`, `MANDATS`), Fait (2026-11-09) — `app/tests/cellule.test.mjs` | 1/1 exécutés et réussis |
+| FR-1922 | SF-007-19 | UNDER_REVIEW | DES-007-19-01 | TASK-007-19-01, TASK-007-19-02 | TEST-007-19-02 | Fait (2026-11-09) — `app/js/agents/cellule.js` (`derouler`, `MANDATS`), Fait (2026-11-09) — `app/tests/cellule.test.mjs` | 1/1 exécutés et réussis |
+| FR-1923 | SF-007-19 | UNDER_REVIEW | DES-007-19-02 | TASK-007-19-01, TASK-007-19-02 | TEST-007-19-03 | Fait (2026-11-09) — `app/js/agents/cellule.js` (`derouler`, `MANDATS`), Fait (2026-11-09) — `app/tests/cellule.test.mjs` | 1/1 exécutés et réussis |
+| FR-1924 | SF-007-19 | UNDER_REVIEW | DES-007-19-01 | TASK-007-19-01, TASK-007-19-02 | TEST-007-19-04 | Fait (2026-11-09) — `app/js/agents/cellule.js` (`derouler`, `MANDATS`), Fait (2026-11-09) — `app/tests/cellule.test.mjs` | 1/1 exécutés et réussis |
+| FR-1925 | SF-007-19 | UNDER_REVIEW | DES-007-19-03 | TASK-007-19-01, TASK-007-19-03 | TEST-007-19-01 | Fait (2026-11-09) — `app/tests/cellule.test.mjs`, Fait (2026-11-09) — vue `#/ministere/coordination` (fil daté, avis APDP, décision motivée du point focal) | 1/1 exécutés et réussis |
+| FR-1931 | SF-007-20 | UNDER_REVIEW | DES-007-20-01 | TASK-007-20-01 | TEST-007-20-01 | Fait (2026-11-09) — `app/tests/ab.test.mjs`, `app/js/agents/ab.js`, vue `#/ministere/ab` (6 violations sans gouvernance, 0 avec ; mode simulé) | 1/1 exécutés et réussis |
+| FR-1932 | SF-007-20 | UNDER_REVIEW | DES-007-20-01 | TASK-007-20-01 | TEST-007-20-01 | Fait (2026-11-09) — `app/tests/ab.test.mjs`, `app/js/agents/ab.js`, vue `#/ministere/ab` (6 violations sans gouvernance, 0 avec ; mode simulé) | 1/1 exécutés et réussis |
+| FR-1933 | SF-007-20 | UNDER_REVIEW | DES-007-20-01 | TASK-007-20-01 | TEST-007-20-02 | Fait (2026-11-09) — `app/tests/ab.test.mjs`, `app/js/agents/ab.js`, vue `#/ministere/ab` (6 violations sans gouvernance, 0 avec ; mode simulé) | 1/1 exécutés et réussis |
+| FR-1941 | SF-007-21 | UNDER_REVIEW | DES-007-21-01 | TASK-007-21-01 | TEST-007-21-01 | Fait (2026-11-09) — `app/tests/journal.test.mjs`, `app/js/agents/journal.js`, `app/js/core/sha256.js`, `app/js/core/canonique.js` (empreintes identiques au journal Python) | 1/1 exécutés et réussis |
+| FR-1942 | SF-007-21 | UNDER_REVIEW | DES-007-21-02 | TASK-007-21-02 | TEST-007-21-02 | Fait (2026-11-09) — vue `#/ministere/journal` : vérifier la chaîne, altérer puis restaurer | 1/1 exécutés et réussis |
+| FR-1943 | SF-007-21 | UNDER_REVIEW | DES-007-21-02 | TASK-007-21-02 | TEST-007-21-02 | Fait (2026-11-09) — vue `#/ministere/journal` : vérifier la chaîne, altérer puis restaurer | 1/1 exécutés et réussis |
+| FR-1944 | SF-007-21 | UNDER_REVIEW | DES-007-21-01 | TASK-007-21-01 | TEST-007-21-03 | Fait (2026-11-09) — `app/tests/journal.test.mjs`, `app/js/agents/journal.js`, `app/js/core/sha256.js`, `app/js/core/canonique.js` (empreintes identiques au journal Python) | 1/1 exécutés et réussis |
 | FR-2001 | SF-014-01 | UNDER_REVIEW | DES-014-01-01 | TASK-014-01-01 | TEST-014-01-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-2002 | SF-014-01 | UNDER_REVIEW | DES-014-01-01 | TASK-014-01-01 | TEST-014-01-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-2005 | SF-014-02 | UNDER_REVIEW | DES-014-02-01, DES-014-02-02 | TASK-014-02-01 | TEST-014-02-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
@@ -450,30 +452,30 @@ Erreurs : 0 · Avertissements : 0
 | FR-2113 | SF-015-03 | UNDER_REVIEW | DES-015-03-01 | TASK-015-03-01, TASK-015-03-03 | TEST-015-03-01 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
 | FR-2114 | SF-015-03 | UNDER_REVIEW | DES-015-03-02 | TASK-015-03-02 | TEST-015-03-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-2115 | SF-015-03 | UNDER_REVIEW | DES-015-03-02 | TASK-015-03-02 | TEST-015-03-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-2119 | SF-015-04 | UNDER_REVIEW | DES-015-04-01 | TASK-015-04-01 | TEST-015-04-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-2120 | SF-015-04 | UNDER_REVIEW | DES-015-04-02 | TASK-015-04-02 | TEST-015-04-02 | Non commencé | 0/1 exécutés et réussis |
+| FR-2119 | SF-015-04 | UNDER_REVIEW | DES-015-04-01 | TASK-015-04-01 | TEST-015-04-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
+| FR-2120 | SF-015-04 | UNDER_REVIEW | DES-015-04-02 | TASK-015-04-02 | TEST-015-04-02 | Fait (2026-11-09) — console : politique complète, version et empreinte canonique vérifiée ; `S.POLITIQUE` retiré | 1/1 exécutés et réussis |
 | FR-2124 | SF-015-05 | UNDER_REVIEW | DES-015-05-01 | TASK-015-05-01 | TEST-015-05-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-2125 | SF-015-05 | UNDER_REVIEW | DES-015-05-02 | TASK-015-05-02 | TEST-015-05-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-2126 | SF-015-05 | UNDER_REVIEW | DES-015-05-02 | TASK-015-05-02 | TEST-015-05-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-2130 | SF-015-06 | UNDER_REVIEW | DES-015-06-01 | TASK-015-06-01 | TEST-015-06-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-2131 | SF-015-06 | UNDER_REVIEW | DES-015-06-02 | TASK-015-06-02 | TEST-015-06-02 | Partiel (code existant incomplet, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-2201 | SF-016-01 | UNDER_REVIEW | DES-016-01-01 | TASK-016-01-01, TASK-016-01-02 | TEST-016-01-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-2202 | SF-016-01 | UNDER_REVIEW | DES-016-01-01 | TASK-016-01-01, TASK-016-01-02 | TEST-016-01-02 | Non commencé | 0/1 exécutés et réussis |
-| FR-2203 | SF-016-01 | UNDER_REVIEW | DES-016-01-02 | TASK-016-01-01, TASK-016-01-02 | TEST-016-01-03 | Non commencé | 0/1 exécutés et réussis |
-| FR-2204 | SF-016-01 | UNDER_REVIEW | DES-016-01-01 | TASK-016-01-01, TASK-016-01-02 | TEST-016-01-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-2206 | SF-016-02 | UNDER_REVIEW | DES-016-02-01 | TASK-016-02-01 | TEST-016-02-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-2207 | SF-016-02 | UNDER_REVIEW | DES-016-02-01 | TASK-016-02-01 | TEST-016-02-02 | Non commencé | 0/1 exécutés et réussis |
-| FR-2208 | SF-016-02 | UNDER_REVIEW | DES-016-02-01 | TASK-016-02-01 | TEST-016-02-03 | Non commencé | 0/1 exécutés et réussis |
-| FR-2209 | SF-016-02 | UNDER_REVIEW | DES-016-02-01 | TASK-016-02-01 | TEST-016-02-04 | Non commencé | 0/1 exécutés et réussis |
-| FR-2211 | SF-016-03 | UNDER_REVIEW | DES-016-03-01 | TASK-016-03-01 | TEST-016-03-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-2212 | SF-016-03 | UNDER_REVIEW | DES-016-03-01 | TASK-016-03-01 | TEST-016-03-02 | Non commencé | 0/1 exécutés et réussis |
-| FR-2213 | SF-016-03 | UNDER_REVIEW | DES-016-03-01 | TASK-016-03-01 | TEST-016-03-03 | Non commencé | 0/1 exécutés et réussis |
-| FR-2215 | SF-016-04 | UNDER_REVIEW | DES-016-04-01 | TASK-016-04-01 | TEST-016-04-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-2216 | SF-016-04 | UNDER_REVIEW | DES-016-04-01 | TASK-016-04-01 | TEST-016-04-02 | Non commencé | 0/1 exécutés et réussis |
+| FR-2201 | SF-016-01 | UNDER_REVIEW | DES-016-01-01 | TASK-016-01-01, TASK-016-01-02 | TEST-016-01-01 | Fait (2026-11-09) — `app/js/agents/conseiller/bm25.js`, `app/js/agents/conseiller/glossaire.js` (glossaire 1.2.0, champ `courant_fr`, DES-016-01-03), Fait (2026-11-09) — `app/tests/conseiller.test.mjs`, `tools/exporter_classements.py` (oracle) | 1/1 exécutés et réussis |
+| FR-2202 | SF-016-01 | UNDER_REVIEW | DES-016-01-01 | TASK-016-01-01, TASK-016-01-02 | TEST-016-01-02 | Fait (2026-11-09) — `app/js/agents/conseiller/bm25.js`, `app/js/agents/conseiller/glossaire.js` (glossaire 1.2.0, champ `courant_fr`, DES-016-01-03), Fait (2026-11-09) — `app/tests/conseiller.test.mjs`, `tools/exporter_classements.py` (oracle) | 1/1 exécutés et réussis |
+| FR-2203 | SF-016-01 | UNDER_REVIEW | DES-016-01-02, DES-016-01-03 | TASK-016-01-01, TASK-016-01-02 | TEST-016-01-03 | Fait (2026-11-09) — `app/js/agents/conseiller/bm25.js`, `app/js/agents/conseiller/glossaire.js` (glossaire 1.2.0, champ `courant_fr`, DES-016-01-03), Fait (2026-11-09) — `app/tests/conseiller.test.mjs`, `tools/exporter_classements.py` (oracle) | 1/1 exécutés et réussis |
+| FR-2204 | SF-016-01 | UNDER_REVIEW | DES-016-01-01 | TASK-016-01-01, TASK-016-01-02 | TEST-016-01-01 | Fait (2026-11-09) — `app/js/agents/conseiller/bm25.js`, `app/js/agents/conseiller/glossaire.js` (glossaire 1.2.0, champ `courant_fr`, DES-016-01-03), Fait (2026-11-09) — `app/tests/conseiller.test.mjs`, `tools/exporter_classements.py` (oracle) | 1/1 exécutés et réussis |
+| FR-2206 | SF-016-02 | UNDER_REVIEW | DES-016-02-01 | TASK-016-02-01 | TEST-016-02-01 | Fait (2026-11-09) — `app/js/agents/conseiller/repondre.js` (seuil de pertinence 8, BR-016-02-01) | 1/1 exécutés et réussis |
+| FR-2207 | SF-016-02 | UNDER_REVIEW | DES-016-02-01 | TASK-016-02-01 | TEST-016-02-02 | Fait (2026-11-09) — `app/js/agents/conseiller/repondre.js` (seuil de pertinence 8, BR-016-02-01) | 1/1 exécutés et réussis |
+| FR-2208 | SF-016-02 | UNDER_REVIEW | DES-016-02-01 | TASK-016-02-01 | TEST-016-02-03 | Fait (2026-11-09) — `app/js/agents/conseiller/repondre.js` (seuil de pertinence 8, BR-016-02-01) | 1/1 exécutés et réussis |
+| FR-2209 | SF-016-02 | UNDER_REVIEW | DES-016-02-01 | TASK-016-02-01 | TEST-016-02-04 | Fait (2026-11-09) — `app/js/agents/conseiller/repondre.js` (seuil de pertinence 8, BR-016-02-01) | 1/1 exécutés et réussis |
+| FR-2211 | SF-016-03 | UNDER_REVIEW | DES-016-03-01 | TASK-016-03-01 | TEST-016-03-01 | Fait (2026-11-09) — `app/js/screens/patient/droits.js`, route `#/droits`, liens depuis l'accueil, le tableau de bord et la console ; catalogues `droits.*` | 1/1 exécutés et réussis |
+| FR-2212 | SF-016-03 | UNDER_REVIEW | DES-016-03-01 | TASK-016-03-01 | TEST-016-03-02 | Fait (2026-11-09) — `app/js/screens/patient/droits.js`, route `#/droits`, liens depuis l'accueil, le tableau de bord et la console ; catalogues `droits.*` | 1/1 exécutés et réussis |
+| FR-2213 | SF-016-03 | UNDER_REVIEW | DES-016-03-01 | TASK-016-03-01 | TEST-016-03-03 | Fait (2026-11-09) — `app/js/screens/patient/droits.js`, route `#/droits`, liens depuis l'accueil, le tableau de bord et la console ; catalogues `droits.*` | 1/1 exécutés et réussis |
+| FR-2215 | SF-016-04 | UNDER_REVIEW | DES-016-04-01 | TASK-016-04-01 | TEST-016-04-01 | Fait (2026-11-09) — `tools/evaluer_conseiller.mjs` → `docs/quality/eval-conseiller-2026-11-09.txt` (document 18/18, référence 15/18, anglais 5/5 ; réserve : sans `courant_fr`, référence 12/18) | 1/1 exécutés et réussis |
+| FR-2216 | SF-016-04 | UNDER_REVIEW | DES-016-04-01 | TASK-016-04-01 | TEST-016-04-02 | Fait (2026-11-09) — `tools/evaluer_conseiller.mjs` → `docs/quality/eval-conseiller-2026-11-09.txt` (document 18/18, référence 15/18, anglais 5/5 ; réserve : sans `courant_fr`, référence 12/18) | 1/1 exécutés et réussis |
 | FR-2218 | SF-016-05 | UNDER_REVIEW | DES-016-05-01 | TASK-016-05-01 | TEST-016-05-01 | Non commencé | 0/1 exécutés et réussis |
 | FR-2219 | SF-016-05 | UNDER_REVIEW | DES-016-05-01 | TASK-016-05-01 | TEST-016-05-02 | Non commencé | 0/1 exécutés et réussis |
-| FR-2301 | SF-017-01 | APPROVED | DES-017-01-01 | TASK-017-01-01, TASK-017-01-02 | TEST-017-01-01 | Fait (2026-11-09) — `docs/submission/rapport-technique-en.md`, PDF `../livrables/rapport-technique-en.pdf` (`tools/rapport_pdf.py`), contrôle `tools/verifier_rapport.py` ; coordonnées de l'équipe et lien de la vidéo laissés à compléter, À faire | 1/1 exécutés et réussis |
-| FR-2302 | SF-017-01 | APPROVED | DES-017-01-01 | TASK-017-01-01, TASK-017-01-02 | TEST-017-01-02 | Fait (2026-11-09) — `docs/submission/rapport-technique-en.md`, PDF `../livrables/rapport-technique-en.pdf` (`tools/rapport_pdf.py`), contrôle `tools/verifier_rapport.py` ; coordonnées de l'équipe et lien de la vidéo laissés à compléter, À faire | 1/1 exécutés et réussis |
+| FR-2301 | SF-017-01 | APPROVED | DES-017-01-01 | TASK-017-01-01, TASK-017-01-02 | TEST-017-01-01 | Fait (2026-11-09) — D-038 : FR-2302 et DES-017-01-01 corrigés, §9 de design.md vidé, Fait (2026-11-09) — `docs/submission/rapport-technique-en.md`, PDF `../livrables/rapport-technique-en.pdf` (`tools/rapport_pdf.py`), contrôle `tools/verifier_rapport.py` ; coordonnées de l'équipe et lien de la vidéo laissés à compléter | 1/1 exécutés et réussis |
+| FR-2302 | SF-017-01 | APPROVED | DES-017-01-01 | TASK-017-01-01, TASK-017-01-02 | TEST-017-01-02 | Fait (2026-11-09) — D-038 : FR-2302 et DES-017-01-01 corrigés, §9 de design.md vidé, Fait (2026-11-09) — `docs/submission/rapport-technique-en.md`, PDF `../livrables/rapport-technique-en.pdf` (`tools/rapport_pdf.py`), contrôle `tools/verifier_rapport.py` ; coordonnées de l'équipe et lien de la vidéo laissés à compléter | 1/1 exécutés et réussis |
 | FR-2303 | SF-017-01 | APPROVED | DES-017-01-01 | TASK-017-01-01 | TEST-017-01-03 | Fait (2026-11-09) — `docs/submission/rapport-technique-en.md`, PDF `../livrables/rapport-technique-en.pdf` (`tools/rapport_pdf.py`), contrôle `tools/verifier_rapport.py` ; coordonnées de l'équipe et lien de la vidéo laissés à compléter | 1/1 exécutés et réussis |
 | FR-2304 | SF-017-01 | APPROVED | DES-017-01-01 | TASK-017-01-01 | TEST-017-01-03 | Fait (2026-11-09) — `docs/submission/rapport-technique-en.md`, PDF `../livrables/rapport-technique-en.pdf` (`tools/rapport_pdf.py`), contrôle `tools/verifier_rapport.py` ; coordonnées de l'équipe et lien de la vidéo laissés à compléter | 1/1 exécutés et réussis |
 | FR-2306 | SF-017-02 | APPROVED | DES-017-02-01 | TASK-017-02-01 | TEST-017-02-01 | Fait (2026-11-09, demande explicite du propriétaire, D-036) ; README.md et README.fr.md corrigés le 2026-11-09 : quatre verdicts de l'agent Conformité (FR-2306, D-037) | 0/1 exécutés et réussis |
@@ -494,12 +496,12 @@ Erreurs : 0 · Avertissements : 0
 | FR-2403 | MT-002 | UNDER_REVIEW | DES-M02-02 | TASK-M02-03 | TEST-M02-03 | Fait (2026-11-09, demande explicite du propriétaire, D-036) | 1/1 exécutés et réussis |
 | NFR-101 | SF-001-03 | UNDER_REVIEW | DES-001-03-03 | TASK-001-03-04 | TEST-001-03-06 | Non commencé | 0/1 exécutés et réussis |
 | NFR-102 | SF-001-03 | UNDER_REVIEW | DES-001-03-01 | TASK-001-03-01 | TEST-001-03-01 | Non commencé | 0/1 exécutés et réussis |
-| NFR-1101 | SF-011-08 | UNDER_REVIEW |  |  | TEST-011-08-04 | Non commencé | 0/1 exécutés et réussis |
+| NFR-1101 | SF-011-08 | UNDER_REVIEW |  |  | TEST-011-08-04 | Non commencé | 1/1 exécutés et réussis |
 | NFR-1401 | MT-001 | UNDER_REVIEW | DES-M01-06 | TASK-M01-02 | TEST-M01-02 | Non commencé | 0/1 exécutés et réussis |
 | NFR-1402 | MT-001 | UNDER_REVIEW | DES-M01-01 | TASK-M01-02 | TEST-M01-02 | Non commencé | 0/1 exécutés et réussis |
 | NFR-1501 | SF-001-13 | UNDER_REVIEW |  |  | TEST-001-13-06 | Non commencé | 0/1 exécutés et réussis |
-| NFR-1901 | SF-007-17 | UNDER_REVIEW |  |  | TEST-007-17-06 | Non commencé | 0/1 exécutés et réussis |
-| NFR-2201 | SF-016-01 | UNDER_REVIEW |  |  | TEST-016-01-04 | Non commencé | 0/1 exécutés et réussis |
+| NFR-1901 | SF-007-17 | UNDER_REVIEW |  |  | TEST-007-17-06 | Non commencé | 1/1 exécutés et réussis |
+| NFR-2201 | SF-016-01 | UNDER_REVIEW |  |  | TEST-016-01-04 | Non commencé | 1/1 exécutés et réussis |
 
 ## Erreurs
 

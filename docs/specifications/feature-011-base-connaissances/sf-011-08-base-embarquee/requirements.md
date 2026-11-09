@@ -5,8 +5,8 @@
 | Fonctionnalité | F-011 Base de connaissances |
 | Sous-fonctionnalité | SF-011-08 |
 | Version | 2.0.0 |
-| Statut | UNDER_REVIEW |
-| État d'implémentation | Non implémenté |
+| Statut | IN_TESTING |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 | Origine | AG-02, AG-05, AG-06 |
 | Bloquant | Aucun |
 | Dépend de | SF-011-07 |

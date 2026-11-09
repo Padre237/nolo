@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `repondre`
 - Alors : extrait art. 32 référencé
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/conseiller.test.mjs` › « TEST-016-02-01 : un extrait cité de l’art. 32 de la loi 2024/017 » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-016-02-02 — Refus sans fondement
 - Type : Unitaire
@@ -34,8 +34,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `repondre`
 - Alors : refus sans extrait
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/conseiller.test.mjs` › « TEST-016-02-02 : refus sans fondement, sans extrait » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-016-02-03 — Mention
 - Type : Unitaire
@@ -45,8 +45,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : lecture
 - Alors : mention présente
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/conseiller.test.mjs` › « TEST-016-02-03 : la mention accompagne toute réponse » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-016-02-04 — Aucune trace
 - Type : Confidentialité
@@ -56,6 +56,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : lecture du stockage et du réseau
 - Alors : aucune trace
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/conseiller.test.mjs` › « TEST-016-02-04 : ni la question ni la réponse ne sont conservées ou transmises » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 

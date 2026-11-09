@@ -4,10 +4,11 @@
 # Usage « et si » : un régulateur peut modifier une valeur (ex. decret_transfert_publie: true)
 # et rejouer les scénarios pour voir l'effet sur le système (voir spec 007, FR-707).
 
-version: "1.3.0"   # 1.3.0 : numéros d'urgence, validation clinique du triage, seuils de surveillance confirmés, contestation 7 jours
+version: "1.4.0"   # 1.4.0 : module POC (diagnostic_poc, D-033) et tendances (D-032) ; source unique de Nolo (SF-007-17, D-038)
+# 1.3.0 : numéros d'urgence, validation clinique du triage, seuils de surveillance confirmés, contestation 7 jours
 # 1.2.0   # 1.2.0 : art. 19 relu (autorisation préalable de tout traitement) ; art. 66 al. 1 (et non 65) pour le consentement exprès ; position du juriste sur art. 48/66
 # 1.1.0 : art. 48 relu sur le texte officiel ; santé = sensible (art. 5)
-date_effet: "2026-11-03"
+date_effet: "2026-11-09"
 juridiction: CMR
 mode_par_defaut_si_incertain: BLOQUER   # Principe III
 
@@ -216,3 +217,31 @@ llm:
   usage_autorise: [reformulation, detection_langue, extraction_symptomes_vers_codes]
   usage_interdit: [diagnostic, prescription, abaisser_niveau_urgence, decision_conformite_sans_citation]
   sources: [INT-OMS-LMM-2024::0007]
+
+diagnostic_poc:                     # D-033 (principe décidé ; constitution 2.0.0 à ratifier) ; SF-001-15, FR-732
+  actif: true                       # sans effet hors des modes autorisés (FR-1521)
+  modes_autorises: [demo_synthetique]
+  jeu_de_donnees: table_demonstration   # remplacée par le modèle DDXPlus (CC-BY) à la livraison de SF-001-19
+  max_hypotheses: 3
+  afficher_score_modele: true
+  art48_affichage: message_neutre   # aucun nom de pathologie art. 48 (FR-DX-06)
+  transmission_serveur: false       # rien ne quitte l'appareil (FR-DX-07, FR-1525)
+  masquer_si_urgence: true          # FR-DX-03
+  orientation:
+    actif: true
+    regle_niveau: le_plus_eleve
+    age_pediatrie_max: 15
+    rayon_initial_km: 5
+    recherche: sur_appareil
+  statut: choix_equipe
+  sources: [CMR-LOI-90-036::0015, CMR-LOI-2024-017::0048]
+  lacunes: [L5, L15, L16]
+
+tendances:                          # D-032 (indicateurs de la demande pour les établissements)
+  seuil_minimal: 5
+  arrondi: 5
+  semaines_completes: true
+  alertes: false
+  recherches_sensibles_comptees: false
+  statut: choix_equipe
+  sources: [CMR-LOI-2024-017::0062]

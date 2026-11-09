@@ -5,7 +5,7 @@
 | Fonctionnalité | F-001 Orientation à partir des signes |
 | Sous-fonctionnalité | SF-001-09 |
 | Version | 2.0.0 |
-| Statut | UNDER_REVIEW |
+| Statut | APPROVED |
 | État d'implémentation | Non implémenté |
 | Origine | Catalogue v1 ; D-013 (Proposé) |
 | Bloquant | D-013 |

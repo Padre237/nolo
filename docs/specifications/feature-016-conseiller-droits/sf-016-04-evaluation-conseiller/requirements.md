@@ -5,8 +5,8 @@
 | Fonctionnalité | F-016 Conseiller « Mes droits santé » |
 | Sous-fonctionnalité | SF-016-04 |
 | Version | 2.0.0 |
-| Statut | UNDER_REVIEW |
-| État d'implémentation | Non implémenté |
+| Statut | IN_TESTING |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 | Origine | AG-06 ; README de la base (évaluation) |
 | Bloquant | Aucun |
 | Dépend de | SF-016-01 |

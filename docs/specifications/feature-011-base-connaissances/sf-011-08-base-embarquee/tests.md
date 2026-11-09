@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : contrôle
 - Alors : fragments cités présents ; aucun texte réservé
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/base.test.mjs` › « TEST-011-08-01 : fragments cités par la politique et la Conformité présents ; aucun texte réservé » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-011-08-02 — Lecture bilingue
 - Type : Unitaire
@@ -34,8 +34,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `fragment(id, 'en')`
 - Alors : version officielle ; erreur pour un inconnu
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/base.test.mjs` › « TEST-011-08-02 : lecture bilingue ; identifiant inconnu » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-011-08-03 — Hors ligne
 - Type : Interface
@@ -45,8 +45,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : lecture d'un fragment
 - Alors : disponible
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/base.test.mjs` › « TEST-011-08-03 : la base est mise en cache par le service worker (hors ligne) » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-011-08-04 — Taille de la base embarquée
 - Type : Performance
@@ -56,6 +56,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : taille de `app/data/base.json`
 - Alors : ≤ 3 Mio
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/base.test.mjs` › « TEST-011-08-04 : taille de la base embarquée ≤ 3 Mio » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 

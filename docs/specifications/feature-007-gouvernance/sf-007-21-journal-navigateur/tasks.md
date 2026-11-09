@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-1941, FR-1942, FR-1943, FR-1944 |
-| État d'implémentation | Non implémenté |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -25,7 +25,7 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : SF-007-17
 - Condition de fin : TEST-007-21-01, TEST-007-21-03 réussis
 - Tests : TEST-007-21-01, TEST-007-21-03
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `app/tests/journal.test.mjs`, `app/js/agents/journal.js`, `app/js/core/sha256.js`, `app/js/core/canonique.js` (empreintes identiques au journal Python)
 
 ### TASK-007-21-02 — Vue et démonstration de l'altération
 - Exigences : FR-1942, FR-1943
@@ -36,5 +36,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-007-21-02 réussis
 - Tests : TEST-007-21-02
-- Statut : À faire
+- Statut : Fait (2026-11-09) — vue `#/ministere/journal` : vérifier la chaîne, altérer puis restaurer
 

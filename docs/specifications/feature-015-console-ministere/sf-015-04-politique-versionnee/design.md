@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-2119, FR-2120 |
 | ADR | — |
-| État d'implémentation | Partiellement implémenté — rétro-spécifié le 2026-11-09 ; écarts au §9 de design.md |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Vue d'ensemble
 —
@@ -44,4 +44,4 @@ Aucun contrat propre.
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- FR-2120 : la console affiche `POLITIQUE` de `app/js/domain/surveillance.js` (version « 1.3.2 », sous-ensemble écrit à la main) alors que `config/policy.yaml` est en 1.3.0.
+- Aucun écart connu (écarts résolus le 2026-11-09 : la console lit `app/data/politique.json` (1.4.0, converti de `config/policy.yaml`) ; l'ancienne politique 1.3.2 écrite à la main est retirée de `surveillance.js` ; empreinte calculée par `app/js/core/sha256.js`, même résultat que WebCrypto).

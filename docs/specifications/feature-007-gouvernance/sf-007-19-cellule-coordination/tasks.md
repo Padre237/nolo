@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-1921, FR-1922, FR-1923, FR-1924, FR-1925 |
-| État d'implémentation | Non implémenté |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -25,7 +25,7 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-007-19-01, TEST-007-19-02, TEST-007-19-03, TEST-007-19-04 réussis
 - Tests : TEST-007-19-01, TEST-007-19-02, TEST-007-19-03, TEST-007-19-04
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `app/tests/cellule.test.mjs`
 
 ### TASK-007-19-02 — Mandats et déroulé
 - Exigences : FR-1921, FR-1922, FR-1923, FR-1924
@@ -36,7 +36,7 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : SF-007-17
 - Condition de fin : TEST-007-19-01, TEST-007-19-02, TEST-007-19-03, TEST-007-19-04 réussis
 - Tests : TEST-007-19-01, TEST-007-19-02, TEST-007-19-03, TEST-007-19-04
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `app/js/agents/cellule.js` (`derouler`, `MANDATS`)
 
 ### TASK-007-19-03 — Vue de la cellule dans la console
 - Exigences : FR-1925
@@ -47,5 +47,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-007-19-01 réussis
 - Tests : TEST-007-19-01
-- Statut : À faire
+- Statut : Fait (2026-11-09) — vue `#/ministere/coordination` (fil daté, avis APDP, décision motivée du point focal)
 

@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-2206, FR-2207, FR-2208, FR-2209 |
-| État d'implémentation | Non implémenté |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -25,5 +25,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : SF-016-01
 - Condition de fin : TEST-016-02-01, TEST-016-02-02, TEST-016-02-03, TEST-016-02-04 réussis
 - Tests : TEST-016-02-01, TEST-016-02-02, TEST-016-02-03, TEST-016-02-04
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `app/js/agents/conseiller/repondre.js` (seuil de pertinence 8, BR-016-02-01)
 

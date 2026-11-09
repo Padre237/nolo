@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : rejouer sans puis avec
 - Alors : ≥ 5 puis 0
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/ab.test.mjs` › « TEST-007-20-01 : au moins 5 violations nommées sans gouvernance, 0 avec ; journal toujours actif » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-007-20-02 — Impossible hors démo
 - Type : Unitaire
@@ -34,6 +34,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : rendu
 - Alors : bouton absent
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/ab.test.mjs` › « TEST-007-20-02 : commutateur impossible hors du mode demo_synthetique » (`cd app && node --test tests/*.test.mjs`) ; `tools/inspecter.py` (états 40 à 46)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 

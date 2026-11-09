@@ -269,3 +269,36 @@ select.saisie { appearance: none; padding-right: 44px; background-image: url("da
 /* ── Squelette de chargement ─────────────────────────── */
 .squelette { border-radius: var(--r-controle); background: linear-gradient(90deg, var(--voile), #EEF1EF, var(--voile)); background-size: 200% 100%; animation: squelette 1.2s linear infinite; }
 @keyframes squelette { to { background-position: -200% 0; } }
+
+/* ── « Comment Nolo a décidé » (SF-007-18) : étapes, nœuds Y.3172, textes cités ─────────────── */
+.decision { border: 1px solid var(--ligne); border-radius: var(--r-carte); background: var(--surface); padding: 0 var(--e-4); }
+.decision[open] { padding-bottom: var(--e-4); }
+.decision__titre { display: flex; align-items: center; gap: var(--e-2); min-height: var(--cible); cursor: pointer; font-weight: 700; color: var(--foret); font-size: var(--t-petit); list-style: none; }
+.decision__titre::-webkit-details-marker { display: none; }
+.decision__titre::after { content: '+'; margin-left: auto; font-size: var(--t-moyen); color: var(--texte-3); }
+.decision[open] > .decision__titre::after { content: '−'; }
+.decision__titre:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: var(--r-controle); }
+.decision > .note { margin-bottom: var(--e-3); }
+.decision__etapes { display: flex; flex-direction: column; gap: 0; margin: 0; padding: 0; list-style: none; }
+.decision__etape { display: grid; grid-template-columns: 52px 1fr; gap: var(--e-3); padding: var(--e-3) 0; border-top: 1px solid var(--ligne); }
+.decision__noeud { align-self: start; text-align: center; padding: 2px 0; border-radius: var(--r-controle); background: var(--menthe); color: var(--foret-profond); font-size: var(--t-mini); font-weight: 700; }
+.decision__corps { display: flex; flex-direction: column; gap: var(--e-2); min-width: 0; }
+.decision__agent { font-size: var(--t-petit); }
+.decision__verdict { color: var(--texte-2); }
+.decision__verdict::before { content: '— '; }
+.decision__verdict--ok { color: var(--foret); }
+.decision__verdict--conditions { color: var(--foret); }
+.decision__verdict--bloque { color: var(--encre); font-weight: 700; }
+.decision__fragments { display: flex; flex-direction: column; gap: var(--e-3); margin: 0; padding: 0; list-style: none; }
+.decision__fragment { display: flex; flex-direction: column; gap: 4px; padding-left: var(--e-3); border-left: 2px solid var(--menthe-trait); min-width: 0; }
+.decision__ref { display: flex; flex-wrap: wrap; align-items: center; gap: 4px var(--e-2); font-size: var(--t-note); }
+.decision__ref .mono { overflow-wrap: anywhere; }
+.decision__extrait { display: block; font-size: var(--t-petit); color: var(--texte-2); quotes: '« ' ' »'; }
+.decision__extrait[lang='en'] { quotes: '“' '”'; }
+.decision__mention { font-style: italic; }
+
+/* ── « Mes droits santé » (SF-016-03) ──────────────────────────────────────────────────────── */
+.extraits { display: flex; flex-direction: column; gap: var(--e-4); margin: 0; padding: 0; list-style: none; }
+.extrait { display: flex; flex-direction: column; gap: var(--e-2); padding: var(--e-4); border-radius: var(--r-carte); border: 1px solid var(--ligne); background: var(--pierre); min-width: 0; }
+.extrait__texte { margin: 0; padding-left: var(--e-3); border-left: 3px solid var(--foret); font-size: var(--t-petit); color: var(--encre); overflow-wrap: anywhere; }
+.decision__ref .etiquette, .extrait .etiquette { white-space: normal; }

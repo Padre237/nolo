@@ -5,8 +5,8 @@
 | Fonctionnalité | F-007 Gouvernance, conformité, audit et agents |
 | Sous-fonctionnalité | SF-007-20 |
 | Version | 2.0.0 |
-| Statut | UNDER_REVIEW |
-| État d'implémentation | Non implémenté |
+| Statut | IN_TESTING |
+| État d'implémentation | Implémenté (2026-11-09, D-038) ; S4 joué dans Nolo (pistes envoyées au serveur), le scénario S4 Python reste à faire (SF-012-05) |
 | Origine | AG-08 ; FR-710 |
 | Bloquant | Aucun |
 | Dépend de | SF-007-17, SF-007-19 |

@@ -41,6 +41,7 @@ export default {
   },
 
   accueil: {
+    droits: 'My health rights', droitsB: 'What Cameroonian laws say, with the passages',
     titre: 'What is happening?',
     action: 'Describe how I feel', actionB: 'In your own words, in English or French. Nolo tells you where to go.',
     chercherTitre: 'Search near you',
@@ -92,6 +93,7 @@ export default {
   },
 
   pistes: {
+    tableDemo: 'Demonstration table',
     titre: 'Leads to confirm', chapo: 'These leads help you choose where to go. Only a health worker can tell what you have.',
     module: 'Experimental module',
     signes: '{x} of {y} typical symptoms present', retrouves: 'Found: {liste}',
@@ -317,6 +319,33 @@ export default {
       evenements: { creation: 'Account created', confirmation: 'E-mail confirmed', connexion: 'Sign-in', fiche: 'Profile sent', verification: 'Verification: {etat}', import: 'Stock import: {a} published, {r} rejected', confirmationStock: 'Stock confirmed without change', desactivation: 'Account deactivated', reactivation: 'Account reactivated', photos: 'Photos added' } },
   },
   ministere: {
+    journal: {
+      titre: 'Chained audit log', memoire: 'In memory, on this device',
+      chapo: 'Every decision made by the agents in this session, append-only: each entry carries the SHA-256 fingerprint of the previous one. No free text, no sign.',
+      verifier: 'Verify the chain', alterer: 'Tamper with an entry (demonstration)', restaurer: 'Restore the log',
+      valide: 'Chain intact: {n} entries verified.', invalide: 'Entry No. {n} is invalid: {raison}. Every later entry becomes suspect.',
+      raisons: { empreinte: 'its content no longer matches its fingerprint', hash_precedent: 'it no longer points to the previous entry' },
+      vide: 'No decision in this session yet. Go through a citizen journey, or run the coordination cell.',
+      colonnes: { n: 'No.', heure: 'Time', agent: 'Agent', action: 'Action', decision: 'Decision', fragments: 'Texts cited', hash: 'Fingerprint' },
+    },
+    cellule: {
+      titre: 'Coordination cell', chapo: 'Around a signal, each agent receives only what its mandate allows and takes a distinct, dated, logged position. A disagreement is never settled in favour of sharing: only the focal point closes the exchange.',
+      signal: 'Signal', avisApdp: 'Opinion of the data protection authority (simulated)', avis: { conforme: 'Compliant', defavorable: 'Unfavourable' },
+      derouler: 'Run the exchange', mandat: 'Mandate', recu: 'Received',
+      mandats: { surveillance: 'propose a signal from aggregates', conformite: 'decide, citing the law', district: 'investigate from aggregates', apdp: 'give an opinion on the request and the decision, without the data', point_focal: 'decide and close the exchange' },
+      positions: { signal_a_trier: 'signal to triage', AUTORISE: 'allowed', AUTORISE_AVEC_CONDITIONS: 'allowed with conditions', BLOQUE: 'blocked', demande_liste_nominative: 'requests the list of names', avis_conforme: 'compliant opinion', avis_defavorable: 'unfavourable opinion', attente_decision_humaine: 'awaiting a decision', agregats_seulement: 'Aggregates only', cloture_sans_transmission: 'Close without sharing' },
+      desaccordT: 'Disagreement between agents', desaccord: 'The district asks for data that the authority deems inadmissible. The exchange stays open: a human decision is required.',
+      motif: 'Reason for the focal point’s decision (at least 10 characters)', clos: 'Exchange closed by the focal point’s decision, logged with its token.',
+    },
+    ab: {
+      titre: 'With or without governance', chapo: 'The same journeys S1 to S4, replayed twice: once with the Compliance agent, once with an agent that allows everything. The log stays on. Violations are established from the facts.',
+      mode: 'Simulated mode', modes: { demo_synthetique: 'Demonstration', sans_donnees_personnelles: 'Without personal data', complet: 'Full' },
+      rejouer: 'Replay S1 to S4', horsDemo: 'Unavailable: replaying without governance only exists in demonstration mode, on fictitious data.',
+      avec: 'With governance', sans: 'Without governance', violations: '{n} violation(s)', aucune: 'No violation found.',
+      journal: 'Log: {n} entries.', chaineOk: 'Chain intact.',
+      parcours: 'S1 emergency, S2 sensitive medicine, S3 case cluster, S4 leads from the experimental module.',
+      types: { diagnostic_emis: 'Leads sent off the device', prescription_ou_posologie: 'Prescription or dosage', alternative_proposee: 'Alternative suggested', transfert_hors_pays: 'Transfer out of the country', donnees_individuelles_transmises: 'Individual data sent to the district', baisse_non_gelee: 'Score drop despite the freeze', recherche_sensible_journalisee: 'Sensitive search sent or logged', categorie_interdite_traitee: 'Section 48 category processed', signal_sans_validation_humaine: 'Signal published without human validation' },
+    },
     espace: 'Ministry of Health space',
     sous: 'Demo console: focal point, verifier, regulator',
     quitter: 'Leave the console',
@@ -330,7 +359,7 @@ export default {
       ],
       ouvrir: 'Open the demo console',
     },
-    nav: { carte: 'Symptom map', signaux: 'Signals to validate', agrements: 'Licences', offre: 'Supply and demand', politique: 'Policy and gaps' },
+    nav: { carte: 'Symptom map', signaux: 'Signals to validate', coordination: 'Coordination cell', journal: 'Audit log', ab: 'With or without governance', agrements: 'Licences', offre: 'Supply and demand', politique: 'Policy and gaps' },
     syndromes: { tous: 'All symptoms', respiratoire: 'Cough and breathing', fievre: 'Fever', diarrhee: 'Diarrhoea', eruption: 'Fever and rash' },
     carte: {
       titre: 'Map of reported symptoms',
@@ -381,6 +410,8 @@ export default {
       note: 'No automatic alert: a rise in antimalarial searches looks like an outbreak signal, which belongs to the focal point.',
     },
     politique: {
+      mode: 'Operating mode: {v}',
+      verifiee: 'fingerprint verified', source: 'Single source: config/policy.yaml converted by tools/politique_json.py; no legal value written anywhere else.',
       titre: 'Policy and gaps',
       chapo: 'Each legal gap becomes a parameter. The regulator sees the rule applied and measures the effect of another rule before writing it.',
       enVigueur: 'Policy in force', version: 'Version {v}', empreinte: 'SHA-256 fingerprint', calcul: 'computing…',
@@ -413,5 +444,27 @@ export default {
         { id: 'L16', t: 'Status of a computation done only on the phone', p: 'Nothing leaves the device; lawyer’s opinion requested.' },
       ],
     },
+  },
+  decision: {
+    titre: 'How Nolo decided',
+    chapo: 'Each step, the agent that took it, its node in the ITU-T Y.3172 pipeline and the texts cited. Your description never appears here.',
+    noeud: 'ITU-T Y.3172 pipeline node', chargement: 'Loading the text…', conditions: 'Conditions', repli: 'Fallback: {v}', officielle: 'official English version',
+    agents: { saisie: 'Input', reformulation: 'Rewording of signs', signes_danger: 'Danger signs', pistes: 'Leads module (experimental)', conformite: 'Compliance', orientation: 'Referral', tuile: 'District tile', ressources: 'Search', conseiller: '“My health rights” adviser', surveillance: 'Surveillance', district: 'District (simulated)', apdp: 'Data protection authority (simulated)', point_focal: 'Focal point' },
+    decisions: { AUTORISE: 'allowed', AUTORISE_AVEC_CONDITIONS: 'allowed with conditions', BLOQUE: 'blocked', BLOQUE_SANS_FONDEMENT: 'refused: no legal basis', TEXTE_SUR_APPAREIL: 'text read on the device, never sent', VOCABULAIRE_FERME: 'signs mapped to a closed list', URGENCE: 'danger sign found', AUCUN_SIGNE_DANGER: 'no danger sign', TABLE_DEMONSTRATION: 'leads computed on the device (demonstration table)', AUCUNE_PISTE_AFFICHEE: 'no lead shown', URGENCES_PROCHES: 'nearest emergency services', STRUCTURE_RECOMMANDEE: 'suitable facility recommended', CENTRE_DE_SANTE: 'nearest health centre', RECHERCHE_SUR_APPAREIL: 'search done on the device', LISTE_FERMEE: 'choice from a closed list', RESULTATS: 'results shown', RESULTATS_NON_COMPTES: 'results shown, search never counted', RECHERCHE_BM25: 'search in the texts of the base', EXTRAITS_CITES: 'passages quoted, no advice' },
+    statuts: { verifie: 'verified source', ocr: 'scanned copy, OCR reading to be checked', transcription_non_officielle: 'unofficial transcription' },
+  },
+  droits: {
+    titre: 'My health rights', lien: 'My health rights',
+    chapo: 'Ask a question about your rights: Nolo searches the Cameroonian laws in its base and shows you the passages, with their references.',
+    confidentialite: 'Your question is neither kept nor sent: the search runs on the device.',
+    etiquette: 'Your question', compteur: '{n} / {max} characters', bouton: 'Search the texts',
+    exemplesTitre: 'Example questions',
+    exemples: ['Can my health data be sent abroad?', 'Who is allowed to sell medicines to the public in Cameroon?', 'Can I object to a decision made only by a computer?', 'Can a minor consent alone to the processing of personal data?'],
+    extraitsTitre: 'What the texts say',
+    aucun: 'I cannot find a basis in the texts of the base.',
+    etendu: 'No Cameroonian text in the base answers precisely enough: here are international texts, which do not apply directly in Cameroon.',
+    mention: 'Text excerpts, not legal advice; for your situation, consult a lawyer.',
+    chargement: 'Loading the texts…', page: 'p. {n}',
+    erreurs: { vide: 'Write a question.', chargement: 'The texts are not loaded yet: try again in a moment.' },
   },
 };

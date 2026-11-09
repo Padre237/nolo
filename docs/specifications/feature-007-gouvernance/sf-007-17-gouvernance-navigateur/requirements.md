@@ -5,8 +5,8 @@
 | Fonctionnalité | F-007 Gouvernance, conformité, audit et agents |
 | Sous-fonctionnalité | SF-007-17 |
 | Version | 2.0.0 |
-| Statut | UNDER_REVIEW |
-| État d'implémentation | Non implémenté |
+| Statut | IN_TESTING |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 | Origine | AG-01, AG-02, AG-04 (spécification proposée le 2026-11-09) |
 | Bloquant | Aucun |
 | Dépend de | SF-007-01, SF-007-03, SF-011-08 |

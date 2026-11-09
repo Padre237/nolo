@@ -4,6 +4,8 @@ import { recommander, distance } from '../../domain/facilities.js';
 import { etiquette, etatOuverture, ligneStructure } from '../../ui/components.js';
 import { icone } from '../../ui/icons.js';
 import { nomPiste } from './pistes.js';
+import { panneauDecision } from '../../ui/decision.js';
+import { agents } from '../../agents/nolo.js';
 
 /** Panneau de signalétique : « Allez à » + nom de la structure + distance, le trait finit sur l'anneau. */
 export function panneauDirection(e, t, { surTitre, titreId = 'direction-titre', h = 'h1' } = {}) {
@@ -33,8 +35,9 @@ export function panneauDirection(e, t, { surTitre, titreId = 'direction-titre', 
 export default {
   id: 'ou-aller',
   titre: ({ t }) => t('orientation.titre'),
-  chrome: () => ({ retour: '#/pistes', etape: 3 }),
-  garde: ({ s }) => (s.cas?.resultat?.issue === 'pistes' ? null : '#/decrire'),
+  chrome: ({ s }) => ({ retour: s.cas?.resultat?.issue === 'pistes' ? '#/pistes' : '#/verifier', etape: 3 }),
+  // « orientation » : parcours sans module de pistes (FR-1521), de « Vérifier » à « Où aller ».
+  garde: ({ s }) => (['pistes', 'orientation'].includes(s.cas?.resultat?.issue) ? null : '#/decrire'),
   render({ s, t }) {
     const { besoins, pistes } = s.cas.resultat;
     const reco = recommander(besoins);
@@ -43,7 +46,7 @@ export default {
     const lang = t.lang;
     return html`
     <div class="cadre ou-aller">
-      <div class="etiquettes">${etiquette('experimental', t('pistes.module'), 'info')}${etiquette('experimental', t('commun.fictif'))}</div>
+      <div class="etiquettes">${tete ? etiquette('experimental', t('pistes.module'), 'info') : ''}${etiquette('experimental', t('commun.fictif'))}</div>
       ${panneauDirection(e, t, { surTitre: t('orientation.conseillee') })}
 
       <div class="deux-temps deux-temps--egal">
@@ -52,7 +55,7 @@ export default {
           <ul class="raisons" role="list">
             <li>${icone('batiment')}<span>${t('orientation.niveau', { v: t(`niveaux.${besoins.niveau}`) })}</span></li>
             ${besoins.specialites.map((sp) => html`<li>${icone('service')}<span>${t('orientation.specialite', { v: t(`specialites.${sp}`) })}</span></li>`)}
-            <li>${icone('liste')}<span>${t('orientation.piste', { v: nomPiste(tete, lang) })}</span></li>
+            ${tete ? html`<li>${icone('liste')}<span>${t('orientation.piste', { v: nomPiste(tete, lang) })}</span></li>` : ''}
             ${besoins.services.length ? html`<li>${icone('coche')}<span>${t('orientation.services', { v: besoins.services.map((x) => t(`services.${x}`)).join(', ') })}</span></li>` : ''}
           </ul>
           ${reco.rayon && reco.rayon > 5 ? html`<p class="encart encart--menthe">${icone('info')}<span class="encart__corps">${t('orientation.elargi', { km: t.km(reco.rayon) })}</span></p>` : ''}
@@ -61,13 +64,14 @@ export default {
           <p class="note">${icone('serrure', { taille: 16 })} ${t('orientation.serveur')}</p>
           <div class="actions">
             <a class="bouton bouton--principal" href="#/fiche">${icone('fiche', { taille: 20 })}${t('orientation.fiche')}</a>
-            <a class="bouton bouton--discret" href="#/pistes">${t('orientation.retour')}</a>
+            ${tete ? html`<a class="bouton bouton--discret" href="#/pistes">${t('orientation.retour')}</a>` : ''}
           </div>
         </section>
         <section class="pile" aria-labelledby="autres-titre">
           <h2 id="autres-titre" class="titre-2">${t('orientation.autres')}</h2>
           <div class="lignes">${reco.autres.map((x) => ligneStructure(x, t))}</div>
           <p class="note">${t('commun.position')} ${t('commun.numeroFictif')}.</p>
+          ${panneauDecision(s.cas.trace, t, agents()?.base)}
         </section>
       </div>
     </div>`;

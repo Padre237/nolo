@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Inspection visuelle réelle de Nolo (SF-013-10) : 39 états pilotés dans Chrome, à plusieurs largeurs.
+"""Inspection visuelle réelle de Nolo (SF-013-10) : 46 états pilotés dans Chrome, à plusieurs largeurs.
 
 Mesure, pour chaque état : débordement horizontal (et éléments fautifs), cibles de moins de 44 px
 (hors colonnes de graphique, qui ont un tableau équivalent), nombre de h1 dans <main>, erreurs de console.
 
 Usage : python3 tools/inspecter.py [DOSSIER_CAPTURES] [LARGEURS]   ex. : python3 tools/inspecter.py /tmp/captures 360,390,768,1440
 Variable CAPTURER=0 pour ne pas enregistrer de captures. Le script lance lui-même un serveur local sur app/.
-Code de sortie : 0 si aucun défaut, 1 sinon. Dépendances : Playwright (Python) et Chrome (/usr/bin/google-chrome).
+Code de sortie : 0 si aucun défaut, 1 sinon. Dépendances : Playwright (Python) et Chrome (/usr/bin/google-chrome,
+ou le navigateur désigné par la variable NOLO_CHROME).
 """
 import json, sys, os, subprocess, time, pathlib, socket
 from playwright.sync_api import sync_playwright
@@ -55,7 +56,7 @@ def serveur():
 def run():
     rapport = {}
     with sync_playwright() as p:
-        nav = p.chromium.launch(executable_path="/usr/bin/google-chrome", args=["--no-sandbox"])
+        nav = p.chromium.launch(executable_path=os.environ.get("NOLO_CHROME", "/usr/bin/google-chrome"), args=["--no-sandbox"])
         for w in LARGEURS:
             h = 900 if w >= 768 else 800
             ctx = nav.new_context(viewport={"width": w, "height": h}, device_scale_factor=1, service_workers="block", locale="fr-FR", timezone_id="Africa/Douala")
@@ -115,6 +116,8 @@ def run():
             capture("12-verifier-danger")
             page.click("[data-act=voir]")
             capture("13-urgence")
+            page.click(".decision summary")
+            capture("40-urgence-decision")
             # Art. 48
             aller("#/decrire")
             page.click("label[for=qui-moi]")
@@ -196,6 +199,23 @@ def run():
             capture("38-ministere-offre")
             aller("#/ministere/politique")
             capture("39-ministere-politique")
+            aller("#/ministere/journal")
+            page.click("[data-act=verifier-chaine]")
+            capture("41-ministere-journal")
+            aller("#/ministere/coordination")
+            page.click("[data-act=cellule-apdp][data-v=defavorable]")
+            page.click("[data-act=cellule-derouler]")
+            capture("42-ministere-cellule")
+            aller("#/ministere/ab")
+            page.click("[data-act=rejouer-ab]")
+            capture("43-ministere-ab")
+            page.click("[data-act=mode-simule][data-v=complet]")
+            capture("44-ministere-ab-complet")
+            aller("#/droits")
+            capture("45-droits")
+            page.click("[data-act=exemple][data-i='0']")
+            page.wait_for_selector(".extraits")
+            capture("46-droits-reponse")
             # Anglais
             aller("#/")
             page.click("button[data-act=langue][data-valeur=en]")

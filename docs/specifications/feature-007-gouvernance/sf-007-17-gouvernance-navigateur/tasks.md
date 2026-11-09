@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-1901, FR-1902, FR-1903, FR-1904, FR-1905, NFR-1901 |
-| État d'implémentation | Non implémenté |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -25,7 +25,7 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-007-17-01, TEST-007-17-02, TEST-007-17-04, TEST-007-17-05 réussis
 - Tests : TEST-007-17-01, TEST-007-17-02, TEST-007-17-04, TEST-007-17-05
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `app/tests/parite_conformite.test.mjs`, `app/tests/orchestrateur.test.mjs` (rouges avant le code)
 
 ### TASK-007-17-02 — Exporter les décisions attendues depuis Python
 - Exigences : FR-1904
@@ -36,7 +36,7 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-007-17-04 réussis
 - Tests : TEST-007-17-04
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `tools/scenarios/executer.py --exporter-attendus` : 3 908 cas, 89 décisions distinctes (S1 à S3 × 3 politiques, grille de 26 actions)
 
 ### TASK-007-17-03 — Convertir la politique
 - Exigences : FR-1903
@@ -47,7 +47,7 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-007-17-03 réussis
 - Tests : TEST-007-17-03
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `tools/politique_json.py` (et `--verifier`), `app/data/politique.json` 1.4.0, `app/js/domain/politique.js`
 
 ### TASK-007-17-04 — Porter Conformité et orchestrateur
 - Exigences : FR-1901, FR-1902, FR-1904, FR-1905
@@ -58,5 +58,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : TASK-007-17-01, TASK-007-17-02, TASK-007-17-03
 - Condition de fin : TEST-007-17-01, TEST-007-17-02, TEST-007-17-04, TEST-007-17-05 réussis
 - Tests : TEST-007-17-01, TEST-007-17-02, TEST-007-17-04, TEST-007-17-05
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `app/js/agents/conformite.js`, `app/js/agents/orchestrateur.js`, `app/js/agents/parcours.js`, `app/js/agents/nolo.js` ; 0 écart de parité
 

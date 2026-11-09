@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-702, FR-703, FR-730, FR-731, FR-732 |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) ; constitution 2.0.0 (D-033) toujours à ratifier |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -36,5 +36,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : D-033 approuvée
 - Condition de fin : TEST-007-03-05 réussis
 - Tests : TEST-007-03-05
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `diagnostic.afficher_hypotheses`, `orientation.recommander_structure` (26 actions) ; `config/policy.yaml` 1.4.0 (`diagnostic_poc`, `tendances`)
 

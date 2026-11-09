@@ -22,6 +22,7 @@ ART65_66 = "CMR-LOI-2024-017::0062"
 AI_ACT_JOURNAL = "INT-UE-AI-ACT-2024-1689::0032"
 RSI_ART45 = "INT-OMS-RSI-2005-AMENDE-2022::0054"
 PHARM_ART52 = "CMR-LOI-90-035::0049"
+MEDECIN_ART16 = "CMR-LOI-90-036::0015"  # exercice illégal de la médecine (transcription non officielle ; L5)
 
 # Catégories de données (§4) relevant des interdictions de l'art. 48.
 CATEGORIES_ART48 = {"vie_sexuelle": "vie_sexuelle", "donnee_genetique": "genetique_sante",
@@ -109,6 +110,17 @@ TABLE: dict[str, dict] = {
         "modes": {"demo_synthetique": (AC, ("role_auditeur",), None, "REJEU_AUDITEUR"),
                   "sans_donnees_personnelles": (AC, ("role_auditeur", "entrees_fournies_par_auditeur"), None, "REJEU_AUDITEUR"),
                   "complet": (AC, ("role_auditeur", "entrees_fournies_par_auditeur"), None, "REJEU_AUDITEUR")}},
+    # Module POC (D-033, FR-732) : en démonstration seulement, calcul et recherche sur l'appareil.
+    "diagnostic.afficher_hypotheses": {"fragments": [MEDECIN_ART16, ART48], "poc": True,
+        "modes": {"demo_synthetique": (AC, ("module_experimental", "sur_appareil", "max_3_pistes",
+                                            "message_neutre_art48", "aucune_transmission"), None, "POC_DEMO_GOUVERNE"),
+                  "sans_donnees_personnelles": (B, (), None, "FONCTION_INDISPONIBLE_MODE"),
+                  "complet": (B, (), None, "FONCTION_INDISPONIBLE_MODE")}},
+    "orientation.recommander_structure": {"fragments": [MEDECIN_ART16, ART9], "poc": True,
+        "modes": {"demo_synthetique": (AC, ("recherche_sur_appareil", "aucune_transmission"), None,
+                                       "ORIENTATION_POC_SUR_APPAREIL"),
+                  "sans_donnees_personnelles": (B, (), None, "FONCTION_INDISPONIBLE_MODE"),
+                  "complet": (B, (), None, "FONCTION_INDISPONIBLE_MODE")}},
     "politique.simuler": {"fragments": [ART32],
         "modes": {m: (AC, ("variante_en_memoire",), None, "SIMULATION_AUTORISEE")
                   for m in ("demo_synthetique", "sans_donnees_personnelles", "complet")}},
@@ -180,7 +192,13 @@ class AgentConformite:
         if "destination_serveur_cmr" in conditions and d.destination not in ("serveur_cmr", "appareil"):
             return self._bloque(d, "DESTINATION_NON_AUTORISEE", [ART32], ("transfert_hors_pays",))
 
-        # (6) Règles propres à l'action : recherches sensibles -> sur l'appareil (L11).
+        # (6) Règles propres à l'action : module POC (FR-1521, FR-DX-07), puis recherches sensibles (L11).
+        if regle.get("poc"):
+            if not (pol.valeur("diagnostic_poc.actif") and ctx.mode in pol.valeur("diagnostic_poc.modes_autorises")):
+                return self._bloque(d, "MODULE_POC_INACTIF", regle["fragments"], ("diagnostic_poc.actif",))
+            if d.destination != "appareil" and not pol.valeur("diagnostic_poc.transmission_serveur"):
+                return self._bloque(d, "TRANSMISSION_POC_INTERDITE", regle["fragments"],
+                                    ("diagnostic_poc.transmission_serveur",), repli="appareil")
         if regle.get("sensible_bloque") and "vie_sexuelle_potentielle" in d.categories_donnees:
             return self._bloque(d, "RECHERCHE_SENSIBLE_SUR_APPAREIL", [ART48],
                                 ("donnees_sensibles.revele_vie_sexuelle.traitement",), repli="appareil")

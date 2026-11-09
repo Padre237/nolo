@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : parcours Vérifier → suite
 - Alors : aucune route `#/pistes`
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/orchestrateur.test.mjs` › « TEST-001-15-01 : module des pistes absent hors démonstration ou désactivé » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-001-15-02 — Au plus trois pistes triées
 - Type : Unitaire
@@ -78,8 +78,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : lecture du journal de l'appareil
 - Alors : décision avant affichage ; champs minimaux
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/orchestrateur.test.mjs` › « TEST-001-15-06 : décision de Conformité avant affichage ; journal minimal » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-001-15-07 — Mention de démonstration
 - Type : Interface
@@ -89,6 +89,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : rendu
 - Alors : mention visible
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/decision.test.mjs` › « TEST-001-15-07 : la mention « table de démonstration » est visible sur l’écran des pistes » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 

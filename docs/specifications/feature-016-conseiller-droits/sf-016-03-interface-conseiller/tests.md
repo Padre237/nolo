@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : ouvrir
 - Alors : conforme
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/conseiller.test.mjs` › « TEST-016-03-01 : écran du conseiller — champ de 300 caractères, 4 exemples, réponse » (`cd app && node --test tests/*.test.mjs`) ; `tools/inspecter.py` (états 40 à 46)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-016-03-02 — Liens pro et ministère
 - Type : Interface
@@ -34,8 +34,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : lecture
 - Alors : liens présents
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/conseiller.test.mjs` › « TEST-016-03-02 : liens vers le conseiller dans les espaces professionnel et ministériel » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-016-03-03 — Catalogues
 - Type : Unitaire
@@ -45,6 +45,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : comparaison
 - Alors : mêmes clés
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/conseiller.test.mjs` › « TEST-016-03-03 : catalogues droits.* aux mêmes clés » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 

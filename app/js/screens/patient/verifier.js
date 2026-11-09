@@ -3,6 +3,8 @@ import { html } from '../../core/dom.js';
 import { SIGNES, SUGGESTIONS, libelle, questionsDanger, profil, analyser, codeFiche } from '../../domain/engine.js';
 import { motif } from '../../ui/components.js';
 import { icone } from '../../ui/icons.js';
+import { agents } from '../../agents/nolo.js';
+import { deciderResultat } from '../../agents/parcours.js';
 
 const jeu = (c) => {
   const p = profil(c.qui, c.age);
@@ -111,9 +113,10 @@ export default {
       const alerte = Object.values(reponses).some((v) => v === true) || c.signes.presents.some((x) => SIGNES[x]?.danger);
       const restantes = alerte ? 0 : questions.filter((q) => reponses[q.id] === undefined).length;
       if (restantes || !c.signes.presents.length) { set({ cas: { ...c, reponses, tenteVoir: true } }); return; }
-      const resultat = analyser(c.signes, p, reponses);
-      const route = { urgence: '#/urgence', hors_champ: '#/hors-champ', art48: '#/confidentiel', pistes: '#/pistes' }[resultat.issue];
-      set({ cas: { ...c, reponses, resultat, tenteVoir: false, code: c.code || codeFiche(Date.now()), date: new Date().toISOString() } });
+      // Décision de Conformité avant tout affichage (FR-1527) ; rien ne s'affiche sans elle (FR-1901).
+      const { resultat, trace } = deciderResultat(agents().orchestrateur, analyser(c.signes, p, reponses), { profil: p });
+      const route = { urgence: '#/urgence', hors_champ: '#/hors-champ', art48: '#/confidentiel', pistes: '#/pistes', orientation: '#/ou-aller' }[resultat.issue];
+      set({ cas: { ...c, reponses, resultat, trace, tenteVoir: false, code: c.code || codeFiche(Date.now()), date: new Date().toISOString() } });
       location.hash = route;
     },
   },

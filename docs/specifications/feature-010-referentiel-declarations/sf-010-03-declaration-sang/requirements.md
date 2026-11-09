@@ -5,7 +5,7 @@
 | Fonctionnalité | F-010 Espace établissement |
 | Sous-fonctionnalité | SF-010-03 |
 | Version | 2.0.0 |
-| Statut | UNDER_REVIEW |
+| Statut | READY_FOR_DEV |
 | État d'implémentation | Partiellement implémenté — rétro-spécifié le 2026-11-09 ; écarts au §9 de design.md |
 | Origine | Spécification v1.3 (FR-501) ; D-029 |
 | Bloquant | Aucun |

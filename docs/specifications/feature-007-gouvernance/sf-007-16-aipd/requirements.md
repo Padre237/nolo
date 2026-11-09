@@ -5,7 +5,7 @@
 | Fonctionnalité | F-007 Gouvernance, conformité, audit et agents |
 | Sous-fonctionnalité | SF-007-16 |
 | Version | 2.0.0 |
-| Statut | UNDER_REVIEW |
+| Statut | READY_FOR_DEV |
 | État d'implémentation | Non implémenté |
 | Origine | Spécification v1.3 (FR-708) ; art. 33 |
 | Bloquant | Aucun |

@@ -3,12 +3,16 @@
     python3 tools/scenarios/executer.py --scenario <orientation_urgente|medicament_sensible|regroupement>
                                         [--politique config/variantes/<v>.yaml] [--sans-gouvernance]
                                         [--sortie rapport.json]
+    python3 tools/scenarios/executer.py --exporter-attendus tests/js/fixtures/decisions_attendues.json
 
 - Mode `demo_synthetique` obligatoire ; l'horloge de chaque étape est injectée (ADR-013).
 - `--sans-gouvernance` (FR-710) : remplace l'agent Conformité par un agent qui autorise tout,
   SANS désactiver le journal ; le rapport liste les violations (liste fermée du §8 des contrats).
 - `--politique` (FR-707) : variante « et si » chargée EN MÉMOIRE ; le rapport ajoute les différences
   de verdicts par rapport à la politique de référence.
+- `--exporter-attendus` (SF-007-17, FR-1904) : décisions de la référence Python pour les scénarios S1 à S3
+  (politique de référence et chaque variante de `config/variantes/`) et pour une grille de toutes les actions ;
+  oracle des tests de parité de Nolo (`app/tests/parite_conformite.test.mjs`).
 Écart assumé (incrément D-025 §5) : appels en processus via l'orchestrateur, pas en HTTP.
 """
 from __future__ import annotations
@@ -80,6 +84,7 @@ class Execution:
         assert self.orch.mode == "demo_synthetique", "l'exécuteur ne tourne qu'en mode démo"
         self.sans_gouvernance = sans_gouvernance
         self.decisions: list[dict] = []
+        self.demandes: list[dict] = []
         self.transmissions_individuelles: list[dict] = []
         self.publications: list[dict] = []
         self.etat: dict = {}
@@ -92,6 +97,9 @@ class Execution:
         r = self.orch.executer(demandeur=demandeur, action=action, categories=categories,
                                finalite=finalite, destination=destination, contexte=ctx,
                                entree=entree, executeur=executeur, validateur_humain=validateur)
+        self.demandes.append({"action": action, "categories": list(categories), "finalite": finalite,
+                              "destination": destination, "consentements": dict(ctx.consentements),
+                              "mode": ctx.mode, "mineur": ctx.mineur})
         self.decisions.append({"action": action, "verdict": r.decision.verdict,
                                "fragments": list(r.decision.fragments),
                                "conditions": list(r.decision.conditions),
@@ -380,8 +388,77 @@ def afficher(rapport: dict) -> None:
                   + (f" ({d['note']})" if d.get("note") else ""))
 
 
+def decision_exportee(d) -> dict:
+    return {"verdict": d.verdict, "conditions": list(d.conditions), "fragments": list(d.fragments),
+            "cles": list(d.cles_politique), "version": d.version_politique, "repli": d.repli,
+            "justification": d.justification_code}
+
+
+def exporter_attendus(chemin: Path) -> int:
+    """Oracle de parité (FR-1904) : chaque demande rejouée telle quelle par AgentConformite.
+    Format compact : `decisions` (décisions distinctes) et `cas` = [origine, variante, action, catégories (+),
+    finalité, destination, consentements (+), mode, mineur (0/1), indice de la décision]."""
+    from src.server.agents.conformite import TABLE, nouvelle_demande
+    from src.server.gouvernance.contrats import MODES, Contexte
+    base_pol = Politique.charger(RACINE / "config" / "policy.yaml")
+    variantes = {"reference": {}}
+    for f in sorted((RACINE / "config" / "variantes").glob("*.yaml")):
+        variantes[f.stem] = yaml.safe_load(f.read_text(encoding="utf-8"))["changements"]
+    decisions: list[dict] = []
+    index: dict[str, int] = {}
+    cas: list[list] = []
+
+    def ajouter(origine, nom_var, agent, pol, action, cats, finalite, dest, cons, mode, mineur):
+        ctx = Contexte(session="demo:parite", mode=mode, maintenant=datetime(2026, 7, 20, tzinfo=DOUALA),
+                       consentements=cons, mineur=mineur, politique=pol)
+        d = decision_exportee(agent.decider(nouvelle_demande("parite", action, tuple(cats), finalite, dest, ctx)))
+        cle = json.dumps(d, sort_keys=True)
+        if cle not in index:
+            index[cle] = len(decisions)
+            decisions.append(d)
+        cas.append([origine, nom_var, action, "+".join(cats), finalite, dest,
+                    "+".join(k for k, v in sorted(cons.items()) if v), mode, int(mineur), index[cle]])
+
+    with __import__("tempfile").TemporaryDirectory() as tmp:
+        for nom_var, chg in variantes.items():
+            pol = base_pol.variante(chg) if chg else base_pol
+            agent = AgentConformite(pol)
+            for nom in sorted(SCENARIOS):
+                ex = Execution(pol, Path(tmp) / f"{nom}_{nom_var}.jsonl", False)
+                SCENARIOS[nom](ex, etapes_scenario(nom), datetime(2026, 7, 20, 9, 0, tzinfo=DOUALA))
+                for dem in ex.demandes:
+                    ajouter(nom, nom_var, agent, pol, dem["action"], dem["categories"], dem["finalite"],
+                            dem["destination"], dem["consentements"], dem["mode"], dem["mineur"])
+        # Grille (politique de référence) : toutes les actions et une inconnue × modes × destinations ×
+        # catégories × états de consentement ; plus le profilage.
+        pol = base_pol
+        agent = AgentConformite(pol)
+        etats = [({}, False), ({"orientation": True, "surveillance": True}, False),
+                 ({"orientation": True, "surveillance": True}, True),
+                 ({"orientation": True, "surveillance": True, "parental": True}, True)]
+        for action in [*sorted(TABLE), "action.inconnue"]:
+            for mode in MODES:
+                for dest in ("appareil", "serveur_cmr", "hors_cmr"):
+                    for cats in (("aucune_donnee_personnelle",), ("symptomes_codes",),
+                                 ("requete_medicament", "vie_sexuelle_potentielle"), ("vie_sexuelle",)):
+                        for cons, mineur in etats:
+                            ajouter("grille", "reference", agent, pol, action, cats, "orientation", dest, cons, mode, mineur)
+                ajouter("grille", "reference", agent, pol, action, ("symptomes_codes",), "profilage", "serveur_cmr",
+                        {"orientation": True, "surveillance": True}, mode, False)
+    chemin.parent.mkdir(parents=True, exist_ok=True)
+    chemin.write_text(json.dumps({"politique": base_pol.version, "genere_par": "tools/scenarios/executer.py --exporter-attendus",
+                                  "variantes": variantes, "decisions": decisions, "cas": cas},
+                                 ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
+    print(f"{chemin} : {len(cas)} cas, {len(decisions)} décisions distinctes "
+          f"(scénarios S1 à S3 × {len(variantes)} politiques ; grille de {len(TABLE) + 1} actions)")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
+    if "--exporter-attendus" in sys.argv:
+        ap.add_argument("--exporter-attendus", required=True)
+        return exporter_attendus(Path(ap.parse_args().exporter_attendus))
     ap.add_argument("--scenario", required=True, choices=sorted(SCENARIOS))
     ap.add_argument("--politique", default=None, help="fichier de variante « et si » (config/variantes/…)")
     ap.add_argument("--sans-gouvernance", action="store_true")

@@ -134,6 +134,7 @@ export default {
       <div class="pro__corps">
         <nav class="pro__nav" aria-label="${t('pro.espace')}">
           ${VUES.filter(([v]) => (v !== 'stock' || stock.length) && (v !== 'services' || ['hopital', 'centre_sante', 'centre_specialise'].includes(c.type))).map(([v, ico]) => html`<a class="pro__lien" href="#/pro/tableau/${v}" aria-current="${v === vue ? 'page' : 'false'}">${icone(ico, { taille: 20 })}<span>${t(`pro.nav.${v}`)}</span>${v === 'tendances' && c.visibilite !== 'VERIFIE' ? icone('serrure', { taille: 16, cls: 'pro__verrou' }) : ''}</a>`)}
+          <a class="pro__lien" href="#/droits">${icone('fiche', { taille: 20 })}<span>${t('droits.lien')}</span></a>
         </nav>
         <div class="pro__vue" data-cle="vue-${vue}">${corps}</div>
       </div>

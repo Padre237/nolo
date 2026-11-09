@@ -2,7 +2,7 @@
 
 Généré par `python3 tools/sdd_index.py` — ne pas modifier à la main.
 
-39 écarts connus (§9 des `design.md`). Chacun a une tâche « À faire » ou « Partiel » dans son dossier.
+33 écarts connus (§9 des `design.md`). Chacun a une tâche « À faire » ou « Partiel » dans son dossier.
 
 | Dossier | Écart |
 |---|---|
@@ -12,9 +12,6 @@ Généré par `python3 tools/sdd_index.py` — ne pas modifier à la main.
 | [SF-001-07](feature-001-orientation/sf-001-07-calcul-niveau/design.md) Calcul du niveau d'urgence (moteur v1) | FR-168 : Nolo ne détecte l'urgence que par sa propre liste (`SIGNES` avec `danger: true`) et les questions de sécurité ; le moteur v1 n'y est pas encore branché. |
 | [SF-001-09](feature-001-orientation/sf-001-09-cas-ambigu/design.md) Cas ambigu : relèvement prudent et renvoi vers un soignant | FR-180 partiellement : la liste est accessible depuis « Décrire » et « Vérifier » ; le seuil d'ambiguïté (FR-181) et le lien d'intervention humaine (FR-182) n'existent pas. |
 | [SF-001-12](feature-001-orientation/sf-001-12-numeros-urgence/design.md) Numéros d'urgence et barre de sécurité | FR-196 : les numéros 119 et 112 sont écrits dans les catalogues (`commun.appeler119`, `commun.appeler112`), pas lus depuis `policy.yaml`. |
-| [SF-001-15](feature-001-orientation/sf-001-15-pistes-poc/design.md) Pistes expérimentales (POC) : au plus trois, avec leur score et leur origine | FR-1521 : le module est toujours actif (aucune lecture du mode ni de `diagnostic_poc.actif`). |
-| [SF-001-15](feature-001-orientation/sf-001-15-pistes-poc/design.md) Pistes expérimentales (POC) : au plus trois, avec leur score et leur origine | FR-1526, FR-1527 : aucune décision de Conformité ni journal dans Nolo (AG-01, SF-007-17). |
-| [SF-001-15](feature-001-orientation/sf-001-15-pistes-poc/design.md) Pistes expérimentales (POC) : au plus trois, avec leur score et leur origine | FR-1528 : la mention « table de démonstration » figure dans le code, pas à l'écran. |
 | [SF-002-01](feature-002-surveillance/sf-002-01-contribution/design.md) Contribution consentie à la surveillance | Nolo ne transmet aucune contribution (pas de serveur) : les comptes de la console sont fictifs (`compteAire`, `compteRegion`). |
 | [SF-002-03](feature-002-surveillance/sf-002-03-detection-signal/design.md) Détection des regroupements (CUSUM) et définitions de cas | FR-203 : la console de Nolo n'affiche pas de définition SC ; le rattachement n'existe que dans le scénario S3 (SC1). |
 | [SF-002-05](feature-002-surveillance/sf-002-05-delais-rappels/design.md) Délais SBC et rappels | FR-243 : la console n'affiche pas d'échéance. |
@@ -41,7 +38,4 @@ Généré par `python3 tools/sdd_index.py` — ne pas modifier à la main.
 | [SF-011-03](feature-011-base-connaissances/sf-011-03-recherche/design.md) Recherche documentaire (BM25 ; ChromaDB en option) | FR-1110 : non exécuté (paquets non installables dans l'environnement de Claude) ; à mesurer par l'équipe. |
 | [SF-012-01](feature-012-donnees-scenarios/sf-012-01-donnees-patients-surveillance/design.md) Patients et séries de surveillance synthétiques (référence Python) | `patients.csv` utilise les anciens niveaux d'urgence (à régénérer avec les règles v2). |
 | [SF-014-01](feature-014-tendances-demande/sf-014-01-compteurs-anonymes/design.md) Compteurs anonymes de la demande | Nolo n'a pas de serveur : les tendances affichées viennent de compteurs fictifs générés (`app/js/domain/trends.js`) ; le comptage réel est dans le service de référence. |
-| [SF-015-04](feature-015-console-ministere/sf-015-04-politique-versionnee/design.md) Politique versionnée et empreinte | FR-2120 : la console affiche `POLITIQUE` de `app/js/domain/surveillance.js` (version « 1.3.2 », sous-ensemble écrit à la main) alors que `config/policy.yaml` est en 1.3.0. |
 | [SF-015-06](feature-015-console-ministere/sf-015-06-lacunes/design.md) Registre des lacunes dans la console | FR-2131 : registre du dépôt aligné le 2026-11-09 (L1 à L16) ; le test automatique de cohérence avec les catalogues reste à écrire. |
-| [SF-017-01](feature-017-livrables/sf-017-01-rapport/design.md) Rapport technique (5 pages, anglais) | FR-2302 : le rapport ne cite pas « 2 055 fragments, 22 documents » (aucune preuve datée) ; il cite la version publique prouvée (2 034 fragments, 21 documents) et la 22e source tenue en fiche de métadonnées (Q-017-01-01, TASK-017-01-02). |
-| [SF-017-01](feature-017-livrables/sf-017-01-rapport/design.md) Rapport technique (5 pages, anglais) | DES-017-01-01 : le PDF n'est pas dans `docs/submission/` mais hors du dépôt, `../livrables/rapport-technique-en.pdf`, produit par `tools/rapport_pdf.py` (aucun PDF dans l'arborescence, FR-2308) (Q-017-01-02, TASK-017-01-02). |

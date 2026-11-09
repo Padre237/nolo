@@ -5,8 +5,8 @@
 | Fonctionnalité | F-016 Conseiller « Mes droits santé » |
 | Sous-fonctionnalité | SF-016-02 |
 | Version | 2.0.0 |
-| Statut | UNDER_REVIEW |
-| État d'implémentation | Non implémenté |
+| Statut | IN_TESTING |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 | Origine | D-026 ; AG-06 ; Principe III |
 | Bloquant | Aucun |
 | Dépend de | SF-016-01 |
@@ -39,7 +39,7 @@ Aucune.
 ## 6. Règles métier et contraintes
 | ID | Règle | Source (chunk_id, clé `policy.yaml`, décision) |
 |---|---|---|
-| — | Aucune | — |
+| BR-016-02-01 | Seuil de pertinence : score BM25 ≥ 8 pour qu'un fragment soit cité ; en dessous, recherche étendue aux textes `INT-`, puis « aucun fondement » | Mesure du 2026-11-09 (`docs/quality/preuve-2026-11-09-vague-b.txt`) : questions hors sujet < 8 (pain 6,35 ; météo 7,25), questions de la base ≥ 8,7 ; [PROPOSITION, Q-016-02-01] |
 
 ## 7. Critères d'acceptation
 | ID | Exigences | Critère (étant donné, quand, alors) | Vérifié par |
@@ -55,7 +55,7 @@ Rien de particulier.
 ## 9. Questions ouvertes
 | ID | Question | Proposition | Statut |
 |---|---|---|---|
-| — | Aucune | — | — |
+| Q-016-02-01 | Le seuil de pertinence (BR-016-02-01) n'est fixé par aucun texte ni aucune décision. | Garder 8, mesuré sur 45 questions (40 de l'évaluation, 5 hors sujet) ; le revoir avec de nouvelles questions de citoyens | Ouverte (appliquée le 2026-11-09) |
 
 ## 10. Contexte à charger avant de travailler sur ce dossier
 Lire dans cet ordre, et rien d'autre tant que la tâche n'exige pas davantage :

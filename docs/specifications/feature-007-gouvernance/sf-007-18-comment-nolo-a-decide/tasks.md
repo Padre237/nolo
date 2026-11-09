@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-1911, FR-1912, FR-1913, FR-1914, FR-1915 |
-| État d'implémentation | Non implémenté |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -25,7 +25,7 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-007-18-01, TEST-007-18-02, TEST-007-18-03, TEST-007-18-04, TEST-007-18-05 réussis
 - Tests : TEST-007-18-01, TEST-007-18-02, TEST-007-18-03, TEST-007-18-04, TEST-007-18-05
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `app/tests/decision.test.mjs`
 
 ### TASK-007-18-02 — Panneau et extraits
 - Exigences : FR-1911, FR-1912, FR-1913, FR-1914, FR-1915
@@ -36,5 +36,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : SF-007-17, SF-011-08
 - Condition de fin : TEST-007-18-01, TEST-007-18-02, TEST-007-18-03, TEST-007-18-04, TEST-007-18-05 réussis
 - Tests : TEST-007-18-01, TEST-007-18-02, TEST-007-18-03, TEST-007-18-04, TEST-007-18-05
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `app/js/ui/decision.js` ; panneau sur pistes, urgence, confidentiel, hors champ, Où aller, recherche ; catalogues `decision.*`
 

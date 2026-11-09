@@ -41,6 +41,7 @@ export default {
   },
 
   accueil: {
+    droits: 'Mes droits santé', droitsB: 'Ce que disent les lois camerounaises, extraits à l’appui',
     titre: 'Que se passe-t-il ?',
     action: 'Décrire ce que je ressens', actionB: 'Avec vos mots, en français ou en anglais. Nolo vous dit où aller.',
     chercherTitre: 'Chercher près de vous',
@@ -92,6 +93,7 @@ export default {
   },
 
   pistes: {
+    tableDemo: 'Table de démonstration',
     titre: 'Pistes à confirmer', chapo: 'Ces pistes aident à choisir où aller. Seul un soignant peut dire ce que vous avez.',
     module: 'Module expérimental',
     signes: '{x} des {y} signes typiques présents', retrouves: 'Retrouvés : {liste}',
@@ -317,6 +319,33 @@ export default {
       evenements: { creation: 'Compte créé', confirmation: 'E-mail confirmé', connexion: 'Connexion', fiche: 'Fiche envoyée', verification: 'Vérification : {etat}', import: 'Import du stock : {a} publiée(s), {r} rejetée(s)', confirmationStock: 'Stock confirmé sans changement', desactivation: 'Compte désactivé', reactivation: 'Compte réactivé', photos: 'Photos ajoutées' } },
   },
   ministere: {
+    journal: {
+      titre: 'Journal d’audit chaîné', memoire: 'En mémoire, sur cet appareil',
+      chapo: 'Chaque décision des agents de cette session, en ajout seul : chaque entrée porte l’empreinte SHA-256 de la précédente. Aucun texte libre, aucun signe.',
+      verifier: 'Vérifier la chaîne', alterer: 'Altérer une entrée (démonstration)', restaurer: 'Restaurer le journal',
+      valide: 'Chaîne intacte : {n} entrées vérifiées.', invalide: 'Entrée n° {n} invalide : {raison}. Toutes les suivantes deviennent suspectes.',
+      raisons: { empreinte: 'son contenu ne correspond plus à son empreinte', hash_precedent: 'elle ne pointe plus vers l’entrée précédente' },
+      vide: 'Aucune décision dans cette session. Faites un parcours côté citoyen, ou déroulez la cellule de coordination.',
+      colonnes: { n: 'N°', heure: 'Heure', agent: 'Agent', action: 'Action', decision: 'Décision', fragments: 'Textes cités', hash: 'Empreinte' },
+    },
+    cellule: {
+      titre: 'Cellule de coordination', chapo: 'Autour d’un signal, chaque agent ne reçoit que ce que son mandat permet et prend une position distincte, datée et journalisée. Un désaccord n’est jamais tranché en faveur du partage : seul le point focal clôt l’échange.',
+      signal: 'Signal', avisApdp: 'Avis de l’APDP (simulée)', avis: { conforme: 'Conforme', defavorable: 'Défavorable' },
+      derouler: 'Dérouler l’échange', mandat: 'Mandat', recu: 'A reçu',
+      mandats: { surveillance: 'proposer un signal à partir des agrégats', conformite: 'décider en citant la loi', district: 'investiger à partir des agrégats', apdp: 'donner un avis sur la demande et la décision, sans les données', point_focal: 'décider et clore l’échange' },
+      positions: { signal_a_trier: 'signal à trier', AUTORISE: 'autorisé', AUTORISE_AVEC_CONDITIONS: 'autorisé sous conditions', BLOQUE: 'bloqué', demande_liste_nominative: 'demande la liste nominative', avis_conforme: 'avis conforme', avis_defavorable: 'avis défavorable', attente_decision_humaine: 'en attente de décision', agregats_seulement: 'Agrégats seulement', cloture_sans_transmission: 'Clore sans transmission' },
+      desaccordT: 'Désaccord entre agents', desaccord: 'Le District demande des données que l’APDP juge irrecevables. L’échange reste ouvert : décision humaine requise.',
+      motif: 'Motif de la décision du point focal (10 caractères au moins)', clos: 'Échange clos par la décision du point focal, journalisée avec son jeton.',
+    },
+    ab: {
+      titre: 'Avec ou sans gouvernance', chapo: 'Les mêmes parcours S1 à S4, rejoués deux fois : une fois avec l’agent Conformité, une fois avec un agent qui autorise tout. Le journal reste actif. Les violations sont constatées sur les faits.',
+      mode: 'Mode simulé', modes: { demo_synthetique: 'Démonstration', sans_donnees_personnelles: 'Sans données personnelles', complet: 'Complet' },
+      rejouer: 'Rejouer S1 à S4', horsDemo: 'Indisponible : le rejeu sans gouvernance n’existe qu’en mode démonstration, sur des données fictives.',
+      avec: 'Avec gouvernance', sans: 'Sans gouvernance', violations: '{n} violation(s)', aucune: 'Aucune violation constatée.',
+      journal: 'Journal : {n} entrées.', chaineOk: 'Chaîne intacte.',
+      parcours: 'S1 urgence, S2 médicament sensible, S3 regroupement de cas, S4 pistes du module expérimental.',
+      types: { diagnostic_emis: 'Pistes envoyées hors de l’appareil', prescription_ou_posologie: 'Prescription ou posologie', alternative_proposee: 'Alternative proposée', transfert_hors_pays: 'Transfert hors du pays', donnees_individuelles_transmises: 'Données individuelles transmises au district', baisse_non_gelee: 'Baisse de score malgré le gel', recherche_sensible_journalisee: 'Recherche sensible transmise ou journalisée', categorie_interdite_traitee: 'Catégorie de l’art. 48 traitée', signal_sans_validation_humaine: 'Signal publié sans validation humaine' },
+    },
     espace: 'Espace ministère de la Santé',
     sous: 'Console de démonstration : point focal, vérificateur, régulateur',
     quitter: 'Quitter la console',
@@ -330,7 +359,7 @@ export default {
       ],
       ouvrir: 'Ouvrir la console de démonstration',
     },
-    nav: { carte: 'Carte des signes', signaux: 'Signaux à valider', agrements: 'Agréments', offre: 'Offre et demande', politique: 'Politique et lacunes' },
+    nav: { carte: 'Carte des signes', signaux: 'Signaux à valider', coordination: 'Cellule de coordination', journal: 'Journal d’audit', ab: 'Avec ou sans gouvernance', agrements: 'Agréments', offre: 'Offre et demande', politique: 'Politique et lacunes' },
     syndromes: { tous: 'Tous les signes', respiratoire: 'Toux et respiration', fievre: 'Fièvre', diarrhee: 'Diarrhée', eruption: 'Fièvre et éruption' },
     carte: {
       titre: 'Carte des signes déclarés',
@@ -381,6 +410,8 @@ export default {
       note: 'Aucune alerte automatique : une hausse des recherches d’antipaludiques ressemble à un signal épidémique, qui relève du point focal.',
     },
     politique: {
+      mode: 'Mode de fonctionnement : {v}',
+      verifiee: 'empreinte vérifiée', source: 'Source unique : config/policy.yaml converti par tools/politique_json.py ; aucune valeur juridique écrite ailleurs.',
       titre: 'Politique et lacunes',
       chapo: 'Chaque lacune des textes devient un paramètre. Le régulateur voit la règle appliquée et mesure l’effet d’une autre règle avant de l’écrire.',
       enVigueur: 'Politique en vigueur', version: 'Version {v}', empreinte: 'Empreinte SHA-256', calcul: 'calcul…',
@@ -413,5 +444,27 @@ export default {
         { id: 'L16', t: 'Statut d’un calcul fait seulement sur le téléphone', p: 'Rien ne quitte l’appareil ; avis du juriste demandé.' },
       ],
     },
+  },
+  decision: {
+    titre: 'Comment Nolo a décidé',
+    chapo: 'Chaque étape, l’agent qui l’a menée, son nœud dans le pipeline UIT-T Y.3172 et les textes cités. Votre description n’y figure jamais.',
+    noeud: 'Nœud du pipeline UIT-T Y.3172', chargement: 'Texte en cours de chargement…', conditions: 'Conditions', repli: 'Repli : {v}', officielle: 'version anglaise officielle',
+    agents: { saisie: 'Saisie', reformulation: 'Reformulation des signes', signes_danger: 'Signes de danger', pistes: 'Module de pistes (expérimental)', conformite: 'Conformité', orientation: 'Orientation', tuile: 'Tuile du district', ressources: 'Recherche', conseiller: 'Conseiller « Mes droits santé »', surveillance: 'Surveillance', district: 'District (simulé)', apdp: 'APDP (simulée)', point_focal: 'Point focal' },
+    decisions: { AUTORISE: 'autorisé', AUTORISE_AVEC_CONDITIONS: 'autorisé sous conditions', BLOQUE: 'bloqué', BLOQUE_SANS_FONDEMENT: 'refusé : aucun fondement', TEXTE_SUR_APPAREIL: 'texte lu sur l’appareil, jamais envoyé', VOCABULAIRE_FERME: 'signes traduits dans une liste fermée', URGENCE: 'signe de danger trouvé', AUCUN_SIGNE_DANGER: 'aucun signe de danger', TABLE_DEMONSTRATION: 'pistes calculées sur l’appareil (table de démonstration)', AUCUNE_PISTE_AFFICHEE: 'aucune piste affichée', URGENCES_PROCHES: 'urgences les plus proches', STRUCTURE_RECOMMANDEE: 'structure adaptée recommandée', CENTRE_DE_SANTE: 'centre de santé le plus proche', RECHERCHE_SUR_APPAREIL: 'recherche faite sur l’appareil', LISTE_FERMEE: 'choix dans une liste fermée', RESULTATS: 'résultats affichés', RESULTATS_NON_COMPTES: 'résultats affichés, recherche jamais comptée', RECHERCHE_BM25: 'recherche dans les textes de la base', EXTRAITS_CITES: 'extraits cités, sans avis' },
+    statuts: { verifie: 'source vérifiée', ocr: 'copie numérisée, lecture OCR à vérifier', transcription_non_officielle: 'transcription non officielle' },
+  },
+  droits: {
+    titre: 'Mes droits santé', lien: 'Mes droits santé',
+    chapo: 'Posez une question sur vos droits : Nolo cherche dans les lois camerounaises de sa base et vous montre les passages, avec leurs références.',
+    confidentialite: 'Votre question n’est ni conservée ni envoyée : la recherche se fait sur l’appareil.',
+    etiquette: 'Votre question', compteur: '{n} / {max} caractères', bouton: 'Chercher dans les textes',
+    exemplesTitre: 'Exemples de questions',
+    exemples: ['Mes données de santé peuvent-elles partir à l’étranger ?', 'Qui a le droit de vendre des médicaments au public ?', 'Puis-je refuser qu’une machine décide seule à mon sujet ?', 'Mon fils de 15 ans peut-il accepter seul que ses données soient traitées ?'],
+    extraitsTitre: 'Ce que disent les textes',
+    aucun: 'Je ne trouve pas de fondement dans les textes de la base.',
+    etendu: 'Aucun texte camerounais de la base ne répond assez précisément : voici des textes internationaux, qui ne s’appliquent pas directement au Cameroun.',
+    mention: 'Extraits de textes, pas un avis juridique ; pour votre situation, consultez un juriste.',
+    chargement: 'Chargement des textes…', page: 'p. {n}',
+    erreurs: { vide: 'Écrivez une question.', chargement: 'Les textes ne sont pas encore chargés : réessayez dans un instant.' },
   },
 };

@@ -5,7 +5,7 @@
 | Fonctionnalité | F-008 Consentements et droits |
 | Sous-fonctionnalité | SF-008-06 |
 | Version | 2.0.0 |
-| Statut | UNDER_REVIEW |
+| Statut | APPROVED |
 | État d'implémentation | Partiellement implémenté — rétro-spécifié le 2026-11-09 ; écarts au §9 de design.md |
 | Origine | Spécification v1.3 (FR-108) ; art. 44 ; D-014 (Proposé) |
 | Bloquant | D-014 |

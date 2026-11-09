@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `executer`
 - Alors : rien n'est fait ; erreur ou sans fondement
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/orchestrateur.test.mjs` › « TEST-007-17-01 : rien ne s’exécute sans décision ; action inconnue = sans fondement » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-007-17-02 — Fragments existants
 - Type : Unitaire
@@ -34,8 +34,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : contrôle des fragments
 - Alors : tous dans la base
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/parite_conformite.test.mjs` › « TEST-007-17-02 : chaque fragment cité existe dans la base embarquée » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-007-17-03 — Politique convertie
 - Type : Unitaire
@@ -45,8 +45,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `python3 tools/politique_json.py`
 - Alors : même version et empreinte
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/parite_conformite.test.mjs` › « TEST-007-17-03 : politique convertie — même version que policy.yaml, même empreinte canonique » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-007-17-04 — Parité JS / Python
 - Type : Propriété
@@ -56,8 +56,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : rejeu en JS
 - Alors : 0 écart
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/parite_conformite.test.mjs` › « TEST-007-17-04 : mêmes verdicts, conditions, replis et fragments que Python (S1 à S3, variantes, grille) » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-007-17-05 — Mode démo
 - Type : Unitaire
@@ -67,8 +67,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : lecture du mode
 - Alors : `demo_synthetique`
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/orchestrateur.test.mjs` › « TEST-007-17-05 : Nolo fonctionne en mode demo_synthetique » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-007-17-06 — Décision rapide
 - Type : Performance
@@ -78,6 +78,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : 1 000 décisions
 - Alors : médiane ≤ 5 ms ; `politique.json` ≤ 30 Kio
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/parite_conformite.test.mjs` › « TEST-007-17-06 : décision rapide (médiane ≤ 5 ms) ; politique ≤ 30 Kio » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 

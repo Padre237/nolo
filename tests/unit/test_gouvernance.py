@@ -199,3 +199,31 @@ def test_hors_demo_l_entree_n_est_pas_conservee(politique, journal):
                    entree={"groupe": "AB+"})
     assert r.evenement["entree_minimisee"]["entree"] is None
     assert r.evenement["entree_minimisee"]["empreinte_entree"].startswith("sha256:")
+
+
+# --- Actions du module POC (SF-007-03, FR-732, TEST-007-03-05) ----------------------------------------
+POC = ("diagnostic.afficher_hypotheses", "orientation.recommander_structure")
+
+
+def test_actions_du_module_poc(politique):
+    a = AgentConformite(politique)
+    for action in POC:
+        dec = a.decider(nouvelle_demande("pistes", action, ("symptomes_codes",), "orientation", "appareil",
+                                         ctx(politique)))
+        assert dec.verdict == "AUTORISE_AVEC_CONDITIONS", (action, dec.justification_code)
+        assert dec.fragments and "aucune_transmission" in dec.conditions
+        for mode in ("complet", "sans_donnees_personnelles"):
+            dec = a.decider(nouvelle_demande("pistes", action, ("symptomes_codes",), "orientation", "appareil",
+                                             ctx(politique, mode)))
+            assert dec.verdict == "BLOQUE" and dec.fragments, (action, mode)
+
+
+def test_module_poc_inactif_ou_transmis_est_bloque(politique):
+    a = AgentConformite(politique)
+    inactif = AgentConformite(politique.variante({"diagnostic_poc.actif": False}))
+    for action in POC:
+        d = nouvelle_demande("pistes", action, ("symptomes_codes",), "orientation", "appareil", ctx(politique))
+        assert inactif.decider(d).justification_code == "MODULE_POC_INACTIF"
+        d = nouvelle_demande("pistes", action, ("symptomes_codes",), "orientation", "serveur_cmr", ctx(politique))
+        dec = a.decider(d)
+        assert dec.verdict == "BLOQUE" and dec.justification_code == "TRANSMISSION_POC_INTERDITE"

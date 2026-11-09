@@ -10,8 +10,16 @@ import { etiquette, erreurChamp } from '../../ui/components.js';
 import { icone } from '../../ui/icons.js';
 import { comptes, mettreAJour, journal } from '../pro/compte.js';
 import { cheminVerification } from '../pro/entree.js';
+import { agents } from '../../agents/nolo.js';
+import { derouler } from '../../agents/cellule.js';
+import { rejouer, abDisponible } from '../../agents/ab.js';
+import { MODES } from '../../agents/conformite.js';
+import { ligneFragment } from '../../ui/decision.js';
 
-const VUES = [['carte', 'repere'], ['signaux', 'alerte'], ['agrements', 'bouclier'], ['offre', 'graphique'], ['politique', 'donnees']];
+const VUES = [['carte', 'repere'], ['signaux', 'alerte'], ['coordination', 'service'], ['agrements', 'bouclier'], ['offre', 'graphique'], ['politique', 'donnees'], ['journal', 'liste'], ['ab', 'cible']];
+const POINT_FOCAL = { role: 'point_focal', id: 'jeton:PF-01' };
+/** Toute action de la console passe par l'orchestrateur ou s'inscrit au journal (FR-1901, FR-1941). */
+const orch = () => agents().orchestrateur;
 const etat = () => ({ session: local.read('ministere-session', false), syndrome: 'tous', semaine: 12, region: 'littoral', aire: 'AS-07', signal: null, decisions: local.read('ministere-decisions', {}), dossiers: local.read('ministere-dossiers', {}), variante: { ...S.VARIANTE_EN_VIGUEUR }, indicateur: 'insat', brouillons: {}, ...(store.get().ministere || {}) });
 const maj = (patch) => store.set({ ministere: { ...etat(), ...patch } });
 const nomRegion = (t) => (id) => S.REGIONS.find((r) => r.id === id)?.[t.lang] || id;
@@ -217,15 +225,6 @@ function vueOffre(t, m) {
 }
 
 // ── Politique, lacunes, « et si » ─────────────────────────────────────────
-let empreinte = null;
-const calculerEmpreinte = async () => {
-  try {
-    const octets = new TextEncoder().encode(JSON.stringify(S.POLITIQUE));
-    const h = await crypto.subtle.digest('SHA-256', octets);
-    empreinte = [...new Uint8Array(h)].map((b) => b.toString(16).padStart(2, '0')).join('');
-  } catch { empreinte = '—'; }
-  maj({});
-};
 function mesure(t, r) {
   return {
     publiees: t.num(r.publiees), fines: t.num(r.fines),
@@ -234,7 +233,7 @@ function mesure(t, r) {
   };
 }
 function vuePolitique(t, m) {
-  if (empreinte === null) calculerEmpreinte();
+  const pol = agents().politique;
   const v = m.variante;
   const A = S.simuler(S.VARIANTE_EN_VIGUEUR); const B = S.simuler(v);
   const a = mesure(t, A); const b = mesure(t, B);
@@ -246,8 +245,10 @@ function vuePolitique(t, m) {
     <div class="deux-temps deux-temps--egal politique">
       <section class="pile">
         <h3 class="titre-3">${t('ministere.politique.enVigueur')}</h3>
-        <p class="note">${t('ministere.politique.version', { v: S.POLITIQUE.version })}. ${t('ministere.politique.empreinte')} : <span class="mono empreinte">${empreinte ? empreinte.slice(0, 16) + '…' : t('ministere.politique.calcul')}</span></p>
-        <pre class="code mono">${JSON.stringify(S.POLITIQUE, null, 2)}</pre>
+        <p class="note">${t('ministere.politique.version', { v: pol.version })}. ${t('ministere.politique.empreinte')} : <span class="mono empreinte" title="${pol.empreinteCanonique}">${pol.empreinteCanonique.slice(7, 23)}…</span> ${pol.verifiee ? html`<span class="etiquette etiquette--foret">${t('ministere.politique.verifiee')}</span>` : ''}</p>
+        <p class="note">${t('ministere.politique.source')}</p>
+        <p class="note">${t('ministere.politique.mode', { v: t(`ministere.ab.modes.${agents().mode}`) })}</p>
+        <pre class="code mono" data-cle="politique-json">${JSON.stringify(pol.donnees, null, 2)}</pre>
       </section>
       <section class="pile" aria-labelledby="sim-titre">
         <h3 id="sim-titre" class="titre-3">${t('ministere.politique.simTitre')}</h3>
@@ -277,6 +278,93 @@ function vuePolitique(t, m) {
   </section>`;
 }
 
+// ── Journal d'audit chaîné (SF-007-21) ────────────────────────────────────
+const heure = (t, iso) => new Date(iso).toLocaleTimeString(t.lang === 'fr' ? 'fr-FR' : 'en-GB', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+function vueJournal(t, m) {
+  const j = agents().journal;
+  const evts = j.lire();
+  const v = m.verification;
+  return html`
+  <section class="pile">
+    <div class="titre-ligne"><h2 class="titre-2">${t('ministere.journal.titre')}</h2>${etiquette('neutre', t('ministere.journal.memoire'))}</div>
+    <p class="chapo">${t('ministere.journal.chapo')}</p>
+    <div class="actions actions--ligne">
+      <button type="button" class="bouton" data-act="verifier-chaine">${icone('bouclier', { taille: 20 })}${t('ministere.journal.verifier')}</button>
+      ${j.altere() ? html`<button type="button" class="bouton bouton--secondaire" data-act="restaurer-journal">${t('ministere.journal.restaurer')}</button>`
+        : html`<button type="button" class="bouton bouton--discret" data-act="alterer-journal" ${evts.length < 2 ? 'disabled' : ''}>${t('ministere.journal.alterer')}</button>`}
+    </div>
+    ${v ? html`<p class="encart ${v.index === null ? 'encart--menthe' : 'encart--urgence'} revele" role="status">${icone(v.index === null ? 'coche' : 'alerte')}<span class="encart__corps">${v.index === null ? t('ministere.journal.valide', { n: v.n }) : t('ministere.journal.invalide', { n: v.index + 1, raison: t(`ministere.journal.raisons.${v.raison}`) })}</span></p>` : ''}
+    ${evts.length ? html`
+    <div class="table-defile"><table class="table-donnees">
+      <caption class="vh">${t('ministere.journal.titre')}</caption>
+      <thead><tr>${['n', 'heure', 'agent', 'action', 'decision', 'fragments', 'hash'].map((c) => html`<th scope="col">${t(`ministere.journal.colonnes.${c}`)}</th>`)}</tr></thead>
+      <tbody>${evts.map((e, i) => html`<tr class="${v && v.index === i ? 'est-different' : ''}"><td class="chiffres">${i + 1}</td><td class="chiffres">${heure(t, e.horodatage)}</td><td>${e.agent}</td><td class="mono">${e.action}</td><td>${e.decision}</td><td class="mono">${e.fragments.join(' ') || '—'}</td><td class="mono" title="${e.hash}">${e.hash.slice(7, 15)}</td></tr>`)}</tbody>
+    </table></div>` : html`<p class="encart">${icone('info')}<span class="encart__corps">${t('ministere.journal.vide')}</span></p>`}
+  </section>`;
+}
+
+// ── Cellule de coordination (SF-007-19) ───────────────────────────────────
+function vueCoordination(t, m) {
+  const liste = S.signaux();
+  const signal = liste.find((x) => x.id === (m.celluleSignal || 'S-AS-07-diarrhee')) || liste[0];
+  const fil = m.cellule;
+  const base = agents().base;
+  return html`
+  <section class="pile">
+    <div class="titre-ligne"><h2 class="titre-2">${t('ministere.cellule.titre')}</h2>${etiquette('experimental', t('commun.fictif'))}</div>
+    <p class="chapo">${t('ministere.cellule.chapo')}</p>
+    <div class="parametres">
+      <div class="parametre"><label class="champ__etiquette" for="c-signal">${t('ministere.cellule.signal')}</label>
+        <select id="c-signal" class="saisie" data-change="cellule-signal">${liste.map((x) => html`<option value="${x.id}"${x.id === signal.id ? html` selected` : ''}>${t(`ministere.syndromes.${x.syndrome}`)} — ${nomZone(t, x)}</option>`)}</select></div>
+      <div class="parametre"><p class="champ__etiquette" id="c-apdp">${t('ministere.cellule.avisApdp')}</p><div class="segment" role="group" aria-labelledby="c-apdp">${['conforme', 'defavorable'].map((a) => html`<button type="button" data-act="cellule-apdp" data-v="${a}" aria-pressed="${(m.celluleApdp || 'conforme') === a}">${t(`ministere.cellule.avis.${a}`)}</button>`)}</div></div>
+    </div>
+    <button type="button" class="bouton" data-act="cellule-derouler">${icone('service', { taille: 20 })}${t('ministere.cellule.derouler')}</button>
+    ${fil ? html`
+    <ol class="fil" role="list" data-cle="fil-${fil.signal}">
+      ${fil.positions.map((p, i) => html`
+      <li class="fil__position fil__position--${p.agent}" data-cle="pos-${i}">
+        <p class="fil__tete"><span class="chiffres">${heure(t, p.date)}</span><strong>${t(`decision.agents.${p.agent}`)}</strong><span class="etiquette ${p.decision === 'BLOQUE' || p.decision === 'DEFAVORABLE' ? 'etiquette--urgence' : 'etiquette--neutre'}">${t(`ministere.cellule.positions.${p.position}`)}</span></p>
+        <p class="note">${t('ministere.cellule.mandat')} : ${t(`ministere.cellule.mandats.${p.agent}`)}</p>
+        <p class="note">${t('ministere.cellule.recu')} : <span class="mono">${Object.keys(p.recu).join(', ')}</span></p>
+        ${p.repli ? html`<p class="note">${t('decision.repli', { v: p.repli })}</p>` : ''}
+        ${p.motif ? html`<p class="note">${p.motif}</p>` : ''}
+        ${p.fragments.length ? html`<ul class="decision__fragments" role="list">${p.fragments.map((f) => ligneFragment(f, t, base))}</ul>` : ''}
+      </li>`)}
+    </ol>
+    ${fil.desaccord ? html`<p class="encart encart--experimental revele" role="status">${icone('alerte')}<span class="encart__corps"><strong class="encart__titre">${t('ministere.cellule.desaccordT')}</strong>${t('ministere.cellule.desaccord')}</span></p>` : ''}
+    ${fil.clos ? html`<p class="encart encart--menthe">${icone('coche')}<span class="encart__corps">${t('ministere.cellule.clos')}</span></p>` : html`
+    <div class="champ">
+      <label class="champ__etiquette" for="c-motif">${t('ministere.cellule.motif')}</label>
+      <textarea id="c-motif" class="saisie saisie--courte" data-input="cellule-motif">${m.celluleMotif || ''}</textarea>
+      ${erreurChamp('c-motif-err', m.celluleErreur ? t('ministere.signaux.motifCourt') : '')}
+    </div>
+    <div class="actions actions--ligne">${['agregats_seulement', 'cloture_sans_transmission'].map((d) => html`<button type="button" class="bouton bouton--secondaire" data-act="cellule-decider" data-statut="${d}">${t(`ministere.cellule.positions.${d}`)}</button>`)}</div>`}` : ''}
+  </section>`;
+}
+
+// ── Avec ou sans gouvernance (SF-007-20) ──────────────────────────────────
+function vueAb(t, m) {
+  const mode = m.modeSimule || agents().mode;
+  const disponible = abDisponible(mode);
+  const r = m.ab;
+  const colonne = (res) => html`
+    <section class="surface pile ab__colonne" aria-labelledby="ab-${res.gouvernance ? 'a' : 'b'}">
+      <h3 id="ab-${res.gouvernance ? 'a' : 'b'}" class="titre-3">${t(res.gouvernance ? 'ministere.ab.avec' : 'ministere.ab.sans')}</h3>
+      <p class="ab__compte chiffres ${res.violations.length ? 'est-different' : ''}">${t('ministere.ab.violations', { n: res.violations.length })}</p>
+      ${res.violations.length ? html`<ul class="lignes lignes--info" role="list">${res.violations.map((v) => html`<li>${icone('alerte')}<div><strong>${t(`ministere.ab.types.${v.type}`)}</strong><p class="note">${v.parcours} — <span class="mono">${v.detail}</span></p></div></li>`)}</ul>` : html`<p class="note">${t('ministere.ab.aucune')}</p>`}
+      <p class="note">${t('ministere.ab.journal', { n: res.journal.length })} ${res.chaineValide ? t('ministere.ab.chaineOk') : ''}</p>
+    </section>`;
+  return html`
+  <section class="pile">
+    <h2 class="titre-2">${t('ministere.ab.titre')}</h2>
+    <p class="chapo">${t('ministere.ab.chapo')}</p>
+    <div class="parametre"><p class="champ__etiquette" id="ab-mode">${t('ministere.ab.mode')}</p><div class="segment segment--syndromes" role="group" aria-labelledby="ab-mode">${MODES.map((x) => html`<button type="button" data-act="mode-simule" data-v="${x}" aria-pressed="${x === mode}">${t(`ministere.ab.modes.${x}`)}</button>`)}</div></div>
+    ${disponible ? html`<button type="button" class="bouton" data-act="rejouer-ab">${icone('cible', { taille: 20 })}${t('ministere.ab.rejouer')}</button>`
+      : html`<p class="encart revele" role="status">${icone('serrure')}<span class="encart__corps">${t('ministere.ab.horsDemo')}</span></p>`}
+    ${r && disponible ? html`<div class="deux-temps deux-temps--egal">${colonne(r.avec)}${colonne(r.sans)}</div><p class="note">${t('ministere.ab.parcours')}</p>` : ''}
+  </section>`;
+}
+
 export default {
   id: 'ministere',
   titre: ({ t, params }) => (store.get().ministere?.session ? t(`ministere.nav.${params[0] || 'carte'}`) : t('ministere.espace')),
@@ -296,7 +384,7 @@ export default {
       </div>
     </div>`;
     const vue = VUES.some(([v]) => v === params[0]) ? params[0] : 'carte';
-    const corps = { carte: vueCarte, signaux: vueSignaux, agrements: vueAgrements, offre: vueOffre, politique: vuePolitique }[vue](t, m);
+    const corps = { carte: vueCarte, signaux: vueSignaux, coordination: vueCoordination, agrements: vueAgrements, offre: vueOffre, politique: vuePolitique, journal: vueJournal, ab: vueAb }[vue](t, m);
     const aTrier = S.signaux().filter((x) => !m.decisions[x.id]).length;
     return html`
     <div class="cadre pro ministere">
@@ -313,6 +401,7 @@ export default {
       <div class="pro__corps">
         <nav class="pro__nav" aria-label="${t('ministere.espace')}">
           ${VUES.map(([v, ico]) => html`<a class="pro__lien" href="#/ministere/${v}" aria-current="${v === vue ? 'page' : 'false'}">${icone(ico, { taille: 20 })}<span>${t(`ministere.nav.${v}`)}</span>${v === 'signaux' && aTrier ? html`<span class="pastille-compte chiffres">${aTrier}</span>` : ''}</a>`)}
+          <a class="pro__lien" href="#/droits">${icone('fiche', { taille: 20 })}<span>${t('droits.lien')}</span></a>
           <button type="button" class="pro__lien" data-act="quitter">${icone('sortie', { taille: 20 })}<span>${t('ministere.quitter')}</span></button>
         </nav>
         <div class="pro__vue" data-cle="mvue-${vue}">${corps}</div>
@@ -331,6 +420,8 @@ export default {
     decider(ctx, el) {
       const m = etat(); const id = el.dataset.id; const motif = (m.brouillons[id]?.motif || '').trim();
       if (motif.length < 10) { maj({ brouillons: { ...m.brouillons, [id]: { motif, erreur: true } } }); return; }
+      // Décision humaine du point focal, journalisée avec le validateur (Principe VI, FR-1941).
+      agents().journal.ecrire({ agent: 'point_focal', action: 'surveillance.valider_signal', decision: el.dataset.statut.toUpperCase(), mode: agents().mode, contributeurs: ['point_focal'], fragments: ['CMR-MINSANTE-GUIDE-SBC-2023::0018'], justification_code: 'DECISION_HUMAINE_MOTIVEE', validateur_humain: POINT_FOCAL });
       const decisions = { ...m.decisions, [id]: { statut: el.dataset.statut, motif, date: new Date().toISOString(), rsi: {} } };
       local.write('ministere-decisions', decisions);
       maj({ decisions, brouillons: { ...m.brouillons, [id]: {} } });
@@ -341,8 +432,37 @@ export default {
       const decisions = { ...m.decisions, [id]: { ...d, rsi: { ...(d.rsi || {}), [el.dataset.q]: el.dataset.v === 'oui' } } };
       local.write('ministere-decisions', decisions); maj({ decisions });
     },
-    'copier-export'({ t, annonce }) { const txt = document.querySelector('.rsi pre')?.textContent || ''; navigator.clipboard?.writeText(txt).then(() => annonce(t('commun.copie')), () => {}); },
-    localisation() { maj({ refusLocalisation: true }); },
+    'copier-export'({ t, annonce }) {
+      orch().executer({ demandeur: 'point_focal', action: 'surveillance.exporter_agregat', categories: ['contribution_agregee'], finalite: 'surveillance', destination: 'district', consentements: { surveillance: true }, validateur: POINT_FOCAL });
+      const txt = document.querySelector('.rsi pre')?.textContent || ''; navigator.clipboard?.writeText(txt).then(() => annonce(t('commun.copie')), () => {}); },
+    localisation() {
+      // Demande de localisations précises : décidée par Conformité (BLOQUE, repli agrégat ; FR-206, FR-1923).
+      const r = orch().executer({ demandeur: 'district', action: 'surveillance.transmettre_donnees_individuelles', categories: ['donnees_individuelles_surveillance'], finalite: 'surveillance', destination: 'district', consentements: { surveillance: true } });
+      maj({ refusLocalisation: r.decision.verdict === 'BLOQUE' });
+    },
+    'verifier-chaine'() { const j = agents().journal; const e = j.verifier(); maj({ verification: { index: e ? e.index : null, raison: e?.raison, n: j.taille() } }); },
+    'alterer-journal'() { const j = agents().journal; j.alterer(Math.min(1, j.taille() - 1)); maj({ verification: null }); },
+    'restaurer-journal'() { agents().journal.restaurer(); maj({ verification: null }); },
+    'cellule-signal'(ctx, el) { maj({ celluleSignal: el.value, cellule: null }); },
+    'cellule-apdp'(ctx, el) { maj({ celluleApdp: el.dataset.v, cellule: null }); },
+    'cellule-derouler'() {
+      const m = etat(); const signal = S.signaux().find((x) => x.id === (m.celluleSignal || 'S-AS-07-diarrhee')) || S.signaux()[0];
+      maj({ cellule: derouler(signal, { orchestrateur: orch(), avisApdp: m.celluleApdp || 'conforme' }), celluleMotif: '', celluleErreur: false });
+    },
+    'cellule-motif'(ctx, el) { maj({ celluleMotif: el.value }); },
+    'cellule-decider'(ctx, el) {
+      const m = etat(); const motif = (m.celluleMotif || '').trim();
+      if (motif.length < 10) { maj({ celluleErreur: true }); return; }
+      const signal = S.signaux().find((x) => x.id === m.cellule.signal);
+      maj({ cellule: derouler(signal, { orchestrateur: orch(), avisApdp: m.celluleApdp || 'conforme', decisionPointFocal: { statut: el.dataset.statut, motif } }), celluleErreur: false });
+    },
+    'mode-simule'(ctx, el) { maj({ modeSimule: el.dataset.v, ab: null }); },
+    'rejouer-ab'() {
+      const m = etat(); const mode = m.modeSimule || agents().mode;
+      if (!abDisponible(mode)) return;
+      const politique = agents().politique;
+      maj({ ab: { avec: rejouer({ politique, gouvernance: true, mode }), sans: rejouer({ politique, gouvernance: false, mode }) } });
+    },
     'motif-agrement'(ctx, el) { maj({ brouillons: { ...etat().brouillons, agrement: { id: el.dataset.id, motif: el.value } } }); },
     agreer({ t, annonce }, el) {
       const m = etat(); const id = el.dataset.id;

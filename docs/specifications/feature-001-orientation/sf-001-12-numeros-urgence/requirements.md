@@ -5,7 +5,7 @@
 | Fonctionnalité | F-001 Orientation à partir des signes |
 | Sous-fonctionnalité | SF-001-12 |
 | Version | 2.0.0 |
-| Statut | UNDER_REVIEW |
+| Statut | APPROVED |
 | État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
 | Origine | Spécification v1.3 (FR-114) ; D-004 (Proposé) |
 | Bloquant | D-004 |

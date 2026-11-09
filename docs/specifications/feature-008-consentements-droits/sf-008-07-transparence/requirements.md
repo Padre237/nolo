@@ -5,7 +5,7 @@
 | Fonctionnalité | F-008 Consentements et droits |
 | Sous-fonctionnalité | SF-008-07 |
 | Version | 2.0.0 |
-| Statut | UNDER_REVIEW |
+| Statut | READY_FOR_DEV |
 | État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
 | Origine | Spécification v1.3 (FR-109) ; INT-UE-AI-ACT art. 50 (exemple) |
 | Bloquant | Aucun |

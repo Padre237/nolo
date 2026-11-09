@@ -1,0 +1,32 @@
+# Évaluation du conseiller « Mes droits santé » (SF-016-04) — 2026-11-09T13:21:01.184Z
+# Commande : node tools/evaluer_conseiller.mjs
+# Questions Q23 à Q40 (18) ; résultats du conseiller : au plus 5 fragments, CMR- d'abord, seuil BM25 8.
+
+Q23 [fr] REF  attendu : CMR-LOI-2024-017 Article 44  ; premier : CMR-LOI-2024-017::0022
+Q24 [fr] DOC  attendu : CMR-LOI-90-035 Article 13  ; premier : CMR-LOI-90-035::0072
+Q25 [fr] DOC  attendu : CMR-LOI-90-035 Article 53  ; premier : CMR-LOI-90-035::0072
+Q26 [fr] REF  attendu : CMR-LOI-2024-017 Article 9  ; premier : CMR-LOI-2024-017::0011
+Q27 [fr] REF  attendu : CMR-LOI-90-035 Article 16  ; premier : CMR-LOI-2010-012::0091
+Q28 [fr] REF  attendu : CMR-LOI-2024-017 Article 48  ; premier : CMR-LOI-2024-017::0048
+Q29 [fr] REF  attendu : CMR-MINSANTE-GUIDE-SBC-2023  ; premier : CMR-MINSANTE-GUIDE-SBC-2023::0029
+Q30 [fr] REF  attendu : CMR-LOI-2024-017 Article 32  ; premier : CMR-LOI-2024-017::0065
+Q31 [en] REF  attendu : CMR-LOI-2024-017 Article 44  ; premier : CMR-LOI-2024-017::0044
+Q32 [en] REF  attendu : CMR-LOI-90-035 Article 13  ; premier : CMR-LOI-90-035::0012
+Q33 [en] REF  attendu : CMR-LOI-2024-017 Article 9  ; premier : CMR-LOI-2024-017::0011
+Q34 [en] REF  attendu : CMR-LOI-2024-017 Article 48  ; premier : CMR-LOI-2024-017::0048
+Q35 [fr] REF  attendu : CMR-LOI-90-036 Article 16  ; premier : CMR-LOI-90-036::0015
+Q36 [fr] DOC  attendu : CMR-LOI-90-036 Article 17  ; premier : CMR-LOI-90-036::0015
+Q37 [fr] REF  attendu : CMR-LOI-2019-019 Article 13  ; premier : CMR-LOI-2010-013::0051
+Q38 [en] REF  attendu : CMR-LOI-90-036 Article 16  ; premier : CMR-LOI-90-036::0015
+Q39 [en] REF  attendu : CMR-LOI-2019-019-EN Section 13  ; premier : CMR-LOI-2019-019::0005
+Q40 [en] REF  attendu : CMR-LOI-2019-019-EN Section 5  ; premier : CMR-LOI-2019-019-EN::0005
+
+Document attendu : 18/18 (cible ≥ 11/18)
+Référence exacte : 15/18
+Anglais sur des lois sans version anglaise (Q31 à Q34, Q38) : 5/5 (cible ≥ 3/5)
+Cibles atteintes
+
+# Réserve : les expressions françaises courantes (`courant_fr`, glossaire 1.2.0) ont été ajoutées le 2026-11-09
+# en lisant la question de CA-016-02-01 ; elles recoupent la formulation de Q23, Q26 et Q30. Mesure du même jour
+# sans elles : document 18/18, référence exacte 12/18. Une mesure non biaisée demande des questions nouvelles.
+# Index : les 816 fragments de la base embarquée (app/data/base.json), pas les 2 034 de kb/ (kb/eval/run_eval.py).

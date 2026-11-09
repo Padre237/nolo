@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-1127, FR-1128, FR-1129, NFR-1101 |
-| État d'implémentation | Non implémenté |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -25,5 +25,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-011-08-01, TEST-011-08-02, TEST-011-08-03 réussis
 - Tests : TEST-011-08-01, TEST-011-08-02, TEST-011-08-03
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `tools/exporter_base.py` → `app/data/base.json` (816 fragments, 1,04 Mo) et `app/data/glossaire.json` ; `app/js/domain/base.js` ; `app/sw.js`
 

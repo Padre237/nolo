@@ -5,7 +5,7 @@
 | Fonctionnalité | F-006 Fiabilité des déclarations |
 | Sous-fonctionnalité | SF-006-01 |
 | Version | 2.0.0 |
-| Statut | UNDER_REVIEW |
+| Statut | READY_FOR_DEV |
 | État d'implémentation | Partiellement implémenté — rétro-spécifié le 2026-11-09 ; écarts au §9 de design.md |
 | Origine | Spécification v1.3 (FR-601 à FR-603, FR-608) ; D-030 |
 | Bloquant | Aucun |

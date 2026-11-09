@@ -5,8 +5,8 @@
 | Fonctionnalité | F-001 Orientation à partir des signes |
 | Sous-fonctionnalité | SF-001-15 |
 | Version | 2.0.0 |
-| Statut | UNDER_REVIEW |
-| État d'implémentation | Partiellement implémenté — rétro-spécifié le 2026-11-09 ; écarts au §9 de design.md |
+| Statut | IN_TESTING |
+| État d'implémentation | Implémenté (2026-11-09, D-038) ; table de démonstration en attendant DDXPlus (SF-001-19) |
 | Origine | D-033 (spécification POC v0.3, FR-DX-01, 04, 07, 09, 10, 13, 14) |
 | Bloquant | Avis du juriste (L5, V9) avant tout usage hors démo |
 | Dépend de | SF-001-14, SF-001-16, SF-001-17, SF-007-03 |

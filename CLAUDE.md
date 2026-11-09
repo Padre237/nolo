@@ -45,13 +45,13 @@ Portes de qualité : exigences → conception → tâches → tests → **approb
 | Dossier (spécification), ligne « Statut » | `DRAFT` → `UNDER_REVIEW` → `APPROVED` → `READY_FOR_DEV` → `IN_PROGRESS` → `IN_TESTING` → `DONE` |
 | Implémentation, ligne « État d'implémentation » et statut de chaque tâche | Implémenté (rétro-spécifié) / Partiellement implémenté / Non implémenté ; tâches « Fait », « Partiel », « À faire » |
 
-APPROVED ≠ READY_FOR_DEV : un dossier approuvé reste bloqué tant qu'une décision bloquante ou une dépendance subsiste (colonne « Bloquant »). Au 2026-11-09, **tous les dossiers sont UNDER_REVIEW** : le code existant a été rétro-spécifié (D-036) ; rien de nouveau ne s'implémente avant l'approbation du propriétaire.
+APPROVED ≠ READY_FOR_DEV : un dossier approuvé reste bloqué tant qu'une décision bloquante ou une dépendance subsiste (colonne « Bloquant »). Au 2026-11-09 : vague A approuvée (D-037), vagues B et C approuvées (D-038) ; la vague D reste `UNDER_REVIEW` et ne s'implémente pas avant l'approbation du propriétaire.
 
 ## 4. Carte du dépôt
 
 | Chemin | Contenu |
 |---|---|
-| `app/` | **L'application Nolo** (PWA, JavaScript sans compilation) : `index.html`, `css/`, `js/{core,domain,screens,ui,i18n}`, `assets/`, `sw.js`, `manifest.webmanifest`, `tests/` (Node), `docs/DIRECTION.md` et `docs/DESIGN.md` (design system), `tools/carte.py` |
+| `app/` | **L'application Nolo** (PWA, JavaScript sans compilation) : `index.html`, `css/`, `data/` (politique, base, glossaire générés), `js/{core,domain,agents,screens,ui,i18n}`, `assets/`, `sw.js`, `manifest.webmanifest`, `tests/` (Node), `docs/DIRECTION.md` et `docs/DESIGN.md` (design system), `tools/carte.py` |
 | `src/server/agents/` | Agent Conformité, orchestrateur (Python, référence et oracle des agents de Nolo) |
 | `src/server/gouvernance/` | Politique codée, journal chaîné SHA-256, contrats |
 | `src/server/domain/` | Ressources (tuile, recherche sensible), surveillance (scénarios) |
@@ -73,7 +73,7 @@ APPROVED ≠ READY_FOR_DEV : un dossier approuvé reste bloqué tant qu'une déc
 | État du projet, prochaine tâche, journal des sessions | `docs/ETAT.md` |
 | Principes non négociables | `docs/product/constitution.md` (1.3.2 ; 2.0.0 proposée par D-033) |
 | Vision, périmètre, glossaire | `docs/product/vision.md`, `docs/product/glossary.md` |
-| Décisions métier datées (D-001 à D-036) | `docs/product/decisions.md` |
+| Décisions métier datées (D-001 à D-038) | `docs/product/decisions.md` |
 | État du droit codé | `config/policy.yaml` — jamais de règle juridique codée en dur ailleurs |
 | Lacunes (L1 à L16) et interprétations juridiques | `docs/compliance/` |
 | Architecture, contrats, ADR | `docs/architecture/` |
@@ -130,8 +130,15 @@ Les identifiants FR-101 à FR-715 viennent des spécifications v1.3 et ne change
 ```bash
 # Nolo
 python3 -m http.server 8765 --bind 127.0.0.1 -d app      # puis http://127.0.0.1:8765/
-cd app && node --test tests/*.test.mjs && cd ..           # 33 tests (domaine, langues, surveillance)
-python3 tools/inspecter.py /tmp/nolo-captures 360,390,768,1440   # inspection visuelle réelle, 39 états × 4 largeurs (code 0 = aucun défaut)
+cd app && node --test tests/*.test.mjs && cd ..           # 77 tests (domaine, langues, surveillance, agents, conseiller)
+python3 tools/inspecter.py /tmp/nolo-captures 360,390,768,1440   # inspection visuelle réelle, 46 états × 4 largeurs (code 0 = aucun défaut) ; NOLO_CHROME=<navigateur> si Chrome n'est pas dans /usr/bin
+
+# Agents de Nolo (vague B, D-038) : données embarquées et oracles
+python3 tools/politique_json.py [--verifier]              # config/policy.yaml → app/data/politique.json (à relancer après toute modification de la politique)
+python3 tools/exporter_base.py [--verifier]               # kb/ → app/data/base.json et app/data/glossaire.json
+python3 tools/scenarios/executer.py --exporter-attendus tests/js/fixtures/decisions_attendues.json   # oracle de parité de la Conformité
+python3 tools/exporter_classements.py                     # oracle de parité du BM25 du conseiller
+node tools/evaluer_conseiller.mjs                         # évaluation datée du conseiller → docs/quality/
 
 # Gouvernance, scénarios, service des établissements
 python3 -m pytest -q                                       # gouvernance, scénarios S1 à S3, service D-029 / D-032

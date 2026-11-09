@@ -5,7 +5,7 @@
 | Fonctionnalité | F-004 Recherche d'un médicament |
 | Sous-fonctionnalité | SF-004-02 |
 | Version | 2.0.0 |
-| Statut | UNDER_REVIEW |
+| Statut | READY_FOR_DEV |
 | État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
 | Origine | Spécification v1.3 (FR-402, FR-403, FR-406) ; D-029 |
 | Bloquant | Aucun |

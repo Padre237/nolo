@@ -3,6 +3,8 @@ import { html } from '../../core/dom.js';
 import { libelle } from '../../domain/engine.js';
 import { etiquette, points } from '../../ui/components.js';
 import { icone } from '../../ui/icons.js';
+import { panneauDecision } from '../../ui/decision.js';
+import { agents } from '../../agents/nolo.js';
 
 export const nomPiste = (x, lang) => x.p[lang] || x.p.fr;
 
@@ -37,7 +39,8 @@ export default {
             <p class="piste__score chiffres">${t('pistes.score', { n: Math.round(x.score * 100) })}</p>
           </li>`)}
         </ol>
-        <p class="encart encart--experimental">${icone('info')}<span class="encart__corps">${t('pistes.origine')}</span></p>
+        <p class="encart encart--experimental">${icone('info')}<span class="encart__corps"><strong class="encart__titre">${t('pistes.tableDemo')}</strong>${t('pistes.origine')}</span></p>
+        ${panneauDecision(s.cas.trace, t, agents()?.base)}
         <div class="actions">
           <a class="bouton bouton--principal" href="#/ou-aller">${icone('repere', { taille: 20 })}${t('pistes.ouAller')}</a>
           <a class="bouton bouton--secondaire" href="#/fiche">${icone('fiche', { taille: 20 })}${t('pistes.fiche')}</a>

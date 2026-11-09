@@ -6,7 +6,8 @@
 # Correspondance : une entrée s'applique si l'une de ses expressions anglaises apparaît dans la question
 # (minuscules, mots entiers) ; les termes français sont ajoutés à la requête, la question d'origine est conservée.
 # État : données seulement ; la conversion des requêtes n'est pas implémentée (incrément 2, §7).
-version: "1.1.0"   # 1.1.0 (2026-11-07) : médecine et langues officielles, après le versement des lois 90/036 et 2019/019
+version: "1.2.0"   # 1.2.0 (2026-11-09) : champ `courant_fr` (expressions françaises courantes, même règle d'ajout ; SF-016-01, DES-016-01-03)
+# 1.1.0 (2026-11-07) : médecine et langues officielles, après le versement des lois 90/036 et 2019/019
 date: "2026-11-07"
 statut: UNDER_REVIEW
 entrees:
@@ -17,16 +18,19 @@ entrees:
   - en: [consent, agree, permission]
     fr: [consentement]
   - en: [minor, child, children, under 18, teenager]
+    courant_fr: [mon fils, ma fille, mon enfant, adolescent]
     fr: [mineur, dix-huit (18) ans]
   - en: [parent, parents, father, mother, guardian, legal representative]
     fr: [représentant légal]
   - en: [abroad, foreign country, another country, outside cameroon, overseas]
+    courant_fr: [à l'étranger, hors du cameroun, autre pays]
     fr: [transfert, étranger, organisation internationale]
   - en: [authorisation, authorization, permit, licence, license, approval]
     fr: [autorisation préalable]
   - en: [data protection authority, regulator]
     fr: [Autorité de protection des données à caractère personnel]
   - en: [automated decision, computer decides, algorithm, machine decides, automatic decision]
+    courant_fr: [une machine, un ordinateur, un algorithme, décide seule, décide seul]
     fr: [traitement automatisé, décision]
   - en: [human review, human intervention, a human]
     fr: [intervention humaine]

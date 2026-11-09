@@ -5,7 +5,7 @@
 | Fonctionnalité | F-013 Socle de l'application Nolo |
 | Sous-fonctionnalité | SF-013-08 |
 | Version | 2.0.0 |
-| Statut | UNDER_REVIEW |
+| Statut | READY_FOR_DEV |
 | État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
 | Origine | D-034 ; ADR-003 |
 | Bloquant | Aucun |

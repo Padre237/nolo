@@ -5,7 +5,7 @@
 | Fonctionnalité | F-001 Orientation à partir des symptômes |
 | Sous-fonctionnalité | SF-001-03 |
 | Version | 1.0.0 |
-| Statut | UNDER_REVIEW |
+| Statut | READY_FOR_DEV |
 | Référence approuvée | Spécifications v1.3 (approuvées le 2026-11-03) : FR-103, remplacée par FR-120 sur décision du propriétaire (D-018, 2026-11-04) |
 | Bloquant | Aucun |
 | Dépend de | SF-001-02 (retrait des mentions interdites), SF-001-04 (paquet de règles et de référentiel), SF-007-03 (conformité, pour l'extraction LLM), SF-008-04 (FR-107, mineurs) |

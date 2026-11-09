@@ -5,7 +5,7 @@
 | Fonctionnalité | F-008 Consentements et droits |
 | Sous-fonctionnalité | SF-008-03 |
 | Version | 2.0.0 |
-| Statut | UNDER_REVIEW |
+| Statut | READY_FOR_DEV |
 | État d'implémentation | Non implémenté |
 | Origine | Catalogue v1 ; `policy.yaml > consentement.geolocalisation` |
 | Bloquant | Aucun |

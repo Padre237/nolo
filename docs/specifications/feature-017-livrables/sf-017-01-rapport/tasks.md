@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | IN_PROGRESS |
 | Exigences couvertes | FR-2301, FR-2302, FR-2303, FR-2304 |
-| État d'implémentation | Partiellement implémenté — rapport, PDF et contrôles du 2026-11-09 (D-037) ; écarts au §9 de design.md (Q-017-01-01, Q-017-01-02) |
+| État d'implémentation | Implémenté — rapport, PDF et contrôles du 2026-11-09 (D-037, D-038) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -36,5 +36,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : décision du propriétaire sur Q-017-01-01 et Q-017-01-02
 - Condition de fin : TEST-017-01-01, TEST-017-01-02 réussis
 - Tests : TEST-017-01-01, TEST-017-01-02
-- Statut : À faire
+- Statut : Fait (2026-11-09) — D-038 : FR-2302 et DES-017-01-01 corrigés, §9 de design.md vidé
 

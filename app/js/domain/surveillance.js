@@ -110,18 +110,7 @@ export function offreDemande() {
   });
 }
 
-// ── Politique en vigueur et simulation « et si » ───────────────────────────
-export const POLITIQUE = {
-  version: '1.3.2',
-  mode: 'demo_synthetique',
-  surveillance: { seuil_publication: 5, decalage_jours: 7, maille: 'aire_de_sante', validation_humaine: true, liste_nominative: false },
-  tendances: { seuil: 5, arrondi: 5, semaines_completes: true, alertes: false },
-  diagnostic_poc: { actif: true, max_hypotheses: 3, transmission_serveur: false, art48_affichage: 'message_neutre' },
-  autorisation_apdp_obtenue: false,
-  decret_transfert_publie: false,
-  derogation_par_consentement_art48: false,
-};
-
+// ── Simulation « et si » (la politique en vigueur est lue dans data/politique.json) ──
 /**
  * Effets mesurables d'une variante de politique sur les données de démonstration.
  * v : { seuil, decalage, maille ('aire'|'district'), apdp (bool), derogation (bool) }

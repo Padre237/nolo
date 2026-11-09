@@ -5,7 +5,7 @@
 | Fonctionnalité | F-001 Orientation à partir des symptômes |
 | Sous-fonctionnalité | SF-001-06 |
 | Version | 1.0.0 |
-| Statut | UNDER_REVIEW |
+| Statut | READY_FOR_DEV |
 | Référence approuvée | Spécifications v1.3 (approuvées le 2026-11-03) : aucune exigence propre ; source décidée par D-012 et D-019 ; FR-101, FR-104 (SF-001-07) et FR-113 (SF-001-04) s'appliquent |
 | Bloquant | Aucun pour la démonstration ; validation clinique (V7, D-020, D-021) et avis du juriste (D-022) avant tout usage hors démo |
 | Dépend de | SF-001-03 (jetons), SF-001-04 (chargement), SF-001-07 (évaluation) |

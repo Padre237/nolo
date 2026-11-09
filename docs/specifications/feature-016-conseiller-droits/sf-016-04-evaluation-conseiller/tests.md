@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `node tools/evaluer_conseiller.mjs`
 - Alors : rapport avec deux mesures
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/conseiller_eval.test.mjs` › « TEST-016-04-01 : rapport avec les deux mesures sur Q23 à Q40 » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-016-04-02 — Cibles
 - Type : Intégration
@@ -34,6 +34,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : lecture
 - Alors : cibles atteintes
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/conseiller_eval.test.mjs` › « TEST-016-04-02 : cibles atteintes (document ≥ 11/18 ; anglais ≥ 3/5) » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 

@@ -5,10 +5,16 @@ import { partage } from '../../domain/consent.js';
 import { SPECIALITES, SPECIALITES_SENSIBLES, DCI, GROUPES, chercherSpecialite, chercherMedicament, chercherSang } from '../../domain/facilities.js';
 import { ligneStructure, etiquette } from '../../ui/components.js';
 import { icone } from '../../ui/icons.js';
+import { panneauDecision } from '../../ui/decision.js';
+import { agents } from '../../agents/nolo.js';
+import { deciderRecherche, deciderSignalement } from '../../agents/parcours.js';
 
 const ONGLETS = [['service', 'service'], ['medicament', 'pilule'], ['sang', 'goutte']];
 const jour = () => new Date().toISOString().slice(0, 10);
 const nomDci = (id, lang) => DCI.find((d) => d.id === id)?.[lang] || id;
+/** Décision de Conformité avant la recherche (FR-1901) ; la trace alimente « Comment Nolo a décidé ». */
+const gouverner = (type, sensible) => { const a = agents(); return a ? deciderRecherche(a.orchestrateur, { type, sensible }).trace : null; };
+const panneau = (s, t) => panneauDecision(s.recherche.trace, t, agents()?.base);
 
 function resume(t, res) {
   if (!res.resultats.length) return html`<p class="encart">${icone('info')}<span class="encart__corps">${t('recherche.aucun')}</span></p>`;
@@ -30,7 +36,8 @@ function service(s, t) {
   ${res ? html`
     <p class="note">${icone(sensible ? 'serrure' : 'graphique', { taille: 16 })} ${sensible ? t('recherche.sensible') : t('recherche.compte')}</p>
     ${resume(t, res)}
-    <div class="lignes">${res.resultats.map((e) => ligneStructure(e, t, { extra: html`<p class="structure__extra">${t('recherche.modalite', { sp: t(`specialites.${sp}`), m: t(`modalites.${e.specialites[sp]}`) })}</p>` }))}</div>` : ''}`;
+    <div class="lignes">${res.resultats.map((e) => ligneStructure(e, t, { extra: html`<p class="structure__extra">${t('recherche.modalite', { sp: t(`specialites.${sp}`), m: t(`modalites.${e.specialites[sp]}`) })}</p>` }))}</div>
+    ${panneau(s, t)}` : ''}`;
 }
 
 function medicament(s, t) {
@@ -66,7 +73,8 @@ function medicament(s, t) {
         <div class="signaler"><span class="champ__etiquette">${t('recherche.signaler')}</span>
           <div class="segment"><button type="button" data-act="signaler" data-p="${e.id}" data-v="trouve" aria-pressed="false">${t('recherche.trouve')}</button><button type="button" data-act="signaler" data-p="${e.id}" data-v="absent" aria-pressed="false">${t('recherche.pasTrouve')}</button></div>
         </div>`}` });
-    })}</div>` : ''}`;
+    })}</div>
+    ${panneau(s, t)}` : ''}`;
 }
 
 function sang(s, t) {
@@ -80,7 +88,8 @@ function sang(s, t) {
   ${res ? html`
     <p class="note">${icone('graphique', { taille: 16 })} ${t('recherche.compte')}</p>
     ${res.appelAuDon ? html`<p class="encart encart--menthe">${icone('goutte')}<span class="encart__corps">${t('recherche.appelDon')}</span></p>` : ''}
-    <div class="lignes">${res.resultats.map(({ e, niveau }) => ligneStructure(e, t, { extra: html`<div class="structure__stock"><span class="niveau niveau--${niveau}">${t(`recherche.niveaux.${niveau}`)}</span></div>` }))}</div>` : ''}`;
+    <div class="lignes">${res.resultats.map(({ e, niveau }) => ligneStructure(e, t, { extra: html`<div class="structure__stock"><span class="niveau niveau--${niveau}">${t(`recherche.niveaux.${niveau}`)}</span></div>` }))}</div>
+    ${panneau(s, t)}` : ''}`;
 }
 
 export default {
@@ -103,15 +112,17 @@ export default {
     </div>`;
   },
   actions: {
-    specialite({ s, set }, el) { set({ recherche: { ...s.recherche, specialite: el.value } }); },
+    specialite({ s, set }, el) { set({ recherche: { ...s.recherche, specialite: el.value, trace: el.value ? gouverner('service', SPECIALITES_SENSIBLES.includes(el.value)) : null } }); },
     saisie({ s, set }, el) { set({ recherche: { ...s.recherche, saisie: el.value } }); },
-    dci({ s, t, set }, el) { set({ recherche: { ...s.recherche, dci: el.dataset.id, saisie: nomDci(el.dataset.id, t.lang) } }); },
-    groupe({ s, set }, el) { set({ recherche: { ...s.recherche, groupe: el.dataset.g } }); },
+    dci({ s, t, set }, el) { set({ recherche: { ...s.recherche, dci: el.dataset.id, saisie: nomDci(el.dataset.id, t.lang), trace: gouverner('medicament', !!DCI.find((d) => d.id === el.dataset.id)?.sensible) } }); },
+    groupe({ s, set }, el) { set({ recherche: { ...s.recherche, groupe: el.dataset.g, trace: gouverner('sang', false) } }); },
     signaler({ s, t, set, annonce }, el) {
       const faits = s.recherche.signalements || [];
       const aujourdhui = faits.filter((f) => f.j === jour());
       if (aujourdhui.length >= 5) { annonce(t('recherche.limiteJour'), { ico: 'info' }); return; }
       if (aujourdhui.some((f) => f.p === el.dataset.p && f.d === s.recherche.dci)) { annonce(t('recherche.limite'), { ico: 'info' }); return; }
+      const a = agents();
+      if (a) deciderSignalement(a.orchestrateur, { consentements: { signalements: partage(s.consentement, 'signalements') } });
       const suivant = [...faits.filter((f) => f.j === jour()), { p: el.dataset.p, d: s.recherche.dci, j: jour(), v: el.dataset.v }];
       local.write('signalements', suivant);
       set({ recherche: { ...s.recherche, signalements: suivant } });

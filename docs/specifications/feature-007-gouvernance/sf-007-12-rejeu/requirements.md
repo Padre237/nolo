@@ -5,7 +5,7 @@
 | Fonctionnalité | F-007 Gouvernance, conformité, audit et agents |
 | Sous-fonctionnalité | SF-007-12 |
 | Version | 2.0.0 |
-| Statut | UNDER_REVIEW |
+| Statut | APPROVED |
 | État d'implémentation | Non implémenté |
 | Origine | Catalogue v1 ; D-016 (Proposé) |
 | Bloquant | D-016 |

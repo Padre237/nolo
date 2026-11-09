@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-1901, FR-1902, FR-1903, FR-1904, FR-1905, NFR-1901 |
 | ADR | ADR-017 (à écrire : agents dans le navigateur, Python oracle) |
-| État d'implémentation | Non implémenté |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Vue d'ensemble
 Nouveaux modules : `app/js/agents/conformite.js` (port de `src/server/agents/conformite.py`), `app/js/agents/orchestrateur.js`, `app/js/domain/politique.js` (charge `app/data/politique.json`). L'oracle : `tools/scenarios/executer.py --exporter-attendus tests/js/fixtures/decisions_attendues.json` (option à ajouter).

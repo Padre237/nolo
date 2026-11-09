@@ -1,0 +1,449 @@
+{
+ "version": "1.4.0",
+ "empreinte": "sha256:06cf2817b7a37b99bb9de2a74ca3d172ec0ee1d83d1f091918b6bb82d3528f6f",
+ "empreinte_canonique": "sha256:300801eb5b9239233580c876a7b226853507d0efc14bd966de34413904e5aaab",
+ "source": "config/policy.yaml",
+ "genere_par": "tools/politique_json.py",
+ "donnees": {
+  "version": "1.4.0",
+  "date_effet": "2026-11-09",
+  "juridiction": "CMR",
+  "mode_par_defaut_si_incertain": "BLOQUER",
+  "autorisation_prealable": {
+   "traitement_donnees_personnelles": {
+    "autorisation_apdp_obtenue": false,
+    "reference_autorisation": null,
+    "sources": [
+     "CMR-LOI-2024-017::0020"
+    ],
+    "lacune": "L12"
+   },
+   "interconnexion_interoperabilite": {
+    "autorisation_apdp_obtenue": false,
+    "lecture": "large",
+    "sources": [
+     "CMR-LOI-2024-017::0020"
+    ],
+    "lacune": "L12"
+   },
+   "mode_production_si_pas_autorisation": "sans_donnees_personnelles"
+  },
+  "numeros_urgence": [
+   {
+    "valeur": "119",
+    "libelle": "Assistance médicale (SAMU)",
+    "statut": "source_officielle_etrangere",
+    "source": "https://voyage.gc.ca/assistance/ambassades-consulats/cameroun (consulté le 2026-11-03)"
+   },
+   {
+    "valeur": "112",
+    "libelle": "Urgences",
+    "statut": "source_secondaire",
+    "source": "encyclopédie en ligne, à recouper avec une source camerounaise"
+   },
+   {
+    "valeur": "111",
+    "libelle": "Indiqué par l'équipe",
+    "statut": "a_confirmer",
+    "source": null
+   },
+   {
+    "valeur": "1510",
+    "libelle": "Ligne verte MINSANTE (signalement d'événements de santé)",
+    "statut": "source_officielle_kb",
+    "source": "CMR-MINSANTE-GUIDE-SBC-2023"
+   }
+  ],
+  "triage": {
+   "validation_clinique_obtenue": false,
+   "validateur_clinique": null,
+   "usage_autorise_sans_validation": [
+    "demo_synthetique"
+   ],
+   "mention_demo": "Règles issues de la PCIME (OMS), non validées cliniquement pour le Cameroun",
+   "lacune": "V7"
+  },
+  "etat_institutionnel": {
+   "apdp_operationnelle": {
+    "valeur": false,
+    "statut": "hypothese",
+    "note": "Autorité créée par la loi 2024/017 ; décret d'organisation non identifié dans les sources réunies.",
+    "sources": [
+     "CMR-LOI-2024-017::0033"
+    ],
+    "lacune": "L3"
+   },
+   "decret_transfert_publie": {
+    "valeur": false,
+    "statut": "hypothese",
+    "sources": [
+     "CMR-LOI-2024-017::0033"
+    ],
+    "lacune": "L3"
+   },
+   "decret_analyse_impact_publie": {
+    "valeur": false,
+    "statut": "hypothese",
+    "sources": [
+     "CMR-LOI-2024-017::0034"
+    ],
+    "lacune": "L3"
+   },
+   "texte_sectoriel_sante_publie": {
+    "valeur": false,
+    "statut": "hypothese",
+    "sources": [
+     "CMR-LOI-2024-017::0068"
+    ],
+    "lacune": "L2"
+   },
+   "conditions_publicite_art19_publiees": {
+    "valeur": false,
+    "statut": "hypothese",
+    "sources": [
+     "CMR-LOI-90-035::0017"
+    ],
+    "lacune": "L8"
+   },
+   "registre_ouvert_pharmacies": {
+    "valeur": false,
+    "statut": "hypothese",
+    "lacune": "L9"
+   },
+   "cadre_partage_app_simr": {
+    "valeur": false,
+    "statut": "hypothese",
+    "sources": [
+     "CMR-MINSANTE-GUIDE-SBC-2023::0018"
+    ],
+    "lacune": "L4"
+   }
+  },
+  "consentement": {
+   "orientation": {
+    "base": "consentement_expres",
+    "granularite": "specifique",
+    "sources": [
+     "CMR-LOI-2024-017::0011"
+    ]
+   },
+   "urgence_vitale": {
+    "base": "preservation_sante",
+    "execution": "sur_appareil",
+    "actions_autorisees": [
+     "afficher_orientation_urgente",
+     "afficher_bandeau_urgence"
+    ],
+    "actions_interdites": [
+     "journaliser_symptomes_nominatifs",
+     "partager_surveillance"
+    ],
+    "statut": "choix_equipe",
+    "sources": [
+     "CMR-LOI-2024-017::0011"
+    ]
+   },
+   "surveillance": {
+    "base": "consentement_expres_separe",
+    "alternative_si_cadre_publie": "mission_interet_public",
+    "statut": "choix_equipe",
+    "sources": [
+     "CMR-LOI-2024-017::0011"
+    ],
+    "lacune": "L4"
+   },
+   "geolocalisation": {
+    "base": "consentement",
+    "precision_max_decimales": 2,
+    "alternative_sans_consentement": "saisie_manuelle_quartier",
+    "sources": [
+     "CMR-LOI-2024-017::0011"
+    ]
+   },
+   "mineur": {
+    "age_majorite": 18,
+    "exige": "consentement_parent_ou_representant",
+    "sans_consentement_parental": [
+     "orientation_urgente_seulement"
+    ],
+    "sources": [
+     "CMR-LOI-2024-017::0011"
+    ]
+   }
+  },
+  "decision_automatisee": {
+   "orientation_est_decision_exclusivement_automatisee": {
+    "valeur": true,
+    "statut": "choix_equipe",
+    "sources": [
+     "CMR-LOI-2024-017::0044"
+    ]
+   },
+   "droits_affiches": [
+    "intervention_humaine",
+    "exprimer_point_de_vue",
+    "contester"
+   ],
+   "profilage": {
+    "autorise": false,
+    "statut": "choix_equipe",
+    "sources": [
+     "CMR-LOI-2024-017::0044",
+     "CMR-LOI-2024-017::0062"
+    ],
+    "lacune": "L1"
+   }
+  },
+  "donnees_sensibles": {
+   "sante": {
+    "categorie": "sensible",
+    "exige": "consentement_expres",
+    "consentement_suffisant": false,
+    "sources": [
+     "CMR-LOI-2024-017::0005",
+     "CMR-LOI-2024-017::0062"
+    ]
+   },
+   "categories_interdites_art48": {
+    "valeur": [
+     "opinions_religieuses_philosophiques_politiques_syndicales",
+     "origine_raciale_ethnique",
+     "origine_linguistique_regionale",
+     "vie_sexuelle",
+     "genetique_sante",
+     "biometrie_sante"
+    ],
+    "derogation_par_consentement": false,
+    "statut_interpretation": "position_conservatoire_juriste_equipe",
+    "modifiable_en_simulation": true,
+    "sources": [
+     "CMR-LOI-2024-017::0048"
+    ],
+    "lacune": "L11"
+   },
+   "revele_vie_sexuelle": {
+    "statut": "choix_equipe",
+    "recherches": [
+     "planification_familiale",
+     "contraception",
+     "infectiologie_vih",
+     "antiretroviraux",
+     "gynecologie_obstetrique"
+    ],
+    "traitement": "recherche_sur_appareil"
+   },
+   "donnees_genetiques_exclues": {
+    "statut": "choix_equipe",
+    "exemples": [
+     "genotype_drepanocytose",
+     "antecedents_genetiques_familiaux",
+     "resultat_test_genetique"
+    ],
+    "traitement": "ne_jamais_demander"
+   },
+   "biometrie_exclue": {
+    "statut": "choix_equipe",
+    "exemples": [
+     "empreinte",
+     "reconnaissance_faciale",
+     "empreinte_vocale",
+     "photo_lesion_identifiante"
+    ],
+    "traitement": "aucune_collecte_serveur"
+   },
+   "langue": {
+    "statut": "choix_equipe",
+    "traitement": "preference_interface_sur_appareil"
+   },
+   "recherches_sensibles_specialite": [
+    "psychiatrie",
+    "oncologie",
+    "infectiologie_vih",
+    "addictologie",
+    "gynecologie_obstetrique",
+    "planification_familiale"
+   ],
+   "classes_medicament_sensibles": [
+    "antiretroviraux",
+    "contraception",
+    "psychotropes",
+    "antituberculeux"
+   ],
+   "traitement": [
+    "pas_de_journal_nominatif",
+    "agregat_seulement",
+    "pas_de_historique_compte"
+   ],
+   "produits_exclus_art75": true,
+   "sources": [
+    "CMR-LOI-2024-017::0005",
+    "CMR-LOI-2024-017::0011",
+    "CMR-LOI-2024-017::0048",
+    "CMR-LOI-90-035::0072"
+   ]
+  },
+  "transactions_bancaires": {
+   "paiement_dans_application": false,
+   "sources": [
+    "CMR-LOI-2024-017::0048"
+   ]
+  },
+  "transfert_hors_pays": {
+   "autorise_donnees_personnelles": false,
+   "autorise_donnees_anonymisees": true,
+   "autorise_donnees_synthetiques": true,
+   "repli": [
+    "modele_local",
+    "anonymisation",
+    "refus"
+   ],
+   "sources": [
+    "CMR-LOI-2024-017::0033",
+    "CMR-MINSANTE-PSNSN-2026-2030::0005"
+   ],
+   "lacune": "L3"
+  },
+  "surveillance": {
+   "seuil_minimal_cas_par_zone": 5,
+   "maille_spatiale": "aire_de_sante",
+   "maille_temporelle": "semaine_epi",
+   "decalage_publication_jours": 7,
+   "transfrontalier": "hors_perimetre_prototype",
+   "validation_humaine_obligatoire": true,
+   "acces_detail": [
+    "point_focal_district"
+   ],
+   "acces_public": "carte_agregee",
+   "localisation_individuelle_partageable": false,
+   "delais_heures": {
+    "notification": 24,
+    "triage": 24,
+    "evaluation_risque": 48
+   },
+   "sources": [
+    "CMR-MINSANTE-GUIDE-SBC-2023::0028",
+    "CMR-MINSANTE-GUIDE-SBC-2023::0018",
+    "INT-OMS-RSI-2005-AMENDE-2022::0012",
+    "INT-OMS-RSI-2005-AMENDE-2022::0054"
+   ],
+   "lacunes": [
+    "L4",
+    "L6"
+   ]
+  },
+  "pharmacie": {
+   "declarants_autorises_medicament": [
+    "officine_agreee",
+    "pharmacie_hospitaliere"
+   ],
+   "declarants_autorises_sang": [
+    "banque_de_sang_hospitaliere",
+    "centre_transfusion"
+   ],
+   "classement_payant": false,
+   "interdits": [
+    "suggerer_alternative",
+    "indiquer_posologie",
+    "promouvoir_produit",
+    "classement_payant"
+   ],
+   "mention_obligatoire": "Délivré sur ordonnance",
+   "sources": [
+    "CMR-LOI-90-035::0017",
+    "CMR-LOI-90-035::0049",
+    "CMR-LOI-90-035::0012"
+   ],
+   "lacunes": [
+    "L8",
+    "L9"
+   ]
+  },
+  "notation_etablissements": {
+   "publication_score": true,
+   "delai_contestation_jours": 7,
+   "delai_reponse_moderateur_heures": 72,
+   "rafale_fondee_application": "progressive",
+   "rafale_fondee_etalement_jours": 7,
+   "gel_si_rafale": true,
+   "moderation_humaine": true,
+   "statut": "choix_equipe",
+   "lacune": "L10"
+  },
+  "journal_audit": {
+   "ajout_seul": true,
+   "chainage": "sha256",
+   "conservation_jours": 365,
+   "champs_interdits": [
+    "nom",
+    "telephone",
+    "position_precise",
+    "texte_libre_symptomes",
+    "langue",
+    "requete_revelant_vie_sexuelle",
+    "donnee_genetique",
+    "donnee_biometrique"
+   ],
+   "sources": [
+    "CMR-LOI-2010-012::0034",
+    "INT-UE-AI-ACT-2024-1689::0032"
+   ]
+  },
+  "llm": {
+   "hebergement": "local",
+   "usage_autorise": [
+    "reformulation",
+    "detection_langue",
+    "extraction_symptomes_vers_codes"
+   ],
+   "usage_interdit": [
+    "diagnostic",
+    "prescription",
+    "abaisser_niveau_urgence",
+    "decision_conformite_sans_citation"
+   ],
+   "sources": [
+    "INT-OMS-LMM-2024::0007"
+   ]
+  },
+  "diagnostic_poc": {
+   "actif": true,
+   "modes_autorises": [
+    "demo_synthetique"
+   ],
+   "jeu_de_donnees": "table_demonstration",
+   "max_hypotheses": 3,
+   "afficher_score_modele": true,
+   "art48_affichage": "message_neutre",
+   "transmission_serveur": false,
+   "masquer_si_urgence": true,
+   "orientation": {
+    "actif": true,
+    "regle_niveau": "le_plus_eleve",
+    "age_pediatrie_max": 15,
+    "rayon_initial_km": 5,
+    "recherche": "sur_appareil"
+   },
+   "statut": "choix_equipe",
+   "sources": [
+    "CMR-LOI-90-036::0015",
+    "CMR-LOI-2024-017::0048"
+   ],
+   "lacunes": [
+    "L5",
+    "L15",
+    "L16"
+   ]
+  },
+  "tendances": {
+   "seuil_minimal": 5,
+   "arrondi": 5,
+   "semaines_completes": true,
+   "alertes": false,
+   "recherches_sensibles_comptees": false,
+   "statut": "choix_equipe",
+   "sources": [
+    "CMR-LOI-2024-017::0062"
+   ]
+  }
+ }
+}

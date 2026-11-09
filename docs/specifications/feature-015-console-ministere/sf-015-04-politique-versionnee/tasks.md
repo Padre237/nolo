@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-2119, FR-2120 |
-| État d'implémentation | Partiellement implémenté — rétro-spécifié le 2026-11-09 ; écarts au §9 de design.md |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -36,5 +36,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : SF-007-17
 - Condition de fin : TEST-015-04-02 réussis
 - Tests : TEST-015-04-02
-- Statut : À faire
+- Statut : Fait (2026-11-09) — console : politique complète, version et empreinte canonique vérifiée ; `S.POLITIQUE` retiré
 

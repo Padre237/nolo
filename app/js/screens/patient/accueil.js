@@ -42,6 +42,7 @@ export default {
         <section aria-labelledby="autres-titre">
           <h2 id="autres-titre" class="titre-2 section-titre">${t('accueil.autresTitre')}</h2>
           <div class="annuaire">
+            ${ligne('#/droits', 'bouclier', t('accueil.droits'), t('accueil.droitsB'))}
             ${ligne('#/mes-donnees', 'donnees', t('accueil.mesDonnees'), partages.length ? t('accueil.partageOui', { liste: partages.join(', ') }) : t('accueil.partageNon'))}
             ${ligne('#/pro', 'batiment', t('accueil.etablissement'), t('accueil.etablissementB'))}
             ${ligne('#/ministere', 'repere', t('accueil.ministere'), t('accueil.ministereB'))}

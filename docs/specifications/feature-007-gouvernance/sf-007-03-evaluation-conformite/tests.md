@@ -67,6 +67,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : décision en démo et complet
 - Alors : AC puis BLOQUE
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `tests/unit/test_gouvernance.py::test_actions_du_module_poc` ; `tests/unit/test_gouvernance.py::test_module_poc_inactif_ou_transmis_est_bloque` (`python3 -m pytest -q`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 

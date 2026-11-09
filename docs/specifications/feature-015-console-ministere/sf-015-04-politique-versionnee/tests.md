@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : recalcul
 - Alors : même empreinte
 - Données : —
-- Automatisation : `tools/inspecter.py` (preuve-2026-11-09-inspection-visuelle.txt)
-- Statut d'exécution : Non exécuté (état atteint et capturé par l'inspection du 2026-11-09, qui ne contrôle que la mise en page ; le contenu attendu n'est pas vérifié : assertion à écrire, TASK-013-10-03)
+- Automatisation : `app/tests/console.test.mjs` › « TEST-015-04-01 : l’empreinte affichée est celle du JSON affiché » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 
 ### TEST-015-04-02 — Même version que le serveur
 - Type : Unitaire
@@ -34,6 +34,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : ouverture de la vue
 - Alors : 1.3.0
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/console.test.mjs` › « TEST-015-04-02 : même version que config/policy.yaml ; aucune seconde politique codée en dur » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`)
 

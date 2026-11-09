@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-1521, FR-1522, FR-1523, FR-1524, FR-1525, FR-1526, FR-1527, FR-1528 |
-| État d'implémentation | Partiellement implémenté — rétro-spécifié le 2026-11-09 ; écarts au §9 de design.md |
+| État d'implémentation | Implémenté (2026-11-09, D-038) ; table de démonstration en attendant DDXPlus (SF-001-19) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -47,7 +47,7 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : SF-007-17
 - Condition de fin : TEST-001-15-01 réussis
 - Tests : TEST-001-15-01
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `moduleActif` (`app/js/domain/politique.js`) ; route `#/pistes` absente hors démonstration ; parcours Vérifier → Où aller sans piste
 
 ### TASK-001-15-04 — Décision de Conformité et journal avant affichage
 - Exigences : FR-1526, FR-1527
@@ -58,7 +58,7 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : SF-007-17
 - Condition de fin : TEST-001-15-06 réussis
 - Tests : TEST-001-15-06
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `deciderResultat` (`app/js/agents/parcours.js`) appelé par « Vérifier » avant tout affichage ; journal : module, empreinte, nombre
 
 ### TASK-001-15-05 — Mention « table de démonstration » à l'écran
 - Exigences : FR-1528
@@ -69,5 +69,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-001-15-07 réussis
 - Tests : TEST-001-15-07
-- Statut : À faire
+- Statut : Fait (2026-11-09) — clé `pistes.tableDemo` affichée en tête de l'encart d'origine
 

@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-1931, FR-1932, FR-1933 |
 | ADR | — |
-| État d'implémentation | Non implémenté |
+| État d'implémentation | Implémenté (2026-11-09, D-038) ; S4 joué dans Nolo (pistes envoyées au serveur), le scénario S4 Python reste à faire (SF-012-05) |
 
 ## 1. Vue d'ensemble
 —

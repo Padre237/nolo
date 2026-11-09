@@ -6,6 +6,8 @@ import { translator } from './core/i18n.js';
 import { valide } from './domain/consent.js';
 import { entete, barreSecurite, pied } from './ui/components.js';
 import { icone } from './ui/icons.js';
+import { demarrer, agents } from './agents/nolo.js';
+import { moduleActif } from './domain/politique.js';
 
 import bienvenue from './screens/patient/bienvenue.js';
 import accueil from './screens/patient/accueil.js';
@@ -20,6 +22,7 @@ import horsChamp from './screens/patient/hors-champ.js';
 import chercher from './screens/patient/chercher.js';
 import conditions from './screens/patient/conditions.js';
 import mesDonnees from './screens/patient/mes-donnees.js';
+import droits from './screens/patient/droits.js';
 import proEntree from './screens/pro/entree.js';
 import proInscription from './screens/pro/inscription.js';
 import proCode from './screens/pro/code.js';
@@ -31,19 +34,22 @@ const remplacer = (h) => { try { history.replaceState(null, '', h); } catch { lo
 const ROUTES = [
   ['bienvenue', bienvenue], ['', accueil], ['decrire', decrire], ['verifier', verifier], ['pistes', pistes], ['ou-aller', ouAller],
   ['fiche', fiche], ['urgence', urgence], ['confidentiel', confidentiel], ['hors-champ', horsChamp], ['chercher', chercher],
-  ['conditions', conditions], ['mes-donnees', mesDonnees], ['pro', proEntree], ['pro/inscription', proInscription], ['pro/code', proCode], ['pro/tableau', proTableau],
+  ['conditions', conditions], ['mes-donnees', mesDonnees], ['droits', droits], ['pro', proEntree], ['pro/inscription', proInscription], ['pro/code', proCode], ['pro/tableau', proTableau],
   ['ministere', ministere],
 ];
-const SANS_CONSENTEMENT = new Set(['bienvenue', 'conditions', 'pro', 'pro/inscription', 'pro/code', 'pro/tableau', 'ministere']);
+const SANS_CONSENTEMENT = new Set(['bienvenue', 'conditions', 'droits', 'pro', 'pro/inscription', 'pro/code', 'pro/tableau', 'ministere']);
 
 function lireRoute() {
   const h = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
   const [chemin, requete = ''] = h.split('?');
   const morceaux = chemin.split('/').filter(Boolean);
   // Correspondance la plus longue (« pro/tableau/stock » → « pro/tableau » + param « stock »).
+  // Hors démonstration ou module désactivé, la route des pistes n'existe pas (FR-1521).
+  const a = agents();
+  const routes = a && moduleActif(a.politique, a.mode) ? ROUTES : ROUTES.filter(([k]) => k !== 'pistes');
   for (let n = morceaux.length; n >= 0; n--) {
     const cle = morceaux.slice(0, n).join('/');
-    const r = ROUTES.find(([k]) => k === cle);
+    const r = routes.find(([k]) => k === cle);
     if (r) return { cle, ecran: r[1], params: morceaux.slice(n), requete: new URLSearchParams(requete) };
   }
   return { cle: '', ecran: accueil, params: [], requete: new URLSearchParams() };
@@ -148,6 +154,10 @@ racine.addEventListener('keydown', (ev) => {
 
 store.subscribe(() => rendre());
 window.addEventListener('hashchange', () => rendre({ nouvelleRoute: true }));
+// Les agents (politique, journal, orchestrateur) sont prêts avant le premier écran : aucune action sans eux.
+// La base de connaissances arrive ensuite ; le panneau « Comment Nolo a décidé » se complète alors.
+try { await demarrer({ quandBase: () => store.set({ baseChargee: true }) }); }
+catch { racine.innerHTML = '<p class="encart">Nolo : politique illisible, rechargez la page.</p>'; throw new Error('politique illisible'); }
 rendre({ nouvelleRoute: true });
 
 if ('serviceWorker' in navigator && location.protocol !== 'file:') {

@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-1931, FR-1932, FR-1933 |
-| État d'implémentation | Non implémenté |
+| État d'implémentation | Implémenté (2026-11-09, D-038) ; S4 joué dans Nolo (pistes envoyées au serveur), le scénario S4 Python reste à faire (SF-012-05) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -25,5 +25,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : SF-007-17
 - Condition de fin : TEST-007-20-01, TEST-007-20-02 réussis
 - Tests : TEST-007-20-01, TEST-007-20-02
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `app/tests/ab.test.mjs`, `app/js/agents/ab.js`, vue `#/ministere/ab` (6 violations sans gouvernance, 0 avec ; mode simulé)
 
