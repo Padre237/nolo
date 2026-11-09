@@ -1,13 +1,15 @@
-"""SF-017-01 (D-039) — Version soumise du rapport technique, hors du dépôt.
+"""SF-017-01 — Version soumise du rapport technique (PDF publié à la racine du dépôt depuis le 2026-11-09).
 
     python3 tools/rapport_soumission.py [--video URL]
 
-Lit `docs/submission/rapport-technique-en.md` (public : noms et rôles, sans adresse e-mail), remplace la mention
-des contacts par la ligne de `../livrables/contacts-equipe.txt` (hors du dépôt) et, si elle est donnée, ajoute le
-lien de la vidéo ; écrit `../livrables/rapport-technique-en.soumission.md`, produit le PDF
-`../livrables/rapport-technique-en.pdf` (`tools/rapport_pdf.py`) puis le contrôle (`tools/verifier_rapport.py`).
+Lit `docs/submission/rapport-technique-en.md`. S'il porte encore la mention « contacts dans le PDF », la remplace
+par la ligne de `../livrables/contacts-equipe.txt` ; s'il attend encore le lien de la vidéo et que `--video` est
+donné, l'ajoute. Écrit `../livrables/rapport-technique-en.soumission.md`, produit le PDF
+`../livrables/rapport-technique-en.pdf` (`tools/rapport_pdf.py`), le contrôle (`tools/verifier_rapport.py`), puis
+le copie à la racine du dépôt (`rapport-technique-en.pdf`) s'il est conforme.
 """
 import argparse
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -23,10 +25,8 @@ def main() -> int:
     ap.add_argument("--video", default=None)
     a = ap.parse_args()
     md = (ROOT / "docs" / "submission" / "rapport-technique-en.md").read_text(encoding="utf-8")
-    contacts = (LIVRABLES / "contacts-equipe.txt").read_text(encoding="utf-8").strip()
-    if PUBLIC not in md:
-        sys.exit("mention des contacts introuvable dans le rapport du dépôt")
-    md = md.replace(PUBLIC, contacts, 1)
+    if PUBLIC in md:
+        md = md.replace(PUBLIC, (LIVRABLES / "contacts-equipe.txt").read_text(encoding="utf-8").strip(), 1)
     if a.video:
         md = md.replace(VIDEO, f"**Demo video:** {a.video}", 1)
     source = LIVRABLES / "rapport-technique-en.soumission.md"
@@ -37,6 +37,9 @@ def main() -> int:
     r = subprocess.run([py, str(ROOT / "tools" / "verifier_rapport.py"), "--rapport", str(source), "--pdf", str(pdf)])
     if VIDEO in md:
         print("Attention : lien de la vidéo encore absent (--video URL).")
+    if r.returncode == 0:
+        shutil.copyfile(pdf, ROOT / "rapport-technique-en.pdf")
+        print(f"Copié : {ROOT / 'rapport-technique-en.pdf'}")
     return r.returncode
 
 

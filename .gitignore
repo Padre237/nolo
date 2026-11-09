@@ -23,3 +23,6 @@ nolo-captures/
 # Systèmes
 .DS_Store
 Thumbs.db
+
+# Rapport technique de l'équipe (seul PDF publié, à la racine)
+!/rapport-technique-en.pdf

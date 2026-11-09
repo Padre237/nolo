@@ -61,6 +61,24 @@ def test_faux_pdf_sort_en_1(tmp_path):
     assert "docs/source.pdf" in r.stdout
 
 
+def test_rapport_technique_a_la_racine_permis(tmp_path):
+    """Le rapport technique de l'équipe, à la racine, est le seul PDF publié (choix du propriétaire, 2026-11-09)."""
+    d = depot_conforme(tmp_path)
+    (d / "rapport-technique-en.pdf").write_bytes(b"%PDF-1.4\n% rapport de l'equipe\n")
+    r = lancer(d)
+    assert r.returncode == 0, r.stdout + r.stderr
+    assert "PDF : 0" in r.stdout
+
+
+def test_rapport_technique_hors_racine_sort_en_1(tmp_path):
+    d = depot_conforme(tmp_path)
+    (d / "docs").mkdir()
+    (d / "docs" / "rapport-technique-en.pdf").write_bytes(b"%PDF-1.4\n")
+    r = lancer(d)
+    assert r.returncode == 1
+    assert "docs/rapport-technique-en.pdf" in r.stdout
+
+
 def test_pdf_sans_extension_sort_en_1(tmp_path):
     d = depot_conforme(tmp_path)
     (d / "kb" / "notes.bin").write_bytes(b"%PDF-1.7\n\x00\x01")

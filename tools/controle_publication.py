@@ -2,7 +2,8 @@
 """Contrôle avant publication du dépôt (SF-017-02, TASK-017-02-02 ; FR-2308, CA-017-02-03).
 
 Rien d'interdit dans ce qui serait publié :
-- aucun PDF (extension .pdf ou contenu commençant par « %PDF- ») ;
+- aucun PDF (extension .pdf ou contenu commençant par « %PDF- »), sauf le rapport technique de l'équipe à la
+  racine (`rapport-technique-en.pdf`, publié avec les contacts par choix du propriétaire le 2026-11-09) ;
 - aucun secret (clé privée, jeton GitHub, clé AWS, jeton Slack, clé « sk- ») ;
 - rien du texte « tous droits réservés » INT-OMS-AFRO-SBC-2014 : ni fragment (enregistrement
   « doc_id » hors de sa fiche), ni référence à un fragment (« <doc_id>::NNNN »), ni page, ni texte.
@@ -27,6 +28,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 RESERVE = "INT-OMS-AFRO-SBC-2014"
 DOSSIER_PAGES_RESERVE = "oms_afro_sbc_2014"           # repli si la fiche ne donne pas pages_dir
+RAPPORT_PUBLIE = "rapport-technique-en.pdf"                  # seul PDF permis, et seulement à la racine
 EXCLUS_PARCOURS = {".git", ".venv", "venv", "node_modules", "__pycache__", ".pytest_cache"}
 SECRETS = {
     "clé privée": re.compile(r"BEGIN (?:RSA |EC |DSA |OPENSSH )?PRIVATE KEY"),
@@ -86,6 +88,8 @@ def controler(racine: Path) -> int:
         parties = rel.split("/")
         if any(p in supports or Path(p).stem in supports for p in parties):
             signaler("page ou texte réservés", rel)
+        if rel == RAPPORT_PUBLIE:
+            continue                                   # rapport de l'équipe : seul PDF permis
         donnees = (racine / rel).read_bytes()
         if rel.lower().endswith(".pdf") or donnees.startswith(b"%PDF-"):
             signaler("PDF", rel)

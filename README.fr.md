@@ -2,6 +2,8 @@
 
 *Nolo* veut dire « santé » en douala. Ce dépôt contient la participation de CENADI EQUIPE 2 (Cameroun) à l'**ITU AI for Good Lab Hackathon** (soumission le 10 novembre 2026). English version: [README.md](README.md).
 
+**Soumission :** [rapport technique (PDF, 5 pages, en anglais)](rapport-technique-en.pdf) · [vidéo de démonstration (4:55, en anglais)](nolo-demo.mp4) · [base de connaissances](kb/)
+
 > **Prototype de démonstration.** Nolo n'est pas un dispositif médical : il ne pose aucun diagnostic, ne prescrit rien et ne donne aucune posologie. Tous les établissements, stocks, comptes et séries de surveillance sont **fictifs** ; les appels aux structures sont désactivés. La console du ministère est une démonstration sous la marque Nolo, sans lien avec un ministère, sans nom ni logo officiel.
 
 ## Le problème
