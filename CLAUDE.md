@@ -169,6 +169,7 @@ python3 tools/croiser_preuves.py docs/quality/<preuve>.txt # chaque test « Exé
 # Livrables (SF-017-01, SF-017-02)
 python3 tools/controle_publication.py                      # avant tout envoi : 0 PDF, 0 secret, rien du texte réservé (code 0)
 python3 tools/rapport_pdf.py                               # PDF du rapport, hors du dépôt : ../livrables/rapport-technique-en.pdf
+python3 tools/rapport_soumission.py [--video URL]          # version SOUMISE (e-mails de ../livrables/contacts-equipe.txt), PDF et contrôle (D-039)
 python3 tools/verifier_rapport.py                          # sections, 5 pages au plus, chiffres, états concordants (code 0)
 ```
 

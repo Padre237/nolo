@@ -1,6 +1,9 @@
 # AI for Good Sandbox Hackathon – CENADI EQUIPE 2 – Nolo
 
-**Team leader:** [to be completed] · **Team members:** [to be completed] · **Contact details:** [to be completed]
+**Team leader:** NGAN BITJONG Emmanuel Yves Daron (CENADI, Cameroon)
+
+**Team members:** MBANG BILOA Raphaël Angelo; ZEINABOU Hamidou; mentor: BOKENGUE Jeannot Constant · **Contact details:** e-mail addresses in the submitted PDF (not published in the public repository)
+
 **GitHub link:** https://github.com/Padre237/nolo · **Demo video:** [to be added]
 
 > **Demonstration prototype.** Nolo is not a medical device: it does not diagnose, prescribe or name a dose. Every facility, stock, account and surveillance series is synthetic, and facility phone calls are disabled. The ministry console is a Nolo-branded demonstration, not affiliated with any ministry. Every figure below comes from a dated execution proof in `docs/quality/` (9 November 2026). Every function carries the status recorded in its specification folder: Implemented, Partly implemented, Planned or Demo only.
