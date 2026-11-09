@@ -34,8 +34,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : liste des clés
 - Alors : clés autorisées seulement
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/qualite.test.mjs` › « TEST-013-11-02 : seules les clés autorisées sont écrites dans le stockage local » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`) — contrôle statique : toute écriture `local.write` du code vise une clé autorisée
 
 ### TEST-013-11-03 — Rendu au changement
 - Type : Unitaire

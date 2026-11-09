@@ -1,7 +1,7 @@
 // Écran 5 — Pistes du module expérimental : le nom d'abord, l'accord des signes ensuite, le score en dernier.
 import { html } from '../../core/dom.js';
 import { libelle } from '../../domain/engine.js';
-import { etiquette, points } from '../../ui/components.js';
+import { etiquette, points, raisonIssue, lienSoignant } from '../../ui/components.js';
 import { icone } from '../../ui/icons.js';
 import { panneauDecision } from '../../ui/decision.js';
 import { agents } from '../../agents/nolo.js';
@@ -40,6 +40,8 @@ export default {
           </li>`)}
         </ol>
         <p class="encart encart--experimental">${icone('info')}<span class="encart__corps"><strong class="encart__titre">${t('pistes.tableDemo')}</strong>${t('pistes.origine')}</span></p>
+        ${raisonIssue(t, 'pistes')}
+        ${lienSoignant(t)}
         ${panneauDecision(s.cas.trace, t, agents()?.base)}
         <div class="actions">
           <a class="bouton bouton--principal" href="#/ou-aller">${icone('repere', { taille: 20 })}${t('pistes.ouAller')}</a>

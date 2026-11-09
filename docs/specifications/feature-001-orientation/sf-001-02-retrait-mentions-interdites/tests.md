@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `preparerEnvoi(cas, 'surveillance')`
 - Alors : seuls des codes `SYM-NNN` ; aucun mot du texte ; aucune catégorie interdite
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/saisie.test.mjs` › « TEST-001-02-01 et TEST-002-01-01 : la contribution ne contient que quatre champs, des codes SYM-NNN » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-001-02-02 — Catalogues sans question interdite
 - Type : Unitaire
@@ -34,6 +34,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : on cherche « sexuel, génétique, génotype, drépanocytose (génotype), empreinte, sexual, genetic, biometric »
 - Alors : aucune occurrence dans une question
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/saisie.test.mjs` › « TEST-001-02-02 : aucune question sur la vie sexuelle, la génétique ou la biométrie » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 

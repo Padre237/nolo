@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : rendu
 - Alors : quatre choix
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/ecrans.test.mjs` › « TEST-006-01-01 : quatre choix de signalement sous un résultat de médicament » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-006-01-02 — Limites D-030
 - Type : Interface
@@ -45,8 +45,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `score_fiabilite`
 - Alors : poids 0,125
 - Données : —
-- Automatisation : `python3 kb/services/test_services.py` (11 contrôles de la logique de référence)
-- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-suites.txt`)
+- Automatisation : `app/tests/fiabilite.test.mjs` › « TEST-006-01-03 : poids d’un négatif — déclaration de 8 h (0,25) et compte de 3 jours (0,5) » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-006-01-04 — Enregistrement minimal
 - Type : Confidentialité

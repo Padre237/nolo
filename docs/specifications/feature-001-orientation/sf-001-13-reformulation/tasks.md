@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-1501, FR-1502, FR-1503, FR-1504, FR-1505, FR-1506, FR-1507, FR-1508, NFR-1501 |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -58,5 +58,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-001-13-04, TEST-001-13-05 réussis
 - Tests : TEST-001-13-04, TEST-001-13-05
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `app/tests/saisie.test.mjs`
 

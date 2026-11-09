@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `chercherSang('O−')`
 - Alors : disponible d'abord
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/recherche.test.mjs` › « TEST-005-01-01 : sang — rupture exclue, « disponible » avant « faible », puis distance » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-005-01-02 — Pas de quantité, mention
 - Type : Interface

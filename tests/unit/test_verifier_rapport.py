@@ -24,7 +24,8 @@ The public knowledge base holds 2,034 fragments from 21 documents.
 | Function | Status | Spec |
 |---|---|---|
 | Compliance agent, four verdicts | Implemented | SF-007-03 |
-| Rights adviser "Mes droits santé" | Planned | SF-016-02 |
+| Rights adviser "Mes droits santé" | Implemented | SF-016-02 |
+| Public epidemiological map | Planned | SF-002-08 |
 | Experimental leads (POC) | Demo only | SF-001-15 |
 
 The POC module is a governed proof of concept (gaps L5, L15, L16).
@@ -139,10 +140,10 @@ def test_chiffre_de_la_base_absent_sort_en_1(tmp_path):
 
 # TEST-017-01-03 — états concordants
 def test_etat_discordant_sort_en_1(tmp_path):
-    texte = SECTIONS.replace('"Mes droits santé" | Planned', '"Mes droits santé" | Implemented')
+    texte = SECTIONS.replace("Public epidemiological map | Planned", "Public epidemiological map | Implemented")
     r = lancer(ecrire(tmp_path, texte))
     assert r.returncode == 1
-    assert "SF-016-02" in r.stdout
+    assert "SF-002-08" in r.stdout
 
 
 def test_sous_fonctionnalite_inconnue_sort_en_1(tmp_path):

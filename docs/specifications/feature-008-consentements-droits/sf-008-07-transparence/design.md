@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-109, FR-861, FR-862 |
 | ADR | — |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Vue d'ensemble
 —
@@ -44,4 +44,4 @@ Aucun contrat propre.
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- FR-862 : la raison est explicite sur l'urgence et le hors champ ; à vérifier et compléter sur pistes et « Où aller ».
+- Aucun écart connu (écarts résolus le 2026-11-09 : une phrase de raison par issue (`raisons.*`, `raisonIssue`)).

@@ -56,6 +56,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : calcul
 - Alors : ≥ 4,5:1
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/qualite.test.mjs` › « TEST-013-06-04 : contrastes des paires de jetons texte / fond ≥ 4,5:1 » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 

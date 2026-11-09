@@ -5,8 +5,8 @@
 | Fonctionnalité | F-003 Recherche d'un service ou d'une spécialité |
 | Sous-fonctionnalité | SF-003-01 |
 | Version | 2.0.0 |
-| Statut | READY_FOR_DEV |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| Statut | IN_TESTING |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 | Origine | Spécification v1.3 (FR-301, FR-304) |
 | Bloquant | Aucun |
 | Dépend de | SF-013-04 |

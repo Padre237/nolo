@@ -58,5 +58,16 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-013-05-01, TEST-013-05-03 réussis
 - Tests : TEST-013-05-01, TEST-013-05-03
+- Statut : Fait (2026-11-09) — `app/tests/qualite.test.mjs` ; jetons `--sur-sombre*`, `--ferme-sur-sombre`, `--hachure`, `--voile-clair` ; exceptions déclarées dans `app/docs/DESIGN.md`
+
+### TASK-013-05-05 — Appliquer la décision sur Q-013-05-01 (rouge des erreurs de saisie)
+- Exigences : FR-1322
+- Conception : DES-013-05-01
+- Fichiers à lire : `app/docs/DESIGN.md` (exceptions aux jetons)
+- Fichiers à créer ou modifier : `app/css/components.css`, `app/css/pro.css`, `app/docs/DESIGN.md`
+- Résultat attendu : rouge réservé à l'urgence, ou exception approuvée
+- Dépend de : décision du propriétaire sur Q-013-05-01
+- Condition de fin : TEST-013-05-03 réussi sans exception non approuvée
+- Tests : TEST-013-05-03
 - Statut : À faire
 

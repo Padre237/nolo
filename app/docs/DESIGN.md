@@ -56,3 +56,15 @@ Courbe `cubic-bezier(.23, 1, .32, 1)`. Appui 120 ms, état 180 ms, apparition 24
 ## Mise en page
 
 Une colonne sous 960 px ; au-delà, récit à gauche (collant), surface de travail à droite (640 px au plus). Espace pro : navigation latérale de 232 px, ou pastilles défilantes sur mobile. Vérifié sans débordement à 360, 390, 768 et 1 440 px.
+
+## Exceptions aux jetons
+
+Contrôlées par `app/tests/qualite.test.mjs` (TEST-013-05-01 et TEST-013-05-03). Hors de `css/tokens.css`, seules ces valeurs littérales sont admises :
+
+- `#fff` : texte et pictogrammes sur les aplats forêt, rouge d'urgence et boutons pleins (équivaut à `--sur-sombre`) ;
+- `rgba(` : voiles translucides sur les panneaux sombres et ombres portées.
+
+Usages du rouge hors du sens « urgence », constatés le 2026-11-09 et laissés en l'état en attendant une décision (écart de SF-013-05, Q-013-05-01) :
+
+- Rouge hors urgence : `.champ__erreur` ; `.saisie[aria-invalid="true"]` ; `.rapport__rejets` ; `.orientation__liste li.est-fort`
+

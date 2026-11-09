@@ -69,6 +69,7 @@ export function versEtablissement(c) {
     ? Object.fromEntries((c.stock?.lignes || []).map((l) => [l.id, [l.niveau, heures]]))
     : undefined;
   const sang = c.stockSang?.niveaux ? Object.fromEntries(Object.entries(c.stockSang.niveaux).filter(([, v]) => v)) : base?.sang;
+  const sangH = c.stockSang?.envoi ? (Date.now() - new Date(c.stockSang.envoi).getTime()) / 3.6e6 : base?.sangH;
   const soins = c.type === 'hopital' || c.type === 'centre_sante';
   const specialites = soins && r.H3 ? Object.fromEntries(Object.entries(r.H3).map(([k, v]) => [k, v.m])) : c.type === 'centre_specialise' && r.S1 ? { [DOMAINES[r.S1]]: 'tous' } : base?.specialites;
   return {
@@ -78,7 +79,7 @@ export function versEtablissement(c) {
     urgences: soins ? r.H2 === true : base?.urgences, urgencesPed: soins ? r.H2a === true : base?.urgencesPed,
     specialites, imagerie: soins ? (r.H7 || []).filter((v) => v !== 'aucune') : base?.imagerie, laboratoire: soins ? r.H9 === true : base?.laboratoire,
     hospitalisation: soins ? r.H5 === true : base?.hospitalisation, pharmacie: soins ? r.H10a === true : base?.pharmacie,
-    stock, sang, verifie: c.visibilite === 'VERIFIE', actif: c.etatCompte === 'ACTIF',
+    stock, sang, sangH, verifie: c.visibilite === 'VERIFIE', actif: c.etatCompte === 'ACTIF',
   };
 }
 
@@ -100,7 +101,7 @@ export function compteDemoHopital() {
       H9: true, H9a: true, H10: true, H10a: true, H10b: true, H11: 'AE-2015-0213 (fictif)',
     },
     ficheEnvoyee: il(400), photos: [],
-    stock: { lignes, envoi: il(5) }, stockSang: { niveaux: { ...base.sang }, envoi: il(5) },
+    stock: { lignes, envoi: il(5) }, stockSang: { niveaux: { ...base.sang }, envoi: il(1) },
     dernierImport: { acceptees: lignes.length, rejetees: 0, total: lignes.length },
     historique: [{ type: 'import', date: il(5), a: lignes.length, r: 0 }, { type: 'verification', date: il(399), etat: 'VERIFIE' }, { type: 'fiche', date: il(400) }, { type: 'confirmation', date: il(401) }, { type: 'creation', date: il(401) }],
   };

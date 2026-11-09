@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `offreDemande`
 - Alors : artésunate ; ≥ 11 %
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/qualite.test.mjs` › « TEST-015-03-01 : offre et demande — Littoral : artésunate, insatisfaction ≥ 11 % » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-015-03-02 — Changer d'indicateur
 - Type : Interface

@@ -1,9 +1,10 @@
 // Écran 6 — Où aller : le panneau de direction (moment fort), la raison du choix, les autres portes.
 import { html, raw } from '../../core/dom.js';
 import { recommander, distance } from '../../domain/facilities.js';
-import { etiquette, etatOuverture, ligneStructure } from '../../ui/components.js';
+import { etiquette, etatOuverture, ligneStructure, raisonIssue, lienSoignant } from '../../ui/components.js';
 import { icone } from '../../ui/icons.js';
 import { nomPiste } from './pistes.js';
+import { blocPosition, actionsPosition, appliquerPosition } from '../../ui/position.js';
 import { panneauDecision } from '../../ui/decision.js';
 import { agents } from '../../agents/nolo.js';
 
@@ -40,6 +41,7 @@ export default {
   garde: ({ s }) => (['pistes', 'orientation'].includes(s.cas?.resultat?.issue) ? null : '#/decrire'),
   render({ s, t }) {
     const { besoins, pistes } = s.cas.resultat;
+    appliquerPosition(s);
     const reco = recommander(besoins);
     const e = reco.structure;
     const tete = pistes[0];
@@ -68,12 +70,16 @@ export default {
           </div>
         </section>
         <section class="pile" aria-labelledby="autres-titre">
+          ${blocPosition(s, t)}
           <h2 id="autres-titre" class="titre-2">${t('orientation.autres')}</h2>
           <div class="lignes">${reco.autres.map((x) => ligneStructure(x, t))}</div>
           <p class="note">${t('commun.position')} ${t('commun.numeroFictif')}.</p>
+          ${raisonIssue(t, tete ? 'orientation' : 'sansModule')}
+          ${lienSoignant(t)}
           ${panneauDecision(s.cas.trace, t, agents()?.base)}
         </section>
       </div>
     </div>`;
   },
+  actions: { ...actionsPosition },
 };

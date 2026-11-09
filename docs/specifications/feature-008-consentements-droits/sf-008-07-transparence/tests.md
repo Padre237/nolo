@@ -34,6 +34,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : rendu
 - Alors : une phrase de raison chacune
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/ecrans.test.mjs` › « TEST-008-07-02 et TEST-001-09-03 : une raison propre à chaque issue ; lien vers un soignant » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 

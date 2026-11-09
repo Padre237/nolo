@@ -34,6 +34,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `chercherSang`
 - Alors : absente
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/recherche.test.mjs` › « TEST-010-03-02 : une déclaration de sang de plus de 6 h n’est plus montrée » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 

@@ -33,7 +33,9 @@ export async function conseiller() {
 
 /** Charge la politique (bloquant : aucune action sans elle), puis la base en arrière-plan. */
 export async function demarrer({ quandBase } = {}) {
-  installer({ politique: await chargerPolitique() });
+  const [politique, regles] = await Promise.all([chargerPolitique(), fetch('./data/regles.json').then((r) => r.json()).catch(() => null)]);
+  installer({ politique });
+  courant.regles = regles; // synonymes, définitions SBC, fiabilité, disponibilités (`kb/rules/`)
   chargerBase().then((b) => { courant.base = b; quandBase?.(); }).catch(() => { /* hors ligne sans cache : le panneau affiche les identifiants seuls */ });
   return courant;
 }

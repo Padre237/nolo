@@ -2,7 +2,7 @@
 
 .bandeau__chiffres { display: flex; gap: var(--e-8); margin: 0; }
 .bandeau__chiffres div { display: flex; flex-direction: column; gap: 2px; }
-.bandeau__chiffres dt { font-size: var(--t-note); color: #B9DCCD; font-weight: 700; }
+.bandeau__chiffres dt { font-size: var(--t-note); color: var(--menthe-trait); font-weight: 700; }
 .bandeau__chiffres dd { font-size: 2rem; font-weight: 800; color: #fff; letter-spacing: -0.02em; line-height: 1.1; }
 @media (min-width: 960px) { .ministere .bandeau { grid-template-columns: minmax(0, 1fr) auto; } }
 .pastille-compte { margin-left: auto; min-width: 24px; height: 24px; padding: 0 7px; border-radius: var(--r-pilule); background: var(--experimental-fond); color: var(--experimental); border: 1px solid var(--experimental-trait); font-size: var(--t-mini); font-weight: 800; display: inline-grid; place-items: center; }
@@ -34,7 +34,7 @@ button.pro__lien { border: 1px solid var(--ligne); font: inherit; font-weight: 7
 .legende__liste { display: flex; flex-wrap: wrap; gap: var(--e-2) var(--e-4); font-size: var(--t-note); color: var(--texte-2); }
 .legende__liste li { display: inline-flex; align-items: center; gap: 6px; }
 .legende__case { width: 18px; height: 14px; border-radius: 3px; border: 1px solid rgba(8, 63, 51, .15); }
-.legende__case--hachure { background: repeating-linear-gradient(45deg, #F3F5F2 0 3px, #B9DCCD 3px 6px); }
+.legende__case--hachure { background: repeating-linear-gradient(45deg, var(--pierre) 0 3px, var(--menthe-trait) 3px 6px); }
 .legende__signal { width: 16px; height: 16px; border-radius: 50%; border: 3px solid var(--encre); background: #fff; box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 6px var(--encre); }
 .carte-panneau { display: flex; flex-direction: column; gap: var(--e-3); padding: clamp(18px, 3vw, 28px); border-radius: var(--r-panneau); background: var(--surface); border: 1px solid var(--ligne); }
 .carte-panneau__sur { font-size: var(--t-note); font-weight: 700; color: var(--foret); }
@@ -55,7 +55,7 @@ button.pro__lien { border: 1px solid var(--ligne); font: inherit; font-weight: 7
 .aires { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
 .aire { position: relative; min-height: 76px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; padding: 8px 10px; border-radius: 10px; border: 2px solid transparent; color: var(--encre); text-align: left; transition: transform var(--d-appui) var(--courbe), border-color var(--d-etat), background-color 220ms var(--courbe); }
 .aire:active { transform: scale(.97); }
-.aire.est-hachure { background: repeating-linear-gradient(45deg, #F3F5F2 0 4px, #DCEDE6 4px 8px); }
+.aire.est-hachure { background: repeating-linear-gradient(45deg, var(--pierre) 0 4px, var(--hachure) 4px 8px); }
 .aire.est-sombre { color: #fff; }
 .aire.est-choisie { border-color: var(--encre); }
 .aire__id { font-size: var(--t-mini); font-weight: 800; }
@@ -103,7 +103,7 @@ button.pro__lien { border: 1px solid var(--ligne); font: inherit; font-weight: 7
 .table-defile table { width: 100%; border-collapse: collapse; font-size: var(--t-note); }
 .table-defile th, .table-defile td { padding: var(--e-2) var(--e-3); text-align: left; vertical-align: top; border-bottom: 1px solid var(--ligne); }
 .table-defile thead th { background: var(--pierre); font-weight: 700; white-space: nowrap; }
-.table-defile tr.est-different td { background: var(--urgence-fond); color: var(--urgence-texte); }
+.table-defile tr.est-different td { background: var(--voile); color: var(--encre); font-weight: 700; }
 .table-defile .mono { overflow-wrap: anywhere; }
 .fil { display: flex; flex-direction: column; gap: 0; margin: 0; padding: 0; list-style: none; border-left: 2px solid var(--menthe-trait); }
 .fil__position { position: relative; display: flex; flex-direction: column; gap: var(--e-2); padding: var(--e-3) 0 var(--e-3) var(--e-4); }
@@ -112,6 +112,12 @@ button.pro__lien { border: 1px solid var(--ligne); font: inherit; font-weight: 7
 .fil__tete { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-2); }
 .ab__colonne { gap: var(--e-4); }
 .ab__compte { font-size: var(--t-titre-3); font-weight: 700; color: var(--foret); }
-.ab__compte.est-different { color: var(--urgence-texte); }
+.ab__compte.est-different { color: var(--encre); }
 .ab__colonne .lignes--info li > div { min-width: 0; }
 .ab__colonne .mono { overflow-wrap: anywhere; }
+
+/* ── Définition SC et échéance (SF-002-03, SF-002-05) ─────────────────────────────────────── */
+.definition-sc { display: flex; flex-direction: column; gap: var(--e-2); padding: var(--e-3) var(--e-4); border-radius: var(--r-carte); background: var(--pierre); border: 1px solid var(--ligne); }
+.definition-sc q { font-size: var(--t-petit); color: var(--texte-2); }
+.echeance { display: flex; align-items: center; gap: var(--e-2); font-size: var(--t-petit); font-weight: 700; color: var(--foret); }
+.echeance--depassee { color: var(--encre); text-decoration: underline; text-decoration-thickness: 2px; }

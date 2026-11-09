@@ -3,6 +3,7 @@ import { html } from '../../core/dom.js';
 import { centreProche } from '../../domain/facilities.js';
 import { panneauDirection } from './ou-aller.js';
 import { icone } from '../../ui/icons.js';
+import { raisonIssue, lienSoignant } from '../../ui/components.js';
 import { panneauDecision } from '../../ui/decision.js';
 import { agents } from '../../agents/nolo.js';
 
@@ -27,6 +28,8 @@ export default {
           <a class="bouton bouton--secondaire bouton--principal" href="#/fiche">${icone('fiche', { taille: 20 })}${t('horsChamp.fiche')}</a>
           <a class="bouton bouton--discret" href="#/chercher/service">${icone('recherche', { taille: 20 })}${t('horsChamp.chercher')}</a>
         </div>
+        ${raisonIssue(t, raison === 'faible' ? 'faible' : 'non_respiratoire')}
+        ${lienSoignant(t)}
         ${panneauDecision(s.cas.trace, t, agents()?.base)}
       </div>
     </div>`;

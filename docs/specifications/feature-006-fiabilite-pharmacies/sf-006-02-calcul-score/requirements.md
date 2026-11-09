@@ -5,8 +5,8 @@
 | Fonctionnalité | F-006 Fiabilité des déclarations |
 | Sous-fonctionnalité | SF-006-02 |
 | Version | 2.0.0 |
-| Statut | READY_FOR_DEV |
-| État d'implémentation | Non implémenté |
+| Statut | IN_TESTING |
+| État d'implémentation | Implémenté (2026-11-09, D-038) ; signalements fictifs de démonstration et ceux de l'appareil |
 | Origine | Spécification v1.3 ; D-001 à D-003 |
 | Bloquant | Aucun |
 | Dépend de | SF-006-01 |

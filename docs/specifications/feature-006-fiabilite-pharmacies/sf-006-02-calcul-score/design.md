@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-604 |
 | ADR | — |
-| État d'implémentation | Non implémenté |
+| État d'implémentation | Implémenté (2026-11-09, D-038) ; signalements fictifs de démonstration et ceux de l'appareil |
 
 ## 1. Vue d'ensemble
 —
@@ -43,4 +43,4 @@ Aucun contrat propre.
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- Implémenté dans la référence Python seulement ; Nolo n'affiche pas encore de score (« Fiabilité » annoncée après la soumission).
+- Aucun écart connu (écarts résolus le 2026-11-09 : score porté dans Nolo (`app/js/domain/fiabilite.js`), parité avec la référence (`tools/exporter_fiabilite.py`)).

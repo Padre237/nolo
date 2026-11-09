@@ -147,3 +147,22 @@ export const VARIANTE_EN_VIGUEUR = { seuil: 5, decalage: 7, maille: 'aire', apdp
 /** Questions de l'instrument de décision de l'annexe 2 du RSI (2005). Deux « oui » : notification à l'OMS sous 24 h. */
 export const RSI_QUESTIONS = ['grave', 'inhabituel', 'propagation', 'restrictions'];
 export const decisionRsi = (r) => RSI_QUESTIONS.filter((q) => r[q] === true).length >= 2;
+
+/** Heures écoulées depuis l'alerte d'un signal (FICTIF, stable pour la démonstration). */
+export const heuresDepuisAlerte = (signal) => 2 + Math.floor(hasard(`${signal.id}|alerte`) * 40);
+
+/**
+ * Prochain délai du guide SBC (FR-243) : triage 24 h tant que le signal est « à trier », puis évaluation du
+ * risque 48 h après la détection ; délais lus dans la politique (`surveillance.delais_heures`).
+ */
+export function echeance({ statut, heures }, delais) {
+  const etape = statut === 'a_trier' ? 'triage' : 'evaluation_risque';
+  const dans = delais[etape] - heures;
+  return { etape, dans, depassee: dans < 0 };
+}
+
+/** Définition officielle associée à un regroupement de cas : SC1 du guide SBC 2023 (FR-203). */
+export function definitionSc(signal, sbc) {
+  const d = sbc?.definitions_signaux?.find((x) => x.code === 'SC1');
+  return d ? { code: d.code, texte: d.definition_officielle, page: d.page, source: sbc.source.doc_id } : { code: 'hors_definition' };
+}

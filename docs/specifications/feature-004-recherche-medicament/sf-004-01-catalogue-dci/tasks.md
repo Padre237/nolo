@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-407, FR-420, FR-421 |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -36,5 +36,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-004-01-01, TEST-004-01-02, TEST-004-01-03 réussis
 - Tests : TEST-004-01-01, TEST-004-01-02, TEST-004-01-03
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `filtrerDci` (art. 75 exclu, 8 au plus) et ses tests
 

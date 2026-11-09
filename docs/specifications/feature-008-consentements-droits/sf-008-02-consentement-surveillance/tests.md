@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `preparerEnvoi(cas, 'surveillance')`
 - Alors : refus
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/saisie.test.mjs` › « TEST-008-02-01 : sans consentement « surveillance », aucune contribution n’est préparée » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-008-02-02 — Parcours sans surveillance
 - Type : Interface

@@ -23,6 +23,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `chercherSang('B−')`
 - Alors : vrai puis faux
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/recherche.test.mjs` › « TEST-005-02-01 : appel au don seulement si la majorité des banques est en rupture » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 

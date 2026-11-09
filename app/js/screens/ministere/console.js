@@ -130,6 +130,19 @@ function vueSignaux(t, m) {
       <article class="surface pile signal-detail" aria-labelledby="signal-titre" data-cle="detail-${choisi.id}">
         <h3 id="signal-titre" class="titre-3">${titre}</h3>
         ${colonnes(t, choisi.serie, titre)}
+        ${(() => {
+          const sc = S.definitionSc(choisi, agents().regles?.sbc_definitions);
+          const h = S.heuresDepuisAlerte(choisi);
+          const e = S.echeance({ statut: d.statut, heures: h }, agents().politique.valeur('surveillance.delais_heures'));
+          return html`
+        <div class="definition-sc">
+          <p class="champ__etiquette">${t('ministere.signaux.definitionT')}</p>
+          ${sc.code === 'hors_definition' ? html`<p class="note">${t('ministere.signaux.horsDefinition')}</p>` : html`
+          <p><span class="etiquette etiquette--neutre mono">${sc.code}</span> <q lang="fr">${sc.texte}</q></p>
+          <p class="note">${t('ministere.signaux.sourceSc', { p: sc.page })}</p>`}
+        </div>
+        <p class="echeance ${e.depassee ? 'echeance--depassee' : ''}">${icone('horloge', { taille: 18 })}<span>${t('ministere.signaux.depuis', { n: h })} · ${e.depassee ? t('ministere.signaux.echeanceDepassee', { etape: t(`ministere.signaux.etapes.${e.etape}`), n: -e.dans }) : t('ministere.signaux.echeance', { etape: t(`ministere.signaux.etapes.${e.etape}`), n: e.dans })}</span></p>`;
+        })()}
         ${d.statut === 'a_trier' ? html`
         <div class="champ">
           <label class="champ__etiquette" for="motif">${t('ministere.signaux.motif')}</label>

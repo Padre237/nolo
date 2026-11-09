@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-1057 |
 | ADR | — |
-| État d'implémentation | Partiellement implémenté — rétro-spécifié le 2026-11-09 ; écarts au §9 de design.md |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Vue d'ensemble
 —
@@ -43,4 +43,4 @@ Aucun contrat propre.
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- La page existe dans la livraison D-029 (`src/client/pwa/conditions-etablissements.html`) mais pas dans Nolo.
+- Aucun écart connu (écarts résolus le 2026-11-09 : page `#/pro/conditions`, liée depuis l'inscription).

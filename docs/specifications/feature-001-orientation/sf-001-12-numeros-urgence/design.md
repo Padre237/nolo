@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-114, FR-195, FR-196 |
 | ADR | — |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) ; valeurs 119 et 112 à vérifier (D-004) |
 
 ## 1. Vue d'ensemble
 —
@@ -44,4 +44,4 @@ Aucun contrat propre.
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- FR-196 : les numéros 119 et 112 sont écrits dans les catalogues (`commun.appeler119`, `commun.appeler112`), pas lus depuis `policy.yaml`.
+- Aucun écart connu (écarts résolus le 2026-11-09 : numéros lus dans `app/data/politique.json` (`numerosUrgence`), clés `securite.appeler119/112` remplacées par `securite.appeler`).

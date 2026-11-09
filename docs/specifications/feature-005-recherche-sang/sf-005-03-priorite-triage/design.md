@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-505, FR-522 |
 | ADR | — |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Vue d'ensemble
 —
@@ -43,4 +43,4 @@ Aucun contrat propre.
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- FR-522 : la barre est visible ; la phrase en tête de l'onglet est à ajouter.
+- Aucun écart connu (écarts résolus le 2026-11-09 : phrase d'urgence en tête de l'onglet Sang).

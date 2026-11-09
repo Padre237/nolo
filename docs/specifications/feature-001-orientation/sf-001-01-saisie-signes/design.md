@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-105, FR-150, FR-151, FR-152, FR-153, FR-154 |
 | ADR | ADR-003, ADR-005 |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Vue d'ensemble
 Écran `app/js/screens/patient/decrire.js` (route `#/decrire`). Le cas vit dans `store.cas` (`app/js/etat.js`). La validation est locale ; l'action `analyser` (formulaire) appelle `reformuler` puis mène à `#/verifier`.
@@ -52,4 +52,4 @@ Aucun contrat propre.
 - Textes en FR et EN d'égale valeur (`app/js/i18n/fr.js`, `en.js`).
 
 ## 9. Écarts entre cette spécification et le code
-- FR-105 : aucune position du citoyen n'est utilisée ; les distances partent du point de référence fixe `ORIGINE` (Douala). La géolocalisation réelle relève de SF-008-03.
+- Aucun écart connu (écarts résolus le 2026-11-09 : les distances partent de la position consentie, du quartier ou du point de référence (SF-008-03)).

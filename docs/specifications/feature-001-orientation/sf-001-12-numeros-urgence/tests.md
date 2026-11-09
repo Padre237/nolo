@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : rendu de la barre et de l'écran Urgence
 - Alors : 119 et 112 seulement
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/ecrans.test.mjs` › « TEST-001-12-01 : seuls les numéros confirmés de la politique sont affichés (111 « à confirmer » exclu) » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-001-12-02 — Barre visible et non masquante
 - Type : Interface

@@ -23,6 +23,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : suivre le lien
 - Alors : page bilingue complète
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/ecrans.test.mjs` › « TEST-010-13-01 : conditions des établissements liées depuis l’inscription, bilingues » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 

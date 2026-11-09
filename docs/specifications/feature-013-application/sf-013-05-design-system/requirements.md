@@ -56,7 +56,7 @@ Rien de particulier.
 ## 9. Questions ouvertes
 | ID | Question | Proposition | Statut |
 |---|---|---|---|
-| — | Aucune | — | — |
+| Q-013-05-01 | Le rouge sert aussi aux erreurs de saisie (`.champ__erreur`, `aria-invalid`), aux rejets d'import et à la ligne « Urgences » du tableau d'orientation, alors que FR-1322 le réserve à l'urgence. | Garder le rouge pour la ligne « Urgences » (même sens) ; donner aux erreurs de saisie une couleur propre (encre et pictogramme) | Ouverte (constatée le 2026-11-09) |
 
 ## 10. Contexte à charger avant de travailler sur ce dossier
 Lire dans cet ordre, et rien d'autre tant que la tâche n'exige pas davantage :

@@ -2,7 +2,7 @@
 
 Générée par `python3 tools/trace.py` — ne pas modifier à la main.
 
-Sous-fonctionnalités : 146 · Exigences possédées : 483 · Éléments de conception : 277 · Tâches : 279 · Tests : 415
+Sous-fonctionnalités : 146 · Exigences possédées : 483 · Éléments de conception : 277 · Tâches : 280 · Tests : 415
 Erreurs : 0 · Avertissements : 0
 
 ## Statut des dossiers
@@ -11,8 +11,8 @@ Erreurs : 0 · Avertissements : 0
 |---|---|
 | APPROVED | 4 |
 | IN_PROGRESS | 1 |
-| IN_TESTING | 14 |
-| READY_FOR_DEV | 49 |
+| IN_TESTING | 43 |
+| READY_FOR_DEV | 20 |
 | UNDER_REVIEW | 78 |
 
 ## Exigence → conception → tâches → tests → implémentation → vérification
@@ -23,16 +23,16 @@ Erreurs : 0 · Avertissements : 0
 | FR-102 | SF-001-11 | REMPLACÉE par FR-190 et FR-191 (D-033 : pistes nommées en mode POC) |  |  |  | Non commencé | 0/0 exécutés et réussis |
 | FR-103 | SF-001-03 | REMPLACÉE par FR-120 (D-018) |  |  |  | Non commencé | 0/0 exécutés et réussis |
 | FR-104 | SF-001-07 | REMPLACÉE par FR-166 (D-026 : seul « urgence » est affiché) |  |  |  | Non commencé | 0/0 exécutés et réussis |
-| FR-105 | SF-001-01 | UNDER_REVIEW | DES-001-01-03 | TASK-001-01-03 | TEST-001-01-05 | Non commencé | 0/1 exécutés et réussis |
+| FR-105 | SF-001-01 | UNDER_REVIEW | DES-001-01-03 | TASK-001-01-03 | TEST-001-01-05 | Fait (2026-11-09) — `app/tests/saisie.test.mjs` ; `erreurs` exporté ; limite de 600 caractères appliquée à la saisie | 1/1 exécutés et réussis |
 | FR-106 | SF-008-01 | REMPLACÉE par FR-801 et FR-803 (D-028 : rien ne part sans consentement ; l'urgence reste locale) |  |  |  | Non commencé | 0/0 exécutés et réussis |
 | FR-107 | SF-008-04 | REMPLACÉE par FR-831 et FR-832 (D-028) |  |  |  | Non commencé | 0/0 exécutés et réussis |
 | FR-108 | SF-008-06 | UNDER_REVIEW | DES-008-06-01 | TASK-008-06-01 | TEST-008-06-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-109 | SF-008-07 | UNDER_REVIEW | DES-008-07-02 | TASK-008-07-02 | TEST-008-07-02 | Partiel (code existant incomplet, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
+| FR-109 | SF-008-07 | UNDER_REVIEW | DES-008-07-02 | TASK-008-07-02 | TEST-008-07-02 | Fait (2026-11-09) — `raisonIssue` sur urgence, pistes, confidentiel, hors champ et « Où aller » | 1/1 exécutés et réussis |
 | FR-110 | SF-001-07 | UNDER_REVIEW | DES-001-07-02 | TASK-001-07-02 | TEST-001-07-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
-| FR-111 | SF-001-02 | UNDER_REVIEW | DES-001-02-01 | TASK-001-02-01 | TEST-001-02-01 | Non commencé | 0/1 exécutés et réussis |
+| FR-111 | SF-001-02 | UNDER_REVIEW | DES-001-02-01 | TASK-001-02-01 | TEST-001-02-01 | Fait (2026-11-09) — `app/js/domain/envoi.js` | 1/1 exécutés et réussis |
 | FR-112 | SF-001-08 | UNDER_REVIEW | DES-001-08-01 | TASK-001-08-01 | TEST-001-08-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-113 | SF-001-04 | UNDER_REVIEW | DES-001-04-02 | TASK-001-04-02 | TEST-001-04-01 | Partiel (code existant incomplet, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-114 | SF-001-12 | UNDER_REVIEW | DES-001-12-02 | TASK-001-12-02 | TEST-001-12-01 | Non commencé | 0/1 exécutés et réussis |
+| FR-114 | SF-001-12 | UNDER_REVIEW | DES-001-12-02 | TASK-001-12-02 | TEST-001-12-01 | Fait (2026-11-09) — `numerosUrgence` (`app/js/domain/politique.js`) ; barre de sécurité, écran Urgence, onglet Sang | 1/1 exécutés et réussis |
 | FR-120 | SF-001-03 | UNDER_REVIEW | DES-001-03-01 | TASK-001-03-01, TASK-001-03-05 | TEST-001-03-01, TEST-001-03-11 | Non commencé | 0/2 exécutés et réussis |
 | FR-121 | SF-001-03 | UNDER_REVIEW | DES-001-03-02 | TASK-001-03-02, TASK-001-03-07 | TEST-001-03-02, TEST-001-03-03, TEST-001-03-13 | Non commencé | 0/3 exécutés et réussis |
 | FR-122 | SF-001-03 | UNDER_REVIEW | DES-001-03-03 | TASK-001-03-04 | TEST-001-03-05, TEST-001-03-14 | Non commencé | 0/2 exécutés et réussis |
@@ -57,12 +57,12 @@ Erreurs : 0 · Avertissements : 0
 | FR-146 | SF-001-06 | UNDER_REVIEW | DES-001-06-05 | TASK-001-06-01, TASK-001-06-02, TASK-001-06-03, TASK-001-06-04 | TEST-001-06-05, TEST-001-06-06 | Non commencé | 0/2 exécutés et réussis |
 | FR-147 | SF-001-06 | UNDER_REVIEW | DES-001-06-06 | TASK-001-06-04 | TEST-001-06-06 | Non commencé | 0/1 exécutés et réussis |
 | FR-150 | SF-001-01 | UNDER_REVIEW | DES-001-01-01 | TASK-001-01-01 | TEST-001-01-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-151 | SF-001-01 | UNDER_REVIEW | DES-001-01-02 | TASK-001-01-02, TASK-001-01-03 | TEST-001-01-02 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
-| FR-152 | SF-001-01 | UNDER_REVIEW | DES-001-01-01 | TASK-001-01-01, TASK-001-01-03 | TEST-001-01-03 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
-| FR-153 | SF-001-01 | UNDER_REVIEW | DES-001-01-01 | TASK-001-01-01, TASK-001-01-03 | TEST-001-01-04 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
-| FR-154 | SF-001-01 | UNDER_REVIEW | DES-001-01-03 | TASK-001-01-01, TASK-001-01-03 | TEST-001-01-05 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
-| FR-155 | SF-001-02 | UNDER_REVIEW | DES-001-02-01 | TASK-001-02-01 | TEST-001-02-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-156 | SF-001-02 | UNDER_REVIEW | DES-001-02-02 | TASK-001-02-02 | TEST-001-02-02 | Non commencé | 0/1 exécutés et réussis |
+| FR-151 | SF-001-01 | UNDER_REVIEW | DES-001-01-02 | TASK-001-01-02, TASK-001-01-03 | TEST-001-01-02 | Fait (2026-11-09) — `app/tests/saisie.test.mjs` ; `erreurs` exporté ; limite de 600 caractères appliquée à la saisie, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
+| FR-152 | SF-001-01 | UNDER_REVIEW | DES-001-01-01 | TASK-001-01-01, TASK-001-01-03 | TEST-001-01-03 | Fait (2026-11-09) — `app/tests/saisie.test.mjs` ; `erreurs` exporté ; limite de 600 caractères appliquée à la saisie, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
+| FR-153 | SF-001-01 | UNDER_REVIEW | DES-001-01-01 | TASK-001-01-01, TASK-001-01-03 | TEST-001-01-04 | Fait (2026-11-09) — `app/tests/saisie.test.mjs` ; `erreurs` exporté ; limite de 600 caractères appliquée à la saisie, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
+| FR-154 | SF-001-01 | UNDER_REVIEW | DES-001-01-03 | TASK-001-01-01, TASK-001-01-03 | TEST-001-01-05 | Fait (2026-11-09) — `app/tests/saisie.test.mjs` ; `erreurs` exporté ; limite de 600 caractères appliquée à la saisie, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
+| FR-155 | SF-001-02 | UNDER_REVIEW | DES-001-02-01 | TASK-001-02-01 | TEST-001-02-01 | Fait (2026-11-09) — `app/js/domain/envoi.js` | 1/1 exécutés et réussis |
+| FR-156 | SF-001-02 | UNDER_REVIEW | DES-001-02-02 | TASK-001-02-02 | TEST-001-02-02 | Fait (2026-11-09) — `app/tests/saisie.test.mjs` | 1/1 exécutés et réussis |
 | FR-160 | SF-001-04 | UNDER_REVIEW | DES-001-04-01 | TASK-001-04-01 | TEST-001-04-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-161 | SF-001-04 | UNDER_REVIEW | DES-001-04-02 | TASK-001-04-02 | TEST-001-04-03 | Partiel (code existant incomplet, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-165 | SF-001-07 | UNDER_REVIEW | DES-001-07-01 | TASK-001-07-01 | TEST-001-07-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
@@ -72,27 +72,27 @@ Erreurs : 0 · Avertissements : 0
 | FR-175 | SF-001-08 | UNDER_REVIEW | DES-001-08-01 | TASK-001-08-01 | TEST-001-08-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-180 | SF-001-09 | UNDER_REVIEW | DES-001-09-01 | TASK-001-09-01 | TEST-001-09-01 | Non commencé | 0/1 exécutés et réussis |
 | FR-181 | SF-001-09 | UNDER_REVIEW | DES-001-09-01 | TASK-001-09-01 | TEST-001-09-02 | Non commencé | 0/1 exécutés et réussis |
-| FR-182 | SF-001-09 | UNDER_REVIEW | DES-001-09-02 | TASK-001-09-02 | TEST-001-09-03 | Non commencé | 0/1 exécutés et réussis |
+| FR-182 | SF-001-09 | UNDER_REVIEW | DES-001-09-02 | TASK-001-09-02 | TEST-001-09-03 | Fait (2026-11-09) — `lienSoignant` sur les cinq écrans de résultat (appel du 119 sur l'écran Urgence) | 1/1 exécutés et réussis |
 | FR-185 | SF-001-10 | UNDER_REVIEW | DES-001-10-01 | TASK-001-10-01 | TEST-001-10-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-186 | SF-001-10 | UNDER_REVIEW | DES-001-10-02 | TASK-001-10-01 | TEST-001-10-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-187 | SF-001-10 | UNDER_REVIEW | DES-001-10-02 | TASK-001-10-01 | TEST-001-10-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-188 | SF-001-10 | UNDER_REVIEW | DES-001-10-03 | TASK-001-10-02 | TEST-001-10-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-189 | SF-001-10 | UNDER_REVIEW | DES-001-10-03 | TASK-001-10-02 | TEST-001-10-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-190 | SF-001-11 | UNDER_REVIEW | DES-001-11-01 | TASK-001-11-01, TASK-001-11-02 | TEST-001-11-01 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
+| FR-190 | SF-001-11 | UNDER_REVIEW | DES-001-11-01 | TASK-001-11-01, TASK-001-11-02 | TEST-001-11-01 | Fait (2026-11-09) — `app/tests/saisie.test.mjs`, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-191 | SF-001-11 | UNDER_REVIEW | DES-001-11-02 | TASK-001-11-01 | TEST-001-11-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-192 | SF-001-11 | UNDER_REVIEW | DES-001-11-01 | TASK-001-11-01 | TEST-001-11-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-195 | SF-001-12 | UNDER_REVIEW | DES-001-12-01 | TASK-001-12-01 | TEST-001-12-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-196 | SF-001-12 | UNDER_REVIEW | DES-001-12-02 | TASK-001-12-02 | TEST-001-12-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-201 | SF-002-01 | UNDER_REVIEW | DES-002-01-01 | TASK-002-01-01 | TEST-002-01-01 | Non commencé | 0/1 exécutés et réussis |
+| FR-196 | SF-001-12 | UNDER_REVIEW | DES-001-12-02 | TASK-001-12-02 | TEST-001-12-01 | Fait (2026-11-09) — `numerosUrgence` (`app/js/domain/politique.js`) ; barre de sécurité, écran Urgence, onglet Sang | 1/1 exécutés et réussis |
+| FR-201 | SF-002-01 | UNDER_REVIEW | DES-002-01-01 | TASK-002-01-01 | TEST-002-01-01 | Fait (2026-11-09) — `preparerEnvoi` : exactement codes, aire, semaine ISO, tranche d'âge | 1/1 exécutés et réussis |
 | FR-202 | SF-002-02 | UNDER_REVIEW | DES-002-02-01 | TASK-002-02-01 | TEST-002-02-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
-| FR-203 | SF-002-03 | UNDER_REVIEW | DES-002-03-02 | TASK-002-03-02 | TEST-002-03-02 | Non commencé | 0/1 exécutés et réussis |
+| FR-203 | SF-002-03 | UNDER_REVIEW | DES-002-03-02 | TASK-002-03-02 | TEST-002-03-02 | Fait (2026-11-09) — `definitionSc` ; bloc « Définition officielle » de la console | 1/1 exécutés et réussis |
 | FR-204 | SF-002-04 | UNDER_REVIEW | DES-002-04-01, DES-002-04-02 | TASK-002-04-01, TASK-002-04-02 | TEST-002-04-03, TEST-002-04-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/2 exécutés et réussis |
 | FR-205 | SF-002-05 | UNDER_REVIEW | DES-002-05-01 | TASK-002-05-01 | TEST-002-05-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-206 | SF-002-07 | UNDER_REVIEW | DES-002-07-01 | TASK-002-07-01 | TEST-002-07-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-207 | SF-002-09 | UNDER_REVIEW | DES-002-09-01, DES-002-09-02 | TASK-002-09-01 | TEST-002-09-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-208 | SF-002-08 | UNDER_REVIEW | DES-002-08-01 | TASK-002-08-01 | TEST-002-08-01 | Non commencé | 0/1 exécutés et réussis |
 | FR-209 | SF-002-10 | UNDER_REVIEW | DES-002-10-01 | TASK-002-10-01 | TEST-002-10-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-220 | SF-002-01 | UNDER_REVIEW | DES-002-01-01 | TASK-002-01-01 | TEST-002-01-01 | Non commencé | 0/1 exécutés et réussis |
+| FR-220 | SF-002-01 | UNDER_REVIEW | DES-002-01-01 | TASK-002-01-01 | TEST-002-01-01 | Fait (2026-11-09) — `preparerEnvoi` : exactement codes, aire, semaine ISO, tranche d'âge | 1/1 exécutés et réussis |
 | FR-221 | SF-002-01 | UNDER_REVIEW | DES-002-01-02 | TASK-002-01-02 | TEST-002-01-02 | Non commencé | 0/1 exécutés et réussis |
 | FR-222 | SF-002-01 | UNDER_REVIEW | DES-002-01-03 | TASK-002-01-03 | TEST-002-01-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-225 | SF-002-02 | UNDER_REVIEW | DES-002-02-01, DES-002-02-02 | TASK-002-02-01 | TEST-002-02-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
@@ -103,7 +103,7 @@ Erreurs : 0 · Avertissements : 0
 | FR-237 | SF-002-04 | UNDER_REVIEW | DES-002-04-01 | TASK-002-04-01 | TEST-002-04-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-238 | SF-002-04 | UNDER_REVIEW | DES-002-04-01 | TASK-002-04-01 | TEST-002-04-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-239 | SF-002-04 | UNDER_REVIEW | DES-002-04-01 | TASK-002-04-01 | TEST-002-04-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-243 | SF-002-05 | UNDER_REVIEW | DES-002-05-02 | TASK-002-05-02 | TEST-002-05-02 | Non commencé | 0/1 exécutés et réussis |
+| FR-243 | SF-002-05 | UNDER_REVIEW | DES-002-05-02 | TASK-002-05-02 | TEST-002-05-02 | Fait (2026-11-09) — `echeance`, `heuresDepuisAlerte` ; ligne d'échéance de la console | 1/1 exécutés et réussis |
 | FR-246 | SF-002-06 | UNDER_REVIEW | DES-002-06-01 | TASK-002-06-01 | TEST-002-06-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-247 | SF-002-06 | UNDER_REVIEW | DES-002-06-01 | TASK-002-06-01 | TEST-002-06-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-248 | SF-002-06 | UNDER_REVIEW | DES-002-06-01 | TASK-002-06-01 | TEST-002-06-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
@@ -111,7 +111,7 @@ Erreurs : 0 · Avertissements : 0
 | FR-255 | SF-002-08 | UNDER_REVIEW | DES-002-08-01 | TASK-002-08-01 | TEST-002-08-02 | Non commencé | 0/1 exécutés et réussis |
 | FR-258 | SF-002-09 | UNDER_REVIEW | DES-002-09-01 | TASK-002-09-01 | TEST-002-09-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-301 | SF-003-01 | UNDER_REVIEW | DES-003-01-01 | TASK-003-01-01 | TEST-003-01-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
-| FR-302 | SF-003-02 | UNDER_REVIEW | DES-003-02-01 | TASK-003-02-01, TASK-003-02-02 | TEST-003-02-01 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
+| FR-302 | SF-003-02 | UNDER_REVIEW | DES-003-02-01 | TASK-003-02-01, TASK-003-02-02 | TEST-003-02-01 | Fait (2026-11-09) — `parPaliers` dans `app/js/domain/facilities.js`, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-303 | SF-003-02 | UNDER_REVIEW | DES-003-02-01 | TASK-003-02-01 | TEST-003-02-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-304 | SF-003-01 | REMPLACÉE par FR-320 (D-033 : exception du module POC) | DES-003-01-02 |  | TEST-003-01-02 | Non commencé | 0/1 exécutés et réussis |
 | FR-305 | SF-003-03 | UNDER_REVIEW | DES-003-03-01 | TASK-003-03-01 | TEST-003-03-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
@@ -120,22 +120,22 @@ Erreurs : 0 · Avertissements : 0
 | FR-308 | SF-003-03 | UNDER_REVIEW | DES-003-03-01 | TASK-003-03-01 | TEST-003-03-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-320 | SF-003-01 | UNDER_REVIEW | DES-003-01-02 | TASK-003-01-01 | TEST-003-01-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-321 | SF-003-01 | UNDER_REVIEW | DES-003-01-01 | TASK-003-01-01 | TEST-003-01-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
-| FR-322 | SF-003-01 | UNDER_REVIEW | DES-003-01-03 | TASK-003-01-02 | TEST-003-01-03 | Non commencé | 1/1 exécutés et réussis |
+| FR-322 | SF-003-01 | UNDER_REVIEW | DES-003-01-03 | TASK-003-01-02 | TEST-003-01-03 | Fait (2026-11-09) — `resoudreSpecialite` ; champ libre de l'onglet Service | 1/1 exécutés et réussis |
 | FR-323 | SF-003-02 | UNDER_REVIEW | DES-003-02-02 | TASK-003-02-03 | TEST-003-02-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-324 | SF-003-02 | UNDER_REVIEW | DES-003-02-02 | TASK-003-02-03 | TEST-003-02-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-325 | SF-003-03 | UNDER_REVIEW | DES-003-03-02 | TASK-003-03-01 | TEST-003-03-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-326 | SF-003-04 | UNDER_REVIEW | DES-003-04-01 | TASK-003-04-01, TASK-003-04-02 | TEST-003-04-01 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
-| FR-327 | SF-003-04 | UNDER_REVIEW | DES-003-04-02 | TASK-003-04-01 | TEST-003-04-01, TEST-003-04-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/2 exécutés et réussis |
+| FR-326 | SF-003-04 | UNDER_REVIEW | DES-003-04-01 | TASK-003-04-01, TASK-003-04-02 | TEST-003-04-01 | Fait (2026-11-09) — `app/tests/recherche.test.mjs`, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
+| FR-327 | SF-003-04 | UNDER_REVIEW | DES-003-04-02 | TASK-003-04-01 | TEST-003-04-01, TEST-003-04-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/2 exécutés et réussis |
 | FR-401 | SF-010-02 | UNDER_REVIEW | DES-010-02-03 | TASK-010-02-03 | TEST-010-02-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-402 | SF-004-02 | UNDER_REVIEW | DES-004-02-01 | TASK-004-02-01 | TEST-004-02-01, TEST-004-02-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/2 exécutés et réussis |
 | FR-403 | SF-004-02 | REMPLACÉE par FR-422 (mention selon la DCI) |  |  | TEST-004-02-02 | Non commencé | 0/1 exécutés et réussis |
 | FR-404 | SF-004-03 | UNDER_REVIEW | DES-004-03-01, DES-004-03-02 | TASK-004-03-01 | TEST-004-03-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-405 | SF-004-04 | UNDER_REVIEW | DES-004-04-01 | TASK-004-04-01 | TEST-004-04-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-406 | SF-004-02 | UNDER_REVIEW | DES-004-02-01 | TASK-004-02-01, TASK-004-02-03 | TEST-004-02-03 | Fait (code existant, rétro-spécifié le 2026-11-09), Partiel (code existant incomplet, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-407 | SF-004-01 | UNDER_REVIEW | DES-004-01-01 | TASK-004-01-01, TASK-004-01-02 | TEST-004-01-01 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
+| FR-406 | SF-004-02 | UNDER_REVIEW | DES-004-02-01 | TASK-004-02-01, TASK-004-02-03 | TEST-004-02-03 | Fait (2026-11-09) — section « Classement des résultats » des conditions (FR et EN), Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
+| FR-407 | SF-004-01 | UNDER_REVIEW | DES-004-01-01 | TASK-004-01-01, TASK-004-01-02 | TEST-004-01-01 | Fait (2026-11-09) — `filtrerDci` (art. 75 exclu, 8 au plus) et ses tests, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-408 | SF-004-04 | UNDER_REVIEW | DES-004-04-01, DES-004-04-02 | TASK-004-04-01, TASK-004-04-02 | TEST-004-04-01, TEST-004-04-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/2 exécutés et réussis |
-| FR-420 | SF-004-01 | UNDER_REVIEW | DES-004-01-01 | TASK-004-01-01, TASK-004-01-02 | TEST-004-01-03 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
-| FR-421 | SF-004-01 | UNDER_REVIEW | DES-004-01-02 | TASK-004-01-01, TASK-004-01-02 | TEST-004-01-02 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
+| FR-420 | SF-004-01 | UNDER_REVIEW | DES-004-01-01 | TASK-004-01-01, TASK-004-01-02 | TEST-004-01-03 | Fait (2026-11-09) — `filtrerDci` (art. 75 exclu, 8 au plus) et ses tests, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
+| FR-421 | SF-004-01 | UNDER_REVIEW | DES-004-01-02 | TASK-004-01-01, TASK-004-01-02 | TEST-004-01-02 | Fait (2026-11-09) — `filtrerDci` (art. 75 exclu, 8 au plus) et ses tests, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-422 | SF-004-02 | UNDER_REVIEW | DES-004-02-02 | TASK-004-02-02 | TEST-004-02-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-423 | SF-004-02 | UNDER_REVIEW | DES-004-02-01 | TASK-004-02-01 | TEST-004-02-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-424 | SF-004-02 | UNDER_REVIEW | DES-004-02-02 | TASK-004-02-02 | TEST-004-02-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
@@ -144,17 +144,17 @@ Erreurs : 0 · Avertissements : 0
 | FR-501 | SF-010-03 | UNDER_REVIEW | DES-010-03-01 | TASK-010-03-01 | TEST-010-03-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-502 | SF-005-01 | UNDER_REVIEW | DES-005-01-01 | TASK-005-01-01 | TEST-005-01-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-503 | SF-005-01 | UNDER_REVIEW | DES-005-01-02 | TASK-005-01-01 | TEST-005-01-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-504 | SF-005-02 | UNDER_REVIEW | DES-005-02-01 | TASK-005-02-01 | TEST-005-02-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-505 | SF-005-03 | UNDER_REVIEW | DES-005-03-01 | TASK-005-03-01 | TEST-005-03-01 | Partiel (code existant incomplet, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-520 | SF-005-01 | UNDER_REVIEW | DES-005-01-01 | TASK-005-01-01, TASK-005-01-02 | TEST-005-01-01 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
+| FR-504 | SF-005-02 | UNDER_REVIEW | DES-005-02-01 | TASK-005-02-01 | TEST-005-02-01 | Fait (2026-11-09) — `chercherSang` : majorité des banques déclarantes en rupture | 1/1 exécutés et réussis |
+| FR-505 | SF-005-03 | UNDER_REVIEW | DES-005-03-01 | TASK-005-03-01 | TEST-005-03-01 | Fait (2026-11-09) — clé `recherche.sangUrgence`, numéro lu dans la politique | 1/1 exécutés et réussis |
+| FR-520 | SF-005-01 | UNDER_REVIEW | DES-005-01-01 | TASK-005-01-01, TASK-005-01-02 | TEST-005-01-01 | Fait (2026-11-09) — `app/tests/recherche.test.mjs`, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-521 | SF-005-01 | UNDER_REVIEW | DES-005-01-02 | TASK-005-01-01 | TEST-005-01-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-522 | SF-005-03 | UNDER_REVIEW | DES-005-03-01 | TASK-005-03-01 | TEST-005-03-01 | Partiel (code existant incomplet, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-601 | SF-006-01 | UNDER_REVIEW | DES-006-01-01 | TASK-006-01-02 | TEST-006-01-01 | Non commencé | 0/1 exécutés et réussis |
+| FR-522 | SF-005-03 | UNDER_REVIEW | DES-005-03-01 | TASK-005-03-01 | TEST-005-03-01 | Fait (2026-11-09) — clé `recherche.sangUrgence`, numéro lu dans la politique | 1/1 exécutés et réussis |
+| FR-601 | SF-006-01 | UNDER_REVIEW | DES-006-01-01 | TASK-006-01-02 | TEST-006-01-01 | Fait (2026-11-09) — quatre choix (`recherche.choix.*`), messages d'ordonnance et de revue humaine | 1/1 exécutés et réussis |
 | FR-602 | SF-006-01 | UNDER_REVIEW | DES-006-01-02 | TASK-006-01-03 | TEST-006-01-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-603 | SF-006-01 | UNDER_REVIEW | DES-006-01-02 | TASK-006-01-03 | TEST-006-01-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
-| FR-604 | SF-006-02 | UNDER_REVIEW | DES-006-02-01 | TASK-006-02-01, TASK-006-02-02 | TEST-006-02-01, TEST-006-02-02 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 1/2 exécutés et réussis |
-| FR-605 | SF-006-03 | UNDER_REVIEW | DES-006-03-01 | TASK-006-03-01, TASK-006-03-02 | TEST-006-03-01, TEST-006-03-02 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 1/2 exécutés et réussis |
-| FR-606 | SF-006-04 | UNDER_REVIEW | DES-006-04-01 | TASK-006-04-01, TASK-006-04-02 | TEST-006-04-01, TEST-006-04-02 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 1/2 exécutés et réussis |
+| FR-604 | SF-006-02 | UNDER_REVIEW | DES-006-02-01 | TASK-006-02-01, TASK-006-02-02 | TEST-006-02-01, TEST-006-02-02 | Fait (2026-11-09) — `scoreFiabilite` ; affichage « Déclarations fiables à … % sur … vérifications », Fait (code existant, rétro-spécifié le 2026-11-09) | 2/2 exécutés et réussis |
+| FR-605 | SF-006-03 | UNDER_REVIEW | DES-006-03-01 | TASK-006-03-01, TASK-006-03-02 | TEST-006-03-01, TEST-006-03-02 | Fait (2026-11-09) — `departager` ; tri des pharmacies dans `chercherMedicament`, Fait (code existant, rétro-spécifié le 2026-11-09) | 2/2 exécutés et réussis |
+| FR-606 | SF-006-04 | UNDER_REVIEW | DES-006-04-01 | TASK-006-04-01, TASK-006-04-02 | TEST-006-04-01, TEST-006-04-02 | Fait (2026-11-09) — gel dans `scoreFiabilite` ; rafale fictive sur « ph-marche », Fait (code existant, rétro-spécifié le 2026-11-09) | 2/2 exécutés et réussis |
 | FR-607 | SF-006-06 | UNDER_REVIEW | DES-006-06-01 | TASK-006-06-01 | TEST-006-06-01 | Non commencé | 0/1 exécutés et réussis |
 | FR-608 | SF-006-01 | UNDER_REVIEW | DES-006-01-02 | TASK-006-01-03 | TEST-006-01-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-609 | SF-006-08 | UNDER_REVIEW | DES-006-08-01 | TASK-006-08-01 | TEST-006-08-01 | Partiel (code existant incomplet, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
@@ -208,23 +208,23 @@ Erreurs : 0 · Avertissements : 0
 | FR-804 | SF-008-01 | UNDER_REVIEW | DES-008-01-01 | TASK-008-01-01 | TEST-008-01-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-805 | SF-008-01 | UNDER_REVIEW | DES-008-01-02 | TASK-008-01-02 | TEST-008-01-05 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-806 | SF-008-01 | UNDER_REVIEW | DES-008-01-02 | TASK-008-01-02 | TEST-008-01-05 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-811 | SF-008-02 | UNDER_REVIEW | DES-008-02-01 | TASK-008-02-01 | TEST-008-02-01 | Non commencé | 0/1 exécutés et réussis |
+| FR-811 | SF-008-02 | UNDER_REVIEW | DES-008-02-01 | TASK-008-02-01 | TEST-008-02-01 | Fait (2026-11-09) — garde de finalité dans `preparerEnvoi` (`E-ENVOI-SANS-CONSENTEMENT`) | 1/1 exécutés et réussis |
 | FR-812 | SF-008-02 | UNDER_REVIEW | DES-008-02-02 | TASK-008-02-02 | TEST-008-02-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-821 | SF-008-03 | UNDER_REVIEW | DES-008-03-01 | TASK-008-03-01 | TEST-008-03-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-822 | SF-008-03 | UNDER_REVIEW | DES-008-03-01 | TASK-008-03-01 | TEST-008-03-02 | Non commencé | 0/1 exécutés et réussis |
-| FR-823 | SF-008-03 | UNDER_REVIEW | DES-008-03-02 | TASK-008-03-02 | TEST-008-03-03 | Non commencé | 0/1 exécutés et réussis |
+| FR-821 | SF-008-03 | UNDER_REVIEW | DES-008-03-01 | TASK-008-03-01 | TEST-008-03-01 | Fait (2026-11-09) — `app/js/domain/position.js`, `app/js/ui/position.js` ; recherche et « Où aller » | 1/1 exécutés et réussis |
+| FR-822 | SF-008-03 | UNDER_REVIEW | DES-008-03-01 | TASK-008-03-01 | TEST-008-03-02 | Fait (2026-11-09) — `app/js/domain/position.js`, `app/js/ui/position.js` ; recherche et « Où aller » | 1/1 exécutés et réussis |
+| FR-823 | SF-008-03 | UNDER_REVIEW | DES-008-03-02 | TASK-008-03-02 | TEST-008-03-03 | Fait (2026-11-09) — repli sur le point de référence (cadre, hors district) et mention | 1/1 exécutés et réussis |
 | FR-831 | SF-008-04 | UNDER_REVIEW | DES-008-04-01 | TASK-008-04-01 | TEST-008-04-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-832 | SF-008-04 | UNDER_REVIEW | DES-008-04-01 | TASK-008-04-01 | TEST-008-04-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-841 | SF-008-05 | UNDER_REVIEW | DES-008-05-01 | TASK-008-05-01 | TEST-008-05-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-842 | SF-008-05 | UNDER_REVIEW | DES-008-05-01 | TASK-008-05-01 | TEST-008-05-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-843 | SF-008-05 | UNDER_REVIEW | DES-008-05-01 | TASK-008-05-01 | TEST-008-05-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-844 | SF-008-05 | UNDER_REVIEW | DES-008-05-01 | TASK-008-05-02 | TEST-008-05-04 | Non commencé | 0/1 exécutés et réussis |
+| FR-844 | SF-008-05 | UNDER_REVIEW | DES-008-05-01 | TASK-008-05-02 | TEST-008-05-04 | Fait (2026-11-09) — `enregistrer` et `retirer` de « Mes données » | 1/1 exécutés et réussis |
 | FR-851 | SF-008-06 | UNDER_REVIEW | DES-008-06-01 | TASK-008-06-01 | TEST-008-06-01 | Non commencé | 0/1 exécutés et réussis |
 | FR-861 | SF-008-07 | UNDER_REVIEW | DES-008-07-01 | TASK-008-07-01 | TEST-008-07-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-862 | SF-008-07 | UNDER_REVIEW | DES-008-07-02 | TASK-008-07-02 | TEST-008-07-02 | Partiel (code existant incomplet, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
+| FR-862 | SF-008-07 | UNDER_REVIEW | DES-008-07-02 | TASK-008-07-02 | TEST-008-07-02 | Fait (2026-11-09) — `raisonIssue` sur urgence, pistes, confidentiel, hors champ et « Où aller » | 1/1 exécutés et réussis |
 | FR-871 | SF-008-08 | UNDER_REVIEW | DES-008-08-01 | TASK-008-08-01 | TEST-008-08-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-872 | SF-008-08 | UNDER_REVIEW | DES-008-08-02 | TASK-008-08-02 | TEST-008-08-02 | Partiel (code existant incomplet, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-873 | SF-008-08 | UNDER_REVIEW | DES-008-08-02 | TASK-008-08-02 | TEST-008-08-02 | Partiel (code existant incomplet, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
+| FR-872 | SF-008-08 | UNDER_REVIEW | DES-008-08-02 | TASK-008-08-02 | TEST-008-08-02 | Fait (2026-11-09) — sections `classement`, `securite`, `contact`, `version` ajoutées ; données collectées et jamais collectées | 1/1 exécutés et réussis |
+| FR-873 | SF-008-08 | UNDER_REVIEW | DES-008-08-02 | TASK-008-08-02 | TEST-008-08-02 | Fait (2026-11-09) — sections `classement`, `securite`, `contact`, `version` ajoutées ; données collectées et jamais collectées | 1/1 exécutés et réussis |
 | FR-881 | SF-008-09 | UNDER_REVIEW | DES-008-09-01 | TASK-008-09-01 | TEST-008-09-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-901 | SF-009-01 | UNDER_REVIEW | DES-009-01-01 | TASK-009-01-01 | TEST-009-01-01 | Non commencé | 0/1 exécutés et réussis |
 | FR-902 | SF-009-01 | UNDER_REVIEW | DES-009-01-02 | TASK-009-01-02 | TEST-009-01-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
@@ -239,8 +239,8 @@ Erreurs : 0 · Avertissements : 0
 | FR-919 | SF-009-05 | UNDER_REVIEW | DES-009-05-01 | TASK-009-05-01 | TEST-009-05-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-920 | SF-009-05 | UNDER_REVIEW | DES-009-05-01 | TASK-009-05-01 | TEST-009-05-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-921 | SF-009-05 | UNDER_REVIEW | DES-009-05-01 | TASK-009-05-01 | TEST-009-05-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-1001 | SF-010-01 | UNDER_REVIEW | DES-010-01-01 | TASK-010-01-01, TASK-010-01-03 | TEST-010-01-01 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
-| FR-1002 | SF-010-01 | UNDER_REVIEW | DES-010-01-01 | TASK-010-01-01, TASK-010-01-03 | TEST-010-01-04 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
+| FR-1001 | SF-010-01 | UNDER_REVIEW | DES-010-01-01 | TASK-010-01-01, TASK-010-01-03 | TEST-010-01-01 | Fait (2026-11-09) — `app/tests/qualite.test.mjs`, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
+| FR-1002 | SF-010-01 | UNDER_REVIEW | DES-010-01-01 | TASK-010-01-01, TASK-010-01-03 | TEST-010-01-04 | Fait (2026-11-09) — `app/tests/qualite.test.mjs`, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1003 | SF-010-01 | UNDER_REVIEW | DES-010-01-02 | TASK-010-01-02 | TEST-010-01-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1004 | SF-010-01 | UNDER_REVIEW | DES-010-01-01 | TASK-010-01-01 | TEST-010-01-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1006 | SF-010-02 | UNDER_REVIEW | DES-010-02-03 | TASK-010-02-03 | TEST-010-02-05 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
@@ -249,7 +249,7 @@ Erreurs : 0 · Avertissements : 0
 | FR-1009 | SF-010-02 | UNDER_REVIEW | DES-010-02-02, DES-010-02-04 | TASK-010-02-02, TASK-010-02-04 | TEST-010-02-03, TEST-010-02-06 | Fait (code existant, rétro-spécifié le 2026-11-09) | 2/2 exécutés et réussis |
 | FR-1010 | SF-010-02 | UNDER_REVIEW | DES-010-02-03 | TASK-010-02-03 | TEST-010-02-05 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1013 | SF-010-03 | UNDER_REVIEW | DES-010-03-01 | TASK-010-03-01 | TEST-010-03-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
-| FR-1014 | SF-010-03 | UNDER_REVIEW | DES-010-03-02 | TASK-010-03-02 | TEST-010-03-02 | Non commencé | 0/1 exécutés et réussis |
+| FR-1014 | SF-010-03 | UNDER_REVIEW | DES-010-03-02 | TASK-010-03-02 | TEST-010-03-02 | Fait (2026-11-09) — `chercherSang` ; `sangH` des comptes d'établissement | 1/1 exécutés et réussis |
 | FR-1016 | SF-010-04 | UNDER_REVIEW | DES-010-04-01 | TASK-010-04-01 | TEST-010-04-05 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1017 | SF-010-04 | UNDER_REVIEW | DES-010-04-02 | TASK-010-04-01 | TEST-010-04-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1018 | SF-010-04 | UNDER_REVIEW | DES-010-04-02 | TASK-010-04-01 | TEST-010-04-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
@@ -284,7 +284,7 @@ Erreurs : 0 · Avertissements : 0
 | FR-1050 | SF-010-11 | UNDER_REVIEW | DES-010-11-02 | TASK-010-11-02 | TEST-010-11-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1053 | SF-010-12 | UNDER_REVIEW | DES-010-12-01 | TASK-010-12-01 | TEST-010-12-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1054 | SF-010-12 | UNDER_REVIEW | DES-010-12-01 | TASK-010-12-01 | TEST-010-12-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-1057 | SF-010-13 | UNDER_REVIEW | DES-010-13-01 | TASK-010-13-01 | TEST-010-13-01 | Non commencé | 0/1 exécutés et réussis |
+| FR-1057 | SF-010-13 | UNDER_REVIEW | DES-010-13-01 | TASK-010-13-01 | TEST-010-13-01 | Fait (2026-11-09) — `app/js/screens/pro/conditions.js`, catalogues `pro.conditionsPage` | 1/1 exécutés et réussis |
 | FR-1101 | SF-011-01 | UNDER_REVIEW | DES-011-01-01 | TASK-011-01-01 | TEST-011-01-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1102 | SF-011-01 | UNDER_REVIEW | DES-011-01-01 | TASK-011-01-01 | TEST-011-01-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1103 | SF-011-01 | UNDER_REVIEW | DES-011-01-01 | TASK-011-01-01 | TEST-011-01-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
@@ -322,8 +322,8 @@ Erreurs : 0 · Avertissements : 0
 | FR-1301 | SF-013-01 | UNDER_REVIEW | DES-013-01-01 | TASK-013-01-01 | TEST-013-01-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1302 | SF-013-01 | UNDER_REVIEW | DES-013-01-02 | TASK-013-01-02 | TEST-013-01-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1303 | SF-013-01 | UNDER_REVIEW | DES-013-01-02 | TASK-013-01-02 | TEST-013-01-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-1305 | SF-013-02 | UNDER_REVIEW | DES-013-02-01 | TASK-013-02-01, TASK-013-02-03 | TEST-013-02-01 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
-| FR-1306 | SF-013-02 | UNDER_REVIEW | DES-013-02-01 | TASK-013-02-01, TASK-013-02-03 | TEST-013-02-02 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
+| FR-1305 | SF-013-02 | UNDER_REVIEW | DES-013-02-01 | TASK-013-02-01, TASK-013-02-03 | TEST-013-02-01 | Fait (2026-11-09) — `app/js/core/routeur.js` (`lireRoute`, `routeGardee`), utilisé par `app.js`, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
+| FR-1306 | SF-013-02 | UNDER_REVIEW | DES-013-02-01 | TASK-013-02-01, TASK-013-02-03 | TEST-013-02-02 | Fait (2026-11-09) — `app/js/core/routeur.js` (`lireRoute`, `routeGardee`), utilisé par `app.js`, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1307 | SF-013-02 | UNDER_REVIEW | DES-013-02-01 | TASK-013-02-01 | TEST-013-02-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1308 | SF-013-02 | UNDER_REVIEW | DES-013-02-02 | TASK-013-02-02 | TEST-013-02-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1310 | SF-013-03 | UNDER_REVIEW | DES-013-03-01 | TASK-013-03-01, TASK-013-03-03 | TEST-013-03-01 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
@@ -334,20 +334,20 @@ Erreurs : 0 · Avertissements : 0
 | FR-1316 | SF-013-04 | UNDER_REVIEW | DES-013-04-02 | TASK-013-04-02 | TEST-013-04-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1317 | SF-013-04 | UNDER_REVIEW | DES-013-04-02 | TASK-013-04-02 | TEST-013-04-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1318 | SF-013-04 | UNDER_REVIEW | DES-013-04-02 | TASK-013-04-02 | TEST-013-04-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-1320 | SF-013-05 | UNDER_REVIEW | DES-013-05-01 | TASK-013-05-01, TASK-013-05-04 | TEST-013-05-01 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
+| FR-1320 | SF-013-05 | UNDER_REVIEW | DES-013-05-01 | TASK-013-05-01, TASK-013-05-04 | TEST-013-05-01 | Fait (2026-11-09) — `app/tests/qualite.test.mjs` ; jetons `--sur-sombre*`, `--ferme-sur-sombre`, `--hachure`, `--voile-clair` ; exceptions déclarées dans `app/docs/DESIGN.md`, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1321 | SF-013-05 | UNDER_REVIEW | DES-013-05-02 | TASK-013-05-02 | TEST-013-05-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-1322 | SF-013-05 | UNDER_REVIEW | DES-013-05-01 | TASK-013-05-01, TASK-013-05-04 | TEST-013-05-03 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
+| FR-1322 | SF-013-05 | UNDER_REVIEW | DES-013-05-01 | TASK-013-05-01, TASK-013-05-04, TASK-013-05-05 | TEST-013-05-03 | Fait (2026-11-09) — `app/tests/qualite.test.mjs` ; jetons `--sur-sombre*`, `--ferme-sur-sombre`, `--hachure`, `--voile-clair` ; exceptions déclarées dans `app/docs/DESIGN.md`, Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 1/1 exécutés et réussis |
 | FR-1323 | SF-013-05 | UNDER_REVIEW | DES-013-05-03 | TASK-013-05-03 | TEST-013-05-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1324 | SF-013-05 | UNDER_REVIEW | DES-013-05-03 | TASK-013-05-03 | TEST-013-05-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1326 | SF-013-06 | UNDER_REVIEW | DES-013-06-01 | TASK-013-06-01 | TEST-013-06-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1327 | SF-013-06 | UNDER_REVIEW | DES-013-06-01 | TASK-013-06-01 | TEST-013-06-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1328 | SF-013-06 | UNDER_REVIEW | DES-013-06-01 | TASK-013-06-01 | TEST-013-06-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1329 | SF-013-06 | UNDER_REVIEW | DES-013-06-01 | TASK-013-06-01 | TEST-013-06-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-1330 | SF-013-06 | UNDER_REVIEW | DES-013-06-02 | TASK-013-06-02 | TEST-013-06-04 | Non commencé | 0/1 exécutés et réussis |
+| FR-1330 | SF-013-06 | UNDER_REVIEW | DES-013-06-02 | TASK-013-06-02 | TEST-013-06-04 | Fait (2026-11-09) — `app/tests/qualite.test.mjs` (15 paires de jetons) | 1/1 exécutés et réussis |
 | FR-1332 | SF-013-07 | UNDER_REVIEW | DES-013-07-01 | TASK-013-07-01 | TEST-013-07-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1333 | SF-013-07 | UNDER_REVIEW | DES-013-07-01 | TASK-013-07-01 | TEST-013-07-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1334 | SF-013-07 | UNDER_REVIEW | DES-013-07-02 | TASK-013-07-02 | TEST-013-07-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-1336 | SF-013-08 | UNDER_REVIEW | DES-013-08-01 | TASK-013-08-01, TASK-013-08-02 | TEST-013-08-01 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
+| FR-1336 | SF-013-08 | UNDER_REVIEW | DES-013-08-01 | TASK-013-08-01, TASK-013-08-02 | TEST-013-08-01 | Fait (2026-11-09) — `tools/maj_sw.py` et contrôle de la liste dans `app/tests/qualite.test.mjs` ; le rechargement hors ligne (TEST-013-08-01) reste à faire dans un navigateur, Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1337 | SF-013-08 | UNDER_REVIEW | DES-013-08-02 | TASK-013-08-01 | TEST-013-08-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1338 | SF-013-08 | UNDER_REVIEW | DES-013-08-03 | TASK-013-08-01 | TEST-013-08-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1340 | SF-013-09 | UNDER_REVIEW | DES-013-09-01 | TASK-013-09-01 | TEST-013-09-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
@@ -358,7 +358,7 @@ Erreurs : 0 · Avertissements : 0
 | FR-1346 | SF-013-10 | UNDER_REVIEW | DES-013-10-01 | TASK-013-10-02 | TEST-013-10-02 | Fait (2026-11-09) | 1/1 exécutés et réussis |
 | FR-1347 | SF-013-10 | UNDER_REVIEW | DES-013-10-01 | TASK-013-10-03 | TEST-013-10-03 | Non commencé | 0/1 exécutés et réussis |
 | FR-1348 | SF-013-11 | UNDER_REVIEW | DES-013-11-01 | TASK-013-11-01 | TEST-013-11-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-1349 | SF-013-11 | UNDER_REVIEW | DES-013-11-02 | TASK-013-11-02 | TEST-013-11-02 | Non commencé | 0/1 exécutés et réussis |
+| FR-1349 | SF-013-11 | UNDER_REVIEW | DES-013-11-02 | TASK-013-11-02 | TEST-013-11-02 | Fait (2026-11-09) — `app/tests/qualite.test.mjs` (contrôle statique des clés écrites) | 1/1 exécutés et réussis |
 | FR-1350 | SF-013-11 | UNDER_REVIEW | DES-013-11-01 | TASK-013-11-01 | TEST-013-11-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1401 | MT-001 | UNDER_REVIEW | DES-M01-01 | TASK-M01-02 | TEST-M01-02 | Non commencé | 0/1 exécutés et réussis |
 | FR-1402 | MT-001 | UNDER_REVIEW | DES-M01-02 | TASK-M01-02 | TEST-M01-02 | Non commencé | 0/1 exécutés et réussis |
@@ -369,11 +369,11 @@ Erreurs : 0 · Avertissements : 0
 | FR-1501 | SF-001-13 | UNDER_REVIEW | DES-001-13-01 | TASK-001-13-01 | TEST-001-13-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1502 | SF-001-13 | UNDER_REVIEW | DES-001-13-01 | TASK-001-13-01 | TEST-001-13-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1503 | SF-001-13 | UNDER_REVIEW | DES-001-13-01 | TASK-001-13-01 | TEST-001-13-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
-| FR-1504 | SF-001-13 | UNDER_REVIEW | DES-001-13-02 | TASK-001-13-02, TASK-001-13-04 | TEST-001-13-04 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
+| FR-1504 | SF-001-13 | UNDER_REVIEW | DES-001-13-02 | TASK-001-13-02, TASK-001-13-04 | TEST-001-13-04 | Fait (2026-11-09) — `app/tests/saisie.test.mjs`, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1505 | SF-001-13 | UNDER_REVIEW | DES-001-13-01 | TASK-001-13-01 | TEST-001-13-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1506 | SF-001-13 | UNDER_REVIEW | DES-001-13-01 | TASK-001-13-01 | TEST-001-13-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
-| FR-1507 | SF-001-13 | UNDER_REVIEW | DES-001-13-03 | TASK-001-13-03 | TEST-001-13-05 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-1508 | SF-001-13 | UNDER_REVIEW | DES-001-13-03 | TASK-001-13-03, TASK-001-13-04 | TEST-001-13-05 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
+| FR-1507 | SF-001-13 | UNDER_REVIEW | DES-001-13-03 | TASK-001-13-03 | TEST-001-13-05 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
+| FR-1508 | SF-001-13 | UNDER_REVIEW | DES-001-13-03 | TASK-001-13-03, TASK-001-13-04 | TEST-001-13-05 | Fait (2026-11-09) — `app/tests/saisie.test.mjs`, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1511 | SF-001-14 | UNDER_REVIEW | DES-001-14-01 | TASK-001-14-01 | TEST-001-14-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1512 | SF-001-14 | UNDER_REVIEW | DES-001-14-02 | TASK-001-14-02 | TEST-001-14-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1513 | SF-001-14 | UNDER_REVIEW | DES-001-14-01 | TASK-001-14-01 | TEST-001-14-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
@@ -394,7 +394,7 @@ Erreurs : 0 · Avertissements : 0
 | FR-1542 | SF-001-17 | UNDER_REVIEW | DES-001-17-01 | TASK-001-17-01 | TEST-001-17-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1543 | SF-001-17 | UNDER_REVIEW | DES-001-17-02 | TASK-001-17-02 | TEST-001-17-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1546 | SF-001-18 | UNDER_REVIEW | DES-001-18-01 | TASK-001-18-01 | TEST-001-18-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-1547 | SF-001-18 | UNDER_REVIEW | DES-001-18-02 | TASK-001-18-02 | TEST-001-18-02 | Partiel (code existant incomplet, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
+| FR-1547 | SF-001-18 | UNDER_REVIEW | DES-001-18-02 | TASK-001-18-02 | TEST-001-18-02 | Fait (2026-11-09) — `app/tests/saisie.test.mjs` | 1/1 exécutés et réussis |
 | FR-1548 | SF-001-18 | UNDER_REVIEW | DES-001-18-01 | TASK-001-18-01 | TEST-001-18-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1549 | SF-001-18 | UNDER_REVIEW | DES-001-18-01 | TASK-001-18-01 | TEST-001-18-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1561 | SF-001-19 | UNDER_REVIEW | DES-001-19-01 | TASK-001-19-03 | TEST-001-19-01 | Non commencé | 0/1 exécutés et réussis |
@@ -449,7 +449,7 @@ Erreurs : 0 · Avertissements : 0
 | FR-2106 | SF-015-02 | UNDER_REVIEW | DES-015-02-01 | TASK-015-02-01 | TEST-015-02-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-2107 | SF-015-02 | UNDER_REVIEW | DES-015-02-01 | TASK-015-02-01 | TEST-015-02-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-2108 | SF-015-02 | UNDER_REVIEW | DES-015-02-01 | TASK-015-02-01 | TEST-015-02-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-2113 | SF-015-03 | UNDER_REVIEW | DES-015-03-01 | TASK-015-03-01, TASK-015-03-03 | TEST-015-03-01 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
+| FR-2113 | SF-015-03 | UNDER_REVIEW | DES-015-03-01 | TASK-015-03-01, TASK-015-03-03 | TEST-015-03-01 | Fait (2026-11-09) — `app/tests/qualite.test.mjs`, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-2114 | SF-015-03 | UNDER_REVIEW | DES-015-03-02 | TASK-015-03-02 | TEST-015-03-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-2115 | SF-015-03 | UNDER_REVIEW | DES-015-03-02 | TASK-015-03-02 | TEST-015-03-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-2119 | SF-015-04 | UNDER_REVIEW | DES-015-04-01 | TASK-015-04-01 | TEST-015-04-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
@@ -458,7 +458,7 @@ Erreurs : 0 · Avertissements : 0
 | FR-2125 | SF-015-05 | UNDER_REVIEW | DES-015-05-02 | TASK-015-05-02 | TEST-015-05-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-2126 | SF-015-05 | UNDER_REVIEW | DES-015-05-02 | TASK-015-05-02 | TEST-015-05-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-2130 | SF-015-06 | UNDER_REVIEW | DES-015-06-01 | TASK-015-06-01 | TEST-015-06-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-2131 | SF-015-06 | UNDER_REVIEW | DES-015-06-02 | TASK-015-06-02 | TEST-015-06-02 | Partiel (code existant incomplet, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
+| FR-2131 | SF-015-06 | UNDER_REVIEW | DES-015-06-02 | TASK-015-06-02 | TEST-015-06-02 | Fait (2026-11-09) — `app/tests/qualite.test.mjs` | 1/1 exécutés et réussis |
 | FR-2201 | SF-016-01 | UNDER_REVIEW | DES-016-01-01 | TASK-016-01-01, TASK-016-01-02 | TEST-016-01-01 | Fait (2026-11-09) — `app/js/agents/conseiller/bm25.js`, `app/js/agents/conseiller/glossaire.js` (glossaire 1.2.0, champ `courant_fr`, DES-016-01-03), Fait (2026-11-09) — `app/tests/conseiller.test.mjs`, `tools/exporter_classements.py` (oracle) | 1/1 exécutés et réussis |
 | FR-2202 | SF-016-01 | UNDER_REVIEW | DES-016-01-01 | TASK-016-01-01, TASK-016-01-02 | TEST-016-01-02 | Fait (2026-11-09) — `app/js/agents/conseiller/bm25.js`, `app/js/agents/conseiller/glossaire.js` (glossaire 1.2.0, champ `courant_fr`, DES-016-01-03), Fait (2026-11-09) — `app/tests/conseiller.test.mjs`, `tools/exporter_classements.py` (oracle) | 1/1 exécutés et réussis |
 | FR-2203 | SF-016-01 | UNDER_REVIEW | DES-016-01-02, DES-016-01-03 | TASK-016-01-01, TASK-016-01-02 | TEST-016-01-03 | Fait (2026-11-09) — `app/js/agents/conseiller/bm25.js`, `app/js/agents/conseiller/glossaire.js` (glossaire 1.2.0, champ `courant_fr`, DES-016-01-03), Fait (2026-11-09) — `app/tests/conseiller.test.mjs`, `tools/exporter_classements.py` (oracle) | 1/1 exécutés et réussis |

@@ -25,7 +25,7 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : SF-001-02
 - Condition de fin : TEST-002-01-01 réussis
 - Tests : TEST-002-01-01
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `preparerEnvoi` : exactement codes, aire, semaine ISO, tranche d'âge
 
 ### TASK-002-01-02 — Déduplication côté serveur
 - Exigences : FR-221

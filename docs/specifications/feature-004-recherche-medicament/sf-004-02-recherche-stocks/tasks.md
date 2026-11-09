@@ -47,5 +47,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-004-02-03 réussis
 - Tests : TEST-004-02-03
-- Statut : Partiel (code existant incomplet, rétro-spécifié le 2026-11-09)
+- Statut : Fait (2026-11-09) — section « Classement des résultats » des conditions (FR et EN)
 

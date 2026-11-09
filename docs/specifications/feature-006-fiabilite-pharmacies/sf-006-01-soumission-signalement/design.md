@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-601, FR-602, FR-603, FR-608, FR-620, FR-621 |
 | ADR | — |
-| État d'implémentation | Partiellement implémenté — rétro-spécifié le 2026-11-09 ; écarts au §9 de design.md |
+| État d'implémentation | Implémenté dans Nolo (2026-11-09, D-038) ; auto-signalement : contrôle côté serveur à faire |
 
 ## 1. Vue d'ensemble
 —
@@ -44,5 +44,4 @@ Aucun contrat propre.
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- FR-601 : Nolo propose 2 choix (trouvé / pas trouvé) au lieu de 4.
 - FR-620 : l'interdiction de se signaler soi-même n'a pas de sens sur l'appareil du citoyen ; elle relève du serveur (à faire).

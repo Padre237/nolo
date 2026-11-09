@@ -56,6 +56,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : retrait de la finalité
 - Alors : clé vide
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/ecrans.test.mjs` › « TEST-008-05-04 : retirer « signalements » efface les signalements de l’appareil » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 

@@ -6,7 +6,7 @@
 | Sous-fonctionnalité | SF-001-12 |
 | Version | 2.0.0 |
 | Statut | APPROVED |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) ; valeurs 119 et 112 à vérifier (D-004) |
 | Origine | Spécification v1.3 (FR-114) ; D-004 (Proposé) |
 | Bloquant | D-004 |
 | Dépend de | SF-007-01, SF-013-01 |

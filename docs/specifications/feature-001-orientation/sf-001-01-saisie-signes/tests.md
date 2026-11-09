@@ -34,8 +34,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `erreurs(cas)`
 - Alors : `{ age: 'ageMax' }`
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/saisie.test.mjs` › « TEST-001-01-02 : âge de 130 ans refusé (ageMax) » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-001-01-03 — Limite de 600 caractères
 - Type : Interface
@@ -45,8 +45,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : on colle 700 caractères
 - Alors : 600 caractères retenus ; compteur « 600 / 600 »
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/saisie.test.mjs` › « TEST-001-01-03 : 600 caractères au plus ; compteur « 600 / 600 » » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-001-01-04 — Exemple sans validation automatique
 - Type : Interface
@@ -56,8 +56,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : on touche l'exemple 1
 - Alors : champs remplis ; route inchangée
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/saisie.test.mjs` › « TEST-001-01-04 et TEST-001-01-05 : l’exemple remplit sans valider ; rien n’est écrit ni envoyé » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-001-01-05 — Aucune persistance ni réseau
 - Type : Confidentialité
@@ -67,6 +67,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : on lit `localStorage` et le journal réseau
 - Alors : aucune clé ne contient le texte ou l'âge ; zéro requête
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/saisie.test.mjs` › « TEST-001-01-04 et TEST-001-01-05 : l’exemple remplit sans valider ; rien n’est écrit ni envoyé » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 

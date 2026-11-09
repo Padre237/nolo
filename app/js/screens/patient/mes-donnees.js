@@ -49,10 +49,12 @@ export default {
       }
       const suivant = { ...e, version_conditions: VERSION_CONDITIONS, date: new Date().toISOString(), finalites: { ...f } };
       local.write('consentement', suivant);
-      set({ consentement: suivant, mesChoix: null });
+      // Retirer la finalité « signalements » efface les signalements faits sur cet appareil (FR-844).
+      if (!f.signalements) { local.remove('signalements'); set({ consentement: suivant, mesChoix: null, recherche: { ...s.recherche, signalements: [] } }); }
+      else set({ consentement: suivant, mesChoix: null });
       annonce(t('mesDonnees.fait'));
     },
-    retirer({ t, set, annonce }) { const e = sansPartage(); local.write('consentement', e); set({ consentement: e, mesChoix: null }); annonce(t('mesDonnees.fait')); },
+    retirer({ s, t, set, annonce }) { const e = sansPartage(); local.write('consentement', e); local.remove('signalements'); set({ consentement: e, mesChoix: null, recherche: { ...s.recherche, signalements: [] } }); annonce(t('mesDonnees.fait')); },
     effacer({ set, go }) {
       ['consentement', 'signalements', 'pro-comptes', 'pro-session', 'pro-essais'].forEach((k) => local.remove(k));
       set({ consentement: null, brouillon: null, cas: null, mesChoix: null, pro: { comptes: {}, session: null, inscription: null, essais: {} } });

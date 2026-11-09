@@ -5,8 +5,8 @@
 | Fonctionnalité | F-008 Consentements et droits |
 | Sous-fonctionnalité | SF-008-08 |
 | Version | 2.0.0 |
-| Statut | READY_FOR_DEV |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| Statut | IN_TESTING |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 | Origine | D-028 (FR-CONS-03, 08, 09) |
 | Bloquant | Aucun |
 | Dépend de | SF-008-01, SF-013-04 |

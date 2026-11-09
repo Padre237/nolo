@@ -5,8 +5,8 @@
 | Fonctionnalité | F-001 Orientation à partir des signes |
 | Sous-fonctionnalité | SF-001-02 |
 | Version | 2.0.0 |
-| Statut | READY_FOR_DEV |
-| État d'implémentation | Partiellement implémenté — rétro-spécifié le 2026-11-09 ; écarts au §9 de design.md |
+| Statut | IN_TESTING |
+| État d'implémentation | Implémenté (2026-11-09, D-038) ; rien n'est envoyé dans le prototype |
 | Origine | Spécification v1.3 (FR-111) ; D-022 |
 | Bloquant | Aucun |
 | Dépend de | SF-001-01, SF-001-13 |

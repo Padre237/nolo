@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-111, FR-155, FR-156 |
 | ADR | ADR-005 |
-| État d'implémentation | Partiellement implémenté — rétro-spécifié le 2026-11-09 ; écarts au §9 de design.md |
+| État d'implémentation | Implémenté (2026-11-09, D-038) ; rien n'est envoyé dans le prototype |
 
 ## 1. Vue d'ensemble
 Aujourd'hui Nolo n'envoie rien : la règle est satisfaite par construction. La fonction de préparation d'envoi (`preparerEnvoi`) sera écrite avec l'envoi consenti (SF-008-01) et la contribution de surveillance (SF-002-01).
@@ -47,4 +47,4 @@ export function preparerEnvoi(cas, finalite) // → { codes: string[], semaine: 
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- Pas de fonction `preparerEnvoi` : rien n'est envoyé aujourd'hui (FR-155 satisfaite par absence d'envoi).
+- Aucun écart connu (écarts résolus le 2026-11-09 : `preparerEnvoi` (`app/js/domain/envoi.js`) : codes SYM-NNN seulement).

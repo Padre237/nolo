@@ -23,6 +23,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : rendu
 - Alors : barre et phrase visibles
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/ecrans.test.mjs` › « TEST-005-03-01 : l’onglet Sang rappelle d’abord l’urgence » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 

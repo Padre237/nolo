@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `lireRoute`
 - Alors : `pro/tableau`, `stock`
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/qualite.test.mjs` › « TEST-013-02-01 et TEST-013-02-02 : routeur — route la plus longue ; garde du consentement » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-013-02-02 — Garde du consentement
 - Type : Interface
@@ -34,8 +34,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : ouvrir `#/decrire`
 - Alors : `#/bienvenue`
 - Données : —
-- Automatisation : `tools/inspecter.py` (preuve-2026-11-09-inspection-visuelle.txt)
-- Statut d'exécution : Non exécuté (état atteint et capturé par l'inspection du 2026-11-09, qui ne contrôle que la mise en page ; le contenu attendu n'est pas vérifié : assertion à écrire, TASK-013-10-03)
+- Automatisation : `app/tests/qualite.test.mjs` › « TEST-013-02-01 et TEST-013-02-02 : routeur — route la plus longue ; garde du consentement » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-013-02-03 — Un seul h1
 - Type : Interface

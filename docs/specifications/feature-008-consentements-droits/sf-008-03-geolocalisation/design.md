@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-821, FR-822, FR-823 |
 | ADR | — |
-| État d'implémentation | Non implémenté |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Vue d'ensemble
 —
@@ -44,4 +44,4 @@ Aucun contrat propre.
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- Aujourd'hui toutes les distances partent de `ORIGINE` (Douala, 4.0511 ; 9.7679), sans mention à l'écran.
+- Aucun écart connu (écarts résolus le 2026-11-09 : position demandée au moment de la recherche, arrondie, en mémoire seulement ; quartier en cas de refus ; point de référence dans un cadre).

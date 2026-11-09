@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-302, FR-303, FR-307, FR-323, FR-324 |
 | ADR | — |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Vue d'ensemble
 —
@@ -45,4 +45,4 @@ Aucun contrat propre.
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- FR-302 : `chercherSpecialite` s'arrête au premier palier qui donne au moins 1 résultat, pas 3.
+- Aucun écart connu (écarts résolus le 2026-11-09 : élargissement jusqu'à 3 résultats (`RESULTATS_MINIMUM`, `parPaliers`)).

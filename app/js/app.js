@@ -7,7 +7,8 @@ import { valide } from './domain/consent.js';
 import { entete, barreSecurite, pied } from './ui/components.js';
 import { icone } from './ui/icons.js';
 import { demarrer, agents } from './agents/nolo.js';
-import { moduleActif } from './domain/politique.js';
+import { moduleActif, numerosUrgence } from './domain/politique.js';
+import { lireRoute as lire, routeGardee } from './core/routeur.js';
 
 import bienvenue from './screens/patient/bienvenue.js';
 import accueil from './screens/patient/accueil.js';
@@ -27,6 +28,7 @@ import proEntree from './screens/pro/entree.js';
 import proInscription from './screens/pro/inscription.js';
 import proCode from './screens/pro/code.js';
 import proTableau from './screens/pro/tableau.js';
+import proConditions from './screens/pro/conditions.js';
 import ministere from './screens/ministere/console.js';
 
 const remplacer = (h) => { try { history.replaceState(null, '', h); } catch { location.hash = h; } };
@@ -34,25 +36,16 @@ const remplacer = (h) => { try { history.replaceState(null, '', h); } catch { lo
 const ROUTES = [
   ['bienvenue', bienvenue], ['', accueil], ['decrire', decrire], ['verifier', verifier], ['pistes', pistes], ['ou-aller', ouAller],
   ['fiche', fiche], ['urgence', urgence], ['confidentiel', confidentiel], ['hors-champ', horsChamp], ['chercher', chercher],
-  ['conditions', conditions], ['mes-donnees', mesDonnees], ['droits', droits], ['pro', proEntree], ['pro/inscription', proInscription], ['pro/code', proCode], ['pro/tableau', proTableau],
+  ['conditions', conditions], ['mes-donnees', mesDonnees], ['droits', droits], ['pro', proEntree], ['pro/conditions', proConditions], ['pro/inscription', proInscription], ['pro/code', proCode], ['pro/tableau', proTableau],
   ['ministere', ministere],
 ];
-const SANS_CONSENTEMENT = new Set(['bienvenue', 'conditions', 'droits', 'pro', 'pro/inscription', 'pro/code', 'pro/tableau', 'ministere']);
+const SANS_CONSENTEMENT = new Set(['bienvenue', 'conditions', 'droits', 'pro', 'pro/conditions', 'pro/inscription', 'pro/code', 'pro/tableau', 'ministere']);
 
 function lireRoute() {
-  const h = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
-  const [chemin, requete = ''] = h.split('?');
-  const morceaux = chemin.split('/').filter(Boolean);
   // Correspondance la plus longue (« pro/tableau/stock » → « pro/tableau » + param « stock »).
   // Hors démonstration ou module désactivé, la route des pistes n'existe pas (FR-1521).
   const a = agents();
-  const routes = a && moduleActif(a.politique, a.mode) ? ROUTES : ROUTES.filter(([k]) => k !== 'pistes');
-  for (let n = morceaux.length; n >= 0; n--) {
-    const cle = morceaux.slice(0, n).join('/');
-    const r = routes.find(([k]) => k === cle);
-    if (r) return { cle, ecran: r[1], params: morceaux.slice(n), requete: new URLSearchParams(requete) };
-  }
-  return { cle: '', ecran: accueil, params: [], requete: new URLSearchParams() };
+  return lire(location.hash, a && moduleActif(a.politique, a.mode) ? ROUTES : ROUTES.filter(([k]) => k !== 'pistes'));
 }
 
 const racine = document.getElementById('app');
@@ -74,8 +67,8 @@ function rendre({ nouvelleRoute = false } = {}) {
   const route = lireRoute();
   const s = store.get();
   // Garde : consentement requis avant toute fonction (FR-CONS-01, CA-CONS-06).
-  if (!SANS_CONSENTEMENT.has(route.cle) && !valide(s.consentement)) {
-    if (location.hash !== '#/bienvenue') { remplacer('#/bienvenue'); return rendre({ nouvelleRoute: true }); }
+  if (routeGardee(route.cle, valide(s.consentement), SANS_CONSENTEMENT) && location.hash !== '#/bienvenue') {
+    remplacer('#/bienvenue'); return rendre({ nouvelleRoute: true });
   }
   const ctx = contexte(route);
   const ecran = route.ecran;
@@ -94,7 +87,7 @@ function rendre({ nouvelleRoute = false } = {}) {
     <main id="contenu" class="ecran-${ecran.id}" data-cle="main-${ecran.id}">${ecran.render(ctx)}</main>
     <p class="vh" id="numeros-fictifs">${t('commun.numeroFictif')}</p>
     ${opts.sansPied ? '' : pied(t)}
-    ${barreSecurite(t)}
+    ${opts.sansBarre ? '' : barreSecurite(t, numerosUrgence(agents().politique))}
     <div class="annonces" data-garder aria-live="polite" role="status"></div>`;
 
   const appliquer = () => {

@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : filtre
 - Alors : aucune proposition
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/recherche.test.mjs` › « TEST-004-01-01 à 03 : catalogue des DCI et filtre » ; `app/tests/recherche.test.mjs` › « TEST-004-01-01 à 03 : catalogue des DCI et filtre » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-004-01-02 — Saisie tolérante
 - Type : Unitaire
@@ -34,8 +34,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : filtre
 - Alors : Paracétamol ; ≤ 8
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/recherche.test.mjs` › « TEST-004-01-01 à 03 : catalogue des DCI et filtre » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-004-01-03 — Catalogue
 - Type : Unitaire
@@ -45,6 +45,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : lecture
 - Alors : 16 entrées, 2 sensibles
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/recherche.test.mjs` › « TEST-004-01-01 à 03 : catalogue des DCI et filtre » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 

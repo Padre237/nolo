@@ -39,9 +39,9 @@ This submission maps the solution to the ITU-T Y.3172 pipeline nodes and to the 
 | What-if simulation; comparison with and without governance (Python) | Implemented | SF-007-13, SF-007-14 |
 | Scenarios S1 to S3 and their runner | Implemented | SF-012-03 |
 | Knowledge-base retrieval (BM25; ChromaDB not measured) | Partly implemented | SF-011-03 |
-| Agents and chained log inside the app; "How Nolo decided" panel | Planned | SF-007-17, SF-007-21, SF-007-18 |
-| Rights adviser "Mes droits santé" (extractive, cited answers) | Planned | SF-016-01, SF-016-02 |
-| Pharmacy reliability score from user reports | Planned | SF-006-02 |
+| Agents and chained log inside the app; "How Nolo decided" panel | Implemented | SF-007-17, SF-007-21, SF-007-18 |
+| Rights adviser "Mes droits santé" (extractive, cited answers) | Implemented | SF-016-01, SF-016-02 |
+| Pharmacy reliability score from user reports (synthetic reports) | Implemented | SF-006-02 |
 | Public epidemiological map | Planned | SF-002-08 |
 
 The four verdicts are `AUTORISE`, `AUTORISE_AVEC_CONDITIONS` and `BLOQUE`, which cite their legal fragment, and `BLOQUE_SANS_FONDEMENT`, which blocks an action that is outside the catalogue or has no legal basis to cite. The on-device triage engine v1 is implemented and parity-tested against Python, but the app does not use it yet: it uses its own list of danger signs.
@@ -107,7 +107,7 @@ The register in `docs/compliance/registre-lacunes.md` lists **16 gaps (L1 to L16
 | L7 | **Standards:** Y.3172 has no consent or purpose node and no per-agent compliance control; AI Readiness 2.0 has no accountability between agents | Node P instantiated by the Compliance agent; the log records which agent decided | recommendation |
 | L8 | Advertising conditions (art. 19) unpublished (Hyp) | Commercial neutrality; public formula; no sponsor field | `conditions_publicite_art19_publiees` |
 | L9 | No open registry of licensed pharmacies, no stock format (Hyp) | Simulated licence list; proposed format; freshness shown | `registre_ouvert_pharmacies` |
-| L10 | No text on public rating of health facilities (Hyp) | Smoothed score, freeze on bursts, contest, human moderation (specified; score planned) | `notation_etablissements.*` |
+| L10 | No text on public rating of health facilities (Hyp) | Smoothed score, freeze on bursts, contest, human moderation (score and freeze shown in the app) | `notation_etablissements.*` |
 | L11 | Art. 48 ban with no derogation, even for public health | Never collected; revealing searches on the device | `donnees_sensibles.categories_interdites_art48` |
 | L12 | Art. 19 prior authorization of any processing; authority not operational | Synthetic demo; "no personal data" production mode | `autorisation_prealable.*` |
 | L13 | IITT lists sexual assault as a triage criterion, which art. 48 forbids processing | Criterion never asked nor processed | `donnees_sensibles.categories_interdites_art48` |
@@ -129,19 +129,20 @@ The app needs no build step. Python 3 and Node 22 run every check (`README.md`).
 
 | Check | Result | Proof |
 |---|---|---|
-| `python3 -m pytest` (governance, scenarios, facility service, publication and report checks) | 116 passed | `preuve-2026-11-09-vague-a.txt` |
-| Node: on-device engine and catalogues; Nolo app | 15 passed; 33 passed | same |
+| `python3 -m pytest` (governance, scenarios, facility service, publication and report checks) | 118 passed | `preuve-2026-11-09-vague-c.txt` |
+| Node: on-device engine and catalogues; Nolo app | 15 passed; 119 passed | same |
+| In-app agents against the Python reference | 3,908 Compliance decisions, 0 difference; identical audit-chain hashes; replay: 0 violations with governance, 6 without | `preuve-2026-11-09-vague-b.txt` |
 | Scenarios S1–S3 with governance; S2 and S3 without; two what-if variants | as expected | same |
 | Triage rules v2 | 390/390 witness cases; 0 monotonicity violation in 5,000 draws | same |
 | Knowledge base (public version) | 2,034 fragments, 21 documents; byte-identical rebuild; 0 PDF | same |
 | Publication check | 0 PDF, 0 secret, 0 fragment of the withheld guide | same |
-| Visual inspection (39 screens × 4 widths) | 156 measurements, 0 layout defect, 0 console error | `preuve-2026-11-09-inspection-visuelle.txt` |
-| Specifications (spec-driven development) | 146 folders, 483 requirements, 279 tasks, 415 tests; traceability: 0 error | `python3 tools/trace.py` |
+| Visual inspection (47 screens × 4 widths) | 188 measurements, 0 layout defect, 0 console error | `preuve-2026-11-09-vague-c.txt` |
+| Specifications (spec-driven development) | 146 folders, 483 requirements, 280 tasks, 415 tests; traceability: 0 error | `python3 tools/trace.py` |
 
 **Limits.**
 
 - The visual inspection checks layout, not content: 76 interface tests are "captured, not verified".
-- English questions on French-only laws are not yet found by BM25 (L14).
+- BM25 over the whole base still misses English questions on French-only laws (L14); in the app, a query glossary reaches them (5/5, on a small question set whose wording partly overlaps the glossary).
 - ChromaDB and Ollama have not been measured; that remains for the team's machine.
-- The agents run in the Python reference only. The app keeps its own copy of the policy (1.3.2, against 1.3.0 in `config/policy.yaml`), which the planned port will reconcile.
-- 39 deviations between specifications and code are logged in `docs/specifications/ECARTS.md`. One example: the app writes emergency numbers in its text catalogues instead of reading them from the policy.
+- The app runs the agents itself (JavaScript), parity-tested against the Python reference, and reads `config/policy.yaml` (1.4.0) converted to JSON; nothing is sent to a server in the prototype.
+- 14 deviations between specifications and code remain logged in `docs/specifications/ECARTS.md`. One example: form errors still use the red reserved for emergencies (open question Q-013-05-01).

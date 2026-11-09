@@ -34,8 +34,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `codeFiche`
 - Alors : format `^[ACDEFGHJKLMNPQRTUVWXY34679]{3}-[…]{3}$`
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/saisie.test.mjs` › « TEST-001-18-02 : code de fiche au format XXX-XXX, sans 0, O, 1 ni I » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-001-18-03 — Impression masquée dans un cadre
 - Type : Interface

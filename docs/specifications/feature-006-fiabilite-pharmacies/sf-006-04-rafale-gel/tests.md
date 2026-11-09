@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : calcul de référence
 - Alors : conforme au critère
 - Données : —
-- Automatisation : `python3 kb/services/test_services.py` (11 contrôles de la logique de référence)
-- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-suites.txt`)
+- Automatisation : `app/tests/fiabilite.test.mjs` › « TEST-006-04-01 : 8 négatifs en 2 h → baisse gelée, saisine du modérateur » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-006-04-02 — Parité Nolo / référence
 - Type : Unitaire
@@ -34,6 +34,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : calcul JS et Python
 - Alors : mêmes valeurs
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/fiabilite.test.mjs` › « TEST-006-02-02, TEST-006-03-02, TEST-006-04-02 : mêmes scores, effectifs et gels que la référence Python » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 

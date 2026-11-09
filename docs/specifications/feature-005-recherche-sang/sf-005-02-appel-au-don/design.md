@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-504 |
 | ADR | — |
-| État d'implémentation | Partiellement implémenté — rétro-spécifié le 2026-11-09 ; écarts au §9 de design.md |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Vue d'ensemble
 —
@@ -43,4 +43,4 @@ Aucun contrat propre.
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- FR-504 : `appelAuDon` vaut vrai dès qu'une banque n'est pas « disponible » (faible ou rupture), pas à la majorité en rupture.
+- Aucun écart connu (écarts résolus le 2026-11-09 : appel au don à la majorité des banques en rupture (FR-504). Contradiction signalée : `kb/rules/disponibilites.yaml` dit « faible ou rupture » ; la spécification prime).

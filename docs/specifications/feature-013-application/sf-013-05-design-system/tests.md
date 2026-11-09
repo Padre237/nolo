@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : recherche
 - Alors : exceptions listées seulement
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/qualite.test.mjs` › « TEST-013-05-01 et TEST-013-05-03 : couleurs en dur et réservation du rouge et de l’ambre (exceptions de DESIGN.md) » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-013-05-02 — Polices locales
 - Type : Interface
@@ -45,8 +45,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : liste des usages
 - Alors : conformes
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/qualite.test.mjs` › « TEST-013-05-01 et TEST-013-05-03 : couleurs en dur et réservation du rouge et de l’ambre (exceptions de DESIGN.md) » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-013-05-04 — Documentation
 - Type : Revue

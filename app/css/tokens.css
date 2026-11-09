@@ -32,6 +32,11 @@
   --menthe: #E7F3EE;
   --menthe-trait: #B9DCCD;
   --menthe-vive: #9FD3BF;
+  --sur-sombre: #FFFFFF;         /* texte sur aplat forêt */
+  --sur-sombre-2: #CFE8DD;       /* texte secondaire sur aplat forêt */
+  --ferme-sur-sombre: #F6D9D5;   /* « fermé » sur le panneau de direction */
+  --hachure: #DCEDE6;            /* hachure des zones sous le seuil */
+  --voile-clair: #EEF1EF;        /* lignes du carnet, reflet du squelette de chargement */
 
   /* Couleur — sens réservés */
   --urgence: #B42318;

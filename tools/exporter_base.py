@@ -1,6 +1,6 @@
 """SF-011-08 (TASK-011-08-01, FR-1127) — Base de connaissances embarquée dans Nolo.
 
-    python3 tools/exporter_base.py             # écrit app/data/base.json et app/data/glossaire.json
+    python3 tools/exporter_base.py             # écrit app/data/base.json, app/data/glossaire.json et app/data/regles.json
     python3 tools/exporter_base.py --verifier  # code 0 si les deux fichiers sont à jour
 
 Contenu de `base.json` : tous les fragments `CMR-` de la version publique, et les fragments `INT-` cités par
@@ -24,6 +24,8 @@ RACINE = Path(__file__).resolve().parents[1]
 KB = RACINE / "kb"
 CIBLE = RACINE / "app" / "data" / "base.json"
 CIBLE_GLOSSAIRE = RACINE / "app" / "data" / "glossaire.json"
+CIBLE_REGLES = RACINE / "app" / "data" / "regles.json"
+REGLES = ("recherche_specialite", "sbc_definitions", "fiabilite_pharmacies", "disponibilites")
 RESERVE = "INT-OMS-AFRO-SBC-2014"
 CITES = [RACINE / "config" / "policy.yaml", RACINE / "src" / "server" / "agents" / "conformite.py",
          KB / "traductions" / "citations_en.yaml", *sorted((KB / "mapping").glob("*.csv")),
@@ -94,6 +96,14 @@ def produire() -> tuple[dict, dict]:
     return base, glossaire
 
 
+def produire_regles() -> dict:
+    """Règles métier de `kb/rules/` utilisées par Nolo (synonymes, définitions SBC, fiabilité, disponibilités)."""
+    regles = {"genere_par": "tools/exporter_base.py", "sources": [f"kb/rules/{n}.yaml" for n in REGLES]}
+    for n in REGLES:
+        regles[n] = yaml.safe_load((KB / "rules" / f"{n}.yaml").read_text(encoding="utf-8"))
+    return regles
+
+
 def texte(obj: dict) -> str:
     return json.dumps(obj, ensure_ascii=False, separators=(",", ":")) + "\n"
 
@@ -103,19 +113,22 @@ def main() -> int:
     ap.add_argument("--verifier", action="store_true")
     a = ap.parse_args()
     base, glossaire = produire()
+    regles = produire_regles()
     if a.verifier:
-        perimes = [p.name for p, o in ((CIBLE, base), (CIBLE_GLOSSAIRE, glossaire))
+        perimes = [p.name for p, o in ((CIBLE, base), (CIBLE_GLOSSAIRE, glossaire), (CIBLE_REGLES, regles))
                    if not p.exists() or p.read_text(encoding="utf-8") != texte(o)]
         print("à jour" if not perimes else f"périmé : {', '.join(perimes)} — relancer python3 tools/exporter_base.py")
         return 1 if perimes else 0
     CIBLE.parent.mkdir(parents=True, exist_ok=True)
     CIBLE.write_text(texte(base), encoding="utf-8")
     CIBLE_GLOSSAIRE.write_text(texte(glossaire), encoding="utf-8")
+    CIBLE_REGLES.write_text(texte(regles), encoding="utf-8")
     n_int = sum(1 for k in base["fragments"] if k.startswith("INT-"))
     print(f"{CIBLE.relative_to(RACINE)} : {len(base['fragments'])} fragments ({n_int} INT), "
           f"{len(base['documents'])} documents, {len(base['traductions'])} traductions, "
           f"{CIBLE.stat().st_size} octets ; cités absents de la base : {base['cites_absents'] or 'aucun'}")
     print(f"{CIBLE_GLOSSAIRE.relative_to(RACINE)} : {len(glossaire['entrees'])} entrées")
+    print(f"{CIBLE_REGLES.relative_to(RACINE)} : {', '.join(REGLES)} ({CIBLE_REGLES.stat().st_size} octets)")
     return 0
 
 

@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-2130, FR-2131 |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -36,5 +36,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-015-06-02 réussis
 - Tests : TEST-015-06-02
-- Statut : Partiel (code existant incomplet, rétro-spécifié le 2026-11-09)
+- Statut : Fait (2026-11-09) — `app/tests/qualite.test.mjs`
 

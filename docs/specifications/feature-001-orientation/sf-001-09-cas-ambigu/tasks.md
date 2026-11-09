@@ -36,5 +36,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-001-09-03 réussis
 - Tests : TEST-001-09-03
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `lienSoignant` sur les cinq écrans de résultat (appel du 119 sur l'écran Urgence)
 

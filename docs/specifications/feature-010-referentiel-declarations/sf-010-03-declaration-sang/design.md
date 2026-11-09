@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-501, FR-1013, FR-1014 |
 | ADR | — |
-| État d'implémentation | Partiellement implémenté — rétro-spécifié le 2026-11-09 ; écarts au §9 de design.md |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Vue d'ensemble
 —
@@ -44,4 +44,4 @@ Aucun contrat propre.
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- FR-1014 : la fraîcheur de 6 h n'est pas appliquée à la recherche de sang.
+- Aucun écart connu (écarts résolus le 2026-11-09 : déclarations de sang expirées après 6 h (`FRAICHEUR_SANG_H`, `sangH`)).

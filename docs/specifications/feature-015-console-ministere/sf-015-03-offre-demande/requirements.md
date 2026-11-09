@@ -5,8 +5,8 @@
 | Fonctionnalité | F-015 Console du ministère |
 | Sous-fonctionnalité | SF-015-03 |
 | Version | 2.0.0 |
-| Statut | READY_FOR_DEV |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| Statut | IN_TESTING |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 | Origine | D-035 ; D-032 |
 | Bloquant | Aucun |
 | Dépend de | SF-014-03, SF-002-12 |

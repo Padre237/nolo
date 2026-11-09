@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-841, FR-842, FR-843, FR-844 |
 | ADR | — |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Vue d'ensemble
 —
@@ -43,4 +43,4 @@ Aucun contrat propre.
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- FR-844 : retirer « signalements » ne vide pas la clé `signalements` (seul « Effacer » le fait).
+- Aucun écart connu (écarts résolus le 2026-11-09 : retirer « signalements » vide la clé `signalements`).

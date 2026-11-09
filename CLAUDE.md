@@ -130,12 +130,14 @@ Les identifiants FR-101 à FR-715 viennent des spécifications v1.3 et ne change
 ```bash
 # Nolo
 python3 -m http.server 8765 --bind 127.0.0.1 -d app      # puis http://127.0.0.1:8765/
-cd app && node --test tests/*.test.mjs && cd ..           # 77 tests (domaine, langues, surveillance, agents, conseiller)
-python3 tools/inspecter.py /tmp/nolo-captures 360,390,768,1440   # inspection visuelle réelle, 46 états × 4 largeurs (code 0 = aucun défaut) ; NOLO_CHROME=<navigateur> si Chrome n'est pas dans /usr/bin
+cd app && node --test tests/*.test.mjs && cd ..           # 119 tests (domaine, langues, surveillance, agents, conseiller, recherches, fiabilité, qualité)
+python3 tools/inspecter.py /tmp/nolo-captures 360,390,768,1440   # inspection visuelle réelle, 47 états × 4 largeurs (code 0 = aucun défaut) ; NOLO_CHROME=<navigateur> si Chrome n'est pas dans /usr/bin
 
 # Agents de Nolo (vague B, D-038) : données embarquées et oracles
 python3 tools/politique_json.py [--verifier]              # config/policy.yaml → app/data/politique.json (à relancer après toute modification de la politique)
-python3 tools/exporter_base.py [--verifier]               # kb/ → app/data/base.json et app/data/glossaire.json
+python3 tools/exporter_base.py [--verifier]               # kb/ → app/data/base.json, glossaire.json et regles.json
+python3 tools/exporter_fiabilite.py                       # oracle de parité de la fiabilité des pharmacies
+python3 tools/maj_sw.py nolo-AAAA-MM-JJ-N                 # liste FICHIERS et VERSION du service worker (à chaque livraison)
 python3 tools/scenarios/executer.py --exporter-attendus tests/js/fixtures/decisions_attendues.json   # oracle de parité de la Conformité
 python3 tools/exporter_classements.py                     # oracle de parité du BM25 du conseiller
 node tools/evaluer_conseiller.mjs                         # évaluation datée du conseiller → docs/quality/

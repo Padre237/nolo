@@ -5,8 +5,8 @@
 | Fonctionnalité | F-010 Espace établissement |
 | Sous-fonctionnalité | SF-010-03 |
 | Version | 2.0.0 |
-| Statut | READY_FOR_DEV |
-| État d'implémentation | Partiellement implémenté — rétro-spécifié le 2026-11-09 ; écarts au §9 de design.md |
+| Statut | IN_TESTING |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 | Origine | Spécification v1.3 (FR-501) ; D-029 |
 | Bloquant | Aucun |
 | Dépend de | SF-010-07 |

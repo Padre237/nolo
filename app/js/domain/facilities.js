@@ -41,11 +41,11 @@ const SEMAINE_SAM = (o, f, so, sf) => [null, H(o, f), H(o, f), H(o, f), H(o, f),
 export const ETABLISSEMENTS = [
   { id: 'hd-boisvert', nom: 'Hôpital de district Bois-Vert', type: 'hopital', categorie: 'hopital_district', x: 3.1, y: 1.2, h24: true, urgences: true, urgencesPed: true, ambulance: true,
     specialites: { medecine_generale: 'tous', pediatrie: 'tous', pneumologie: 'certains', chirurgie: 'tous', gynecologie_obstetrique: 'tous', cardiologie: 'vacation' }, imagerie: ['radiographie', 'echographie'], laboratoire: true, hospitalisation: true, pharmacie: true,
-    sang: { 'A+': 'disponible', 'B+': 'faible', 'O+': 'disponible', 'O−': 'rupture', 'AB+': 'disponible' }, quartier: 'Route du lycée, face à la station', verifie: true },
+    sang: { 'A+': 'disponible', 'B+': 'faible', 'O+': 'disponible', 'O−': 'rupture', 'AB+': 'disponible' }, sangH: 2, quartier: 'Route du lycée, face à la station', verifie: true },
   { id: 'hr-plateau', nom: 'Hôpital régional du Plateau', type: 'hopital', categorie: 'hopital_regional', x: 8.4, y: -5.2, h24: true, urgences: true, urgencesPed: true, ambulance: true,
     specialites: { medecine_generale: 'tous', pediatrie: 'tous', pneumologie: 'tous', cardiologie: 'tous', neurologie: 'certains', orl: 'tous', ophtalmologie: 'tous', dermatologie: 'certains', chirurgie: 'tous', orthopedie: 'tous', urologie: 'certains', gastro_enterologie: 'certains', nephrologie: 'certains', endocrinologie: 'certains', psychiatrie: 'certains', oncologie: 'vacation', gynecologie_obstetrique: 'tous' },
     imagerie: ['radiographie', 'echographie', 'scanner'], laboratoire: true, hospitalisation: true, pharmacie: true,
-    sang: { 'A+': 'disponible', 'A−': 'faible', 'B+': 'disponible', 'B−': 'rupture', 'AB+': 'disponible', 'AB−': 'faible', 'O+': 'disponible', 'O−': 'faible' }, quartier: 'Avenue du Plateau', verifie: true },
+    sang: { 'A+': 'disponible', 'A−': 'faible', 'B+': 'disponible', 'B−': 'rupture', 'AB+': 'disponible', 'AB−': 'faible', 'O+': 'disponible', 'O−': 'faible' }, sangH: 4, quartier: 'Avenue du Plateau', verifie: true },
   { id: 'cma-colline', nom: 'Centre médical d’arrondissement La Colline', court: 'CMA La Colline', type: 'centre_sante', categorie: 'cma', x: 1.4, y: -0.9, horaires: SEMAINE_SAM(7, 19, 8, 14), urgences: false,
     specialites: { medecine_generale: 'tous', pediatrie: 'certains', gynecologie_obstetrique: 'tous' }, imagerie: ['echographie'], laboratoire: true, hospitalisation: true, pharmacie: true, quartier: 'Derrière l’école publique', verifie: true },
   { id: 'csi-manguiers', nom: 'Centre de santé intégré Les Manguiers', court: 'CSI Les Manguiers', type: 'centre_sante', categorie: 'csi', x: 0.6, y: 0.8, horaires: SEMAINE_SAM(7.5, 17.5, 8, 13), urgences: false,
@@ -77,7 +77,7 @@ export const ETABLISSEMENTS = [
   { id: 'ph-colline', nom: 'Pharmacie de la Colline', type: 'officine', x: 6.0, y: 3.2, horaires: SEMAINE(8, 20), garde: false, fiabilite: 70, quartier: 'Haut de la colline', verifie: false,
     stock: { paracetamol: ['disponible', 2], salbutamol: ['disponible', 2] } },
   { id: 'cts-rive', nom: 'Centre de transfusion Rive-Gauche', type: 'centre_transfusion', x: -6.6, y: 3.6, h24: true, quartier: 'Boulevard de la Rive', verifie: true, collecte: true,
-    sang: { 'A+': 'disponible', 'A−': 'faible', 'B+': 'disponible', 'B−': 'faible', 'AB+': 'disponible', 'AB−': 'rupture', 'O+': 'faible', 'O−': 'rupture' } },
+    sang: { 'A+': 'disponible', 'A−': 'faible', 'B+': 'disponible', 'B−': 'faible', 'AB+': 'disponible', 'AB−': 'rupture', 'O+': 'faible', 'O−': 'rupture' }, sangH: 1 },
   // Centres spécialisés (fictifs)
   { id: 'cs-dialyse', nom: 'Centre d’hémodialyse Les Rôniers', type: 'centre_specialise', categorie: 'specialise_dialyse', x: 5.2, y: -1.1, horaires: [null, H(6, 20), H(6, 20), H(6, 20), H(6, 20), H(6, 20), H(6, 14)], specialites: { nephrologie: 'tous' }, rdv: true, quartier: 'Derrière la poste centrale', verifie: true },
   { id: 'cs-cdt', nom: 'Centre de diagnostic et de traitement de la tuberculose du Plateau', court: 'CDT du Plateau', type: 'centre_specialise', categorie: 'specialise_tuberculose', x: 7.9, y: -4.6, horaires: SEMAINE(7.5, 15.5), specialites: { pneumologie: 'tous' }, laboratoire: true, quartier: 'Enceinte de l’hôpital régional', verifie: true },
@@ -86,7 +86,10 @@ export const ETABLISSEMENTS = [
   { id: 'csi-fleuve', nom: 'Centre de santé intégré du Fleuve', court: 'CSI du Fleuve', type: 'centre_sante', categorie: 'csi', x: -9.4, y: 6.1, horaires: SEMAINE_SAM(7.5, 17.5, 8, 12), urgences: false, specialites: { medecine_generale: 'tous', pediatrie: 'certains' }, imagerie: [], laboratoire: true, hospitalisation: false, pharmacie: true, quartier: 'Quai du fleuve', verifie: true },
 ];
 
-export const distance = (e) => Math.round(Math.hypot(e.x, e.y) * 10) / 10;
+/** Point de départ des distances (km depuis ORIGINE) : position consentie, quartier choisi ou point de démonstration (SF-008-03). */
+let depart = { x: 0, y: 0 };
+export const definirDepart = (p) => { depart = p ? { x: p.x, y: p.y } : { x: 0, y: 0 }; };
+export const distance = (e) => Math.round(Math.hypot(e.x - depart.x, e.y - depart.y) * 10) / 10;
 
 /** Ouvert maintenant ? (h24, ou horaires du jour). */
 export function ouvert(e, quand = new Date()) {
@@ -182,32 +185,64 @@ export function urgencesProches(enfant = false) {
 }
 
 // ── Recherches explicites ─────────────────────────────────────────────────
-export function chercherSpecialite(sp, { quand = new Date() } = {}) {
-  const base = visibles().filter((e) => e.specialites?.[sp]);
+/** Nombre de résultats visé avant d'arrêter l'élargissement du rayon (FR-302 ; `recherche_specialite.yaml`). */
+export const RESULTATS_MINIMUM = 3;
+
+/** Paliers 5, 10, 20, 50 km : on s'arrête au premier qui donne au moins 3 résultats ; sinon tout ce qui est à 50 km. */
+function parPaliers(base, distanceDe, trier) {
   for (const r of PALIERS_KM) {
-    const res = base.filter((e) => distance(e) <= r).sort(tri(quand));
-    if (res.length) return { rayon: r, resultats: res, elargi: r > 5 };
+    const res = base.filter((x) => distanceDe(x) <= r).sort(trier);
+    if (res.length >= RESULTATS_MINIMUM) return { rayon: r, resultats: res, elargi: r > PALIERS_KM[0] };
   }
-  return { rayon: null, resultats: [], elargi: true };
+  const res = base.filter((x) => distanceDe(x) <= PALIERS_KM.at(-1)).sort(trier);
+  return res.length ? { rayon: PALIERS_KM.at(-1), resultats: res, elargi: true } : { rayon: null, resultats: [], elargi: true };
+}
+
+export function chercherSpecialite(sp, { quand = new Date(), liste = ETABLISSEMENTS } = {}) {
+  return parPaliers(visibles(liste).filter((e) => e.specialites?.[sp]), distance, tri(quand));
+}
+
+const plat = (x) => String(x).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/œ/g, 'oe').trim();
+/** Saisie libre d'une spécialité (FR-322) : synonymes de `kb/rules/recherche_specialite.yaml` ; null si inconnue de Nolo. */
+export function resoudreSpecialite(saisie, synonymes) {
+  const q = plat(saisie);
+  if (!q) return null;
+  for (const [code, mots] of Object.entries(synonymes || {})) {
+    if (SPECIALITES.includes(code) && mots.some((m) => plat(m) === q)) return code;
+  }
+  for (const [code, mots] of Object.entries(synonymes || {})) {
+    if (SPECIALITES.includes(code) && mots.some((m) => plat(m).length > 3 && q.includes(plat(m)))) return code;
+  }
+  return null;
+}
+
+/** Filtre du catalogue des DCI (FR-421) : sans accents ni casse, 8 propositions au plus ; produits de l'art. 75 exclus. */
+export function filtrerDci(saisie, lang) {
+  const q = plat(saisie || '');
+  if (PRODUITS_ART75.some((p) => q && p.startsWith(q))) return [];
+  return DCI.filter((d) => !q || plat(d[lang]).includes(q)).slice(0, 8);
 }
 
 export const FRAICHEUR_H = 48;
-export function chercherMedicament(dci, { quand = new Date(), heuresDepuis = (h) => h } = {}) {
+export function chercherMedicament(dci, { quand = new Date(), heuresDepuis = (h) => h, score = null } = {}) {
   const base = visibles().filter((e) => e.type === 'officine' || (e.pharmacie && e.stock))
     .map((e) => ({ e, ligne: e.stock?.[dci] }))
     .filter(({ ligne }) => ligne && ligne[0] !== 'rupture' && heuresDepuis(ligne[1]) < FRAICHEUR_H);
-  for (const r of PALIERS_KM) {
-    const res = base.filter(({ e }) => distance(e) <= r).sort((a, b) => tri(quand)(a.e, b.e));
-    if (res.length) return { rayon: r, resultats: res, elargi: r > 5 };
-  }
-  return { rayon: null, resultats: [], elargi: true };
+  // Ouvert d'abord, puis distance ; la fiabilité ne départage qu'à moins de 1 km (FR-605).
+  const trier = (a, b) => (Number(ouvert(b.e, quand)) - Number(ouvert(a.e, quand))) || (Math.floor(distance(a.e)) - Math.floor(distance(b.e)))
+    || (score ? score(b.e) - score(a.e) : 0) || (distance(a.e) - distance(b.e));
+  return parPaliers(base, (x) => distance(x.e), trier);
 }
 
-export function chercherSang(groupe) {
-  const base = visibles().filter((e) => e.sang?.[groupe] && e.sang[groupe] !== 'rupture').map((e) => ({ e, niveau: e.sang[groupe] }));
-  const res = base.sort((a, b) => (a.niveau === 'disponible' ? -1 : 1) - (b.niveau === 'disponible' ? -1 : 1) || distance(a.e) - distance(b.e));
-  const bas = visibles().some((e) => e.sang?.[groupe] && e.sang[groupe] !== 'disponible');
-  return { resultats: res, appelAuDon: bas };
+/** Une déclaration de sang n'est plus montrée 6 h après son envoi (FR-1014 ; `disponibilites.yaml`). */
+export const FRAICHEUR_SANG_H = 6;
+export function chercherSang(groupe, { liste = ETABLISSEMENTS } = {}) {
+  const declarees = visibles(liste).filter((e) => e.sang?.[groupe] && (e.sangH ?? Infinity) <= FRAICHEUR_SANG_H);
+  const res = declarees.filter((e) => e.sang[groupe] !== 'rupture').map((e) => ({ e, niveau: e.sang[groupe] }))
+    .sort((a, b) => (a.niveau === 'disponible' ? -1 : 1) - (b.niveau === 'disponible' ? -1 : 1) || distance(a.e) - distance(b.e));
+  // Appel au don : la majorité des banques qui déclarent ce groupe est en rupture (FR-504).
+  const ruptures = declarees.filter((e) => e.sang[groupe] === 'rupture').length;
+  return { resultats: res, appelAuDon: declarees.length > 0 && ruptures * 2 > declarees.length };
 }
 
 export const parId = (id) => fusion(ETABLISSEMENTS).find((e) => e.id === id) || ETABLISSEMENTS.find((e) => e.id === id);

@@ -25,7 +25,7 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : SF-001-02
 - Condition de fin : TEST-008-02-01 réussis
 - Tests : TEST-008-02-01
-- Statut : À faire
+- Statut : Fait (2026-11-09) — garde de finalité dans `preparerEnvoi` (`E-ENVOI-SANS-CONSENTEMENT`)
 
 ### TASK-008-02-02 — Parcours indépendant de la surveillance
 - Exigences : FR-812

@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-114, FR-195, FR-196 |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) ; valeurs 119 et 112 à vérifier (D-004) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -36,5 +36,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : SF-007-17
 - Condition de fin : TEST-001-12-01 réussis
 - Tests : TEST-001-12-01
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `numerosUrgence` (`app/js/domain/politique.js`) ; barre de sécurité, écran Urgence, onglet Sang
 

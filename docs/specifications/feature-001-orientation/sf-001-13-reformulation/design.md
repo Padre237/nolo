@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-1501, FR-1502, FR-1503, FR-1504, FR-1505, FR-1506, FR-1507, FR-1508, NFR-1501 |
 | ADR | — |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Vue d'ensemble
 Moteur `app/js/domain/engine.js` : `norm`, `motif`, `SIGNES`, `NEGATION`, `duree`, `reformuler`, `libelle`, `SUGGESTIONS`. Écran `app/js/screens/patient/verifier.js`.

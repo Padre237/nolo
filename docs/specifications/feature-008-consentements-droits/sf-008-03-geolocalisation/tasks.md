@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-821, FR-822, FR-823 |
-| État d'implémentation | Non implémenté |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -25,7 +25,7 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-008-03-01, TEST-008-03-02 réussis
 - Tests : TEST-008-03-01, TEST-008-03-02
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `app/js/domain/position.js`, `app/js/ui/position.js` ; recherche et « Où aller »
 
 ### TASK-008-03-02 — Repli et mention dans un cadre
 - Exigences : FR-823
@@ -36,5 +36,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-008-03-03 réussis
 - Tests : TEST-008-03-03
-- Statut : À faire
+- Statut : Fait (2026-11-09) — repli sur le point de référence (cadre, hors district) et mention
 

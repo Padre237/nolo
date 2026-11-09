@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-2130, FR-2131 |
 | ADR | — |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Vue d'ensemble
 —
@@ -44,4 +44,4 @@ Aucun contrat propre.
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- FR-2131 : registre du dépôt aligné le 2026-11-09 (L1 à L16) ; le test automatique de cohérence avec les catalogues reste à écrire.
+- Aucun écart connu (écarts résolus le 2026-11-09 : cohérence registre ↔ catalogues testée).

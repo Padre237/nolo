@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-301, FR-304, FR-320, FR-321, FR-322 |
 | ADR | — |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Vue d'ensemble
 —
@@ -45,4 +45,4 @@ Aucun contrat propre.
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- FR-322 : Nolo n'a pas de saisie libre de spécialité ; la résolution des synonymes n'existe que dans la référence Python.
+- Aucun écart connu (écarts résolus le 2026-11-09 : saisie libre avec les synonymes de `kb/rules/recherche_specialite.yaml` (`app/data/regles.json`)).

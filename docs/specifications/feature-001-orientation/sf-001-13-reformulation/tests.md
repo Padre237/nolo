@@ -56,8 +56,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `duree`
 - Alors : 14
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/saisie.test.mjs` › « TEST-001-13-04 : « for two weeks » → 14 jours » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-001-13-05 — Libellés selon la langue
 - Type : Interface
@@ -67,8 +67,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : bascule FR → EN
 - Alors : puces en anglais sans nouvelle analyse
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/saisie.test.mjs` › « TEST-001-13-05 : changer de langue réaffiche les signes sans nouvelle analyse » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-001-13-06 — Temps de reformulation
 - Type : Performance

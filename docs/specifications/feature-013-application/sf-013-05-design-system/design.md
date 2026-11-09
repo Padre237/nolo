@@ -45,4 +45,4 @@ Aucun contrat propre.
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- Aucun écart connu.
+- FR-1322 : le rouge sert aussi aux erreurs de saisie et aux rejets d'import (exceptions déclarées dans `app/docs/DESIGN.md`, Q-013-05-01, TASK-013-05-05).

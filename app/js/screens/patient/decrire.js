@@ -8,7 +8,7 @@ import { icone } from '../../ui/icons.js';
 const MAX = 600;
 export const casVide = () => ({ qui: null, age: { valeur: null, unite: 'ans' }, texte: '', tente: false });
 
-function erreurs(c) {
+export function erreurs(c) {
   const e = {};
   if (!c.qui) e.qui = 'qui';
   if (c.age.valeur === null || c.age.valeur === '' || Number.isNaN(c.age.valeur)) e.age = 'age';
@@ -93,7 +93,7 @@ export default {
     'age-moins'({ s, set }) { const c = s.cas || casVide(); set({ cas: { ...c, age: { ...c.age, valeur: Math.max(0, (c.age.valeur ?? 1) - 1) } } }); },
     'age-plus'({ s, set }) { const c = s.cas || casVide(); const max = c.age.unite === 'ans' ? 120 : 59; set({ cas: { ...c, age: { ...c.age, valeur: Math.min(max, (c.age.valeur ?? -1) + 1) } } }); },
     unite({ s, set }, el) { const c = s.cas || casVide(); set({ cas: { ...c, age: { ...c.age, unite: el.dataset.valeur } } }); },
-    texte({ s, set }, el) { set({ cas: { ...(s.cas || casVide()), texte: el.value } }); },
+    texte({ s, set }, el) { set({ cas: { ...(s.cas || casVide()), texte: el.value.slice(0, MAX) } }); },
     exemple({ s, t, set }, el) {
       const x = t.list('decrire.exemples')[Number(el.dataset.i)];
       set({ cas: { ...(s.cas || casVide()), qui: x.qui, age: { valeur: x.age, unite: x.unite }, texte: x.texte, tente: false } });

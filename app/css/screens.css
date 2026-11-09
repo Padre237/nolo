@@ -145,13 +145,13 @@
 .direction__nom { font-size: clamp(1.875rem, 1.3rem + 2.6vw, 3.25rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.04; color: #fff; max-width: 18ch; }
 .direction__cat { font-size: var(--t-moyen); }
 .direction__faits { display: flex; flex-wrap: wrap; gap: var(--e-3) var(--e-6); align-items: center; margin-top: var(--e-2); }
-.direction__faits dd { display: inline-flex; gap: 8px; align-items: center; color: #E7F3EE; font-size: var(--t-petit); }
+.direction__faits dd { display: inline-flex; gap: 8px; align-items: center; color: var(--menthe); font-size: var(--t-petit); }
 .direction__km { font-size: clamp(2rem, 1.6rem + 1.6vw, 2.75rem) !important; font-weight: 800; color: #fff !important; letter-spacing: -0.02em; }
 .direction .est-ouvert { color: var(--menthe-vive) !important; font-weight: 700; }
-.direction .est-ferme { color: #F6D9D5 !important; font-weight: 700; }
+.direction .est-ferme { color: var(--ferme-sur-sombre) !important; font-weight: 700; }
 .direction__actions { display: flex; flex-wrap: wrap; gap: var(--e-3); align-items: center; margin-top: var(--e-3); }
-.direction__actions .note { color: #CFE8DD; }
-.bouton--sur-sombre:disabled { --fond: rgba(255,255,255,.12); --texte: #CFE8DD; --bord: rgba(255,255,255,.2); }
+.direction__actions .note { color: var(--sur-sombre-2); }
+.bouton--sur-sombre:disabled { --fond: rgba(255,255,255,.12); --texte: var(--sur-sombre-2); --bord: rgba(255,255,255,.2); }
 .raisons { display: flex; flex-direction: column; gap: var(--e-3); }
 .raisons li { display: grid; grid-template-columns: 24px 1fr; gap: var(--e-3); align-items: start; color: var(--foret); }
 .raisons li span { color: var(--encre); font-size: var(--t-moyen); }
@@ -178,8 +178,8 @@
 .fiche-ecran__tete { display: flex; flex-direction: column; gap: var(--e-3); }
 .carnet {
   position: relative; padding: clamp(20px, 4vw, 40px); padding-left: clamp(28px, 6vw, 64px);
-  border-radius: 10px; background-color: #FFFFFF; border: 1px solid var(--ligne); box-shadow: var(--ombre);
-  background-image: linear-gradient(90deg, transparent calc(clamp(16px, 4vw, 44px) - 1px), var(--menthe-trait) calc(clamp(16px, 4vw, 44px) - 1px), var(--menthe-trait) clamp(16px, 4vw, 44px), transparent clamp(16px, 4vw, 44px)), repeating-linear-gradient(180deg, transparent 0 31px, #EEF2EF 31px 32px);
+  border-radius: 10px; background-color: var(--surface); border: 1px solid var(--ligne); box-shadow: var(--ombre);
+  background-image: linear-gradient(90deg, transparent calc(clamp(16px, 4vw, 44px) - 1px), var(--menthe-trait) calc(clamp(16px, 4vw, 44px) - 1px), var(--menthe-trait) clamp(16px, 4vw, 44px), transparent clamp(16px, 4vw, 44px)), repeating-linear-gradient(180deg, transparent 0 31px, var(--voile-clair) 31px 32px);
 }
 .carnet__tete { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--e-4); }
 .carnet__marque { display: flex; gap: 10px; align-items: center; }

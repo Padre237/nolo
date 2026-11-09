@@ -36,5 +36,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-013-08-01 réussis
 - Tests : TEST-013-08-01
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `tools/maj_sw.py` et contrôle de la liste dans `app/tests/qualite.test.mjs` ; le rechargement hors ligne (TEST-013-08-01) reste à faire dans un navigateur
 

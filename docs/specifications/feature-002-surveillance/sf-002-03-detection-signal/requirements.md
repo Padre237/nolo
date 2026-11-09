@@ -5,8 +5,8 @@
 | Fonctionnalité | F-002 Surveillance syndromique |
 | Sous-fonctionnalité | SF-002-03 |
 | Version | 2.0.0 |
-| Statut | READY_FOR_DEV |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| Statut | IN_TESTING |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 | Origine | Spécification v1.3 (FR-203) ; ADR-014 ; guide SBC 2023 |
 | Bloquant | Aucun |
 | Dépend de | SF-002-02 |

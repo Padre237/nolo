@@ -195,7 +195,7 @@ select.saisie { appearance: none; padding-right: 44px; background-image: url("da
 .panneau { position: relative; overflow: hidden; border-radius: var(--r-panneau); background: var(--foret-profond); color: #fff; padding: var(--e-6); }
 .panneau--nuit { background: var(--foret-nuit); }
 .panneau__fil { position: absolute; inset: auto 0 0 0; height: 100%; pointer-events: none; opacity: .9; }
-.panneau p, .panneau .note { color: #CFE8DD; }
+.panneau p, .panneau .note { color: var(--sur-sombre-2); }
 .panneau a:not(.bouton):not(.action-maitresse) { color: #fff; }
 
 /* ── Bloc d'information (sans bordure latérale colorée) ─ */
@@ -267,7 +267,7 @@ select.saisie { appearance: none; padding-right: 44px; background-image: url("da
 .pied a { color: var(--texte-2); min-height: var(--cible); display: inline-flex; align-items: center; }
 
 /* ── Squelette de chargement ─────────────────────────── */
-.squelette { border-radius: var(--r-controle); background: linear-gradient(90deg, var(--voile), #EEF1EF, var(--voile)); background-size: 200% 100%; animation: squelette 1.2s linear infinite; }
+.squelette { border-radius: var(--r-controle); background: linear-gradient(90deg, var(--voile), var(--voile-clair), var(--voile)); background-size: 200% 100%; animation: squelette 1.2s linear infinite; }
 @keyframes squelette { to { background-position: -200% 0; } }
 
 /* ── « Comment Nolo a décidé » (SF-007-18) : étapes, nœuds Y.3172, textes cités ─────────────── */
@@ -302,3 +302,16 @@ select.saisie { appearance: none; padding-right: 44px; background-image: url("da
 .extrait { display: flex; flex-direction: column; gap: var(--e-2); padding: var(--e-4); border-radius: var(--r-carte); border: 1px solid var(--ligne); background: var(--pierre); min-width: 0; }
 .extrait__texte { margin: 0; padding-left: var(--e-3); border-left: 3px solid var(--foret); font-size: var(--t-petit); color: var(--encre); overflow-wrap: anywhere; }
 .decision__ref .etiquette, .extrait .etiquette { white-space: normal; }
+
+/* ── Raison de l'issue, lien vers un soignant, position, signalement (vague C) ─────────────── */
+.raison-issue { display: flex; gap: var(--e-2); align-items: flex-start; font-size: var(--t-petit); color: var(--texte-2); }
+.raison-issue > svg { flex-shrink: 0; margin-top: 2px; color: var(--foret); }
+.lien-soignant { display: inline-flex; align-items: center; gap: var(--e-2); min-height: var(--cible); font-weight: 700; color: var(--foret); text-underline-offset: 3px; }
+.lien-soignant:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: var(--r-controle); }
+.position { display: flex; flex-direction: column; gap: var(--e-2); padding-bottom: var(--e-4); border-bottom: 1px solid var(--ligne); }
+.position__ligne { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-1) var(--e-3); }
+.position__ligne .champ__etiquette { display: inline-flex; align-items: center; gap: var(--e-1); }
+.ligne-saisie { display: flex; gap: var(--e-2); }
+.ligne-saisie .saisie { flex: 1; min-width: 0; }
+.signaler { border: 0; padding: 0; margin: 0; min-width: 0; }
+.choix-signalement { display: flex; flex-wrap: wrap; gap: var(--e-2); margin-top: var(--e-2); }

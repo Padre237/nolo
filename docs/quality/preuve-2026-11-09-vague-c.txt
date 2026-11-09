@@ -1,0 +1,423 @@
+# Preuve — vague C (D-038), premier lot : recherches, fiabilité, position, raisons et lien vers un soignant, numéros lus dans la politique, conditions, console (définition SC, échéances), préparation d'envoi, contrôles de qualité
+# Date : 2026-11-09T13:46Z
+# Environnement : Python 3.12.3, node v22.23.3, pytest 9.2.0, Playwright (Python) 1.64.1, Chromium headless shell 1243 (NOLO_CHROME)
+# Les rapports de scénarios réécrits par pytest (tests/reports/2026-11-04/) sont restaurés à la fin (git checkout).
+
+##################################################################
+# 1. Phase rouge (tests écrits avant le code)
+##################################################################
+2026-11-09T14:30:40+01:00
+$ cd app && node --test tests/*.test.mjs   # vague C, avant le code (rouge attendu)
+not ok 9 - tests/ecrans.test.mjs
+not ok 10 - tests/fiabilite.test.mjs
+not ok 15 - tests/qualite.test.mjs
+not ok 76 - TEST-003-02-01 : élargir jusqu’à obtenir 3 résultats (rayon 50 km)
+not ok 77 - TEST-003-02-02 : une structure ouverte passe avant une structure fermée plus proche
+not ok 78 - TEST-003-01-03 : saisie libre « cœur » → cardiologie (synonymes de recherche_specialite.yaml)
+not ok 80 - TEST-004-01-01 à 03 : catalogue des DCI et filtre
+not ok 81 - TEST-005-01-01 : sang — rupture exclue, « disponible » avant « faible », puis distance
+not ok 82 - TEST-005-02-01 : appel au don seulement si la majorité des banques est en rupture
+not ok 83 - TEST-010-03-02 : une déclaration de sang de plus de 6 h n’est plus montrée
+not ok 17 - tests/saisie.test.mjs
+# tests 89
+# pass 78
+# fail 11
+
+## Remarques sur la phase rouge
+#  - TEST-003-04-01 était déjà vert (le centre de dialyse fictif existait) : test de non-régression.
+#  - tests/unit/test_verifier_rapport.py : jeu d'essai mis à jour (SF-016-02 désormais implémentée ; cas discordant
+#    porté sur SF-002-08) ; les 3 échecs constatés venaient du contrôle de concordance, qui faisait son travail.
+#  - Corrections faites en vert : compteur « n / 600 » (FR-152) dans les deux catalogues ; cas « score insuffisant »
+#    du test d'écran remplacé par une description qui donne bien cette issue.
+
+##################################################################
+# 2. Phase verte — toutes les suites
+##################################################################
+
+$ cd app && node --test tests/*.test.mjs
+ok 1 - TEST-007-20-01 : au moins 5 violations nommées sans gouvernance, 0 avec ; journal toujours actif
+ok 2 - TEST-007-20-02 : commutateur impossible hors du mode demo_synthetique
+ok 3 - TEST-011-08-01 : fragments cités par la politique et la Conformité présents ; aucun texte réservé
+ok 4 - TEST-011-08-02 : lecture bilingue ; identifiant inconnu
+ok 5 - TEST-011-08-03 : la base est mise en cache par le service worker (hors ligne)
+ok 6 - TEST-011-08-04 : taille de la base embarquée ≤ 3 Mio
+ok 7 - TEST-007-19-01 : six positions dans l’ordre, datées, avec agent et mandat
+ok 8 - TEST-007-19-02 : le District ne reçoit que des agrégats ; l’APDP ne reçoit pas les données
+ok 9 - TEST-007-19-03 : la demande nominative du District est bloquée (deux articles, repli agrégat)
+ok 10 - TEST-007-19-04 : un désaccord est marqué ; l’échange reste ouvert jusqu’à la décision humaine
+ok 11 - TEST-016-01-01 : mêmes 5 fragments, dans le même ordre, que kb/bm25.py (40 questions)
+ok 12 - TEST-016-01-02 : textes camerounais d’abord
+ok 13 - TEST-016-01-03 : question en anglais enrichie par le glossaire
+ok 14 - TEST-016-01-04 : recherche rapide (≤ 50 ms par question)
+ok 15 - TEST-016-02-01 : un extrait cité de l’art. 32 de la loi 2024/017
+ok 16 - TEST-016-02-02 : refus sans fondement, sans extrait
+ok 17 - TEST-016-02-03 : la mention accompagne toute réponse
+ok 18 - TEST-016-02-04 : ni la question ni la réponse ne sont conservées ou transmises
+ok 19 - TEST-016-03-01 : écran du conseiller — champ de 300 caractères, 4 exemples, réponse
+ok 20 - TEST-016-03-02 : liens vers le conseiller dans les espaces professionnel et ministériel
+ok 21 - TEST-016-03-03 : catalogues droits.* aux mêmes clés
+ok 22 - TEST-016-04-01 : rapport avec les deux mesures sur Q23 à Q40
+ok 23 - TEST-016-04-02 : cibles atteintes (document ≥ 11/18 ; anglais ≥ 3/5)
+ok 24 - TEST-015-04-01 : l’empreinte affichée est celle du JSON affiché
+ok 25 - TEST-015-04-02 : même version que config/policy.yaml ; aucune seconde politique codée en dur
+ok 26 - TEST-007-18-01 : le panneau repliable est présent sur les six écrans
+ok 27 - TEST-007-18-02 : chaîne des agents de l’écran Urgence, dans l’ordre
+ok 28 - TEST-007-18-03 : ligne d’un fragment — identifiant, article, extrait ≤ 240 caractères, statut
+ok 29 - TEST-007-18-04 : aucun mot du texte libre dans le panneau
+ok 30 - TEST-007-18-05 : en anglais, version officielle ou traduction marquée
+ok 31 - TEST-001-15-07 : la mention « table de démonstration » est visible sur l’écran des pistes
+ok 32 - CA-CONS-01 : aucune case → refus
+ok 33 - CA-CONS-02 : une case sans âge → refus
+ok 34 - CA-CONS-03 : mineur sans accord → refus ; avec accord → accepté
+ok 35 - CA-CONS-04 : sans partage → trois finalités à faux
+ok 36 - CA-CONS-05 : exactement cinq champs
+ok 37 - CA-CONS-06 : absent, illisible ou autre version → redemander
+ok 38 - Reformulation : expression camerounaise « le corps chauffe » → fièvre ; négation reconnue
+ok 39 - Reformulation en anglais
+ok 40 - FR-DX-03 : signe de danger → urgence, aucune piste
+ok 41 - FR-DX-03 : réponse « oui » à une question de sécurité → urgence
+ok 42 - FR-DX-05 : diarrhée seule ou fièvre + frissons → hors champ
+ok 43 - FR-DX-06 : piste art. 48 → message neutre, jamais de nom
+ok 44 - FR-DX-04 : au plus 3 pistes, triées par score
+ok 45 - FR-DX-17 : le besoin le plus élevé l’emporte ; enfant → pédiatrie
+ok 46 - FR-DX-19 : structure couvrante, ouverte avant fermée ; repli avec manque
+ok 47 - FR-ETS-07 : un établissement non vérifié n’apparaît jamais
+ok 48 - Recherche de médicament : rupture et lignes de plus de 48 h exclues
+ok 49 - CA-ETS-01 : format du NIU
+ok 50 - CA-ETS-04 : officine sans questions H ni B ; hôpital H8 = non sans H8a ni onglet sang
+ok 51 - FR-ETS-05 : une réponse à une question masquée n’est pas enregistrée
+ok 52 - CA-ETS-07 et 08 : rapport d’import, quatre motifs distincts ; PDF refusé
+ok 53 - FR-ETS-10 : expiration à 48 h, alerte 12 h avant
+ok 54 - CA-TEND-05 : 3 → « moins de 5 » ; 23 → 25
+ok 55 - CA-TEND-07 : rupture d’artésunate visible dans la demande non satisfaite à Douala V
+ok 56 - TEST-001-12-01 : seuls les numéros confirmés de la politique sont affichés (111 « à confirmer » exclu)
+ok 57 - TEST-005-03-01 : l’onglet Sang rappelle d’abord l’urgence
+ok 58 - TEST-006-01-01 : quatre choix de signalement sous un résultat de médicament
+ok 59 - TEST-008-07-02 et TEST-001-09-03 : une raison propre à chaque issue ; lien vers un soignant
+ok 60 - TEST-002-03-02 : la définition SC du signal est affichée dans la console
+ok 61 - TEST-002-05-02 : signal à trier depuis 20 h → échéance du triage dans 4 h
+ok 62 - TEST-004-02-03 et TEST-008-08-02 : conditions — formule de tri publiée ; mêmes rubriques en FR et EN
+ok 63 - TEST-010-13-01 : conditions des établissements liées depuis l’inscription, bilingues
+ok 64 - TEST-008-05-04 : retirer « signalements » efface les signalements de l’appareil
+ok 65 - TEST-008-03-01 à 03 : position consentie, arrondie, jamais stockée ; quartier ; cadre
+ok 66 - TEST-006-02-02, TEST-006-03-02, TEST-006-04-02 : mêmes scores, effectifs et gels que la référence Python
+ok 67 - TEST-006-02-01 : 6 positifs sur 8 → (6 + 2) / (8 + 4) avant décroissance
+ok 68 - TEST-006-01-03 : poids d’un négatif — déclaration de 8 h (0,25) et compte de 3 jours (0,5)
+ok 69 - TEST-006-03-01 : la fiabilité ne départage qu’à moins de 1 km
+ok 70 - TEST-006-04-01 : 8 négatifs en 2 h → baisse gelée, saisine du modérateur
+ok 71 - Démonstration dans Nolo : une pharmacie fictive en rafale est gelée ; les signalements de la personne comptent
+ok 72 - Mêmes clés en français et en anglais
+ok 73 - Aucune valeur vide ; listes de même longueur
+ok 74 - FR-DX-04 : le mot « probabilité » n’apparaît dans aucun catalogue
+ok 75 - Typographie française : espace fine avant ? et insécable dans « 18 ans »
+ok 76 - SHA-256 : vecteurs de référence
+ok 77 - TEST-007-21-01 : une entrée chaînée par décision, sans texte libre ni champ interdit
+ok 78 - TEST-007-21-02 : une entrée altérée est désignée ; après restauration, chaîne valide
+ok 79 - TEST-007-21-03 : mêmes empreintes que src/server/gouvernance/journal.py
+ok 80 - TEST-007-17-01 : rien ne s’exécute sans décision ; action inconnue = sans fondement
+ok 81 - TEST-007-17-05 : Nolo fonctionne en mode demo_synthetique
+ok 82 - TEST-001-15-01 : module des pistes absent hors démonstration ou désactivé
+ok 83 - TEST-001-15-06 : décision de Conformité avant affichage ; journal minimal
+ok 84 - Art. 48 et hors champ : même trace au journal, aucune catégorie protégée
+ok 85 - TEST-007-17-03 : politique convertie — même version que policy.yaml, même empreinte canonique
+ok 86 - TEST-007-17-04 : mêmes verdicts, conditions, replis et fragments que Python (S1 à S3, variantes, grille)
+ok 87 - TEST-007-17-02 : chaque fragment cité existe dans la base embarquée
+ok 88 - TEST-007-17-06 : décision rapide (médiane ≤ 5 ms) ; politique ≤ 30 Kio
+ok 89 - TEST-010-01-01 et TEST-010-01-04 : tuile fictive — au moins 20 établissements, niveaux et spécialités couverts, schéma
+ok 90 - TEST-013-02-01 et TEST-013-02-02 : routeur — route la plus longue ; garde du consentement
+ok 91 - TEST-013-05-01 et TEST-013-05-03 : couleurs en dur et réservation du rouge et de l’ambre (exceptions de DESIGN.md)
+ok 92 - TEST-013-06-04 : contrastes des paires de jetons texte / fond ≥ 4,5:1
+ok 93 - TEST-013-08-01 (liste) : tout fichier servi de app/ figure dans FICHIERS du service worker
+ok 94 - TEST-013-11-02 : seules les clés autorisées sont écrites dans le stockage local
+ok 95 - TEST-015-03-01 : offre et demande — Littoral : artésunate, insatisfaction ≥ 11 %
+ok 96 - TEST-015-06-02 : lacunes de la console = registre docs/compliance/registre-lacunes.md
+ok 97 - TEST-003-02-01 : élargir jusqu’à obtenir 3 résultats (rayon 50 km)
+ok 98 - TEST-003-02-02 : une structure ouverte passe avant une structure fermée plus proche
+ok 99 - TEST-003-01-03 : saisie libre « cœur » → cardiologie (synonymes de recherche_specialite.yaml)
+ok 100 - TEST-003-04-01 : le centre de dialyse fictif apparaît pour la néphrologie, type centre spécialisé
+ok 101 - TEST-004-01-01 à 03 : catalogue des DCI et filtre
+ok 102 - TEST-005-01-01 : sang — rupture exclue, « disponible » avant « faible », puis distance
+ok 103 - TEST-005-02-01 : appel au don seulement si la majorité des banques est en rupture
+ok 104 - TEST-010-03-02 : une déclaration de sang de plus de 6 h n’est plus montrée
+ok 105 - TEST-001-01-02 : âge de 130 ans refusé (ageMax)
+ok 106 - TEST-001-01-03 : 600 caractères au plus ; compteur « 600 / 600 »
+ok 107 - TEST-001-01-04 et TEST-001-01-05 : l’exemple remplit sans valider ; rien n’est écrit ni envoyé
+ok 108 - TEST-001-13-04 : « for two weeks » → 14 jours
+ok 109 - TEST-001-13-05 : changer de langue réaffiche les signes sans nouvelle analyse
+ok 110 - TEST-001-18-02 : code de fiche au format XXX-XXX, sans 0, O, 1 ni I
+ok 111 - TEST-001-11-01 : aucun nom de médicament dans les écrans du parcours citoyen ni dans la table des pistes
+ok 112 - TEST-001-02-02 : aucune question sur la vie sexuelle, la génétique ou la biométrie
+ok 113 - TEST-001-02-01 et TEST-002-01-01 : la contribution ne contient que quatre champs, des codes SYM-NNN
+ok 114 - TEST-008-02-01 : sans consentement « surveillance », aucune contribution n’est préparée
+ok 115 - Seuil de publication : moins de 5 → rien ; sinon arrondi à 5
+ok 116 - CUSUM : les deux regroupements injectés sont détectés, et seulement eux
+ok 117 - Annexe 2 du RSI : deux « oui » sur quatre déclenchent la notification
+ok 118 - « Et si » : baisser le seuil publie des cases fines ; agréger au district retarde la détection
+ok 119 - Carte : les 10 régions ont un tracé
+# tests 119
+# pass 119
+# fail 0
+--> code de sortie : 0
+
+$ node --test tests/js/*.test.mjs
+ok 1 - CA-ETS-13 : catalogues FR et EN aux mêmes clés, sans valeur vide
+ok 2 - Toute clé utilisée par la console existe dans le catalogue
+ok 3 - Chaque question, option, motif, action et code d'erreur du serveur a son libellé
+ok 4 - Parité des conditions de la fiche entre JavaScript et Python (500 jeux de réponses)
+ok 5 - chargement : 110 entrées, codes et jetons uniques, snomed vide (TEST-001-03-01)
+ok 6 - FR-113 : refus hors mode démo tant que validateur_clinique est vide
+ok 7 - exclusions : agression_sexuelle et priapisme absents des 10 listes et de l'index (TEST-001-03-03)
+ok 8 - paquet invalide refusé : jeton dupliqué, code modifié, snomed rempli, expression ambiguë (TEST-001-03-04)
+ok 9 - liste fermée de 5_11_ans : critères adultes de la règle grossesse accessibles (CA-001-03-02)
+ok 10 - 19 scénarios nommés : même niveau, même priorité, même règle
+ok 11 - 42 phrases de référence : mêmes jetons, même non_code (TEST-001-03-05)
+ok 12 - listes fermées : mêmes jetons pour chacune des 10 tranches (TEST-001-03-02, TEST-001-03-13)
+ok 13 - fermetures transitives identiques (TEST-001-03-07)
+ok 14 - 400 tirages aléatoires : parité stricte du moteur
+ok 15 - monotonie : ajouter un jeton n'abaisse jamais le niveau (ADR-005)
+# tests 15
+# pass 15
+# fail 0
+
+$ python3 -m pytest -q -v -p no:cacheprovider
+============================= 118 passed in 25.08s =============================
+
+$ python3 tools/politique_json.py --verifier
+à jour : politique 1.4.0, sha256:300801eb5b9239233580c876a7b226853507d0efc14bd966de34413904e5aaab
+--> code de sortie : 0
+$ python3 tools/exporter_base.py --verifier
+à jour
+--> code de sortie : 0
+$ python3 tools/scenarios/executer.py --exporter-attendus tests/js/fixtures/decisions_attendues.json
+/tmp/claude-1000/-home-aaron-Bureau-projet-hack/554375f0-8981-418c-9d74-db14436e0454/scratchpad/attendus-controle.json : 3908 cas, 89 décisions distinctes (scénarios S1 à S3 × 3 politiques ; grille de 26 actions)
+identique au fichier versionné
+$ python3 tools/exporter_classements.py
+tests/js/fixtures/classements_attendus.json : 40 questions, index de 816 fragments
+identique au fichier versionné
+$ python3 -I kb/traductions/verifier_traductions.py
+citations : 34 entrées — anglais_officiel_dans_la_base : 8, anglais_officiel_dans_la_source : 1, non_officielle : 20, original_anglais : 1, version_anglaise_officielle_a_verser : 4
+glossaire : 38 entrées, 141 expressions anglaises, 66 termes français, 66 retrouvés dans la base
+conforme
+$ python3 tools/verifier_base.py --reconstruire
+2034 fragments ; 21 documents ; 71 fragments cités contrôlés
+reconstruction : identique octet pour octet
+conforme
+
+$ node tools/evaluer_conseiller.mjs
+Document attendu : 18/18 (cible ≥ 11/18)
+Référence exacte : 15/18
+Anglais sur des lois sans version anglaise (Q31 à Q34, Q38) : 5/5 (cible ≥ 3/5)
+Cibles atteintes
+
+# Réserve : les expressions françaises courantes (`courant_fr`, glossaire 1.2.0) ont été ajoutées le 2026-11-09
+# en lisant la question de CA-016-02-01 ; elles recoupent la formulation de Q23, Q26 et Q30. Mesure du même jour
+# sans elles : document 18/18, référence exacte 12/18. Une mesure non biaisée demande des questions nouvelles.
+# Index : les 816 fragments de la base embarquée (app/data/base.json), pas les 2 034 de kb/ (kb/eval/run_eval.py).
+
+##################################################################
+# 3. Inspection visuelle réelle (46 états × 4 largeurs)
+##################################################################
+$ NOLO_CHROME=…/chrome-headless-shell python3 tools/inspecter.py <captures> 360,390,768,1440
+
+=== 360px === erreurs console : []
+  01-bienvenue: OK
+  02-bienvenue-age: OK
+  03-bienvenue-parental: OK
+  04-bienvenue-fait: OK
+  05-accueil: OK
+  06-decrire-erreurs: OK
+  07-decrire-exemple: OK
+  08-verifier: OK
+  09-pistes: OK
+  10-ou-aller: OK
+  11-fiche: OK
+  12-verifier-danger: OK
+  13-urgence: OK
+  40-urgence-decision: OK
+  14-confidentiel: OK
+  15-hors-champ: OK
+  16-medicament: OK
+  17-sang: OK
+  18-service: OK
+  19-conditions: OK
+  20-mes-donnees: OK
+  21-pro-entree: OK
+  22-pro-accueil: OK
+  23-pro-stock: OK
+  24-pro-tendances: OK
+  25-pro-fiche: OK
+  26-pro-indicateurs: OK
+  27-pro-compte: OK
+  28-inscription-0: OK
+  29-inscription-1-erreurs: OK
+  47-pro-conditions: OK
+  31-hopital-services: OK
+  32-hopital-fiche: OK
+  33-recherche-dialyse: OK
+  34-ministere-entree: OK
+  35-ministere-carte: OK
+  36-ministere-signaux: OK
+  37-ministere-agrements: OK
+  38-ministere-offre: OK
+  39-ministere-politique: OK
+  41-ministere-journal: OK
+  42-ministere-cellule: OK
+  43-ministere-ab: OK
+  44-ministere-ab-complet: OK
+  45-droits: OK
+  46-droits-reponse: OK
+  30-home-en: OK
+
+=== 390px === erreurs console : []
+  01-bienvenue: OK
+  02-bienvenue-age: OK
+  03-bienvenue-parental: OK
+  04-bienvenue-fait: OK
+  05-accueil: OK
+  06-decrire-erreurs: OK
+  07-decrire-exemple: OK
+  08-verifier: OK
+  09-pistes: OK
+  10-ou-aller: OK
+  11-fiche: OK
+  12-verifier-danger: OK
+  13-urgence: OK
+  40-urgence-decision: OK
+  14-confidentiel: OK
+  15-hors-champ: OK
+  16-medicament: OK
+  17-sang: OK
+  18-service: OK
+  19-conditions: OK
+  20-mes-donnees: OK
+  21-pro-entree: OK
+  22-pro-accueil: OK
+  23-pro-stock: OK
+  24-pro-tendances: OK
+  25-pro-fiche: OK
+  26-pro-indicateurs: OK
+  27-pro-compte: OK
+  28-inscription-0: OK
+  29-inscription-1-erreurs: OK
+  47-pro-conditions: OK
+  31-hopital-services: OK
+  32-hopital-fiche: OK
+  33-recherche-dialyse: OK
+  34-ministere-entree: OK
+  35-ministere-carte: OK
+  36-ministere-signaux: OK
+  37-ministere-agrements: OK
+  38-ministere-offre: OK
+  39-ministere-politique: OK
+  41-ministere-journal: OK
+  42-ministere-cellule: OK
+  43-ministere-ab: OK
+  44-ministere-ab-complet: OK
+  45-droits: OK
+  46-droits-reponse: OK
+  30-home-en: OK
+
+=== 768px === erreurs console : []
+  01-bienvenue: OK
+  02-bienvenue-age: OK
+  03-bienvenue-parental: OK
+  04-bienvenue-fait: OK
+  05-accueil: OK
+  06-decrire-erreurs: OK
+  07-decrire-exemple: OK
+  08-verifier: OK
+  09-pistes: OK
+  10-ou-aller: OK
+  11-fiche: OK
+  12-verifier-danger: OK
+  13-urgence: OK
+  40-urgence-decision: OK
+  14-confidentiel: OK
+  15-hors-champ: OK
+  16-medicament: OK
+  17-sang: OK
+  18-service: OK
+  19-conditions: OK
+  20-mes-donnees: OK
+  21-pro-entree: OK
+  22-pro-accueil: OK
+  23-pro-stock: OK
+  24-pro-tendances: OK
+  25-pro-fiche: OK
+  26-pro-indicateurs: OK
+  27-pro-compte: OK
+  28-inscription-0: OK
+  29-inscription-1-erreurs: OK
+  47-pro-conditions: OK
+  31-hopital-services: OK
+  32-hopital-fiche: OK
+  33-recherche-dialyse: OK
+  34-ministere-entree: OK
+  35-ministere-carte: OK
+  36-ministere-signaux: OK
+  37-ministere-agrements: OK
+  38-ministere-offre: OK
+  39-ministere-politique: OK
+  41-ministere-journal: OK
+  42-ministere-cellule: OK
+  43-ministere-ab: OK
+  44-ministere-ab-complet: OK
+  45-droits: OK
+  46-droits-reponse: OK
+  30-home-en: OK
+
+=== 1440px === erreurs console : []
+  01-bienvenue: OK
+  02-bienvenue-age: OK
+  03-bienvenue-parental: OK
+  04-bienvenue-fait: OK
+  05-accueil: OK
+  06-decrire-erreurs: OK
+  07-decrire-exemple: OK
+  08-verifier: OK
+  09-pistes: OK
+  10-ou-aller: OK
+  11-fiche: OK
+  12-verifier-danger: OK
+  13-urgence: OK
+  40-urgence-decision: OK
+  14-confidentiel: OK
+  15-hors-champ: OK
+  16-medicament: OK
+  17-sang: OK
+  18-service: OK
+  19-conditions: OK
+  20-mes-donnees: OK
+  21-pro-entree: OK
+  22-pro-accueil: OK
+  23-pro-stock: OK
+  24-pro-tendances: OK
+  25-pro-fiche: OK
+  26-pro-indicateurs: OK
+  27-pro-compte: OK
+  28-inscription-0: OK
+  29-inscription-1-erreurs: OK
+  47-pro-conditions: OK
+  31-hopital-services: OK
+  32-hopital-fiche: OK
+  33-recherche-dialyse: OK
+  34-ministere-entree: OK
+  35-ministere-carte: OK
+  36-ministere-signaux: OK
+  37-ministere-agrements: OK
+  38-ministere-offre: OK
+  39-ministere-politique: OK
+  41-ministere-journal: OK
+  42-ministere-cellule: OK
+  43-ministere-ab: OK
+  44-ministere-ab-complet: OK
+  45-droits: OK
+  46-droits-reponse: OK
+  30-home-en: OK
+
+RÉSUMÉ : 188 mesures (4 largeurs) ; 0 état(s) avec défaut ; 0 erreur(s) de console
+
+$ python3 tools/exporter_fiabilite.py
+tests/js/fixtures/fiabilite_attendue.json : 57 scores (19 pharmacies × 3 instants) ; gel : ['PH-20']
+identique au fichier versionné
+$ python3 tools/maj_sw.py (contrôle : la liste FICHIERS couvre app/, TEST-013-08-01 liste)

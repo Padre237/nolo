@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Inspection visuelle réelle de Nolo (SF-013-10) : 46 états pilotés dans Chrome, à plusieurs largeurs.
+"""Inspection visuelle réelle de Nolo (SF-013-10) : 47 états pilotés dans Chrome, à plusieurs largeurs.
 
 Mesure, pour chaque état : débordement horizontal (et éléments fautifs), cibles de moins de 44 px
 (hors colonnes de graphique, qui ont un tableau équivalent), nombre de h1 dans <main>, erreurs de console.
@@ -175,6 +175,8 @@ def run():
             page.fill("#i-niu", "M04161818664L")
             page.click("button[type=submit]")
             capture("29-inscription-1-erreurs")
+            aller("#/pro/conditions")
+            capture("47-pro-conditions")
             # Hôpital et centres spécialisés
             aller("#/pro")
             page.click("[data-act=demo][data-quel=hopital]")

@@ -6,7 +6,7 @@
 | Sous-fonctionnalité | SF-006-01 |
 | Version | 2.0.0 |
 | Statut | READY_FOR_DEV |
-| État d'implémentation | Partiellement implémenté — rétro-spécifié le 2026-11-09 ; écarts au §9 de design.md |
+| État d'implémentation | Implémenté dans Nolo (2026-11-09, D-038) ; auto-signalement : contrôle côté serveur à faire |
 | Origine | Spécification v1.3 (FR-601 à FR-603, FR-608) ; D-030 |
 | Bloquant | Aucun |
 | Dépend de | SF-008-09, SF-007-03 |

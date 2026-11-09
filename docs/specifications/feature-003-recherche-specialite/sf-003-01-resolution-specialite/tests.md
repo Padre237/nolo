@@ -45,6 +45,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `resoudreSpecialite`
 - Alors : `cardiologie`
 - Données : —
-- Automatisation : `python3 kb/services/test_services.py` (11 contrôles de la logique de référence)
-- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-suites.txt`)
+- Automatisation : `app/tests/recherche.test.mjs` › « TEST-003-01-03 : saisie libre « cœur » → cardiologie (synonymes de recherche_specialite.yaml) » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 

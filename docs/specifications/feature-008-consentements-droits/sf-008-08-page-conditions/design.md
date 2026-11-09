@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-871, FR-872, FR-873 |
 | ADR | — |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Vue d'ensemble
 —
@@ -44,4 +44,4 @@ Aucun contrat propre.
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- La page de Nolo a 12 sections ; la page D-028 en avait 20 : vérifier que les 8 sections de l'art. 21 et de l'art. 44 y sont toutes (CA-CONS-09).
+- Aucun écart connu (écarts résolus le 2026-11-09 : 16 sections identifiées (`id`), FR = EN, couvrant les douze rubriques de FR-872).

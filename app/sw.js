@@ -1,5 +1,5 @@
 // Nolo — fonctionnement hors ligne : l'application et la tuile du district restent disponibles sans réseau.
-const VERSION = 'nolo-2026-11-09-3';
+const VERSION = 'nolo-2026-11-09-4';
 const FICHIERS = [
   './',
   "./assets/fonts/OFL-atkinson.txt",
@@ -17,6 +17,7 @@ const FICHIERS = [
   "./data/base.json",
   "./data/glossaire.json",
   "./data/politique.json",
+  "./data/regles.json",
   "./index.html",
   "./js/agents/ab.js",
   "./js/agents/cellule.js",
@@ -32,14 +33,18 @@ const FICHIERS = [
   "./js/core/canonique.js",
   "./js/core/dom.js",
   "./js/core/i18n.js",
+  "./js/core/routeur.js",
   "./js/core/sha256.js",
   "./js/core/store.js",
   "./js/domain/base.js",
   "./js/domain/carte-regions.js",
   "./js/domain/consent.js",
   "./js/domain/engine.js",
+  "./js/domain/envoi.js",
   "./js/domain/facilities.js",
+  "./js/domain/fiabilite.js",
   "./js/domain/politique.js",
+  "./js/domain/position.js",
   "./js/domain/pro.js",
   "./js/domain/surveillance.js",
   "./js/domain/trends.js",
@@ -63,6 +68,7 @@ const FICHIERS = [
   "./js/screens/patient/verifier.js",
   "./js/screens/pro/code.js",
   "./js/screens/pro/compte.js",
+  "./js/screens/pro/conditions.js",
   "./js/screens/pro/entree.js",
   "./js/screens/pro/inscription.js",
   "./js/screens/pro/tableau.js",
@@ -74,6 +80,7 @@ const FICHIERS = [
   "./js/ui/components.js",
   "./js/ui/decision.js",
   "./js/ui/icons.js",
+  "./js/ui/position.js",
   "./manifest.webmanifest",
 ];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(VERSION).then((c) => c.addAll(FICHIERS)).then(() => self.skipWaiting())); });

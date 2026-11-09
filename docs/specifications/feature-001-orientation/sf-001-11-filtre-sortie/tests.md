@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : recherche dans les catalogues citoyens et `PATHOLOGIES`
 - Alors : zéro occurrence
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/saisie.test.mjs` › « TEST-001-11-01 : aucun nom de médicament dans les écrans du parcours citoyen ni dans la table des pistes » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`)
 
 ### TEST-001-11-02 — Étiquette d'estimation
 - Type : Interface

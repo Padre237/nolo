@@ -40,14 +40,14 @@ export function parcours(t, etape) {
   </nav>`;
 }
 
-export function barreSecurite(t) {
+/** Barre de sécurité (FR-195) ; numéros lus dans la politique (FR-114, FR-196 : jamais dans les catalogues). */
+export function barreSecurite(t, numeros = []) {
   return html`
   <aside class="barre-securite" aria-label="${t('securite.region')}">
     <div class="cadre barre-securite__corps">
       <span style="color: var(--urgence)">${icone('telephone')}</span>
       <div class="barre-securite__texte"><span class="barre-securite__titre">${t('securite.titre')}</span><span class="barre-securite__sous">${t('securite.sous')}</span></div>
-      <a class="appel" href="tel:119" aria-label="${t('securite.appeler119')}">119</a>
-      <a class="appel" href="tel:112" aria-label="${t('securite.appeler112')}">112</a>
+      ${numeros.map((n) => html`<a class="appel" href="tel:${n}" aria-label="${t('securite.appeler', { n })}">${n}</a>`)}
     </div>
   </aside>`;
 }
@@ -153,4 +153,16 @@ export function motif({ points = 6, anime = true, sombre = false, cls = '' } = {
 /** Barre de points : x signes typiques sur y (le motif sert de jauge). */
 export function points(x, y, label) {
   return html`<span class="points" role="img" aria-label="${label}">${Array.from({ length: y }, (_, i) => html`<span class="points__p ${i < x ? 'est-plein' : ''}"></span>`)}</span>`;
+}
+
+/** Raison de l'issue en une phrase, et mention du système automatisé (FR-109, FR-862). */
+export function raisonIssue(t, cle) {
+  return html`<p class="raison-issue">${icone('info', { taille: 18 })}<span>${t(`raisons.${cle}`)} ${t('commun.automatise')}</span></p>`;
+}
+
+/** Accès à une intervention humaine sur chaque écran de résultat (art. 44, FR-182). */
+export function lienSoignant(t, { urgence = false, numero = null } = {}) {
+  return urgence && numero
+    ? html`<a class="lien-soignant" href="tel:${numero}">${icone('telephone', { taille: 18 })}<span>${t('raisons.soignantAppel', { n: numero })}</span></a>`
+    : html`<a class="lien-soignant" href="#/fiche">${icone('personne', { taille: 18 })}<span>${t('raisons.soignant')}</span></a>`;
 }

@@ -92,7 +92,7 @@ export default {
       <div class="champ"><label class="champ__etiquette" for="i-mdp">${t('pro.champs.mdp')}</label><p class="champ__aide" id="i-mdp-aide">${t('pro.champs.mdpAide')}</p><input id="i-mdp" class="saisie" type="password" autocomplete="new-password" aria-describedby="i-mdp-aide i-mdp-err" aria-invalid="${!!d.erreurMdp}">${erreurChamp('i-mdp-err', d.erreurMdp)}</div>
       <div class="champ"><label class="champ__etiquette" for="i-mdp2">${t('pro.champs.mdp2')}</label><input id="i-mdp2" class="saisie" type="password" autocomplete="new-password" aria-describedby="i-mdp2-err" aria-invalid="${!!d.erreurMdp2}">${erreurChamp('i-mdp2-err', d.erreurMdp2)}</div>
       ${caseACocher({ id: 'i-conditions', act: 'conditions', checked: d.conditions, texte: t('pro.champs.conditions') })}
-      <a class="ligne-lien" href="#/conditions" target="_blank" rel="noopener">${icone('donnees')}<span>${t('pro.champs.conditionsLien')}</span>${icone('suite', { taille: 20 })}</a>
+      <a class="ligne-lien" href="#/pro/conditions" target="_blank" rel="noopener">${icone('donnees')}<span>${t('pro.champs.conditionsLien')}</span>${icone('suite', { taille: 20 })}</a>
       ${erreurChamp('i-cond-err', d.erreurConditions)}`;
     return html`
     <div class="cadre deux-temps">
