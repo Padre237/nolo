@@ -53,6 +53,10 @@ def construire() -> Path:
         "numeros_urgence": numeros,
         "version_politique": pol["version"],
     }
+    # FR-161 : empreinte de la forme canonique du référentiel et des règles, recalculée par l'appareil au chargement.
+    contenu = {"referentiel": paquet["referentiel"], "regles": regles}
+    paquet["empreinte_canonique"] = "sha256:" + hashlib.sha256(
+        json.dumps(contenu, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
     out = RACINE / "src" / "client" / "ondevice" / "paquet_triage.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     texte = json.dumps(paquet, ensure_ascii=False, sort_keys=True, separators=(",", ":"))

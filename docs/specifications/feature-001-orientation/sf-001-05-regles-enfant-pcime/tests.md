@@ -21,8 +21,8 @@
 - Quand : on filtre les règles d'outil `pcime`, puis on évalue `incapable_de_boire_ou_teter` pour `8_jours_2_mois` et `5_11_ans`
 - Alors : 8 règles, toutes de tranches `2_6_mois`, `6_mois_2_ans`, `2_5_ans` ; aucune règle `pcime` parmi les règles satisfaites pour les deux autres tranches
 - Données : `rules/triage_signes_alerte.v2.yaml`
-- Automatisation : `tests/js/regles_pcime.test.mjs` (« tranches »)
-- Statut d'exécution : Non exécuté
+- Automatisation : `tests/js/regles_acceptation.test.mjs` › « TEST-001-05-01 : 8 règles PCIME, toutes sur 2_6_mois, 6_mois_2_ans, 2_5_ans » (`node --test tests/js/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 
 ### TEST-001-05-02 — Signes généraux de danger
 - Type : Intégration
@@ -32,8 +32,8 @@
 - Quand : on évalue séparément les 5 jetons `incapable_de_boire_ou_teter`, `vomit_tout`, `convulsions`, `lethargie`, `inconscient`
 - Alors : `urgence`, priorité immédiate, dans 15 cas sur 15, avec une règle PCIME-SGD citée
 - Données : tableau des 15 cas
-- Automatisation : `tests/js/regles_pcime.test.mjs` (« signes généraux de danger »)
-- Statut d'exécution : Non exécuté
+- Automatisation : `tests/js/regles_acceptation.test.mjs` › « TEST-001-05-02 : chaque signe général de danger suffit (15 cas sur 15) » (`node --test tests/js/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 
 ### TEST-001-05-03 — Fièvre et raideur de nuque
 - Type : Intégration
@@ -43,8 +43,8 @@
 - Quand : on évalue `fievre` + `raideur_nuque`
 - Alors : `urgence`, priorité immédiate, règle PCIME-MFTG-01
 - Données : cas unique
-- Automatisation : `tests/js/regles_pcime.test.mjs` (« maladie fébrile très grave »)
-- Statut d'exécution : Non exécuté
+- Automatisation : `tests/js/regles_acceptation.test.mjs` › « TEST-001-05-03 : fièvre et raideur de nuque à 3 ans → urgence immédiate (PCIME-MFTG-01) » (`node --test tests/js/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 
 ### TEST-001-05-04 — Fièvre selon le risque de paludisme
 - Type : Intégration
@@ -54,8 +54,8 @@
 - Quand : on évalue avec `risque_paludisme = eleve`, puis avec une copie du fichier où la valeur est `faible`
 - Alors : `consultation_24h` (PCIME-J-01), puis `consultation_48h` (aucune règle)
 - Données : fichier livré et copie modifiée en mémoire
-- Automatisation : `tests/js/regles_pcime.test.mjs` (« paludisme »)
-- Statut d'exécution : Non exécuté
+- Automatisation : `tests/js/regles_acceptation.test.mjs` › « TEST-001-05-04 : fièvre seule — consultation_24h si risque de paludisme élevé, sinon consultation_48h » (`node --test tests/js/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 
 ### TEST-001-05-05 — Diarrhée avec du sang
 - Type : Intégration
@@ -65,8 +65,8 @@
 - Quand : on évalue `diarrhee` + `sang_dans_selles`, puis `diarrhee_avec_sang` seul
 - Alors : `consultation_24h` (PCIME-J-02) dans les deux cas
 - Données : référentiel 1.1.0
-- Automatisation : `tests/js/regles_pcime.test.mjs` (« dysenterie »)
-- Statut d'exécution : Non exécuté
+- Automatisation : `tests/js/regles_acceptation.test.mjs` › « TEST-001-05-05 : diarrhée avec sang, cochée séparément ou reconnue ensemble → PCIME-J-02 » (`node --test tests/js/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 
 ### TEST-001-05-06 — Diarrhée persistante, seuil de 14 jours
 - Type : Validation/limites
@@ -76,8 +76,8 @@
 - Quand : la durée déclarée vaut 14, puis 13 jours
 - Alors : `consultation_24h` (PCIME-J-03), puis `consultation_48h`
 - Données : cas limites
-- Automatisation : `tests/js/regles_pcime.test.mjs` (« diarrhée persistante »)
-- Statut d'exécution : Non exécuté
+- Automatisation : `tests/js/regles_acceptation.test.mjs` › « TEST-001-05-06 : diarrhée depuis 14 jours → PCIME-J-03 ; 13 jours → consultation_48h » (`node --test tests/js/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 
 ### TEST-001-05-07 — Provenance et jetons des règles PCIME
 - Type : Régression

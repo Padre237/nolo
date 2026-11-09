@@ -5,6 +5,7 @@ import { chargerPolitique } from '../domain/politique.js';
 import { chargerBase } from '../domain/base.js';
 import { creerJournal } from './journal.js';
 import { creerOrchestrateur } from './orchestrateur.js';
+import { chargerTriageDistant } from '../domain/triage.js';
 
 let courant = null;
 let conseillerCache = null;
@@ -36,6 +37,8 @@ export async function demarrer({ quandBase } = {}) {
   const [politique, regles] = await Promise.all([chargerPolitique(), fetch('./data/regles.json').then((r) => r.json()).catch(() => null)]);
   installer({ politique });
   courant.regles = regles; // synonymes, définitions SBC, fiabilité, disponibilités (`kb/rules/`)
+  // Moteur v1 : un paquet refusé (empreinte, validateur) laisse la liste de signes de danger de Nolo active.
+  courant.triage = await chargerTriageDistant(courant.mode).catch(() => null);
   chargerBase().then((b) => { courant.base = b; quandBase?.(); }).catch(() => { /* hors ligne sans cache : le panneau affiche les identifiants seuls */ });
   return courant;
 }

@@ -130,7 +130,7 @@ Les identifiants FR-101 à FR-715 viennent des spécifications v1.3 et ne change
 ```bash
 # Nolo
 python3 -m http.server 8765 --bind 127.0.0.1 -d app      # puis http://127.0.0.1:8765/
-cd app && node --test tests/*.test.mjs && cd ..           # 119 tests (domaine, langues, surveillance, agents, conseiller, recherches, fiabilité, qualité)
+cd app && node --test tests/*.test.mjs && cd ..           # 123 tests (domaine, langues, surveillance, agents, conseiller, recherches, fiabilité, qualité, moteur v1)
 python3 tools/inspecter.py /tmp/nolo-captures 360,390,768,1440   # inspection visuelle réelle, 47 états × 4 largeurs (code 0 = aucun défaut) ; NOLO_CHROME=<navigateur> si Chrome n'est pas dans /usr/bin
 
 # Agents de Nolo (vague B, D-038) : données embarquées et oracles
@@ -138,13 +138,15 @@ python3 tools/politique_json.py [--verifier]              # config/policy.yaml �
 python3 tools/exporter_base.py [--verifier]               # kb/ → app/data/base.json, glossaire.json et regles.json
 python3 tools/exporter_fiabilite.py                       # oracle de parité de la fiabilité des pharmacies
 python3 tools/maj_sw.py nolo-AAAA-MM-JJ-N                 # liste FICHIERS et VERSION du service worker (à chaque livraison)
+python3 tools/maj_moteur_nolo.py [--verifier]             # copie versionnée du moteur v1 et du paquet dans app/ (après construire_paquet.py)
+python3 tools/lire_journal.py <journal.jsonl>             # lecture d'une session du journal d'audit
 python3 tools/scenarios/executer.py --exporter-attendus tests/js/fixtures/decisions_attendues.json   # oracle de parité de la Conformité
 python3 tools/exporter_classements.py                     # oracle de parité du BM25 du conseiller
 node tools/evaluer_conseiller.mjs                         # évaluation datée du conseiller → docs/quality/
 
 # Gouvernance, scénarios, service des établissements
 python3 -m pytest -q                                       # gouvernance, scénarios S1 à S3, service D-029 / D-032
-node --test tests/js/*.test.mjs                            # moteur v1 (parité) et catalogues D-029
+node --test tests/js/*.test.mjs                            # moteur v1 (parité, empreinte, acceptation PCIME et IITT) et catalogues D-029
 python3 tools/scenarios/executer.py --scenario regroupement [--sans-gouvernance] [--politique config/variantes/<v>.yaml]
 python3 tools/lancer_demo.py --neuf --avec-tendances        # service de référence D-029 sur http://127.0.0.1:8000
 

@@ -34,8 +34,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : parcours jusqu'aux pistes ou au hors champ
 - Alors : aucun niveau n'est affiché
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/moteur.test.mjs` › « TEST-001-07-02 : un cas non urgent n’affiche aucun niveau » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 
 ### TEST-001-07-03 — Parité JavaScript / Python
 - Type : Unitaire
@@ -67,6 +67,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `analyser` avec le moteur v1 branché
 - Alors : issue `urgence`
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `app/tests/moteur.test.mjs` › « TEST-001-07-05 : « mon enfant de 3 ans a des lèvres bleues » → urgence, questions de sécurité répondues « non » » (`cd app && node --test tests/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 

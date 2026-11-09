@@ -34,6 +34,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `--exporter-attendus`
 - Alors : fichier produit
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `tests/unit/test_vague_c.py::test_exporter_attendus_produit_le_fichier` (`python3 -m pytest -q`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 

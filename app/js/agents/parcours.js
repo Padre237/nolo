@@ -16,7 +16,9 @@ export function deciderResultat(orch, resultat, { profil }) {
   const trace = [
     { agent: 'saisie', noeud: 'SRC', decision: 'TEXTE_SUR_APPAREIL', fragments: [] },
     { agent: 'reformulation', noeud: 'PP', decision: 'VOCABULAIRE_FERME', fragments: [] },
-    { agent: 'signes_danger', noeud: 'M', decision: resultat.issue === 'urgence' ? 'URGENCE' : 'AUCUN_SIGNE_DANGER', fragments: profil?.enfantPetit ? DANGER_ENFANT : DANGER_ADULTE },
+    resultat.moteur?.urgence
+      ? { agent: 'signes_danger', noeud: 'M', decision: 'URGENCE', regle: resultat.moteur.regle, fragments: resultat.moteur.fragments.slice(0, 3) }
+      : { agent: 'signes_danger', noeud: 'M', decision: resultat.issue === 'urgence' ? 'URGENCE' : 'AUCUN_SIGNE_DANGER', fragments: profil?.enfantPetit ? DANGER_ENFANT : DANGER_ADULTE },
   ];
   const orienter = (sortie) => {
     const r = orch.executer({ demandeur: 'orientation', action: 'orientation.structures', categories: ['position_arrondie'], finalite: 'orientation', destination: 'appareil', entree: { issue: sortie } });

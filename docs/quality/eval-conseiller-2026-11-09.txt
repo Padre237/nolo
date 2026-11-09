@@ -1,4 +1,4 @@
-# Évaluation du conseiller « Mes droits santé » (SF-016-04) — 2026-11-09T13:47:00.018Z
+# Évaluation du conseiller « Mes droits santé » (SF-016-04) — 2026-11-09T14:16:48.542Z
 # Commande : node tools/evaluer_conseiller.mjs
 # Questions Q23 à Q40 (18) ; résultats du conseiller : au plus 5 fragments, CMR- d'abord, seuil BM25 8.
 

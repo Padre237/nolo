@@ -34,6 +34,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : `python3 tools/lire_journal.py tests/reports/…`
 - Alors : 25 événements
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `tests/unit/test_vague_c.py::test_lire_journal_s3_affiche_25_evenements_dans_l_ordre` (`python3 -m pytest -q`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 

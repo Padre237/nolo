@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-1207, FR-1208, FR-1209 |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -36,5 +36,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-012-03-02 réussis
 - Tests : TEST-012-03-02
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `--exporter-attendus` (livré avec TASK-007-17-02) ; test d'acceptation pytest
 

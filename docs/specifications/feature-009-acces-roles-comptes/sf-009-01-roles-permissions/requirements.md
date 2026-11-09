@@ -5,8 +5,8 @@
 | Fonctionnalité | F-009 Accès, rôles et comptes |
 | Sous-fonctionnalité | SF-009-01 |
 | Version | 2.0.0 |
-| Statut | READY_FOR_DEV |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| Statut | IN_TESTING |
+| État d'implémentation | Implémenté (2026-11-09, D-038) : matrice rédigée ; garde de route par rôle limitée à la démonstration |
 | Origine | Catalogue v1 ; D-029 ; D-035 |
 | Bloquant | Aucun |
 | Dépend de | Aucune |

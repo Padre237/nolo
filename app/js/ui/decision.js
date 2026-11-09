@@ -37,6 +37,7 @@ export function panneauDecision(trace, t, base, { ouvert = false } = {}) {
         <span class="decision__noeud mono" title="${t('decision.noeud')}">${e.noeud}</span>
         <div class="decision__corps">
           <p class="decision__agent"><strong>${t(`decision.agents.${e.agent}`)}</strong> <span class="decision__verdict decision__verdict--${TON[e.decision] || 'info'}">${t(`decision.decisions.${e.decision}`)}</span></p>
+          ${e.regle ? html`<p class="note">${t('decision.regle')} : <span class="mono">${e.regle}</span></p>` : ''}
           ${e.conditions?.length ? html`<p class="note">${t('decision.conditions')} : <span class="mono">${e.conditions.join(', ')}</span></p>` : ''}
           ${e.repli ? html`<p class="note">${t('decision.repli', { v: e.repli })}</p>` : ''}
           ${e.fragments?.length ? html`<ul class="decision__fragments" role="list">${e.fragments.map((f) => ligneFragment(f, t, base))}</ul>` : ''}

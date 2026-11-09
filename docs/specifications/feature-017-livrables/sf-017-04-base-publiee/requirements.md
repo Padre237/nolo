@@ -5,8 +5,8 @@
 | Fonctionnalité | F-017 Livrables de soumission |
 | Sous-fonctionnalité | SF-017-04 |
 | Version | 2.0.0 |
-| Statut | READY_FOR_DEV |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| Statut | IN_TESTING |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 | Origine | Règles du hackathon (knowledge base containing policies) |
 | Bloquant | Aucun |
 | Dépend de | SF-011-07 |

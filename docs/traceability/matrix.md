@@ -11,8 +11,8 @@ Erreurs : 0 · Avertissements : 0
 |---|---|
 | APPROVED | 4 |
 | IN_PROGRESS | 1 |
-| IN_TESTING | 43 |
-| READY_FOR_DEV | 20 |
+| IN_TESTING | 51 |
+| READY_FOR_DEV | 12 |
 | UNDER_REVIEW | 78 |
 
 ## Exigence → conception → tâches → tests → implémentation → vérification
@@ -31,7 +31,7 @@ Erreurs : 0 · Avertissements : 0
 | FR-110 | SF-001-07 | UNDER_REVIEW | DES-001-07-02 | TASK-001-07-02 | TEST-001-07-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-111 | SF-001-02 | UNDER_REVIEW | DES-001-02-01 | TASK-001-02-01 | TEST-001-02-01 | Fait (2026-11-09) — `app/js/domain/envoi.js` | 1/1 exécutés et réussis |
 | FR-112 | SF-001-08 | UNDER_REVIEW | DES-001-08-01 | TASK-001-08-01 | TEST-001-08-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-113 | SF-001-04 | UNDER_REVIEW | DES-001-04-02 | TASK-001-04-02 | TEST-001-04-01 | Partiel (code existant incomplet, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
+| FR-113 | SF-001-04 | UNDER_REVIEW | DES-001-04-02 | TASK-001-04-02 | TEST-001-04-01 | Fait (2026-11-09) — `empreinte_canonique` (`tools/demo/construire_paquet.py`), vérifiée par `chargerPaquet` (`src/client/ondevice/empreinte.mjs`) | 1/1 exécutés et réussis |
 | FR-114 | SF-001-12 | UNDER_REVIEW | DES-001-12-02 | TASK-001-12-02 | TEST-001-12-01 | Fait (2026-11-09) — `numerosUrgence` (`app/js/domain/politique.js`) ; barre de sécurité, écran Urgence, onglet Sang | 1/1 exécutés et réussis |
 | FR-120 | SF-001-03 | UNDER_REVIEW | DES-001-03-01 | TASK-001-03-01, TASK-001-03-05 | TEST-001-03-01, TEST-001-03-11 | Non commencé | 0/2 exécutés et réussis |
 | FR-121 | SF-001-03 | UNDER_REVIEW | DES-001-03-02 | TASK-001-03-02, TASK-001-03-07 | TEST-001-03-02, TEST-001-03-03, TEST-001-03-13 | Non commencé | 0/3 exécutés et réussis |
@@ -41,20 +41,20 @@ Erreurs : 0 · Avertissements : 0
 | FR-125 | SF-001-03 | UNDER_REVIEW | DES-001-03-01 | TASK-001-03-05 | TEST-001-03-01 | Non commencé | 0/1 exécutés et réussis |
 | FR-126 | SF-001-03 | UNDER_REVIEW | DES-001-03-06 | TASK-001-03-06 | TEST-001-03-09, TEST-001-03-10, TEST-001-03-11 | Non commencé | 0/3 exécutés et réussis |
 | FR-127 | SF-001-03 | UNDER_REVIEW | DES-001-03-07 | TASK-001-03-07 | TEST-001-03-12 | Non commencé | 0/1 exécutés et réussis |
-| FR-130 | SF-001-05 | UNDER_REVIEW | DES-001-05-01 | TASK-001-05-02 | TEST-001-05-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-131 | SF-001-05 | UNDER_REVIEW | DES-001-05-02 | TASK-001-05-01, TASK-001-05-02 | TEST-001-05-02 | Non commencé | 0/1 exécutés et réussis |
-| FR-132 | SF-001-05 | UNDER_REVIEW | DES-001-05-02 | TASK-001-05-01, TASK-001-05-02 | TEST-001-05-03 | Non commencé | 0/1 exécutés et réussis |
-| FR-133 | SF-001-05 | UNDER_REVIEW | DES-001-05-03 | TASK-001-05-01, TASK-001-05-02 | TEST-001-05-04 | Non commencé | 0/1 exécutés et réussis |
-| FR-134 | SF-001-05 | UNDER_REVIEW | DES-001-05-04 | TASK-001-05-01, TASK-001-05-02 | TEST-001-05-05 | Non commencé | 0/1 exécutés et réussis |
-| FR-135 | SF-001-05 | UNDER_REVIEW | DES-001-05-04 | TASK-001-05-01, TASK-001-05-02 | TEST-001-05-06 | Non commencé | 0/1 exécutés et réussis |
+| FR-130 | SF-001-05 | UNDER_REVIEW | DES-001-05-01 | TASK-001-05-02 | TEST-001-05-01 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (moteur du produit) | 1/1 exécutés et réussis |
+| FR-131 | SF-001-05 | UNDER_REVIEW | DES-001-05-02 | TASK-001-05-01, TASK-001-05-02 | TEST-001-05-02 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (moteur du produit), À faire | 1/1 exécutés et réussis |
+| FR-132 | SF-001-05 | UNDER_REVIEW | DES-001-05-02 | TASK-001-05-01, TASK-001-05-02 | TEST-001-05-03 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (moteur du produit), À faire | 1/1 exécutés et réussis |
+| FR-133 | SF-001-05 | UNDER_REVIEW | DES-001-05-03 | TASK-001-05-01, TASK-001-05-02 | TEST-001-05-04 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (moteur du produit), À faire | 1/1 exécutés et réussis |
+| FR-134 | SF-001-05 | UNDER_REVIEW | DES-001-05-04 | TASK-001-05-01, TASK-001-05-02 | TEST-001-05-05 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (moteur du produit), À faire | 1/1 exécutés et réussis |
+| FR-135 | SF-001-05 | UNDER_REVIEW | DES-001-05-04 | TASK-001-05-01, TASK-001-05-02 | TEST-001-05-06 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (moteur du produit), À faire | 1/1 exécutés et réussis |
 | FR-136 | SF-001-05 | UNDER_REVIEW | DES-001-05-05 | TASK-001-05-03 | TEST-001-05-07 | Non commencé | 0/1 exécutés et réussis |
-| FR-140 | SF-001-06 | UNDER_REVIEW | DES-001-06-01 | TASK-001-06-01, TASK-001-06-03 | TEST-001-06-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-141 | SF-001-06 | UNDER_REVIEW | DES-001-06-02 | TASK-001-06-01, TASK-001-06-03 | TEST-001-06-02 | Non commencé | 0/1 exécutés et réussis |
-| FR-142 | SF-001-06 | UNDER_REVIEW | DES-001-06-02 | TASK-001-06-01, TASK-001-06-03 | TEST-001-06-02 | Non commencé | 0/1 exécutés et réussis |
-| FR-143 | SF-001-06 | UNDER_REVIEW | DES-001-06-03 | TASK-001-06-01, TASK-001-06-03 | TEST-001-06-03 | Non commencé | 0/1 exécutés et réussis |
-| FR-144 | SF-001-06 | UNDER_REVIEW | DES-001-06-03 | TASK-001-06-01, TASK-001-06-03 | TEST-001-06-03 | Non commencé | 0/1 exécutés et réussis |
-| FR-145 | SF-001-06 | UNDER_REVIEW | DES-001-06-04 | TASK-001-06-01, TASK-001-06-03 | TEST-001-06-04 | Non commencé | 0/1 exécutés et réussis |
-| FR-146 | SF-001-06 | UNDER_REVIEW | DES-001-06-05 | TASK-001-06-01, TASK-001-06-02, TASK-001-06-03, TASK-001-06-04 | TEST-001-06-05, TEST-001-06-06 | Non commencé | 0/2 exécutés et réussis |
+| FR-140 | SF-001-06 | UNDER_REVIEW | DES-001-06-01 | TASK-001-06-01, TASK-001-06-03 | TEST-001-06-01 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (témoins par alternative et par tranche), À faire | 1/1 exécutés et réussis |
+| FR-141 | SF-001-06 | UNDER_REVIEW | DES-001-06-02 | TASK-001-06-01, TASK-001-06-03 | TEST-001-06-02 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (témoins par alternative et par tranche), À faire | 1/1 exécutés et réussis |
+| FR-142 | SF-001-06 | UNDER_REVIEW | DES-001-06-02 | TASK-001-06-01, TASK-001-06-03 | TEST-001-06-02 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (témoins par alternative et par tranche), À faire | 1/1 exécutés et réussis |
+| FR-143 | SF-001-06 | UNDER_REVIEW | DES-001-06-03 | TASK-001-06-01, TASK-001-06-03 | TEST-001-06-03 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (témoins par alternative et par tranche), À faire | 1/1 exécutés et réussis |
+| FR-144 | SF-001-06 | UNDER_REVIEW | DES-001-06-03 | TASK-001-06-01, TASK-001-06-03 | TEST-001-06-03 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (témoins par alternative et par tranche), À faire | 1/1 exécutés et réussis |
+| FR-145 | SF-001-06 | UNDER_REVIEW | DES-001-06-04 | TASK-001-06-01, TASK-001-06-03 | TEST-001-06-04 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (témoins par alternative et par tranche), À faire | 1/1 exécutés et réussis |
+| FR-146 | SF-001-06 | UNDER_REVIEW | DES-001-06-05 | TASK-001-06-01, TASK-001-06-02, TASK-001-06-03, TASK-001-06-04 | TEST-001-06-05, TEST-001-06-06 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (témoins par alternative et par tranche), À faire | 1/2 exécutés et réussis |
 | FR-147 | SF-001-06 | UNDER_REVIEW | DES-001-06-06 | TASK-001-06-04 | TEST-001-06-06 | Non commencé | 0/1 exécutés et réussis |
 | FR-150 | SF-001-01 | UNDER_REVIEW | DES-001-01-01 | TASK-001-01-01 | TEST-001-01-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-151 | SF-001-01 | UNDER_REVIEW | DES-001-01-02 | TASK-001-01-02, TASK-001-01-03 | TEST-001-01-02 | Fait (2026-11-09) — `app/tests/saisie.test.mjs` ; `erreurs` exporté ; limite de 600 caractères appliquée à la saisie, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
@@ -64,11 +64,11 @@ Erreurs : 0 · Avertissements : 0
 | FR-155 | SF-001-02 | UNDER_REVIEW | DES-001-02-01 | TASK-001-02-01 | TEST-001-02-01 | Fait (2026-11-09) — `app/js/domain/envoi.js` | 1/1 exécutés et réussis |
 | FR-156 | SF-001-02 | UNDER_REVIEW | DES-001-02-02 | TASK-001-02-02 | TEST-001-02-02 | Fait (2026-11-09) — `app/tests/saisie.test.mjs` | 1/1 exécutés et réussis |
 | FR-160 | SF-001-04 | UNDER_REVIEW | DES-001-04-01 | TASK-001-04-01 | TEST-001-04-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
-| FR-161 | SF-001-04 | UNDER_REVIEW | DES-001-04-02 | TASK-001-04-02 | TEST-001-04-03 | Partiel (code existant incomplet, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
+| FR-161 | SF-001-04 | UNDER_REVIEW | DES-001-04-02 | TASK-001-04-02 | TEST-001-04-03 | Fait (2026-11-09) — `empreinte_canonique` (`tools/demo/construire_paquet.py`), vérifiée par `chargerPaquet` (`src/client/ondevice/empreinte.mjs`) | 1/1 exécutés et réussis |
 | FR-165 | SF-001-07 | UNDER_REVIEW | DES-001-07-01 | TASK-001-07-01 | TEST-001-07-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
-| FR-166 | SF-001-07 | UNDER_REVIEW | DES-001-07-03 | TASK-001-07-03 | TEST-001-07-02 | Non commencé | 0/1 exécutés et réussis |
+| FR-166 | SF-001-07 | UNDER_REVIEW | DES-001-07-03 | TASK-001-07-03 | TEST-001-07-02 | Fait (2026-11-09) — `app/js/domain/triage.js`, copie versionnée `app/js/vendor/` (`tools/maj_moteur_nolo.py`), `analyser(…, { moteur })`, trace avec la règle citée | 1/1 exécutés et réussis |
 | FR-167 | SF-001-07 | UNDER_REVIEW | DES-001-07-01 | TASK-001-07-01 | TEST-001-07-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
-| FR-168 | SF-001-07 | UNDER_REVIEW | DES-001-07-03 | TASK-001-07-03 | TEST-001-07-05 | Non commencé | 0/1 exécutés et réussis |
+| FR-168 | SF-001-07 | UNDER_REVIEW | DES-001-07-03 | TASK-001-07-03 | TEST-001-07-05 | Fait (2026-11-09) — `app/js/domain/triage.js`, copie versionnée `app/js/vendor/` (`tools/maj_moteur_nolo.py`), `analyser(…, { moteur })`, trace avec la règle citée | 1/1 exécutés et réussis |
 | FR-175 | SF-001-08 | UNDER_REVIEW | DES-001-08-01 | TASK-001-08-01 | TEST-001-08-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-180 | SF-001-09 | UNDER_REVIEW | DES-001-09-01 | TASK-001-09-01 | TEST-001-09-01 | Non commencé | 0/1 exécutés et réussis |
 | FR-181 | SF-001-09 | UNDER_REVIEW | DES-001-09-01 | TASK-001-09-01 | TEST-001-09-02 | Non commencé | 0/1 exécutés et réussis |
@@ -93,7 +93,7 @@ Erreurs : 0 · Avertissements : 0
 | FR-208 | SF-002-08 | UNDER_REVIEW | DES-002-08-01 | TASK-002-08-01 | TEST-002-08-01 | Non commencé | 0/1 exécutés et réussis |
 | FR-209 | SF-002-10 | UNDER_REVIEW | DES-002-10-01 | TASK-002-10-01 | TEST-002-10-01 | Non commencé | 0/1 exécutés et réussis |
 | FR-220 | SF-002-01 | UNDER_REVIEW | DES-002-01-01 | TASK-002-01-01 | TEST-002-01-01 | Fait (2026-11-09) — `preparerEnvoi` : exactement codes, aire, semaine ISO, tranche d'âge | 1/1 exécutés et réussis |
-| FR-221 | SF-002-01 | UNDER_REVIEW | DES-002-01-02 | TASK-002-01-02 | TEST-002-01-02 | Non commencé | 0/1 exécutés et réussis |
+| FR-221 | SF-002-01 | UNDER_REVIEW | DES-002-01-02 | TASK-002-01-02 | TEST-002-01-02 | Fait (2026-11-09) — `dedupliquer` (`src/server/domain/surveillance.py`), appliquée par `agreger` | 1/1 exécutés et réussis |
 | FR-222 | SF-002-01 | UNDER_REVIEW | DES-002-01-03 | TASK-002-01-03 | TEST-002-01-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-225 | SF-002-02 | UNDER_REVIEW | DES-002-02-01, DES-002-02-02 | TASK-002-02-01 | TEST-002-02-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-226 | SF-002-02 | UNDER_REVIEW | DES-002-02-01 | TASK-002-02-01 | TEST-002-02-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
@@ -169,7 +169,7 @@ Erreurs : 0 · Avertissements : 0
 | FR-705 | SF-007-05 | UNDER_REVIEW | DES-007-05-01 | TASK-007-05-01 | TEST-007-05-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-706 | SF-007-09 | UNDER_REVIEW | DES-007-09-01 | TASK-007-09-01 | TEST-007-09-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-707 | SF-007-13 | UNDER_REVIEW | DES-007-13-01 | TASK-007-13-01 | TEST-007-13-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
-| FR-708 | SF-007-16 | UNDER_REVIEW | DES-007-16-01 | TASK-007-16-01 | TEST-007-16-01 | Non commencé | 0/1 exécutés et réussis |
+| FR-708 | SF-007-16 | UNDER_REVIEW | DES-007-16-01 | TASK-007-16-01 | TEST-007-16-01 | Fait (2026-11-09) — `docs/compliance/aipd.md` (5 finalités et le POC, risques, mesures, conditions du mode complet) | 1/1 exécutés et réussis |
 | FR-709 | SF-007-09 | UNDER_REVIEW | DES-007-09-01 | TASK-007-09-01 | TEST-007-09-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-710 | SF-007-14 | UNDER_REVIEW | DES-007-14-01 | TASK-007-14-01 | TEST-007-14-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-711 | SF-007-15 | UNDER_REVIEW | DES-007-15-01 | TASK-007-15-01 | TEST-007-15-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
@@ -195,13 +195,13 @@ Erreurs : 0 · Avertissements : 0
 | FR-761 | SF-007-09 | UNDER_REVIEW | DES-007-09-02 | TASK-007-09-02 | TEST-007-09-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-765 | SF-007-10 | UNDER_REVIEW | DES-007-10-01 | TASK-007-10-01 | TEST-007-10-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-768 | SF-007-11 | UNDER_REVIEW | DES-007-11-01 | TASK-007-11-01 | TEST-007-11-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
-| FR-769 | SF-007-11 | UNDER_REVIEW | DES-007-11-02 | TASK-007-11-02 | TEST-007-11-02 | Non commencé | 0/1 exécutés et réussis |
+| FR-769 | SF-007-11 | UNDER_REVIEW | DES-007-11-02 | TASK-007-11-02 | TEST-007-11-02 | Fait (2026-11-09) — `tools/lire_journal.py` (ordre, agent, décision, fragments avec article, version, validateur ; vérification de la chaîne) | 1/1 exécutés et réussis |
 | FR-773 | SF-007-12 | UNDER_REVIEW | DES-007-12-01 | TASK-007-12-01 | TEST-007-12-01 | Non commencé | 0/1 exécutés et réussis |
 | FR-774 | SF-007-12 | UNDER_REVIEW | DES-007-12-01 | TASK-007-12-01 | TEST-007-12-02 | Non commencé | 0/1 exécutés et réussis |
 | FR-777 | SF-007-13 | UNDER_REVIEW | DES-007-13-01 | TASK-007-13-01 | TEST-007-13-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-780 | SF-007-14 | UNDER_REVIEW | DES-007-14-01 | TASK-007-14-01 | TEST-007-14-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
-| FR-783 | SF-007-15 | UNDER_REVIEW | DES-007-15-02 | TASK-007-15-02 | TEST-007-15-02 | Non commencé | 0/1 exécutés et réussis |
-| FR-787 | SF-007-16 | UNDER_REVIEW | DES-007-16-01 | TASK-007-16-01 | TEST-007-16-01 | Non commencé | 0/1 exécutés et réussis |
+| FR-783 | SF-007-15 | UNDER_REVIEW | DES-007-15-02 | TASK-007-15-02 | TEST-007-15-02 | Fait (2026-11-09) — `docs/architecture/agents/` : District, APDP, vérificateur d'agrément | 1/1 exécutés et réussis |
+| FR-787 | SF-007-16 | UNDER_REVIEW | DES-007-16-01 | TASK-007-16-01 | TEST-007-16-01 | Fait (2026-11-09) — `docs/compliance/aipd.md` (5 finalités et le POC, risques, mesures, conditions du mode complet) | 1/1 exécutés et réussis |
 | FR-801 | SF-008-01 | UNDER_REVIEW | DES-008-01-01, DES-008-01-03 | TASK-008-01-01, TASK-008-01-02 | TEST-008-01-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-802 | SF-008-01 | UNDER_REVIEW | DES-008-01-01, DES-008-01-02 | TASK-008-01-01 | TEST-008-01-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-803 | SF-008-01 | UNDER_REVIEW | DES-008-01-01 | TASK-008-01-01 | TEST-008-01-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
@@ -226,7 +226,7 @@ Erreurs : 0 · Avertissements : 0
 | FR-872 | SF-008-08 | UNDER_REVIEW | DES-008-08-02 | TASK-008-08-02 | TEST-008-08-02 | Fait (2026-11-09) — sections `classement`, `securite`, `contact`, `version` ajoutées ; données collectées et jamais collectées | 1/1 exécutés et réussis |
 | FR-873 | SF-008-08 | UNDER_REVIEW | DES-008-08-02 | TASK-008-08-02 | TEST-008-08-02 | Fait (2026-11-09) — sections `classement`, `securite`, `contact`, `version` ajoutées ; données collectées et jamais collectées | 1/1 exécutés et réussis |
 | FR-881 | SF-008-09 | UNDER_REVIEW | DES-008-09-01 | TASK-008-09-01 | TEST-008-09-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-901 | SF-009-01 | UNDER_REVIEW | DES-009-01-01 | TASK-009-01-01 | TEST-009-01-01 | Non commencé | 0/1 exécutés et réussis |
+| FR-901 | SF-009-01 | UNDER_REVIEW | DES-009-01-01 | TASK-009-01-01 | TEST-009-01-01 | Fait (2026-11-09) — `docs/product/roles.md` (8 rôles, permissions sourcées) | 1/1 exécutés et réussis |
 | FR-902 | SF-009-01 | UNDER_REVIEW | DES-009-01-02 | TASK-009-01-02 | TEST-009-01-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-905 | SF-009-02 | UNDER_REVIEW | DES-009-02-01, DES-009-02-04 | TASK-009-02-01 | TEST-009-02-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-906 | SF-009-02 | UNDER_REVIEW | DES-009-02-02, DES-009-02-04 | TASK-009-02-02 | TEST-009-02-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
@@ -313,7 +313,7 @@ Erreurs : 0 · Avertissements : 0
 | FR-1205 | SF-012-02 | UNDER_REVIEW | DES-012-02-01 | TASK-012-02-01 | TEST-012-02-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1207 | SF-012-03 | UNDER_REVIEW | DES-012-03-01 | TASK-012-03-01 | TEST-012-03-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1208 | SF-012-03 | UNDER_REVIEW | DES-012-03-01 | TASK-012-03-01 | TEST-012-03-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
-| FR-1209 | SF-012-03 | UNDER_REVIEW | DES-012-03-01 | TASK-012-03-02 | TEST-012-03-02 | Non commencé | 0/1 exécutés et réussis |
+| FR-1209 | SF-012-03 | UNDER_REVIEW | DES-012-03-01 | TASK-012-03-02 | TEST-012-03-02 | Fait (2026-11-09) — `--exporter-attendus` (livré avec TASK-007-17-02) ; test d'acceptation pytest | 1/1 exécutés et réussis |
 | FR-1211 | SF-012-04 | UNDER_REVIEW | DES-012-04-01 | TASK-012-04-01 | TEST-012-04-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1212 | SF-012-04 | UNDER_REVIEW | DES-012-04-02 | TASK-012-04-02 | TEST-012-04-02 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1213 | SF-012-04 | UNDER_REVIEW | DES-012-04-03 | TASK-012-04-03 | TEST-012-04-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
@@ -486,8 +486,8 @@ Erreurs : 0 · Avertissements : 0
 | FR-2313 | SF-017-03 | UNDER_REVIEW | DES-017-03-01 | TASK-017-03-01 | TEST-017-03-01 | Non commencé | 0/1 exécutés et réussis |
 | FR-2314 | SF-017-03 | UNDER_REVIEW | DES-017-03-01 | TASK-017-03-01 | TEST-017-03-02 | Non commencé | 0/1 exécutés et réussis |
 | FR-2315 | SF-017-03 | UNDER_REVIEW | DES-017-03-01 | TASK-017-03-01 | TEST-017-03-03 | Non commencé | 0/1 exécutés et réussis |
-| FR-2317 | SF-017-04 | UNDER_REVIEW | DES-017-04-01 | TASK-017-04-01 | TEST-017-04-01 | Partiel (code existant incomplet, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
-| FR-2318 | SF-017-04 | UNDER_REVIEW | DES-017-04-01 | TASK-017-04-01 | TEST-017-04-02 | Partiel (code existant incomplet, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
+| FR-2317 | SF-017-04 | UNDER_REVIEW | DES-017-04-01 | TASK-017-04-01 | TEST-017-04-01 | Fait (2026-11-09) — `kb/README.md` déjà conforme (version publique, procédure UIT) ; contrôle automatisé dans `tests/unit/test_vague_c.py` | 1/1 exécutés et réussis |
+| FR-2318 | SF-017-04 | UNDER_REVIEW | DES-017-04-01 | TASK-017-04-01 | TEST-017-04-02 | Fait (2026-11-09) — `kb/README.md` déjà conforme (version publique, procédure UIT) ; contrôle automatisé dans `tests/unit/test_vague_c.py` | 1/1 exécutés et réussis |
 | FR-2320 | SF-017-05 | UNDER_REVIEW | DES-017-05-01 | TASK-017-05-01 | TEST-017-05-01 | Fait (2026-11-09, demande explicite du propriétaire, D-036) | 1/1 exécutés et réussis |
 | FR-2321 | SF-017-05 | UNDER_REVIEW | DES-017-05-01 | TASK-017-05-01 | TEST-017-05-02 | Fait (2026-11-09, demande explicite du propriétaire, D-036) | 1/1 exécutés et réussis |
 | FR-2322 | SF-017-05 | UNDER_REVIEW | DES-017-05-01 | TASK-017-05-02 | TEST-017-05-03 | Fait (2026-11-09, demande explicite du propriétaire, D-036) | 1/1 exécutés et réussis |

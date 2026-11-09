@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-768, FR-769 |
 | ADR | — |
-| État d'implémentation | Partiellement implémenté — rétro-spécifié le 2026-11-09 ; écarts au §9 de design.md |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Vue d'ensemble
 —

@@ -1,5 +1,5 @@
 // Nolo — fonctionnement hors ligne : l'application et la tuile du district restent disponibles sans réseau.
-const VERSION = 'nolo-2026-11-09-4';
+const VERSION = 'nolo-2026-11-09-5';
 const FICHIERS = [
   './',
   "./assets/fonts/OFL-atkinson.txt",
@@ -16,6 +16,7 @@ const FICHIERS = [
   "./css/tokens.css",
   "./data/base.json",
   "./data/glossaire.json",
+  "./data/paquet_triage.json",
   "./data/politique.json",
   "./data/regles.json",
   "./index.html",
@@ -48,6 +49,7 @@ const FICHIERS = [
   "./js/domain/pro.js",
   "./js/domain/surveillance.js",
   "./js/domain/trends.js",
+  "./js/domain/triage.js",
   "./js/etat.js",
   "./js/i18n/en.js",
   "./js/i18n/fr.js",
@@ -81,6 +83,10 @@ const FICHIERS = [
   "./js/ui/decision.js",
   "./js/ui/icons.js",
   "./js/ui/position.js",
+  "./js/vendor/empreinte.js",
+  "./js/vendor/extracteur_lexical.js",
+  "./js/vendor/moteur_triage.js",
+  "./js/vendor/referentiel.js",
   "./manifest.webmanifest",
 ];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(VERSION).then((c) => c.addAll(FICHIERS)).then(() => self.skipWaiting())); });

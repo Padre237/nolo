@@ -16,10 +16,23 @@ KB = RACINE / "kb" if (RACINE / "kb" / "rules").exists() else RACINE.parent / "k
 SBC = yaml.safe_load(open(KB / "rules" / "sbc_definitions.yaml", encoding="utf-8"))
 
 
+def dedupliquer(contributions: list[dict]) -> list[dict]:
+    """FR-221 : un même appareil (pseudonyme `appareil`) ne compte qu'une fois par semaine et par syndrome ;
+    une contribution sans pseudonyme ne peut pas être rapprochée et compte telle quelle."""
+    vus, out = set(), []
+    for c in contributions:
+        cle = (c.get("appareil"), c["semaine"], c["syndrome"])
+        if c.get("appareil") and cle in vus:
+            continue
+        vus.add(cle)
+        out.append(c)
+    return out
+
+
 def agreger(contributions: list[dict], politique) -> list[dict]:
-    """Agrégats (aire, semaine, syndrome). Sous le seuil, le nombre est masqué pour la publication."""
+    """Agrégats (aire, semaine, syndrome) après déduplication. Sous le seuil, le nombre est masqué pour la publication."""
     seuil = politique.valeur("surveillance.seuil_minimal_cas_par_zone")
-    compteur = Counter((c["aire_id"], c["semaine"], c["syndrome"]) for c in contributions)
+    compteur = Counter((c["aire_id"], c["semaine"], c["syndrome"]) for c in dedupliquer(contributions))
     return [{"aire_id": a, "semaine": s, "syndrome": sy, "cas": n,
              "publiable": n >= seuil, "cas_publie": n if n >= seuil else None}
             for (a, s, sy), n in sorted(compteur.items())]

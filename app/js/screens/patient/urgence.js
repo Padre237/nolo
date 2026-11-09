@@ -19,7 +19,7 @@ export default {
     const cle = p.enfantPetit ? 'petit' : c.qui === 'enfant' ? 'lui' : 'moi';
     const ecrits = c.signes.presents.filter((x) => SIGNES[x]?.danger).map((x) => libelle(x, t.lang));
     const repondus = questionsDanger(p).filter((q) => c.reponses[q.id] && !c.signes.presents.includes(q.signe)).map((q) => t(`verifier.questions.${cle}.${q.id.replace(/-/g, '_')}`));
-    const signales = [...new Set([...ecrits, ...repondus])];
+    const signales = [...new Set([...ecrits, ...repondus, ...(c.resultat.moteur?.texteSource?.slice(0, 1) || [])])];
     const numeros = numerosUrgence(agents().politique);
     return html`
     <div class="cadre urgence">

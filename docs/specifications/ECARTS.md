@@ -2,17 +2,14 @@
 
 Généré par `python3 tools/sdd_index.py` — ne pas modifier à la main.
 
-14 écarts connus (§9 des `design.md`). Chacun a une tâche « À faire » ou « Partiel » dans son dossier.
+11 écarts connus (§9 des `design.md`). Chacun a une tâche « À faire » ou « Partiel » dans son dossier.
 
 | Dossier | Écart |
 |---|---|
-| [SF-001-04](feature-001-orientation/sf-001-04-paquet-regles/design.md) Chargement et contrôle du paquet de règles de triage (moteur v1) | Nolo n'utilise pas encore ce paquet : ses signes de danger sont une liste propre (SF-001-14). Brancher le moteur v1 sur Nolo est la tâche TASK-001-07-03. |
-| [SF-001-07](feature-001-orientation/sf-001-07-calcul-niveau/design.md) Calcul du niveau d'urgence (moteur v1) | FR-168 : Nolo ne détecte l'urgence que par sa propre liste (`SIGNES` avec `danger: true`) et les questions de sécurité ; le moteur v1 n'y est pas encore branché. |
 | [SF-001-09](feature-001-orientation/sf-001-09-cas-ambigu/design.md) Cas ambigu : relèvement prudent et renvoi vers un soignant | FR-180 partiellement : la liste est accessible depuis « Décrire » et « Vérifier » ; le seuil d'ambiguïté (FR-181) et le lien d'intervention humaine (FR-182) n'existent pas. |
 | [SF-002-01](feature-002-surveillance/sf-002-01-contribution/design.md) Contribution consentie à la surveillance | Nolo ne transmet aucune contribution (pas de serveur) : les comptes de la console sont fictifs (`compteAire`, `compteRegion`). |
 | [SF-004-02](feature-004-recherche-medicament/sf-004-02-recherche-stocks/design.md) Recherche dans les stocks déclarés et classement | FR-402 : la fraîcheur de 12 h (affichage « à confirmer ») n'est pas distinguée à l'écran ; seule l'expiration à 48 h est appliquée. |
 | [SF-006-01](feature-006-fiabilite-pharmacies/sf-006-01-soumission-signalement/design.md) Soumission d'un signalement | FR-620 : l'interdiction de se signaler soi-même n'a pas de sens sur l'appareil du citoyen ; elle relève du serveur (à faire). |
-| [SF-007-15](feature-007-gouvernance/sf-007-15-agents-simules/design.md) Agents institutionnels simulés (District/SIMR, APDP) | L'APDP n'a pas de position propre dans S3 (seule la Conformité cite la loi) ; l'avis APDP distinct relève de SF-007-19. |
 | [SF-008-02](feature-008-consentements-droits/sf-008-02-consentement-surveillance/design.md) Consentement à la surveillance | Nolo ne prépare aucune contribution aujourd'hui : FR-811 est satisfaite par absence d'envoi ; la contribution réelle relève de SF-002-01. |
 | [SF-008-06](feature-008-consentements-droits/sf-008-06-droits-decision-automatisee/design.md) Droits face à la décision automatisée | Les droits figurent dans la page des conditions mais pas sur les écrans de résultat. |
 | [SF-009-02](feature-009-acces-roles-comptes/sf-009-02-authentification-pro/design.md) Authentification des établissements (un compte par établissement) | Nolo : repli d'empreinte non cryptographique si `crypto.subtle` manque (contexte non sécurisé) — prototype seulement, à retirer à l'intégration. |

@@ -1,6 +1,8 @@
 // SF-001-03 — Chargement et validation du paquet de triage, liste fermée, fermeture des implications.
-// FR-113 (refus hors démo sans validateur clinique), FR-120, FR-121, FR-123, FR-124 (validation structurelle).
+// FR-113 (refus hors démo sans validateur clinique), FR-120, FR-121, FR-123, FR-124 (validation structurelle),
+// FR-161 (empreinte recalculée au chargement).
 import { construireIndex, ErreurReferentiel } from "./extracteur_lexical.mjs";
+import { empreinte } from "./empreinte.mjs";
 export { ErreurReferentiel };
 
 const TRANCHES = ["moins_8_jours", "8_jours_2_mois", "2_6_mois", "6_mois_2_ans", "2_5_ans",
@@ -20,6 +22,10 @@ const PUBLICS = {
 export function chargerPaquet(paquet, mode = "demo_synthetique") {
   const err = (m) => { throw new ErreurReferentiel(m); };
   if (paquet.schema !== "paquet-triage/1") err(`schéma inattendu : ${paquet.schema}`);
+  // FR-161 : l'empreinte du référentiel et des règles est recalculée ; un paquet modifié est refusé.
+  if (!paquet.empreinte_canonique || empreinte({ referentiel: paquet.referentiel, regles: paquet.regles }) !== paquet.empreinte_canonique) {
+    err("empreinte du paquet différente de l'empreinte déclarée : paquet modifié après construction (FR-161)");
+  }
   if (!paquet.validateur_clinique && !paquet.usage_autorise_sans_validation.includes(mode)) {
     err(`règles sans validateur clinique : chargement refusé en mode ${mode} (FR-113)`);
   }

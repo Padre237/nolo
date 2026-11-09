@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-901, FR-902 |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) : matrice rédigée ; garde de route par rôle limitée à la démonstration |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -25,7 +25,7 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-009-01-01 réussis
 - Tests : TEST-009-01-01
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `docs/product/roles.md` (8 rôles, permissions sourcées)
 
 ### TASK-009-01-02 — Gardes de route pro et ministère
 - Exigences : FR-902

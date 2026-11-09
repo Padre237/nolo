@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : lecture
 - Alors : 8 rôles sourcés
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `tests/unit/test_vague_c.py::test_matrice_des_huit_roles_sourcee` (`python3 -m pytest -q`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 
 ### TEST-009-01-02 — Garde du tableau de bord
 - Type : Interface

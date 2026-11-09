@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-2317, FR-2318 |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -25,5 +25,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-017-04-01, TEST-017-04-02 réussis
 - Tests : TEST-017-04-01, TEST-017-04-02
-- Statut : Partiel (code existant incomplet, rétro-spécifié le 2026-11-09)
+- Statut : Fait (2026-11-09) — `kb/README.md` déjà conforme (version publique, procédure UIT) ; contrôle automatisé dans `tests/unit/test_vague_c.py`
 

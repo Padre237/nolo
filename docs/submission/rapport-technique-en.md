@@ -44,7 +44,7 @@ This submission maps the solution to the ITU-T Y.3172 pipeline nodes and to the 
 | Pharmacy reliability score from user reports (synthetic reports) | Implemented | SF-006-02 |
 | Public epidemiological map | Planned | SF-002-08 |
 
-The four verdicts are `AUTORISE`, `AUTORISE_AVEC_CONDITIONS` and `BLOQUE`, which cite their legal fragment, and `BLOQUE_SANS_FONDEMENT`, which blocks an action that is outside the catalogue or has no legal basis to cite. The on-device triage engine v1 is implemented and parity-tested against Python, but the app does not use it yet: it uses its own list of danger signs.
+The four verdicts are `AUTORISE`, `AUTORISE_AVEC_CONDITIONS` and `BLOQUE`, which cite their legal fragment, and `BLOQUE_SANS_FONDEMENT`, which blocks an action that is outside the catalogue or has no legal basis to cite. The on-device triage engine v1 (75 PCIME and IITT rules, 110-sign closed vocabulary) is parity-tested against Python and now runs inside the app, for the emergency alert only: any danger sign found by it or by the safety questions raises the alert, and its package is refused if its fingerprint changed.
 
 ## 3. Use case requirement
 
@@ -129,14 +129,14 @@ The app needs no build step. Python 3 and Node 22 run every check (`README.md`).
 
 | Check | Result | Proof |
 |---|---|---|
-| `python3 -m pytest` (governance, scenarios, facility service, publication and report checks) | 118 passed | `preuve-2026-11-09-vague-c.txt` |
-| Node: on-device engine and catalogues; Nolo app | 15 passed; 119 passed | same |
+| `python3 -m pytest` (governance, scenarios, facility service, publication and report checks) | 125 passed | `preuve-2026-11-09-vague-c2.txt` |
+| Node: on-device engine, PCIME/IITT acceptance, catalogues; Nolo app | 28 passed; 123 passed | same |
 | In-app agents against the Python reference | 3,908 Compliance decisions, 0 difference; identical audit-chain hashes; replay: 0 violations with governance, 6 without | `preuve-2026-11-09-vague-b.txt` |
 | Scenarios S1–S3 with governance; S2 and S3 without; two what-if variants | as expected | same |
 | Triage rules v2 | 390/390 witness cases; 0 monotonicity violation in 5,000 draws | same |
 | Knowledge base (public version) | 2,034 fragments, 21 documents; byte-identical rebuild; 0 PDF | same |
 | Publication check | 0 PDF, 0 secret, 0 fragment of the withheld guide | same |
-| Visual inspection (47 screens × 4 widths) | 188 measurements, 0 layout defect, 0 console error | `preuve-2026-11-09-vague-c.txt` |
+| Visual inspection (47 screens × 4 widths) | 188 measurements, 0 layout defect, 0 console error | `preuve-2026-11-09-vague-c2.txt` |
 | Specifications (spec-driven development) | 146 folders, 483 requirements, 280 tasks, 415 tests; traceability: 0 error | `python3 tools/trace.py` |
 
 **Limits.**
@@ -145,4 +145,4 @@ The app needs no build step. Python 3 and Node 22 run every check (`README.md`).
 - BM25 over the whole base still misses English questions on French-only laws (L14); in the app, a query glossary reaches them (5/5, on a small question set whose wording partly overlaps the glossary).
 - ChromaDB and Ollama have not been measured; that remains for the team's machine.
 - The app runs the agents itself (JavaScript), parity-tested against the Python reference, and reads `config/policy.yaml` (1.4.0) converted to JSON; nothing is sent to a server in the prototype.
-- 14 deviations between specifications and code remain logged in `docs/specifications/ECARTS.md`. One example: form errors still use the red reserved for emergencies (open question Q-013-05-01).
+- 11 deviations between specifications and code remain logged in `docs/specifications/ECARTS.md`. One example: form errors still use the red reserved for emergencies (open question Q-013-05-01).

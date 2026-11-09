@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-708, FR-787 |
 | ADR | — |
-| État d'implémentation | Non implémenté |
+| État d'implémentation | Rédigé (2026-11-09, D-038) : projet 0.1.0 à relire par le juriste |
 
 ## 1. Vue d'ensemble
 —

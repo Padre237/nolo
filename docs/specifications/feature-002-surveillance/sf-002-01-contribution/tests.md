@@ -34,8 +34,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : réception
 - Alors : un seul compte
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `tests/unit/test_vague_c.py::test_deux_contributions_identiques_du_meme_appareil_comptent_une_fois` (`python3 -m pytest -q`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 
 ### TEST-002-01-03 — Consentement exigé
 - Type : Unitaire

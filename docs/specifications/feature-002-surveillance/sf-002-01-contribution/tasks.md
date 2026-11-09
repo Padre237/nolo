@@ -36,7 +36,7 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : —
 - Condition de fin : TEST-002-01-02 réussis
 - Tests : TEST-002-01-02
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `dedupliquer` (`src/server/domain/surveillance.py`), appliquée par `agreger`
 
 ### TASK-002-01-03 — Décision de Conformité
 - Exigences : FR-222

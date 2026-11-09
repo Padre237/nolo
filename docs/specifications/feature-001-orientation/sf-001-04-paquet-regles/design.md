@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-113, FR-160, FR-161 |
 | ADR | ADR-005, ADR-008 |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Vue d'ensemble
 —
@@ -44,4 +44,4 @@ Aucun contrat propre.
 - Sans objet.
 
 ## 9. Écarts entre cette spécification et le code
-- Nolo n'utilise pas encore ce paquet : ses signes de danger sont une liste propre (SF-001-14). Brancher le moteur v1 sur Nolo est la tâche TASK-001-07-03.
+- Aucun écart connu (écarts résolus le 2026-11-09 : Nolo charge le paquet (contrôle de l'empreinte canonique, FR-161)).

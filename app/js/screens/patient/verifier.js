@@ -5,6 +5,7 @@ import { motif } from '../../ui/components.js';
 import { icone } from '../../ui/icons.js';
 import { agents } from '../../agents/nolo.js';
 import { deciderResultat } from '../../agents/parcours.js';
+import { urgenceMoteur } from '../../domain/triage.js';
 
 const jeu = (c) => {
   const p = profil(c.qui, c.age);
@@ -114,7 +115,8 @@ export default {
       const restantes = alerte ? 0 : questions.filter((q) => reponses[q.id] === undefined).length;
       if (restantes || !c.signes.presents.length) { set({ cas: { ...c, reponses, tenteVoir: true } }); return; }
       // Décision de Conformité avant tout affichage (FR-1527) ; rien ne s'affiche sans elle (FR-1901).
-      const { resultat, trace } = deciderResultat(agents().orchestrateur, analyser(c.signes, p, reponses), { profil: p });
+      const moteur = urgenceMoteur(c.texte, c.age, c.signes.jours, agents().triage);
+      const { resultat, trace } = deciderResultat(agents().orchestrateur, analyser(c.signes, p, reponses, { moteur }), { profil: p });
       const route = { urgence: '#/urgence', hors_champ: '#/hors-champ', art48: '#/confidentiel', pistes: '#/pistes', orientation: '#/ou-aller' }[resultat.issue];
       set({ cas: { ...c, reponses, resultat, trace, tenteVoir: false, code: c.code || codeFiche(Date.now()), date: new Date().toISOString() } });
       location.hash = route;

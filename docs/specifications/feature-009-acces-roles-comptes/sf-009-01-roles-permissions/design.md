@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-901, FR-902 |
 | ADR | — |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) : matrice rédigée ; garde de route par rôle limitée à la démonstration |
 
 ## 1. Vue d'ensemble
 —

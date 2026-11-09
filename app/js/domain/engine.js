@@ -145,9 +145,10 @@ function score(p, presents, prof, jours) {
  * Décide de l'écran à montrer et prépare son contenu.
  * reponses : { [idQuestion]: true | false } (vrai = signe de danger présent).
  */
-export function analyser({ presents, absents = [], jours = null }, prof, reponses = {}) {
+export function analyser({ presents, absents = [], jours = null }, prof, reponses = {}, { moteur = null } = {}) {
   const danger = Object.values(reponses).some((v) => v === true) || presents.some((c) => SIGNES[c]?.danger);
-  if (danger) return { issue: 'urgence', pistes: [] }; // hypothèses masquées (FR-DX-03)
+  // Le moteur v1 (75 règles PCIME et IITT) suffit à déclencher l'urgence (FR-168) ; il ne l'abaisse jamais.
+  if (danger || moteur?.urgence) return { issue: 'urgence', pistes: [], moteur: moteur?.urgence ? moteur : null }; // hypothèses masquées (FR-DX-03)
 
   const respiratoire = presents.some((c) => SIGNES[c]?.resp);
   if (!respiratoire) return { issue: 'hors_champ', raison: 'non_respiratoire', pistes: [] };

@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : chargement en mode `complet` puis `demo_synthetique`
 - Alors : refus puis acceptation avec mention
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `tests/js/regles_acceptation.test.mjs` › « TEST-001-04-01 : paquet sans validateur — refusé en mode complet, accepté en démo avec la mention » (`node --test tests/js/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 
 ### TEST-001-04-02 — Contenu du paquet
 - Type : Intégration
@@ -45,6 +45,6 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : chargement
 - Alors : refus avec erreur d'empreinte
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `tests/js/regles_acceptation.test.mjs` › « TEST-001-04-03 : une règle modifiée après construction est refusée au chargement (empreinte) » (`node --test tests/js/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 

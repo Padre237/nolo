@@ -7,7 +7,7 @@
 | Version | 2.0.0 |
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-101, FR-104, FR-110, FR-165, FR-166, FR-167, FR-168 |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) : urgence seulement dans Nolo |
 
 ## 1. Ordre d'exécution
 Dans l'ordre des identifiants.
@@ -47,5 +47,5 @@ Règle : une tâche « À faire » ne démarre que si ce dossier est `APPROVED` 
 - Dépend de : SF-001-04
 - Condition de fin : TEST-001-07-02, TEST-001-07-05 réussis
 - Tests : TEST-001-07-02, TEST-001-07-05
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `app/js/domain/triage.js`, copie versionnée `app/js/vendor/` (`tools/maj_moteur_nolo.py`), `analyser(…, { moteur })`, trace avec la règle citée
 

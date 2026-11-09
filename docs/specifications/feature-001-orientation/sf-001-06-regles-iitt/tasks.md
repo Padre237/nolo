@@ -36,7 +36,7 @@
 - Dépend de : SF-001-07, SF-001-04
 - Condition de fin : TEST-001-06-01 à TEST-001-06-05 réussis, preuve dans `tests/reports/`
 - Tests : TEST-001-06-01, TEST-001-06-02, TEST-001-06-03, TEST-001-06-04, TEST-001-06-05
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (témoins par alternative et par tranche)
 
 ### TASK-001-06-04 — Ajouter à la régression des données les contrôles propres aux critères IITT
 - Exigences : FR-147, FR-146

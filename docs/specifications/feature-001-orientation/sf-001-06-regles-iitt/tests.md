@@ -21,8 +21,8 @@
 - Quand : on évalue `douleur_thoracique_aigue` (30 et 58 ans), `brulure` (40 et 80 ans, 4 ans et 1 an), `toux` (5 jours, 3 mois, 8 mois)
 - Alors : `consultation_48h` et immédiate ; rapide et immédiate ; rapide et immédiate ; immédiate, rapide et `consultation_48h`
 - Données : 9 cas
-- Automatisation : `tests/js/regles_iitt.test.mjs` (« âge »)
-- Statut d'exécution : Non exécuté
+- Automatisation : `tests/js/regles_acceptation.test.mjs` › « TEST-001-06-01 : critères dont la source fixe un âge » (`node --test tests/js/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 
 ### TEST-001-06-02 — Critères de 12 ans et plus
 - Type : Intégration
@@ -32,8 +32,8 @@
 - Quand : on les compte puis on évalue un témoin minimal par alternative et par tranche
 - Alors : 13 rouges, 22 jaunes ; 100 % des témoins donnent au moins le niveau et la priorité de leur couleur
 - Données : témoins générés depuis le fichier
-- Automatisation : `tests/js/regles_iitt.test.mjs` (« 12 ans et plus »)
-- Statut d'exécution : Non exécuté
+- Automatisation : `tests/js/regles_acceptation.test.mjs` › « TEST-001-06-02 : iitt_12_ans_plus — 13 rouges, 22 jaunes ; chaque témoin donne au moins le niveau de sa couleur » (`node --test tests/js/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 
 ### TEST-001-06-03 — Critères de moins de 12 ans
 - Type : Intégration
@@ -43,8 +43,8 @@
 - Quand : même procédure que TEST-001-06-02
 - Alors : 16 rouges, 16 jaunes ; 100 % des témoins conformes
 - Données : témoins générés depuis le fichier
-- Automatisation : `tests/js/regles_iitt.test.mjs` (« moins de 12 ans »)
-- Statut d'exécution : Non exécuté
+- Automatisation : `tests/js/regles_acceptation.test.mjs` › « TEST-001-06-03 : iitt_moins_12_ans — 16 rouges, 16 jaunes ; chaque témoin donne au moins le niveau de sa couleur » (`node --test tests/js/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 
 ### TEST-001-06-04 — Composites
 - Type : Intégration
@@ -54,8 +54,8 @@
 - Quand : on évalue les 5 cas de CA-001-06-04
 - Alors : `consultation_48h`, puis `urgence` immédiate pour les 4 autres
 - Données : 5 cas
-- Automatisation : `tests/js/regles_iitt.test.mjs` (« composites »)
-- Statut d'exécution : Non exécuté
+- Automatisation : `tests/js/regles_acceptation.test.mjs` › « TEST-001-06-04 : composites (détresse respiratoire, traumatisme, grossesse) » (`node --test tests/js/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 
 ### TEST-001-06-05 — Exclusions et critères réduits aux signes observables
 - Type : Sécurité/autorisation
@@ -65,8 +65,8 @@
 - Quand : on cherche `agression_sexuelle`, `priapisme`, `signes_vitaux_haut_risque`, `violence_agressivite`, `pli_cutane_lent`, `hypothermie` dans toutes les conditions et tous les composites, puis on évalue (7 ans) `yeux_creuses` + `boit_peu`
 - Alors : 0 occurrence ; `urgence` immédiate (IITTM12-R-06)
 - Données : fichier livré
-- Automatisation : `tests/js/regles_iitt.test.mjs` (« exclusions »)
-- Statut d'exécution : Non exécuté (absence des jetons exclus contrôlée le 2026-11-04 par le générateur de règles : réussi)
+- Automatisation : `tests/js/regles_acceptation.test.mjs` › « TEST-001-06-05 : jetons exclus absents des conditions ; yeux creusés et boit peu à 7 ans → immédiate » (`node --test tests/js/*.test.mjs`)
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`)
 
 ### TEST-001-06-06 — Provenance des critères IITT
 - Type : Régression

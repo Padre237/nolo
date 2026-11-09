@@ -9,7 +9,8 @@ Mis à jour le 2026-11-09 (session des vagues B et C, D-038). **À lire juste ap
 - **Vagues B et C approuvées (D-038)**. Livré le 2026-11-09 : **les agents dans Nolo** — politique 1.4.0 convertie (`app/data/politique.json`), Conformité et orchestrateur en JavaScript (parité exacte avec Python sur 3 908 décisions), journal chaîné (mêmes empreintes que Python), panneau « Comment Nolo a décidé » sur six écrans, cellule de coordination, rejeu avec ou sans gouvernance (6 violations contre 0), base embarquée et conseiller « Mes droits santé » (`#/droits`) ; côté vague C : actions du module POC (SF-007-03), garde et journal du module des pistes (SF-001-15), politique de la console en source unique (SF-015-04). 13 dossiers passés à `IN_TESTING`.
 - Toutes les suites passent (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`, §4).
 - **Vague C, premier lot livré** (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`) : rayon jusqu'à 3 résultats, synonymes en saisie libre, appel au don à la majorité, sang expiré à 6 h, fiabilité des pharmacies (parité Python, gel de rafale), quatre choix de signalement, position consentie et arrondie, raison par issue et lien vers un soignant, numéros lus dans la politique, conditions à 16 rubriques et page des établissements, définition SC et échéances dans la console, `preparerEnvoi`, contrôles de qualité (couleurs, contrastes, service worker, stockage, routeur). Rapport de soumission mis à jour (5 pages, conforme).
-- Reste : la fin de la vague C (moteur v1 dans Nolo, référentiel de 110 signes, documents AIPD et rôles, assertions de contenu de l'inspection…), la vague D (DDXPlus, S4 Python, carte publique, vidéo).
+- **Vague C, deuxième lot livré** (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`) : moteur v1 (75 règles PCIME et IITT) branché dans Nolo pour l'urgence, empreinte canonique du paquet vérifiée au chargement, tests d'acceptation PCIME et IITT, `tools/lire_journal.py`, déduplication des contributions, mandats des agents institutionnels, matrice des rôles, AIPD (projet).
+- Reste : la fin de la vague C (SF-001-03 : chargement et validation du référentiel sous les noms du dossier, route d'extraction LLM ; assertions de contenu de l'inspection ; tâches bloquées par une décision), la vague D (DDXPlus, S4 Python, carte publique, vidéo).
 - Soumission du hackathon : **10 novembre 2026**. À compléter par l'équipe dans le rapport : coordonnées de l'équipe et lien de la vidéo.
 
 ## 2. Décision attendue du propriétaire (porte G5)
@@ -38,9 +39,9 @@ Carte complète : `CLAUDE.md` §4. Sources de vérité : `CLAUDE.md` §5. En deu
 
 | Mesure | Valeur | Preuve |
 |---|---|---|
-| pytest (gouvernance, scénarios, service D-029 / D-032, livrables, actions du POC) | 118 réussis | `docs/quality/preuve-2026-11-09-vague-c.txt` |
-| `node --test tests/js/*.test.mjs` (moteur v1, catalogues D-029) | 15 réussis | idem |
-| `cd app && node --test tests/*.test.mjs` (Nolo, agents compris) | 119 réussis | idem |
+| pytest (gouvernance, scénarios, service D-029 / D-032, livrables, actions du POC, vague C) | 125 réussis | `docs/quality/preuve-2026-11-09-vague-c2.txt` |
+| `node --test tests/js/*.test.mjs` (moteur v1, acceptation PCIME et IITT, catalogues D-029) | 28 réussis | idem |
+| `cd app && node --test tests/*.test.mjs` (Nolo, agents compris) | 123 réussis | idem |
 | Fiabilité des pharmacies : JavaScript ↔ référence Python | 57 scores (19 pharmacies × 3 instants), 0 écart, gel identique | idem |
 | Parité Conformité JavaScript ↔ Python | 3 908 cas (S1 à S3 × 3 politiques, grille de 26 actions), 0 écart | idem |
 | Journal chaîné : empreintes JavaScript ↔ Python | identiques sur les 3 journaux de scénarios | idem |
@@ -53,13 +54,13 @@ Carte complète : `CLAUDE.md` §4. Sources de vérité : `CLAUDE.md` §5. En deu
 | Inspection visuelle (47 états × 4 largeurs) | 188 mesures, 0 défaut, 0 erreur de console | `docs/quality/preuve-2026-11-09-vague-c.txt` |
 | Contrôle avant publication | 0 PDF, 0 secret, 0 fragment réservé | à relancer avant chaque envoi |
 | Spécifications | 146 dossiers, 483 exigences, 280 tâches, 415 tests ; `trace.py` : 0 erreur | `python3 tools/trace.py` |
-| Tâches restantes | 51 ; 14 écarts | `docs/specifications/INDEX-TACHES.md`, `ECARTS.md` |
+| Tâches restantes | 40 ; 11 écarts | `docs/specifications/INDEX-TACHES.md`, `ECARTS.md` |
 
 ## 5. Prochaine tâche, par vague
 
 | Vague | Prochaine tâche | Vérification |
 |---|---|---|
-| C — reste (approuvée, D-038) | SF-001-03 à SF-001-07 (référentiel de 110 signes et moteur v1 dans Nolo), SF-007-11 (lecture du journal), SF-007-15 et SF-009-01 (mandats, rôles), SF-007-16 (AIPD), SF-012-03 (export des attendus), SF-013-03 et SF-013-10 (assertions de contenu), SF-017-04 (README de la base), SF-002-01 (déduplication serveur) ; bloquées : SF-001-09 (D-013), SF-008-06 (D-014), SF-007-12 (D-016), SF-013-05 (Q-013-05-01) | `INDEX-TACHES.md` |
+| C — reste (approuvée, D-038) | SF-001-03 (7 tâches : noms et validation du dossier, filtre et route d'extraction LLM), SF-001-05-03 et SF-001-06-04 (régression des données), SF-013-03 et SF-013-10 (assertions de contenu), TEST-013-08-01 (rechargement hors ligne) ; bloquées : SF-001-09 (D-013), SF-008-06 (D-014), SF-007-12 (D-016), SF-013-05 (Q-013-05-01) | `INDEX-TACHES.md` |
 | C — tâches de l'équipe | validation clinique (TASK-001-05-01, TASK-001-06-01), avis du juriste (TASK-001-06-02), ChromaDB (TASK-011-03-02) | hors de l'environnement de Claude |
 | D — à approuver | DDXPlus (SF-001-19 ; les deux JSON manquants sont arrivés dans `../ddxplus-english/`), scénario S4 Python (SF-012-05), carte publique (SF-002-08), vidéo (SF-017-03) | — |
 | Décisions | Q-013-05-01 (rouge des erreurs de saisie), Q-016-02-01 (seuil de pertinence du conseiller), constitution 2.0.0 (D-033), Q-007-14-01, Q-013-10-01, Q-017-02-01 | `docs/product/decisions.md` |
@@ -85,6 +86,7 @@ Carte complète : `CLAUDE.md` §4. Sources de vérité : `CLAUDE.md` §5. En deu
 | 2026-11-07 | Consentement (D-028), inscription et fiches (D-029), tendances (D-032), base v9 | `docs/quality/2026-11-07-*` |
 | 2026-11-08 → 11-09 | Application Nolo (D-034), hôpital, centres spécialisés et console du ministère (D-035) | inspection visuelle |
 | 2026-11-09 | Assemblage du dépôt (MT-002) ; rédaction SDD complète, catalogue v2, rétro-spécification, `CLAUDE.md`, `ETAT.md`, commandes `.claude/commands/` (D-036) ; suites relancées ; 76 statuts d'interface corrigés en « état capturé » | `preuve-2026-11-09-suites.txt`, `-inspection-visuelle.txt`, `-croisement.txt` |
+| 2026-11-09 | Vague C, deuxième lot (11 tâches) : `app/js/domain/triage.js` et copie du moteur (`tools/maj_moteur_nolo.py`), `empreinte_canonique` du paquet (`construire_paquet.py`, `empreinte.mjs`), `tests/js/regles_acceptation.test.mjs`, `tools/lire_journal.py`, `dedupliquer`, `docs/architecture/agents/`, `docs/product/roles.md`, `docs/compliance/aipd.md` ; script de preuve corrigé (pytest `-v`) | `preuve-2026-11-09-vague-c2.txt` |
 | 2026-11-09 | Vague C, premier lot (38 tâches) : recherches, fiabilité des pharmacies (`app/js/domain/fiabilite.js`, oracle `tools/exporter_fiabilite.py`), position (`position.js`), routeur extrait, `envoi.js`, règles `kb/rules` exportées (`app/data/regles.json`), conditions à 16 rubriques, `#/pro/conditions`, console (SC, échéances), jetons de couleur et exceptions déclarées, `tools/maj_sw.py` ; rapport de soumission mis à jour ; Q-013-05-01 ouverte | `preuve-2026-11-09-vague-c.txt` |
 | 2026-11-09 | Envoi du dépôt sur GitHub (jeton fourni par le propriétaire). Vagues B et C approuvées (D-038) : politique 1.4.0 et `tools/politique_json.py` ; base embarquée (`tools/exporter_base.py`) ; Conformité, orchestrateur, journal, parcours, cellule, A/B et conseiller en JavaScript ; oracles `--exporter-attendus` et `tools/exporter_classements.py` ; panneau « Comment Nolo a décidé » ; vues journal, cellule et A/B de la console ; `#/droits` ; `tools/evaluer_conseiller.mjs` ; `tools/inspecter.py` : 46 états, variable `NOLO_CHROME` ; 44 tests ajoutés (rouge puis vert, sauf 5 écrits avec le code, signalés dans la preuve) | `preuve-2026-11-09-vague-b.txt`, `eval-conseiller-2026-11-09.txt` |
 | 2026-11-09 | Vague A approuvée (D-037) : `tools/controle_publication.py` (TASK-017-02-02) ; README : quatre verdicts (FR-2306) ; rapport technique anglais rédigé depuis le dépôt, PDF de 5 pages, `tools/rapport_pdf.py`, `tools/verifier_rapport.py` (TASK-017-01-01) ; 32 tests ajoutés (rouge puis vert) ; Q-017-01-01, Q-017-01-02, Q-017-02-01 ouvertes ; `.venv` par uv ; dépôt git initialisé | `preuve-2026-11-09-vague-a.txt` |

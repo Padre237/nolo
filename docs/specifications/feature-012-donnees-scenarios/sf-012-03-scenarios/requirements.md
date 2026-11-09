@@ -5,8 +5,8 @@
 | Fonctionnalité | F-012 Données fictives et scénarios |
 | Sous-fonctionnalité | SF-012-03 |
 | Version | 2.0.0 |
-| Statut | READY_FOR_DEV |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| Statut | IN_TESTING |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 | Origine | D-025 ; CA-DEMO-01 à 06 |
 | Bloquant | Aucun |
 | Dépend de | SF-012-01, SF-012-02, F-007 |

@@ -26,7 +26,7 @@
 - Dépend de : SF-001-07 (moteur), SF-001-04 (chargement)
 - Condition de fin : TEST-001-05-01 à TEST-001-05-06 réussis, preuve dans `tests/reports/`
 - Tests : TEST-001-05-01, TEST-001-05-02, TEST-001-05-03, TEST-001-05-04, TEST-001-05-05, TEST-001-05-06
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (moteur du produit)
 
 ### TASK-001-05-03 — Ajouter à la régression des données les contrôles propres aux règles PCIME
 - Exigences : FR-136

@@ -2,10 +2,10 @@
 
 Généré par `python3 tools/sdd_index.py` — ne pas modifier à la main.
 
-51 tâches dont le statut n'est pas « Fait ». Vagues : A soumission, B agents dans Nolo, C écarts de l'existant, D suite (catalogue §6).
+40 tâches dont le statut n'est pas « Fait ». Vagues : A soumission, B agents dans Nolo, C écarts de l'existant, D suite (catalogue §6).
 Rappel : une tâche ne démarre que si son dossier est `APPROVED` ou `READY_FOR_DEV` (CLAUDE.md, protocole).
 
-## Vague C (36 tâches)
+## Vague C (25 tâches)
 
 | Dossier | Tâche | Statut | Exigences | Fichiers | Dépend de | Tests |
 |---|---|---|---|---|---|---|
@@ -22,29 +22,18 @@ Rappel : une tâche ne démarre que si son dossier est `APPROVED` ou `READY_FOR_
 | [SF-001-03](feature-001-orientation/sf-001-03-codage-symptomes/tasks.md) Codage des symptômes par le référentiel interne | **TASK-001-03-05** Écrire la validation côté serveur | À faire | FR-120, FR-124, FR-125 |  | MT-001 | TEST-001-03-01, TEST-001-03-08 |
 | [SF-001-03](feature-001-orientation/sf-001-03-codage-symptomes/tasks.md) Codage des symptômes par le référentiel interne | **TASK-001-03-06** Écrire le filtre des propositions du LLM et la route d'extraction | À faire | FR-126 |  | TASK-001-03-05, SF-007-02, SF-007-03 | TEST-001-03-09, TEST-001-03-10, TEST-001-03-11 |
 | [SF-001-03](feature-001-orientation/sf-001-03-codage-symptomes/tasks.md) Codage des symptômes par le référentiel interne | **TASK-001-03-07** Intégrer les contrôles des données à la suite de régression | À faire | FR-127, FR-121 |  | MT-001 | TEST-001-03-12 |
-| [SF-001-04](feature-001-orientation/sf-001-04-paquet-regles/tasks.md) Chargement et contrôle du paquet de règles de triage (moteur v1) | **TASK-001-04-02** Contrôle au chargement | Partiel | FR-113, FR-161 | `src/client/ondevice/moteur_triage.mjs` | — | TEST-001-04-01, TEST-001-04-03 |
 | [SF-001-05](feature-001-orientation/sf-001-05-regles-enfant-pcime/tasks.md) Règles PCIME de l'enfant de 2 mois à 5 ans | **TASK-001-05-01** Faire valider les règles PCIME et leur correspondance par un clinicien | À faire | FR-131, FR-132, FR-133, FR-134, FR-135 |  | aucun (tâche de l'équipe, hors environnement de Claude) | TEST-001-05-02, TEST-001-05-03, TEST-001-05-04, TEST-001-05-05, TEST-001-05-06 (à relancer après toute correction) |
-| [SF-001-05](feature-001-orientation/sf-001-05-regles-enfant-pcime/tasks.md) Règles PCIME de l'enfant de 2 mois à 5 ans | **TASK-001-05-02** Écrire les tests d'acceptation des règles PCIME contre le moteur du produit | À faire | FR-130, FR-131, FR-132, FR-133, FR-134, FR-135 |  | SF-001-07 (moteur), SF-001-04 (chargement) | TEST-001-05-01, TEST-001-05-02, TEST-001-05-03, TEST-001-05-04, TEST-001-05-05, TEST-001-05-06 |
 | [SF-001-05](feature-001-orientation/sf-001-05-regles-enfant-pcime/tasks.md) Règles PCIME de l'enfant de 2 mois à 5 ans | **TASK-001-05-03** Ajouter à la régression des données les contrôles propres aux règles PCIME | À faire | FR-136 |  | TASK-001-03-07 | TEST-001-05-07 |
 | [SF-001-06](feature-001-orientation/sf-001-06-regles-iitt/tasks.md) Critères de l'outil IITT (12 ans et plus, moins de 12 ans) | **TASK-001-06-01** Faire valider la transcription IITT et sa correspondance par un clinicien | À faire | FR-140, FR-141, FR-142, FR-143, FR-144, FR-145, FR-146 |  | aucun (tâche de l'équipe, hors environnement de Claude) | TEST-001-06-01 à TEST-001-06-05 (à relancer après toute correction) |
 | [SF-001-06](feature-001-orientation/sf-001-06-regles-iitt/tasks.md) Critères de l'outil IITT (12 ans et plus, moins de 12 ans) | **TASK-001-06-02** Obtenir l'avis du juriste sur la grossesse, le priapisme et la lacune L13 | À faire | FR-146 |  | aucun (tâche de l'équipe) | TEST-001-06-05 |
-| [SF-001-06](feature-001-orientation/sf-001-06-regles-iitt/tasks.md) Critères de l'outil IITT (12 ans et plus, moins de 12 ans) | **TASK-001-06-03** Écrire les tests d'acceptation des critères IITT contre le moteur du produit | À faire | FR-140, FR-141, FR-142, FR-143, FR-144, FR-145, FR-146 |  | SF-001-07, SF-001-04 | TEST-001-06-01, TEST-001-06-02, TEST-001-06-03, TEST-001-06-04, TEST-001-06-05 |
 | [SF-001-06](feature-001-orientation/sf-001-06-regles-iitt/tasks.md) Critères de l'outil IITT (12 ans et plus, moins de 12 ans) | **TASK-001-06-04** Ajouter à la régression des données les contrôles propres aux critères IITT | À faire | FR-147, FR-146 |  | TASK-001-03-07 | TEST-001-06-06 |
-| [SF-001-07](feature-001-orientation/sf-001-07-calcul-niveau/tasks.md) Calcul du niveau d'urgence (moteur v1) | **TASK-001-07-03** Brancher le moteur v1 dans Nolo (urgence seulement) | À faire | FR-166, FR-168 | `app/js/domain/engine.js`, `app/js/vendor/moteur_triage.mjs` (copie versionnée) | SF-001-04 | TEST-001-07-02, TEST-001-07-05 |
 | [SF-001-09](feature-001-orientation/sf-001-09-cas-ambigu/tasks.md) Cas ambigu : relèvement prudent et renvoi vers un soignant | **TASK-001-09-01** État « rien reconnu » et seuil d'ambiguïté | À faire | FR-180, FR-181 | `app/js/screens/patient/verifier.js`, `app/js/domain/engine.js` (`nonReconnus`) | D-013 approuvée | TEST-001-09-01, TEST-001-09-02 |
-| [SF-002-01](feature-002-surveillance/sf-002-01-contribution/tasks.md) Contribution consentie à la surveillance | **TASK-002-01-02** Déduplication côté serveur | À faire | FR-221 | `src/server/domain/surveillance.py` | — | TEST-002-01-02 |
-| [SF-007-11](feature-007-gouvernance/sf-007-11-journal-consultation/tasks.md) Consultation du journal et vérification de la chaîne (serveur) | **TASK-007-11-02** Commande de lecture | À faire | FR-769 | `tools/lire_journal.py` | — | TEST-007-11-02 |
 | [SF-007-12](feature-007-gouvernance/sf-007-12-rejeu/tasks.md) Rejeu d'une session | **TASK-007-12-01** Rejeu | À faire | FR-773, FR-774 | `tools/scenarios/rejouer.py` | D-016 | TEST-007-12-01, TEST-007-12-02 |
-| [SF-007-15](feature-007-gouvernance/sf-007-15-agents-simules/tasks.md) Agents institutionnels simulés (District/SIMR, APDP) | **TASK-007-15-02** Mandats écrits | À faire | FR-783 | `docs/architecture/agents/` | — | TEST-007-15-02 |
-| [SF-007-16](feature-007-gouvernance/sf-007-16-aipd/tasks.md) Analyse d'impact versionnée | **TASK-007-16-01** Rédiger l'AIPD | À faire | FR-708, FR-787 | `docs/compliance/aipd.md` | — | TEST-007-16-01 |
 | [SF-008-06](feature-008-consentements-droits/sf-008-06-droits-decision-automatisee/tasks.md) Droits face à la décision automatisée | **TASK-008-06-01** Bloc des droits sur les écrans de résultat | À faire | FR-108, FR-851 | `app/js/ui/components.js`, cinq écrans, catalogues | D-014 | TEST-008-06-01 |
-| [SF-009-01](feature-009-acces-roles-comptes/sf-009-01-roles-permissions/tasks.md) Matrice des rôles et permissions | **TASK-009-01-01** Rédiger la matrice des rôles | À faire | FR-901 | `docs/product/roles.md` | — | TEST-009-01-01 |
 | [SF-011-03](feature-011-base-connaissances/sf-011-03-recherche/tasks.md) Recherche documentaire (BM25 ; ChromaDB en option) | **TASK-011-03-02** Ingestion ChromaDB et mesure (poste de l'équipe) | À faire | FR-1110, FR-1111 | `kb/ingest_chroma.py`, `docs/quality/` | — | TEST-011-03-02, TEST-011-03-03 |
-| [SF-012-03](feature-012-donnees-scenarios/sf-012-03-scenarios/tasks.md) Scénarios S1 à S3 et exécuteur | **TASK-012-03-02** Export des attendus | À faire | FR-1209 | `tools/scenarios/executer.py` | — | TEST-012-03-02 |
 | [SF-013-03](feature-013-application/sf-013-03-rendu-evenements/tasks.md) Rendu, mise à jour du DOM et délégation des événements | **TASK-013-03-03** Tests unitaires de `html` et `patch` (jsdom indisponible : tests navigateur) | À faire | FR-1310, FR-1311 | `tools/inspecter.py` (cas dédiés) | — | TEST-013-03-01, TEST-013-03-02 |
 | [SF-013-05](feature-013-application/sf-013-05-design-system/tasks.md) Design system « Premium Medical Intelligence » | **TASK-013-05-05** Appliquer la décision sur Q-013-05-01 (rouge des erreurs de saisie) | À faire | FR-1322 | `app/css/components.css`, `app/css/pro.css`, `app/docs/DESIGN.md` | décision du propriétaire sur Q-013-05-01 | TEST-013-05-03 |
 | [SF-013-10](feature-013-application/sf-013-10-inspection-visuelle/tasks.md) Inspection visuelle automatisée | **TASK-013-10-03** Assertions de contenu par état | À faire | FR-1347 | `tools/inspecter.py` | — | TEST-013-10-03 |
-| [SF-017-04](feature-017-livrables/sf-017-04-base-publiee/tasks.md) Base de connaissances livrée | **TASK-017-04-01** Base publique et README | Partiel | FR-2317, FR-2318 | `kb/README.md` (mention de la version publique) | — | TEST-017-04-01, TEST-017-04-02 |
 
 ## Vague D (15 tâches)
 
