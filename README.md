@@ -16,8 +16,8 @@ In Cameroon, the first health decision is usually made at home, without guidance
 | Experimental module | In demo mode only: up to three *experimental leads* with their score and source. They are never presented as a diagnosis, and Article 48 categories get a neutral message. | Built, demo only |
 | Health facility | Register (step-by-step, simulated licence check). Maintain the facility profile and stocks (CSV import with a rejection report in the app; CSV and XLSX in the Python reference service). View demand trends with small-count suppression. | Built (browser) + Python reference service |
 | Ministry console | Use a syndromic map with CUSUM signals and aggregates only. Grant or refuse facility licences, with a reason required for refusals. View supply versus demand and the versioned policy, and run "what-if" policy variants. | Built (browser, demo) |
-| Agents | The **Compliance agent** and the **orchestrator** decide every personal-data action. There are four verdicts. `AUTORISE`, `AUTORISE_AVEC_CONDITIONS` and `BLOQUE` cite the legal fragment; `BLOQUE_SANS_FONDEMENT` blocks an action that is outside the catalogue or has no legal basis to cite. Every decision goes into a SHA-256-chained audit log. A replay mode runs the system *without* governance to show which violations it would commit. | Built in Python (reference); porting into the app is planned (wave B) |
-| Rights adviser "Mes droits santé" | Extractive answers that cite the knowledge base, or a refusal when there is no basis. | Specified, not built |
+| Agents | The **Compliance agent** and the **orchestrator** decide every personal-data action. There are four verdicts. `AUTORISE`, `AUTORISE_AVEC_CONDITIONS` and `BLOQUE` cite the legal fragment; `BLOQUE_SANS_FONDEMENT` blocks an action that is outside the catalogue or has no legal basis to cite. Every decision goes into a SHA-256-chained audit log. A replay mode runs the system *without* governance to show which violations it would commit. A "How Nolo decided" panel shows each step, agent and cited article. | Built in the app (JavaScript), parity-tested against the Python reference |
+| Rights adviser "Mes droits santé" | Extractive answers that cite the knowledge base, or a refusal when there is no basis. | Built in the app (`#/droits`) |
 
 ## How it is built
 
@@ -67,19 +67,20 @@ python3 tools/lancer_demo.py --neuf --avec-tendances     # http://127.0.0.1:8000
 
 | Check | Result | Evidence |
 |---|---|---|
-| pytest | 84 passed | `docs/quality/preuve-2026-11-09-suites.txt` |
-| Node, engine and catalogues | 15 passed | same |
-| Node, Nolo app | 33 passed | same |
+| pytest | 133 passed | `docs/quality/preuve-2026-11-09-vague-c3.txt` |
+| Node, engine, PCIME/IITT acceptance and catalogues | 32 passed | same |
+| Node, Nolo app | 123 passed | same |
+| In-app agents against the Python reference | 3,908 Compliance decisions, 0 difference; identical audit-chain hashes; replay: 0 violations with governance, 6 without | `docs/quality/preuve-2026-11-09-vague-b.txt` |
 | Scenarios S1–S3 with governance; S2–S3 without governance; two what-if variants | as expected | same |
 | Triage rules v2 | 390/390 witness cases; 0 monotonicity violation in 5,000 random draws | same |
 | Retrieval (BM25, top 5) | expected document 33/40; exact article 29/40 | same |
-| Visual inspection (39 screens × 4 widths) | 156 measurements, 0 layout defect, 0 console error | `docs/quality/preuve-2026-11-09-inspection-visuelle.txt` |
+| Visual inspection (47 screens × 4 widths) | 188 measurements, 0 layout defect, 0 console error | `docs/quality/preuve-2026-11-09-vague-c3.txt` |
 | Traceability | 146 specification folders, 0 error | `python3 tools/trace.py` |
 
 Limits are stated in the specifications. Examples:
 
-- the visual inspection checks layout, not screen content (76 UI tests are "captured, not verified");
-- English questions on French-only laws are not yet found by BM25;
+- the visual inspection checks layout, not screen content (73 UI tests are "captured, not verified");
+- BM25 over the whole base misses English questions on French-only laws; in the app, a query glossary reaches them (5/5 on a small set);
 - ChromaDB and Ollama measurements must be run on the team's machine.
 
 ## Repository map
@@ -88,7 +89,7 @@ Limits are stated in the specifications. Examples:
 |---|---|
 | `app/` | The Nolo progressive web app (vanilla ES modules, French and English) |
 | `src/server/` | Python reference: Compliance agent, orchestrator, policy, chained journal, resources, surveillance, facility service |
-| `src/client/ondevice/` | On-device triage engine v1 (JavaScript, parity with Python) |
+| `src/client/ondevice/` | On-device triage engine v1 (JavaScript, parity with Python), copied into `app/js/vendor/` for the emergency alert |
 | `config/` | `policy.yaml` and what-if variants |
 | `kb/` | Knowledge base v9 (public version), sources, article mapping, evaluation, translations |
 | `rules/`, `data/`, `donnees/` | Triage rules and symptom reference; synthetic data; administrative zones (ODbL) |
