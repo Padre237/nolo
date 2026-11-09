@@ -6,7 +6,7 @@ Lit `docs/submission/rapport-technique-en.md`. S'il porte encore la mention « c
 par la ligne de `../livrables/contacts-equipe.txt` ; s'il attend encore le lien de la vidéo et que `--video` est
 donné, l'ajoute. Écrit `../livrables/rapport-technique-en.soumission.md`, produit le PDF
 `../livrables/rapport-technique-en.pdf` (`tools/rapport_pdf.py`), le contrôle (`tools/verifier_rapport.py`), puis
-le copie à la racine du dépôt (`rapport-technique-en.pdf`) s'il est conforme.
+le copie à la racine du dépôt (`nolo-technical-report.pdf`) s'il est conforme.
 """
 import argparse
 import shutil
@@ -38,8 +38,8 @@ def main() -> int:
     if VIDEO in md:
         print("Attention : lien de la vidéo encore absent (--video URL).")
     if r.returncode == 0:
-        shutil.copyfile(pdf, ROOT / "rapport-technique-en.pdf")
-        print(f"Copié : {ROOT / 'rapport-technique-en.pdf'}")
+        shutil.copyfile(pdf, ROOT / "nolo-technical-report.pdf")
+        print(f"Copié : {ROOT / 'nolo-technical-report.pdf'}")
     return r.returncode
 
 
