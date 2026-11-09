@@ -87,8 +87,8 @@
 - Quand : on vérifie les champs obligatoires, les textes sources et les jetons des 8 règles
 - Alors : 100 % des textes sources retrouvés mot pour mot dans leurs fragments ; 0 jeton non observable ou exclu
 - Données : fichiers livrés
-- Automatisation : `tests/regression/test_donnees_triage.py::test_regles_pcime`
-- Statut d'exécution : Non exécuté (contrôle équivalent des données exécuté le 2026-11-04 par l'outillage, sections 1 et 8 du vérificateur et contrôle des jetons du générateur de règles : réussi ; preuve `docs/quality/preuve-2026-11-04-generation-donnees.txt`)
+- Automatisation : `tests/regression/test_donnees_triage.py::test_regles_pcime_sourcees_et_jetons_utilisables`
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c3.txt`)
 
 ## 3. Couverture
 | Exigence | Tests |

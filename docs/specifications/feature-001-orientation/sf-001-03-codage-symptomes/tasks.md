@@ -16,7 +16,7 @@
 - Dépend de : MT-001
 - Condition de fin : TEST-001-03-01 et TEST-001-03-04 réussis
 - Tests : TEST-001-03-01, TEST-001-03-04
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `chargerPaquet` et `chargerReferentiel` (repli sur la version embarquée) dans `src/client/ondevice/referentiel.mjs` (nom du fichier livré par l'incrément D-025)
 
 ### TASK-001-03-02 — Écrire la liste fermée par tranche d'âge
 - Exigences : FR-121
@@ -26,7 +26,7 @@
 - Dépend de : TASK-001-03-01, SF-001-04 (chargement du paquet de règles)
 - Condition de fin : TEST-001-03-02, TEST-001-03-03 et TEST-001-03-13 réussis
 - Tests : TEST-001-03-02, TEST-001-03-03, TEST-001-03-13
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `listeFermee` (`referentiel.mjs`), déjà livrée ; tests ajoutés
 
 ### TASK-001-03-03 — Écrire la fermeture transitive des implications
 - Exigences : FR-123
@@ -36,7 +36,7 @@
 - Dépend de : TASK-001-03-01
 - Condition de fin : TEST-001-03-07 réussi
 - Tests : TEST-001-03-07
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `fermer` (`referentiel.mjs`), déjà livrée ; test existant rattaché
 
 ### TASK-001-03-04 — Écrire l'extracteur lexical
 - Exigences : FR-122, NFR-101
@@ -46,7 +46,7 @@
 - Dépend de : TASK-001-03-01
 - Condition de fin : TEST-001-03-05, TEST-001-03-06 et TEST-001-03-14 réussis
 - Tests : TEST-001-03-05, TEST-001-03-06, TEST-001-03-14
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `normaliser`, `construireIndex`, `extraire` (`src/client/ondevice/extracteur_lexical.mjs`), déjà livrés ; parité de la normalisation avec Python testée
 
 ### TASK-001-03-05 — Écrire la validation côté serveur
 - Exigences : FR-120, FR-124, FR-125
@@ -56,7 +56,7 @@
 - Dépend de : MT-001
 - Condition de fin : TEST-001-03-01 (partie serveur) et TEST-001-03-08 réussis
 - Tests : TEST-001-03-01, TEST-001-03-08
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `src/server/domain/referentiel_symptomes.py` (`charger_referentiel`, `valider_referentiel`, `filtrer_propositions`)
 
 ### TASK-001-03-06 — Écrire le filtre des propositions du LLM et la route d'extraction
 - Exigences : FR-126
@@ -66,7 +66,7 @@
 - Dépend de : TASK-001-03-05, SF-007-02, SF-007-03
 - Condition de fin : TEST-001-03-09, TEST-001-03-10 et TEST-001-03-11 réussis
 - Tests : TEST-001-03-09, TEST-001-03-10, TEST-001-03-11
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `src/server/agents/triage.py`, `src/server/api/orientation.py`, `src/server/api/schemas/orientation.py` ; erreurs E-VAL-001, -004, -005, E-MODE-001, E-CONF-003, E-CONF-001, E-INDISP-001
 
 ### TASK-001-03-07 — Intégrer les contrôles des données à la suite de régression
 - Exigences : FR-127, FR-121
@@ -76,4 +76,4 @@
 - Dépend de : MT-001
 - Condition de fin : TEST-001-03-12 réussi
 - Tests : TEST-001-03-12
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `tests/regression/test_donnees_triage.py` (génération dans un répertoire temporaire, vérificateur des règles)

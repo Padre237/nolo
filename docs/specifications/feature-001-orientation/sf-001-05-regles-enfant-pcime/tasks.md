@@ -36,4 +36,4 @@
 - Dépend de : TASK-001-03-07
 - Condition de fin : TEST-001-05-07 réussi
 - Tests : TEST-001-05-07
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `tests/regression/test_donnees_triage.py` (textes sources, jetons utilisables)

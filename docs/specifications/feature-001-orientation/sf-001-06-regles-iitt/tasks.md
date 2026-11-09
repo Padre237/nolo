@@ -46,4 +46,4 @@
 - Dépend de : TASK-001-03-07
 - Condition de fin : TEST-001-06-06 réussi
 - Tests : TEST-001-06-06
-- Statut : À faire
+- Statut : Fait (2026-11-09) — `tests/regression/test_donnees_triage.py` (comptes 13/22/16/16, textes sources, exclusions)

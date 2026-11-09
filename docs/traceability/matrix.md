@@ -11,8 +11,8 @@ Erreurs : 0 · Avertissements : 0
 |---|---|
 | APPROVED | 4 |
 | IN_PROGRESS | 1 |
-| IN_TESTING | 51 |
-| READY_FOR_DEV | 12 |
+| IN_TESTING | 53 |
+| READY_FOR_DEV | 10 |
 | UNDER_REVIEW | 78 |
 
 ## Exigence → conception → tâches → tests → implémentation → vérification
@@ -33,29 +33,29 @@ Erreurs : 0 · Avertissements : 0
 | FR-112 | SF-001-08 | UNDER_REVIEW | DES-001-08-01 | TASK-001-08-01 | TEST-001-08-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-113 | SF-001-04 | UNDER_REVIEW | DES-001-04-02 | TASK-001-04-02 | TEST-001-04-01 | Fait (2026-11-09) — `empreinte_canonique` (`tools/demo/construire_paquet.py`), vérifiée par `chargerPaquet` (`src/client/ondevice/empreinte.mjs`) | 1/1 exécutés et réussis |
 | FR-114 | SF-001-12 | UNDER_REVIEW | DES-001-12-02 | TASK-001-12-02 | TEST-001-12-01 | Fait (2026-11-09) — `numerosUrgence` (`app/js/domain/politique.js`) ; barre de sécurité, écran Urgence, onglet Sang | 1/1 exécutés et réussis |
-| FR-120 | SF-001-03 | UNDER_REVIEW | DES-001-03-01 | TASK-001-03-01, TASK-001-03-05 | TEST-001-03-01, TEST-001-03-11 | Non commencé | 0/2 exécutés et réussis |
-| FR-121 | SF-001-03 | UNDER_REVIEW | DES-001-03-02 | TASK-001-03-02, TASK-001-03-07 | TEST-001-03-02, TEST-001-03-03, TEST-001-03-13 | Non commencé | 0/3 exécutés et réussis |
-| FR-122 | SF-001-03 | UNDER_REVIEW | DES-001-03-03 | TASK-001-03-04 | TEST-001-03-05, TEST-001-03-14 | Non commencé | 0/2 exécutés et réussis |
-| FR-123 | SF-001-03 | UNDER_REVIEW | DES-001-03-04 | TASK-001-03-03 | TEST-001-03-07 | Non commencé | 0/1 exécutés et réussis |
-| FR-124 | SF-001-03 | UNDER_REVIEW | DES-001-03-05 | TASK-001-03-01, TASK-001-03-05 | TEST-001-03-04, TEST-001-03-08 | Non commencé | 0/2 exécutés et réussis |
-| FR-125 | SF-001-03 | UNDER_REVIEW | DES-001-03-01 | TASK-001-03-05 | TEST-001-03-01 | Non commencé | 0/1 exécutés et réussis |
-| FR-126 | SF-001-03 | UNDER_REVIEW | DES-001-03-06 | TASK-001-03-06 | TEST-001-03-09, TEST-001-03-10, TEST-001-03-11 | Non commencé | 0/3 exécutés et réussis |
-| FR-127 | SF-001-03 | UNDER_REVIEW | DES-001-03-07 | TASK-001-03-07 | TEST-001-03-12 | Non commencé | 0/1 exécutés et réussis |
+| FR-120 | SF-001-03 | UNDER_REVIEW | DES-001-03-01 | TASK-001-03-01, TASK-001-03-05 | TEST-001-03-01, TEST-001-03-11 | Fait (2026-11-09) — `chargerPaquet` et `chargerReferentiel` (repli sur la version embarquée) dans `src/client/ondevice/referentiel.mjs` (nom du fichier livré par l'incrément D-025), Fait (2026-11-09) — `src/server/domain/referentiel_symptomes.py` (`charger_referentiel`, `valider_referentiel`, `filtrer_propositions`) | 2/2 exécutés et réussis |
+| FR-121 | SF-001-03 | UNDER_REVIEW | DES-001-03-02 | TASK-001-03-02, TASK-001-03-07 | TEST-001-03-02, TEST-001-03-03, TEST-001-03-13 | Fait (2026-11-09) — `listeFermee` (`referentiel.mjs`), déjà livrée ; tests ajoutés, Fait (2026-11-09) — `tests/regression/test_donnees_triage.py` (génération dans un répertoire temporaire, vérificateur des règles) | 3/3 exécutés et réussis |
+| FR-122 | SF-001-03 | UNDER_REVIEW | DES-001-03-03 | TASK-001-03-04 | TEST-001-03-05, TEST-001-03-14 | Fait (2026-11-09) — `normaliser`, `construireIndex`, `extraire` (`src/client/ondevice/extracteur_lexical.mjs`), déjà livrés ; parité de la normalisation avec Python testée | 2/2 exécutés et réussis |
+| FR-123 | SF-001-03 | UNDER_REVIEW | DES-001-03-04 | TASK-001-03-03 | TEST-001-03-07 | Fait (2026-11-09) — `fermer` (`referentiel.mjs`), déjà livrée ; test existant rattaché | 1/1 exécutés et réussis |
+| FR-124 | SF-001-03 | UNDER_REVIEW | DES-001-03-05 | TASK-001-03-01, TASK-001-03-05 | TEST-001-03-04, TEST-001-03-08 | Fait (2026-11-09) — `chargerPaquet` et `chargerReferentiel` (repli sur la version embarquée) dans `src/client/ondevice/referentiel.mjs` (nom du fichier livré par l'incrément D-025), Fait (2026-11-09) — `src/server/domain/referentiel_symptomes.py` (`charger_referentiel`, `valider_referentiel`, `filtrer_propositions`) | 2/2 exécutés et réussis |
+| FR-125 | SF-001-03 | UNDER_REVIEW | DES-001-03-01 | TASK-001-03-05 | TEST-001-03-01 | Fait (2026-11-09) — `src/server/domain/referentiel_symptomes.py` (`charger_referentiel`, `valider_referentiel`, `filtrer_propositions`) | 1/1 exécutés et réussis |
+| FR-126 | SF-001-03 | UNDER_REVIEW | DES-001-03-06 | TASK-001-03-06 | TEST-001-03-09, TEST-001-03-10, TEST-001-03-11 | Fait (2026-11-09) — `src/server/agents/triage.py`, `src/server/api/orientation.py`, `src/server/api/schemas/orientation.py` ; erreurs E-VAL-001, -004, -005, E-MODE-001, E-CONF-003, E-CONF-001, E-INDISP-001 | 3/3 exécutés et réussis |
+| FR-127 | SF-001-03 | UNDER_REVIEW | DES-001-03-07 | TASK-001-03-07 | TEST-001-03-12 | Fait (2026-11-09) — `tests/regression/test_donnees_triage.py` (génération dans un répertoire temporaire, vérificateur des règles) | 1/1 exécutés et réussis |
 | FR-130 | SF-001-05 | UNDER_REVIEW | DES-001-05-01 | TASK-001-05-02 | TEST-001-05-01 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (moteur du produit) | 1/1 exécutés et réussis |
 | FR-131 | SF-001-05 | UNDER_REVIEW | DES-001-05-02 | TASK-001-05-01, TASK-001-05-02 | TEST-001-05-02 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (moteur du produit), À faire | 1/1 exécutés et réussis |
 | FR-132 | SF-001-05 | UNDER_REVIEW | DES-001-05-02 | TASK-001-05-01, TASK-001-05-02 | TEST-001-05-03 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (moteur du produit), À faire | 1/1 exécutés et réussis |
 | FR-133 | SF-001-05 | UNDER_REVIEW | DES-001-05-03 | TASK-001-05-01, TASK-001-05-02 | TEST-001-05-04 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (moteur du produit), À faire | 1/1 exécutés et réussis |
 | FR-134 | SF-001-05 | UNDER_REVIEW | DES-001-05-04 | TASK-001-05-01, TASK-001-05-02 | TEST-001-05-05 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (moteur du produit), À faire | 1/1 exécutés et réussis |
 | FR-135 | SF-001-05 | UNDER_REVIEW | DES-001-05-04 | TASK-001-05-01, TASK-001-05-02 | TEST-001-05-06 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (moteur du produit), À faire | 1/1 exécutés et réussis |
-| FR-136 | SF-001-05 | UNDER_REVIEW | DES-001-05-05 | TASK-001-05-03 | TEST-001-05-07 | Non commencé | 0/1 exécutés et réussis |
+| FR-136 | SF-001-05 | UNDER_REVIEW | DES-001-05-05 | TASK-001-05-03 | TEST-001-05-07 | Fait (2026-11-09) — `tests/regression/test_donnees_triage.py` (textes sources, jetons utilisables) | 1/1 exécutés et réussis |
 | FR-140 | SF-001-06 | UNDER_REVIEW | DES-001-06-01 | TASK-001-06-01, TASK-001-06-03 | TEST-001-06-01 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (témoins par alternative et par tranche), À faire | 1/1 exécutés et réussis |
 | FR-141 | SF-001-06 | UNDER_REVIEW | DES-001-06-02 | TASK-001-06-01, TASK-001-06-03 | TEST-001-06-02 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (témoins par alternative et par tranche), À faire | 1/1 exécutés et réussis |
 | FR-142 | SF-001-06 | UNDER_REVIEW | DES-001-06-02 | TASK-001-06-01, TASK-001-06-03 | TEST-001-06-02 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (témoins par alternative et par tranche), À faire | 1/1 exécutés et réussis |
 | FR-143 | SF-001-06 | UNDER_REVIEW | DES-001-06-03 | TASK-001-06-01, TASK-001-06-03 | TEST-001-06-03 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (témoins par alternative et par tranche), À faire | 1/1 exécutés et réussis |
 | FR-144 | SF-001-06 | UNDER_REVIEW | DES-001-06-03 | TASK-001-06-01, TASK-001-06-03 | TEST-001-06-03 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (témoins par alternative et par tranche), À faire | 1/1 exécutés et réussis |
 | FR-145 | SF-001-06 | UNDER_REVIEW | DES-001-06-04 | TASK-001-06-01, TASK-001-06-03 | TEST-001-06-04 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (témoins par alternative et par tranche), À faire | 1/1 exécutés et réussis |
-| FR-146 | SF-001-06 | UNDER_REVIEW | DES-001-06-05 | TASK-001-06-01, TASK-001-06-02, TASK-001-06-03, TASK-001-06-04 | TEST-001-06-05, TEST-001-06-06 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (témoins par alternative et par tranche), À faire | 1/2 exécutés et réussis |
-| FR-147 | SF-001-06 | UNDER_REVIEW | DES-001-06-06 | TASK-001-06-04 | TEST-001-06-06 | Non commencé | 0/1 exécutés et réussis |
+| FR-146 | SF-001-06 | UNDER_REVIEW | DES-001-06-05 | TASK-001-06-01, TASK-001-06-02, TASK-001-06-03, TASK-001-06-04 | TEST-001-06-05, TEST-001-06-06 | Fait (2026-11-09) — `tests/js/regles_acceptation.test.mjs` (témoins par alternative et par tranche), Fait (2026-11-09) — `tests/regression/test_donnees_triage.py` (comptes 13/22/16/16, textes sources, exclusions), À faire | 2/2 exécutés et réussis |
+| FR-147 | SF-001-06 | UNDER_REVIEW | DES-001-06-06 | TASK-001-06-04 | TEST-001-06-06 | Fait (2026-11-09) — `tests/regression/test_donnees_triage.py` (comptes 13/22/16/16, textes sources, exclusions) | 1/1 exécutés et réussis |
 | FR-150 | SF-001-01 | UNDER_REVIEW | DES-001-01-01 | TASK-001-01-01 | TEST-001-01-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-151 | SF-001-01 | UNDER_REVIEW | DES-001-01-02 | TASK-001-01-02, TASK-001-01-03 | TEST-001-01-02 | Fait (2026-11-09) — `app/tests/saisie.test.mjs` ; `erreurs` exporté ; limite de 600 caractères appliquée à la saisie, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-152 | SF-001-01 | UNDER_REVIEW | DES-001-01-01 | TASK-001-01-01, TASK-001-01-03 | TEST-001-01-03 | Fait (2026-11-09) — `app/tests/saisie.test.mjs` ; `erreurs` exporté ; limite de 600 caractères appliquée à la saisie, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
@@ -326,8 +326,8 @@ Erreurs : 0 · Avertissements : 0
 | FR-1306 | SF-013-02 | UNDER_REVIEW | DES-013-02-01 | TASK-013-02-01, TASK-013-02-03 | TEST-013-02-02 | Fait (2026-11-09) — `app/js/core/routeur.js` (`lireRoute`, `routeGardee`), utilisé par `app.js`, Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1307 | SF-013-02 | UNDER_REVIEW | DES-013-02-01 | TASK-013-02-01 | TEST-013-02-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1308 | SF-013-02 | UNDER_REVIEW | DES-013-02-02 | TASK-013-02-02 | TEST-013-02-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
-| FR-1310 | SF-013-03 | UNDER_REVIEW | DES-013-03-01 | TASK-013-03-01, TASK-013-03-03 | TEST-013-03-01 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
-| FR-1311 | SF-013-03 | UNDER_REVIEW | DES-013-03-01 | TASK-013-03-01, TASK-013-03-03 | TEST-013-03-02 | Fait (code existant, rétro-spécifié le 2026-11-09), À faire | 0/1 exécutés et réussis |
+| FR-1310 | SF-013-03 | UNDER_REVIEW | DES-013-03-01 | TASK-013-03-01, TASK-013-03-03 | TEST-013-03-01 | Fait (2026-11-09) — cas dédiés dans `tools/inspecter.py` (navigateur réel : échappement, saisie et focus conservés), Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
+| FR-1311 | SF-013-03 | UNDER_REVIEW | DES-013-03-01 | TASK-013-03-01, TASK-013-03-03 | TEST-013-03-02 | Fait (2026-11-09) — cas dédiés dans `tools/inspecter.py` (navigateur réel : échappement, saisie et focus conservés), Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
 | FR-1312 | SF-013-03 | UNDER_REVIEW | DES-013-03-02 | TASK-013-03-02 | TEST-013-03-03 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1313 | SF-013-03 | UNDER_REVIEW | DES-013-03-02 | TASK-013-03-02 | TEST-013-03-04 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-1315 | SF-013-04 | UNDER_REVIEW | DES-013-04-01 | TASK-013-04-01 | TEST-013-04-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 1/1 exécutés et réussis |
@@ -494,8 +494,8 @@ Erreurs : 0 · Avertissements : 0
 | FR-2401 | MT-002 | UNDER_REVIEW | DES-M02-01 | TASK-M02-01 | TEST-M02-01 | Fait (code existant, rétro-spécifié le 2026-11-09) | 0/1 exécutés et réussis |
 | FR-2402 | MT-002 | UNDER_REVIEW | DES-M02-01 | TASK-M02-02 | TEST-M02-02 | Fait (2026-11-09, demande explicite du propriétaire, D-036) | 1/1 exécutés et réussis |
 | FR-2403 | MT-002 | UNDER_REVIEW | DES-M02-02 | TASK-M02-03 | TEST-M02-03 | Fait (2026-11-09, demande explicite du propriétaire, D-036) | 1/1 exécutés et réussis |
-| NFR-101 | SF-001-03 | UNDER_REVIEW | DES-001-03-03 | TASK-001-03-04 | TEST-001-03-06 | Non commencé | 0/1 exécutés et réussis |
-| NFR-102 | SF-001-03 | UNDER_REVIEW | DES-001-03-01 | TASK-001-03-01 | TEST-001-03-01 | Non commencé | 0/1 exécutés et réussis |
+| NFR-101 | SF-001-03 | UNDER_REVIEW | DES-001-03-03 | TASK-001-03-04 | TEST-001-03-06 | Fait (2026-11-09) — `normaliser`, `construireIndex`, `extraire` (`src/client/ondevice/extracteur_lexical.mjs`), déjà livrés ; parité de la normalisation avec Python testée | 1/1 exécutés et réussis |
+| NFR-102 | SF-001-03 | UNDER_REVIEW | DES-001-03-01 | TASK-001-03-01 | TEST-001-03-01 | Fait (2026-11-09) — `chargerPaquet` et `chargerReferentiel` (repli sur la version embarquée) dans `src/client/ondevice/referentiel.mjs` (nom du fichier livré par l'incrément D-025) | 1/1 exécutés et réussis |
 | NFR-1101 | SF-011-08 | UNDER_REVIEW |  |  | TEST-011-08-04 | Non commencé | 1/1 exécutés et réussis |
 | NFR-1401 | MT-001 | UNDER_REVIEW | DES-M01-06 | TASK-M01-02 | TEST-M01-02 | Non commencé | 0/1 exécutés et réussis |
 | NFR-1402 | MT-001 | UNDER_REVIEW | DES-M01-01 | TASK-M01-02 | TEST-M01-02 | Non commencé | 0/1 exécutés et réussis |

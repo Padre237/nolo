@@ -1,5 +1,5 @@
 // Nolo — fonctionnement hors ligne : l'application et la tuile du district restent disponibles sans réseau.
-const VERSION = 'nolo-2026-11-09-5';
+const VERSION = 'nolo-2026-11-09-6';
 const FICHIERS = [
   './',
   "./assets/fonts/OFL-atkinson.txt",

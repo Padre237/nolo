@@ -129,15 +129,15 @@ The app needs no build step. Python 3 and Node 22 run every check (`README.md`).
 
 | Check | Result | Proof |
 |---|---|---|
-| `python3 -m pytest` (governance, scenarios, facility service, publication and report checks) | 125 passed | `preuve-2026-11-09-vague-c2.txt` |
-| Node: on-device engine, PCIME/IITT acceptance, catalogues; Nolo app | 28 passed; 123 passed | same |
+| `python3 -m pytest` (governance, scenarios, facility service, data regression, publication and report checks) | 133 passed | `preuve-2026-11-09-vague-c3.txt` |
+| Node: on-device engine, PCIME/IITT acceptance, catalogues; Nolo app | 32 passed; 123 passed | same |
 | In-app agents against the Python reference | 3,908 Compliance decisions, 0 difference; identical audit-chain hashes; replay: 0 violations with governance, 6 without | `preuve-2026-11-09-vague-b.txt` |
 | Scenarios S1–S3 with governance; S2 and S3 without; two what-if variants | as expected | same |
 | Triage rules v2 | 390/390 witness cases; 0 monotonicity violation in 5,000 draws | same |
 | Knowledge base (public version) | 2,034 fragments, 21 documents; byte-identical rebuild; 0 PDF | same |
 | Publication check | 0 PDF, 0 secret, 0 fragment of the withheld guide | same |
-| Visual inspection (47 screens × 4 widths) | 188 measurements, 0 layout defect, 0 console error | `preuve-2026-11-09-vague-c2.txt` |
-| Specifications (spec-driven development) | 146 folders, 483 requirements, 280 tasks, 415 tests; traceability: 0 error | `python3 tools/trace.py` |
+| Visual inspection (47 screens × 4 widths) | 188 measurements, 0 layout defect, 0 console error | `preuve-2026-11-09-vague-c3.txt` |
+| Specifications (spec-driven development) | 146 folders, 483 requirements, 280 tasks, 415 tests; traceability: 0 error; 30 tasks left (15 awaiting approval, 4 for the team's clinician and lawyer) | `python3 tools/trace.py` |
 
 **Limits.**
 

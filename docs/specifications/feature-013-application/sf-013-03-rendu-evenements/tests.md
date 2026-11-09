@@ -23,8 +23,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : rendu
 - Alors : texte échappé
 - Données : —
-- Automatisation : —
-- Statut d'exécution : Non exécuté (automatisation à écrire)
+- Automatisation : `tools/inspecter.py` › « TEST-013-03-01 : saisie piégée rendue comme du texte : OK »
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c3.txt`)
 
 ### TEST-013-03-02 — Saisie conservée
 - Type : Interface
@@ -34,8 +34,8 @@ Règle : un test n'est déclaré réussi qu'après exécution réelle, avec la c
 - Quand : re-rendu
 - Alors : saisie et focus conservés
 - Données : —
-- Automatisation : `tools/inspecter.py` (preuve-2026-11-09-inspection-visuelle.txt)
-- Statut d'exécution : Non exécuté (état atteint et capturé par l'inspection du 2026-11-09, qui ne contrôle que la mise en page ; le contenu attendu n'est pas vérifié : assertion à écrire, TASK-013-10-03)
+- Automatisation : `tools/inspecter.py` › « TEST-013-03-02 : mot de passe et focus conservés au re-rendu : OK »
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c3.txt`)
 
 ### TEST-013-03-03 — Clavier délégué
 - Type : Accessibilité

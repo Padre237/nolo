@@ -8,7 +8,7 @@
 | Statut | UNDER_REVIEW |
 | Exigences couvertes | FR-1310, FR-1311, FR-1312, FR-1313 |
 | ADR | — |
-| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+| État d'implémentation | Implémenté (2026-11-09, D-038) |
 
 ## 1. Vue d'ensemble
 —

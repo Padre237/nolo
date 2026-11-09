@@ -18,6 +18,7 @@ SORTIE = sys.argv[1] if len(sys.argv) > 1 else "/tmp/nolo-captures"
 LARGEURS = [int(x) for x in (sys.argv[2] if len(sys.argv) > 2 else "360,390,768,1440").split(",")]
 CAPTURER = os.environ.get("CAPTURER", "1") == "1"
 os.makedirs(SORTIE, exist_ok=True)
+ASSERTIONS = []  # (TEST-…, description, réussi) : assertions de contenu (SF-013-10, FR-1347)
 
 MESURE = """() => {
   const vw = document.documentElement.clientWidth;
@@ -218,6 +219,23 @@ def run():
             page.click("[data-act=exemple][data-i='0']")
             page.wait_for_selector(".extraits")
             capture("46-droits-reponse")
+            # SF-013-03 (TASK-013-03-03) : html et patch dans le vrai navigateur (jsdom indisponible sous Node)
+            if w == LARGEURS[0]:
+                rendu = page.evaluate("""async () => {
+                  const { html, patch } = await import('./js/core/dom.js');
+                  const piege = '<img src=x onerror="window.__xss=1">';
+                  const zone = document.createElement('div'); document.body.appendChild(zone);
+                  patch(zone, html`<p data-cle="p">${piege}</p>`);
+                  const echappe = zone.querySelector('img') === null && zone.textContent.includes('<img') && !window.__xss;
+                  patch(zone, html`<label for="mdp">Mot de passe</label><input id="mdp" type="password" data-cle="mdp"><p data-cle="n">1</p>`);
+                  const champ = zone.querySelector('#mdp'); champ.focus(); champ.value = 'secret-123';
+                  patch(zone, html`<label for="mdp">Mot de passe</label><input id="mdp" type="password" data-cle="mdp"><p data-cle="n">2</p>`);
+                  const garde = zone.querySelector('#mdp') === champ && champ.value === 'secret-123' && document.activeElement === champ && zone.querySelector('[data-cle=n]').textContent === '2';
+                  zone.remove();
+                  return { echappe, garde };
+                }""")
+                ASSERTIONS.append(("TEST-013-03-01", "saisie piégée rendue comme du texte", rendu["echappe"]))
+                ASSERTIONS.append(("TEST-013-03-02", "mot de passe et focus conservés au re-rendu", rendu["garde"]))
             # Anglais
             aller("#/")
             page.click("button[data-act=langue][data-valeur=en]")
@@ -233,7 +251,11 @@ def run():
             if m["petits"]: flag.append(f"cibles<44 : {m['petits']}")
             if m["h1"] != 1: flag.append(f"h1={m['h1']}")
             print(f"  {nom}: {'OK' if not flag else ' | '.join(flag)}")
+    print("\nAssertions de contenu :")
+    for tid, desc, ok in ASSERTIONS:
+        print(f"  {tid} : {desc} : {'OK' if ok else 'ÉCHEC'}")
     defauts = sum(1 for r in rapport.values() for (_, m) in r["etapes"] if m["debordement"] or m["petits"] or m["h1"] != 1)
+    defauts += sum(1 for (_, _, ok) in ASSERTIONS if not ok)
     erreurs = sum(len(r["erreurs"]) for r in rapport.values())
     mesures = sum(len(r["etapes"]) for r in rapport.values())
     print(f"\nRÉSUMÉ : {mesures} mesures ({len(rapport)} largeurs) ; {defauts} état(s) avec défaut ; {erreurs} erreur(s) de console")

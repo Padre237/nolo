@@ -76,8 +76,8 @@
 - Quand : on vérifie les comptes, les textes sources et les exclusions
 - Alors : 13/22/16/16 ; 100 % des textes sources des 67 critères et des 5 composites retrouvés mot pour mot ; 0 jeton exclu
 - Données : fichiers livrés
-- Automatisation : `tests/regression/test_donnees_triage.py::test_regles_iitt`
-- Statut d'exécution : Non exécuté (contrôle équivalent des données exécuté le 2026-11-04 : 90 textes sources retrouvés pour 75 règles et 5 composites ; preuve `docs/quality/preuve-2026-11-04-generation-donnees.txt`)
+- Automatisation : `tests/regression/test_donnees_triage.py::test_criteres_iitt_comptes_sources_et_exclusions`
+- Statut d'exécution : Exécuté le 2026-11-09 : réussi (preuve `docs/quality/preuve-2026-11-09-vague-c3.txt`)
 
 ## 3. Couverture
 | Exigence | Tests |

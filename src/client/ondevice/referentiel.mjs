@@ -48,6 +48,15 @@ export function chargerPaquet(paquet, mode = "demo_synthetique") {
   return { paquet, entrees, jetons, index, mode };
 }
 
+/**
+ * Chargement avec repli (FR-124) : un paquet invalide est refusé et la version embarquée reste active.
+ * Renvoie { ref, erreur } ; erreur vaut null quand le paquet est accepté.
+ */
+export function chargerReferentiel(paquet, { mode = "demo_synthetique", embarque = null } = {}) {
+  try { return { ref: chargerPaquet(paquet, mode), erreur: null }; }
+  catch (e) { if (e instanceof ErreurReferentiel) return { ref: embarque, erreur: e }; throw e; }
+}
+
 /** Fermeture transitive de la colonne « implique » (FR-123). */
 export function fermer(jetonsEntres, ref) {
   const resultat = new Set(jetonsEntres);

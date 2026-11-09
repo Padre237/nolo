@@ -10,7 +10,8 @@ Mis à jour le 2026-11-09 (session des vagues B et C, D-038). **À lire juste ap
 - Toutes les suites passent (preuve `docs/quality/preuve-2026-11-09-vague-b.txt`, §4).
 - **Vague C, premier lot livré** (preuve `docs/quality/preuve-2026-11-09-vague-c.txt`) : rayon jusqu'à 3 résultats, synonymes en saisie libre, appel au don à la majorité, sang expiré à 6 h, fiabilité des pharmacies (parité Python, gel de rafale), quatre choix de signalement, position consentie et arrondie, raison par issue et lien vers un soignant, numéros lus dans la politique, conditions à 16 rubriques et page des établissements, définition SC et échéances dans la console, `preparerEnvoi`, contrôles de qualité (couleurs, contrastes, service worker, stockage, routeur). Rapport de soumission mis à jour (5 pages, conforme).
 - **Vague C, deuxième lot livré** (preuve `docs/quality/preuve-2026-11-09-vague-c2.txt`) : moteur v1 (75 règles PCIME et IITT) branché dans Nolo pour l'urgence, empreinte canonique du paquet vérifiée au chargement, tests d'acceptation PCIME et IITT, `tools/lire_journal.py`, déduplication des contributions, mandats des agents institutionnels, matrice des rôles, AIPD (projet).
-- Reste : la fin de la vague C (SF-001-03 : chargement et validation du référentiel sous les noms du dossier, route d'extraction LLM ; assertions de contenu de l'inspection ; tâches bloquées par une décision), la vague D (DDXPlus, S4 Python, carte publique, vidéo).
+- **Vague C, troisième lot livré** (preuve `docs/quality/preuve-2026-11-09-vague-c3.txt`) : référentiel des symptômes côté appareil (repli sur la version embarquée) et serveur (validation, sources), route `POST /api/v1/orientation/extraction` avec filtre des propositions du LLM et journal sans texte, régression des données PCIME et IITT, `html` et `patch` contrôlés dans le navigateur.
+- Reste en vague C : TASK-013-10-03 (assertions de contenu pour les 73 tests d'interface « état capturé ») ; tâches bloquées par une décision (D-013, D-014, D-016, Q-013-05-01) ; tâches de l'équipe (clinicien, juriste, ChromaDB). Vague D à approuver (DDXPlus, S4 Python, carte publique, vidéo).
 - Soumission du hackathon : **10 novembre 2026**. À compléter par l'équipe dans le rapport : coordonnées de l'équipe et lien de la vidéo.
 
 ## 2. Décision attendue du propriétaire (porte G5)
@@ -39,8 +40,8 @@ Carte complète : `CLAUDE.md` §4. Sources de vérité : `CLAUDE.md` §5. En deu
 
 | Mesure | Valeur | Preuve |
 |---|---|---|
-| pytest (gouvernance, scénarios, service D-029 / D-032, livrables, actions du POC, vague C) | 125 réussis | `docs/quality/preuve-2026-11-09-vague-c2.txt` |
-| `node --test tests/js/*.test.mjs` (moteur v1, acceptation PCIME et IITT, catalogues D-029) | 28 réussis | idem |
+| pytest (gouvernance, scénarios, service D-029 / D-032, livrables, actions du POC, vague C, régression des données) | 133 réussis | `docs/quality/preuve-2026-11-09-vague-c3.txt` |
+| `node --test tests/js/*.test.mjs` (moteur v1, acceptation PCIME et IITT, référentiel, catalogues D-029) | 32 réussis | idem |
 | `cd app && node --test tests/*.test.mjs` (Nolo, agents compris) | 123 réussis | idem |
 | Fiabilité des pharmacies : JavaScript ↔ référence Python | 57 scores (19 pharmacies × 3 instants), 0 écart, gel identique | idem |
 | Parité Conformité JavaScript ↔ Python | 3 908 cas (S1 à S3 × 3 politiques, grille de 26 actions), 0 écart | idem |
@@ -54,13 +55,13 @@ Carte complète : `CLAUDE.md` §4. Sources de vérité : `CLAUDE.md` §5. En deu
 | Inspection visuelle (47 états × 4 largeurs) | 188 mesures, 0 défaut, 0 erreur de console | `docs/quality/preuve-2026-11-09-vague-c.txt` |
 | Contrôle avant publication | 0 PDF, 0 secret, 0 fragment réservé | à relancer avant chaque envoi |
 | Spécifications | 146 dossiers, 483 exigences, 280 tâches, 415 tests ; `trace.py` : 0 erreur | `python3 tools/trace.py` |
-| Tâches restantes | 40 ; 11 écarts | `docs/specifications/INDEX-TACHES.md`, `ECARTS.md` |
+| Tâches restantes | 30 (dont 15 de la vague D, 4 de l'équipe, 4 bloquées par une décision) ; 11 écarts | `docs/specifications/INDEX-TACHES.md`, `ECARTS.md` |
 
 ## 5. Prochaine tâche, par vague
 
 | Vague | Prochaine tâche | Vérification |
 |---|---|---|
-| C — reste (approuvée, D-038) | SF-001-03 (7 tâches : noms et validation du dossier, filtre et route d'extraction LLM), SF-001-05-03 et SF-001-06-04 (régression des données), SF-013-03 et SF-013-10 (assertions de contenu), TEST-013-08-01 (rechargement hors ligne) ; bloquées : SF-001-09 (D-013), SF-008-06 (D-014), SF-007-12 (D-016), SF-013-05 (Q-013-05-01) | `INDEX-TACHES.md` |
+| C — reste (approuvée, D-038) | TASK-013-10-03 (assertions de contenu des 73 tests « état capturé »), TEST-013-08-01 (rechargement hors ligne) ; bloquées : SF-001-09 (D-013), SF-008-06 (D-014), SF-007-12 (D-016), SF-013-05 (Q-013-05-01) | `INDEX-TACHES.md` |
 | C — tâches de l'équipe | validation clinique (TASK-001-05-01, TASK-001-06-01), avis du juriste (TASK-001-06-02), ChromaDB (TASK-011-03-02) | hors de l'environnement de Claude |
 | D — à approuver | DDXPlus (SF-001-19 ; les deux JSON manquants sont arrivés dans `../ddxplus-english/`), scénario S4 Python (SF-012-05), carte publique (SF-002-08), vidéo (SF-017-03) | — |
 | Décisions | Q-013-05-01 (rouge des erreurs de saisie), Q-016-02-01 (seuil de pertinence du conseiller), constitution 2.0.0 (D-033), Q-007-14-01, Q-013-10-01, Q-017-02-01 | `docs/product/decisions.md` |
@@ -86,6 +87,7 @@ Carte complète : `CLAUDE.md` §4. Sources de vérité : `CLAUDE.md` §5. En deu
 | 2026-11-07 | Consentement (D-028), inscription et fiches (D-029), tendances (D-032), base v9 | `docs/quality/2026-11-07-*` |
 | 2026-11-08 → 11-09 | Application Nolo (D-034), hôpital, centres spécialisés et console du ministère (D-035) | inspection visuelle |
 | 2026-11-09 | Assemblage du dépôt (MT-002) ; rédaction SDD complète, catalogue v2, rétro-spécification, `CLAUDE.md`, `ETAT.md`, commandes `.claude/commands/` (D-036) ; suites relancées ; 76 statuts d'interface corrigés en « état capturé » | `preuve-2026-11-09-suites.txt`, `-inspection-visuelle.txt`, `-croisement.txt` |
+| 2026-11-09 | Vague C, troisième lot (11 tâches) : `chargerReferentiel`, `src/server/domain/referentiel_symptomes.py`, `src/server/agents/triage.py`, `src/server/api/orientation.py`, `tests/regression/test_donnees_triage.py`, `tests/js/referentiel_c.test.mjs`, `tests/unit/test_extraction.py`, cas `html`/`patch` dans `tools/inspecter.py` | `preuve-2026-11-09-vague-c3.txt` |
 | 2026-11-09 | Vague C, deuxième lot (11 tâches) : `app/js/domain/triage.js` et copie du moteur (`tools/maj_moteur_nolo.py`), `empreinte_canonique` du paquet (`construire_paquet.py`, `empreinte.mjs`), `tests/js/regles_acceptation.test.mjs`, `tools/lire_journal.py`, `dedupliquer`, `docs/architecture/agents/`, `docs/product/roles.md`, `docs/compliance/aipd.md` ; script de preuve corrigé (pytest `-v`) | `preuve-2026-11-09-vague-c2.txt` |
 | 2026-11-09 | Vague C, premier lot (38 tâches) : recherches, fiabilité des pharmacies (`app/js/domain/fiabilite.js`, oracle `tools/exporter_fiabilite.py`), position (`position.js`), routeur extrait, `envoi.js`, règles `kb/rules` exportées (`app/data/regles.json`), conditions à 16 rubriques, `#/pro/conditions`, console (SC, échéances), jetons de couleur et exceptions déclarées, `tools/maj_sw.py` ; rapport de soumission mis à jour ; Q-013-05-01 ouverte | `preuve-2026-11-09-vague-c.txt` |
 | 2026-11-09 | Envoi du dépôt sur GitHub (jeton fourni par le propriétaire). Vagues B et C approuvées (D-038) : politique 1.4.0 et `tools/politique_json.py` ; base embarquée (`tools/exporter_base.py`) ; Conformité, orchestrateur, journal, parcours, cellule, A/B et conseiller en JavaScript ; oracles `--exporter-attendus` et `tools/exporter_classements.py` ; panneau « Comment Nolo a décidé » ; vues journal, cellule et A/B de la console ; `#/droits` ; `tools/evaluer_conseiller.mjs` ; `tools/inspecter.py` : 46 états, variable `NOLO_CHROME` ; 44 tests ajoutés (rouge puis vert, sauf 5 écrits avec le code, signalés dans la preuve) | `preuve-2026-11-09-vague-b.txt`, `eval-conseiller-2026-11-09.txt` |

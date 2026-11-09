@@ -1,0 +1,562 @@
+# Preuve — vague C (D-038), troisième lot : référentiel des symptômes (appareil et serveur), route d'extraction LLM filtrée, régression des données PCIME et IITT, html et patch dans le navigateur
+# Date : 2026-11-09T14:28Z
+# Environnement : Python 3.12.3, node v22.23.3, pytest 9.2.0, Playwright (Python) 1.64.1, Chromium headless shell 1243 (NOLO_CHROME)
+# Les rapports de scénarios réécrits par pytest (tests/reports/2026-11-04/) sont restaurés à la fin (git checkout).
+
+##################################################################
+# 1. Phase rouge (tests écrits avant le code)
+##################################################################
+## Lot 3 — référentiel (SF-001-03), régression des données (SF-001-05, SF-001-06)
+$ node --test tests/js/referentiel_c.test.mjs   # avant chargerReferentiel
+not ok 1 - tests/js/referentiel_c.test.mjs
+$ python3 -m pytest -q tests/regression tests/unit/test_extraction.py   # avant referentiel_symptomes.py et la route
+ERROR tests/unit/test_extraction.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+2 errors in 0.32s
+# Déjà couverts par des tests existants (rattachés à leurs tâches) : TEST-001-03-01 (appareil), -03, -05, -07
+# (tests/js/referentiel.test.mjs, tests/js/triage_parite.test.mjs).
+
+##################################################################
+# 2. Phase verte — toutes les suites
+##################################################################
+
+$ cd app && node --test tests/*.test.mjs
+ok 1 - TEST-007-20-01 : au moins 5 violations nommées sans gouvernance, 0 avec ; journal toujours actif
+ok 2 - TEST-007-20-02 : commutateur impossible hors du mode demo_synthetique
+ok 3 - TEST-011-08-01 : fragments cités par la politique et la Conformité présents ; aucun texte réservé
+ok 4 - TEST-011-08-02 : lecture bilingue ; identifiant inconnu
+ok 5 - TEST-011-08-03 : la base est mise en cache par le service worker (hors ligne)
+ok 6 - TEST-011-08-04 : taille de la base embarquée ≤ 3 Mio
+ok 7 - TEST-007-19-01 : six positions dans l’ordre, datées, avec agent et mandat
+ok 8 - TEST-007-19-02 : le District ne reçoit que des agrégats ; l’APDP ne reçoit pas les données
+ok 9 - TEST-007-19-03 : la demande nominative du District est bloquée (deux articles, repli agrégat)
+ok 10 - TEST-007-19-04 : un désaccord est marqué ; l’échange reste ouvert jusqu’à la décision humaine
+ok 11 - TEST-016-01-01 : mêmes 5 fragments, dans le même ordre, que kb/bm25.py (40 questions)
+ok 12 - TEST-016-01-02 : textes camerounais d’abord
+ok 13 - TEST-016-01-03 : question en anglais enrichie par le glossaire
+ok 14 - TEST-016-01-04 : recherche rapide (≤ 50 ms par question)
+ok 15 - TEST-016-02-01 : un extrait cité de l’art. 32 de la loi 2024/017
+ok 16 - TEST-016-02-02 : refus sans fondement, sans extrait
+ok 17 - TEST-016-02-03 : la mention accompagne toute réponse
+ok 18 - TEST-016-02-04 : ni la question ni la réponse ne sont conservées ou transmises
+ok 19 - TEST-016-03-01 : écran du conseiller — champ de 300 caractères, 4 exemples, réponse
+ok 20 - TEST-016-03-02 : liens vers le conseiller dans les espaces professionnel et ministériel
+ok 21 - TEST-016-03-03 : catalogues droits.* aux mêmes clés
+ok 22 - TEST-016-04-01 : rapport avec les deux mesures sur Q23 à Q40
+ok 23 - TEST-016-04-02 : cibles atteintes (document ≥ 11/18 ; anglais ≥ 3/5)
+ok 24 - TEST-015-04-01 : l’empreinte affichée est celle du JSON affiché
+ok 25 - TEST-015-04-02 : même version que config/policy.yaml ; aucune seconde politique codée en dur
+ok 26 - TEST-007-18-01 : le panneau repliable est présent sur les six écrans
+ok 27 - TEST-007-18-02 : chaîne des agents de l’écran Urgence, dans l’ordre
+ok 28 - TEST-007-18-03 : ligne d’un fragment — identifiant, article, extrait ≤ 240 caractères, statut
+ok 29 - TEST-007-18-04 : aucun mot du texte libre dans le panneau
+ok 30 - TEST-007-18-05 : en anglais, version officielle ou traduction marquée
+ok 31 - TEST-001-15-07 : la mention « table de démonstration » est visible sur l’écran des pistes
+ok 32 - CA-CONS-01 : aucune case → refus
+ok 33 - CA-CONS-02 : une case sans âge → refus
+ok 34 - CA-CONS-03 : mineur sans accord → refus ; avec accord → accepté
+ok 35 - CA-CONS-04 : sans partage → trois finalités à faux
+ok 36 - CA-CONS-05 : exactement cinq champs
+ok 37 - CA-CONS-06 : absent, illisible ou autre version → redemander
+ok 38 - Reformulation : expression camerounaise « le corps chauffe » → fièvre ; négation reconnue
+ok 39 - Reformulation en anglais
+ok 40 - FR-DX-03 : signe de danger → urgence, aucune piste
+ok 41 - FR-DX-03 : réponse « oui » à une question de sécurité → urgence
+ok 42 - FR-DX-05 : diarrhée seule ou fièvre + frissons → hors champ
+ok 43 - FR-DX-06 : piste art. 48 → message neutre, jamais de nom
+ok 44 - FR-DX-04 : au plus 3 pistes, triées par score
+ok 45 - FR-DX-17 : le besoin le plus élevé l’emporte ; enfant → pédiatrie
+ok 46 - FR-DX-19 : structure couvrante, ouverte avant fermée ; repli avec manque
+ok 47 - FR-ETS-07 : un établissement non vérifié n’apparaît jamais
+ok 48 - Recherche de médicament : rupture et lignes de plus de 48 h exclues
+ok 49 - CA-ETS-01 : format du NIU
+ok 50 - CA-ETS-04 : officine sans questions H ni B ; hôpital H8 = non sans H8a ni onglet sang
+ok 51 - FR-ETS-05 : une réponse à une question masquée n’est pas enregistrée
+ok 52 - CA-ETS-07 et 08 : rapport d’import, quatre motifs distincts ; PDF refusé
+ok 53 - FR-ETS-10 : expiration à 48 h, alerte 12 h avant
+ok 54 - CA-TEND-05 : 3 → « moins de 5 » ; 23 → 25
+ok 55 - CA-TEND-07 : rupture d’artésunate visible dans la demande non satisfaite à Douala V
+ok 56 - TEST-001-12-01 : seuls les numéros confirmés de la politique sont affichés (111 « à confirmer » exclu)
+ok 57 - TEST-005-03-01 : l’onglet Sang rappelle d’abord l’urgence
+ok 58 - TEST-006-01-01 : quatre choix de signalement sous un résultat de médicament
+ok 59 - TEST-008-07-02 et TEST-001-09-03 : une raison propre à chaque issue ; lien vers un soignant
+ok 60 - TEST-002-03-02 : la définition SC du signal est affichée dans la console
+ok 61 - TEST-002-05-02 : signal à trier depuis 20 h → échéance du triage dans 4 h
+ok 62 - TEST-004-02-03 et TEST-008-08-02 : conditions — formule de tri publiée ; mêmes rubriques en FR et EN
+ok 63 - TEST-010-13-01 : conditions des établissements liées depuis l’inscription, bilingues
+ok 64 - TEST-008-05-04 : retirer « signalements » efface les signalements de l’appareil
+ok 65 - TEST-008-03-01 à 03 : position consentie, arrondie, jamais stockée ; quartier ; cadre
+ok 66 - TEST-006-02-02, TEST-006-03-02, TEST-006-04-02 : mêmes scores, effectifs et gels que la référence Python
+ok 67 - TEST-006-02-01 : 6 positifs sur 8 → (6 + 2) / (8 + 4) avant décroissance
+ok 68 - TEST-006-01-03 : poids d’un négatif — déclaration de 8 h (0,25) et compte de 3 jours (0,5)
+ok 69 - TEST-006-03-01 : la fiabilité ne départage qu’à moins de 1 km
+ok 70 - TEST-006-04-01 : 8 négatifs en 2 h → baisse gelée, saisine du modérateur
+ok 71 - Démonstration dans Nolo : une pharmacie fictive en rafale est gelée ; les signalements de la personne comptent
+ok 72 - Mêmes clés en français et en anglais
+ok 73 - Aucune valeur vide ; listes de même longueur
+ok 74 - FR-DX-04 : le mot « probabilité » n’apparaît dans aucun catalogue
+ok 75 - Typographie française : espace fine avant ? et insécable dans « 18 ans »
+ok 76 - SHA-256 : vecteurs de référence
+ok 77 - TEST-007-21-01 : une entrée chaînée par décision, sans texte libre ni champ interdit
+ok 78 - TEST-007-21-02 : une entrée altérée est désignée ; après restauration, chaîne valide
+ok 79 - TEST-007-21-03 : mêmes empreintes que src/server/gouvernance/journal.py
+ok 80 - TEST-001-07-05 : « mon enfant de 3 ans a des lèvres bleues » → urgence, questions de sécurité répondues « non »
+ok 81 - FR-168 : le moteur v1 suffit quand la liste de Nolo ne voit rien (fièvre et nuque raide à 3 ans, PCIME-MFTG-01)
+ok 82 - TEST-001-07-02 : un cas non urgent n’affiche aucun niveau
+ok 83 - Copie versionnée : app/js/vendor et app/data/paquet_triage.json identiques aux sources (src/client/ondevice)
+ok 84 - TEST-007-17-01 : rien ne s’exécute sans décision ; action inconnue = sans fondement
+ok 85 - TEST-007-17-05 : Nolo fonctionne en mode demo_synthetique
+ok 86 - TEST-001-15-01 : module des pistes absent hors démonstration ou désactivé
+ok 87 - TEST-001-15-06 : décision de Conformité avant affichage ; journal minimal
+ok 88 - Art. 48 et hors champ : même trace au journal, aucune catégorie protégée
+ok 89 - TEST-007-17-03 : politique convertie — même version que policy.yaml, même empreinte canonique
+ok 90 - TEST-007-17-04 : mêmes verdicts, conditions, replis et fragments que Python (S1 à S3, variantes, grille)
+ok 91 - TEST-007-17-02 : chaque fragment cité existe dans la base embarquée
+ok 92 - TEST-007-17-06 : décision rapide (médiane ≤ 5 ms) ; politique ≤ 30 Kio
+ok 93 - TEST-010-01-01 et TEST-010-01-04 : tuile fictive — au moins 20 établissements, niveaux et spécialités couverts, schéma
+ok 94 - TEST-013-02-01 et TEST-013-02-02 : routeur — route la plus longue ; garde du consentement
+ok 95 - TEST-013-05-01 et TEST-013-05-03 : couleurs en dur et réservation du rouge et de l’ambre (exceptions de DESIGN.md)
+ok 96 - TEST-013-06-04 : contrastes des paires de jetons texte / fond ≥ 4,5:1
+ok 97 - TEST-013-08-01 (liste) : tout fichier servi de app/ figure dans FICHIERS du service worker
+ok 98 - TEST-013-11-02 : seules les clés autorisées sont écrites dans le stockage local
+ok 99 - TEST-015-03-01 : offre et demande — Littoral : artésunate, insatisfaction ≥ 11 %
+ok 100 - TEST-015-06-02 : lacunes de la console = registre docs/compliance/registre-lacunes.md
+ok 101 - TEST-003-02-01 : élargir jusqu’à obtenir 3 résultats (rayon 50 km)
+ok 102 - TEST-003-02-02 : une structure ouverte passe avant une structure fermée plus proche
+ok 103 - TEST-003-01-03 : saisie libre « cœur » → cardiologie (synonymes de recherche_specialite.yaml)
+ok 104 - TEST-003-04-01 : le centre de dialyse fictif apparaît pour la néphrologie, type centre spécialisé
+ok 105 - TEST-004-01-01 à 03 : catalogue des DCI et filtre
+ok 106 - TEST-005-01-01 : sang — rupture exclue, « disponible » avant « faible », puis distance
+ok 107 - TEST-005-02-01 : appel au don seulement si la majorité des banques est en rupture
+ok 108 - TEST-010-03-02 : une déclaration de sang de plus de 6 h n’est plus montrée
+ok 109 - TEST-001-01-02 : âge de 130 ans refusé (ageMax)
+ok 110 - TEST-001-01-03 : 600 caractères au plus ; compteur « 600 / 600 »
+ok 111 - TEST-001-01-04 et TEST-001-01-05 : l’exemple remplit sans valider ; rien n’est écrit ni envoyé
+ok 112 - TEST-001-13-04 : « for two weeks » → 14 jours
+ok 113 - TEST-001-13-05 : changer de langue réaffiche les signes sans nouvelle analyse
+ok 114 - TEST-001-18-02 : code de fiche au format XXX-XXX, sans 0, O, 1 ni I
+ok 115 - TEST-001-11-01 : aucun nom de médicament dans les écrans du parcours citoyen ni dans la table des pistes
+ok 116 - TEST-001-02-02 : aucune question sur la vie sexuelle, la génétique ou la biométrie
+ok 117 - TEST-001-02-01 et TEST-002-01-01 : la contribution ne contient que quatre champs, des codes SYM-NNN
+ok 118 - TEST-008-02-01 : sans consentement « surveillance », aucune contribution n’est préparée
+ok 119 - Seuil de publication : moins de 5 → rien ; sinon arrondi à 5
+ok 120 - CUSUM : les deux regroupements injectés sont détectés, et seulement eux
+ok 121 - Annexe 2 du RSI : deux « oui » sur quatre déclenchent la notification
+ok 122 - « Et si » : baisser le seuil publie des cases fines ; agréger au district retarde la détection
+ok 123 - Carte : les 10 régions ont un tracé
+# tests 123
+# pass 123
+# fail 0
+--> code de sortie : 0
+
+$ node --test tests/js/*.test.mjs
+ok 1 - CA-ETS-13 : catalogues FR et EN aux mêmes clés, sans valeur vide
+ok 2 - Toute clé utilisée par la console existe dans le catalogue
+ok 3 - Chaque question, option, motif, action et code d'erreur du serveur a son libellé
+ok 4 - Parité des conditions de la fiche entre JavaScript et Python (500 jeux de réponses)
+ok 5 - chargement : 110 entrées, codes et jetons uniques, snomed vide (TEST-001-03-01)
+ok 6 - FR-113 : refus hors mode démo tant que validateur_clinique est vide
+ok 7 - exclusions : agression_sexuelle et priapisme absents des 10 listes et de l'index (TEST-001-03-03)
+ok 8 - paquet invalide refusé : jeton dupliqué, code modifié, snomed rempli, expression ambiguë (TEST-001-03-04)
+ok 9 - liste fermée de 5_11_ans : critères adultes de la règle grossesse accessibles (CA-001-03-02)
+ok 10 - TEST-001-03-02 : liste fermée de 2_5_ans (77 entrées, pas d'adulte) et de 5_11_ans
+ok 11 - TEST-001-03-04 : un référentiel invalide est refusé et la version embarquée reste active
+ok 12 - TEST-001-03-06 : extraction rapide (médiane ≤ 50 ms sur un texte de 500 caractères)
+ok 13 - TEST-001-03-13 : 0 jeton de condition inaccessible depuis la liste fermée de sa tranche
+ok 14 - TEST-001-05-01 : 8 règles PCIME, toutes sur 2_6_mois, 6_mois_2_ans, 2_5_ans
+ok 15 - TEST-001-05-02 : chaque signe général de danger suffit (15 cas sur 15)
+ok 16 - TEST-001-05-03 : fièvre et raideur de nuque à 3 ans → urgence immédiate (PCIME-MFTG-01)
+ok 17 - TEST-001-05-04 : fièvre seule — consultation_24h si risque de paludisme élevé, sinon consultation_48h
+ok 18 - TEST-001-05-05 : diarrhée avec sang, cochée séparément ou reconnue ensemble → PCIME-J-02
+ok 19 - TEST-001-05-06 : diarrhée depuis 14 jours → PCIME-J-03 ; 13 jours → consultation_48h
+ok 20 - TEST-001-06-01 : critères dont la source fixe un âge
+ok 21 - TEST-001-06-02 : iitt_12_ans_plus — 13 rouges, 22 jaunes ; chaque témoin donne au moins le niveau de sa couleur
+ok 22 - TEST-001-06-03 : iitt_moins_12_ans — 16 rouges, 16 jaunes ; chaque témoin donne au moins le niveau de sa couleur
+ok 23 - TEST-001-06-04 : composites (détresse respiratoire, traumatisme, grossesse)
+ok 24 - TEST-001-06-05 : jetons exclus absents des conditions ; yeux creusés et boit peu à 7 ans → immédiate
+ok 25 - TEST-001-04-03 : une règle modifiée après construction est refusée au chargement (empreinte)
+ok 26 - TEST-001-04-01 : paquet sans validateur — refusé en mode complet, accepté en démo avec la mention
+ok 27 - 19 scénarios nommés : même niveau, même priorité, même règle
+ok 28 - 42 phrases de référence : mêmes jetons, même non_code (TEST-001-03-05)
+ok 29 - listes fermées : mêmes jetons pour chacune des 10 tranches (TEST-001-03-02, TEST-001-03-13)
+ok 30 - fermetures transitives identiques (TEST-001-03-07)
+ok 31 - 400 tirages aléatoires : parité stricte du moteur
+ok 32 - monotonie : ajouter un jeton n'abaisse jamais le niveau (ADR-005)
+# tests 32
+# pass 32
+# fail 0
+
+$ python3 -m pytest -v -p no:cacheprovider
+tests/integration/test_scenarios_demo.py::test_cli_triage_sur_appareil_json PASSED [  0%]
+tests/integration/test_scenarios_demo.py::test_scenario_orientation_urgente PASSED [  1%]
+tests/integration/test_scenarios_demo.py::test_scenario_medicament_sensible_gouvernance PASSED [  2%]
+tests/integration/test_scenarios_demo.py::test_scenario_medicament_sensible_sans_gouvernance PASSED [  3%]
+tests/integration/test_scenarios_demo.py::test_scenario_regroupement_gouvernance PASSED [  3%]
+tests/integration/test_scenarios_demo.py::test_scenario_regroupement_sans_gouvernance PASSED [  4%]
+tests/integration/test_scenarios_demo.py::test_variante_et_si_derogation_art48 PASSED [  5%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[M041618186649L-True] PASSED [  6%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[m041618186649l-True] PASSED [  6%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[M 0416 1818 6649 L-True] PASSED [  7%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[P041618186649Q-True] PASSED [  8%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[M04161818664L-False] PASSED [  9%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[041618186649L-False] PASSED [  9%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[M041618186649-False] PASSED [ 10%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[M0416181866A9L-False] PASSED [ 11%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[MM41618186649L-False] PASSED [ 12%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[-False] PASSED [ 12%]
+tests/python/test_etablissements.py::test_ca_ets_01_inscription_refuse_niu_mal_forme PASSED [ 13%]
+tests/python/test_etablissements.py::test_ca_ets_02_niu_et_email_uniques PASSED [ 14%]
+tests/python/test_etablissements.py::test_ca_ets_03_sans_code_pas_de_connexion_ni_fiche PASSED [ 15%]
+tests/python/test_etablissements.py::test_code_a_usage_unique PASSED     [ 15%]
+tests/python/test_etablissements.py::test_mot_de_passe_jamais_en_clair PASSED [ 16%]
+tests/python/test_etablissements.py::test_mot_de_passe_refuse[court-E-ETS-MDP-COURT] PASSED [ 17%]
+tests/python/test_etablissements.py::test_mot_de_passe_refuse[abcM041618186649Lxyz-E-ETS-MDP-CONTIENT-NIU] PASSED [ 18%]
+tests/python/test_etablissements.py::test_fiche_questions_masquees_non_enregistrees PASSED [ 18%]
+tests/python/test_etablissements.py::test_fiche_champs_conditionnels_obligatoires PASSED [ 19%]
+tests/python/test_etablissements.py::test_fiche_exige_photo_de_facade PASSED [ 20%]
+tests/python/test_etablissements.py::test_type_non_disponible_dans_cette_livraison PASSED [ 21%]
+tests/python/test_etablissements.py::test_ca_ets_05_niu_absent_de_la_liste_reste_invisible PASSED [ 21%]
+tests/python/test_etablissements.py::test_ca_ets_06_decision_du_verificateur PASSED [ 22%]
+tests/python/test_etablissements.py::test_niu_de_la_liste_simulee_verifie_automatiquement PASSED [ 23%]
+tests/python/test_etablissements.py::test_ca_ets_07_rapport_ligne_par_ligne PASSED [ 24%]
+tests/python/test_etablissements.py::test_import_csv_point_virgule_et_formules PASSED [ 24%]
+tests/python/test_etablissements.py::test_ca_ets_08_formats_refuses[stock.pdf-%PDF-1.7 ...-E-STOCK-FORMAT] PASSED [ 25%]
+tests/python/test_etablissements.py::test_ca_ets_08_formats_refuses[stock.xlsx-%PDF-1.7 deguise-E-STOCK-FORMAT] PASSED [ 26%]
+tests/python/test_etablissements.py::test_ca_ets_08_formats_refuses[photo.jpg-\xff\xd8\xff\xe0 rien-E-STOCK-FORMAT] PASSED [ 27%]
+tests/python/test_etablissements.py::test_ca_ets_08_formats_refuses[faux.xlsx-PK\x03\x04 pas un classeur-E-STOCK-FICHIER-ILLISIBLE] PASSED [ 27%]
+tests/python/test_etablissements.py::test_ca_ets_08_formats_refuses[vide.csv-nom;quantite\nx;1\n-E-STOCK-ENTETE] PASSED [ 28%]
+tests/python/test_etablissements.py::test_import_avant_fiche_refuse PASSED [ 29%]
+tests/python/test_etablissements.py::test_modele_xlsx_relu_par_l_import PASSED [ 30%]
+tests/python/test_etablissements.py::test_ca_ets_09_expiration_et_confirmation PASSED [ 30%]
+tests/python/test_etablissements.py::test_ca_ets_10_metadonnees_supprimees PASSED [ 31%]
+tests/python/test_etablissements.py::test_photo_exige_la_case_et_un_vrai_format PASSED [ 32%]
+tests/python/test_etablissements.py::test_ca_ets_11_blocage_apres_5_echecs PASSED [ 33%]
+tests/python/test_etablissements.py::test_ca_ets_12_changement_sensible PASSED [ 33%]
+tests/python/test_etablissements.py::test_recherche_sensible_jamais_traitee_par_le_serveur PASSED [ 34%]
+tests/python/test_etablissements.py::test_recherche_tri_ouvert_puis_distance_et_rupture_exclue PASSED [ 35%]
+tests/python/test_etablissements.py::test_compte_desactive_invisible_puis_reactive PASSED [ 36%]
+tests/python/test_etablissements.py::test_apercu_public_cache_les_references_du_verificateur PASSED [ 36%]
+tests/python/test_etablissements.py::test_journal_chaine_et_historique PASSED [ 37%]
+tests/python/test_etablissements.py::test_journal_refuse_les_champs_interdits PASSED [ 38%]
+tests/python/test_tendances.py::test_ca_tend_01_une_recherche_un_compteur_rien_d_autre PASSED [ 39%]
+tests/python/test_tendances.py::test_recherche_non_satisfaite_comptee_comme_telle PASSED [ 39%]
+tests/python/test_tendances.py::test_ca_tend_02_recherches_sensibles_jamais_comptees PASSED [ 40%]
+tests/python/test_tendances.py::test_ca_tend_03_localisation_par_l_arrondissement_et_le_code_ins PASSED [ 41%]
+tests/python/test_tendances.py::test_ca_tend_04_repli_a_15_km PASSED     [ 42%]
+tests/python/test_tendances.py::test_zone_sans_code_valide_au_niveau_national_seulement PASSED [ 42%]
+tests/python/test_tendances.py::test_ca_tend_05_seuil_et_arrondi PASSED  [ 43%]
+tests/python/test_tendances.py::test_ca_tend_06_semaines_completes_seulement PASSED [ 44%]
+tests/python/test_tendances.py::test_semaine_en_cours_jamais_montree PASSED [ 45%]
+tests/python/test_tendances.py::test_ca_tend_07_demande_non_satisfaite PASSED [ 45%]
+tests/python/test_tendances.py::test_agregation_par_code_ins PASSED      [ 46%]
+tests/python/test_tendances.py::test_tendance_hausse_seulement_au_dela_des_seuils PASSED [ 47%]
+tests/python/test_tendances.py::test_serie_hebdomadaire PASSED           [ 48%]
+tests/python/test_tendances.py::test_ca_tend_08_reserve_aux_etablissements_verifies PASSED [ 48%]
+tests/python/test_tendances.py::test_parametres_invalides[args0-E-TEND-ZONE] PASSED [ 49%]
+tests/python/test_tendances.py::test_parametres_invalides[args1-E-TEND-ZONE] PASSED [ 50%]
+tests/python/test_tendances.py::test_parametres_invalides[args2-E-TEND-TYPE] PASSED [ 51%]
+tests/python/test_tendances.py::test_ca_tend_09_aucune_valeur_brute_ni_route_brute PASSED [ 51%]
+tests/python/test_tendances.py::test_indicateurs PASSED                  [ 52%]
+tests/python/test_tendances.py::test_carte_d_un_arrondissement_couvre_son_departement PASSED [ 53%]
+tests/regression/test_donnees_triage.py::test_referentiel_valide_cote_serveur_et_sources_existantes PASSED [ 54%]
+tests/regression/test_donnees_triage.py::test_generation_reproductible_et_codes_stables PASSED [ 54%]
+tests/regression/test_donnees_triage.py::test_normalisation_identique_en_javascript_et_en_python PASSED [ 55%]
+tests/regression/test_donnees_triage.py::test_regles_pcime_sourcees_et_jetons_utilisables PASSED [ 56%]
+tests/regression/test_donnees_triage.py::test_criteres_iitt_comptes_sources_et_exclusions PASSED [ 57%]
+tests/unit/test_controle_publication.py::test_depot_conforme_sort_en_0 PASSED [ 57%]
+tests/unit/test_controle_publication.py::test_faux_pdf_sort_en_1 PASSED  [ 58%]
+tests/unit/test_controle_publication.py::test_pdf_sans_extension_sort_en_1 PASSED [ 59%]
+tests/unit/test_controle_publication.py::test_secret_sort_en_1[cle-aws] PASSED [ 60%]
+tests/unit/test_controle_publication.py::test_secret_sort_en_1[jeton-github] PASSED [ 60%]
+tests/unit/test_controle_publication.py::test_secret_sort_en_1[cle-privee] PASSED [ 61%]
+tests/unit/test_controle_publication.py::test_secret_sort_en_1[cle-openssh] PASSED [ 62%]
+tests/unit/test_controle_publication.py::test_fragment_reserve_dans_la_base_sort_en_1 PASSED [ 63%]
+tests/unit/test_controle_publication.py::test_fragment_reserve_exporte_ailleurs_sort_en_1 PASSED [ 63%]
+tests/unit/test_controle_publication.py::test_reference_a_un_fragment_reserve_sort_en_1 PASSED [ 64%]
+tests/unit/test_controle_publication.py::test_pages_du_texte_reserve_sort_en_1 PASSED [ 65%]
+tests/unit/test_controle_publication.py::test_fiche_en_double_sort_en_1 PASSED [ 66%]
+tests/unit/test_controle_publication.py::test_depot_git_controle_ce_qui_serait_publie PASSED [ 66%]
+tests/unit/test_controle_publication.py::test_le_vrai_depot_est_conforme PASSED [ 67%]
+tests/unit/test_extraction.py::test_filtrer_propositions_ne_garde_que_les_jetons_utilisables PASSED [ 68%]
+tests/unit/test_extraction.py::test_route_extraction_codes_de_reponse PASSED [ 69%]
+tests/unit/test_extraction.py::test_journal_de_l_extraction_sans_texte_ni_jeton_refuse PASSED [ 69%]
+tests/unit/test_gouvernance.py::test_politique_valeur_source_et_variante PASSED [ 70%]
+tests/unit/test_gouvernance.py::test_resolution_du_mode PASSED           [ 71%]
+tests/unit/test_gouvernance.py::test_journal_chaine_et_verification PASSED [ 72%]
+tests/unit/test_gouvernance.py::test_journal_rejette_les_champs_interdits PASSED [ 72%]
+tests/unit/test_gouvernance.py::test_pseudonyme_hmac_stable_et_non_reversible PASSED [ 73%]
+tests/unit/test_gouvernance.py::test_art48_bloque_quel_que_soit_le_consentement PASSED [ 74%]
+tests/unit/test_gouvernance.py::test_derogation_simulee_change_le_verdict PASSED [ 75%]
+tests/unit/test_gouvernance.py::test_table_des_modes PASSED              [ 75%]
+tests/unit/test_gouvernance.py::test_chaque_decision_cite_un_fragment_ou_bloque_sans_fondement PASSED [ 76%]
+tests/unit/test_gouvernance.py::test_transfert_hors_pays PASSED          [ 77%]
+tests/unit/test_gouvernance.py::test_mineur_sans_consentement_parental PASSED [ 78%]
+tests/unit/test_gouvernance.py::test_orchestrateur_journalise_et_execute PASSED [ 78%]
+tests/unit/test_gouvernance.py::test_hors_demo_l_entree_n_est_pas_conservee PASSED [ 79%]
+tests/unit/test_gouvernance.py::test_actions_du_module_poc PASSED        [ 80%]
+tests/unit/test_gouvernance.py::test_module_poc_inactif_ou_transmis_est_bloque PASSED [ 81%]
+tests/unit/test_rapport_pdf.py::test_titres_paragraphes_et_mise_en_forme PASSED [ 81%]
+tests/unit/test_rapport_pdf.py::test_tableau_et_listes PASSED            [ 82%]
+tests/unit/test_rapport_pdf.py::test_texte_echappe PASSED                [ 83%]
+tests/unit/test_rapport_pdf.py::test_page_autonome_sans_ressource_externe PASSED [ 84%]
+tests/unit/test_rapport_pdf.py::test_pdf_produit_par_chrome PASSED       [ 84%]
+tests/unit/test_vague_c.py::test_lire_journal_s3_affiche_25_evenements_dans_l_ordre PASSED [ 85%]
+tests/unit/test_vague_c.py::test_deux_contributions_identiques_du_meme_appareil_comptent_une_fois PASSED [ 86%]
+tests/unit/test_vague_c.py::test_base_publiee_complete_et_readme PASSED  [ 87%]
+tests/unit/test_vague_c.py::test_exporter_attendus_produit_le_fichier PASSED [ 87%]
+tests/unit/test_vague_c.py::test_un_mandat_par_agent_institutionnel PASSED [ 88%]
+tests/unit/test_vague_c.py::test_matrice_des_huit_roles_sourcee PASSED   [ 89%]
+tests/unit/test_vague_c.py::test_aipd_couvre_les_cinq_finalites_et_le_poc PASSED [ 90%]
+tests/unit/test_verifier_rapport.py::test_rapport_conforme_sort_en_0 PASSED [ 90%]
+tests/unit/test_verifier_rapport.py::test_section_manquante_sort_en_1 PASSED [ 91%]
+tests/unit/test_verifier_rapport.py::test_sections_dans_le_desordre_sort_en_1 PASSED [ 92%]
+tests/unit/test_verifier_rapport.py::test_pdf_de_5_pages_accepte PASSED  [ 93%]
+tests/unit/test_verifier_rapport.py::test_pdf_de_6_pages_sort_en_1 PASSED [ 93%]
+tests/unit/test_verifier_rapport.py::test_pdf_absent_sort_en_1 PASSED    [ 94%]
+tests/unit/test_verifier_rapport.py::test_nom_perime_sort_en_1 PASSED    [ 95%]
+tests/unit/test_verifier_rapport.py::test_chiffre_perime_sort_en_1 PASSED [ 96%]
+tests/unit/test_verifier_rapport.py::test_lien_du_depot_absent_sort_en_1 PASSED [ 96%]
+tests/unit/test_verifier_rapport.py::test_chiffre_de_la_base_absent_sort_en_1 PASSED [ 97%]
+tests/unit/test_verifier_rapport.py::test_etat_discordant_sort_en_1 PASSED [ 98%]
+tests/unit/test_verifier_rapport.py::test_sous_fonctionnalite_inconnue_sort_en_1 PASSED [ 99%]
+tests/unit/test_verifier_rapport.py::test_lacunes_du_poc_absentes_sort_en_1 PASSED [100%]
+============================= 133 passed in 29.38s =============================
+
+$ python3 tools/politique_json.py --verifier
+à jour : politique 1.4.0, sha256:300801eb5b9239233580c876a7b226853507d0efc14bd966de34413904e5aaab
+--> code de sortie : 0
+$ python3 tools/exporter_base.py --verifier
+à jour
+--> code de sortie : 0
+$ python3 tools/scenarios/executer.py --exporter-attendus tests/js/fixtures/decisions_attendues.json
+/tmp/claude-1000/-home-aaron-Bureau-projet-hack/554375f0-8981-418c-9d74-db14436e0454/scratchpad/attendus-controle.json : 3908 cas, 89 décisions distinctes (scénarios S1 à S3 × 3 politiques ; grille de 26 actions)
+identique au fichier versionné
+$ python3 tools/exporter_classements.py
+tests/js/fixtures/classements_attendus.json : 40 questions, index de 816 fragments
+identique au fichier versionné
+$ python3 -I kb/traductions/verifier_traductions.py
+citations : 34 entrées — anglais_officiel_dans_la_base : 8, anglais_officiel_dans_la_source : 1, non_officielle : 20, original_anglais : 1, version_anglaise_officielle_a_verser : 4
+glossaire : 38 entrées, 141 expressions anglaises, 66 termes français, 66 retrouvés dans la base
+conforme
+$ python3 tools/verifier_base.py --reconstruire
+2034 fragments ; 21 documents ; 71 fragments cités contrôlés
+reconstruction : identique octet pour octet
+conforme
+
+$ node tools/evaluer_conseiller.mjs
+Document attendu : 18/18 (cible ≥ 11/18)
+Référence exacte : 15/18
+Anglais sur des lois sans version anglaise (Q31 à Q34, Q38) : 5/5 (cible ≥ 3/5)
+Cibles atteintes
+
+# Réserve : les expressions françaises courantes (`courant_fr`, glossaire 1.2.0) ont été ajoutées le 2026-11-09
+# en lisant la question de CA-016-02-01 ; elles recoupent la formulation de Q23, Q26 et Q30. Mesure du même jour
+# sans elles : document 18/18, référence exacte 12/18. Une mesure non biaisée demande des questions nouvelles.
+# Index : les 816 fragments de la base embarquée (app/data/base.json), pas les 2 034 de kb/ (kb/eval/run_eval.py).
+
+##################################################################
+# 3. Inspection visuelle réelle (46 états × 4 largeurs)
+##################################################################
+$ NOLO_CHROME=…/chrome-headless-shell python3 tools/inspecter.py <captures> 360,390,768,1440
+
+=== 360px === erreurs console : []
+  01-bienvenue: OK
+  02-bienvenue-age: OK
+  03-bienvenue-parental: OK
+  04-bienvenue-fait: OK
+  05-accueil: OK
+  06-decrire-erreurs: OK
+  07-decrire-exemple: OK
+  08-verifier: OK
+  09-pistes: OK
+  10-ou-aller: OK
+  11-fiche: OK
+  12-verifier-danger: OK
+  13-urgence: OK
+  40-urgence-decision: OK
+  14-confidentiel: OK
+  15-hors-champ: OK
+  16-medicament: OK
+  17-sang: OK
+  18-service: OK
+  19-conditions: OK
+  20-mes-donnees: OK
+  21-pro-entree: OK
+  22-pro-accueil: OK
+  23-pro-stock: OK
+  24-pro-tendances: OK
+  25-pro-fiche: OK
+  26-pro-indicateurs: OK
+  27-pro-compte: OK
+  28-inscription-0: OK
+  29-inscription-1-erreurs: OK
+  47-pro-conditions: OK
+  31-hopital-services: OK
+  32-hopital-fiche: OK
+  33-recherche-dialyse: OK
+  34-ministere-entree: OK
+  35-ministere-carte: OK
+  36-ministere-signaux: OK
+  37-ministere-agrements: OK
+  38-ministere-offre: OK
+  39-ministere-politique: OK
+  41-ministere-journal: OK
+  42-ministere-cellule: OK
+  43-ministere-ab: OK
+  44-ministere-ab-complet: OK
+  45-droits: OK
+  46-droits-reponse: OK
+  30-home-en: OK
+
+=== 390px === erreurs console : []
+  01-bienvenue: OK
+  02-bienvenue-age: OK
+  03-bienvenue-parental: OK
+  04-bienvenue-fait: OK
+  05-accueil: OK
+  06-decrire-erreurs: OK
+  07-decrire-exemple: OK
+  08-verifier: OK
+  09-pistes: OK
+  10-ou-aller: OK
+  11-fiche: OK
+  12-verifier-danger: OK
+  13-urgence: OK
+  40-urgence-decision: OK
+  14-confidentiel: OK
+  15-hors-champ: OK
+  16-medicament: OK
+  17-sang: OK
+  18-service: OK
+  19-conditions: OK
+  20-mes-donnees: OK
+  21-pro-entree: OK
+  22-pro-accueil: OK
+  23-pro-stock: OK
+  24-pro-tendances: OK
+  25-pro-fiche: OK
+  26-pro-indicateurs: OK
+  27-pro-compte: OK
+  28-inscription-0: OK
+  29-inscription-1-erreurs: OK
+  47-pro-conditions: OK
+  31-hopital-services: OK
+  32-hopital-fiche: OK
+  33-recherche-dialyse: OK
+  34-ministere-entree: OK
+  35-ministere-carte: OK
+  36-ministere-signaux: OK
+  37-ministere-agrements: OK
+  38-ministere-offre: OK
+  39-ministere-politique: OK
+  41-ministere-journal: OK
+  42-ministere-cellule: OK
+  43-ministere-ab: OK
+  44-ministere-ab-complet: OK
+  45-droits: OK
+  46-droits-reponse: OK
+  30-home-en: OK
+
+=== 768px === erreurs console : []
+  01-bienvenue: OK
+  02-bienvenue-age: OK
+  03-bienvenue-parental: OK
+  04-bienvenue-fait: OK
+  05-accueil: OK
+  06-decrire-erreurs: OK
+  07-decrire-exemple: OK
+  08-verifier: OK
+  09-pistes: OK
+  10-ou-aller: OK
+  11-fiche: OK
+  12-verifier-danger: OK
+  13-urgence: OK
+  40-urgence-decision: OK
+  14-confidentiel: OK
+  15-hors-champ: OK
+  16-medicament: OK
+  17-sang: OK
+  18-service: OK
+  19-conditions: OK
+  20-mes-donnees: OK
+  21-pro-entree: OK
+  22-pro-accueil: OK
+  23-pro-stock: OK
+  24-pro-tendances: OK
+  25-pro-fiche: OK
+  26-pro-indicateurs: OK
+  27-pro-compte: OK
+  28-inscription-0: OK
+  29-inscription-1-erreurs: OK
+  47-pro-conditions: OK
+  31-hopital-services: OK
+  32-hopital-fiche: OK
+  33-recherche-dialyse: OK
+  34-ministere-entree: OK
+  35-ministere-carte: OK
+  36-ministere-signaux: OK
+  37-ministere-agrements: OK
+  38-ministere-offre: OK
+  39-ministere-politique: OK
+  41-ministere-journal: OK
+  42-ministere-cellule: OK
+  43-ministere-ab: OK
+  44-ministere-ab-complet: OK
+  45-droits: OK
+  46-droits-reponse: OK
+  30-home-en: OK
+
+=== 1440px === erreurs console : []
+  01-bienvenue: OK
+  02-bienvenue-age: OK
+  03-bienvenue-parental: OK
+  04-bienvenue-fait: OK
+  05-accueil: OK
+  06-decrire-erreurs: OK
+  07-decrire-exemple: OK
+  08-verifier: OK
+  09-pistes: OK
+  10-ou-aller: OK
+  11-fiche: OK
+  12-verifier-danger: OK
+  13-urgence: OK
+  40-urgence-decision: OK
+  14-confidentiel: OK
+  15-hors-champ: OK
+  16-medicament: OK
+  17-sang: OK
+  18-service: OK
+  19-conditions: OK
+  20-mes-donnees: OK
+  21-pro-entree: OK
+  22-pro-accueil: OK
+  23-pro-stock: OK
+  24-pro-tendances: OK
+  25-pro-fiche: OK
+  26-pro-indicateurs: OK
+  27-pro-compte: OK
+  28-inscription-0: OK
+  29-inscription-1-erreurs: OK
+  47-pro-conditions: OK
+  31-hopital-services: OK
+  32-hopital-fiche: OK
+  33-recherche-dialyse: OK
+  34-ministere-entree: OK
+  35-ministere-carte: OK
+  36-ministere-signaux: OK
+  37-ministere-agrements: OK
+  38-ministere-offre: OK
+  39-ministere-politique: OK
+  41-ministere-journal: OK
+  42-ministere-cellule: OK
+  43-ministere-ab: OK
+  44-ministere-ab-complet: OK
+  45-droits: OK
+  46-droits-reponse: OK
+  30-home-en: OK
+
+Assertions de contenu :
+  TEST-013-03-01 : saisie piégée rendue comme du texte : OK
+  TEST-013-03-02 : mot de passe et focus conservés au re-rendu : OK
+
+RÉSUMÉ : 188 mesures (4 largeurs) ; 0 état(s) avec défaut ; 0 erreur(s) de console
