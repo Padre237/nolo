@@ -1,0 +1,80 @@
+Interface homme-animalenvironnement
+
+Série continue de contacts et d’interactions entre des personnes, des animaux, leurs
+produits et leur environnement qui, dans certains cas, facilite la transmission de
+pathogènes zoonotiques ou le partage de menaces pour la santé.
+
+Lien épidémiologique
+
+Lorsqu’un patient est ou a été exposé à un cas probable ou confirmé.
+
+Maladie
+
+Pathologie ou affection médicale, quelle qu’en soit l’origine ou la source, qui présente ou
+pourrait présenter un mal important pour les animaux, les humains et les plantes.
+
+Maladie zoonotique ou
+zoonose
+
+Maladie infectieuse qui peut être partagée entre les animaux et les personnes.
+
+Multisectoriel
+
+Participation de plus d’un secteur travaillant ensemble sur un programme conjoint ou
+riposte à un événement (par exemple, une investigation conjointe menée par la santé
+publique et la police.)
+
+Pandémie
+
+Épidémie qui survient dans le monde entier, ou sur une très vaste étendue, traversant des
+frontières internationales et affectant généralement un grand nombre de personnes.
+
+Point d’entrée
+
+Tout passage, par voie terrestre, par air ou par mer, pour l’entrée ou la sortie
+internationale de voyageurs, bagages, fret, conteneurs, moyens de transport,
+marchandises et colis postaux, ainsi que des agences et des zones qui leur fournissent des
+services à l’entrée ou à la sortie.
+
+Règlement sanitaire
+international (2005)
+
+Instrument juridique international qui est contraignant dans 196 pays. Le Règlement vise à
+aider la communauté internationale à prévenir et à répondre aux risques aigus de santé
+publique qui ont le potentiel de traverser les frontières et de menacer des personnes à
+travers le monde.
+
+Site de notification
+
+Site qui communique des données de surveillance et de flambée au niveau du district. Un
+site de notification comprend tous les établissements de santé publics, privés et
+parapublics, confessionnels), les laboratoires autonomes et les points d’entrée. Un site de
+notification contient également des rapports d’événements provenant de la surveillance et
+de la riposte au niveau de la communauté.
+
+Système d’information de
+gestion de la santé
+
+Système de communication mensuelle de maladies, d’affections et de risques au Ministère
+de la santé en version électronique ou version papier par chaque établissement de soins de
+santé.
+
+Système de gestion des
+incidents (IMS)
+
+Il s’agit d’une approche normalisée à la gestion des urgences, qui comprend le personnel,
+les installations, les équipements, les procédures et les communications qui fonctionnent
+au sein d’une structure organisationnelle commune.
+Les procédures normalisées de l’IMS permettent à tous ceux qui répondent au même
+incident de formuler un plan unifié pour gérer l’incident.
+
+« Une seule santé »
+
+Une approche pour traiter d’une menace pour la santé, partagée à l’interface hommeanimal-environnement, fondée sur la collaboration, la communication et la coordination
+sur l’ensemble des secteurs et disciplines pertinents, dans le but ultime d’atteindre des
+résultats optimaux pour la santé, aussi bien chez l’homme que chez l’animal. Une approche
+« Une seule santé » s’applique aux niveaux local, régional, national et mondial.
+
+vii
+
+

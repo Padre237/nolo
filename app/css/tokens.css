@@ -1,0 +1,99 @@
+/* Nolo — jetons de conception. Source unique : toute valeur de couleur, d'espace ou de durée passe par ici. */
+@font-face {
+  font-family: "Atkinson Next";
+  src: url("../assets/fonts/atkinson-next.woff") format("woff");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Mono";
+  src: url("../assets/fonts/atkinson-mono.woff") format("woff");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Couleur — fond et encre */
+  --pierre: #F3F5F2;
+  --surface: #FFFFFF;
+  --encre: #0F1A17;
+  --texte-2: #4A5550;
+  --texte-3: #5E6863;
+  --ligne: #DDE3DF;
+  --ligne-forte: #8A948F;
+  --voile: #E3E8E5;
+
+  /* Couleur — identité */
+  --foret: #0B5D4B;
+  --foret-profond: #083F33;
+  --foret-nuit: #062F26;
+  --menthe: #E7F3EE;
+  --menthe-trait: #B9DCCD;
+  --menthe-vive: #9FD3BF;
+
+  /* Couleur — sens réservés */
+  --urgence: #B42318;
+  --urgence-fond: #FBEAE8;
+  --urgence-texte: #8A1C12;
+  --urgence-trait: #F3C9C3;
+  --experimental: #7A4A05;
+  --experimental-fond: #FCF2DE;
+  --experimental-trait: #EED7A8;
+
+  /* Disponibilité (stocks) : la teinte ne porte jamais seule le sens */
+  --dispo: #0B5D4B;
+  --faible: #7A4A05;
+  --rupture: #8A1C12;
+
+  /* Focus : 3:1 minimum sur fond clair et sur fond forêt */
+  --focus: #0B5D4B;
+  --focus-sur-sombre: #9FD3BF;
+
+  /* Typographie */
+  --police: "Atkinson Next", "Atkinson Hyperlegible Next", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --police-mono: "Atkinson Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --t-affiche: clamp(2.25rem, 1.6rem + 2.6vw, 3.5rem);   /* 36 → 56 */
+  --t-titre: clamp(1.875rem, 1.5rem + 1.4vw, 2.5rem);     /* 30 → 40 */
+  --t-titre-2: clamp(1.375rem, 1.2rem + .6vw, 1.625rem);  /* 22 → 26 */
+  --t-titre-3: 1.1875rem;                                  /* 19 */
+  --t-corps: 1.0625rem;                                    /* 17 */
+  --t-moyen: 1rem;                                         /* 16 */
+  --t-petit: .9375rem;                                     /* 15 */
+  --t-note: .875rem;                                       /* 14 */
+  --t-mini: .8125rem;                                      /* 13 : minimum */
+  --interligne: 1.55;
+  --approche-titre: -0.022em;
+
+  /* Espacement — base 4 */
+  --e-1: 4px; --e-2: 8px; --e-3: 12px; --e-4: 16px; --e-5: 20px; --e-6: 24px;
+  --e-8: 32px; --e-10: 40px; --e-14: 56px; --e-18: 72px;
+  --marge: clamp(16px, 4vw, 40px);
+  --largeur: 1200px;
+  --colonne: 600px;
+
+  /* Rayons */
+  --r-controle: 12px;
+  --r-carte: 16px;
+  --r-panneau: 24px;
+  --r-pilule: 999px;
+
+  /* Cibles */
+  --cible: 48px;
+  --cible-principale: 56px;
+
+  /* Profondeur : une seule ombre, décalée et douce */
+  --ombre: 0 1px 2px rgba(8, 63, 51, .06), 0 8px 24px -12px rgba(8, 63, 51, .18);
+
+  /* Mouvement */
+  --courbe: cubic-bezier(0.23, 1, 0.32, 1);
+  --courbe-dans-ecran: cubic-bezier(0.77, 0, 0.175, 1);
+  --d-appui: 120ms;
+  --d-etat: 180ms;
+  --d-apparition: 240ms;
+  --d-signature: 900ms;
+
+  /* Hauteur de la barre de sécurité (réservée en bas de page) */
+  --barre-securite: 68px;
+}

@@ -1,0 +1,82 @@
+L 119/16
+
+FR
+
+Journal officiel de l'Union européenne
+
+4.5.2016
+
+susceptible d'engendrer un risque pour les droits et libertés des personnes physiques, compte tenu de la nature,
+du contexte, de la portée et des finalités du traitement, ou si le responsable du traitement est une autorité
+publique ou un organisme public. Le représentant devrait agir pour le compte du responsable du traitement ou
+du sous-traitant et peut être contacté par toute autorité de contrôle. Le représentant devrait être expressément
+désigné par un mandat écrit du responsable du traitement ou du sous-traitant pour agir en son nom en ce qui
+concerne les obligations qui lui incombent en vertu du présent règlement. La désignation de ce représentant ne
+porte pas atteinte aux responsabilités du responsable du traitement ou du sous-traitant au titre du présent
+règlement. Ce représentant devrait accomplir ses tâches conformément au mandat reçu du responsable du
+traitement ou du sous-traitant, y compris coopérer avec les autorités de contrôle compétentes en ce qui concerne
+toute action entreprise pour assurer le respect du présent règlement. Le représentant désigné devrait faire l'objet
+de procédures coercitives en cas de non-respect du présent règlement par le responsable du traitement ou le soustraitant.
+(81)
+
+Afin que les exigences du présent règlement soient respectées dans le cadre d'un traitement réalisé par un soustraitant pour le compte du responsable du traitement, lorsque ce dernier confie des activités de traitement à un
+sous-traitant, le responsable du traitement ne devrait faire appel qu'à des sous-traitants présentant des garanties
+suffisantes, notamment en termes de connaissances spécialisées, de fiabilité et de ressources, pour la mise en
+œuvre de mesures techniques et organisationnelles qui satisferont aux exigences du présent règlement, y compris
+en matière de sécurité du traitement. L'application par un sous-traitant d'un code de conduite approuvé ou d'un
+mécanisme de certification approuvé peut servir à démontrer le respect des obligations incombant au responsable
+du traitement. La réalisation d'un traitement par un sous-traitant devrait être régie par un contrat ou un autre
+acte juridique au titre du droit de l'Union ou du droit d'un État membre, liant le sous-traitant au responsable du
+traitement, définissant l'objet et la durée du traitement, la nature et les finalités du traitement, le type de données
+à caractère personnel et les catégories de personnes concernées, en tenant compte des tâches et responsabilités
+spécifiques du sous-traitant dans le cadre du traitement à effectuer et du risque pour les droits et libertés de la
+personne concernée. Le responsable du traitement et le sous-traitant peuvent choisir de recourir à un contrat
+particulier ou à des clauses contractuelles types, qui sont adoptées soit directement par la Commission soit par
+une autorité de contrôle conformément au mécanisme de contrôle de la cohérence, puis par la Commission.
+Après la réalisation du traitement pour le compte du responsable du traitement, le sous-traitant devrait, selon le
+choix du responsable du traitement, renvoyer ou supprimer les données à caractère personnel, à moins que le
+droit de l'Union ou le droit d'un État membre auquel le sous-traitant est soumis n'exige la conservation des
+données à caractère personnel.
+
+(82)
+
+Afin de démontrer qu'il respecte le présent règlement, le responsable du traitement ou le sous-traitant devrait
+tenir des registres pour les activités de traitement relevant de sa responsabilité. Chaque responsable du traitement
+et sous-traitant devrait être tenu de coopérer avec l'autorité de contrôle et de mettre ces registres à la disposition
+de celle-ci, sur demande, pour qu'ils servent au contrôle des opérations de traitement.
+
+(83)
+
+Afin de garantir la sécurité et de prévenir tout traitement effectué en violation du présent règlement, il importe
+que le responsable du traitement ou le sous-traitant évalue les risques inhérents au traitement et mette en œuvre
+des mesures pour les atténuer, telles que le chiffrement. Ces mesures devraient assurer un niveau de sécurité
+approprié, y compris la confidentialité, compte tenu de l'état des connaissances et des coûts de mise en œuvre par
+rapport aux risques et à la nature des données à caractère personnel à protéger. Dans le cadre de l'évaluation des
+risques pour la sécurité des données, il convient de prendre en compte les risques que présente le traitement de
+données à caractère personnel, tels que la destruction, la perte ou l'altération, la divulgation non autorisée de
+données à caractère personnel transmises, conservées ou traitées d'une autre manière ou l'accès non autorisé à de
+telles données, de manière accidentelle ou illicite, qui sont susceptibles d'entraîner des dommages physiques,
+matériels ou un préjudice moral.
+
+(84)
+
+Afin de mieux garantir le respect du présent règlement lorsque les opérations de traitement sont susceptibles
+d'engendrer un risque élevé pour les droits et libertés des personnes physiques, le responsable du traitement
+devrait assumer la responsabilité d'effectuer une analyse d'impact relative à la protection des données pour
+évaluer, en particulier, l'origine, la nature, la particularité et la gravité de ce risque. Il convient de tenir compte du
+résultat de cette analyse pour déterminer les mesures appropriées à prendre afin de démontrer que le traitement
+des données à caractère personnel respecte le présent règlement. Lorsqu'il ressort de l'analyse d'impact relative à
+la protection des données que les opérations de traitement des données comportent un risque élevé que le
+responsable du traitement ne peut atténuer en prenant des mesures appropriées compte tenu des techniques
+disponibles et des coûts liés à leur mise en œuvre, il convient que l'autorité de contrôle soit consultée avant que
+le traitement n'ait lieu.
+
+(85)
+
+Une violation de données à caractère personnel risque, si l'on n'intervient pas à temps et de manière appropriée,
+de causer aux personnes physiques concernées des dommages physiques, matériels ou un préjudice moral tels
+qu'une perte de contrôle sur leurs données à caractère personnel ou la limitation de leurs droits, une discrimi­
+nation, un vol ou une usurpation d'identité, une perte financière, un renversement non autorisé de la procédure
+de pseudonymisation, une atteinte à la réputation, une perte de confidentialité de données à caractère personnel
+
+

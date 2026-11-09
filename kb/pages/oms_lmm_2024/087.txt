@@ -1,0 +1,66 @@
+References
+
+81.
+
+A new era of generative AI for everyone. Dublin: Accenture; 2023 (https://www.accenture.
+com/content/dam/accenture/final/accenture-com/document/Accenture-A-New-Era-ofGenerative-AI-for-Everyone.pdf, accessed 1 June 2023).
+
+82.
+
+Burgess M. The security hole at the heart of ChatGPT and Bing. Wired, 25 May 2023
+(https://www.wired.co.uk/article/chatgpt-prompt-injection-attack-security, accessed 1
+June 2023).
+
+83.
+
+Heikkila M. Open AI’s hunger for data is coming back to bite it. MIT Technology Review,
+19 April 2023 (https://www.technologyreview.com/2023/04/19/1071789/openais-hungerfor-data-is-coming-back-to-bite-it/, accessed 1 June 2023).
+
+84.
+
+General Data Protection Regulation, Regulation 2016//679 of the European Parliament
+and of the Council, 27 April 2016. Strasbourg: European Parliament; 2016 (https://eur-lex.
+europa.eu/eli/reg/2016/679/oj, accessed 27 September 2023).
+
+85.
+
+The impact of the General Data Protection Regulation on artificial intelligence (STOA
+Options Brief). Strabourg: European Parliament; 2020 (https://www.europarl.europa.eu/
+RegData/etudes/STUD/2020/641530/EPRS_STU(2020)641530(ANN1)_EN.pdf, accessed 26
+June 2023).
+
+86.
+
+OPC launches investigation into ChatGPT. Ottawa: Office of the Privacy Commissioner
+of Canada; 4 April 2023 (https://www.priv.gc.ca/en/opc-news/news-andannouncements/2023/an_230404/, accessed 1 June 2023).
+
+87.
+
+Lomas N. Italy orders Chat GPT blocked citing data protection concerns. Tech Crunch,
+31 March 2023 (https://techcrunch.com/2023/03/31chatgpt-blocked-italy/, accessed 1
+June 2023).
+
+88.
+
+ChatGPT: Italian SA to lift temporary limitation if OpenAI implements measures. Rome:
+Italian Data Protection Authority; 2023 (https://www.garanteprivacy.it/home/docweb/-/
+docweb-display/docweb/9874751#english, accessed 1 June 2023).
+
+89.
+
+Weatherbed J. OpenAI’s regulatory troubles are only just beginning. The Verge, 5
+May 2023 (https://www.theverge.com/2023/5/5/23709833/openai-chatgpt-gdpr-airegulation-europe-eu-italy, accessed 1 June 2023).
+
+90.
+
+Wiggers K. Open AI’s new tool attempts to explain language models’ behaviours. Tech
+Crunch, 9 May 2023 (https://techcrunch.com/2023/05/09/openais-new-tool-attempts-toexplain-language-models-behaviors/, accessed 1 June 2023).
+
+91.
+
+Libeau D. ChatGPT will probably never comply with GDPR. 10 April 2023. (https://blog.
+davidlibeau.fr/chatgpt-will-probably-never-comply-with-gdpr/, accessed 1 June 2023).
+
+69
+
+

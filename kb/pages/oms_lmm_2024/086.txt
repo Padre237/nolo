@@ -1,0 +1,66 @@
+68
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+70.
+
+Monitoring the building blocks of health systems: a handbook of indicators and their
+measurement strategies. Geneva: World Health Organization; 2010 (https://apps.who.int/
+iris/bitstream/handle/10665/258734/9789241564052-eng.pdf, accessed 26 June 2023).
+
+71.
+
+Morozov E. The true threat of artificial intelligence. The New York Times, 30 June 2023
+(https://www.nytimes.com/2023/06/30/opinion/artificial-intelligence-danger.html,
+accessed 2 July 2023).
+
+72.
+
+Introducing ChatGPTPlus. San Francisco (CA): Open AI; 2023 (https://openai.com/blog/
+chatgpt-plus, accessed 1 June 2023).
+
+73.
+
+The hidden workforce that helped filter violence and abuse out of ChatGPT. Wall
+Street Journal, 11 July 2023 (https://www.wsj.com/podcasts/the-journal/the-hiddenworkforce-that-helped-filter-violence-and-abuse-out-of-chatgpt/ffc2427f-bdd8-47b79a4b-27e7267cf413, accessed 13 July 2023).
+
+74.
+
+Firth N. Language models may be able to self-correct biases – if you ask them.
+MIT Technology Review, 20 March 2023 (https://www.technologyreview.
+com/2023/03/20/1070067/language-models-may-be-able-to-self-correct-biases-if-youask-them-to/, accessed 1 June 2023).
+
+75.
+
+Khan L. We must regulate A.I. Here’s how. The New York Times, 3 May 2023 (https://
+www.nytimes.com/2023/05/03/opinion/ai-lina-khan-ftc-technology.html, accessed 2
+June 2023).
+
+76.
+
+Hatzius J, Briggs J, Kodnani D, Pierdomenico G. The potentially large effects of artificial
+intelligence on economic growth (Briggs/Kodnani). Goldman Sachs Economics Research,
+26 May 2023 (https://www.key4biz.it/wp-content/uploads/2023/03/Global-EconomicsAnalyst_-The-Potentially-Large-Effects-of-Artificial-Intelligence-on-Economic-GrowthBriggs_Kodnani.pdf, accessed 1 June 2023).
+
+77.
+
+Milmo D. AI revolution puts skilled jobs at highest risk, says OECD. The Guardian, 11 July
+2023 (https://www.theguardian.com/technology/2023/jul/11/ai-revolution-puts-skilledjobs-at-highest-risk-oecd-says, accessed 12 July 2023).
+
+78.
+
+Health and care workforce in Europe: time to act. Geneva: World Health Organization;
+2022 (https://iris.who.int/handle/10665/362379, accessed 1 June 2023).
+
+79.
+
+Health workforce. Geneva: World Health Organization; 2023 (https://www.who.int/
+health-topics/health-workforce#tab=tab_1, accessed 1 June 2023).
+
+80.
+
+Hurst L. OpenAI says 80% of workers could see their jobs impacted by AI. These are
+the jobs most impacted, Euronews.next, 30 March 2023. (https://www.euronews.com/
+next/2023/03/23/openai-says-80-of-workers-could-see-their-jobs-impacted-by-ai-theseare-the-jobs-most-affe, accessed 1 June 2023).
+
+

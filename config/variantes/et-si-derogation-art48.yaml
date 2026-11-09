@@ -1,0 +1,7 @@
+# Simulation « et si » (FR-707, L11, L13) — JAMAIS appliquée sur disque, variante en mémoire seulement.
+# Hypothèse simulée : un futur texte d'application de l'art. 72 (texte sectoriel santé) crée une dérogation
+# encadrée aux interdictions de l'art. 48 pour la prise en charge sanitaire, sur le modèle du RGPD art. 9 al. 2.
+description: "Et si une dérogation encadrée à l'art. 48 existait pour la santé ?"
+changements:
+  donnees_sensibles.categories_interdites_art48.derogation_par_consentement: true
+  etat_institutionnel.texte_sectoriel_sante_publie: true

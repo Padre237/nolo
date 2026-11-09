@@ -1,0 +1,19 @@
+OK  adulte 58 ans, douleur thoracique aiguë (scénario 1) -> urgence (immediate, IITT12-R-12)
+OK  adulte 30 ans, douleur thoracique aiguë sans autre signe -> consultation_48h (None, aucune_regle)
+OK  adulte 30 ans, douleur thoracique + incapacité à parler en respirant mal -> urgence (immediate, IITT12-R-03)
+OK  enfant 3 ans, incapable de boire (PCIME) -> urgence (immediate, PCIME-SGD-01)
+OK  enfant 3 ans, fièvre seule (paludisme, PCIME jaune) -> consultation_24h (None, PCIME-J-01)
+OK  enfant 3 ans, fièvre + raideur de nuque (PCIME) -> urgence (immediate, PCIME-MFTG-01)
+OK  enfant 3 ans, diarrhée + sang dans les selles (dysenterie) -> consultation_24h (None, PCIME-J-02)
+OK  enfant 3 ans, diarrhée depuis 15 jours -> consultation_24h (None, PCIME-J-03)
+OK  nourrisson 5 jours, fièvre -> urgence (immediate, IITTM12-R-09)
+OK  nourrisson 3 mois, toux -> urgence (rapide, IITTM12-J-09)
+OK  adulte 40 ans, toux depuis 3 jours -> consultation_48h (None, aucune_regle)
+OK  adulte 40 ans, fièvre + raideur de nuque -> urgence (immediate, IITT12-R-06)
+OK  adulte 40 ans, morsure de chien -> urgence (rapide, IITT12-J-21)
+OK  adulte 30 ans enceinte, céphalée intense -> urgence (immediate, IITT12-R-13)
+OK  adulte 80 ans, brûlure -> urgence (immediate, IITT12-R-08)
+OK  enfant 8 ans, fièvre seule (aucune règle sourcée) -> consultation_48h (None, aucune_regle)
+monotonie : 0 violation(s) sur 5000
+jetons de triage sans règle (niveau par défaut) : ['douleur_dos', 'fatigue', 'toux']
+scénarios en échec : 0

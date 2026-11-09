@@ -1,0 +1,39 @@
+03/11/2026 11:03
+
+SNOMED International Documents
+
+• semantic or ontology-based use, which requires licensed access to the full SNOMED
+CT release
+
+Uses Supported by the GPS
+Using the GPS, systems may:
+
+• receive and exchange SNOMED CT identifiers
+• store SNOMED CT identifiers with associated terms
+• display SNOMED CT terms for human interpretation
+• validate identifiers against an authoritative list
+• support interoperability across licensing and national boundaries
+These uses are permitted in all jurisdictions, including non-Member countries.
+
+Uses Requiring Licensed SNOMED CT Access
+Any use that depends on knowledge of SNOMED CT concept semantics requires licensed
+access to the full SNOMED CT release.
+This includes, but is not limited to:
+
+• use of subtype (IS-A) hierarchies
+• querying parent, child, or ancestor concepts
+• creating subsets or value sets based on hierarchical inclusion
+• subsumption testing or reasoning
+• use of logical definitions or attributes
+• terminology-driven decision support or analytics
+These capabilities must not be implemented using the GPS alone.
+
+Deploying and Using the GPS
+When deploying the GPS, systems should treat it as a flat collection of identifiers and
+terms, without semantic structure.
+Recommended practices include:
+https://docs.snomed.org/implementation-guides/gps-implementation-guide/~gitbook/pdf?page=VZvwP1TLt1zd74otfVUl&only=yes&limi…
+
+2/11
+
+

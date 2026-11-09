@@ -1,0 +1,84 @@
+L 119/12
+
+FR
+
+Journal officiel de l'Union européenne
+
+4.5.2016
+
+(60)
+
+Le principe de traitement loyal et transparent exige que la personne concernée soit informée de l'existence de
+l'opération de traitement et de ses finalités. Le responsable du traitement devrait fournir à la personne concernée
+toute autre information nécessaire pour garantir un traitement équitable et transparent, compte tenu des circons­
+tances particulières et du contexte dans lesquels les données à caractère personnel sont traitées. En outre, la
+personne concernée devrait être informée de l'existence d'un profilage et des conséquences de celui-ci. Lorsque les
+données à caractère personnel sont collectées auprès de la personne concernée, il importe que celle-ci sache
+également si elle est obligée de fournir ces données à caractère personnel et soit informée des conséquences
+auxquelles elle s'expose si elle ne les fournit pas. Ces informations peuvent être fournies accompagnées d'icônes
+normalisées afin d'offrir une bonne vue d'ensemble, facilement visible, compréhensible et clairement lisible, du
+traitement prévu. Lorsque les icônes sont présentées par voie électronique, elles devraient être lisibles par
+machine.
+
+(61)
+
+Les informations sur le traitement des données à caractère personnel relatives à la personne concernée devraient
+lui être fournies au moment où ces données sont collectées auprès d'elle ou, si les données à caractère personnel
+sont obtenues d'une autre source, dans un délai raisonnable en fonction des circonstances propres à chaque cas.
+Lorsque des données à caractère personnel peuvent être légitimement communiquées à un autre destinataire, il
+convient que la personne concernée soit informée du moment auquel ces données à caractère personnel sont
+communiquées pour la première fois audit destinataire. Lorsqu'il a l'intention de traiter les données à caractère
+personnel à des fins autres que celles pour lesquelles elles ont été collectées, le responsable du traitement devrait,
+avant de procéder à ce traitement ultérieur, fournir à la personne concernée des informations au sujet de cette
+autre finalité et toute autre information nécessaire. Lorsque l'origine des données à caractère personnel n'a pas pu
+être communiquée à la personne concernée parce que plusieurs sources ont été utilisées, des informations
+générales devraient être fournies.
+
+(62)
+
+Toutefois, il n'est pas nécessaire d'imposer l'obligation de fournir des informations lorsque la personne concernée
+dispose déjà de ces informations, lorsque l'enregistrement ou la communication des données à caractère
+personnel est expressément prévu par la loi ou lorsque la communication d'informations à la personne concernée
+se révèle impossible ou exigerait des efforts disproportionnés. Tel pourrait être le cas, notamment, lorsqu'il s'agit
+d'un traitement à des fins archivistiques dans l'intérêt public, à des fins de recherche scientifique ou historique ou
+à des fins statistiques. À cet égard, devraient être pris en considération le nombre de personnes concernées,
+l'ancienneté des données, ainsi que les garanties appropriées éventuelles adoptées.
+
+(63)
+
+Une personne concernée devrait avoir le droit d'accéder aux données à caractère personnel qui ont été collectées
+à son sujet et d'exercer ce droit facilement et à des intervalles raisonnables, afin de prendre connaissance du
+traitement et d'en vérifier la licéité. Cela inclut le droit des personnes concernées d'accéder aux données
+concernant leur santé, par exemple les données de leurs dossiers médicaux contenant des informations telles que
+des diagnostics, des résultats d'examens, des avis de médecins traitants et tout traitement ou intervention
+administrés. En conséquence, toute personne concernée devrait avoir le droit de connaître et de se faire
+communiquer, en particulier, les finalités du traitement des données à caractère personnel, si possible la durée du
+traitement de ces données à caractère personnel, l'identité des destinataires de ces données à caractère personnel,
+la logique qui sous-tend leur éventuel traitement automatisé et les conséquences que ce traitement pourrait avoir,
+au moins en cas de profilage. Lorsque c'est possible, le responsable du traitement devrait pouvoir donner l'accès à
+distance à un système sécurisé permettant à la personne concernée d'accéder directement aux données à caractère
+personnel la concernant. Ce droit ne devrait pas porter atteinte aux droits ou libertés d'autrui, y compris au secret
+des affaires ou à la propriété intellectuelle, notamment au droit d'auteur protégeant le logiciel. Cependant, ces
+considérations ne devraient pas aboutir à refuser toute communication d'informations à la personne concernée.
+Lorsque le responsable du traitement traite une grande quantité de données relatives à la personne concernée, il
+devrait pouvoir demander à celle-ci de préciser, avant de lui fournir les informations, sur quelles données ou
+quelles opérations de traitement sa demande porte.
+
+(64)
+
+Le responsable du traitement devrait prendre toutes les mesures raisonnables pour vérifier l'identité d'une
+personne concernée qui demande l'accès à des données, en particulier dans le cadre des services et identifiants en
+ligne. Un responsable du traitement ne devrait pas conserver des données à caractère personnel à la seule fin
+d'être en mesure de réagir à d'éventuelles demandes.
+
+(65)
+
+Les personnes concernées devraient avoir le droit de faire rectifier des données à caractère personnel les
+concernant, et disposer d'un «droit à l'oubli» lorsque la conservation de ces données constitue une violation du
+présent règlement ou du droit de l'Union ou du droit d'un État membre auquel le responsable du traitement est
+soumis. En particulier, les personnes concernées devraient avoir le droit d'obtenir que leurs données à caractère
+personnel soient effacées et ne soient plus traitées, lorsque ces données à caractère personnel ne sont plus
+nécessaires au regard des finalités pour lesquelles elles ont été collectées ou traitées d'une autre manière, lorsque
+les personnes concernées ont retiré leur consentement au traitement ou lorsqu'elles s'opposent au traitement de
+
+

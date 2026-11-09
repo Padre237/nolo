@@ -1,0 +1,78 @@
+4.5.2016
+
+FR
+
+Journal officiel de l'Union européenne
+
+L 119/63
+
+b) elles confèrent expressément aux personnes concernées des droits opposables en ce qui concerne le traitement de
+leurs données à caractère personnel; et
+c) elles répondent aux exigences prévues au paragraphe 2.
+2.
+
+Les règles d'entreprise contraignantes visées au paragraphe 1 précisent au moins:
+
+a) la structure et les coordonnées du groupe d'entreprises ou du groupe d'entreprises engagées dans une activité
+économique conjointe et de chacune de leurs entités;
+b) les transferts ou l'ensemble des transferts de données, y compris les catégories de données à caractère personnel, le
+type de traitement et ses finalités, le type de personnes concernées affectées et le nom du ou des pays tiers en
+question;
+c) leur nature juridiquement contraignante, tant interne qu'externe;
+d) l'application des principes généraux relatifs à la protection des données, notamment la limitation de la finalité, la
+minimisation des données, la limitation des durées de conservation des données, la qualité des données, la protection
+des données dès la conception et la protection des données par défaut, la base juridique du traitement, le traitement
+de catégories particulières de données à caractère personnel, les mesures visant à garantir la sécurité des données,
+ainsi que les exigences en matière de transferts ultérieurs à des organismes qui ne sont pas liés par les règles
+d'entreprise contraignantes;
+e) les droits des personnes concernées à l'égard du traitement et les moyens d'exercer ces droits y compris le droit de
+ne pas faire l'objet de décisions fondées exclusivement sur un traitement automatisé, y compris le profilage,
+conformément à l'article 22, le droit d'introduire une réclamation auprès de l'autorité de contrôle compétente et
+devant les juridictions compétentes des États membres conformément à l'article 79 et d'obtenir réparation et, le cas
+échéant, une indemnisation pour violation des règles d'entreprise contraignantes;
+f)
+
+l'acceptation, par le responsable du traitement ou le sous-traitant établi sur le territoire d'un État membre, de
+l'engagement de sa responsabilité pour toute violation des règles d'entreprise contraignantes par toute entité
+concernée non établie dans l'Union; le responsable du traitement ou le sous-traitant ne peut être exonéré, en tout ou
+en partie, de cette responsabilité que s'il prouve que le fait générateur du dommage n'est pas imputable à l'entité en
+cause;
+
+g) la manière dont les informations sur les règles d'entreprise contraignantes, notamment en ce qui concerne les
+éléments mentionnés aux points d), e) et f) du présent paragraphe sont fournies aux personnes concernées, en sus
+des informations visées aux articles 13 et 14;
+h) les missions de tout délégué à la protection des données, désigné conformément à l'article 37, ou de toute autre
+personne ou entité chargée de la surveillance du respect des règles d'entreprise contraignantes au sein du groupe
+d'entreprises, ou du groupe d'entreprises engagées dans une activité économique conjointe, ainsi que le suivi de la
+formation et le traitement des réclamations;
+i)
+
+les procédures de réclamation;
+
+j)
+
+les mécanismes mis en place au sein du groupe d'entreprises, ou du groupe d'entreprises engagées dans une activité
+économique conjointe pour garantir que le contrôle du respect des règles d'entreprise contraignantes. Ces
+mécanismes prévoient des audits sur la protection des données et des méthodes assurant que des mesures
+correctrices seront prises pour protéger les droits de la personne concernée. Les résultats de ce contrôle devraient
+être communiqués à la personne ou à l'entité visée au point h) et au conseil d'administration de l'entreprise qui
+exerce le contrôle du groupe d'entreprises, ou du groupe d'entreprises engagées dans une activité économique
+conjointe, et devraient être mis à la disposition de l'autorité de contrôle compétente sur demande;
+
+k) les mécanismes mis en place pour communiquer et consigner les modifications apportées aux règles et pour
+communiquer ces modifications à l'autorité de contrôle;
+l)
+
+le mécanisme de coopération avec l'autorité de contrôle mis en place pour assurer le respect des règles par toutes les
+entités du groupe d'entreprises, ou du groupe d'entreprises engagées dans une activité économique conjointe,
+notamment en mettant à la disposition de l'autorité de contrôle les résultats des contrôles des mesures visés au
+point j);
+
+m) les mécanismes permettant de communiquer à l'autorité de contrôle compétente toutes les obligations juridiques
+auxquelles une entité du groupe d'entreprises, ou du groupe d'entreprises engagées dans une activité économique
+conjointe, est soumise dans un pays tiers qui sont susceptibles d'avoir un effet négatif important sur les garanties
+fournies par les règles d'entreprise contraignantes; et
+n) la formation appropriée en matière de protection des données pour le personnel ayant un accès permanent ou
+régulier aux données à caractère personnel.
+
+

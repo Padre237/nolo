@@ -1,0 +1,71 @@
+OUTIL DE TRIAGE INTÉGRÉ INTER-AGENCES : ÂGE ≥ 12 ANS
+ÉTAPE 1 : CHERCHER DES CRITÈRES ROUGES
+• Inconscient
+A&B : VOIES AÉRIENNES ET RESPIRATION
+• Stridor
+• Détresse respiratoire* ou cyanose centrale
+C : CIRCULATION
+• Recoloration capillaire > 3 sec
+• Pouls faible et rapide
+• Saignements abondants
+• FC < 50 ou > 150
+D : ÉTAT NEUROLOGIQUE
+• Convulsions actives
+• 2 des signes suivants : état de conscience altéré ; hypothermie ou fièvre ; raideur cervicale ; maux de tête
+• Hypoglycémie
+AUTRE
+• Traumatisme à haut risque*
+• Empoisonnement/ingestion ou exposition à des substances chimiques dangereuses*
+• Risque d'amputation*
+• Morsure de serpent
+• Douleur abdominale ou thoracique aiguë (> 50 ans)
+• ECG mettant en évidence une ischémie aiguë (si ECG)
+• Violence ou agressivité
+GROSSESSE AVEC AU MOINS UN DES CRITÈRES SUIVANTS :
+• Saignements abondants
+• Douleur abdominale sévère
+• Convulsions ou état de conscience altéré
+• Céphalée intense
+• Troubles visuels
+• PAS ≥ 160 ou PAD ≥ 110
+• Accouchement déclenché
+• Traumatisme
+Si OUI : TRANSFERT IMMÉDIAT EN ZONE DE DÉCHOCAGE. Si NON : étape 2.
+ÉTAPE 2 : CHERCHER DES CRITÈRES JAUNES
+A&B : VOIES AÉRIENNES ET RESPIRATION
+• Gonflement/masse de la bouche, la gorge ou le cou
+• Sifflement (sans critères rouges)
+C : CIRCULATION
+• Vomit tout ou diarrhée continue
+• Incapacité à boire ou se nourrir
+• Pâleur sévère (sans critères rouges)
+• Saignements continus (sans critères rouges)
+• Évanouissement récent
+D : ÉTAT NEUROLOGIQUE
+• État de conscience altéré ou agitation (sans critères rouges)
+• Altération de l'état général récent
+• Signes neurologiques focaux aigus
+• Troubles visuels aigus
+• Douleur sévère (sans critères rouges)
+AUTRE
+• Nouvelle éruption cutanée qui s'aggrave au fil des heures ou desquamation (sans critères rouges)
+• Déformation d'un membre importante et visible
+• Fracture ouverte
+• Suspicion de luxation
+• Autre traumatisme/brûlures (sans critères rouges)
+• Diagnostic connu nécessitant une intervention chirurgicale d'urgence
+• Agression sexuelle
+• Douleur testiculaire/scrotale aiguë ou priapisme
+• Incapacité à uriner
+• Exposition nécessitant une prophylaxie d'urgence (ex. morsure d'animal, blessure par piqûre d'aiguille)
+• Grossesse adressée pour complications
+Si OUI : TRANSFERT EN ZONE DE TRAITEMENT. Si NON : étape 3.
+ÉTAPE 3 : CHERCHER DES CRITÈRES VITAUX À HAUT RISQUE
+• FC < 60 ou > 130
+• FR < 10 ou > 30
+• Temp < 36° ou > 39°
+• SpO2 < 92 %
+• AVPU autre que A
+Si OUI : les patients présentant un trouble clinique ou des signes vitaux à haut risque nécessitent un examen immédiat par le médecin superviseur ou d'être sur-triés en jaune ou en rouge. Si NON : TRANSFERT EN ZONE DE SOINS AMBULATOIRES, OU EN ZONE D'ATTENTE.
+* Cf. carte de référence.
+Développé par l'Organisation Mondiale de la Santé, le Comité International de la Croix-Rouge, Médecins Sans Frontières.

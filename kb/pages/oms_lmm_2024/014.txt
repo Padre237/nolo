@@ -1,0 +1,93 @@
+xii
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+Figure 2: Value chain of the development, provision and deployment of LMMs
+
+Development
+
+Provision
+
+Deployment
+
+Developers
+
+Providers
+
+Deployers
+
+• Large technology
+companies
+• Small technology
+companies
+• Universities
+• Scientific collaborations
+• Public-private
+consortiums
+• National health systems
+
+• Companies
+• Not-for-profit entities
+• Academic institutions
+• Health providers
+• Developers (vertically
+integrated)
+
+• Ministries of Health
+• Pharmaceutical
+companies
+• Health systems
+• Hospitals
+• Individual providers
+• Developers (vertically
+integrated)
+• Providers (vertically
+integrated)
+
+Develop LMMs
+
+Adapt/integrate LMMs
+
+Use LMMs
+
+• General-purpose
+foundation models (large
+multi-modal models)
+• Health or medical
+domain specific
+foundational models
+• Health system specific
+foundational models
+
+• Fine tuning
+• Integrate into software
+systems
+• Organize into a regulated
+or verified format (e.g.
+with plug-ins)
+
+• Diagnosis and clinical
+care
+• Patient centered care
+• Clerical and
+administrative tasks
+• Medical and nursing
+education
+• Scientific research
+• Drug development
+
+The AI value chain often begins in a large technology company, referred to as a “developer”
+in this guidance. The developer could also be a university, a smaller technology company,
+national health systems, public-private consortiums or other entities that have the resources
+and capacity to use several inputs, which comprise the “AI infrastructure”, such as data,
+computing power and AI expertise, to develop general-purpose foundation models (a term
+used by governments to describe LMMs in legislation and regulation). These models can be
+used directly to perform various, often unanticipated tasks, including those related to health
+care. Several general-purpose foundation models are trained specifically for use in health care
+and medicine.
+A general-purpose foundation model can be used by a third party (a “provider”) through an
+active programming interface for a specific purpose or use. This involves (i) fine-tuning a new
+LMM, which may require additional training of the foundation model; (ii) integrating the LMM
+into applications or a larger software system to provide a service to users; or (iii) integrating
+
+

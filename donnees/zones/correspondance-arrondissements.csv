@@ -1,0 +1,361 @@
+polygone_adm3;statut;code_ins;libelle_csv;region;departement;candidats_parmi_les_departements_voisins;code_ins_valide
+Akom II;À RAPPROCHER;;;;;Akom (090301);
+Andek;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Angossas;À RAPPROCHER;;;;;Bebend (030202) | Dja (030204) | Mboanz (030208) | Messok (030211);
+Atok;À RAPPROCHER;;;;;Nyakokombo (020905);
+Baré;À RAPPROCHER;;;;;Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113);
+Benakuma;À RAPPROCHER;;;;;Mamfé Central (100403) | Upper Banyang (100404);
+Bonaléa;À RAPPROCHER;;;;;Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113);
+Demding;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Dziguilao;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Ebone;À RAPPROCHER;;;;;Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113);
+Elak;À RAPPROCHER;;;;;Bum (070102);
+Fonfuka;À RAPPROCHER;;;;;Fungom (070401) | Menchum Valley (070403);
+Gachiga;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Guémé;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Idenau;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Kentzou;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Kobdombo;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Mamfe;À RAPPROCHER;;;;;Mamfé Central (100403) | Upper Banyang (100404);
+Massok;À RAPPROCHER;;;;;Massock-Songloulou (050305);
+Mbiame;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Menji;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Mindourou;À RAPPROCHER;;;;;Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307);
+Mozogo;À RAPPROCHER;;;;;Bourrha (040601) | Mayo-Moskota (040604);
+Ndobian;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Ngong;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Nguélébok;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Nkong-Zem;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Nkor;À RAPPROCHER;;;;;Bum (070102);
+Olanguina;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Ouli;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Penja;À RAPPROCHER;;;;;Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113);
+Pete-Bandjoun;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Tinto;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Touloum;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Widikum-Boffé;À RAPPROCHER;;;;;Assamba (020502) | Nyakokombo (020905) | Bebend (030202) | Dja (030204) | Mboanz (030208) | Bombé (030302) | Mbotoro (030305) | Ndem-Nam (030307) | Vélé (040309) | Porhi (040406) | Taïbong (040407) | Mayo-Moskota (040604) | Abo-Fiko (050101) | Baré-Bakem (050102) | Njombé-Penja (050109) | Nlonako (050113) | Nord-Makombé (050202) | Massock-Songloulou (050305) | Demsa (060104) | Tchéboa (060111) | Bum (070102) | Mbven (070203) | Noni (070205) | Oku (070206) | Fungom (070401) | Menchum Valley (070403) | Ngie (070603) | Widikum-Menka (070605) | Djébem (080402) | Poumougné (080403) | Nkong-Ni (080504) | Akom (090301) | West Coast (100107) | Fontem (100302) | Mamfé Central (100403) | Upper Banyang (100404);
+Zhoa;À RAPPROCHER;;;;;Fungom (070401) | Menchum Valley (070403);
+Bourha;PROPOSÉ (orthographe proche, 92%) : à confirmer;040601;Bourrha;EN;Mayo-Tsanaga;Bourrha (040601) | Mayo-Moskota (040604);
+Isanguele;PROPOSÉ (orthographe proche, 94%) : à confirmer;100605;Isangélé;SW;Ndian;Isangélé (100605) | Mundemba (100608);
+Messock;PROPOSÉ (orthographe proche, 92%) : à confirmer;030211;Messok;ES;Haut-Nyong;Moloundou (030102);
+Mouloundou;PROPOSÉ (orthographe proche, 95%) : à confirmer;030102;Moloundou;ES;Boumba-et-Ngoko;;
+Mudemba;PROPOSÉ (orthographe proche, 93%) : à confirmer;100608;Mundemba;SW;Ndian;Isangélé (100605) | Mundemba (100608);
+Ngan'ha;PROPOSÉ (orthographe proche, 92%) : à confirmer;010504;Nganha;AD;Vina;Nganha (010504);
+Nijkwa;PROPOSÉ (orthographe proche, 83%) : à confirmer;070604;Njikwa;NW;Momo;Mamfé Central (100403) | Upper Banyang (100404);
+Nkol-Métet;PROPOSÉ (orthographe proche, 95%) : à confirmer;021006;Nkolmetet;CE;Nyong-et-So’o;;
+Okala;PROPOSÉ (orthographe proche, 80%) : à confirmer;020208;Okola;CE;Lékié;Okola (020208);
+Tabati;PROPOSÉ (orthographe proche, 83%) : à confirmer;010102;Tibati;AD;Djérem;;
+Tchatibali;PROPOSÉ (orthographe proche, 95%) : à confirmer;040308;Tchati-Bali;EN;Mayo-Danay;Tchati-Bali (040308) | Vélé (040309);
+Abong-Mbang;rapproché par le nom;030201;Abong-Mbang;ES;Haut-Nyong;;030201
+Afanloum;rapproché par le nom;020501;Afanloum;CE;Méfou-et-Afamba;;020501
+Ako;rapproché par le nom;070301;Ako;NW;Donga-Mantung;;070301
+Akono;rapproché par le nom;020601;Akono;CE;Méfou-et-Akono;;020601
+Akonolinga;rapproché par le nom;020901;Akonolinga;CE;Nyong-et-Mfoumou;;020901
+Akoéman;rapproché par le nom;021001;Akoeman;CE;Nyong-et-So’o;;021001
+Akwaya;rapproché par le nom;100401;Akwaya;SW;Manyu;;100401
+Alou;rapproché par le nom;100301;Alou;SW;Lebialem;;100301
+Ambam;rapproché par le nom;090401;Ambam;SU;Vallée-du-Ntem;;090401
+Awaé;rapproché par le nom;020503;Awaé;CE;Méfou-et-Afamba;;020503
+Ayos;rapproché par le nom;020902;Ayos;CE;Nyong-et-Mfoumou;;020902
+Babadjou;rapproché par le nom;080101;Babadjou;OU;Bamboutos;;080101
+Babessi;rapproché par le nom;070701;Babessi;NW;Ngo-Ketunjia;;070701
+Bafang;rapproché par le nom;080201;Bafang;OU;Haut-Nkam;;080201
+Bafia;rapproché par le nom;020301;Bafia;CE;Mbam-et-Inoubou;;020301
+Bafoussam I;rapproché par le nom;080601;Bafoussam I;OU;Mifi;;080601
+Bafoussam II;rapproché par le nom;080602;Bafoussam II;OU;Mifi;;080602
+Bafoussam III;rapproché par le nom;080603;Bafoussam III;OU;Mifi;;080603
+Bafut;rapproché par le nom;070501;Bafut;NW;Mezam;;070501
+Baham;rapproché par le nom;080301;Baham;OU;Hauts-Plateaux;;080301
+Bakou;rapproché par le nom;080202;Bakou;OU;Haut-Nkam;;080202
+Bali;rapproché par le nom;070502;Bali;NW;Mezam;;070502
+Balikumbat;rapproché par le nom;070702;Balikumbat;NW;Ngo-Ketunjia;;070702
+Bamenda I;rapproché par le nom;070503;Bamenda I;NW;Mezam;;070503
+Bamenda II;rapproché par le nom;070504;Bamenda II;NW;Mezam;;070504
+Bamenda III;rapproché par le nom;070505;Bamenda III;NW;Mezam;;070505
+Bamendjou;rapproché par le nom;080302;Bamendjou;OU;Hauts-Plateaux;;080302
+Bamusso;rapproché par le nom;100601;Bamusso;SW;Ndian;;100601
+Bana;rapproché par le nom;080203;Bana;OU;Haut-Nkam;;080203
+Bandja;rapproché par le nom;080204;Bandja;OU;Haut-Nkam;;080204
+Bangangté;rapproché par le nom;080701;Bangangté;OU;Ndé;;080701
+Bangem;rapproché par le nom;100201;Bangem;SW;Koupé-Manengouba;;100201
+Bangou;rapproché par le nom;080303;Bangou;OU;Hauts-Plateaux;;080303
+Bangourain;rapproché par le nom;080801;Bangourain;OU;Noun;;080801
+Banka;rapproché par le nom;080205;Banka;OU;Haut-Nkam;;080205
+Bankim;rapproché par le nom;010301;Bankim;AD;Mayo-Banyo;;010301
+Banwa;rapproché par le nom;080206;Banwa;OU;Haut-Nkam;;080206
+Banyo;rapproché par le nom;010302;Banyo;AD;Mayo-Banyo;;010302
+Baschéo;rapproché par le nom;060101;Baschéo;NO;Bénoué;;060101
+Bassamba;rapproché par le nom;080702;Bassamba;OU;Ndé;;080702
+Batcham;rapproché par le nom;080102;Batcham;OU;Bamboutos;;080102
+Batchenga;rapproché par le nom;020201;Batchenga;CE;Lékié;;020201
+Batibo;rapproché par le nom;070601;Batibo;NW;Momo;;070601
+Batié;rapproché par le nom;080304;Batié;OU;Hauts-Plateaux;;080304
+Batouri;rapproché par le nom;030301;Batouri;ES;Kadey;;030301
+Bayangam;rapproché par le nom;080401;Bayangam;OU;Koung-Khi;;080401
+Bazou;rapproché par le nom;080703;Bazou;OU;Ndé;;080703
+Belo;rapproché par le nom;070101;Belo;NW;Boyo;;070101
+Bengbis;rapproché par le nom;090101;Bengbis;SU;Dja-et-Lobo;;090101
+Bertoua I;rapproché par le nom;030402;Bertoua I;ES;Lom-et-Djérem;;030402
+Bertoua II;rapproché par le nom;030403;Bertoua II;ES;Lom-et-Djérem;;030403
+Bibemi;rapproché par le nom;060102;Bibémi;NO;Bénoué;;060102
+Bibey;rapproché par le nom;020101;Bibey;CE;Haute-Sanaga;;020101
+Bikok;rapproché par le nom;020602;Bikok;CE;Méfou-et-Akono;;020602
+Bipindi;rapproché par le nom;090302;Bipindi;SU;Océan;;090302
+Biwong-Bané;rapproché par le nom;090201;Biwong-Bané;SU;Mvila;;090201
+Biwong-Bulu;rapproché par le nom;090202;Biwong-Bulu;SU;Mvila;;090202
+Biyouha;rapproché par le nom;020801;Biyouha;CE;Nyong-et-Kéllé;;020801
+Blangoua;rapproché par le nom;040201;Blangoua;EN;Logone-et-Chari;;040201
+Bogo;rapproché par le nom;040101;Bogo;EN;Diamaré;;040101
+Bokito;rapproché par le nom;020302;Bokito;CE;Mbam-et-Inoubou;;020302
+Bondjock;rapproché par le nom;020802;Bondjock;CE;Nyong-et-Kéllé;;020802
+Bot-Makak;rapproché par le nom;020803;Bot-Makak;CE;Nyong-et-Kéllé;;020803
+Buea;rapproché par le nom;100101;Buéa;SW;Fako;;100101
+Béka;rapproché par le nom;060201;Beka;NO;Faro;;060201
+Bélabo;rapproché par le nom;030401;Bélabo;ES;Lom-et-Djérem;;030401
+Bélel;rapproché par le nom;010501;Belel;AD;Vina;;010501
+Bétaré-Oya;rapproché par le nom;030404;Bétaré-Oya;ES;Lom-et-Djérem;;030404
+Campo;rapproché par le nom;090303;Campo;SU;Océan;;090303
+Darak;rapproché par le nom;040202;Darak;EN;Logone-et-Chari;;040202
+Dargala;rapproché par le nom;040102;Dargala;EN;Diamaré;;040102
+Datchéka;rapproché par le nom;040301;Datcheka;EN;Mayo-Danay;;040301
+Dembo;rapproché par le nom;060103;Dembo;NO;Bénoué;;060103
+Deuk;rapproché par le nom;020303;Deuk;CE;Mbam-et-Inoubou;;020303
+Diang;rapproché par le nom;030405;Diang;ES;Lom-et-Djérem;;030405
+Dibamba;rapproché par le nom;050301;Dibamba;LT;Sanaga-Maritime;;050301
+Dibang;rapproché par le nom;020804;Dibang;CE;Nyong-et-Kéllé;;020804
+Dibombari;rapproché par le nom;050103;Dibombari;LT;Moungo;;050103
+Dikome-Balue;rapproché par le nom;100602;Dikomé-Balué;SW;Ndian;;100602
+Dimako;rapproché par le nom;030203;Dimako;ES;Haut-Nyong;;030203
+Dir;rapproché par le nom;010401;Dir;AD;Mbéré;;010401
+Dizangué;rapproché par le nom;050302;Dizangué;LT;Sanaga-Maritime;;050302
+Djohong;rapproché par le nom;010402;Djohong;AD;Mbéré;;010402
+Djoum;rapproché par le nom;090102;Djoum;SU;Dja-et-Lobo;;090102
+Douala I;rapproché par le nom;050401;Douala I;LT;Wouri;;050401
+Douala II;rapproché par le nom;050402;Douala II;LT;Wouri;;050402
+Douala III;rapproché par le nom;050403;Douala III;LT;Wouri;;050403
+Douala IV;rapproché par le nom;050404;Douala IV;LT;Wouri;;050404
+Douala V;rapproché par le nom;050405;Douala V;LT;Wouri;;050405
+Douala VI;rapproché par le nom;050406;Douala VI;LT;Wouri;;050406
+Doumaintang;rapproché par le nom;030205;Doumaintang;ES;Haut-Nyong;;030205
+Doumé;rapproché par le nom;030206;Doumé;ES;Haut-Nyong;;030206
+Dschang;rapproché par le nom;080501;Dschang;OU;Menoua;;080501
+Dzeng;rapproché par le nom;021002;Dzeng;CE;Nyong-et-So’o;;021002
+Ebebda;rapproché par le nom;020202;Ebebda;CE;Lékié;;020202
+Ebolowa I;rapproché par le nom;090203;Ebolowa I;SU;Mvila;;090203
+Ebolowa II;rapproché par le nom;090204;Ebolowa II;SU;Mvila;;090204
+Edzendouan;rapproché par le nom;020504;Edzendouan;CE;Méfou-et-Afamba;;020504
+Efoulan;rapproché par le nom;090205;Efoulan;SU;Mvila;;090205
+Ekondo-Titi;rapproché par le nom;100603;Ekondo-Titi;SW;Ndian;;100603
+Elig-Mfomo;rapproché par le nom;020203;Elig-Mfomo;CE;Lékié;;020203
+Endom;rapproché par le nom;020903;Endom;CE;Nyong-et-Mfoumou;;020903
+Esse;rapproché par le nom;020505;Esse;CE;Méfou-et-Afamba;;020505
+Evodoula;rapproché par le nom;020204;Evodoula;CE;Lékié;;020204
+Eyumodjock;rapproché par le nom;100402;Eyumodjock;SW;Manyu;;100402
+Figuil;rapproché par le nom;060301;Figuil;NO;Mayo-Louti;;060301
+Fokoué;rapproché par le nom;080502;Fokoué;OU;Menoua;;080502
+Fongo-Tongo;rapproché par le nom;080503;Fongo-Tongo;OU;Menoua;;080503
+Fotokol;rapproché par le nom;040203;Fotokol;EN;Logone-et-Chari;;040203
+Foumban;rapproché par le nom;080802;Foumban;OU;Noun;;080802
+Foumbot;rapproché par le nom;080803;Foumbot;OU;Noun;;080803
+Fundong;rapproché par le nom;070103;Fundong;NW;Boyo;;070103
+Furu-Awa;rapproché par le nom;070402;Furu-Awa;NW;Menchum;;070402
+Galim;rapproché par le nom;080103;Galim;OU;Bamboutos;;080103
+Galim-Tignère;rapproché par le nom;010201;Galim-Tignère;AD;Faro-et-Déo;;010201
+Gari-Gombo;rapproché par le nom;030101;Gari-Gombo;ES;Boumba-et-Ngoko;;030101
+Garoua I;rapproché par le nom;060105;Garoua I;NO;Bénoué;;060105
+Garoua II;rapproché par le nom;060106;Garoua II;NO;Bénoué;;060106
+Garoua III;rapproché par le nom;060107;Garoua III;NO;Bénoué;;060107
+Garoua-Boulaï;rapproché par le nom;030406;Garoua-Boulaï;ES;Lom-et-Djérem;;030406
+Gazawa;rapproché par le nom;040103;Gazawa;EN;Diamaré;;040103
+Gobo;rapproché par le nom;040302;Gobo;EN;Mayo-Danay;;040302
+Goulfey;rapproché par le nom;040204;Goulfey;EN;Logone-et-Chari;;040204
+Guider;rapproché par le nom;060302;Guider;NO;Mayo-Louti;;060302
+Guidiguis;rapproché par le nom;040401;Guidiguis;EN;Mayo-Kani;;040401
+Guéré;rapproché par le nom;040303;Guéré;EN;Mayo-Danay;;040303
+Hilé - Alifa;rapproché par le nom;040205;Hilé-Alifa;EN;Logone-et-Chari;;040205
+Hina;rapproché par le nom;040602;Hina;EN;Mayo-Tsanaga;;040602
+Idabato;rapproché par le nom;100604;Idabato;SW;Ndian;;100604
+Jakiri;rapproché par le nom;070201;Jakiri;NW;Bui;;070201
+Kai-Kai;rapproché par le nom;040304;Kai-Kai;EN;Mayo-Danay;;040304
+Kalfou;rapproché par le nom;040305;Kalfou;EN;Mayo-Danay;;040305
+Kar-Hay;rapproché par le nom;040306;Kar-Hay;EN;Mayo-Danay;;040306
+Kaélé;rapproché par le nom;040402;Kaélé;EN;Mayo-Kani;;040402
+Kiiki;rapproché par le nom;020304;Kiiki;CE;Mbam-et-Inoubou;;020304
+Kolofata;rapproché par le nom;040501;Kolofata;EN;Mayo-Sava;;040501
+Kombo-Abedimo;rapproché par le nom;100606;Kombo-Abedimo;SW;Ndian;;100606
+Kombo-Itindi;rapproché par le nom;100607;Kombo-Itindi;SW;Ndian;;100607
+Kon-Yambetta;rapproché par le nom;020305;Kon-Yambetta;CE;Mbam-et-Inoubou;;020305
+Kontcha;rapproché par le nom;010202;Kontcha;AD;Faro-et-Déo;;010202
+Konye;rapproché par le nom;100501;Konye;SW;Meme;;100501
+Kouoptamo;rapproché par le nom;080804;Kouoptamo;OU;Noun;;080804
+Kousséri;rapproché par le nom;040206;Kousséri;EN;Logone-et-Chari;;040206
+Koutaba;rapproché par le nom;080805;Koutaba;OU;Noun;;080805
+Koza;rapproché par le nom;040603;Koza;EN;Mayo-Tsanaga;;040603
+Kribi I;rapproché par le nom;090304;Kribi I;SU;Océan;;090304
+Kribi II;rapproché par le nom;090305;Kribi II;SU;Océan;;090305
+Kumba I;rapproché par le nom;100502;Kumba I;SW;Meme;;100502
+Kumba II;rapproché par le nom;100503;Kumba II;SW;Meme;;100503
+Kumba III;rapproché par le nom;100504;Kumba III;SW;Meme;;100504
+Kumbo;rapproché par le nom;070202;Kumbo;NW;Bui;;070202
+Kyé-Ossi;rapproché par le nom;090402;Kyé-Ossi;SU;Vallée-du-Ntem;;090402
+Kékem;rapproché par le nom;080207;Kékem;OU;Haut-Nkam;;080207
+Kétté;rapproché par le nom;030303;Kette;ES;Kadey;;030303
+Lagdo;rapproché par le nom;060108;Lagdo;NO;Bénoué;;060108
+Lembe Yezoum;rapproché par le nom;020102;Lembé-Yezoum;CE;Haute-Sanaga;;020102
+Limbé I;rapproché par le nom;100102;Limbé I;SW;Fako;;100102
+Limbé II;rapproché par le nom;100103;Limbé II;SW;Fako;;100103
+Limbé III;rapproché par le nom;100104;Limbé III;SW;Fako;;100104
+Lobo;rapproché par le nom;020205;Lobo;CE;Lékié;;020205
+Logone-Birni;rapproché par le nom;040207;Logone-Birni;EN;Logone-et-Chari;;040207
+Lokoundjé;rapproché par le nom;090306;Lokoundjé;SU;Océan;;090306
+Lolodorf;rapproché par le nom;090307;Lolodorf;SU;Océan;;090307
+Lomié;rapproché par le nom;030207;Lomié;ES;Haut-Nyong;;030207
+Loum;rapproché par le nom;050104;Loum;LT;Moungo;;050104
+Ma'an;rapproché par le nom;090403;Ma’an;SU;Vallée-du-Ntem;;090403
+Madingring;rapproché par le nom;060401;Madingring;NO;Mayo-Rey;;060401
+Maga;rapproché par le nom;040307;Maga;EN;Mayo-Danay;;040307
+Magba;rapproché par le nom;080806;Magba;OU;Noun;;080806
+Makak;rapproché par le nom;020806;Makak;CE;Nyong-et-Kéllé;;020806
+Makary;rapproché par le nom;040208;Makary;EN;Logone-et-Chari;;040208
+Makenene;rapproché par le nom;020306;Makénéné;CE;Mbam-et-Inoubou;;020306
+Malentouen;rapproché par le nom;080807;Malentouen;OU;Noun;;080807
+Mandjou;rapproché par le nom;030407;Mandjou;ES;Lom-et-Djérem;;030407
+Manjo;rapproché par le nom;050105;Manjo;LT;Moungo;;050105
+Maroua I;rapproché par le nom;040104;Maroua I;EN;Diamaré;;040104
+Maroua II;rapproché par le nom;040105;Maroua II;EN;Diamaré;;040105
+Maroua III;rapproché par le nom;040106;Maroua III;EN;Diamaré;;040106
+Martap;rapproché par le nom;010502;Martap;AD;Vina;;010502
+Massangam;rapproché par le nom;080808;Massangam;OU;Noun;;080808
+Matomb;rapproché par le nom;020807;Matomb;CE;Nyong-et-Kéllé;;020807
+Mayo-Baléo;rapproché par le nom;010203;Mayo-Baléo;AD;Faro-et-Déo;;010203
+Mayo-Darlé;rapproché par le nom;010303;Mayo-Darlé;AD;Mayo-Banyo;;010303
+Mayo-Hourna;rapproché par le nom;060109;Mayo-Hourna;NO;Bénoué;;060109
+Mayo-Oulo;rapproché par le nom;060303;Mayo-Oulo;NO;Mayo-Louti;;060303
+Mbalmayo;rapproché par le nom;021003;Mbalmayo;CE;Nyong-et-So’o;;021003
+Mbandjock;rapproché par le nom;020103;Mbandjock;CE;Haute-Sanaga;;020103
+Mbang;rapproché par le nom;030304;Mbang;ES;Kadey;;030304
+Mbanga;rapproché par le nom;050106;Mbanga;LT;Moungo;;050106
+Mbangassina;rapproché par le nom;020401;Mbangassina;CE;Mbam-et-Kim;;020401
+Mbankomo;rapproché par le nom;020603;Mbankomo;CE;Méfou-et-Akono;;020603
+Mbengwi;rapproché par le nom;070602;Mbengwi;NW;Momo;;070602
+Mboma;rapproché par le nom;030209;Mboma;ES;Haut-Nyong;;030209
+Mbonge;rapproché par le nom;100505;Mbonge;SW;Meme;;100505
+Mbouda;rapproché par le nom;080104;Mbouda;OU;Bamboutos;;080104
+Mbé;rapproché par le nom;010503;Mbé;AD;Vina;;010503
+Meiganga;rapproché par le nom;010403;Meiganga;AD;Mbéré;;010403
+Mengang;rapproché par le nom;020904;Mengang;CE;Nyong-et-Mfoumou;;020904
+Mengong;rapproché par le nom;090206;Mengong;SU;Mvila;;090206
+Mengueme;rapproché par le nom;021004;Mengueme;CE;Nyong-et-So’o;;021004
+Meri;rapproché par le nom;040107;Méri;EN;Diamaré;;040107
+Messaména;rapproché par le nom;030210;Messamena;ES;Haut-Nyong;;030210
+Messondo;rapproché par le nom;020808;Messondo;CE;Nyong-et-Kéllé;;020808
+Meyomessala;rapproché par le nom;090103;Meyomessala;SU;Dja-et-Lobo;;090103
+Meyomessi;rapproché par le nom;090104;Meyomessi;SU;Dja-et-Lobo;;090104
+Mfou;rapproché par le nom;020506;Mfou;CE;Méfou-et-Afamba;;020506
+Mindif;rapproché par le nom;040403;Mindif;EN;Mayo-Kani;;040403
+Minta;rapproché par le nom;020104;Minta;CE;Haute-Sanaga;;020104
+Mintom;rapproché par le nom;090105;Mintom;SU;Dja-et-Lobo;;090105
+Misaje;rapproché par le nom;070302;Misajé;NW;Donga-Mantung;;070302
+Mogodé;rapproché par le nom;040605;Mogodé;EN;Mayo-Tsanaga;;040605
+Mokolo;rapproché par le nom;040606;Mokolo;EN;Mayo-Tsanaga;;040606
+Mombo;rapproché par le nom;050108;Mombo;LT;Moungo;;050108
+Monatélé;rapproché par le nom;020206;Monatélé;CE;Lékié;;020206
+Mora;rapproché par le nom;040502;Mora;EN;Mayo-Sava;;040502
+Mouanko;rapproché par le nom;050306;Mouanko;LT;Sanaga-Maritime;;050306
+Moulvoudaye;rapproché par le nom;040404;Moulvoudaye;EN;Mayo-Kani;;040404
+Moutourwa;rapproché par le nom;040405;Moutourwa;EN;Mayo-Kani;;040405
+Muyuka;rapproché par le nom;100105;Muyuka;SW;Fako;;100105
+Mvangan;rapproché par le nom;090207;Mvangan;SU;Mvila;;090207
+Mvengue;rapproché par le nom;090308;Mvengué;SU;Océan;;090308
+Mélong;rapproché par le nom;050107;Melong;LT;Moungo;;050107
+Nanga-Eboko;rapproché par le nom;020105;Nanga-Eboko;CE;Haute-Sanaga;;020105
+Ndikiniméki;rapproché par le nom;020307;Ndikiniméki;CE;Mbam-et-Inoubou;;020307
+Ndom;rapproché par le nom;050307;Ndom;LT;Sanaga-Maritime;;050307
+Ndop;rapproché par le nom;070703;Ndop;NW;Ngo-Ketunjia;;070703
+Ndoukoula;rapproché par le nom;040108;Ndoukoula;EN;Diamaré;;040108
+Ndu;rapproché par le nom;070303;Ndu;NW;Donga-Mantung;;070303
+Ndélélé;rapproché par le nom;030306;Ndelele;ES;Kadey;;030306
+Ngambé;rapproché par le nom;050308;Ngambé;LT;Sanaga-Maritime;;050308
+Ngambé-Tikar;rapproché par le nom;020402;Ngambè-Tikar;CE;Mbam-et-Kim;;020402
+Ngaoui;rapproché par le nom;010404;Ngaoui;AD;Mbéré;;010404
+Ngaoundal;rapproché par le nom;010101;Ngaoundal;AD;Djérem;;010101
+Ngaoundéré I;rapproché par le nom;010505;Ngaoundéré I;AD;Vina;;010505
+Ngaoundéré II;rapproché par le nom;010506;Ngaoundéré II;AD;Vina;;010506
+Ngaoundéré III;rapproché par le nom;010507;Ngaoundéré III;AD;Vina;;010507
+Ngog-Mapubi;rapproché par le nom;020809;Ngog-Mapubi;CE;Nyong-et-Kéllé;;020809
+Ngomedzap;rapproché par le nom;021005;Ngomedzap;CE;Nyong-et-So’o;;021005
+Ngoro;rapproché par le nom;020403;Ngoro;CE;Mbam-et-Kim;;020403
+Ngoulémakong;rapproché par le nom;090208;Ngoulemakong;SU;Mvila;;090208
+Ngoumou;rapproché par le nom;020604;Ngoumou;CE;Méfou-et-Akono;;020604
+Ngoura;rapproché par le nom;030408;Ngoura;ES;Lom-et-Djérem;;030408
+Ngoyla;rapproché par le nom;030212;Ngoyla;ES;Haut-Nyong;;030212
+Nguelemendouka;rapproché par le nom;030213;Nguelemendouka;ES;Haut-Nyong;;030213
+Nguibassal;rapproché par le nom;020810;Nguibassal;CE;Nyong-et-Kéllé;;020810
+Nguti;rapproché par le nom;100202;Nguti;SW;Koupé-Manengouba;;100202
+Ngwei;rapproché par le nom;050309;Ngwei;LT;Sanaga-Maritime;;050309
+Nitoukou;rapproché par le nom;020308;Nitoukou;CE;Mbam-et-Inoubou;;020308
+Niété;rapproché par le nom;090309;Niété;SU;Océan;;090309
+Njimom;rapproché par le nom;080809;Njimom;OU;Noun;;080809
+Njinikom;rapproché par le nom;070104;Njinikom;NW;Boyo;;070104
+Nkambe;rapproché par le nom;070304;Nkambé;NW;Donga-Mantung;;070304
+Nkolafamba;rapproché par le nom;020507;Nkolafamba;CE;Méfou-et-Afamba;;020507
+Nkondjock;rapproché par le nom;050201;Nkondjock;LT;Nkam;;050201
+Nkongsamba I;rapproché par le nom;050110;Nkongsamba I;LT;Moungo;;050110
+Nkongsamba II;rapproché par le nom;050111;Nkongsamba II;LT;Moungo;;050111
+Nkongsamba III;rapproché par le nom;050112;Nkongsamba III;LT;Moungo;;050112
+Nkoteng;rapproché par le nom;020106;Nkoteng;CE;Haute-Sanaga;;020106
+Nkum;rapproché par le nom;070204;Nkum;NW;Bui;;070204
+Nsem;rapproché par le nom;020107;Nsem;CE;Haute-Sanaga;;020107
+Ntui;rapproché par le nom;020404;Ntui;CE;Mbam-et-Kim;;020404
+Nwa;rapproché par le nom;070305;Nwa;NW;Donga-Mantung;;070305
+Nyambaka;rapproché par le nom;010508;Nyambaka;AD;Vina;;010508
+Nyanon;rapproché par le nom;050310;Nyanon;LT;Sanaga-Maritime;;050310
+Obala;rapproché par le nom;020207;Obala;CE;Lékié;;020207
+Olamzé;rapproché par le nom;090404;Olamzé;SU;Vallée-du-Ntem;;090404
+Ombessa;rapproché par le nom;020309;Ombessa;CE;Mbam-et-Inoubou;;020309
+Oveng;rapproché par le nom;090106;Oveng;SU;Dja-et-Lobo;;090106
+Penka-Michel;rapproché par le nom;080505;Penka-Michel;OU;Menoua;;080505
+Pitoa;rapproché par le nom;060110;Pitoa;NO;Bénoué;;060110
+Poli;rapproché par le nom;060202;Poli;NO;Faro;;060202
+Pouma;rapproché par le nom;050311;Pouma;LT;Sanaga-Maritime;;050311
+Pétté;rapproché par le nom;040109;Pétté;EN;Diamaré;;040109
+Rey-Bouba;rapproché par le nom;060402;Rey-Bouba;NO;Mayo-Rey;;060402
+Sa'a;rapproché par le nom;020209;Sa’a;CE;Lékié;;020209
+Salapoumbé;rapproché par le nom;030103;Salapoumbé;ES;Boumba-et-Ngoko;;030103
+Sangmélima;rapproché par le nom;090107;Sangmélima;SU;Dja-et-Lobo;;090107
+Santa;rapproché par le nom;070506;Santa;NW;Mezam;;070506
+Santchou;rapproché par le nom;080506;Santchou;OU;Menoua;;080506
+Soa;rapproché par le nom;020508;Soa;CE;Méfou-et-Afamba;;020508
+Somalomo;rapproché par le nom;030214;Somalomo;ES;Haut-Nyong;;030214
+Soulèdé-Roua;rapproché par le nom;040607;Soulédé-Roua;EN;Mayo-Tsanaga;;040607
+Tcholliré;rapproché par le nom;060403;Tcholliré;NO;Mayo-Rey;;060403
+Tignère;rapproché par le nom;010204;Tignère;AD;Faro-et-Déo;;010204
+Tiko;rapproché par le nom;100106;Tiko;SW;Fako;;100106
+Toko;rapproché par le nom;100609;Toko;SW;Ndian;;100609
+Tokombéré;rapproché par le nom;040503;Tokombéré;EN;Mayo-Sava;;040503
+Tombel;rapproché par le nom;100203;Tombel;SW;Koupé-Manengouba;;100203
+Tonga;rapproché par le nom;080704;Tonga;OU;Ndé;;080704
+Touboro;rapproché par le nom;060404;Touboro;NO;Mayo-Rey;;060404
+Touroua;rapproché par le nom;060112;Touroua;NO;Bénoué;;060112
+Tubah;rapproché par le nom;070507;Tubah;NW;Mezam;;070507
+Wabane;rapproché par le nom;100303;Wabane;SW;Lebialem;;100303
+Waza;rapproché par le nom;040209;Waza;EN;Logone-et-Chari;;040209
+Wina;rapproché par le nom;040310;Wina;EN;Mayo-Danay;;040310
+Wum;rapproché par le nom;070404;Wum;NW;Menchum;;070404
+Yabassi;rapproché par le nom;050203;Yabassi;LT;Nkam;;050203
+Yagoua;rapproché par le nom;040311;Yagoua;EN;Mayo-Danay;;040311
+Yaoundé I;rapproché par le nom;020701;Yaoundé I;CE;Mfoundi;;020701
+Yaoundé II;rapproché par le nom;020702;Yaoundé II;CE;Mfoundi;;020702
+Yaoundé III;rapproché par le nom;020703;Yaoundé III;CE;Mfoundi;;020703
+Yaoundé IV;rapproché par le nom;020704;Yaoundé IV;CE;Mfoundi;;020704
+Yaoundé V;rapproché par le nom;020705;Yaoundé V;CE;Mfoundi;;020705
+Yaoundé VI;rapproché par le nom;020706;Yaoundé VI;CE;Mfoundi;;020706
+Yaoundé VII;rapproché par le nom;020707;Yaoundé VII;CE;Mfoundi;;020707
+Yingui;rapproché par le nom;050204;Yingui;LT;Nkam;;050204
+Yokadouma;rapproché par le nom;030104;Yokadouma;ES;Boumba-et-Ngoko;;030104
+Yoko;rapproché par le nom;020405;Yoko;CE;Mbam-et-Kim;;020405
+Zina;rapproché par le nom;040210;Zina;EN;Logone-et-Chari;;040210
+Zoétélé;rapproché par le nom;090108;Zoétélé;SU;Dja-et-Lobo;;090108
+Édéa I;rapproché par le nom;050303;Édéa I;LT;Sanaga-Maritime;;050303
+Édéa II;rapproché par le nom;050304;Édéa II;LT;Sanaga-Maritime;;050304
+Éséka;rapproché par le nom;020805;Éséka;CE;Nyong-et-Kéllé;;020805

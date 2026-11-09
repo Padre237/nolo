@@ -1,0 +1,45 @@
+10
+
+Article 9.- (1) Les autorités de certification accréditées, les auditeurs de sécurité,
+les éditeurs de logiciels de sécurité et les autres prestataires de services de
+sécurité agréés, sont assujettis au paiement d’une contribution de 1,5 % de leur
+chiffre d’affaires hors taxes, destinée au financement d’un fonds dénommé
+« Fonds Spécial des Activités de Sécurité Electronique », au titre du financement
+de la recherche, du développement, de la formation et des études en matière de
+cybersécurité.
+(2) Les ressources visées à l’alinéa 1 ci-dessus sont recouvrées par
+l’Agence et déposées dans un compte ouvert à la Banque Centrale.
+(3) Il est créé un Comité chargé de la validation des projets prioritaires
+de recherche, de développement, de formation et des études en matière de
+cybersécurité.
+Les modalités de fonctionnement de ce Comité sont fixées dans un
+texte réglementaire.
+(4) Le Ministre chargé des Télécommunications est l’ordonnateur
+des dépenses engagées sur le fonds visé à l’alinéa 1 ci-dessus.
+(5) Les conditions et les modalités de perception et de gestion de
+cette redevance sont définies par voie réglementaire.
+CHAPITRE III
+DU REGIME JURIDIQUE DES ACTIVITES DE CERTIFICATION
+
+Article 10.- L’activité de certification électronique est soumise à autorisation
+préalable. Elle est exercée par des autorités de certification.
+Article 11.- Peuvent faire l’objet d’une autorisation :
+ la mise en place et l’exploitation d’une infrastructure en vue d’émettre,
+de conserver et de délivrer les certificats électroniques qualifiés ;
+ la mise à la disposition du public, des clés publiques de tous les
+utilisateurs.
+Article 12.- Les conditions et les modalités d’octroi de l’autorisation visée à
+l’article 10 ci-dessus sont fixées par voie réglementaire.
+CHAPITRE IV
+DES ACTIVITES DE SECURITE
+
+Article 13.- (1) Sont soumis à un audit de sécurité obligatoire, les réseaux de
+communications électroniques et les systèmes d’information, des opérateurs,
+des autorités de certification et des fournisseurs de services de
+communications électroniques.
+(2) Les conditions et les modalités de l’audit de sécurité prévu à
+l’alinéa 1 ci-dessus sont définies par voie réglementaire.
+Article 14.- Le personnel de l’Agence et les experts commis en vue d’accomplir
+des opérations d’audit sont astreints au secret professionnel.
+
+

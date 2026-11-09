@@ -1,0 +1,271 @@
+/* Nolo — composants transverses. Un composant = un rôle ; aucune variante décorative. */
+
+/* ── Coque de l'application ───────────────────────────── */
+.appli { min-height: 100dvh; display: flex; flex-direction: column; padding-bottom: calc(var(--barre-securite) + env(safe-area-inset-bottom)); }
+.appli > main { flex: 1; padding-bottom: var(--e-10); }
+.appli:has(.ecran-urgence) { padding-bottom: 0; }
+.cadre { width: 100%; max-width: var(--largeur); margin: 0 auto; padding-inline: var(--marge); }
+
+/* ── En-tête ──────────────────────────────────────────── */
+.entete {
+  position: sticky; top: 0; z-index: 20;
+  background: color-mix(in srgb, var(--pierre) 92%, transparent);
+  backdrop-filter: saturate(1.4) blur(10px);
+  -webkit-backdrop-filter: saturate(1.4) blur(10px);
+  view-transition-name: entete;
+}
+.entete__barre { display: flex; align-items: center; gap: var(--e-3); min-height: 64px; }
+.entete__retour { margin-left: -10px; }
+.marque { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--encre); min-height: var(--cible); padding-right: var(--e-2); }
+.marque__mot { font-size: 1.625rem; font-weight: 800; letter-spacing: -0.04em; line-height: 1; }
+.marque svg { flex-shrink: 0; }
+.entete__fin { margin-left: auto; display: flex; align-items: center; gap: var(--e-2); }
+
+.langue { display: inline-flex; align-items: center; padding: 3px; border-radius: var(--r-pilule); border: 1px solid var(--ligne); background: var(--surface); }
+.langue button {
+  min-width: 44px; min-height: 44px; padding: 0 10px; border: 0; border-radius: var(--r-pilule);
+  background: transparent; color: var(--texte-2); font-size: var(--t-note); font-weight: 700; letter-spacing: .02em;
+  transition: background-color var(--d-etat) var(--courbe), color var(--d-etat) var(--courbe);
+}
+.langue button[aria-pressed="true"] { background: var(--foret); color: #fff; }
+.entete__parcours { padding-bottom: var(--e-3); view-transition-name: parcours; }
+
+/* ── Trait de parcours (motif signature) ─────────────── */
+.parcours { --avance: 0; display: grid; grid-template-columns: repeat(3, 1fr) auto; align-items: center; gap: 0; }
+.parcours__etape { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.parcours__trait { position: relative; height: 14px; display: flex; align-items: center; }
+.parcours__trait::before { content: ""; position: absolute; left: 7px; right: 0; height: 2px; background: var(--menthe-trait); border-radius: 2px; }
+.parcours__trait::after {
+  content: ""; position: absolute; left: 7px; right: 0; height: 3px; background: var(--foret); border-radius: 3px;
+  transform-origin: left; transform: scaleX(var(--rempli, 0));
+  transition: transform 420ms var(--courbe-dans-ecran);
+}
+.parcours__point { position: relative; z-index: 1; width: 14px; height: 14px; border-radius: 50%; background: var(--surface); border: 2px solid var(--menthe-vive); flex-shrink: 0; transition: background-color var(--d-etat), border-color var(--d-etat); }
+.parcours__etape[data-etat="fait"] .parcours__point,
+.parcours__etape[data-etat="actuel"] .parcours__point { background: var(--foret); border-color: var(--foret); }
+.parcours__etape[data-etat="actuel"] .parcours__point { box-shadow: 0 0 0 4px var(--menthe); }
+.parcours__etape[data-etat="fait"] .parcours__trait { --rempli: 1; }
+.parcours__nom { font-size: var(--t-mini); font-weight: 700; color: var(--texte-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.parcours__etape[data-etat="actuel"] .parcours__nom { color: var(--encre); }
+.parcours__porte { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; padding-left: 2px; }
+.parcours__anneau { width: 22px; height: 22px; border-radius: 50%; border: 2.5px solid var(--menthe-vive); display: grid; place-items: center; margin-top: -4px; transition: border-color var(--d-etat); }
+.parcours__anneau::after { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--menthe-vive); transition: background-color var(--d-etat); }
+.parcours[data-arrive="true"] .parcours__anneau { border-color: var(--foret); }
+.parcours[data-arrive="true"] .parcours__anneau::after { background: var(--foret); }
+.parcours__porte .parcours__nom { text-align: right; }
+
+/* ── Boutons ──────────────────────────────────────────── */
+.bouton {
+  --fond: var(--foret); --texte: #fff; --bord: var(--foret);
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: var(--cible); padding: 0 var(--e-5);
+  border-radius: var(--r-controle); border: 1.5px solid var(--bord);
+  background: var(--fond); color: var(--texte);
+  font-size: var(--t-moyen); font-weight: 700; text-decoration: none; text-align: center; line-height: 1.2;
+  transition: transform var(--d-appui) var(--courbe), background-color var(--d-etat) var(--courbe), border-color var(--d-etat) var(--courbe), color var(--d-etat) var(--courbe);
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+.bouton:active:not(:disabled) { transform: scale(.97); }
+.bouton--principal { min-height: var(--cible-principale); font-size: var(--t-corps); }
+.bouton--large { width: 100%; }
+.bouton--secondaire { --fond: var(--surface); --texte: var(--foret); --bord: var(--foret); }
+.bouton--discret { --fond: transparent; --texte: var(--foret); --bord: transparent; padding-inline: var(--e-3); }
+.bouton--sur-sombre { --fond: #fff; --texte: var(--foret-profond); --bord: #fff; }
+.bouton--sur-sombre-contour { --fond: transparent; --texte: #fff; --bord: rgba(255,255,255,.55); }
+.bouton--urgence { --fond: var(--urgence); --texte: #fff; --bord: var(--urgence); }
+.bouton:disabled { --fond: var(--voile); --texte: var(--texte-3); --bord: var(--voile); }
+.bouton--icone { width: var(--cible); padding: 0; }
+@media (hover: hover) and (pointer: fine) {
+  .bouton:not(:disabled):hover { --fond: var(--foret-profond); --bord: var(--foret-profond); }
+  .bouton--secondaire:not(:disabled):hover { --fond: var(--menthe); --texte: var(--foret-profond); --bord: var(--foret-profond); }
+  .bouton--discret:not(:disabled):hover { --fond: var(--menthe); --texte: var(--foret-profond); --bord: transparent; }
+  .bouton--sur-sombre:not(:disabled):hover { --fond: var(--menthe); --bord: var(--menthe); --texte: var(--foret-profond); }
+  .bouton--sur-sombre-contour:not(:disabled):hover { --fond: rgba(255,255,255,.08); --bord: #fff; --texte: #fff; }
+  .bouton--urgence:not(:disabled):hover { --fond: var(--urgence-texte); --bord: var(--urgence-texte); }
+}
+.actions { display: flex; flex-direction: column; gap: var(--e-3); }
+.actions--ligne { flex-direction: row; flex-wrap: wrap; }
+.actions--ligne > .bouton { flex: 1 1 auto; }
+.raison { min-height: 1.5em; font-size: var(--t-petit); color: var(--texte-2); }
+
+/* ── Choix (case, pastille) ───────────────────────────── */
+.choix {
+  position: relative; display: flex; gap: 14px; align-items: flex-start;
+  padding: var(--e-4); border-radius: var(--r-carte);
+  border: 1.5px solid var(--ligne); background: var(--surface); cursor: pointer;
+  transition: border-color var(--d-etat) var(--courbe), background-color var(--d-etat) var(--courbe), transform var(--d-appui) var(--courbe);
+  -webkit-tap-highlight-color: transparent;
+}
+.choix:active { transform: scale(.985); }
+.choix:has(input:checked) { border-color: var(--foret); background: var(--menthe); }
+.choix:has(input:focus-visible) { outline: 3px solid var(--focus); outline-offset: 2px; }
+.choix input { position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+.choix--compact { align-items: center; min-height: 52px; padding-block: 0; }
+.choix__marque { flex-shrink: 0; width: 24px; height: 24px; margin-top: 1px; display: grid; place-items: center; border: 1.5px solid var(--ligne-forte); background: var(--surface); transition: background-color var(--d-etat), border-color var(--d-etat); }
+.choix--compact .choix__marque { margin-top: 0; }
+.choix__marque--case { border-radius: 7px; }
+.choix__marque--pastille { border-radius: 50%; }
+.choix__marque svg { opacity: 0; transform: scale(.7); transition: opacity var(--d-etat) var(--courbe), transform var(--d-etat) var(--courbe); }
+.choix:has(input:checked) .choix__marque--case { background: var(--foret); border-color: var(--foret); }
+.choix:has(input:checked) .choix__marque--case svg { opacity: 1; transform: none; }
+.choix:has(input:checked) .choix__marque--pastille { border: 7px solid var(--foret); }
+.choix__corps { display: flex; flex-direction: column; gap: 6px; min-width: 0; flex: 1; }
+.choix__titre { font-size: var(--t-moyen); font-weight: 700; line-height: 1.3; }
+.choix__texte { font-size: var(--t-petit); color: var(--texte-2); line-height: 1.5; }
+.choix__pied { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; font-size: var(--t-mini); color: var(--texte-2); }
+.choix__etat { margin-left: auto; flex-shrink: 0; font-size: var(--t-mini); font-weight: 700; color: var(--texte-3); }
+.choix:has(input:checked) .choix__etat { color: var(--foret); }
+.grille-choix { display: grid; gap: var(--e-3); }
+.grille-choix--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+/* Tuile illustrée (Moi / Mon enfant, type d'établissement) */
+.tuile { flex-direction: column; gap: var(--e-3); align-items: flex-start; padding: var(--e-4); min-height: 112px; }
+.tuile__picto { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; background: var(--menthe); color: var(--foret); transition: background-color var(--d-etat), color var(--d-etat); }
+.choix:has(input:checked) .tuile__picto { background: var(--foret); color: #fff; }
+
+/* ── Champs ───────────────────────────────────────────── */
+.champ { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.champ__etiquette { font-size: var(--t-moyen); font-weight: 700; }
+.champ__aide { font-size: var(--t-note); color: var(--texte-3); }
+.saisie {
+  width: 100%; min-height: var(--cible); padding: 10px 14px;
+  border: 1.5px solid var(--ligne-forte); border-radius: var(--r-controle); background: var(--surface);
+  font-size: var(--t-moyen); line-height: 1.4;
+  transition: border-color var(--d-etat) var(--courbe), box-shadow var(--d-etat) var(--courbe);
+}
+.saisie::placeholder { color: var(--texte-3); opacity: 1; }
+.saisie:focus { border-color: var(--foret); box-shadow: 0 0 0 3px var(--menthe-trait); outline: none; }
+.saisie[aria-invalid="true"] { border-color: var(--urgence); }
+textarea.saisie { min-height: 168px; resize: vertical; line-height: 1.55; }
+select.saisie { appearance: none; padding-right: 44px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230B5D4B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; }
+.saisie--mono { font-family: var(--police-mono); letter-spacing: .04em; }
+.champ__erreur { display: flex; gap: 8px; align-items: flex-start; font-size: var(--t-note); font-weight: 700; color: var(--urgence-texte); }
+.champ__erreur svg { flex-shrink: 0; margin-top: 1px; }
+.champ__ok { display: flex; gap: 8px; align-items: center; font-size: var(--t-note); font-weight: 700; color: var(--foret); }
+.compteur-car { font-size: var(--t-mini); color: var(--texte-3); text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Pas à pas (âge) */
+.pas-a-pas { display: inline-flex; align-items: stretch; border: 1.5px solid var(--ligne-forte); border-radius: var(--r-controle); background: var(--surface); overflow: hidden; }
+.pas-a-pas button { width: 52px; min-height: 52px; border: 0; background: transparent; color: var(--foret); display: grid; place-items: center; transition: background-color var(--d-etat); }
+.pas-a-pas button:active { background: var(--menthe); }
+.pas-a-pas input { width: 64px; border: 0; border-inline: 1px solid var(--ligne); text-align: center; font-size: 1.25rem; font-weight: 700; font-variant-numeric: tabular-nums; background: transparent; -moz-appearance: textfield; }
+.pas-a-pas input::-webkit-inner-spin-button, .pas-a-pas input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+.pas-a-pas input:focus { outline: none; background: var(--menthe); }
+
+/* Segment Oui / Non */
+.segment { display: inline-grid; grid-auto-flow: column; grid-auto-columns: minmax(76px, 1fr); padding: 3px; gap: 3px; border-radius: var(--r-controle); background: var(--voile); }
+.segment button { min-height: 44px; padding: 0 var(--e-4); border: 0; border-radius: 9px; background: transparent; color: var(--texte-2); font-weight: 700; font-size: var(--t-petit); transition: background-color var(--d-etat) var(--courbe), color var(--d-etat) var(--courbe), box-shadow var(--d-etat); }
+.segment button[aria-pressed="true"] { background: var(--surface); color: var(--encre); box-shadow: 0 1px 2px rgba(8,63,51,.14); }
+.segment button[aria-pressed="true"][data-valeur="oui"].segment--alerte, .segment--danger button[aria-pressed="true"][data-valeur="oui"] { background: var(--urgence); color: #fff; }
+
+/* ── Puces de signes ──────────────────────────────────── */
+.puces { display: flex; flex-wrap: wrap; gap: var(--e-2); }
+.puce {
+  display: inline-flex; align-items: center; gap: 4px; min-height: 44px; padding: 0 4px 0 14px;
+  border-radius: var(--r-pilule); background: var(--surface); border: 1.5px solid var(--menthe-trait);
+  font-size: var(--t-petit); font-weight: 700; color: var(--foret-profond);
+}
+.puce button { flex-shrink: 0; width: 44px; height: 44px; margin-block: -4px; margin-right: -4px; border: 0; border-radius: 50%; background: transparent; color: var(--texte-2); display: grid; place-items: center; transition: background-color var(--d-etat); }
+.puce button:hover { background: var(--menthe); }
+.puce--ajout { padding: 0 16px 0 10px; border-style: dashed; border-color: var(--foret); background: transparent; color: var(--foret); gap: 6px; }
+.puce--suggestion { padding-right: 14px; border-color: var(--ligne); color: var(--texte-2); font-weight: 600; background: var(--surface); }
+.puce--suggestion:hover { border-color: var(--foret); color: var(--foret); }
+.puce__source { font-size: var(--t-mini); font-weight: 400; color: var(--texte-3); }
+
+/* ── Étiquettes ───────────────────────────────────────── */
+.etiquette { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: var(--r-pilule); font-size: var(--t-mini); font-weight: 700; line-height: 1.4; white-space: nowrap; border: 1px solid transparent; }
+.etiquette--experimental { background: var(--experimental-fond); color: var(--experimental); border-color: var(--experimental-trait); }
+.etiquette--neutre { background: var(--voile); color: var(--texte-2); }
+.etiquette--foret { background: var(--menthe); color: var(--foret-profond); border-color: var(--menthe-trait); }
+.etiquette--urgence { background: var(--urgence-fond); color: var(--urgence-texte); border-color: var(--urgence-trait); }
+.etiquette svg { flex-shrink: 0; }
+
+/* Niveau de stock : forme + mot + teinte */
+.niveau { display: inline-flex; align-items: center; gap: 8px; font-size: var(--t-note); font-weight: 700; }
+.niveau::before { content: ""; width: 10px; height: 10px; flex-shrink: 0; }
+.niveau--disponible { color: var(--dispo); }
+.niveau--disponible::before { border-radius: 50%; background: var(--dispo); }
+.niveau--faible { color: var(--faible); }
+.niveau--faible::before { border-radius: 50%; border: 2px solid var(--faible); background: linear-gradient(90deg, var(--faible) 50%, transparent 50%); }
+.niveau--rupture { color: var(--rupture); }
+.niveau--rupture::before { border-radius: 2px; border: 2px solid var(--rupture); background: transparent; }
+
+/* ── Panneau de direction (signalétique) ─────────────── */
+.panneau { position: relative; overflow: hidden; border-radius: var(--r-panneau); background: var(--foret-profond); color: #fff; padding: var(--e-6); }
+.panneau--nuit { background: var(--foret-nuit); }
+.panneau__fil { position: absolute; inset: auto 0 0 0; height: 100%; pointer-events: none; opacity: .9; }
+.panneau p, .panneau .note { color: #CFE8DD; }
+.panneau a:not(.bouton):not(.action-maitresse) { color: #fff; }
+
+/* ── Bloc d'information (sans bordure latérale colorée) ─ */
+.encart { display: flex; gap: var(--e-3); align-items: flex-start; padding: var(--e-4); border-radius: var(--r-carte); background: var(--surface); border: 1px solid var(--ligne); }
+.encart--menthe { background: var(--menthe); border-color: var(--menthe-trait); }
+.encart--experimental { background: var(--experimental-fond); border-color: var(--experimental-trait); color: var(--experimental); }
+.encart--experimental p { color: var(--experimental); }
+.encart--urgence { background: var(--urgence-fond); border-color: var(--urgence-trait); color: var(--urgence-texte); }
+.encart > svg { flex-shrink: 0; margin-top: 2px; }
+.encart__corps { display: flex; flex-direction: column; gap: 4px; min-width: 0; font-size: var(--t-petit); line-height: 1.5; }
+.encart__titre { font-weight: 700; font-size: var(--t-moyen); }
+
+/* ── Listes en lignes (registre) ──────────────────────── */
+.lignes { display: flex; flex-direction: column; border-top: 1px solid var(--ligne); }
+.lignes > * { border-bottom: 1px solid var(--ligne); }
+.ligne-action {
+  display: flex; align-items: center; gap: var(--e-4); min-height: 64px; padding: var(--e-3) 0;
+  text-decoration: none; color: var(--encre); background: transparent; border: 0; width: 100%; text-align: left;
+  border-bottom: 1px solid var(--ligne);
+  transition: background-color var(--d-etat) var(--courbe);
+}
+.ligne-action:active { background: var(--menthe); }
+@media (hover: hover) and (pointer: fine) { .ligne-action:hover { background: color-mix(in srgb, var(--menthe) 60%, transparent); } }
+.ligne-action__picto { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: var(--surface); border: 1px solid var(--ligne); color: var(--foret); flex-shrink: 0; }
+.ligne-action__corps { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.ligne-action__titre { font-weight: 700; font-size: var(--t-moyen); line-height: 1.3; }
+.ligne-action__texte { font-size: var(--t-note); color: var(--texte-2); }
+.ligne-action__fin { flex-shrink: 0; color: var(--foret); }
+
+/* ── Barre de sécurité persistante ───────────────────── */
+.barre-securite {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
+  background: var(--urgence-fond); border-top: 1px solid var(--urgence-trait);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.barre-securite__corps { display: flex; align-items: center; gap: var(--e-3); min-height: var(--barre-securite); padding-block: 10px; }
+.barre-securite__texte { flex: 1; min-width: 0; display: flex; flex-direction: column; color: var(--urgence-texte); line-height: 1.3; }
+.barre-securite__titre { font-weight: 800; font-size: var(--t-petit); }
+.barre-securite__sous { font-size: var(--t-mini); }
+.appel {
+  flex-shrink: 0; min-width: 64px; min-height: var(--cible); padding: 0 var(--e-3);
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  border-radius: var(--r-controle); background: var(--urgence); color: #fff; text-decoration: none;
+  font-size: 1.125rem; font-weight: 800; font-variant-numeric: tabular-nums;
+  transition: transform var(--d-appui) var(--courbe), background-color var(--d-etat);
+}
+.appel:active { transform: scale(.96); }
+.appel:hover { background: var(--urgence-texte); color: #fff; }
+.barre-securite .appel:focus-visible { outline-color: var(--urgence-texte); }
+
+/* ── Annonces (toasts) ────────────────────────────────── */
+.annonces { position: fixed; z-index: 40; left: 50%; bottom: calc(var(--barre-securite) + var(--e-4) + env(safe-area-inset-bottom)); transform: translateX(-50%); width: min(92vw, 460px); display: flex; flex-direction: column; gap: var(--e-2); pointer-events: none; }
+.annonce {
+  pointer-events: auto; display: flex; gap: var(--e-3); align-items: flex-start; padding: var(--e-3) var(--e-4);
+  border-radius: var(--r-carte); background: var(--encre); color: #fff; box-shadow: var(--ombre); font-size: var(--t-petit);
+  transition: opacity 260ms var(--courbe), transform 260ms var(--courbe);
+}
+@starting-style { .annonce { opacity: 0; transform: translateY(10px) scale(.98); } }
+.annonce[data-sortie] { opacity: 0; transform: translateY(6px); transition-duration: 160ms; }
+.annonce svg { flex-shrink: 0; margin-top: 2px; }
+.annonce .mono { font-size: 1.25rem; letter-spacing: .12em; }
+
+/* ── Apparition d'une section révélée ────────────────── */
+.revele { animation: revele var(--d-apparition) var(--courbe) both; }
+@keyframes revele { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+/* ── Pied de page ────────────────────────────────────── */
+.pied { display: flex; flex-wrap: wrap; gap: var(--e-2) var(--e-5); padding-block: var(--e-8) var(--e-4); font-size: var(--t-note); color: var(--texte-3); }
+.pied a { color: var(--texte-2); min-height: var(--cible); display: inline-flex; align-items: center; }
+
+/* ── Squelette de chargement ─────────────────────────── */
+.squelette { border-radius: var(--r-controle); background: linear-gradient(90deg, var(--voile), #EEF1EF, var(--voile)); background-size: 200% 100%; animation: squelette 1.2s linear infinite; }
+@keyframes squelette { to { background-position: -200% 0; } }

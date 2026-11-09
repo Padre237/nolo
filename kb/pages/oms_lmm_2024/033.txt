@@ -1,0 +1,42 @@
+2 Applications and challenges of use of LMMs in health
+
+undermine general supportive care, such as human–human interactions when people
+are often most vulnerable (1). Generally, there is concern that clinical care could be
+“de-humanized” by AI.
+• Epistemic injustice: An additional potential consequence of substituting a health-care
+provider’s judgement with that of an LMM is introduction of epistemic injustice to
+the patient. “Epistemic injustice” is a “wrong done to someone specifically in their
+capacity as a subject of knowledge”, such as a patient in a health-care system (55).
+One form of epistemic injustice, hermeneutic injustice, occurs when there is a gap in
+shared understanding and knowledge (so-called “collective interpretive resources”)
+that puts some people at a disadvantage with respect to their lived experience, social
+experience or, in the case of health care, their own understanding of their physical
+or mental condition (55). LMMs, even when trained on large quantities of data,
+have boundaries with respect to what they can recognize and respond to and the
+concepts and notions that are outside their vocabulary. If a patient’s experience is not
+acknowledged or recognized in a clinical setting by an LMM, it can obviate appropriate
+care from a medical provider, which could harm the patient. This is especially likely
+for vulnerable groups that are already neglected and underrepresented in data (55),
+such as people with disabilities (Box 3).
+• Delivery of health care outside the health-care system: AI applications in health are
+no longer used exclusively or accessed and used within health-care systems or in
+home care, as AI technologies for health can be readily acquired and used by nonhealth system entities or simply introduced by a company, such as those that offer
+LMMs for public use. This raises questions about whether such technologies should
+be regulated as clinical applications, which require greater regulatory scrutiny, or
+as “wellness applications”, which require less regulatory scrutiny. At present, such
+technologies arguably fall into a grey zone between the two categories.
+LMMs that are “lightly” regulated could present a risk if they are used by a patient
+with no regulatory safeguard. This includes use of an LMM for medical advice or
+self-diagnosis. There is concern that patients may receive false or misleading advice
+(see above) and that patient safety may be compromised if individuals are not in
+contact with health-care services, including lack of supportive care for individuals
+with suicidal ideation who use an AI chatbot, even if the chatbot is not “manipulative”.
+Even if the information is correct, individuals without medical training who use such
+information for self-diagnosis could misinterpret or misuse it. As such applications,
+including LMMs, continue to proliferate and are not necessarily labelled as healthcare applications, the overall quality of health care could be compromised. This could
+further exacerbate unequal access to good-quality health care, especially as people
+who lack other options may resort to such applications (1).
+
+15
+
+

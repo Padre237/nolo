@@ -1,0 +1,70 @@
+References
+
+11.
+
+Martin A. Google CEO Sunder Pichai admits people don’t fully understand how chatbot
+AI works, Evening Standard, 17 April 2023 (https://www.standard.co.uk/tech/google-ceosundar-pichai-understand-ai-chatbot-bard-b1074589.html, accessed 26 May 2023).
+
+12.
+
+Roose K. A conversation with Bing’s chatbot left me deeply unsettled. The New York
+Times, 16 February 2023 (https://www.nytimes.com/2023/02/16/technology/bingchatbot-microsoft-chatgpt.html, accessed 26 May 2023).
+
+13.
+
+Marcus G. AI platforms like ChatGPT are easy to use but potentially dangerous, Scientific
+American, 19 December 2022 (https://www.scientificamerican.com/article/ai-platformslike-chatgpt-are-easy-to-use-but-also-potentially-dangerous/, accessed 26 May 2023).
+
+14.
+
+Bubeck S, Chandrasekaran V, Eldan R, Gehrke J, Horvitz E, Kamar E et al. Sparks of
+artificial general intelligence: early experiments with GPT-4. ArXiv:2302.12712.
+
+15.
+
+McGowran L. OpenAI criticised for lack of transparency around ChatGPT-4. Silicon
+Republic, 16 March 2023 (https://www.siliconrepublic.com/machines/openai-gpt4transparency-ai-concerns-stripe-chatgpt, accessed 26 May 2023).
+
+16.
+
+Spitale G, Biller-Andorno N, Germani F. AI model GPT-3 (dis)informs us better than
+humans. Sci Adv. 2023;9(26):eadh1850. doi:10.1126/sciadv.adh1850.
+
+17.
+
+Volpicelli G. ChatGPT broke the EU plan to regulate AI Politico, 3 March 2023 (https://
+www.politico.eu/article/eu-plan-regulate-chatgpt-openai-artificial-intelligence-act/,
+accessed 26 May 2023).
+
+18.
+
+Arcesati R, Chang W. China is blazing a trail in regulating Generative AI – on the CCP’s
+terms. The Diplomat, 28 April 2023 (https://thediplomat.com/2023/04/china-is-blazing-atrail-in-regulating-generative-ai-on-the-ccps-terms/, accessed 26 May 2023).
+
+19.
+
+Martindale J. These are the countries where ChatGPT is currently banned. Digital Trends,
+12 April 2023 (https://www.digitaltrends.com/computing/these-countries-chatgptbanned/, accessed 26 May 2023).
+
+20.
+
+Johnson K. ChatGPT can help doctors – and hurt patients. Wired, 24 April 2023 (https://
+www.wired.com/story/chatgpt-can-help-doctors-and-hurt-patients/, accessed 28
+May 2023).
+
+21.
+
+Topol E. Multimodal AI for medicine, simplified. Ground Truths, 14 March 2023 (https://
+erictopol.substack.com/p/multimodal-ai-for-medicine-simplified, accessed 28
+May 2023).
+
+22.
+
+Heaven WD. AI hype is built on high test scores. Those tests are flawed. MIT Technology
+Review, 30 August 2023 (https://www.technologyreview.com/2023/08/30/1078670/
+large-language-models-arent-people-lets-stop-testing-them-like-they-were/, accessed 1
+October 2023).
+
+63
+
+

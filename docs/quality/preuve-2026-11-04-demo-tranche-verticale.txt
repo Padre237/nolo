@@ -1,0 +1,59 @@
+# Preuve d'exécution — tranche verticale de démonstration (D-025)
+# Date : 2026-11-04T13:51:23+01:00 ; Python 3.13.18 ; Node v22.23.4
+
+$ python3 tools/demo/construire_paquet.py
+src/client/ondevice/paquet_triage.json : 110 entrées, 75 règles, 3 numéros d'urgence, sha256 7ee2485c500b…
+$ python3 tools/demo/generer_cas_parite.py
+tests/js/fixtures/cas_parite.json : 19 scénarios, 42 phrases, 10 listes, 400 tirages
+
+$ python3 -m pytest -q
+....................                                                     [100%]
+20 passed in 1.17s
+$ node --test tests/js/*.test.mjs
+# tests 11
+# pass 11
+# fail 0
+
+$ node src/client/ondevice/cli/triage.mjs --tranche 51_70_ans --texte "douleur poitrine soudaine" --json
+{"niveau": "urgence", "priorite": "immediate", "regle": "IITT12-R-12", "fragments": ["INT-OMS-IITT-FR::0000"], "execution": "sur_appareil", "numeros_urgence": ["119", "112", "1510"]}
+
+$ python3 tools/scenarios/executer.py --scenario orientation_urgente
+    ✓ conforme
+    ✓ conforme  (audit : evt-d2fd9571-7023-44c5-8eb8-01266058a421)
+    ✓ conforme  (audit : evt-4ef79cab-4ad5-497b-bfc6-c380217c5373)
+  Journal : 2 événements chaînés, chaîne valide (tests/reports/2026-11-04/journal_orientation_urgente.jsonl)
+  ✓ aucune violation détectée
+  code de sortie : 0
+$ python3 tools/scenarios/executer.py --scenario medicament_sensible
+    ✓ conforme  (audit : evt-36da0729-b3a2-43ad-b69c-52c4053c3922)
+    ✓ conforme  (audit : evt-be5461f8-352d-4434-9dc3-bb356e4e0cdb)
+  Journal : 3 événements chaînés, chaîne valide (tests/reports/2026-11-04/journal_medicament_sensible.jsonl)
+  ✓ aucune violation détectée
+  code de sortie : 0
+$ python3 tools/scenarios/executer.py --scenario regroupement
+    ✓ conforme
+    ✓ conforme
+    ✓ conforme  (audit : evt-7637e9c2-5d43-454c-88a2-376c51a78bfd)
+    ✓ conforme  (audit : evt-ebaaaef2-ea48-44a5-a7f3-92751ebfaa6f)
+    ✓ conforme  (audit : evt-1c0bb5b2-06e8-4094-835d-f14b277eae00)
+    ✓ conforme
+    ✓ conforme  (audit : evt-b2392312-a536-4699-8c2c-88178b0cc4f3)
+  Journal : 25 événements chaînés, chaîne valide (tests/reports/2026-11-04/journal_regroupement.jsonl)
+  ✓ aucune violation détectée
+  code de sortie : 0
+
+$ python3 tools/scenarios/executer.py --scenario medicament_sensible --sans-gouvernance   # FR-710
+  ⛔ 2 violation(s) détectée(s) :
+     - recherche_sensible_journalisee : la DCI sensible « tenofovir_lamivudine_dolutegravir » figure dans le journal d'audit
+     - categorie_interdite_traitee : ressources.rechercher_medicament autorisée avec catégories ['vie_sexuelle']
+$ python3 tools/scenarios/executer.py --scenario regroupement --sans-gouvernance
+  ▶ J2 16:00 — Demande d'accès aux données individuelles
+  ⛔ 2 violation(s) détectée(s) :
+     - donnees_individuelles_transmises : 12 lignes individuelles (positions précises) transmises au district
+     - signal_sans_validation_humaine : publication alors que SIG-AS-07-S18-fievre_eruption n'a pas été validé par le point focal
+$ python3 tools/scenarios/executer.py --scenario medicament_sensible --politique config/variantes/et-si-derogation-art48.yaml   # FR-707
+  Δ Différences avec la politique de référence (2) :
+     - ressources.rechercher_medicament : BLOQUE → AUTORISE_AVEC_CONDITIONS (RECHERCHE_AUTORISEE)
+     - ressources.telecharger_tuile : AUTORISE → (action absente du parcours) (TUILE_SANS_REQUETE)
+  
+  Rapport : /home/claude/project/tests/reports/2026-11-04/rapport_medicament_sensible_variante.json

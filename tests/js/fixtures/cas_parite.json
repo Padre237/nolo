@@ -1,0 +1,5984 @@
+{
+ "scenarios": [
+  {
+   "nom": "adulte 58 ans, douleur thoracique aiguë (scénario 1)",
+   "jetons": [
+    "douleur_thoracique_aigue"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-12"
+  },
+  {
+   "nom": "adulte 30 ans, douleur thoracique aiguë sans autre signe",
+   "jetons": [
+    "douleur_thoracique_aigue"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "nom": "adulte 30 ans, douleur thoracique + incapacité à parler en respirant mal",
+   "jetons": [
+    "douleur_thoracique_aigue",
+    "difficulte_respiratoire",
+    "incapacite_parler_marcher"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-03"
+  },
+  {
+   "nom": "enfant 3 ans, incapable de boire (PCIME)",
+   "jetons": [
+    "incapable_de_boire_ou_teter"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "PCIME-SGD-01"
+  },
+  {
+   "nom": "enfant 3 ans, fièvre seule (paludisme, PCIME jaune)",
+   "jetons": [
+    "fievre"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 0,
+   "niveau": "consultation_24h",
+   "priorite": null,
+   "regle": "PCIME-J-01"
+  },
+  {
+   "nom": "enfant 3 ans, fièvre + raideur de nuque (PCIME)",
+   "jetons": [
+    "fievre",
+    "raideur_nuque"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "PCIME-MFTG-01"
+  },
+  {
+   "nom": "enfant 3 ans, diarrhée + sang dans les selles (dysenterie)",
+   "jetons": [
+    "diarrhee",
+    "sang_dans_selles"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 0,
+   "niveau": "consultation_24h",
+   "priorite": null,
+   "regle": "PCIME-J-02"
+  },
+  {
+   "nom": "enfant 3 ans, diarrhée depuis 15 jours",
+   "jetons": [
+    "diarrhee"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 15,
+   "niveau": "consultation_24h",
+   "priorite": null,
+   "regle": "PCIME-J-03"
+  },
+  {
+   "nom": "nourrisson 5 jours, fièvre",
+   "jetons": [
+    "fievre"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "nom": "nourrisson 3 mois, toux",
+   "jetons": [
+    "toux"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-09"
+  },
+  {
+   "nom": "adulte 40 ans, toux depuis 3 jours",
+   "jetons": [
+    "toux"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 3,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "nom": "adulte 40 ans, fièvre + raideur de nuque",
+   "jetons": [
+    "fievre",
+    "raideur_nuque"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-06"
+  },
+  {
+   "nom": "adulte 40 ans, morsure de chien",
+   "jetons": [
+    "morsure_animal"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-21"
+  },
+  {
+   "nom": "adulte 30 ans enceinte, céphalée intense",
+   "jetons": [
+    "grossesse",
+    "cephalee_intense"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-13"
+  },
+  {
+   "nom": "adulte 80 ans, brûlure",
+   "jetons": [
+    "brulure"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-08"
+  },
+  {
+   "nom": "enfant 8 ans, fièvre seule (aucune règle sourcée)",
+   "jetons": [
+    "fievre"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "nom": "adulte 40 ans, respire mal + confus (détresse respiratoire, carte IITT)",
+   "jetons": [
+    "difficulte_respiratoire",
+    "etat_conscience_altere"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-03"
+  },
+  {
+   "nom": "adulte 40 ans, confus seul (critère jaune IITT)",
+   "jetons": [
+    "etat_conscience_altere"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-08"
+  },
+  {
+   "nom": "enfant 3 ans, « diarrhée avec du sang » (jeton dérivé)",
+   "jetons": [
+    "diarrhee_avec_sang"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 0,
+   "niveau": "consultation_24h",
+   "priorite": null,
+   "regle": "PCIME-J-02"
+  }
+ ],
+ "phrases": [
+  {
+   "id": "F01",
+   "texte": "mon enfant a des convulsions",
+   "jetons": [
+    "convulsions"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "F02",
+   "texte": "il ne tète plus depuis hier",
+   "jetons": [
+    "incapable_de_boire_ou_teter"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "F03",
+   "texte": "elle ne peut pas boire et elle vomit tout",
+   "jetons": [
+    "incapable_de_boire_ou_teter",
+    "vomit_tout"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "F04",
+   "texte": "il est tout mou et difficile à réveiller",
+   "jetons": [
+    "lethargie"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "F05",
+   "texte": "fièvre avec raideur de la nuque",
+   "jetons": [
+    "fievre",
+    "raideur_nuque"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "F06",
+   "texte": "diarrhée avec du sang depuis deux jours",
+   "jetons": [
+    "diarrhee",
+    "diarrhee_avec_sang",
+    "saignements"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "F07",
+   "texte": "mal à la poitrine depuis ce soir et je respire mal",
+   "jetons": [
+    "difficulte_respiratoire",
+    "douleur_thoracique"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "F08",
+   "texte": "douleur à la poitrine apparue récemment",
+   "jetons": [
+    "douleur_thoracique",
+    "douleur_thoracique_aigue"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "F09",
+   "texte": "il s’est évanoui ce matin",
+   "jetons": [
+    "evanouissement_recent"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "F10",
+   "texte": "elle saigne beaucoup",
+   "jetons": [
+    "saignements",
+    "saignements_abondants"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "F11",
+   "texte": "il a les lèvres bleues",
+   "jetons": [
+    "cyanose"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "F12",
+   "texte": "il a un bleu sur le bras",
+   "jetons": [],
+   "non_code": 1
+  },
+  {
+   "id": "F13",
+   "texte": "je suis épuisé",
+   "jetons": [
+    "fatigue"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "F14",
+   "texte": "il est tombé d'un arbre",
+   "jetons": [
+    "traumatisme"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "F15",
+   "texte": "chute de cheveux",
+   "jetons": [],
+   "non_code": 1
+  },
+  {
+   "id": "F16",
+   "texte": "elle est enceinte et elle a perdu les eaux",
+   "jetons": [
+    "accouchement_declenche",
+    "grossesse"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "F17",
+   "texte": "contractions musculaires dans les jambes",
+   "jetons": [],
+   "non_code": 1
+  },
+  {
+   "id": "F18",
+   "texte": "brûlure au visage",
+   "jetons": [
+    "brulure",
+    "brulure_visage_cou_circulaire"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "F19",
+   "texte": "mordu par un chien",
+   "jetons": [
+    "morsure_animal"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "F20",
+   "texte": "il respire très vite avec tirage",
+   "jetons": [
+    "muscles_accessoires",
+    "respiration_tres_rapide_ou_lente"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "F21",
+   "texte": "mal à la poitrine, et j'ai des fourmis dans les doigts",
+   "jetons": [
+    "douleur_thoracique"
+   ],
+   "non_code": 1
+  },
+  {
+   "id": "E01",
+   "texte": "my baby is having seizures",
+   "jetons": [
+    "convulsions"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "E02",
+   "texte": "he cannot drink anything",
+   "jetons": [
+    "incapable_de_boire_ou_teter"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "E03",
+   "texte": "fever and stiff neck",
+   "jetons": [
+    "fievre",
+    "raideur_nuque"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "E04",
+   "texte": "bloody diarrhea since yesterday",
+   "jetons": [
+    "diarrhee",
+    "diarrhee_avec_sang"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "E05",
+   "texte": "wheezing and coughing",
+   "jetons": [
+    "sifflement",
+    "toux"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "E06",
+   "texte": "sudden chest pain",
+   "jetons": [
+    "douleur_thoracique",
+    "douleur_thoracique_aigue"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "E07",
+   "texte": "she fainted at work",
+   "jetons": [
+    "evanouissement_recent"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "E08",
+   "texte": "heavy bleeding after delivery",
+   "jetons": [
+    "saignements",
+    "saignements_abondants"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "E09",
+   "texte": "blue lips",
+   "jetons": [
+    "cyanose"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "E10",
+   "texte": "I had a fall from height",
+   "jetons": [
+    "chute_deux_fois_hauteur",
+    "traumatisme"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "E11",
+   "texte": "I fall asleep easily",
+   "jetons": [],
+   "non_code": 1
+  },
+  {
+   "id": "E12",
+   "texte": "I feel fit today",
+   "jetons": [],
+   "non_code": 1
+  },
+  {
+   "id": "E13",
+   "texte": "very fast breathing and grunting",
+   "jetons": [
+    "battement_ailes_nez_geignement",
+    "respiration_tres_rapide_ou_lente"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "E14",
+   "texte": "snake bite on the leg",
+   "jetons": [
+    "morsure_serpent"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "E15",
+   "texte": "unresponsive and not waking up",
+   "jetons": [
+    "inconscient"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "E16",
+   "texte": "severe headache and confused",
+   "jetons": [
+    "cephalee",
+    "cephalee_intense",
+    "etat_conscience_altere"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "E17",
+   "texte": "yellow eyes",
+   "jetons": [
+    "jaunissement_yeux"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "E18",
+   "texte": "swollen feet",
+   "jetons": [
+    "oedeme_deux_pieds"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "E19",
+   "texte": "smoke inhalation in a house fire",
+   "jetons": [
+    "brulure_inhalation"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "E20",
+   "texte": "she is pregnant and labour has started",
+   "jetons": [
+    "accouchement_declenche",
+    "grossesse"
+   ],
+   "non_code": 0
+  },
+  {
+   "id": "E21",
+   "texte": "stomach ache and loose stools",
+   "jetons": [
+    "diarrhee",
+    "douleur_abdominale"
+   ],
+   "non_code": 0
+  }
+ ],
+ "listes": [
+  {
+   "tranche": "moins_8_jours",
+   "nombre": 78,
+   "jetons": [
+    "accident_haute_cinetique",
+    "accident_sans_ceinture",
+    "accouchement_declenche",
+    "agitation_irritabilite",
+    "autre_symptome",
+    "battement_ailes_nez_geignement",
+    "boit_peu",
+    "brulure",
+    "brulure_etendue",
+    "brulure_inhalation",
+    "brulure_visage_cou_circulaire",
+    "cephalee",
+    "chute_deux_fois_hauteur",
+    "coince_ou_ejecte",
+    "convulsions",
+    "convulsions_actives",
+    "cyanose",
+    "deformation_membre",
+    "diagnostic_chirurgie_urgente",
+    "diarrhee",
+    "diarrhee_aqueuse",
+    "diarrhee_continue",
+    "difficulte_respiratoire",
+    "douleur_abdominale",
+    "douleur_dos",
+    "douleur_severe",
+    "douleur_testiculaire",
+    "emergence_ver",
+    "empoisonnement_exposition",
+    "eruption_aggravation",
+    "eruption_cutanee",
+    "etat_conscience_altere",
+    "extremites_froides",
+    "fatigue",
+    "fievre",
+    "fonte_musculaire_severe",
+    "fracture_ouverte",
+    "gonflement_bouche_gorge_cou",
+    "grossesse",
+    "grossesse_complications",
+    "incapable_de_boire_ou_teter",
+    "incapacite_boire_se_nourrir",
+    "incapacite_parler_manger_teter",
+    "inconscient",
+    "jaunissement_peau",
+    "jaunissement_yeux",
+    "lesion_cutanee",
+    "lethargie",
+    "luxation_suspectee",
+    "maux_gorge",
+    "membre_menace",
+    "morsure_animal",
+    "morsure_serpent",
+    "muscles_accessoires",
+    "oedeme_deux_pieds",
+    "paleur_severe",
+    "paralysie_membre_soudaine",
+    "passager_decede",
+    "pieton_cycliste_percute",
+    "polytraumatisme",
+    "raideur",
+    "raideur_nuque",
+    "respiration_tres_rapide_ou_lente",
+    "rhume",
+    "saignements_abondants",
+    "sang_dans_selles",
+    "sifflement",
+    "signes_neuro_focaux",
+    "sous_anticoagulants",
+    "stridor",
+    "toux",
+    "trauma_ecrasement",
+    "traumatisme",
+    "traumatisme_penetrant",
+    "troubles_visuels_aigus",
+    "vaccination_recente",
+    "vomit_tout",
+    "yeux_creuses"
+   ]
+  },
+  {
+   "tranche": "8_jours_2_mois",
+   "nombre": 78,
+   "jetons": [
+    "accident_haute_cinetique",
+    "accident_sans_ceinture",
+    "accouchement_declenche",
+    "agitation_irritabilite",
+    "autre_symptome",
+    "battement_ailes_nez_geignement",
+    "boit_peu",
+    "brulure",
+    "brulure_etendue",
+    "brulure_inhalation",
+    "brulure_visage_cou_circulaire",
+    "cephalee",
+    "chute_deux_fois_hauteur",
+    "coince_ou_ejecte",
+    "convulsions",
+    "convulsions_actives",
+    "cyanose",
+    "deformation_membre",
+    "diagnostic_chirurgie_urgente",
+    "diarrhee",
+    "diarrhee_aqueuse",
+    "diarrhee_continue",
+    "difficulte_respiratoire",
+    "douleur_abdominale",
+    "douleur_dos",
+    "douleur_severe",
+    "douleur_testiculaire",
+    "emergence_ver",
+    "empoisonnement_exposition",
+    "eruption_aggravation",
+    "eruption_cutanee",
+    "etat_conscience_altere",
+    "extremites_froides",
+    "fatigue",
+    "fievre",
+    "fonte_musculaire_severe",
+    "fracture_ouverte",
+    "gonflement_bouche_gorge_cou",
+    "grossesse",
+    "grossesse_complications",
+    "incapable_de_boire_ou_teter",
+    "incapacite_boire_se_nourrir",
+    "incapacite_parler_manger_teter",
+    "inconscient",
+    "jaunissement_peau",
+    "jaunissement_yeux",
+    "lesion_cutanee",
+    "lethargie",
+    "luxation_suspectee",
+    "maux_gorge",
+    "membre_menace",
+    "morsure_animal",
+    "morsure_serpent",
+    "muscles_accessoires",
+    "oedeme_deux_pieds",
+    "paleur_severe",
+    "paralysie_membre_soudaine",
+    "passager_decede",
+    "pieton_cycliste_percute",
+    "polytraumatisme",
+    "raideur",
+    "raideur_nuque",
+    "respiration_tres_rapide_ou_lente",
+    "rhume",
+    "saignements_abondants",
+    "sang_dans_selles",
+    "sifflement",
+    "signes_neuro_focaux",
+    "sous_anticoagulants",
+    "stridor",
+    "toux",
+    "trauma_ecrasement",
+    "traumatisme",
+    "traumatisme_penetrant",
+    "troubles_visuels_aigus",
+    "vaccination_recente",
+    "vomit_tout",
+    "yeux_creuses"
+   ]
+  },
+  {
+   "tranche": "2_6_mois",
+   "nombre": 77,
+   "jetons": [
+    "accident_haute_cinetique",
+    "accident_sans_ceinture",
+    "accouchement_declenche",
+    "agitation_irritabilite",
+    "autre_symptome",
+    "battement_ailes_nez_geignement",
+    "boit_peu",
+    "brulure",
+    "brulure_etendue",
+    "brulure_inhalation",
+    "brulure_visage_cou_circulaire",
+    "cephalee",
+    "chute_deux_fois_hauteur",
+    "coince_ou_ejecte",
+    "convulsions",
+    "convulsions_actives",
+    "cyanose",
+    "deformation_membre",
+    "diagnostic_chirurgie_urgente",
+    "diarrhee",
+    "diarrhee_aqueuse",
+    "diarrhee_continue",
+    "difficulte_respiratoire",
+    "douleur_abdominale",
+    "douleur_dos",
+    "douleur_severe",
+    "douleur_testiculaire",
+    "emergence_ver",
+    "empoisonnement_exposition",
+    "eruption_aggravation",
+    "eruption_cutanee",
+    "etat_conscience_altere",
+    "extremites_froides",
+    "fatigue",
+    "fievre",
+    "fonte_musculaire_severe",
+    "fracture_ouverte",
+    "gonflement_bouche_gorge_cou",
+    "grossesse",
+    "grossesse_complications",
+    "incapable_de_boire_ou_teter",
+    "incapacite_boire_se_nourrir",
+    "incapacite_parler_manger_teter",
+    "inconscient",
+    "jaunissement_peau",
+    "jaunissement_yeux",
+    "lesion_cutanee",
+    "lethargie",
+    "luxation_suspectee",
+    "maux_gorge",
+    "membre_menace",
+    "morsure_animal",
+    "morsure_serpent",
+    "muscles_accessoires",
+    "oedeme_deux_pieds",
+    "paleur_severe",
+    "paralysie_membre_soudaine",
+    "passager_decede",
+    "pieton_cycliste_percute",
+    "polytraumatisme",
+    "raideur_nuque",
+    "respiration_tres_rapide_ou_lente",
+    "rhume",
+    "saignements_abondants",
+    "sang_dans_selles",
+    "sifflement",
+    "signes_neuro_focaux",
+    "sous_anticoagulants",
+    "stridor",
+    "toux",
+    "trauma_ecrasement",
+    "traumatisme",
+    "traumatisme_penetrant",
+    "troubles_visuels_aigus",
+    "vaccination_recente",
+    "vomit_tout",
+    "yeux_creuses"
+   ]
+  },
+  {
+   "tranche": "6_mois_2_ans",
+   "nombre": 77,
+   "jetons": [
+    "accident_haute_cinetique",
+    "accident_sans_ceinture",
+    "accouchement_declenche",
+    "agitation_irritabilite",
+    "autre_symptome",
+    "battement_ailes_nez_geignement",
+    "boit_peu",
+    "brulure",
+    "brulure_etendue",
+    "brulure_inhalation",
+    "brulure_visage_cou_circulaire",
+    "cephalee",
+    "chute_deux_fois_hauteur",
+    "coince_ou_ejecte",
+    "convulsions",
+    "convulsions_actives",
+    "cyanose",
+    "deformation_membre",
+    "diagnostic_chirurgie_urgente",
+    "diarrhee",
+    "diarrhee_aqueuse",
+    "diarrhee_continue",
+    "difficulte_respiratoire",
+    "douleur_abdominale",
+    "douleur_dos",
+    "douleur_severe",
+    "douleur_testiculaire",
+    "emergence_ver",
+    "empoisonnement_exposition",
+    "eruption_aggravation",
+    "eruption_cutanee",
+    "etat_conscience_altere",
+    "extremites_froides",
+    "fatigue",
+    "fievre",
+    "fonte_musculaire_severe",
+    "fracture_ouverte",
+    "gonflement_bouche_gorge_cou",
+    "grossesse",
+    "grossesse_complications",
+    "incapable_de_boire_ou_teter",
+    "incapacite_boire_se_nourrir",
+    "incapacite_parler_manger_teter",
+    "inconscient",
+    "jaunissement_peau",
+    "jaunissement_yeux",
+    "lesion_cutanee",
+    "lethargie",
+    "luxation_suspectee",
+    "maux_gorge",
+    "membre_menace",
+    "morsure_animal",
+    "morsure_serpent",
+    "muscles_accessoires",
+    "oedeme_deux_pieds",
+    "paleur_severe",
+    "paralysie_membre_soudaine",
+    "passager_decede",
+    "pieton_cycliste_percute",
+    "polytraumatisme",
+    "raideur_nuque",
+    "respiration_tres_rapide_ou_lente",
+    "rhume",
+    "saignements_abondants",
+    "sang_dans_selles",
+    "sifflement",
+    "signes_neuro_focaux",
+    "sous_anticoagulants",
+    "stridor",
+    "toux",
+    "trauma_ecrasement",
+    "traumatisme",
+    "traumatisme_penetrant",
+    "troubles_visuels_aigus",
+    "vaccination_recente",
+    "vomit_tout",
+    "yeux_creuses"
+   ]
+  },
+  {
+   "tranche": "2_5_ans",
+   "nombre": 77,
+   "jetons": [
+    "accident_haute_cinetique",
+    "accident_sans_ceinture",
+    "accouchement_declenche",
+    "agitation_irritabilite",
+    "autre_symptome",
+    "battement_ailes_nez_geignement",
+    "boit_peu",
+    "brulure",
+    "brulure_etendue",
+    "brulure_inhalation",
+    "brulure_visage_cou_circulaire",
+    "cephalee",
+    "chute_deux_fois_hauteur",
+    "coince_ou_ejecte",
+    "convulsions",
+    "convulsions_actives",
+    "cyanose",
+    "deformation_membre",
+    "diagnostic_chirurgie_urgente",
+    "diarrhee",
+    "diarrhee_aqueuse",
+    "diarrhee_continue",
+    "difficulte_respiratoire",
+    "douleur_abdominale",
+    "douleur_dos",
+    "douleur_severe",
+    "douleur_testiculaire",
+    "emergence_ver",
+    "empoisonnement_exposition",
+    "eruption_aggravation",
+    "eruption_cutanee",
+    "etat_conscience_altere",
+    "extremites_froides",
+    "fatigue",
+    "fievre",
+    "fonte_musculaire_severe",
+    "fracture_ouverte",
+    "gonflement_bouche_gorge_cou",
+    "grossesse",
+    "grossesse_complications",
+    "incapable_de_boire_ou_teter",
+    "incapacite_boire_se_nourrir",
+    "incapacite_parler_manger_teter",
+    "inconscient",
+    "jaunissement_peau",
+    "jaunissement_yeux",
+    "lesion_cutanee",
+    "lethargie",
+    "luxation_suspectee",
+    "maux_gorge",
+    "membre_menace",
+    "morsure_animal",
+    "morsure_serpent",
+    "muscles_accessoires",
+    "oedeme_deux_pieds",
+    "paleur_severe",
+    "paralysie_membre_soudaine",
+    "passager_decede",
+    "pieton_cycliste_percute",
+    "polytraumatisme",
+    "raideur_nuque",
+    "respiration_tres_rapide_ou_lente",
+    "rhume",
+    "saignements_abondants",
+    "sang_dans_selles",
+    "sifflement",
+    "signes_neuro_focaux",
+    "sous_anticoagulants",
+    "stridor",
+    "toux",
+    "trauma_ecrasement",
+    "traumatisme",
+    "traumatisme_penetrant",
+    "troubles_visuels_aigus",
+    "vaccination_recente",
+    "vomit_tout",
+    "yeux_creuses"
+   ]
+  },
+  {
+   "tranche": "5_11_ans",
+   "nombre": 79,
+   "jetons": [
+    "accident_haute_cinetique",
+    "accident_sans_ceinture",
+    "accouchement_declenche",
+    "agitation_irritabilite",
+    "autre_symptome",
+    "battement_ailes_nez_geignement",
+    "boit_peu",
+    "brulure",
+    "brulure_etendue",
+    "brulure_inhalation",
+    "brulure_visage_cou_circulaire",
+    "cephalee",
+    "cephalee_intense",
+    "chute_deux_fois_hauteur",
+    "coince_ou_ejecte",
+    "convulsions",
+    "convulsions_actives",
+    "cyanose",
+    "deformation_membre",
+    "diagnostic_chirurgie_urgente",
+    "diarrhee",
+    "diarrhee_aqueuse",
+    "diarrhee_continue",
+    "difficulte_respiratoire",
+    "douleur_abdominale",
+    "douleur_abdominale_severe",
+    "douleur_dos",
+    "douleur_severe",
+    "douleur_testiculaire",
+    "emergence_ver",
+    "empoisonnement_exposition",
+    "eruption_aggravation",
+    "eruption_cutanee",
+    "etat_conscience_altere",
+    "extremites_froides",
+    "fatigue",
+    "fievre",
+    "fonte_musculaire_severe",
+    "fracture_ouverte",
+    "gonflement_bouche_gorge_cou",
+    "grossesse",
+    "grossesse_complications",
+    "incapable_de_boire_ou_teter",
+    "incapacite_boire_se_nourrir",
+    "incapacite_parler_manger_teter",
+    "inconscient",
+    "jaunissement_peau",
+    "jaunissement_yeux",
+    "lesion_cutanee",
+    "lethargie",
+    "luxation_suspectee",
+    "maux_gorge",
+    "membre_menace",
+    "morsure_animal",
+    "morsure_serpent",
+    "muscles_accessoires",
+    "oedeme_deux_pieds",
+    "paleur_severe",
+    "paralysie_membre_soudaine",
+    "passager_decede",
+    "pieton_cycliste_percute",
+    "polytraumatisme",
+    "raideur_nuque",
+    "respiration_tres_rapide_ou_lente",
+    "rhume",
+    "saignements_abondants",
+    "sang_dans_selles",
+    "sifflement",
+    "signes_neuro_focaux",
+    "sous_anticoagulants",
+    "stridor",
+    "toux",
+    "trauma_ecrasement",
+    "traumatisme",
+    "traumatisme_penetrant",
+    "troubles_visuels_aigus",
+    "vaccination_recente",
+    "vomit_tout",
+    "yeux_creuses"
+   ]
+  },
+  {
+   "tranche": "12_17_ans",
+   "nombre": 78,
+   "jetons": [
+    "accident_haute_cinetique",
+    "accident_sans_ceinture",
+    "accouchement_declenche",
+    "agitation_irritabilite",
+    "alteration_etat_general",
+    "autre_symptome",
+    "brulure",
+    "brulure_etendue",
+    "brulure_inhalation",
+    "brulure_visage_cou_circulaire",
+    "cephalee",
+    "cephalee_intense",
+    "chute_deux_fois_hauteur",
+    "coince_ou_ejecte",
+    "convulsions",
+    "convulsions_actives",
+    "cyanose",
+    "deformation_membre",
+    "diagnostic_chirurgie_urgente",
+    "diarrhee",
+    "diarrhee_aqueuse",
+    "diarrhee_continue",
+    "difficulte_respiratoire",
+    "douleur_abdominale",
+    "douleur_abdominale_aigue",
+    "douleur_abdominale_severe",
+    "douleur_dos",
+    "douleur_severe",
+    "douleur_testiculaire",
+    "douleur_thoracique_aigue",
+    "emergence_ver",
+    "empoisonnement_exposition",
+    "eruption_aggravation",
+    "eruption_cutanee",
+    "etat_conscience_altere",
+    "evanouissement_recent",
+    "fatigue",
+    "fievre",
+    "fracture_ouverte",
+    "gonflement_bouche_gorge_cou",
+    "grossesse",
+    "grossesse_complications",
+    "incapacite_boire_se_nourrir",
+    "incapacite_parler_marcher",
+    "incapacite_uriner",
+    "inconscient",
+    "jaunissement_peau",
+    "jaunissement_yeux",
+    "lesion_cutanee",
+    "luxation_suspectee",
+    "maux_gorge",
+    "membre_menace",
+    "morsure_animal",
+    "morsure_serpent",
+    "muscles_accessoires",
+    "paleur_severe",
+    "paralysie_membre_soudaine",
+    "passager_decede",
+    "pieton_cycliste_percute",
+    "piqure_aiguille",
+    "polytraumatisme",
+    "raideur_nuque",
+    "respiration_tres_rapide_ou_lente",
+    "rhume",
+    "saignements_abondants",
+    "saignements_continus",
+    "sang_dans_selles",
+    "sifflement",
+    "signes_neuro_focaux",
+    "sous_anticoagulants",
+    "stridor",
+    "toux",
+    "trauma_ecrasement",
+    "traumatisme",
+    "traumatisme_penetrant",
+    "troubles_visuels_aigus",
+    "vaccination_recente",
+    "vomit_tout"
+   ]
+  },
+  {
+   "tranche": "18_50_ans",
+   "nombre": 78,
+   "jetons": [
+    "accident_haute_cinetique",
+    "accident_sans_ceinture",
+    "accouchement_declenche",
+    "agitation_irritabilite",
+    "alteration_etat_general",
+    "autre_symptome",
+    "brulure",
+    "brulure_etendue",
+    "brulure_inhalation",
+    "brulure_visage_cou_circulaire",
+    "cephalee",
+    "cephalee_intense",
+    "chute_deux_fois_hauteur",
+    "coince_ou_ejecte",
+    "convulsions",
+    "convulsions_actives",
+    "cyanose",
+    "deformation_membre",
+    "diagnostic_chirurgie_urgente",
+    "diarrhee",
+    "diarrhee_aqueuse",
+    "diarrhee_continue",
+    "difficulte_respiratoire",
+    "douleur_abdominale",
+    "douleur_abdominale_aigue",
+    "douleur_abdominale_severe",
+    "douleur_dos",
+    "douleur_severe",
+    "douleur_testiculaire",
+    "douleur_thoracique_aigue",
+    "emergence_ver",
+    "empoisonnement_exposition",
+    "eruption_aggravation",
+    "eruption_cutanee",
+    "etat_conscience_altere",
+    "evanouissement_recent",
+    "fatigue",
+    "fievre",
+    "fracture_ouverte",
+    "gonflement_bouche_gorge_cou",
+    "grossesse",
+    "grossesse_complications",
+    "incapacite_boire_se_nourrir",
+    "incapacite_parler_marcher",
+    "incapacite_uriner",
+    "inconscient",
+    "jaunissement_peau",
+    "jaunissement_yeux",
+    "lesion_cutanee",
+    "luxation_suspectee",
+    "maux_gorge",
+    "membre_menace",
+    "morsure_animal",
+    "morsure_serpent",
+    "muscles_accessoires",
+    "paleur_severe",
+    "paralysie_membre_soudaine",
+    "passager_decede",
+    "pieton_cycliste_percute",
+    "piqure_aiguille",
+    "polytraumatisme",
+    "raideur_nuque",
+    "respiration_tres_rapide_ou_lente",
+    "rhume",
+    "saignements_abondants",
+    "saignements_continus",
+    "sang_dans_selles",
+    "sifflement",
+    "signes_neuro_focaux",
+    "sous_anticoagulants",
+    "stridor",
+    "toux",
+    "trauma_ecrasement",
+    "traumatisme",
+    "traumatisme_penetrant",
+    "troubles_visuels_aigus",
+    "vaccination_recente",
+    "vomit_tout"
+   ]
+  },
+  {
+   "tranche": "51_70_ans",
+   "nombre": 78,
+   "jetons": [
+    "accident_haute_cinetique",
+    "accident_sans_ceinture",
+    "accouchement_declenche",
+    "agitation_irritabilite",
+    "alteration_etat_general",
+    "autre_symptome",
+    "brulure",
+    "brulure_etendue",
+    "brulure_inhalation",
+    "brulure_visage_cou_circulaire",
+    "cephalee",
+    "cephalee_intense",
+    "chute_deux_fois_hauteur",
+    "coince_ou_ejecte",
+    "convulsions",
+    "convulsions_actives",
+    "cyanose",
+    "deformation_membre",
+    "diagnostic_chirurgie_urgente",
+    "diarrhee",
+    "diarrhee_aqueuse",
+    "diarrhee_continue",
+    "difficulte_respiratoire",
+    "douleur_abdominale",
+    "douleur_abdominale_aigue",
+    "douleur_abdominale_severe",
+    "douleur_dos",
+    "douleur_severe",
+    "douleur_testiculaire",
+    "douleur_thoracique_aigue",
+    "emergence_ver",
+    "empoisonnement_exposition",
+    "eruption_aggravation",
+    "eruption_cutanee",
+    "etat_conscience_altere",
+    "evanouissement_recent",
+    "fatigue",
+    "fievre",
+    "fracture_ouverte",
+    "gonflement_bouche_gorge_cou",
+    "grossesse",
+    "grossesse_complications",
+    "incapacite_boire_se_nourrir",
+    "incapacite_parler_marcher",
+    "incapacite_uriner",
+    "inconscient",
+    "jaunissement_peau",
+    "jaunissement_yeux",
+    "lesion_cutanee",
+    "luxation_suspectee",
+    "maux_gorge",
+    "membre_menace",
+    "morsure_animal",
+    "morsure_serpent",
+    "muscles_accessoires",
+    "paleur_severe",
+    "paralysie_membre_soudaine",
+    "passager_decede",
+    "pieton_cycliste_percute",
+    "piqure_aiguille",
+    "polytraumatisme",
+    "raideur_nuque",
+    "respiration_tres_rapide_ou_lente",
+    "rhume",
+    "saignements_abondants",
+    "saignements_continus",
+    "sang_dans_selles",
+    "sifflement",
+    "signes_neuro_focaux",
+    "sous_anticoagulants",
+    "stridor",
+    "toux",
+    "trauma_ecrasement",
+    "traumatisme",
+    "traumatisme_penetrant",
+    "troubles_visuels_aigus",
+    "vaccination_recente",
+    "vomit_tout"
+   ]
+  },
+  {
+   "tranche": "plus_70_ans",
+   "nombre": 78,
+   "jetons": [
+    "accident_haute_cinetique",
+    "accident_sans_ceinture",
+    "accouchement_declenche",
+    "agitation_irritabilite",
+    "alteration_etat_general",
+    "autre_symptome",
+    "brulure",
+    "brulure_etendue",
+    "brulure_inhalation",
+    "brulure_visage_cou_circulaire",
+    "cephalee",
+    "cephalee_intense",
+    "chute_deux_fois_hauteur",
+    "coince_ou_ejecte",
+    "convulsions",
+    "convulsions_actives",
+    "cyanose",
+    "deformation_membre",
+    "diagnostic_chirurgie_urgente",
+    "diarrhee",
+    "diarrhee_aqueuse",
+    "diarrhee_continue",
+    "difficulte_respiratoire",
+    "douleur_abdominale",
+    "douleur_abdominale_aigue",
+    "douleur_abdominale_severe",
+    "douleur_dos",
+    "douleur_severe",
+    "douleur_testiculaire",
+    "douleur_thoracique_aigue",
+    "emergence_ver",
+    "empoisonnement_exposition",
+    "eruption_aggravation",
+    "eruption_cutanee",
+    "etat_conscience_altere",
+    "evanouissement_recent",
+    "fatigue",
+    "fievre",
+    "fracture_ouverte",
+    "gonflement_bouche_gorge_cou",
+    "grossesse",
+    "grossesse_complications",
+    "incapacite_boire_se_nourrir",
+    "incapacite_parler_marcher",
+    "incapacite_uriner",
+    "inconscient",
+    "jaunissement_peau",
+    "jaunissement_yeux",
+    "lesion_cutanee",
+    "luxation_suspectee",
+    "maux_gorge",
+    "membre_menace",
+    "morsure_animal",
+    "morsure_serpent",
+    "muscles_accessoires",
+    "paleur_severe",
+    "paralysie_membre_soudaine",
+    "passager_decede",
+    "pieton_cycliste_percute",
+    "piqure_aiguille",
+    "polytraumatisme",
+    "raideur_nuque",
+    "respiration_tres_rapide_ou_lente",
+    "rhume",
+    "saignements_abondants",
+    "saignements_continus",
+    "sang_dans_selles",
+    "sifflement",
+    "signes_neuro_focaux",
+    "sous_anticoagulants",
+    "stridor",
+    "toux",
+    "trauma_ecrasement",
+    "traumatisme",
+    "traumatisme_penetrant",
+    "troubles_visuels_aigus",
+    "vaccination_recente",
+    "vomit_tout"
+   ]
+  }
+ ],
+ "fermetures": [
+  {
+   "entree": [
+    "diarrhee_avec_sang"
+   ],
+   "fermeture": [
+    "diarrhee",
+    "diarrhee_avec_sang",
+    "sang_dans_selles"
+   ]
+  },
+  {
+   "entree": [
+    "chute_deux_fois_hauteur"
+   ],
+   "fermeture": [
+    "chute_deux_fois_hauteur",
+    "traumatisme",
+    "traumatisme_haut_risque"
+   ]
+  },
+  {
+   "entree": [
+    "etat_conscience_altere"
+   ],
+   "fermeture": [
+    "confusion_somnolence_agitation",
+    "etat_conscience_altere"
+   ]
+  },
+  {
+   "entree": [
+    "saignements_abondants"
+   ],
+   "fermeture": [
+    "saignements",
+    "saignements_abondants"
+   ]
+  }
+ ],
+ "tirages": [
+  {
+   "jetons": [
+    "traumatisme"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-11"
+  },
+  {
+   "jetons": [
+    "cephalee_intense",
+    "douleur_thoracique_aigue",
+    "eruption_aggravation",
+    "troubles_visuels_aigus"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-09"
+  },
+  {
+   "jetons": [],
+   "tranche": "moins_8_jours",
+   "duree": 20,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [],
+   "tranche": "12_17_ans",
+   "duree": 3,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "cephalee_intense",
+    "douleur_severe",
+    "luxation_suspectee",
+    "polytraumatisme"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [],
+   "tranche": "plus_70_ans",
+   "duree": 20,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "agitation_irritabilite"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "difficulte_respiratoire",
+    "douleur_severe",
+    "piqure_aiguille"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-08"
+  },
+  {
+   "jetons": [
+    "autre_symptome",
+    "diagnostic_chirurgie_urgente",
+    "eruption_aggravation",
+    "evanouissement_recent",
+    "muscles_accessoires"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-07"
+  },
+  {
+   "jetons": [],
+   "tranche": "5_11_ans",
+   "duree": 0,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [],
+   "tranche": "plus_70_ans",
+   "duree": 3,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "accident_sans_ceinture",
+    "diarrhee",
+    "eruption_aggravation",
+    "morsure_animal",
+    "polytraumatisme"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "muscles_accessoires",
+    "saignements_continus"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 3,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "brulure_visage_cou_circulaire",
+    "douleur_abdominale",
+    "morsure_serpent",
+    "vomit_tout"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "douleur_severe",
+    "fievre",
+    "membre_menace",
+    "trauma_ecrasement"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "brulure_etendue"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "diagnostic_chirurgie_urgente",
+    "diarrhee",
+    "douleur_abdominale",
+    "fievre",
+    "fracture_ouverte"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "eruption_aggravation",
+    "passager_decede",
+    "raideur_nuque"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "cephalee_intense",
+    "grossesse",
+    "raideur_nuque"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-15"
+  },
+  {
+   "jetons": [
+    "douleur_abdominale_aigue",
+    "douleur_testiculaire",
+    "grossesse",
+    "incapable_de_boire_ou_teter",
+    "pieton_cycliste_percute"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "incapacite_parler_manger_teter",
+    "lesion_cutanee"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [],
+   "tranche": "18_50_ans",
+   "duree": 3,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "saignements_continus"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 20,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "incapacite_parler_manger_teter",
+    "pieton_cycliste_percute",
+    "signes_neuro_focaux"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "sous_anticoagulants",
+    "stridor"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-02"
+  },
+  {
+   "jetons": [
+    "grossesse_complications",
+    "incapacite_uriner"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-20"
+  },
+  {
+   "jetons": [],
+   "tranche": "2_6_mois",
+   "duree": 3,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "oedeme_deux_pieds"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-09"
+  },
+  {
+   "jetons": [
+    "eruption_cutanee",
+    "muscles_accessoires",
+    "paleur_severe"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "trauma_ecrasement"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "diarrhee",
+    "emergence_ver",
+    "fatigue",
+    "membre_menace"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-10"
+  },
+  {
+   "jetons": [
+    "brulure",
+    "chute_deux_fois_hauteur",
+    "evanouissement_recent",
+    "fracture_ouverte",
+    "traumatisme"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "raideur_nuque"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "alteration_etat_general"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-09"
+  },
+  {
+   "jetons": [],
+   "tranche": "plus_70_ans",
+   "duree": 0,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "douleur_thoracique_aigue",
+    "morsure_animal",
+    "respiration_tres_rapide_ou_lente",
+    "troubles_visuels_aigus"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "lesion_cutanee"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-09"
+  },
+  {
+   "jetons": [
+    "coince_ou_ejecte",
+    "douleur_abdominale_aigue",
+    "douleur_thoracique_aigue",
+    "extremites_froides",
+    "jaunissement_peau"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-05"
+  },
+  {
+   "jetons": [
+    "accident_sans_ceinture",
+    "brulure",
+    "diarrhee_continue"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [],
+   "tranche": "2_6_mois",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "convulsions",
+    "empoisonnement_exposition",
+    "incapacite_parler_marcher"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "PCIME-SGD-03"
+  },
+  {
+   "jetons": [
+    "difficulte_respiratoire",
+    "piqure_aiguille"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-21"
+  },
+  {
+   "jetons": [
+    "paralysie_membre_soudaine",
+    "raideur"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-10"
+  },
+  {
+   "jetons": [
+    "douleur_abdominale_severe",
+    "incapacite_parler_manger_teter"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-12"
+  },
+  {
+   "jetons": [
+    "autre_symptome",
+    "brulure_inhalation",
+    "maux_gorge",
+    "sang_dans_selles"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "empoisonnement_exposition",
+    "rhume",
+    "sifflement"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-15"
+  },
+  {
+   "jetons": [
+    "boit_peu",
+    "coince_ou_ejecte",
+    "convulsions_actives",
+    "cyanose",
+    "paleur_severe"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-03"
+  },
+  {
+   "jetons": [
+    "douleur_abdominale_aigue",
+    "douleur_thoracique_aigue",
+    "evanouissement_recent",
+    "maux_gorge",
+    "signes_neuro_focaux"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-07"
+  },
+  {
+   "jetons": [
+    "douleur_abdominale"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 3,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "brulure",
+    "fonte_musculaire_severe",
+    "inconscient",
+    "lesion_cutanee"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-01"
+  },
+  {
+   "jetons": [
+    "battement_ailes_nez_geignement",
+    "brulure",
+    "douleur_severe",
+    "douleur_testiculaire",
+    "sifflement"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-11"
+  },
+  {
+   "jetons": [],
+   "tranche": "5_11_ans",
+   "duree": 20,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "incapacite_parler_manger_teter",
+    "incapacite_parler_marcher",
+    "signes_neuro_focaux"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-10"
+  },
+  {
+   "jetons": [
+    "eruption_cutanee"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "coince_ou_ejecte",
+    "douleur_abdominale_aigue",
+    "jaunissement_yeux",
+    "oedeme_deux_pieds"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "convulsions",
+    "fatigue",
+    "fonte_musculaire_severe",
+    "lethargie"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "convulsions_actives",
+    "cyanose",
+    "sous_anticoagulants",
+    "stridor",
+    "toux"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-02"
+  },
+  {
+   "jetons": [
+    "brulure_inhalation",
+    "saignements_abondants"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-04"
+  },
+  {
+   "jetons": [
+    "cephalee_intense",
+    "douleur_abdominale_severe",
+    "fatigue",
+    "trauma_ecrasement"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "brulure_inhalation",
+    "fatigue",
+    "morsure_animal",
+    "trauma_ecrasement"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "accident_haute_cinetique",
+    "convulsions",
+    "jaunissement_peau",
+    "muscles_accessoires"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "difficulte_respiratoire"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-09"
+  },
+  {
+   "jetons": [
+    "cephalee_intense",
+    "diarrhee_aqueuse",
+    "douleur_severe",
+    "fracture_ouverte",
+    "grossesse_complications"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "boit_peu",
+    "cephalee_intense",
+    "cyanose",
+    "saignements_continus"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-03"
+  },
+  {
+   "jetons": [
+    "convulsions_actives",
+    "fracture_ouverte",
+    "pieton_cycliste_percute",
+    "raideur_nuque"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-07"
+  },
+  {
+   "jetons": [
+    "brulure_inhalation",
+    "jaunissement_peau",
+    "membre_menace",
+    "sifflement"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "brulure",
+    "brulure_inhalation",
+    "morsure_animal",
+    "saignements_continus"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "pieton_cycliste_percute"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [],
+   "tranche": "12_17_ans",
+   "duree": 20,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "fievre",
+    "grossesse"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 3,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [],
+   "tranche": "12_17_ans",
+   "duree": 3,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [],
+   "tranche": "2_5_ans",
+   "duree": 3,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "extremites_froides"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-05"
+  },
+  {
+   "jetons": [
+    "troubles_visuels_aigus"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-11"
+  },
+  {
+   "jetons": [
+    "grossesse"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 3,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "chute_deux_fois_hauteur",
+    "douleur_abdominale",
+    "membre_menace",
+    "sous_anticoagulants",
+    "trauma_ecrasement"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "douleur_thoracique_aigue",
+    "paralysie_membre_soudaine"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "accident_haute_cinetique",
+    "convulsions",
+    "douleur_testiculaire",
+    "passager_decede"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "alteration_etat_general",
+    "incapacite_boire_se_nourrir",
+    "membre_menace",
+    "raideur_nuque"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-10"
+  },
+  {
+   "jetons": [],
+   "tranche": "8_jours_2_mois",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [],
+   "tranche": "2_5_ans",
+   "duree": 3,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "polytraumatisme"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "morsure_animal"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-21"
+  },
+  {
+   "jetons": [],
+   "tranche": "5_11_ans",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "convulsions",
+    "fievre",
+    "muscles_accessoires",
+    "polytraumatisme",
+    "yeux_creuses"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [],
+   "tranche": "2_5_ans",
+   "duree": 3,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "douleur_severe",
+    "passager_decede"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "emergence_ver",
+    "fatigue",
+    "trauma_ecrasement",
+    "yeux_creuses"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "alteration_etat_general",
+    "cephalee",
+    "incapacite_parler_marcher",
+    "paleur_severe",
+    "saignements_abondants"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-04"
+  },
+  {
+   "jetons": [
+    "diarrhee_continue",
+    "vaccination_recente"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-05"
+  },
+  {
+   "jetons": [
+    "accouchement_declenche",
+    "battement_ailes_nez_geignement",
+    "brulure_inhalation"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [],
+   "tranche": "5_11_ans",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [],
+   "tranche": "moins_8_jours",
+   "duree": 0,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "coince_ou_ejecte",
+    "cyanose",
+    "membre_menace",
+    "saignements_continus"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-03"
+  },
+  {
+   "jetons": [
+    "brulure_visage_cou_circulaire",
+    "fonte_musculaire_severe",
+    "oedeme_deux_pieds",
+    "piqure_aiguille",
+    "sous_anticoagulants"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "rhume",
+    "toux"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 14,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "autre_symptome",
+    "cephalee",
+    "chute_deux_fois_hauteur",
+    "douleur_abdominale_aigue",
+    "stridor"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-02"
+  },
+  {
+   "jetons": [],
+   "tranche": "moins_8_jours",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "cephalee_intense"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "grossesse",
+    "incapable_de_boire_ou_teter",
+    "jaunissement_yeux",
+    "saignements_continus"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-04"
+  },
+  {
+   "jetons": [
+    "incapacite_parler_marcher",
+    "muscles_accessoires",
+    "yeux_creuses"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "douleur_thoracique_aigue",
+    "sang_dans_selles"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [],
+   "tranche": "6_mois_2_ans",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "inconscient",
+    "muscles_accessoires"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "PCIME-SGD-04"
+  },
+  {
+   "jetons": [],
+   "tranche": "12_17_ans",
+   "duree": 20,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "brulure_inhalation",
+    "fonte_musculaire_severe",
+    "saignements_continus",
+    "sifflement"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "difficulte_respiratoire",
+    "paralysie_membre_soudaine"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-09"
+  },
+  {
+   "jetons": [],
+   "tranche": "plus_70_ans",
+   "duree": 20,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "vaccination_recente",
+    "vomit_tout"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "jaunissement_yeux",
+    "morsure_serpent",
+    "oedeme_deux_pieds",
+    "respiration_tres_rapide_ou_lente"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-14"
+  },
+  {
+   "jetons": [
+    "brulure_visage_cou_circulaire",
+    "emergence_ver",
+    "incapable_de_boire_ou_teter",
+    "raideur",
+    "respiration_tres_rapide_ou_lente"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "brulure_inhalation",
+    "membre_menace",
+    "polytraumatisme",
+    "stridor",
+    "vaccination_recente"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-02"
+  },
+  {
+   "jetons": [
+    "convulsions_actives",
+    "grossesse_complications",
+    "raideur",
+    "rhume",
+    "signes_neuro_focaux"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-05"
+  },
+  {
+   "jetons": [
+    "douleur_thoracique_aigue",
+    "evanouissement_recent",
+    "fracture_ouverte",
+    "incapacite_uriner",
+    "pieton_cycliste_percute"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "brulure_etendue",
+    "grossesse_complications",
+    "morsure_animal",
+    "paleur_severe",
+    "saignements_continus"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [],
+   "tranche": "51_70_ans",
+   "duree": 20,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [],
+   "tranche": "2_5_ans",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "brulure_visage_cou_circulaire",
+    "fonte_musculaire_severe",
+    "gonflement_bouche_gorge_cou",
+    "passager_decede",
+    "rhume"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "agitation_irritabilite",
+    "grossesse_complications",
+    "incapable_de_boire_ou_teter"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-03"
+  },
+  {
+   "jetons": [
+    "difficulte_respiratoire",
+    "extremites_froides",
+    "fonte_musculaire_severe",
+    "sang_dans_selles"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-05"
+  },
+  {
+   "jetons": [
+    "brulure",
+    "cephalee_intense",
+    "lethargie",
+    "stridor"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-02"
+  },
+  {
+   "jetons": [
+    "accouchement_declenche",
+    "brulure_etendue",
+    "incapacite_boire_se_nourrir",
+    "toux",
+    "troubles_visuels_aigus"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "accident_sans_ceinture",
+    "deformation_membre",
+    "douleur_severe"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [],
+   "tranche": "2_5_ans",
+   "duree": 20,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "fievre",
+    "passager_decede"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "eruption_aggravation",
+    "fievre",
+    "gonflement_bouche_gorge_cou"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-01"
+  },
+  {
+   "jetons": [
+    "douleur_thoracique_aigue",
+    "fatigue",
+    "jaunissement_peau",
+    "morsure_serpent",
+    "paleur_severe"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-14"
+  },
+  {
+   "jetons": [
+    "brulure_etendue",
+    "brulure_visage_cou_circulaire",
+    "douleur_thoracique_aigue",
+    "rhume",
+    "traumatisme"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [],
+   "tranche": "2_6_mois",
+   "duree": 20,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "difficulte_respiratoire",
+    "trauma_ecrasement",
+    "vomit_tout"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "douleur_severe",
+    "sang_dans_selles"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-12"
+  },
+  {
+   "jetons": [
+    "douleur_severe",
+    "traumatisme"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-08"
+  },
+  {
+   "jetons": [
+    "douleur_dos",
+    "extremites_froides",
+    "incapacite_boire_se_nourrir",
+    "raideur_nuque",
+    "traumatisme"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-05"
+  },
+  {
+   "jetons": [],
+   "tranche": "plus_70_ans",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "boit_peu",
+    "cephalee"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "autre_symptome",
+    "incapable_de_boire_ou_teter",
+    "respiration_tres_rapide_ou_lente",
+    "saignements_continus",
+    "yeux_creuses"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "cyanose",
+    "douleur_dos"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-03"
+  },
+  {
+   "jetons": [
+    "cephalee",
+    "chute_deux_fois_hauteur",
+    "deformation_membre",
+    "gonflement_bouche_gorge_cou",
+    "signes_neuro_focaux"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "brulure_etendue",
+    "incapable_de_boire_ou_teter",
+    "raideur",
+    "stridor"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-02"
+  },
+  {
+   "jetons": [
+    "incapacite_parler_manger_teter"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 20,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "incapable_de_boire_ou_teter",
+    "vomit_tout"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-03"
+  },
+  {
+   "jetons": [
+    "fonte_musculaire_severe",
+    "saignements_abondants",
+    "vomit_tout"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "PCIME-SGD-02"
+  },
+  {
+   "jetons": [
+    "douleur_severe",
+    "incapacite_parler_manger_teter",
+    "incapacite_parler_marcher",
+    "raideur",
+    "traumatisme"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-12"
+  },
+  {
+   "jetons": [
+    "brulure_visage_cou_circulaire",
+    "deformation_membre",
+    "maux_gorge",
+    "pieton_cycliste_percute"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "cyanose",
+    "deformation_membre",
+    "stridor"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-02"
+  },
+  {
+   "jetons": [
+    "douleur_abdominale"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-09"
+  },
+  {
+   "jetons": [
+    "douleur_dos"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 14,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "convulsions"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 20,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "gonflement_bouche_gorge_cou",
+    "incapacite_uriner",
+    "morsure_serpent"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-11"
+  },
+  {
+   "jetons": [],
+   "tranche": "5_11_ans",
+   "duree": 20,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "brulure_inhalation",
+    "douleur_thoracique_aigue",
+    "fatigue",
+    "grossesse_complications"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "douleur_testiculaire",
+    "saignements_continus"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-13"
+  },
+  {
+   "jetons": [
+    "convulsions",
+    "diarrhee_continue",
+    "fatigue"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-03"
+  },
+  {
+   "jetons": [
+    "brulure_etendue",
+    "coince_ou_ejecte",
+    "eruption_cutanee",
+    "fievre",
+    "inconscient"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-01"
+  },
+  {
+   "jetons": [
+    "evanouissement_recent",
+    "pieton_cycliste_percute",
+    "saignements_continus"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "empoisonnement_exposition"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-15"
+  },
+  {
+   "jetons": [],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "rhume"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "vaccination_recente"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 14,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "alteration_etat_general",
+    "fievre",
+    "sous_anticoagulants",
+    "troubles_visuels_aigus",
+    "vomit_tout"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-03"
+  },
+  {
+   "jetons": [
+    "jaunissement_yeux",
+    "maux_gorge"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "boit_peu",
+    "diarrhee",
+    "passager_decede",
+    "vomit_tout"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "convulsions_actives",
+    "deformation_membre",
+    "saignements_abondants",
+    "saignements_continus"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-04"
+  },
+  {
+   "jetons": [],
+   "tranche": "2_5_ans",
+   "duree": 0,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "accouchement_declenche",
+    "raideur",
+    "trauma_ecrasement"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "grossesse"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-15"
+  },
+  {
+   "jetons": [
+    "brulure_visage_cou_circulaire"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "douleur_thoracique_aigue",
+    "grossesse_complications",
+    "sifflement",
+    "trauma_ecrasement",
+    "traumatisme"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "brulure_inhalation",
+    "brulure_visage_cou_circulaire",
+    "gonflement_bouche_gorge_cou",
+    "raideur_nuque",
+    "sifflement"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "accident_sans_ceinture"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "emergence_ver",
+    "evanouissement_recent"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 20,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "maux_gorge"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 20,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "cephalee",
+    "cephalee_intense",
+    "difficulte_respiratoire",
+    "jaunissement_yeux",
+    "traumatisme"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-17"
+  },
+  {
+   "jetons": [
+    "cephalee",
+    "cephalee_intense",
+    "difficulte_respiratoire",
+    "trauma_ecrasement"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "alteration_etat_general",
+    "diarrhee",
+    "signes_neuro_focaux"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-09"
+  },
+  {
+   "jetons": [
+    "muscles_accessoires"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 20,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "grossesse",
+    "incapacite_uriner"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "evanouissement_recent",
+    "incapacite_parler_manger_teter",
+    "inconscient"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-01"
+  },
+  {
+   "jetons": [],
+   "tranche": "2_5_ans",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [],
+   "tranche": "12_17_ans",
+   "duree": 3,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "diarrhee_continue",
+    "sous_anticoagulants"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-03"
+  },
+  {
+   "jetons": [
+    "coince_ou_ejecte",
+    "douleur_dos",
+    "pieton_cycliste_percute",
+    "piqure_aiguille",
+    "sifflement"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "coince_ou_ejecte",
+    "convulsions_actives"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-07"
+  },
+  {
+   "jetons": [
+    "accident_sans_ceinture",
+    "agitation_irritabilite",
+    "chute_deux_fois_hauteur",
+    "etat_conscience_altere",
+    "incapacite_uriner"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "cyanose",
+    "raideur_nuque"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-03"
+  },
+  {
+   "jetons": [
+    "lesion_cutanee",
+    "sang_dans_selles"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "boit_peu",
+    "diarrhee",
+    "inconscient",
+    "jaunissement_yeux",
+    "vomit_tout"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "PCIME-SGD-02"
+  },
+  {
+   "jetons": [
+    "evanouissement_recent"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "brulure_visage_cou_circulaire",
+    "extremites_froides",
+    "sous_anticoagulants"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "lethargie"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 14,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "diarrhee",
+    "diarrhee_aqueuse",
+    "passager_decede",
+    "saignements_abondants"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-04"
+  },
+  {
+   "jetons": [],
+   "tranche": "plus_70_ans",
+   "duree": 3,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "saignements_continus"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-06"
+  },
+  {
+   "jetons": [
+    "brulure",
+    "deformation_membre",
+    "diarrhee_aqueuse",
+    "etat_conscience_altere",
+    "piqure_aiguille"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-11"
+  },
+  {
+   "jetons": [],
+   "tranche": "12_17_ans",
+   "duree": 0,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "gonflement_bouche_gorge_cou",
+    "signes_neuro_focaux",
+    "trauma_ecrasement",
+    "troubles_visuels_aigus"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "rhume"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 3,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "accouchement_declenche",
+    "emergence_ver",
+    "saignements_abondants"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-04"
+  },
+  {
+   "jetons": [
+    "boit_peu",
+    "luxation_suspectee"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-11"
+  },
+  {
+   "jetons": [
+    "paleur_severe",
+    "sifflement"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-02"
+  },
+  {
+   "jetons": [
+    "saignements_continus"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 3,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "cyanose",
+    "eruption_aggravation"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-03"
+  },
+  {
+   "jetons": [
+    "brulure_inhalation",
+    "extremites_froides",
+    "saignements_continus"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-05"
+  },
+  {
+   "jetons": [
+    "accident_sans_ceinture",
+    "coince_ou_ejecte",
+    "etat_conscience_altere",
+    "evanouissement_recent",
+    "inconscient"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-01"
+  },
+  {
+   "jetons": [
+    "agitation_irritabilite",
+    "incapacite_boire_se_nourrir"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-04"
+  },
+  {
+   "jetons": [],
+   "tranche": "8_jours_2_mois",
+   "duree": 3,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "cyanose",
+    "douleur_dos",
+    "fievre",
+    "membre_menace"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-03"
+  },
+  {
+   "jetons": [
+    "evanouissement_recent",
+    "grossesse",
+    "inconscient",
+    "paleur_severe"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-01"
+  },
+  {
+   "jetons": [],
+   "tranche": "6_mois_2_ans",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "agitation_irritabilite"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-07"
+  },
+  {
+   "jetons": [],
+   "tranche": "2_5_ans",
+   "duree": 3,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "accouchement_declenche",
+    "traumatisme_penetrant"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "diarrhee_continue",
+    "etat_conscience_altere",
+    "fievre",
+    "gonflement_bouche_gorge_cou"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-08"
+  },
+  {
+   "jetons": [
+    "raideur_nuque",
+    "traumatisme_penetrant",
+    "troubles_visuels_aigus"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "autre_symptome"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "incapable_de_boire_ou_teter",
+    "traumatisme_penetrant",
+    "yeux_creuses"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "PCIME-SGD-01"
+  },
+  {
+   "jetons": [],
+   "tranche": "12_17_ans",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "convulsions",
+    "trauma_ecrasement"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "chute_deux_fois_hauteur",
+    "gonflement_bouche_gorge_cou",
+    "inconscient"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "PCIME-SGD-04"
+  },
+  {
+   "jetons": [
+    "alteration_etat_general",
+    "chute_deux_fois_hauteur",
+    "paralysie_membre_soudaine"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "fatigue"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "difficulte_respiratoire",
+    "paralysie_membre_soudaine",
+    "raideur",
+    "traumatisme"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "difficulte_respiratoire"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 14,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "empoisonnement_exposition"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-15"
+  },
+  {
+   "jetons": [],
+   "tranche": "8_jours_2_mois",
+   "duree": 20,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "vomit_tout"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-03"
+  },
+  {
+   "jetons": [
+    "cephalee",
+    "diarrhee",
+    "jaunissement_peau"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "autre_symptome",
+    "chute_deux_fois_hauteur",
+    "emergence_ver",
+    "incapacite_parler_marcher",
+    "maux_gorge"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "luxation_suspectee"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-16"
+  },
+  {
+   "jetons": [
+    "douleur_testiculaire",
+    "empoisonnement_exposition",
+    "incapacite_parler_marcher"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "saignements_continus"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-09"
+  },
+  {
+   "jetons": [
+    "accouchement_declenche",
+    "diarrhee_aqueuse",
+    "etat_conscience_altere",
+    "grossesse"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "deformation_membre",
+    "diarrhee_continue",
+    "passager_decede",
+    "vaccination_recente"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "douleur_testiculaire",
+    "oedeme_deux_pieds",
+    "polytraumatisme",
+    "saignements_continus"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "accident_haute_cinetique",
+    "battement_ailes_nez_geignement",
+    "convulsions",
+    "inconscient"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-01"
+  },
+  {
+   "jetons": [
+    "pieton_cycliste_percute"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "chute_deux_fois_hauteur",
+    "evanouissement_recent",
+    "raideur_nuque"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "accident_haute_cinetique",
+    "douleur_thoracique_aigue",
+    "paralysie_membre_soudaine"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "cephalee",
+    "diarrhee",
+    "fatigue",
+    "membre_menace",
+    "signes_neuro_focaux"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [],
+   "tranche": "2_6_mois",
+   "duree": 0,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "alteration_etat_general",
+    "brulure_etendue",
+    "cyanose",
+    "fatigue",
+    "incapable_de_boire_ou_teter"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-03"
+  },
+  {
+   "jetons": [],
+   "tranche": "6_mois_2_ans",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "diarrhee_aqueuse",
+    "incapacite_parler_marcher"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 14,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "extremites_froides"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 20,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "brulure_inhalation",
+    "lesion_cutanee",
+    "paleur_severe",
+    "saignements_abondants"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-04"
+  },
+  {
+   "jetons": [],
+   "tranche": "5_11_ans",
+   "duree": 3,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "autre_symptome",
+    "boit_peu",
+    "incapacite_parler_marcher"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-09"
+  },
+  {
+   "jetons": [
+    "paleur_severe"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-05"
+  },
+  {
+   "jetons": [],
+   "tranche": "51_70_ans",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "empoisonnement_exposition",
+    "eruption_aggravation",
+    "evanouissement_recent",
+    "extremites_froides"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-09"
+  },
+  {
+   "jetons": [
+    "douleur_dos",
+    "incapacite_uriner"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 3,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "accident_haute_cinetique",
+    "signes_neuro_focaux"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "cephalee",
+    "empoisonnement_exposition",
+    "extremites_froides",
+    "incapacite_boire_se_nourrir"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-05"
+  },
+  {
+   "jetons": [
+    "diarrhee",
+    "etat_conscience_altere",
+    "inconscient",
+    "maux_gorge",
+    "respiration_tres_rapide_ou_lente"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-01"
+  },
+  {
+   "jetons": [
+    "cephalee",
+    "douleur_thoracique_aigue",
+    "membre_menace",
+    "sous_anticoagulants",
+    "trauma_ecrasement"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "lesion_cutanee"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [],
+   "tranche": "moins_8_jours",
+   "duree": 0,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "evanouissement_recent",
+    "vomit_tout"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-03"
+  },
+  {
+   "jetons": [
+    "traumatisme_penetrant"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "gonflement_bouche_gorge_cou"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-01"
+  },
+  {
+   "jetons": [
+    "incapacite_parler_marcher",
+    "lethargie",
+    "stridor"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-02"
+  },
+  {
+   "jetons": [
+    "autre_symptome",
+    "raideur_nuque",
+    "troubles_visuels_aigus"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-09"
+  },
+  {
+   "jetons": [
+    "cephalee_intense",
+    "lethargie",
+    "paleur_severe"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "PCIME-SGD-04"
+  },
+  {
+   "jetons": [
+    "accident_haute_cinetique",
+    "brulure_visage_cou_circulaire",
+    "empoisonnement_exposition",
+    "eruption_aggravation",
+    "jaunissement_peau"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [],
+   "tranche": "2_6_mois",
+   "duree": 0,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "chute_deux_fois_hauteur",
+    "convulsions_actives",
+    "muscles_accessoires",
+    "saignements_abondants"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-04"
+  },
+  {
+   "jetons": [],
+   "tranche": "moins_8_jours",
+   "duree": 0,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "difficulte_respiratoire",
+    "oedeme_deux_pieds",
+    "sifflement",
+    "traumatisme_penetrant"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "brulure_inhalation",
+    "lesion_cutanee",
+    "raideur",
+    "trauma_ecrasement"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "raideur_nuque",
+    "vomit_tout"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-03"
+  },
+  {
+   "jetons": [
+    "accident_sans_ceinture",
+    "incapacite_uriner",
+    "inconscient",
+    "morsure_animal",
+    "sous_anticoagulants"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-01"
+  },
+  {
+   "jetons": [
+    "maux_gorge"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "raideur"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "cephalee",
+    "paleur_severe"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-06"
+  },
+  {
+   "jetons": [
+    "empoisonnement_exposition",
+    "grossesse_complications",
+    "incapacite_boire_se_nourrir",
+    "paleur_severe",
+    "sous_anticoagulants"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-09"
+  },
+  {
+   "jetons": [
+    "incapacite_parler_manger_teter",
+    "lethargie",
+    "paleur_severe",
+    "saignements_abondants"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-04"
+  },
+  {
+   "jetons": [
+    "cyanose",
+    "diarrhee_aqueuse",
+    "douleur_testiculaire",
+    "jaunissement_yeux",
+    "sang_dans_selles"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-03"
+  },
+  {
+   "jetons": [
+    "coince_ou_ejecte",
+    "grossesse",
+    "inconscient",
+    "morsure_animal",
+    "morsure_serpent"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-01"
+  },
+  {
+   "jetons": [
+    "diagnostic_chirurgie_urgente",
+    "diarrhee_continue",
+    "rhume",
+    "toux",
+    "traumatisme"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-03"
+  },
+  {
+   "jetons": [
+    "difficulte_respiratoire"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [],
+   "tranche": "moins_8_jours",
+   "duree": 0,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "douleur_abdominale_aigue"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-12"
+  },
+  {
+   "jetons": [],
+   "tranche": "moins_8_jours",
+   "duree": 0,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "agitation_irritabilite",
+    "autre_symptome",
+    "eruption_cutanee",
+    "raideur",
+    "raideur_nuque"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-08"
+  },
+  {
+   "jetons": [
+    "douleur_testiculaire",
+    "evanouissement_recent",
+    "grossesse",
+    "raideur_nuque"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-13"
+  },
+  {
+   "jetons": [
+    "alteration_etat_general"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "brulure",
+    "incapable_de_boire_ou_teter",
+    "paralysie_membre_soudaine",
+    "troubles_visuels_aigus",
+    "vaccination_recente"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "diarrhee",
+    "douleur_abdominale",
+    "gonflement_bouche_gorge_cou",
+    "incapacite_boire_se_nourrir",
+    "polytraumatisme"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "extremites_froides",
+    "incapable_de_boire_ou_teter"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-05"
+  },
+  {
+   "jetons": [
+    "brulure_inhalation",
+    "jaunissement_peau"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "convulsions_actives",
+    "empoisonnement_exposition",
+    "sous_anticoagulants",
+    "traumatisme_penetrant"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "PCIME-SGD-03"
+  },
+  {
+   "jetons": [
+    "cephalee",
+    "luxation_suspectee",
+    "morsure_animal"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-11"
+  },
+  {
+   "jetons": [
+    "incapable_de_boire_ou_teter",
+    "incapacite_parler_manger_teter",
+    "inconscient",
+    "sous_anticoagulants"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-01"
+  },
+  {
+   "jetons": [],
+   "tranche": "2_5_ans",
+   "duree": 0,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "brulure_etendue",
+    "muscles_accessoires",
+    "troubles_visuels_aigus"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "membre_menace",
+    "paleur_severe"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-10"
+  },
+  {
+   "jetons": [
+    "rhume"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 20,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [],
+   "tranche": "2_6_mois",
+   "duree": 0,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "diarrhee_aqueuse",
+    "douleur_abdominale_severe",
+    "evanouissement_recent",
+    "fracture_ouverte",
+    "vaccination_recente"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-07"
+  },
+  {
+   "jetons": [
+    "paralysie_membre_soudaine",
+    "polytraumatisme",
+    "raideur"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "vomit_tout"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-04"
+  },
+  {
+   "jetons": [
+    "brulure_inhalation",
+    "incapacite_parler_manger_teter",
+    "incapacite_uriner",
+    "vaccination_recente"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "morsure_animal"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-21"
+  },
+  {
+   "jetons": [
+    "diarrhee_aqueuse",
+    "empoisonnement_exposition",
+    "pieton_cycliste_percute",
+    "respiration_tres_rapide_ou_lente"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "accident_haute_cinetique",
+    "eruption_aggravation",
+    "extremites_froides"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-05"
+  },
+  {
+   "jetons": [
+    "accident_sans_ceinture",
+    "raideur"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "yeux_creuses"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 14,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "respiration_tres_rapide_ou_lente"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 3,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "douleur_abdominale_aigue",
+    "empoisonnement_exposition",
+    "incapacite_parler_marcher",
+    "saignements_abondants"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-04"
+  },
+  {
+   "jetons": [
+    "evanouissement_recent",
+    "incapacite_parler_manger_teter"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "difficulte_respiratoire",
+    "respiration_tres_rapide_ou_lente",
+    "vomit_tout"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "PCIME-SGD-02"
+  },
+  {
+   "jetons": [
+    "evanouissement_recent",
+    "sifflement"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-02"
+  },
+  {
+   "jetons": [
+    "douleur_testiculaire"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-13"
+  },
+  {
+   "jetons": [],
+   "tranche": "moins_8_jours",
+   "duree": 20,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "accident_sans_ceinture",
+    "brulure_inhalation",
+    "incapacite_boire_se_nourrir",
+    "maux_gorge",
+    "vaccination_recente"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "chute_deux_fois_hauteur",
+    "jaunissement_peau"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "diagnostic_chirurgie_urgente",
+    "eruption_cutanee",
+    "raideur"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-12"
+  },
+  {
+   "jetons": [
+    "accouchement_declenche",
+    "eruption_aggravation",
+    "fonte_musculaire_severe",
+    "raideur",
+    "rhume"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-10"
+  },
+  {
+   "jetons": [
+    "diarrhee",
+    "paleur_severe",
+    "sous_anticoagulants"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-06"
+  },
+  {
+   "jetons": [
+    "chute_deux_fois_hauteur"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "brulure",
+    "convulsions",
+    "passager_decede"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "PCIME-SGD-03"
+  },
+  {
+   "jetons": [
+    "diarrhee_aqueuse",
+    "fonte_musculaire_severe",
+    "lethargie",
+    "muscles_accessoires",
+    "oedeme_deux_pieds"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 20,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "empoisonnement_exposition",
+    "incapacite_parler_marcher",
+    "sifflement",
+    "toux"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-15"
+  },
+  {
+   "jetons": [
+    "coince_ou_ejecte",
+    "gonflement_bouche_gorge_cou",
+    "passager_decede",
+    "piqure_aiguille"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "douleur_abdominale",
+    "gonflement_bouche_gorge_cou",
+    "passager_decede",
+    "traumatisme_penetrant"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "autre_symptome",
+    "douleur_abdominale_severe",
+    "douleur_severe",
+    "lesion_cutanee"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-12"
+  },
+  {
+   "jetons": [
+    "chute_deux_fois_hauteur",
+    "incapacite_uriner"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [],
+   "tranche": "moins_8_jours",
+   "duree": 20,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "accouchement_declenche",
+    "douleur_abdominale_severe",
+    "eruption_aggravation",
+    "evanouissement_recent",
+    "paleur_severe"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-13"
+  },
+  {
+   "jetons": [
+    "accident_sans_ceinture",
+    "chute_deux_fois_hauteur",
+    "maux_gorge",
+    "morsure_serpent",
+    "traumatisme"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "raideur_nuque"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-09"
+  },
+  {
+   "jetons": [
+    "difficulte_respiratoire",
+    "douleur_abdominale_severe",
+    "fracture_ouverte",
+    "grossesse",
+    "maux_gorge"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "deformation_membre",
+    "fonte_musculaire_severe"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-14"
+  },
+  {
+   "jetons": [
+    "rhume",
+    "yeux_creuses"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 20,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "accouchement_declenche",
+    "brulure",
+    "muscles_accessoires"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-11"
+  },
+  {
+   "jetons": [
+    "fonte_musculaire_severe",
+    "saignements_continus"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-10"
+  },
+  {
+   "jetons": [
+    "brulure_etendue",
+    "emergence_ver",
+    "polytraumatisme"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "vomit_tout"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-04"
+  },
+  {
+   "jetons": [],
+   "tranche": "moins_8_jours",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "autre_symptome",
+    "douleur_abdominale_aigue",
+    "eruption_aggravation",
+    "lethargie"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "PCIME-SGD-04"
+  },
+  {
+   "jetons": [],
+   "tranche": "6_mois_2_ans",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "difficulte_respiratoire",
+    "eruption_aggravation",
+    "rhume",
+    "troubles_visuels_aigus"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-13"
+  },
+  {
+   "jetons": [
+    "gonflement_bouche_gorge_cou",
+    "respiration_tres_rapide_ou_lente"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-01"
+  },
+  {
+   "jetons": [
+    "lesion_cutanee"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [
+    "brulure_visage_cou_circulaire",
+    "morsure_serpent",
+    "sifflement",
+    "toux",
+    "vomit_tout"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "alteration_etat_general",
+    "douleur_severe",
+    "fracture_ouverte",
+    "paleur_severe",
+    "trauma_ecrasement"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "brulure_visage_cou_circulaire",
+    "cephalee_intense",
+    "fracture_ouverte"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "brulure_etendue"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "piqure_aiguille"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-21"
+  },
+  {
+   "jetons": [
+    "accident_sans_ceinture",
+    "luxation_suspectee"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "douleur_dos",
+    "polytraumatisme",
+    "trauma_ecrasement"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "autre_symptome",
+    "convulsions",
+    "convulsions_actives",
+    "douleur_thoracique_aigue",
+    "raideur"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "PCIME-SGD-03"
+  },
+  {
+   "jetons": [],
+   "tranche": "5_11_ans",
+   "duree": 20,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "etat_conscience_altere"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-08"
+  },
+  {
+   "jetons": [
+    "douleur_abdominale",
+    "douleur_thoracique_aigue",
+    "fatigue",
+    "oedeme_deux_pieds",
+    "troubles_visuels_aigus"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-11"
+  },
+  {
+   "jetons": [
+    "deformation_membre",
+    "gonflement_bouche_gorge_cou",
+    "incapable_de_boire_ou_teter",
+    "sous_anticoagulants"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "cephalee",
+    "deformation_membre"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-14"
+  },
+  {
+   "jetons": [
+    "brulure_visage_cou_circulaire",
+    "chute_deux_fois_hauteur"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "brulure_inhalation",
+    "douleur_abdominale_aigue"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [],
+   "tranche": "18_50_ans",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "fatigue",
+    "vomit_tout"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "PCIME-SGD-02"
+  },
+  {
+   "jetons": [
+    "chute_deux_fois_hauteur",
+    "deformation_membre",
+    "piqure_aiguille"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "evanouissement_recent",
+    "inconscient"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-01"
+  },
+  {
+   "jetons": [
+    "cephalee_intense",
+    "jaunissement_peau",
+    "oedeme_deux_pieds"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-10"
+  },
+  {
+   "jetons": [
+    "vaccination_recente"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 0,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [],
+   "tranche": "6_mois_2_ans",
+   "duree": 20,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [],
+   "tranche": "2_6_mois",
+   "duree": 3,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "fonte_musculaire_severe",
+    "lethargie",
+    "troubles_visuels_aigus"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "fracture_ouverte",
+    "paleur_severe"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-06"
+  },
+  {
+   "jetons": [
+    "convulsions",
+    "diarrhee",
+    "etat_conscience_altere"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "PCIME-SGD-03"
+  },
+  {
+   "jetons": [
+    "brulure_visage_cou_circulaire",
+    "cephalee",
+    "empoisonnement_exposition",
+    "eruption_aggravation",
+    "luxation_suspectee"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "chute_deux_fois_hauteur",
+    "diagnostic_chirurgie_urgente",
+    "pieton_cycliste_percute"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "douleur_testiculaire",
+    "eruption_cutanee",
+    "jaunissement_yeux",
+    "oedeme_deux_pieds",
+    "respiration_tres_rapide_ou_lente"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "coince_ou_ejecte",
+    "evanouissement_recent",
+    "raideur",
+    "signes_neuro_focaux"
+   ],
+   "tranche": "12_17_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "grossesse",
+    "grossesse_complications",
+    "inconscient",
+    "lethargie",
+    "polytraumatisme"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "PCIME-SGD-04"
+  },
+  {
+   "jetons": [
+    "douleur_severe"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-08"
+  },
+  {
+   "jetons": [],
+   "tranche": "18_50_ans",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "pieton_cycliste_percute"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "difficulte_respiratoire",
+    "signes_neuro_focaux"
+   ],
+   "tranche": "moins_8_jours",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-09"
+  },
+  {
+   "jetons": [
+    "brulure_visage_cou_circulaire",
+    "cephalee",
+    "extremites_froides",
+    "grossesse",
+    "passager_decede"
+   ],
+   "tranche": "51_70_ans",
+   "duree": 0,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [],
+   "tranche": "moins_8_jours",
+   "duree": 0,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [],
+   "tranche": "plus_70_ans",
+   "duree": 20,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "incapacite_parler_manger_teter",
+    "jaunissement_yeux"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 20,
+   "niveau": "consultation_48h",
+   "priorite": null,
+   "regle": "aucune_regle"
+  },
+  {
+   "jetons": [],
+   "tranche": "plus_70_ans",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "accident_haute_cinetique",
+    "accouchement_declenche",
+    "coince_ou_ejecte",
+    "incapacite_parler_manger_teter"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "incapacite_parler_marcher",
+    "raideur"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-09"
+  },
+  {
+   "jetons": [
+    "luxation_suspectee",
+    "pieton_cycliste_percute",
+    "yeux_creuses"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-07"
+  },
+  {
+   "jetons": [
+    "cephalee_intense",
+    "emergence_ver"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-16"
+  },
+  {
+   "jetons": [
+    "diarrhee_continue",
+    "eruption_aggravation",
+    "jaunissement_yeux",
+    "lethargie",
+    "respiration_tres_rapide_ou_lente"
+   ],
+   "tranche": "plus_70_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-03"
+  },
+  {
+   "jetons": [
+    "douleur_testiculaire",
+    "grossesse_complications",
+    "incapacite_uriner"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 3,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-13"
+  },
+  {
+   "jetons": [
+    "diarrhee_aqueuse",
+    "inconscient"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITT12-R-01"
+  },
+  {
+   "jetons": [
+    "agitation_irritabilite",
+    "eruption_cutanee",
+    "incapacite_parler_marcher"
+   ],
+   "tranche": "2_5_ans",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-07"
+  },
+  {
+   "jetons": [
+    "boit_peu",
+    "deformation_membre",
+    "difficulte_respiratoire",
+    "grossesse_complications"
+   ],
+   "tranche": "2_6_mois",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "brulure_etendue",
+    "deformation_membre",
+    "piqure_aiguille",
+    "signes_neuro_focaux"
+   ],
+   "tranche": "5_11_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "immediate",
+   "regle": "IITTM12-R-10"
+  },
+  {
+   "jetons": [
+    "accouchement_declenche",
+    "cephalee_intense",
+    "diarrhee_continue",
+    "jaunissement_peau",
+    "rhume"
+   ],
+   "tranche": "6_mois_2_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-05"
+  },
+  {
+   "jetons": [
+    "douleur_testiculaire",
+    "eruption_cutanee",
+    "extremites_froides",
+    "gonflement_bouche_gorge_cou",
+    "lethargie"
+   ],
+   "tranche": "18_50_ans",
+   "duree": 20,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITT12-J-01"
+  },
+  {
+   "jetons": [],
+   "tranche": "51_70_ans",
+   "duree": 14,
+   "niveau": null,
+   "priorite": null,
+   "regle": null
+  },
+  {
+   "jetons": [
+    "traumatisme"
+   ],
+   "tranche": "8_jours_2_mois",
+   "duree": 14,
+   "niveau": "urgence",
+   "priorite": "rapide",
+   "regle": "IITTM12-J-09"
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+# SF-013-05 — Design system « Premium Medical Intelligence » — Conception
+
+| Champ | Valeur |
+|---|---|
+| Fonctionnalité | F-013 Socle de l'application Nolo |
+| Sous-fonctionnalité | SF-013-05 |
+| Version | 2.0.0 |
+| Statut | UNDER_REVIEW |
+| Exigences couvertes | FR-1320, FR-1321, FR-1322, FR-1323, FR-1324 |
+| ADR | — |
+| État d'implémentation | Implémenté — rétro-spécifié le 2026-11-09 à partir du code |
+
+## 1. Vue d'ensemble
+—
+
+## 2. Composants
+| ID | Exigences | Fichier | Élément | Responsabilité |
+|---|---|---|---|---|
+| DES-013-05-01 | FR-1320, FR-1322 | `app/css/tokens.css` | jetons | Jetons |
+| DES-013-05-02 | FR-1321 | `app/assets/fonts/` | WOFF et licence | Polices |
+| DES-013-05-03 | FR-1323, FR-1324 | `app/js/ui/components.js`, `app/css/components.css`, `app/docs/DESIGN.md` | composants | Composants |
+
+## 3. États et interface
+| État | Déclencheur | Affichage (clés i18n) | Actions possibles |
+|---|---|---|---|
+| — | Sans objet (aucun écran) | — | — |
+
+## 4. Données
+| Champ | Type | Contrainte | Source |
+|---|---|---|---|
+| — | — | Aucune donnée propre | — |
+
+## 5. Contrats d'interface
+Aucun contrat propre.
+
+## 6. Erreurs
+| Code | Condition | Rendu |
+|---|---|---|
+| — | Aucune erreur propre | — |
+
+## 7. Journal et confidentialité
+- Aucun événement de journal propre ; rien n'est transmis.
+
+## 8. Accessibilité, langues et mouvement
+- Sans objet.
+
+## 9. Écarts entre cette spécification et le code
+- Aucun écart connu.

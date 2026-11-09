@@ -1,0 +1,67 @@
+L 119/20
+
+FR
+
+Journal officiel de l'Union européenne
+
+4.5.2016
+
+quand les données à caractère personnel sont traitées dans un ou plusieurs secteurs spécifiques. Plus particuliè­
+rement, le pays tiers devrait assurer un contrôle indépendant effectif de la protection des données et prévoir des
+mécanismes de coopération avec les autorités de protection des données des États membres, et les personnes
+concernées devraient se voir octroyer des droits effectifs et opposables ainsi que des possibilités effectives de
+recours administratif et juridictionnel.
+(105) Outre les engagements internationaux pris par le pays tiers ou l'organisation internationale, la Commission
+devrait tenir compte des obligations découlant de la participation du pays tiers ou de l'organisation internationale
+à des systèmes multilatéraux ou régionaux, notamment en ce qui concerne la protection des données à caractère
+personnel, ainsi que de la mise en œuvre de ces obligations. Il y a lieu, en particulier, de prendre en considération
+l'adhésion du pays tiers à la convention du Conseil de l'Europe du 28 janvier 1981 pour la protection des
+personnes à l'égard du traitement automatisé des données à caractère personnel et à son protocole additionnel.
+Lorsqu'elle évalue le niveau de protection offert par des pays tiers ou des organisations internationales, la
+Commission devrait consulter le comité.
+(106) La Commission devrait surveiller le fonctionnement des décisions relatives au niveau de protection offert par un
+pays tiers, un territoire ou un secteur déterminé dans un pays tiers, ou par une organisation internationale, et
+surveiller le fonctionnement des décisions adoptées sur la base de l'article 25, paragraphe 6, ou de l'article 26,
+paragraphe 4, de la directive 95/46/CE. Dans ses décisions d'adéquation, la Commission devrait prévoir un
+mécanisme d'examen périodique de leur fonctionnement. Cet examen périodique devrait être effectué en
+consultation avec le pays tiers ou l'organisation internationale en question et tenir compte de l'ensemble des
+évolutions présentant un intérêt dans le pays tiers ou au sein de l'organisation internationale. Aux fins de la
+surveillance et de la réalisation des examens périodiques, la Commission devrait prendre en considération les
+observations et les conclusions du Parlement européen et du Conseil, ainsi que d'autres organes et sources
+pertinents. La Commission devrait évaluer le fonctionnement desdites décisions dans un délai raisonnable et
+communiquer toute conclusion pertinente au comité au sens du règlement (UE) no 182/2011 du Parlement
+européen et du Conseil (1) établi en vertu du présent règlement, au Parlement européen et au Conseil.
+(107) La Commission peut constater qu'un pays tiers, un territoire ou un secteur déterminé dans un pays tiers, ou une
+organisation internationale n'assure plus un niveau adéquat de protection des données. En conséquence, le
+transfert de données à caractère personnel vers ce pays tiers ou à cette organisation internationale devrait être
+interdit, à moins que les exigences du présent règlement relatives aux transferts faisant l'objet de garanties
+appropriées, y compris des règles d'entreprise contraignantes et des dérogations pour des situations particulières,
+soient respectées. Dans ce cas, il y aurait lieu de prévoir des consultations entre la Commission et le pays tiers ou
+l'organisation internationale en question. La Commission devrait informer en temps utile le pays tiers ou l'organi­
+sation internationale des motifs de sa conclusion et engager des consultations avec ceux-ci en vue de remédier à
+la situation.
+(108) En l'absence de décision d'adéquation, le responsable du traitement ou le sous-traitant devrait prendre des
+mesures pour compenser l'insuffisance de la protection des données dans le pays tiers par des garanties
+appropriées en faveur de la personne concernée. Ces garanties peuvent consister à recourir à des règles
+d'entreprise contraignantes, des clauses types de protection des données adoptées par la Commission, des clauses
+types de protection des données adoptées par une autorité de contrôle ou des clauses contractuelles autorisées
+par une autorité de contrôle. Ces garanties devraient assurer le respect des exigences en matière de protection des
+données et des droits des personnes concernées d'une manière appropriée au traitement au sein de l'Union, y
+compris l'existence de droits opposables de la personne concernée et de voies de droit effectives, ce qui comprend
+le droit d'engager un recours administratif ou juridictionnel effectif et d'introduire une action en réparation, dans
+l'Union ou dans un pays tiers. Ces garanties devraient porter, en particulier, sur le respect des principes généraux
+concernant le traitement des données à caractère personnel et des principes de protection des données dès la
+conception et de protection des données par défaut. Des transferts peuvent également être effectués par des
+autorités publiques ou des organismes publics avec des autorités publiques ou des organismes publics dans des
+pays tiers ou avec des organisations internationales exerçant des missions ou fonctions correspondantes, y
+compris sur la base de dispositions à intégrer dans des arrangements administratifs, telles qu'un protocole
+d'accord, prévoyant des droits opposables et effectifs pour les personnes concernées. L'autorisation de l'autorité de
+contrôle compétente devrait être obtenue lorsque ces garanties sont prévues dans des arrangements administratifs
+qui ne sont pas juridiquement contraignants.
+(109) La possibilité qu'ont les responsables du traitement et les sous-traitants de recourir à des clauses types de
+protection des données adoptées par la Commission ou par une autorité de contrôle ne devrait pas les empêcher
+(1) Règlement (UE) no 182/2011 du Parlement européen et du Conseil du 16 février 2011 établissant les règles et principes généraux relatifs
+aux modalités de contrôle par les États membres de l'exercice des compétences d'exécution par la Commission (JO L 55 du 28.2.2011,
+p. 13).
+
+

@@ -1,0 +1,64 @@
+# Métadonnées du référentiel interne de symptômes — STATUT : UNDER_REVIEW
+fichier: data/referentiels/symptomes.csv
+version: "1.1.0"
+date: "2026-11-04"
+statut: UNDER_REVIEW
+empreinte_sha256: "800c09ae636b340e6cb29bccb564023505b5116b80da49385036e2a69c8d1042"
+generation: "python3 tools/donnees/generer_referentiel_symptomes.py (contenu rédigé à partir des sources ; fragments résolus par recherche du texte source exact ; contrôles bloquants : codes stables, une expression normalisée = un seul jeton)"
+decisions: [D-018, D-020, D-022, D-024]
+proprietaire: SF-001-03
+sources_documentaires: [INT-OMS-IITT-FR, INT-OMS-PCIME-MANUEL, CMR-MINSANTE-GUIDE-SBC-2023]
+snomed: "Aucun identifiant SNOMED CT : colonne snomed_gps_id vide (D-018). Licence du GPS : CC BY-ND 4.0 (INT-SNOMED-GPS-TECH::0000)."
+comptes: {entrees: 110, affichees: 88, non_observables_ou_avec_appareil: 12, exclues: 2, internes_non_affichees: 8, expressions_indexees: 525}
+colonnes:
+  code: "Code interne stable SYM-NNN ; ne change jamais (contrôlé par le générateur) ; toute nouvelle entrée est ajoutée en fin de liste"
+  jeton: "Identifiant machine utilisé par les règles (rules/triage_signes_alerte.v2.yaml, kb/rules/sbc_definitions.yaml)"
+  libelle_fr: "Libellé affiché, en langage courant [PROPOSITION : à valider par un clinicien]"
+  libelle_en: "Libellé affiché en anglais [PROPOSITION]"
+  libelle_source: "Texte exact de la source, préfixé par le document"
+  synonymes_fr: "Synonymes séparés par « | », pour l'extracteur lexical"
+  synonymes_en: "Idem en anglais"
+  domaine: "respiration, circulation, neurologique, digestif, peau, traumatisme, grossesse, general, contexte"
+  public: "tous, adulte (12 ans et plus), enfant (moins de 12 ans), nourrisson (moins de 2 mois) — filtre de la liste fermée, complété par les jetons des règles applicables (SF-001-03, FR-121)"
+  observable_non_professionnel: "oui ; non (signe d'examen) ; avec_appareil (mesure) — seuls les « oui » entrent dans les règles et dans l'extracteur (D-020)"
+  affiche: "oui si l'entrée figure dans la liste fermée présentée à l'utilisateur"
+  usage: "triage, surveillance, triage+surveillance, aucun"
+  sensibilite: "sante ; sante_avis_juriste (sur l'appareil seulement, D-022) ; exclu_avis_juriste ; exclu_art48 (D-022)"
+  sources: "chunk_ids où figure le texte source"
+  implique: "Jetons impliqués (fermeture transitive avant évaluation des règles)"
+  snomed_gps_id: "Vide (D-018)"
+  statut: "PROPOSITION"
+jeu_de_phrases:
+  fichier: data/referentiels/phrases_extraction_reference.json
+  empreinte_sha256: "b05fc159b774f5d411a96351c7a59038d9d9c45d20afc7e048cf0829d5b960ab"
+  usage: "CA-001-03-03 et TEST-001-03-05 (42 phrases FR et EN, jetons attendus avant fermeture, non_code attendu)"
+regles_associees:
+  fichier: rules/triage_signes_alerte.v2.yaml
+  empreinte_sha256: "755d8627840394c6608f4c920772f6ce89d38ee95e9b4fe5d7facd809fc190bb"
+controle: "python3 tools/donnees/verifier_regles_triage_v2.py ; preuve complète reproductible : bash tools/donnees/produire_preuve.sh (sortie du 2026-11-04 : docs/quality/preuve-2026-11-04-generation-donnees.txt)"
+historique:
+  - version: "1.0.0"
+    date: "2026-11-04"
+    empreinte_sha256: "609e556a00729367eff6daea2d74319789cb520143ca23dddfac5b4fa4303edd"
+    fichier: data/referentiels/historique/symptomes-1.0.0.csv
+    note: "Première génération (109 entrées), conservée pour le contrôle de stabilité des codes. Preuve : docs/quality/preuve-2026-11-04-regles-triage-v2.txt"
+  - version: "1.1.0"
+    date: "2026-11-04"
+    empreinte_sha256: "800c09ae636b340e6cb29bccb564023505b5116b80da49385036e2a69c8d1042"
+    decision: D-024
+    note: >-
+      Corrections de cohérence relevées en rédigeant SF-001-03 (aucun code existant modifié) :
+      (1) quatre expressions ambiguës rendues univoques (souffle court, ne mange plus, cannot breastfeed, cannot drink) ;
+      (2) mots trop généraux retirés car ils déclenchaient une urgence hors contexte : « bleu » (ecchymose → cyanose),
+      « blanc », « chute » (chute de cheveux), « coup » (tout d'un coup), « fall » (fall asleep), « fits » (fit),
+      « contractions » (contractions musculaires → accouchement et grossesse), « morsure » seul ; « épuisé » déplacé de
+      l'altération de l'état général vers la fatigue ;
+      (3) « ne tète plus » rattaché à « incapable de boire ou de téter » comme « ne tète pas » ;
+      (4) implication ajoutée : etat_conscience_altere → confusion_somnolence_agitation (définition IITT p. 2 :
+      « État de conscience altéré (confusion, agitation, irritabilité permanente ou léthargie) »), sans laquelle ce signe de
+      détresse respiratoire de l'adulte était inaccessible depuis la liste fermée ;
+      (5) entrée dérivée ajoutée en fin de liste : SYM-110 diarrhee_avec_sang (non affichée, implique diarrhee et
+      sang_dans_selles ; source INT-OMS-PCIME-MANUEL::0042) pour que « diarrhée avec du sang » satisfasse la règle PCIME-J-02 ;
+      (6) termes principaux et variantes courantes ajoutés comme synonymes (inconscient, confus, difficulté à respirer,
+      raideur de la nuque, respire vite, rhume, brûlure au visage, brûlure étendue, brûlure par inhalation, plaie pénétrante,
+      morsure d'animal, respire en forçant, blessure, diarrhea, watery stools, very thin…).

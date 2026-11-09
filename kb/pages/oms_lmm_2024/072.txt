@@ -1,0 +1,47 @@
+54
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+6.2
+
+On-going responsibilities of developers and providers
+during deployment
+
+Developers and providers have responsibilities and obligations even after an LMM or
+application is approved for use, either because the developer or provider deploys the LMM
+or because certain risks can be addressed after deployment only by a developer or provider.
+Such obligations might have to be required by regulations or laws to ensure that developers
+and providers allocate adequate resources and attention.
+First, governments should introduce mandatory post-release auditing and impact
+assessments, including for data protection and human rights, by independent third parties
+when an LMM is deployed on a large scale (155,160). Post-release auditing and impact
+assessments should be published and should address outcomes and impacts disaggregated
+by type of user, for example by age, race or disability.
+Secondly, governments could hold providers or developers responsible for inaccurate, false
+or toxic content from an LMM after its release that neither the provider nor the developer took
+steps to correct or avoid. The Chinese Government’s regulation on generative AI, for example,
+stipulates that it must not produce information that is “false and harmful” (151), with possible
+enforcement by the Government. In the European Union, addition of an LMM to a product or
+service could create additional responsibilities for the developer and the provider of the LMM.
+For example, if an LMM is integrated into a service that is within the scope of regulation of
+digital services, such as the European Union Digital Services Act, the LMM would be indirectly
+subject to regulatory scrutiny, which could require regulatory oversight because of the
+tendency of LMMs to hallucinate (120).
+Thirdly, a developer and provider might be required to provide ongoing operational
+disclosures in order for governments and users to use an LMM safely. These could include
+sufficient technical documentation (133,134).
+
+6.3
+
+Responsibilities of deployers
+
+Deployers are also responsible for avoiding or mitigating risks associated with use of an LMM
+or application.
+First, a deployer should use information from developers or providers to decide not to use
+an LMM or application in an inappropriate setting, because of biases in the training data,
+contextual bias that renders the LMM inappropriate for the setting or other avoidable errors or
+potential risks known to the deployer. If a deployer receives clear, adequate warning of such
+risks and still offers the LMM for use in inappropriate settings, the deployer should be held
+accountable for any resulting harm.
+
+

@@ -1,0 +1,66 @@
+                          membres de la communauté détecté par                                                 signaux de
+                          par semaine                   semaine                                                l’AS.
+ Notification             Proportion des signaux et des 100% de cas        Nombre de cas Nombre des cas        Carnet de bord
+                          cas communautaires notifiés communautaires communautaires communautaires             de l’ASCP ;
+                          dans les 24 heures qui        et des signaux     et signaux    et signaux            Fiche de
+                          suivent la détection au       sont notifiés dans notifiés      notifiés dans         notification des
+                          niveau de la FOSA/AS          l’intervalle de 24               l’intervalle de 24    signaux de
+                                                        heures au niveau                 à 48 heures           l’ASCP ;
+                                                                                                               Registre des
+                                                        de la FOSA/AS
+                                                                                                               signaux de
+                                                                                                               l’AS.
+                          Proportion des signaux et des 100% des cas       Nombre des cas Nombre des cas Fiches de
+                          cas communautaires notifiés communautaires communautaires communautaires notification des
+                          dans les 24 heures qui        et des signaux     et signaux     et signaux         signaux/registres
+                          suivent la détection dans les sont notifiés dans notifiés       notifiés dans      de notification
+                          Centres d’Appel               l’intervalle de 24                l’intervalle de 24 des signaux.
+                                                        heures au niveau                      à 48 heures
+                                                        des Centres
+                                                        d’Appel
+ AIRE DE SANTE
+ Triage et vérification   Proportion de signaux triés    80% au moins Nombre des               Nombre de           Registre des
+                          et vérifiés                    de signaux        signaux notifiés    signaux triés et    signaux de
+                                                         triés et vérifiés                     vérifiés            l’AS ;
+                                                                                                                   Carnet de bord
+                                                                                                                   de l’ASCP ;
+                                                                                                                   Fiche de
+                                                                                                                   notification des
+                                                                                                                   signaux de
+                                                                                                                   l’ASCP.
+Supervision               Nombre d’ASCP ayant été        Au moins 80% Nombre total             Nombre             Rapports de
+                          supervisés dans les trois      d’ASCP ont     d’ASCP                 d’ASCP qui         supervision
+                          derniers mois                  été supervisés                        ont été
+                                                         dans les trois                        supervisés au
+                                                         derniers mois                         moins une fois
+ DISTRICT DE SANTE
+                           Proportion d’évaluation de   Au moins 80% Nombre total             Nombre              Rapport
+Evaluation de risques     risques menée                d’évènements ont d’évènements          d’évènements        d’évaluation de
+                                                       bénéficié d’une                        évalués             risques
+                                                       évaluation des
+                                                       risques
+Réponse                   Proportion d’évènements qui Au moins 80 % Nombre total              Nombre total      Rapports des
+                          bénéficie d’une réponse dans des évènements d’évènements            d’évènements      activités de réponse
+                          les 48 heures après          ont bénéficié                          ayant bénéficié
+                          l’évaluation du risque       d’une réponse                          d’une réponse
+Supervisions              Proportion d’AS supervisées Au moins 80% Nombre total               Nombre d’AS qui Rapports de
+                          dans les trois derniers mois des AS ont été     d’AS                ont reçu au moins supervision
+                                                       supervisées dans                       une visite de
+                                                       les trois derniers                     supervision
+                                                       mois
+ DRSP
+ Supervision              Proportion de Districts de    Au moins 80%       Nombre total de Nombre de          Rapports de
+                          Santé supervisés dans les six des Districts de   Districts de    Districts de Santé supervision
+                          derniers mois                 Santé ont été      Santé           qui ont reçu au
+                                                        supervisés dans                    moins une visite
+                                                        les six derniers                   de supervision
+                                                        mois
+ NIVEAU CENTRAL
+ Supervision              Proportion de régions ayant Au moins 80%         Nombre total de Nombre de              Rapports de
+                          été supervisées dans les six des régions ont     régions         régions qui ont        supervision
+                          derniers mois                été supervisées                     reçu au moins
+
+
+
+                                                             36
+

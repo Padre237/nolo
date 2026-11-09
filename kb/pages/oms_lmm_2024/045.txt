@@ -1,0 +1,47 @@
+3 Risks to health systems and society and ethical concerns about use of LMMs
+
+Companies are rushing new LMMs to market as quickly as possible, because of internal
+commercial pressure or external competition (106), before they fully understand how the
+LMMs function (109) and irrespective of whether appropriate testing, safeguards and ethical
+risks and concerns have been identified and addressed (106,110). One company executive
+remarked that it was an “absolutely fatal error in this moment to worry about things that
+can be fixed later” (106). Companies seek a “first-mover” advantage, because the market
+share of LMMs in certain domains, such as Internet search, provide revenues. According to
+one company, every 1% of market share in a search engine equals US$ 2 billion in additional
+revenue (108). An executive at a major technology company remarked that its LMM was “not
+perfect” but that it would be released because “the market demands it” (8). Companies
+that release LMMs without fully identifying, validating, accounting for and mitigating risks
+accumulate an “ethical debt”, the eventual consequences of which will be felt not by the
+companies but by those most vulnerable to the negative impacts of such technologies (109).
+Members of the Frontier Model Forum have committed themselves to “advancing AI safety
+research” and “identifying best practices” (103), and voluntary commitments to the US
+Government include internal and external testing of AI systems before their release (104).
+Commercial pressure may not only result in companies rushing LMMs to market as quickly
+as possible but also to their de-prioritizing or abandoning products and services that have a
+significant public health benefit in order to prioritize services that could generate revenue.
+In 2023, one major technology company “axed” a team that had developed an LMM called
+ESMFold, a protein language model that can predict a full atomic-level protein structure
+from a single sequence and which generated a database of more than 600 million protein
+structures. There is concern that the company may not be willing to “absorb the costs to
+keep the database running, as well as another service that allows scientists to run the ESM
+algorithm on new protein sequences” (111).
+
+Carbon and water footprints of LMMs
+Another consequence of the increasing size of LMMs is their environmental impact. LMMs
+require large amounts of data, and training with data therefore consumes significant amounts
+of energy (112). In one large company, training of a new LMM used an estimated 3.4 GWh over 2
+months, equivalent to the annual energy consumption of 300 US households (112). While some
+LMMs are trained at data centres that use renewable or carbon-free energy, most AI models
+are trained with electricity grids powered by fossil fuels (112). Electricity consumption will
+continue to increase as more companies introduce LMMs, which could eventually significantly
+affect climate change.
+WHO considers climate change an urgent global health challenge that requires prioritized
+action, now and in the decades to come. Between 2030 and 2050, climate change is expected
+to cause approximately 250 000 additional deaths per year due to malnutrition, malaria,
+diarrhoea and heat stress. The cost of direct damage to health by 2030 is estimated to be
+US$ 2–4 billion per year. Areas with weak health infrastructure, most of which are in lowand middle-income countries, will be least able to cope without assistance to prepare and
+respond (1).
+
+27
+
+

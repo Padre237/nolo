@@ -1,0 +1,80 @@
+4.5.2016
+
+FR
+
+Journal officiel de l'Union européenne
+
+L 119/7
+
+cas cet autre établissement devrait être considéré comme étant l'établissement principal. L'établissement principal
+d'un responsable du traitement dans l'Union devrait être déterminé en fonction de critères objectifs et devrait
+supposer l'exercice effectif et réel d'activités de gestion déterminant les décisions principales quant aux finalités et
+aux moyens du traitement dans le cadre d'un dispositif stable. Ce critère ne devrait pas dépendre du fait que le
+traitement ait lieu à cet endroit. La présence et l'utilisation de moyens techniques et de technologies de traitement
+de données à caractère personnel ou d'activités de traitement ne constituent pas, en elles-mêmes, un établissement
+principal et ne sont, dès lors, pas des critères déterminants pour un établissement principal. L'établissement
+principal du sous-traitant devrait être le lieu de son administration centrale dans l'Union ou, s'il ne dispose pas
+d'une administration centrale dans l'Union, le lieu où se déroule l'essentiel des activités de traitement dans
+l'Union. Lorsque le responsable du traitement et le sous-traitant sont tous deux concernés, l'autorité de contrôle
+de l'État membre dans lequel le responsable du traitement a son établissement principal devrait rester l'autorité de
+contrôle chef de file compétente, mais l'autorité de contrôle du sous-traitant devrait être considérée comme étant
+une autorité de contrôle concernée et cette autorité de contrôle devrait participer à la procédure de coopération
+prévue par le présent règlement. En tout état de cause, les autorités de contrôle du ou des États membres dans
+lesquels le sous-traitant a un ou plusieurs établissements ne devraient pas être considérées comme étant des
+autorités de contrôle concernées lorsque le projet de décision ne concerne que le responsable du traitement.
+Lorsque le traitement est effectué par un groupe d'entreprises, l'établissement principal de l'entreprise qui exerce
+le contrôle devrait être considéré comme étant l'établissement principal du groupe d'entreprises, excepté lorsque
+les finalités et les moyens du traitement sont déterminés par une autre entreprise.
+
+(37)
+
+Un groupe d'entreprises devrait couvrir une entreprise qui exerce le contrôle et ses entreprises contrôlées, la
+première devant être celle qui peut exercer une influence dominante sur les autres entreprises du fait, par
+exemple, de la détention du capital, d'une participation financière ou des règles qui la régissent, ou du pouvoir de
+faire appliquer les règles relatives à la protection des données à caractère personnel. Une entreprise qui contrôle le
+traitement de données à caractère personnel dans des entreprises qui lui sont affiliées devrait être considérée
+comme formant avec ces dernières un groupe d'entreprises.
+
+(38)
+
+Les enfants méritent une protection spécifique en ce qui concerne leurs données à caractère personnel parce qu'ils
+peuvent être moins conscients des risques, des conséquences et des garanties concernées et de leurs droits liés au
+traitement des données à caractère personnel. Cette protection spécifique devrait, notamment, s'appliquer à l'utili­
+sation de données à caractère personnel relatives aux enfants à des fins de marketing ou de création de profils de
+personnalité ou d'utilisateur et à la collecte de données à caractère personnel relatives aux enfants lors de l'utili­
+sation de services proposés directement à un enfant. Le consentement du titulaire de la responsabilité parentale
+ne devrait pas être nécessaire dans le cadre de services de prévention ou de conseil proposés directement à un
+enfant.
+
+(39)
+
+Tout traitement de données à caractère personnel devrait être licite et loyal. Le fait que des données à caractère
+personnel concernant des personnes physiques sont collectées, utilisées, consultées ou traitées d'une autre
+manière et la mesure dans laquelle ces données sont ou seront traitées devraient être transparents à l'égard des
+personnes physiques concernées. Le principe de transparence exige que toute information et communication
+relatives au traitement de ces données à caractère personnel soient aisément accessibles, faciles à comprendre, et
+formulées en des termes clairs et simples. Ce principe vaut, notamment, pour les informations communiquées
+aux personnes concernées sur l'identité du responsable du traitement et sur les finalités du traitement ainsi que
+pour les autres informations visant à assurer un traitement loyal et transparent à l'égard des personnes physiques
+concernées et leur droit d'obtenir la confirmation et la communication des données à caractère personnel les
+concernant qui font l'objet d'un traitement. Les personnes physiques devraient être informées des risques, règles,
+garanties et droits liés au traitement des données à caractère personnel et des modalités d'exercice de leurs droits
+en ce qui concerne ce traitement. En particulier, les finalités spécifiques du traitement des données à caractère
+personnel devraient être explicites et légitimes, et déterminées lors de la collecte des données à caractère
+personnel. Les données à caractère personnel devraient être adéquates, pertinentes et limitées à ce qui est
+nécessaire pour les finalités pour lesquelles elles sont traitées. Cela exige, notamment, de garantir que la durée de
+conservation des données soit limitée au strict minimum. Les données à caractère personnel ne devraient être
+traitées que si la finalité du traitement ne peut être raisonnablement atteinte par d'autres moyens. Afin de garantir
+que les données ne sont pas conservées plus longtemps que nécessaire, des délais devraient être fixés par le
+responsable du traitement pour leur effacement ou pour un examen périodique. Il y a lieu de prendre toutes les
+mesures raisonnables afin de garantir que les données à caractère personnel qui sont inexactes sont rectifiées ou
+supprimées. Les données à caractère personnel devraient être traitées de manière à garantir une sécurité et une
+confidentialité appropriées, y compris pour prévenir l'accès non autorisé à ces données et à l'équipement utilisé
+pour leur traitement ainsi que l'utilisation non autorisée de ces données et de cet équipement.
+
+(40)
+
+Pour être licite, le traitement de données à caractère personnel devrait être fondé sur le consentement de la
+personne concernée ou reposer sur tout autre fondement légitime prévu par la loi, soit dans le présent règlement
+
+

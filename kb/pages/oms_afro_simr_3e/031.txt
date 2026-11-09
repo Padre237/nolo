@@ -1,0 +1,43 @@
+j)
+
+réduire les coûts du système et générer facilement des alertes automatisées.
+
+La section 9 décrit en détail les principes fondamentaux pour l’établissement de la SIMR
+électronique
+
+Le Guide suppose que tous les niveaux du système de santé participent aux activités de
+surveillance visant à détecter les maladies, affections et événements prioritaires et à y réagir
+(même si les différents niveaux n’ont pas les mêmes fonctions). Ces activités comprennent
+les fonctions de base suivantes :
+Étape 1 – Identifier et consigner les cas, les affections et les événements. La définition des
+cas standardisée est utilisée pour les points de prestation des services de santé (humaine,
+animale et environnementale) ; la définition des cas simplifiée est utilisée au niveau
+communautaire pour identifier les maladies, affections et alertes prioritaires qui peuvent
+signaler des événements émergents de santé publique. En outre, l’identification des cas
+peut se faire par l’intermédiaire d’autres points de prestation de services de santé (animale
+et environnementale) en utilisant le système de santé officiel, les systèmes de santé privés
+ou les structures communautaires. Des définitions des cas et un système d’alerte et de
+vérification opérationnels sont essentiels pour détecter les cas et les épidémies. Après
+identification, toutes les alertes, y compris les événements réels, doivent être enregistrées
+dans un registre reconnu, tel que le registre des listes de lignes.
+Étape 2 – Signaler les cas présumés de maladies, affections ou événements à l’échelon
+suivant pour que des mesures soient prises. S’il s’agit d’une maladie prédisposée à
+l’épidémie, d’une maladie susceptible d’entraîner une USPPI éventuelle ou d’une maladie
+devant être éliminée ou éradiquée, réagir immédiatement en enquêtant sur la maladie
+ou l’événement, en prélevant l’échantillon diagnostique nécessaire et en présentant un
+rapport détaillé. Pour les événements à notifier à l’OMS dans le cadre du RSI, le point
+focal national est tenu d’utiliser l’instrument de décision (annexe 2 du RSI) pour identifier
+toute USPPI éventuelle.
+Étape 3 – Analyser (personne, lieu et moment) et interpréter les résultats. Les données
+de surveillance devraient être compilées, analysées pour déterminer les tendances,
+comparées aux données des périodes précédentes et interprétées en vue de leur
+utilisation dans des actions de santé publique.
+Étape 4 – Enquêter et confirmer les cas suspects, les flambées ou les événements. La
+confirmation d’un cas ou d’une flambée comprend l’enquête épidémiologique des cas
+soupçonnés et la capacité du laboratoire à effectuer la confirmation. Prendre des mesures
+pour s’assurer que le cas et les contacts, ainsi que l’épidémie ou l’événement font l’objet
+d’une enquête et d’une confirmation en laboratoire. La capacité de confirmation des cas
+
+17
+
+

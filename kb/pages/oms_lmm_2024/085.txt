@@ -1,0 +1,71 @@
+References
+
+58.
+
+Hallman J. AI language models show bias against people with disabilities, study
+finds. University Park (PA): Penn State University; 2022 (https://www.psu.edu/news/
+information-sciences-and-technology/story/ai-language-models-show-bias-againstpeople-disabilities/, accessed 11 September 2023).
+
+59.
+
+Harrer S. Attention is not all you need: the complicated case of ethically
+using large language models in healthcare and medicine. eBioMedicine.
+2023;90:194512. doi:10.1016/j.ebiom.2023.104512.
+
+60.
+
+Lohr S. AI may someday work medical miracles. For now, it helps do paperwork. The
+New York Times, 26 June 2023 (https://www.nytimes.com/2023/06/26/technology/aihealth-care-documentation.html, accessed 10 July 2023).
+
+61.
+
+Eddy N. Epic, Microsoft partner to use generative AI for better EHRs. Healthcare IT News,
+18 April 2023 (https://www.healthcareitnews.com/news/epic-microsoft-partner-usegenerative-ai-better-ehrs, accessed 31 May 2023).
+
+62.
+
+Nuance and Microsoft announce the first fully AI-automated clinical documentation
+application for healthcare. Burlington (MA):Nuance; 2023 (https://news.nuance.
+com/2023-03-20-Nuance-and-Microsoft-Announce-the-First-Fully-AI-AutomatedClinical-Documentation-Application-for-Healthcare, accessed 31 May 2023).
+
+63.
+
+Ahn S. The impending impacts of large language models on medical education. Korean J
+Med Educ. 2023;35(1):103–7. doi:10.3946/kjme.2023.253.
+
+64.
+
+Luo R, Sun L, Xia Y, Qin T, Zhang S, Poon H et al. BioGPT: generative pre-trained
+transformer for biomedical text generation and mining. Briefi Bioinformatics. 2022;
+23(6):bbac409. doi:10.1093/bib/bbac409.
+
+65.
+
+Paul D, Sanap G, Shenoy S, Kalyane D, Kalia K, Tekade RK. Artificial
+intelligence in drug discovery and development. Drug Discov Today.
+2021;26(1):80–93. doi:10.1016/j.drudis.2020.10.010.
+
+66.
+
+Tools such as ChatGPT threaten transparent science; here are our ground rules for their
+use. Nature. 2023;613:612. doi:10.1038/d41586-023-00191-1.
+
+67.
+
+Zielinksi C, Winker MA, Aggarwal R, Ferris LA, Heinemann M, Lapeña JF Jr et al. Chatbots,
+generative AI, and scholarly manuscripts. Overijssel: World Association of Medical
+Editors; 2023. (https://wame.org/page3.php?id=106, accessed 26 June 2023).
+
+68.
+
+Gibbs W. Lost science in the Third World. Sci Am.
+1995;273(2):92–9 doi:10.1038/scientificamerican0895-92.
+
+69.
+
+Birhane A, Kasirzadeh A, Leslie D, Wachter S. Science in the age of large language
+models. Nat Rev Phys. 2023;5:277–80. doi:10.1038/s42254-023-00581-4.
+
+67
+
+

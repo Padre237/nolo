@@ -1,0 +1,40 @@
+03/11/2026 11:03
+
+SNOMED International Documents
+
+• Produce domain-specific GPS subsets
+• Reduce dataset size for constrained or focused implementations
+How to Use the Tool
+Your file is processed locally in the browser and is never uploaded to any server.
+1. Upload: Drag and drop the downloaded SNOMED CT GPS file (TSV format).
+2. Configure:
+
+• Toggle "Active Concepts Only" to exclude inactive records.
+• Select the desired Semantic Tags from the categorized list.
+• Add any Custom Tags if needed.
+3. Process: Click "Process & Download" to get your filtered dataset.
+There is also a Command-Line Interface (CLI) included in the GitHub repository ,
+intended for automated and repeatable processing, such as CI/CD pipelines or
+scheduled dataset builds.
+
+GPS Extractor Tool
+This is a utility tool for extracting and processing SNOMED CT terminology data from an
+RF2 release. It produces the SNOMED International GPS (Global Patient Set) format and
+offers advanced filtering capabilities via both a command-line interface (CLI) and a
+modern web interface.
+
+Role in GPS Implementations
+Implementers may need to recreate the Global Patient Set (GPS) from an existing
+SNOMED CT Edition RF2 distribution into formats suitable for runtime use in applications,
+such as value sets, lookup tables, or terminology service artifacts. The snomed-gpsextractor tooling supports this process by providing a repeatable way to extract,
+normalize, and package GPS content from official SNOMED CT RF2 release files.
+In a typical GPS implementation, the term extractor is used to:
+
+• Produce a flat list of SNOMED CT concepts and terms without hierarchical or relational
+semantics
+
+https://docs.snomed.org/implementation-guides/gps-implementation-guide/~gitbook/pdf?page=VZvwP1TLt1zd74otfVUl&only=yes&limi…
+
+6/11
+
+

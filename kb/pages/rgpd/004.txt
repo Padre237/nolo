@@ -1,0 +1,81 @@
+L 119/4
+
+FR
+
+Journal officiel de l'Union européenne
+
+4.5.2016
+
+activité professionnelle ou commerciale. Les activités personnelles ou domestiques pourraient inclure l'échange de
+correspondance et la tenue d'un carnet d'adresses, ou l'utilisation de réseaux sociaux et les activités en ligne qui
+ont lieu dans le cadre de ces activités. Toutefois, le présent règlement s'applique aux responsables du traitement
+ou aux sous-traitants qui fournissent les moyens de traiter des données à caractère personnel pour de telles
+activités personnelles ou domestiques.
+(19)
+
+La protection des personnes physiques à l'égard du traitement des données à caractère personnel par les autorités
+compétentes à des fins de prévention et de détection des infractions pénales, d'enquêtes et de poursuites en la
+matière ou d'exécution de sanctions pénales, y compris la protection contre les menaces pour la sécurité publique
+et la prévention de telles menaces et la libre circulation de ces données, fait l'objet d'un acte juridique spécifique
+de l'Union. Le présent règlement ne devrait dès lors pas s'appliquer aux activités de traitement effectuées à ces
+fins. Toutefois, les données à caractère personnel traitées par des autorités publiques en vertu du présent
+règlement devraient, lorsqu'elles sont utilisées à ces fins, être régies par un acte juridique de l'Union plus
+spécifique, à savoir la directive (UE) 2016/680 du Parlement européen et du Conseil (1). Les États membres
+peuvent confier à des autorités compétentes au sens de la directive (UE) 2016/680 des missions qui ne sont pas
+nécessairement effectuées à des fins de prévention et de détection des infractions pénales, d'enquêtes et de
+poursuites en la matière ou d'exécution de sanctions pénales, y compris la protection contre les menaces pour la
+sécurité publique et la prévention de telles menaces, de manière à ce que le traitement de données à caractère
+personnel à ces autres fins, pour autant qu'il relève du champ d'application du droit de l'Union, relève du champ
+d'application du présent règlement.
+En ce qui concerne le traitement de données à caractère personnel par ces autorités compétentes à des fins
+relevant du champ d'application du présent règlement, les États membres devraient pouvoir maintenir ou
+introduire des dispositions plus spécifiques pour adapter l'application des règles du présent règlement. Ces
+dispositions peuvent déterminer plus précisément les exigences spécifiques au traitement de données à caractère
+personnel par ces autorités compétentes à ces autres fins, compte tenu de la structure constitutionnelle, organisa­
+tionnelle et administrative de l'État membre concerné. Lorsque le traitement de données à caractère personnel par
+des organismes privés relève du champ d'application du présent règlement, celui-ci devrait prévoir la possibilité
+pour les États membres, sous certaines conditions, de limiter par la loi certaines obligations et certains droits
+lorsque cette limitation constitue une mesure nécessaire et proportionnée dans une société démocratique pour
+garantir des intérêts spécifiques importants tels que la sécurité publique, ainsi que la prévention et la détection
+des infractions pénales, les enquêtes et les poursuites en la matière ou l'exécution de sanctions pénales, y compris
+la protection contre les menaces pour la sécurité publique et la prévention de telles menaces. Cela est pertinent,
+par exemple, dans le cadre de la lutte contre le blanchiment d'argent ou des activités des laboratoires de police
+scientifique.
+
+(20)
+
+Bien que le présent règlement s'applique, entre autres, aux activités des juridictions et autres autorités judiciaires,
+le droit de l'Union ou le droit des États membres pourrait préciser les opérations et procédures de traitement en
+ce qui concerne le traitement des données à caractère personnel par les juridictions et autres autorités judiciaires.
+La compétence des autorités de contrôle ne devrait pas s'étendre au traitement de données à caractère personnel
+effectué par les juridictions dans l'exercice de leur fonction juridictionnelle, afin de préserver l'indépendance du
+pouvoir judiciaire dans l'accomplissement de ses missions judiciaires, y compris lorsqu'il prend des décisions. Il
+devrait être possible de confier le contrôle de ces opérations de traitement de données à des organes spécifiques
+au sein de l'appareil judiciaire de l'État membre, qui devraient notamment garantir le respect des règles du présent
+règlement, sensibiliser davantage les membres du pouvoir judiciaire aux obligations qui leur incombent en vertu
+du présent règlement et traiter les réclamations concernant ces opérations de traitement de données.
+
+(21)
+
+Le présent règlement s'applique sans préjudice de l'application de la directive 2000/31/CE du Parlement européen
+et du Conseil (2), et notamment du régime de responsabilité des prestataires de services intermédiaires prévu dans
+ses articles 12 à 15. Cette directive a pour objectif de contribuer au bon fonctionnement du marché intérieur en
+assurant la libre circulation des services de la société de l'information entre les États membres.
+
+(22)
+
+Tout traitement de données à caractère personnel qui a lieu dans le cadre des activités d'un établissement d'un
+responsable du traitement ou d'un sous-traitant sur le territoire de l'Union devrait être effectué conformément au
+présent règlement, que le traitement lui-même ait lieu ou non dans l'Union. L'établissement suppose l'exercice
+effectif et réel d'une activité au moyen d'un dispositif stable. La forme juridique retenue pour un tel dispositif,
+qu'il s'agisse d'une succursale ou d'une filiale ayant la personnalité juridique, n'est pas déterminante à cet égard.
+
+(1) Directive (UE) 2016/680 du Parlement européen et du Conseil du 27 avril 2016 relative à la protection des personnes physiques à l'égard
+du traitement des données à caractère personnel par les autorités compétentes à des fins de prévention et de détection des infractions
+pénales, d'enquêtes et de poursuites en la matière ou d'exécution de sanctions pénales, et à la libre circulation de ces données et abrogeant
+la décision-cadre 2008/977/JAI du Conseil (voir page 89 du présent Journal officiel).
+(2) Directive 2000/31/CE du Parlement européen et du Conseil du 8 juin 2000 relative à certains aspects juridiques des services de la société
+de l'information, et notamment du commerce électronique, dans le marché intérieur («directive sur le commerce électronique») (JO L 178
+du 17.7.2000, p. 1).
+
+

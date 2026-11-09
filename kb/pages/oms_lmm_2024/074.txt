@@ -1,0 +1,44 @@
+56
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+Health-worker training is also critical to ensure that, when they use an LMM professionally,
+their duties do not unknowingly violate laws, especially those related to the protection of
+health data and information. For example, medical providers who introduce “protected
+health information” into an LMM chatbot may be violating laws such as the Health Insurance
+Portability and Accountability Act in the USA (150). As popular LMMs become “trusted” by
+health-care workers, for example, they may disclose more patient data than they realize (154).
+Other stakeholders in a health-care system should be educated on the benefits, risks, uses
+and challenges of LMMs in health care and how LMMs differ from other technologies for
+generating information or advice and how they been used for other purposes in health care.
+Broader public awareness of the use of LMMs in health care and other domains should be
+improved. WHO guidance on the ethics and governance of AI for health (1) recommends that:
+“The public should be engaged in the development of AI for health to understand forms of
+data sharing and use, to comment on the forms of AI that are socially and culturally acceptable
+and to fully express their concerns and expectations. Further, the general public’s literacy
+in AI technology should be improved to enable them to determine which AI technologies
+are acceptable”.
+Governments that supply an LMM or application to a health system could use their
+procurement authority to foster certain practices among developers, providers and deployers.
+Procurement of a critical LMM or application for use in a health-care system can eliminate
+barriers to access and affordability if the AI technology does not displace other health-care
+investments that may be more effective, equitable and affordable. Public procurement can
+establish requirements for transparency with respect to data training, quality assurance, risk
+assessment, mitigation and external audits. Such requirements may be critical if a country
+has neither relevant legislation nor a regulatory agency with the resources to regulate
+LMMs effectively.
+
+Recommendations:
+• Governments should introduce mandatory post-release auditing and impact
+assessments, including for data protection and human rights, by independent
+third parties when an LMM is deployed on a large scale. The auditing and impact
+assessments should be published and should include outcomes and impacts
+disaggregated by the type of user, including for example by age, race or disability.
+• Governments could hold providers or developers responsible for inaccurate, false
+or toxic content issued by an LMM after its release, which has not been corrected or
+avoided by either the provider or the developer.
+• Governments should require ongoing operational disclosures by both developers
+and providers to ensure that LMMs and applications can be used safely. These could
+include sufficient technical documentation.
+
+

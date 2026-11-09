@@ -1,0 +1,61 @@
+L 119/50
+
+FR
+
+Journal officiel de l'Union européenne
+
+4.5.2016
+
+En ce qui concerne le point h) du premier alinéa, le sous-traitant informe immédiatement le responsable du traitement
+si, selon lui, une instruction constitue une violation du présent règlement ou d'autres dispositions du droit de l'Union ou
+du droit des États membres relatives à la protection des données.
+4.
+Lorsqu'un sous-traitant recrute un autre sous-traitant pour mener des activités de traitement spécifiques pour le
+compte du responsable du traitement, les mêmes obligations en matière de protection de données que celles fixées dans
+le contrat ou un autre acte juridique entre le responsable du traitement et le sous-traitant conformément au
+paragraphe 3, sont imposées à cet autre sous-traitant par contrat ou au moyen d'un autre acte juridique au titre du droit
+de l'Union ou du droit d'un État membre, en particulier pour ce qui est de présenter des garanties suffisantes quant à la
+mise en œuvre de mesures techniques et organisationnelles appropriées de manière à ce que le traitement réponde aux
+exigences du présent règlement. Lorsque cet autre sous-traitant ne remplit pas ses obligations en matière de protection
+des données, le sous-traitant initial demeure pleinement responsable devant le responsable du traitement de l'exécution
+par l'autre sous-traitant de ses obligations.
+5.
+L'application, par un sous-traitant, d'un code de conduite approuvé comme le prévoit l'article 40 ou d'un
+mécanisme de certification approuvé comme le prévoit l'article 42 peut servir d'élément pour démontrer l'existence des
+garanties suffisantes conformément aux paragraphes 1 et 4 du présent article.
+6.
+Sans préjudice d'un contrat particulier entre le responsable du traitement et le sous-traitant, le contrat ou l'autre
+acte juridique visé aux paragraphes 3 et 4 du présent article peut être fondé, en tout ou en partie, sur les clauses contrac­
+tuelles types visées aux paragraphes 7 et 8 du présent article, y compris lorsqu'elles font partie d'une certification
+délivrée au responsable du traitement ou au sous-traitant en vertu des articles 42 et 43.
+7.
+La Commission peut établir des clauses contractuelles types pour les questions visées aux paragraphes 3 et 4 du
+présent article et conformément à la procédure d'examen visée à l'article 93, paragraphe 2.
+8.
+Une autorité de contrôle peut adopter des clauses contractuelles types pour les questions visées aux paragraphes 3
+et 4 du présent article et conformément au mécanisme de contrôle de la cohérence visé à l'article 63.
+9.
+Le contrat ou l'autre acte juridique visé aux paragraphes 3 et 4 se présente sous une forme écrite, y compris en
+format électronique.
+10. Sans préjudice des articles 82, 83 et 84, si, en violation du présent règlement, un sous-traitant détermine les
+finalités et les moyens du traitement, il est considéré comme un responsable du traitement pour ce qui concerne ce
+traitement.
+
+Article 29
+Traitement effectué sous l'autorité du responsable du traitement ou du sous-traitant
+Le sous-traitant et toute personne agissant sous l'autorité du responsable du traitement ou sous celle du sous-traitant, qui
+a accès à des données à caractère personnel, ne peut pas traiter ces données, excepté sur instruction du responsable du
+traitement, à moins d'y être obligé par le droit de l'Union ou le droit d'un État membre.
+
+Article 30
+Registre des activités de traitement
+1.
+Chaque responsable du traitement et, le cas échéant, le représentant du responsable du traitement tiennent un
+registre des activités de traitement effectuées sous leur responsabilité. Ce registre comporte toutes les informations
+suivantes:
+a) le nom et les coordonnées du responsable du traitement et, le cas échéant, du responsable conjoint du traitement, du
+représentant du responsable du traitement et du délégué à la protection des données;
+b) les finalités du traitement;
+c) une description des catégories de personnes concernées et des catégories de données à caractère personnel;
+
+

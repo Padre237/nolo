@@ -1,0 +1,47 @@
+26
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+A further concern is that companies may not maintain a corporate commitment to ethics. For
+example, major technology companies have been either side-lining or eliminating their ethics
+teams that were established to ensure that the design and development of AI models would
+adhere to internal ethics principles (106), and to introduce “friction” that would require the
+company to slow or cease certain development activities. Eliminating entire teams working on
+ethics-related issues for AI means that principles are not “closely tied to product design” (108)
+and therefore leaves a gap.
+Several large technology companies, through the Frontier Model Forum, have committed
+themselves to ensuring “responsible and safe development of frontier AI models”, including
+LMMs, “identifying best practices for the responsible development and deployment of frontier
+models” and “collaborating with policymakers, academics, civil society, and companies to
+share knowledge about trust and safety risks” (103). In voluntary commitments with the US
+Government, technology companies have pledged to avoid harmful bias and discrimination
+and protect privacy (104). It is not clear, however, whether voluntary commitments or
+partnerships will suffice to replace a robust commitment to ethics. Ethics teams in one
+company, for example, that had recommended halting the release of a new LMM changed their
+documents and downplayed previously documented risks (106).
+Large technology companies have neither a history of nor are they specialized in the
+development of health products and services. They may therefore not be sensitive to the
+requirements of health-care systems, providers and patients and may not address privacy
+or quality assurance, for example, which are familiar to traditional health-care companies
+and public health providers. Their sensitivity may improve with time, as occurred in other
+companies that have provided health-care goods and services for several decades.
+Many companies that are developing LMMs are not transparent with either governments
+or regulators or with those companies that may use their models and which may require (i)
+evidence, data, performance and other information to assess the risks and benefits of an
+LMM (97,106) and (ii) the number of parameters in the model, which is an indicator of how
+powerful it is (8). Companies that use such models in developing their own products and
+services also do not disclose how they assess ethical challenges and risks, the safeguards in
+place, the reaction of LMMs to those safeguards and when use of technology should be limited
+or stopped. The Foundation Model Transparency Index, which assesses ten leading developers
+of large language models against one hundred indicators, found that “no major foundation
+model developer is close to providing adequate transparency, revealing a fundamental
+lack of transparency in the AI industry” (107). The voluntary agreement between the US
+Federal Government and several large technology companies includes two commitments
+to transparency. The companies commit themselves to (i) share information on managing
+risks with the industry and with governments, civil society and academia and (ii) to publicly
+report the capabilities, limitations and areas of appropriate and inappropriate use of their
+AI systems (104). While these commitments might be an improvement over the status quo,
+they are voluntary and are open to interpretation by each company, which may not result in
+adequate disclosure without concrete regulatory requirements.
+
+

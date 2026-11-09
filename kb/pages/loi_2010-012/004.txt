@@ -1,0 +1,50 @@
+4
+
+21) Code source : ensemble des spécifications techniques, sans restriction
+d’accès ni de mise en œuvre, d’un logiciel ou protocole de
+communication, d’interconnexion, d’échange ou d’un format de données ;
+22) Communication audiovisuelle : communication au public de services de
+radiodiffusion télévisuelle et sonore ;
+23) Communication électronique : émission, transmission ou réception de
+signes, signaux, d’écrits, d’images ou de sons, par voie
+électromagnétique ;
+24) Confidentialité : maintien du secret des informations et des transactions
+afin de prévenir la divulgation non autorisée d’informations aux non
+destinataires permettant la lecture, l’écoute, la copie illicite d’origine
+intentionnelle ou accidentelle durant leur stockage, traitement ou
+transfert ;
+25) Contenu : ensemble d’informations relatives aux données appartenant à
+des personnes physiques ou morales, transmises ou reçues à travers les
+réseaux de communications électroniques et les Systèmes
+d’information ;
+26) Contenu illicite : contenu portant atteinte à la dignité humaine, à la vie
+privée, à l’honneur ou à la sécurité nationale ;
+27) Courrier électronique : message, sous forme de texte, de voix, de son ou
+d'image, envoyé par un réseau public de communication, stocké sur un
+serveur d’un réseau ou dans l'équipement terminal du destinataire,
+jusqu'à ce que ce dernier le récupère ;
+28) Cryptage : utilisation de codes ou signaux non usuels permettant la
+conversion des informations à transmettre en des signaux
+incompréhensibles par les tiers ;
+29) Cryptanalyse : ensemble des moyens qui permet d’analyser une
+information préalablement chiffrée en vue de la déchiffrer ;
+30) Cryptogramme : Message chiffré ou codé ;
+31) Cryptographie : application des mathématiques permettant d’écrire
+l’information, de manière à la rendre inintelligible à ceux ne possédant
+pas les capacités de la déchiffrer ;
+32) Cybercriminalité : ensemble des infractions s’effectuant à travers le
+cyberspace par d’autres moyens que ceux habituellement mis en œuvre,
+et de manière complémentaire à la criminalité classique ;
+33) Cybersécurité : ensemble de mesures de prévention, de protection et de
+dissuasion d’ordre technique, organisationnel, juridique, financier,
+humain, procédural et autres actions permettant d’atteindre les
+objectifs de sécurité fixés à travers les réseaux de communications
+électroniques, les systèmes d’information et pour la protection de la vie
+privée des personnes ;
+34) Déclaration des pratiques de certification : ensemble des pratiques
+(organisation, procédures opérationnelles, moyens techniques et
+humains) que l’autorité de certification compétente applique dans le
+cadre de la fourniture de ce service et en conformité avec la (les)
+politique(s) de certification qu’il s’est engagé à respecter ;
+
+

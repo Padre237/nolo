@@ -1,0 +1,45 @@
+22
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+2030, there will be a shortage of 10 million health workers (79), mainly in low- and low-middle
+income countries. Therefore, LMMs that are proven to be safe and effective might be used
+to narrow the gap between the workforce required to provide health care and that which
+is available.
+A separate concern is the impact of introduction of LMMs on the number of current and
+future health-care professionals. A major technology company estimated that up to 80%
+of jobs will be affected by the arrival of AI (80). Accenture, a consulting firm, estimated that
+40% of working hours could be affected by LMMs and noted optimistically that “the positive
+impact on human creativity and productivity will be massive” (81). Yet, as noted above, the
+introduction of LMMs could create significant challenges for many health-care workers, who
+will require training and adjustment to LMMs. Health systems will have to account for the
+challenges it presents to providers and the risks to patients and caregivers.
+A third concern is the mental and psychological toll on people responsible for reviewing
+content, annotating data used to train LMMs and removing abusive, violent or mentally
+disturbing content from a data set. Those responsible for filtering out such content are often
+based in low- and middle-income countries, earn low wages and can suffer psychological
+distress from reviewing such content, without access to counselling or other forms of medical
+care (73).
+
+Dependence of health systems on unsuitable LMMs
+While LMMs could counter persistent shortages of health workers and extend the reach of
+health systems, those systems could become dependent on LMMs and specifically on LMM
+technologies developed by industry. Thus, if LMMs used in health care or public health are not
+maintained, are diminished or are designed and updated only for use in high-income contexts,
+the health systems that have relied on them will have to adjust and potentially deliver health
+care without LMMs. This may be difficult if medical professionals have been “de-skilled” and
+have outsourced certain responsibilities to AI or if patients expect its use. A related risk is that,
+if LMMs do not preserve a patient’s privacy and confidentiality, overdependence on LMMs
+could undermine individual and societal trust in health-care systems, as people would no
+longer be confident in accessing health-care services without risking their privacy.
+
+Cybersecurity risks
+As health-care systems become increasingly dependent on AI, the technologies could
+be targeted for malicious attacks and hacking and some systems shut down, with
+manipulation of the data used to train the algorithm, thereby changing its performance and
+recommendations, or data could be “kidnapped” for ransom (1). A particular security risk,
+noted above, is feeding of sensitive data into LMMs that are not protected from unauthorized
+disclosure or use. LMMs themselves may also be vulnerable to cyber-security risks, such
+as “prompt injection”, which is an attack in which data are fed to an LMM by a third party,
+
+

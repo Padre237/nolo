@@ -1,0 +1,42 @@
+25
+
+(2) La demande de partage d'infrastructures doit être faite par
+écrit. L'opérateur gestionnaire des infrastructures concernées est tenu d'y
+répondre dans un délai maximum de soixante (60) jours à compter de la
+date de la réception de la demande.
+(3) La demande de partage d'infrastructures ne peut être
+refusée, si elle ne crée aucune perturbation ou autre difficulté technique,
+au regard du bon établissement du réseau et de la bonne exploitation du
+service. Tout refus du partage d'infrastructures doit être motivé.
+(4) En cas de désaccord entre les deux parties, le différend
+est porté à la connaissance de l'Agence à l’effet d’y trouver une solution.
+Article 47.- Les exploitants d’infrastructures alternatives sont tenus de
+céder, sous la supervision de l’Administration chargée des
+Télécommunications, à l’opérateur de réseau, les capacités excédentaires
+dont ils pourraient disposer après avoir déployé les infrastructures
+destinées à leurs propres besoins, et/ou les droits de passage sur le
+domaine public, les servitudes, les emprises, les ouvrages de génie civil,
+les artères et canalisations ainsi que les points hauts dont ils disposent.
+Article 48.- Les conditions d’interconnexion, d’accès au réseau et de
+partage des infrastructures sont fixées par voie réglementaire.
+CHAPITRE VI
+DE LA NUMEROTATION ET DE L’ADRESSAGE
+
+Article 49.- (1) L’Agence établit et gère le plan national de numérotation
+et d’adressage. Ce plan détermine l’ensemble des adresses et numéros
+permettant d’identifier les points de terminaison des réseaux et des
+services de communications électroniques, d’acheminer les appels et
+d’accéder aux ressources internes des réseaux, conformément aux
+recommandations de l’Union Internationale des Télécommunications. Elle
+garantit un accès égal et simple des utilisateurs aux différents réseaux et
+services ainsi que l’équivalence des formats de numérotation.
+(2) Les ressources d’adressage mentionnées à l’alinéa 1 cidessus comportent notamment, les codes de points sémaphores, les
+codes des réseaux de communications électroniques.
+Article 50.- (1) L'Agence attribue dans des conditions objectives,
+transparentes et non discriminatoires, aux opérateurs qui le demandent,
+des adresses, des préfixes et des numéros ou blocs de numéros,
+moyennant une redevance fixée par voie réglementaire.
+(2) Les conditions d’utilisation de ces adresses, préfixes,
+numéros ou blocs de numéros portent sur :
+
+

@@ -1,0 +1,40 @@
+La surveillance fondée sur les indicateurs et la surveillance fondée sur les évènements
+constituent l’intelligence épidémiologique et font partie intégrante du système d’alerte
+précoce et réponse.
+a. Détection d’un cas communautaire ou d’un signal
+La détection du signal signifie : identifier, capter ou suspecter l’occurrence d’une des maladies
+et/ou signaux repris dans le Tableau 3. Les membres de la communauté et les informateurs clés
+(les tradi-praticiens, les autorités traditionnelles et religieuses, les enseignants ou les
+accoucheuses traditionnelles) doivent immédiatement rapporter les signaux qu'ils identifient
+ou dont ils entendent parler aux ASCP. Au niveau communautaire, les signaux sont captés le
+plus souvent par les ASCP ou des informateurs clés en raison de leurs liens avec la
+communauté. Les ASCP peuvent améliorer la capture de signaux dans leurs communautés en
+donnant à leurs informateurs clés les moyens de soutenir l’identification et le signalement des
+cas et signaux. La détection du signal utilise comme outils les définitions communautaires des
+cas (les affiches à l’hôpital et de la communauté, carnet de bord, boîtes à image et dépliants) et
+des signaux.
+
+b. Notifier les cas et signaux
+Notifier les cas et signaux c’est entrer en communication avec le point focal FOSA/DS pour
+l’en informer. La notification des cas et signaux doit être effectuée immédiatement ou dans les
+24 heures suivant leur détection au niveau communautaire. La notification des cas et signaux
+peut varier en fonction de l’emplacement de la source d’informations. Les signaux ou cas
+suspects détectés au niveau communautaire sont signalés immédiatement par les ASCP au Chef
+de l’AS. Puisqu’il agit en tant qu’interface entre la communauté et le système de soins de santé,
+l’ASCP doit transmettre immédiatement les cas ou signaux au centre de liaison de l’AS par
+appel/message téléphonique ou tout autre moyen. Les principaux outils sont les fiches de
+notification des cas communautaire, les carnets de bord, les registres de signaux.
+
+c. Triage et vérification
+Le triage et la vérification des signaux rapportés par la communauté sont généralement
+effectués au niveau de l’AS. Le Chef de L’AS réceptionne les informations inscrites dans les
+Carnets de bord (ASCP et PFS FOSA) et les consigne dans le registre des signaux. En raison
+de sa haute sensibilité, la SBC peut générer des signaux qui au bout du processus de vérification
+ne sont pas validés comme évènement. Par conséquent, l’authenticité des signaux doit être
+établie.
+
+
+
+
+                                               19
+

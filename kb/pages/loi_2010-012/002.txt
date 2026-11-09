@@ -1,0 +1,54 @@
+2
+
+TITRE PREMIER
+DISPOSITIONS GENERALES
+Article 1er.- La présente loi régit le cadre de sécurité des réseaux de
+communications électroniques et des systèmes d’information, définit et
+réprime les infractions liées à l’utilisation des technologies de l’information
+et de la communication au Cameroun. A ce titre, elle vise notamment à :
+- instaurer la confiance dans les réseaux de communications électroniques
+et les systèmes d’information ;
+- fixer le régime juridique de la preuve numérique, des activités de sécurité,
+de cryptographie et de certification électronique ;
+- protéger les droits fondamentaux des personnes physiques, notamment
+le droit à la dignité humaine, à l’honneur et au respect de la vie privée,
+ainsi que les intérêts légitimes des personnes morales.
+Article 2.- Sont exclues du champ de la présente loi, les applications
+spécifiques utilisées en matière de défense et de sécurité nationales.
+Article 3.- Les réseaux de communications électroniques visés par la présente
+loi comprennent : les réseaux satellitaires, les réseaux terrestres, les réseaux
+électriques lorsqu’ils servent à l’acheminement de communications
+électroniques, les réseaux assurant la diffusion ou la distribution de services de
+communication audiovisuelle.
+Article 4.- Au sens de la présente loi et de ses textes d’application, les
+définitions ci-après, sont admises :
+1)
+2)
+
+3)
+4)
+5)
+6)
+7)
+
+Accès illicite : accès intentionnel, sans en avoir le droit, à l’ensemble ou
+à une partie d’un réseau de communications électroniques, d’un
+système d’information ou d’un équipement terminal ;
+Administration chargée des Télécommunications : Ministère ou Ministre
+selon le cas, investi pour le compte du Gouvernement, d’une
+compétence générale sur le secteur des télécommunications et des
+technologies de l’information et de la communication.
+Algorithme : suite d’opérations mathématiques élémentaires à appliquer
+à des données pour aboutir à un résultat désiré ;
+Algorithme asymétrique : algorithme de chiffrement utilisant une clé
+publique pour chiffrer et une clé privée (différente) pour déchiffrer les
+messages ;
+Algorithme symétrique : algorithme de chiffrement utilisant une même
+clé pour chiffrer et déchiffrer les messages ;
+Attaque active : acte modifiant ou altérant les ressources ciblées par
+l’attaque (atteinte à l’intégrité, à la disponibilité et à la confidentialité
+des données) ;
+Attaque passive : acte n’altérant pas sa cible (écoute passive, atteinte à
+la confidentialité) ;
+
+

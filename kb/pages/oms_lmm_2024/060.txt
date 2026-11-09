@@ -1,0 +1,42 @@
+42
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+Open-source LMMs may not endure, however, if large technology companies that previously
+made their models available choose not to continue to do so (10). Development of most
+open-source LMMs was based on an LMM released on a limited basis by Meta (formerly
+Facebook) (10). Since the LMM and its weights were leaked (137), the company has stated its
+commitment to open-source approaches, noting that openness “leads to better products,
+faster innovation, and a flourishing market, which benefits [Meta] as it does many others….
+ultimately, openness is the best antidote to the fears surrounding AI” (130). Independent
+observers have noted, however, that, while Meta has made its LMM available on a noncommercial basis, its terms of use includes restrictions, and it is thus not providing its LMM in
+a manner consistent with open-source principles (138,139).
+Additional requirements for use of open-source models in order to monitor their performance
+and outcomes will be difficult for developers to address; however, the benefit of such
+models cannot supplant the necessity for regulation and avoidance of harm, such as
+security concerns associated with use of open-source models (140). Open-source models are
+vulnerable to misuse (141) and can be attacked to exploit such vulnerability (142). A group of
+researchers recently found that methods tested on open-source AI systems circumvented
+AI safety measures and safeguards and could also bypass the safeguards of so-called closed
+systems (143). Ultimately, open-source models are based on the same black-box technologies
+used in other LMMs.
+One way of encouraging open-source LMMs would be for governments to require that
+foundation models built with government funding or intellectual property be widely
+accessible, in the same way that governments have required open access to governmentfunded research. Governments could also encourage open-source research and development
+in public facilities, including next-generation models, under controlled conditions with public
+oversight. Public oversight and participation might be better than the new reality in which
+Meta’s leaked model allows anyone to “download it and run it on a MacBook M2” (144).
+
+Recommendations:
+• Developers that design an LMM that shall or could be used in health care, scientific
+research or medicine shall consider ethics certification or training for programmers.
+This would bring AI developers in line with requirements in the medical profession
+and increase trust in their products and services.
+• Regardless of the size of the dataset, developers should undertake “data protection
+impact assessments” before processing such data, which would require developers
+to assess the risk that data processing operations would go against the rights and
+freedom of individuals and its impact on the protection of personal data.
+• Developers should train LMMs on data collected according to best-practice data
+protection rules.
+
+

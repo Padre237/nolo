@@ -1,0 +1,50 @@
+14
+
+- l’utilisation d’une liaison louée de capacité supérieure à 10 mégabits
+par seconde.
+(2) La déclaration
+d’exploitation portant sur :
+
+est
+
+subordonnée
+
+aux
+
+conditions
+
+- la nature, les caractéristiques techniques des équipements, la zone
+de couverture et le calendrier prévisionnel de mise en œuvre ;
+- les conditions de permanence, de disponibilité, de qualité et de
+neutralité du service ;
+- le respect des prescriptions techniques concernant l’accès au
+service, son interconnexion avec les autres services-supports et la
+compatibilité de son fonctionnement avec ceux-ci ;
+- les prescriptions exigées pour la défense nationale et la sécurité
+publique ;
+- les modalités de calcul des contributions exigibles au titre de la
+participation au développement des communications électroniques
+sur l’ensemble du territoire.
+Article 16.- Peuvent être établis sur simple déclaration contre récépissé :
+- les réseaux privés internes ;
+- les réseaux privés indépendants autres que radioélectriques dont les
+points de terminaison sont distants de moins de 300 mètres et dont
+les liaisons ont une capacité inférieure à 10 mégabits par seconde ;
+- les installations radioélectriques exclusivement composées d'appareils
+de faible puissance et de faible portée, dont les catégories sont
+déterminées par l’Administration chargée des Télécommunications.
+Article 17.- Les modalités d’obtention d’une déclaration ainsi que les
+conditions d’exploitation des réseaux et installations visées à l’article 16
+ci-dessus sont déterminées par un texte particulier.
+Article 18.- La fourniture des services de communications électroniques
+autres que ceux visés par les articles 9, 10, 14, 15 et 16 ci-dessus est
+libre, sous réserve du respect des exigences essentielles visées à l’article
+3 de la présente loi.
+Article 19.- Nul ne peut, dans les eaux territoriales, à bord d’un navire
+ou d’un bateau, dans l’espace aérien, à bord d’un aéronef ou de tout
+autre support soumis au droit camerounais, détenir un appareil émetteur
+et/ou récepteur de radiocommunications, ni établir et faire fonctionner
+une station ou un réseau de radiocommunications non public, sans avoir
+déclaré et obtenu une licence.
+
+

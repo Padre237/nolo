@@ -1,0 +1,44 @@
+15
+
+(2) Les exploitants des systèmes d’information et leurs utilisateurs
+peuvent coopérer entre eux pour l’élaboration et la mise en œuvre des
+pratiques, mesures et techniques de sécurité de leurs systèmes.
+Article 31.- (1) Les fournisseurs de contenus des réseaux de communications
+électroniques et systèmes d’information sont tenus d’assurer la disponibilité
+des contenus, ainsi que celle des données stockées dans leurs installations.
+(2) Ils ont l’obligation de mettre en place des filtres pour faire face
+aux atteintes préjudiciables aux données personnelles et à la vie privée des
+utilisateurs.
+Article 32.- (1) Les réseaux de communications électroniques et les systèmes
+d’information sont soumis à un régime d’audit de sécurité obligatoire et
+périodique de leurs systèmes de sécurité par l’Agence.
+(2) L’audit de sécurité et les mesures d’impact de gravité sont
+effectués chaque année ou lorsque les circonstances l’exigent.
+(3) Les rapports d’audit sont confidentiels et adressés au Ministre
+chargé des Télécommunications.
+(4) Un texte du Ministre chargé des Télécommunications fixe les
+conditions d’évaluation des niveaux d’impact de gravité.
+SECTION III
+DES OBLIGATIONS DES FOURNISSEURS D’ACCES, DE SERVICES ET DES CONTENUS
+
+Article 33.- Les personnes dont l'activité est d'offrir un accès à des services de
+communications électroniques, informent leurs abonnés de l'existence de
+moyens techniques permettant de restreindre l'accès à certains services ou de
+les sélectionner et leur proposent au moins un de ces moyens.
+Article 34.- (1) La responsabilité des personnes qui assurent, même à titre
+gratuit, le stockage des signaux, d'écrits, d'images, de sons ou de messages de
+toute nature fournis par les destinataires de ces services, peut être engagée.
+(2) Toutefois, la responsabilité prévue à l’alinéa 1 ci-dessus n’est
+point engagée dans les cas suivants :
+- les personnes n'avaient pas effectivement connaissance de leur
+caractère illicite ou de faits et circonstances faisant apparaître ce
+caractère ;
+- si, dès le moment où elles ont eu connaissance des faits, elles ont agi
+promptement pour retirer ces données ou en rendre l'accès
+impossible.
+Article 35.- (1) Les personnes mentionnées aux articles 33 et 34 ci–dessus,
+sont tenues de conserver, pendant une durée de dix (10) ans, les données
+permettant l'identification de toute personne ayant contribué à la création du
+contenu des services dont elles sont prestataires.
+
+

@@ -1,0 +1,43 @@
+5 Provision with general-purpose foundation models (LMMs)
+
+would be tantamount to manipulation (159). In the USA, several government departments
+and agencies are applying consumer protection laws and other regulations to prevent
+discrimination and bias in automated systems (159). Such laws can enable governments to
+require entities that seek to commercialize such technologies to address the causes of any
+negative consequences and to protect patients and their families from any current or future
+harm (93). Consumer protection laws, or other regulations, could be used to require that LMMs
+and applications are restricted in use of language that could misdirect or mislead an end-user
+into ascribing human-like qualities to an LMM. Such laws could therefore restrict use of or
+prevent LMMs or applications from using words such as “I think”, “I suppose” or “I suggest”.
+
+Recommendations:
+• Governments should, as resources permit, assign an existing or new regulatory
+agency to assess and approve LMMs and applications intended for use in health care
+or medicine.
+• Certain aspects of an LMM and its applications should be transparent to allow
+oversight and assessment of its safety and efficacy by regulators. This may include
+the source code, data inputs, model weights and analytical approach. Additional
+forms of disclosure to be considered by a government are the performance of an LMM
+or application in internal testing and its carbon and water footprints.
+• Governments should ensure that data protection rules apply to data entered into an
+LMM or application by a user.
+• Government laws, policies and regulations should ensure that LMMs and applications
+used in health care and medicine, irrespective of the risk or benefit associated with
+the AI technology, meet ethical obligations and human rights standards that affect,
+for example, a person’s dignity, autonomy or privacy.
+• Governments should enact laws and policies that require providers and developers to
+conduct impact assessments of LMMs and applications, which should address ethics,
+human rights, safety and data protection, throughout the life cycle of an AI system.
+The impact assessments should be audited by an independent third party before and
+after introduction of an AI technology and should be in the public domain.
+• The regulatory burden on a provider should increase if the product or application
+substantially diverges from or changes the foundation model in ways that are out of
+the control of the developer of the model.
+• Governments should ensure that, for an LMM or application that is regulated as a
+medical device, the developer and/or provider is responsible for the burden of proof
+that the device performs as marketed and that it meets the requirements of the
+country’s laws or amended laws.
+
+51
+
+

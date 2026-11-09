@@ -1,0 +1,108 @@
+x
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+Table 1. Potential benefits and risks in various uses of LMMs in health care
+Use
+
+Potential or proposed benefits
+
+Potential risks
+
+Diagnosis and
+clinical care
+
+Assist in managing complex cases and
+review of routine diagnoses
+Reduce the communication workload
+of health-care providers (“keyboard
+liberation”)
+Provide novel insights and reports from
+various unstructured forms of health
+data
+
+Inaccurate, incomplete or false
+responses
+Poor quality training data
+Bias (of training data and responses)
+Automation bias
+Degradation of skills (of health-care
+professionals)
+Informed consent (of patients)
+
+Patient-guided
+use
+
+Generate information to improve
+understanding of a medical condition (as
+a patient or as a caregiver)
+Virtual health assistant
+Clinical trial enrolment
+
+Inaccurate, incomplete or false
+statements
+Manipulation
+Privacy
+Less interaction between clinicians and
+patients
+Epistemic injustice
+Risk of delivery of care outside the health
+system
+
+Clerical and
+administrative
+tasks
+
+Assist with paperwork and
+documentation required for clinical care
+Assist in language translation
+Completion of electronic health records
+Draft clinical notes after a patient visit
+
+Inaccuracies and errors
+Inconsistent responses depending on
+prompts
+
+Medical
+and nursing
+education
+
+Dynamic texts suited to each student’s
+needs
+Simulated conversation to improve
+communication and to practise in
+diverse situations and with diverse
+patients
+Responses to questions accompanied by
+chain-of-thought reasoning
+
+Contribute to automation bias
+Errors or false information undermine
+the quality of medical education
+New burden of learning digital skills
+
+Scientific
+research
+and drug
+development
+
+Generate insights from scientific data
+and research
+Generate text for use in scientific articles,
+manuscript submission or peer-review
+Analyse and summarize data for research
+Proofreading
+De novo drug design
+
+Cannot hold algorithms accountable for
+content
+Algorithms encode bias towards the
+perspectives of high-income countries
+Generate information and/or references
+that do not exist
+Undermine key tenets of scientific
+research, such as peer review
+Exacerbate differential access to
+scientific knowledge
+
+

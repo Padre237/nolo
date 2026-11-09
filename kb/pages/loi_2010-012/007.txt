@@ -1,0 +1,49 @@
+7
+
+62) Réseau de communications électroniques : Systèmes de transmission,
+actif ou passif et, le cas échéant, les équipements de commutation et
+de routage et les autres ressources qui permettent l’acheminement des
+signaux par câble, par voie hertzienne, par moyen optique ou par
+d’autres moyens électromagnétiques comprenant les réseaux
+satellitaires, les réseaux terrestres fixes (avec commutation de circuit
+ou de paquet, y compris l’Internet) et mobile, les systèmes utilisant le
+réseau électrique, pour autant qu’ils servent à la transmission des
+signaux, les réseaux utilisés pour la radiodiffusion sonore et télévisuelle
+et les réseaux câblés de télévision, quel que soit le type d’information
+transmise ;
+63) Réseau de télécommunications : installation ou ensemble d’installations
+assurant soit la transmission et l’acheminement de signaux de
+télécommunications, soit l’échange d’informations de commande et de
+gestion associés à ces signaux entre les points de ce réseau ;
+64) Sécurité : situation dans laquelle quelqu’un, quelque chose n’est exposé
+à aucun danger. Mécanisme destiné à prévenir un événement
+dommageable, ou à en limiter les effets ;
+65) Service de certification : prestation fournie par une autorité de
+certification ;
+66) Service de communications électroniques : prestation consistant
+entièrement ou principalement en la fourniture de communications
+électroniques à l’exclusion des contenus des services de communication
+audiovisuelle ;
+67) Signataire : personne physique, agissant pour son propre compte ou
+pour celui de la personne physique ou morale qu'elle représente, qui met
+à contribution un dispositif de création de signature électronique ;
+68) Signature électronique : signature obtenue par un algorithme de
+chiffrement asymétrique permettant d’authentifier l’émetteur d’un
+message et d’en vérifier l’intégrité ;
+69) Signature électronique avancée : signature électronique obtenue à
+l’aide d’un certificat électronique qualifié ;
+70) Standard ouvert : protocole de communication, d'interconnexion ou
+d'échange et format de données interopérable, dont les spécifications
+techniques sont publiques et sans restriction d'accès ni de mise en
+œuvre ;
+71) Système de détection : système permettant de détecter les incidents qui
+pourraient conduire aux violations de la politique de sécurité et
+permettant de diagnostiquer des intrusions potentielles ;
+72) Système d’information : dispositif isolé ou groupe de dispositifs
+interconnectés ou apparentés, assurant par lui-même ou par un ou
+plusieurs de ses éléments, conformément à un programme, un
+traitement automatisé de données ;
+73) Vulnérabilité : défaut de sécurité se traduisant soit intentionnellement,
+soit accidentellement par une violation de la politique de sécurité, dans
+
+

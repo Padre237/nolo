@@ -1,0 +1,11 @@
+Figure 1. Surveillance basée sur les indicateurs et surveillance des événements
+dans la perspective de la surveillance épidémiologique (EWAR) relative à la
+stratégie de SIMR
+
+Intersection IBS et EBS : Tous les événements détectés par le système EBS qui font l’objet
+d’investigation et qui satisfont à la définition de cas normalisée devraient être saisis dans le
+système IBS et signalés au deuxième échelon du système de soins de santé.
+
+6
+
+

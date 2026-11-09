@@ -1,0 +1,33 @@
+permet également de renforcer les systèmes SIMR, et joue un rôle moteur puissant dans
+leur mise en œuvre.
+La SIMR et le RSI (2005) partagent des fonctions communes, décrites dans le diagramme cidessous (détection, notification, établissement des rapports, confirmation et vérification, et
+riposte en temps opportun.)
+Figure 3. Application du RSI par la SIMR1
+
+1 Directives pour les équipes d’évaluation. Règlement sanitaire international (2005) : Protocole d’évaluation de la surveillance nationale
+
+et les capacités de riposte pour le Règlement sanitaire international conformément à l’annexe 1A du Règlement. Février 2009.
+
+Le RSI a des implications pratiques pour la SIMR. Dans le RSI (2005), toutes les affections et
+tous les événements sanitaires de portée internationale doivent être détectés et évalués à
+temps ; la riposte doit être rapide et adaptée à la situation plutôt que de faire appel à des
+mesures préétablies. Le RSI (2005) inclut le contrôle des frontières (aéroports, ports, et
+postes-frontière terrestres) et des mesures visant à endiguer à la source des événements
+sanitaires. Le RSI (2005) comprend également la saisie des rumeurs de « maladie ou
+groupes de maladies inexpliquées » en tant que catégorie d’événements pour les rapports
+des niveaux inférieurs. En raison du rôle majeur que joue le RSI (2005) dans la détection et
+la vérification en temps opportun des urgences et des événements présumés de santé
+publique, la surveillance des événements fait maintenant partie de la SIMR et du RSI.
+Suivi et évaluation de la capacité fonctionnelle de base pour l’application du RSI (2005)
+À la suite de l’épidémie d’Ebola en 2015, plusieurs comités d’examen du RSI (2005) et divers
+groupes d’experts ont recommandé l’utilisation d’autres outils pour surveiller et évaluer
+l’application du RSI (2005), afin de compléter son suivi annuel. Par conséquent, depuis 2016,
+les États Membres et les partenaires de l’OMS ont adopté l’approche combinée du
+processus de suivi et d’évaluation du RSI (2005). Les quatre composantes du cadre de suivi
+et d’évaluation du RSI (2005) sont :
+a) Les rapports annuels obligatoires à l’Assemblée mondiale de la Santé
+b) L’évaluation externe conjointe (JEE)
+
+12
+
+

@@ -1,0 +1,69 @@
+# Preuve d'exécution — outil de traçabilité
+# Date : 2026-11-04T02:16:32+01:00
+$ python3 tools/trace.py
+4 dossiers, 34 exigences, 20 tâches, 34 tests ; 79 erreur(s), 0 avertissement(s)
+ERREUR exigence v1.3 FR-101 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-102 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-104 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-105 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-106 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-107 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-108 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-109 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-110 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-111 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-112 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-113 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-114 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-201 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-202 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-203 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-204 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-205 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-206 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-207 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-208 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-209 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-301 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-302 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-303 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-304 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-305 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-306 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-307 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-308 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-401 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-402 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-403 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-404 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-405 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-406 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-407 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-408 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-501 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-502 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-503 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-504 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-505 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-601 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-602 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-603 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-604 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-605 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-606 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-607 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-608 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-609 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-610 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-701 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-702 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-703 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-704 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-705 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-706 sans sous-fonctionnalité propriétaire
+ERREUR exigence v1.3 FR-707 sans sous-fonctionnalité propriétaire
+code de sortie : 1 (1 attendu tant que les dossiers des autres sous-fonctionnalités ne sont pas rédigés)
+
+# Erreurs restantes, toutes de deux types attendus :
+#  exigence v1.3 sans propriétaire (dossier non rédigé) : 68
+#  exigence référencée dont le dossier propriétaire n est pas rédigé : 11

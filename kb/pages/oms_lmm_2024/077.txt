@@ -1,0 +1,32 @@
+7 Liability for LMMs
+
+patient will be compensated if the error affects them (1), although this depends on whether
+the patient knew that an LMM was used. While such continuing liability might discourage the
+use of increasingly sophisticated LMMs, it might also temper a willingness to take unnecessary
+risks and to deploy new LMMs into health care or public health settings before their many risks
+and potentials harms have been fully identified and addressed (1).
+A liability regime for AI might not, however, be adequate to assign fault, as algorithms
+are evolving in ways that neither developers, providers nor deployers can fully control.
+Furthermore, there may be situations or jurisdictions in which a person who is harmed is
+unable to recover damages. For example, in the USA, a patient who is injured when using
+an LMM directly to seek advice may not be able to recover damages because AI systems
+themselves are not included in professional liability rules, and exceptions or limitations
+to product or consumer liability laws may preclude recovery (163). In other areas of health
+care, compensation is occasionally provided without assignment of fault or liability, such as
+for medical injuries resulting from adverse effects of vaccines. The original WHO guidance
+recommended determination of “whether no-fault, no-liability compensation funds are an
+appropriate mechanism for providing payments to individuals who suffer medical injuries due
+to the use of AI technologies, including how to mobilize resources to pay any claims” (1). That
+recommendation is also valid today and could be a means for determining compensation for
+injuries caused by LMMs or applications with LMMs.
+
+Recommendation:
+• Governments should establish liability along the value chain of the development,
+provision and deployment of LMMs and applications to ensure that a victim of
+damage can claim compensation, irrespective of the difficulty of assigning blame
+and of the responsibilities of the different entities involved in the development and
+deployment of the technology.
+
+59
+
+

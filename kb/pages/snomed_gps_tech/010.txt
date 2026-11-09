@@ -1,0 +1,15 @@
+03/11/2026 11:03
+
+SNOMED International Documents
+
+This diagram illustrates how the Global Patient Set is prepared and used within a FHIR terminology server. The SNOMED
+CT GPS Release provides the source content, which is processed by the SNOMED CT GPS Term Extractor to generate a
+simplified GPS dataset containing only concept identifiers and terms. This flat dataset is then loaded into the FHIR
+terminology server, where it supports identifier-level operations such as code lookup and validation, without exposing
+SNOMED CT semantic or hierarchical functionality.
+
+https://docs.snomed.org/implementation-guides/gps-implementation-guide/~gitbook/pdf?page=VZvwP1TLt1zd74otfVUl&only=yes&li…
+
+10/11
+
+

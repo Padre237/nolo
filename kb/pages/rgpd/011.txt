@@ -1,0 +1,83 @@
+4.5.2016
+
+FR
+
+Journal officiel de l'Union européenne
+
+L 119/11
+
+études menées dans l'intérêt public dans le domaine de la santé publique. Le présent règlement devrait dès lors
+prévoir des conditions harmonisées pour le traitement des catégories particulières de données à caractère
+personnel relatives à la santé, pour répondre à des besoins spécifiques, en particulier lorsque le traitement de ces
+données est effectué pour certaines fins liées à la santé par des personnes soumises à une obligation légale de
+secret professionnel. Le droit de l'Union ou le droit des États membres devrait prévoir des mesures spécifiques et
+appropriées de façon à protéger les droits fondamentaux et les données à caractère personnel des personnes
+physiques. Les États membres devraient être autorisés à maintenir ou à introduire des conditions supplémentaires,
+y compris des limitations, en ce qui concerne le traitement des données génétiques, des données biométriques ou
+des données concernant la santé. Toutefois, cela ne devrait pas entraver le libre flux des données à caractère
+personnel au sein de l'Union lorsque ces conditions s'appliquent au traitement transfrontalier de ces données.
+
+(54)
+
+Le traitement des catégories particulières de données à caractère personnel peut être nécessaire pour des motifs
+d'intérêt public dans les domaines de la santé publique, sans le consentement de la personne concernée. Un tel
+traitement devrait faire l'objet de mesures appropriées et spécifiques de façon à protéger les droits et libertés des
+personnes physiques. Dans ce contexte, la notion de «santé publique» devrait s'interpréter selon la définition
+contenue dans le règlement (CE) no 1338/2008 du Parlement européen et du Conseil (1), à savoir tous les
+éléments relatifs à la santé, à savoir l'état de santé, morbidité et handicap inclus, les déterminants ayant un effet
+sur cet état de santé, les besoins en matière de soins de santé, les ressources consacrées aux soins de santé, la
+fourniture de soins de santé, l'accès universel à ces soins, les dépenses de santé et leur financement, ainsi que les
+causes de mortalité. De tels traitements de données concernant la santé pour des motifs d'intérêt public ne
+devraient pas aboutir à ce que des données à caractère personnel soient traitées à d'autres fins par des tiers, tels
+que les employeurs ou les compagnies d'assurance et les banques.
+
+(55)
+
+En outre, le traitement de données à caractère personnel par des autorités publiques aux fins de réaliser les
+objectifs, prévus par le droit constitutionnel ou le droit international public, d'associations à caractère religieux
+officiellement reconnues est effectué pour des motifs d'intérêt public.
+
+(56)
+
+Lorsque, dans le cadre d'activités liées à des élections, le fonctionnement du système démocratique dans un État
+membre requiert que les partis politiques collectent des données à caractère personnel relatives aux opinions
+politiques des personnes, le traitement de telles données peut être autorisé pour des motifs d'intérêt public, à
+condition que des garanties appropriées soient prévues.
+
+(57)
+
+Si les données à caractère personnel qu'il traite ne lui permettent pas d'identifier une personne physique, le
+responsable du traitement ne devrait pas être tenu d'obtenir des informations supplémentaires pour identifier la
+personne concernée à la seule fin de respecter une disposition du présent règlement. Toutefois, le responsable du
+traitement ne devrait pas refuser des informations supplémentaires fournies par la personne concernée afin de
+faciliter l'exercice de ses droits. L'identification devrait comprendre l'identification numérique d'une personne
+concernée, par exemple au moyen d'un mécanisme d'authentification tel que les mêmes identifiants utilisés par la
+personne concernée pour se connecter au service en ligne proposé par le responsable du traitement.
+
+(58)
+
+Le principe de transparence exige que toute information adressée au public ou à la personne concernée soit
+concise, aisément accessible et facile à comprendre, et formulée en des termes clairs et simples et, en outre,
+lorsqu'il y a lieu, illustrée à l'aide d'éléments visuels. Ces informations pourraient être fournies sous forme
+électronique, par exemple via un site internet lorsqu'elles s'adressent au public. Ceci vaut tout particulièrement
+dans des situations où la multiplication des acteurs et la complexité des technologies utilisées font en sorte qu'il
+est difficile pour la personne concernée de savoir et de comprendre si des données à caractère personnel la
+concernant sont collectées, par qui et à quelle fin, comme dans le cas de la publicité en ligne. Les enfants
+méritant une protection spécifique, toute information et communication, lorsque le traitement les concerne,
+devraient être rédigées en des termes clairs et simples que l'enfant peut aisément comprendre.
+
+(59)
+
+Des modalités devraient être prévues pour faciliter l'exercice par la personne concernée des droits qui lui sont
+conférés par le présent règlement, y compris les moyens de demander et, le cas échéant, d'obtenir sans frais,
+notamment, l'accès aux données à caractère personnel, et leur rectification ou leur effacement, et l'exercice d'un
+droit d'opposition. Le responsable du traitement devrait également fournir les moyens de présenter des demandes
+par voie électronique, en particulier lorsque les données à caractère personnel font l'objet d'un traitement
+électronique. Le responsable du traitement devrait être tenu de répondre aux demandes émanant de la personne
+concernée dans les meilleurs délais et au plus tard dans un délai d'un mois et de motiver sa réponse lorsqu'il a
+l'intention de ne pas donner suite à de telles demandes.
+
+(1) Règlement (CE) no 1338/2008 du Parlement européen et du Conseil du 16 décembre 2008 relatif aux statistiques communautaires de la
+santé publique et de la santé et de la sécurité au travail (JO L 354 du 31.12.2008, p. 70).
+
+

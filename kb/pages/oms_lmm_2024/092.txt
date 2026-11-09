@@ -1,0 +1,36 @@
+74
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+136. Spirling A. Why open-source generative AI models are an ethical way forward for science.
+Nature. 2023;616(7957):413. doi:10.1038/d41586-023-01295-4.
+137. Vincent J. Meta’s powerful AI language model has leaked online – What happens now?
+The Verge, 8 March 2023 (https://www.theverge.com/2023/3/8/23629362/meta-ailanguage-model-llama-leak-online-misuse, accessed 29 July 2023).
+138. Maffuli S. Meta’s Llama 2 license is not open source. Open Source Initiative, 20 July 2023
+(https://blog.opensource.org/metas-llama-2-license-is-not-open-source/, accessed 29
+July 2023).
+139. Marble A. Software licenses masquerading as open source. marble.onl, 1 June 2023
+(http://marble.onl/posts/software-licenses-masquerading-as-open-source.html,
+accessed 29 July 2023).
+140. Keary T. Report finds 82% of open-source software components “inherently risky”.
+Venture Beat, 17 April 2023 ( https://venturebeat.com/security/report-finds-82-of-opensource-software-components-inherently-risky/, accessed 8 July 2023).
+141. Generative AI raises competition concerns. Technology blog, 29 June 2023. Washington
+DC: Federal Trade Commission; 2023 (https://www.ftc.gov/policy/advocacy-research/
+tech-at-ftc/2023/06/generative-ai-raises-competition-concerns, accessed 29 July 2023).
+142. Wishart-Smith H. Generative AI: cybersecurity friend and foe, Forbes, 6 June 2023
+(https://www.forbes.com/sites/heatherwishartsmith/2023/06/06/generative-aicybersecurity-friend-and-foe/?sh=4407e0884bd2, accessed 29 July 2023).
+143. Metz C. Researchers poke holes in safety controls of ChatGPT and other chatbots. The
+New York Times, 27 July 2023 (https://www.nytimes.com/2023/07/27/business/aichatgpt-safety-research.html, accessed 11 September 2023).
+144. Harris T, Freuh S. The complexity of technology’s consequences is going up
+exponentially, but our wisdom and awareness are not. Issues in Science and Technology,
+16 May 2023 (https://issues.org/tristan-harris-humane-technology-misinformation-aidemocracy/, accessed 19 June 2023).
+145. Schyns C. The lobbying ghost in the machine: Big Tech’s covert defanging of Europe’s
+AI Act. Brussels: Corporate Europe Observatory; 2023 (https://corporateeurope.org/
+en/2023/02/lobbying-ghost-machine, accessed 17 June 2023).
+146. Fact sheet: Biden–Harris Administration announces new actions to promote responsible
+AI innovation that protects Americans’ rights and safety. Washington DC: White House, 4
+May 2023 (https://www.whitehouse.gov/briefing-room/statements-releases/2023/05/04/
+fact-sheet-biden-harris-administration-announces-new-actions-to-promoteresponsible-ai-innovation-that-protects-americans-rights-and-safety/, accessed 19
+June 2023).
+
+

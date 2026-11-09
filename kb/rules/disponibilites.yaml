@@ -1,0 +1,43 @@
+# Disponibilité des médicaments et du sang, déclarée par les établissements eux-mêmes
+# Sources : loi n° 90/035 (art. 13, 19, 28, 35, 52) dans la base ; obligation d'ordonnance depuis le 1er juillet 2024
+# (communiqué des Ordres, texte officiel à trouver) ; Politique nationale de transfusion sanguine (2025), à ajouter à la base.
+# Les valeurs chiffrées (délais de fraîcheur, seuils) sont des propositions de l'équipe, à ajuster.
+
+etablissements_autorises_a_declarer:
+  medicaments: [officine_agreee, pharmacie_hospitaliere]   # art. 13, 28, 35, 52 de la loi 90/035 : vente réservée aux pharmaciens
+  sang: [banque_de_sang_hospitaliere, centre_transfusion]   # le CNTS est l'opérateur national de la transfusion
+  verification_agrement: "Registre des établissements agréés (Ordre / DPML / carte sanitaire). Lacune : aucun registre ouvert identifié."
+
+medicaments:
+  identifiant: dci            # dénomination commune internationale ; pas de marque mise en avant
+  fraicheur_declaration_h: 12 # au-delà, affichage « stock non confirmé récemment »
+  expiration_declaration_h: 48 # au-delà, la déclaration n'est plus affichée comme disponible
+  mention_obligatoire: "Délivré sur ordonnance"
+  interdits:
+    - suggerer_une_alternative
+    - indiquer_une_posologie
+    - promouvoir_un_produit          # art. 19 de la loi 90/035 (publicité encadrée)
+    - classement_payant
+  classes_sensibles:   # recherche anonyme, pas de journalisation liée à l'identité, signalements pseudonymisés
+    - antiretroviraux
+    - contraception
+    - psychotropes
+    - antituberculeux
+  produits_exclus_de_la_recherche: "Produits visés par l'art. 75 de la loi 90/035 (actes favorisant l'avortement) : la recherche ne les propose pas ; renvoi vers un professionnel de santé."
+
+sang:
+  groupes: [A+, A-, B+, B-, AB+, AB-, O+, O-]
+  niveaux_affiches: [disponible, faible, rupture]   # jamais le nombre de poches au public
+  fraicheur_declaration_h: 6
+  message_public: "La délivrance de sang se fait uniquement sur prescription, par l'établissement. Contactez la banque de sang avant de vous déplacer."
+  appel_au_don:
+    declencheur: "niveau 'faible' ou 'rupture' pour un groupe dans une zone"
+    message: "Le groupe {groupe} est en tension près de chez vous. Si vous êtes éligible, un don peut sauver une vie."
+    contrainte: "Aucune donnée personnelle de donneur collectée par le système."
+  urgence_nuit: "Si aucune banque n'a le groupe demandé dans le rayon, élargir la recherche et orienter vers les urgences les plus proches."
+
+classement_resultats_medicaments:
+  filtre: "médicament déclaré disponible et déclaration non expirée"
+  ordre: [distance_km, score_fiabilite]   # la distance prime ; le score départage les pharmacies proches
+  departage_si_ecart_distance_km_inferieur_a: 1.0
+  explication_affichee: "Classée {rang} : à {distance} km, stock déclaré il y a {age} h, déclarations fiables à {score} % sur {n} vérifications"

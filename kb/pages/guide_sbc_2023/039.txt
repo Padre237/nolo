@@ -1,0 +1,59 @@
+OUTIL 2 : Triage et vérification du signal
+                                      TRIAGE ET VERIFICATION (AIRE DE SANTE)
+Code du signal/cas vérifié (Code Source_Date_Numero              …………………_...../……./……….._.............................
+Signal)                                                          Code de la source……._...jj/mm/aaaa ……………._Numéro du Signal
+
+Nom du personnel/Staff name :                                    ________________________________________
+
+Structure de provenance dans la pyramide sanitaire:              ________________________________________
+Structure of origin in the health pyramid:
+
+
+Date de vérification du signal/cas communautaire :               /_______/________/__________/ (jj/mm/aaaa)
+Signal/community case verification date
+
+Heure de vérification du signal/cas communautaire                ________heures ________minutes
+signal/community case verification time
+
+Les informations rapportées correspondent à un ou
+                                                                      Oui              Non
+plusieurs signaux ?
+Does the information reported correspond to one or
+more signals?
+
+Le signal a-t-il déjà été rapporté (c.-à-d. le signal est             Oui              Non
+t-il un doublon) ?
+Has the signal already been reported (i.e. is the
+signal a duplicate)?
+
+Les informations rapportées correspondent-elles a                     Information vraie
+quelque chose qui s’est réellement produit ou a une
+                                                                      Rumeur
+rumeur ?
+Does the information reported correspond to
+something that actually happened or to a rumor?
+
+Statut du signal/Cas communautaire :                                 Pas vérifié        Retenu (Evènement)             Rejeté
+Signal status/Community case :
+Nom de l’évènement retenu :
+Name of the event:
+Commentaires/ Comments :
+
+
+
+
+OUTIL 3 : Évaluation des risques de l’événement
+                                               EVALUATION DES RISQUES
+Code de l’évènement                                              …………………_...../……./……….._.............................
+                                                                 Code ASCP……._...jj/mm/aaaa ……………._Numéro du Signal
+Nom du personnel :
+Name of the staff:                                               ________________________________________
+Structure de provenance dans la pyramide sanitaire:
+
+Description du risque (Caractéristiques cliniques, temps, lieu, personnes)
+
+
+
+
+                                                            38
+

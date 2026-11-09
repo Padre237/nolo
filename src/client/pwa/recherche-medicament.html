@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trouver un médicament · Find a medicine</title>
+<style>
+  :root { --bleu:#0a5ea8; --bleu-clair:#e8f1fb; --texte:#1d2733; --gris:#5b6675; --bord:#cfd8e3; --rouge-clair:#fdecea; --vert:#1a7f37; --vert-clair:#e6f4ea; --jaune:#fff3c4; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; color:var(--texte); background:#f6f8fb; }
+  .urgence { position:sticky; top:0; background:var(--rouge-clair); color:#7a1610; padding:10px 16px; font-weight:600; font-size:15px; border-bottom:1px solid #f3b7b0; }
+  .entete { display:flex; justify-content:flex-end; gap:6px; padding:10px 16px 0; max-width:640px; margin:0 auto; }
+  .entete button { font:inherit; font-size:14px; padding:6px 12px; border:1px solid var(--bleu); background:#fff; color:var(--bleu); border-radius:6px; cursor:pointer; }
+  .entete button[aria-pressed="true"] { background:var(--bleu); color:#fff; }
+  main { max-width:640px; margin:0 auto; padding:4px 16px 40px; }
+  h1 { font-size:24px; margin:8px 0; }
+  label { display:block; font-weight:600; margin:12px 0 4px; }
+  input, select { font:inherit; width:100%; padding:10px; border:1px solid var(--bord); border-radius:8px; }
+  button.principal { font:inherit; font-weight:600; width:100%; padding:14px; margin-top:14px; border-radius:10px; border:none; background:var(--bleu); color:#fff; cursor:pointer; }
+  .aide { font-size:14px; color:var(--gris); margin:4px 0 0; }
+  .message { padding:10px 12px; border-radius:8px; margin:12px 0; } .info { background:var(--bleu-clair); } .attention { background:var(--jaune); }
+  .resultat { background:#fff; border:1px solid var(--bord); border-radius:10px; padding:12px 14px; margin-top:10px; }
+  .resultat h2 { font-size:17px; margin:0 0 4px; } .resultat p { margin:2px 0; }
+  .ouvert { color:var(--vert); font-weight:600; } .niveau { display:inline-block; padding:0 8px; border-radius:999px; background:var(--vert-clair); color:var(--vert); font-size:14px; }
+  .niveau.faible { background:var(--jaune); color:#6b5300; }
+</style>
+</head>
+<body>
+<div class="urgence" data-i18n="urgence"></div>
+<div class="entete" role="group" aria-label="Langue / Language">
+  <button type="button" data-langue="fr">Français</button>
+  <button type="button" data-langue="en">English</button>
+</div>
+<main>
+  <h1 data-i18n="titre"></h1>
+  <p class="aide" data-i18n="mention_auto"></p>
+  <form id="recherche" novalidate>
+    <label for="dci" data-i18n="champ_dci"></label>
+    <input id="dci" name="dci" list="liste-dci" autocomplete="off">
+    <datalist id="liste-dci"></datalist>
+    <label for="region" data-i18n="champ_region"></label>
+    <select id="region" name="region"></select>
+    <p class="aide" data-i18n="position_demo"></p>
+    <button type="submit" class="principal" data-i18n="btn_chercher"></button>
+  </form>
+  <div id="sortie" aria-live="polite"></div>
+</main>
+<script type="module">
+const CAT = {
+  fr: { urgence: "En cas d'urgence, rendez-vous aux urgences les plus proches ou appelez le 119 ou le 112.",
+    titre: "Trouver un médicament", mention_auto: "Système automatisé : il indique où un médicament est déclaré disponible. Il ne conseille aucun médicament.",
+    champ_dci: "Médicament (nom de la molécule)", champ_region: "Région", position_demo: "Démonstration : position fixe à Douala, arrondie à environ 1 km.",
+    btn_chercher: "Chercher", aucun: "Aucune pharmacie vérifiée ne déclare ce médicament disponible près de vous.",
+    inconnu: "Médicament inconnu : choisissez un nom dans la liste.", exclu: "Ce produit ne peut pas être recherché (loi n° 90/035, art. 75).",
+    sur_appareil: "Recherche faite sur votre téléphone : le serveur ne sait pas ce que vous cherchez.",
+    elargi: "Peu de résultats : recherche élargie à {r} km.", km: "{d} km", ouvert: "Ouvert maintenant", ferme: "Fermé maintenant",
+    ordonnance: "Délivré sur ordonnance.", declare: "Déclaré le {date}", disponible: "disponible", faible: "faible", garde: "Garde" },
+  en: { urgence: "In an emergency, go to the nearest emergency department or call 119 or 112.",
+    titre: "Find a medicine", mention_auto: "Automated system: it shows where a medicine is declared available. It does not recommend any medicine.",
+    champ_dci: "Medicine (name of the molecule)", champ_region: "Region", position_demo: "Demonstration: fixed location in Douala, rounded to about 1 km.",
+    btn_chercher: "Search", aucun: "No verified pharmacy declares this medicine available near you.",
+    inconnu: "Unknown medicine: choose a name from the list.", exclu: "This product cannot be searched for (Law No. 90/035, art. 75).",
+    sur_appareil: "Search done on your phone: the server does not know what you are looking for.",
+    elargi: "Few results: search widened to {r} km.", km: "{d} km", ouvert: "Open now", ferme: "Closed now",
+    ordonnance: "Dispensed on prescription.", declare: "Declared on {date}", disponible: "available", faible: "low", garde: "On call" },
+};
+const POSITION = { lat: 4.05, lon: 9.77 };  // démonstration, déjà arrondie (Principe V)
+let langue = new URLSearchParams(location.search).get("lang") || (() => { try { return localStorage.getItem("boussole.langue"); } catch { return null; } })() || "fr";
+if (!CAT[langue]) langue = "fr";
+let ref = { dci: [] }, territoire = null, dernier = null;
+const t = (k, v = {}) => CAT[langue][k].replace(/\{(\w+)\}/g, (_, x) => v[x] ?? "");
+const sortie = document.getElementById("sortie");
+
+function km(lat1, lon1, lat2, lon2) {
+  const r = 6371, rad = (x) => x * Math.PI / 180, dp = rad(lat2 - lat1), dl = rad(lon2 - lon1);
+  const a = Math.sin(dp / 2) ** 2 + Math.cos(rad(lat1)) * Math.cos(rad(lat2)) * Math.sin(dl / 2) ** 2;
+  return Math.round(2 * r * Math.asin(Math.sqrt(a)) * 10) / 10;
+}
+function code(texte) {
+  const n = (s) => s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[_+\-]/g, " ").replace(/\s+/g, " ").trim();
+  const v = n(texte || "");
+  return ref.dci.find((d) => [d.code, d.fr, d.en].some((x) => n(x) === v));
+}
+function traduirePage() {
+  document.documentElement.lang = langue;
+  document.querySelectorAll("[data-i18n]").forEach((e) => (e.textContent = t(e.dataset.i18n)));
+  document.querySelectorAll("[data-langue]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.langue === langue)));
+  document.getElementById("liste-dci").replaceChildren(...ref.dci.map((d) => Object.assign(document.createElement("option"), { value: d[langue] })));
+  if (territoire) {
+    const s = document.getElementById("region"), v = s.value || "littoral";
+    s.replaceChildren(...Object.entries(territoire.regions).map(([c, l]) => Object.assign(document.createElement("option"), { value: c, textContent: l[langue] })));
+    s.value = v;
+  }
+  if (dernier) afficher(dernier);
+}
+function message(cls, texte) { const d = document.createElement("div"); d.className = `message ${cls}`; d.textContent = texte; return d; }
+function afficher(r) {
+  dernier = r;
+  const blocs = [];
+  if (r.surAppareil) blocs.push(message("info", t("sur_appareil")));
+  if (r.erreur) { sortie.replaceChildren(message("attention", t(r.erreur))); return; }
+  if (r.elargi) blocs.push(message("attention", t("elargi", { r: r.rayon_km })));
+  if (!r.resultats.length) blocs.push(message("attention", t("aucun")));
+  for (const x of r.resultats) {
+    const d = document.createElement("article"); d.className = "resultat";
+    const pres = x.presentations.map((p) => `<span class="niveau ${p.niveau}">${t(p.niveau)}</span> ${p.dosage || ""}`).join(" · ");
+    d.innerHTML = `<h2></h2><p class="lieu"></p><p>${pres}</p><p class="aide"></p><p><strong></strong></p>`;
+    d.querySelector("h2").textContent = x.nom;
+    d.querySelector(".lieu").textContent = `${t("km", { d: x.distance_km.toLocaleString(langue === "fr" ? "fr-FR" : "en-GB") })} · ${x.quartier} · ${x.telephone}` + (x.ouvert_maintenant === undefined ? "" : ` · ${t(x.ouvert_maintenant ? "ouvert" : "ferme")}`) + (x.garde ? ` · ${t("garde")}` : "");
+    d.querySelector(".aide").textContent = t("declare", { date: new Date(x.presentations[0].declare_le).toLocaleString(langue === "fr" ? "fr-FR" : "en-GB", { dateStyle: "short", timeStyle: "short" }) });
+    d.querySelector("strong").textContent = t("ordonnance");
+    blocs.push(d);
+  }
+  sortie.replaceChildren(...blocs);
+}
+document.getElementById("recherche").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const texte = e.target.dci.value;
+  const trouve = code(texte);
+  if (trouve?.sensible) {
+    // Art. 48 : la tuile de la région est téléchargée en bloc, le filtre se fait ici.
+    const tuile = await (await fetch(`/api/v1/tuile/stocks?region=${encodeURIComponent(e.target.region.value)}`)).json();
+    const resultats = tuile.etablissements.map((x) => ({ ...x, distance_km: km(POSITION.lat, POSITION.lon, x.lat, x.lon),
+      presentations: x.stock.filter((l) => l.dci === trouve.code) })).filter((x) => x.presentations.length).sort((a, b) => a.distance_km - b.distance_km);
+    afficher({ surAppareil: true, resultats });
+    return;
+  }
+  const rep = await fetch(`/api/v1/recherche/medicament?dci=${encodeURIComponent(texte)}&lat=${POSITION.lat}&lon=${POSITION.lon}&langue=${langue}`);
+  const r = await rep.json();
+  if (!rep.ok) afficher({ erreur: r.erreur === "E-RECHERCHE-EXCLU-ART75" ? "exclu" : "inconnu" });
+  else afficher(r);
+});
+document.querySelectorAll("[data-langue]").forEach((b) => b.addEventListener("click", () => {
+  langue = b.dataset.langue; try { localStorage.setItem("boussole.langue", langue); } catch {}
+  traduirePage();
+}));
+(async () => {
+  ref = await (await fetch("/api/v1/referentiel/dci")).json();
+  territoire = await (await fetch("/api/v1/territoire")).json();
+  traduirePage();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+12
+
+ elle est créée au moyen d’un dispositif sécurisé dont les
+caractéristiques techniques sont fixées par un texte du Ministre chargé
+des Télécommunications ;
+ le certificat utilisé pour la génération de la signature est un certificat
+qualifié. Un texte du Ministre chargé des Télécommunications fixe les
+critères de qualification des certificats.
+CHAPITRE VII
+DES CERTIFICATS ET SIGNATURES ELECTRONIQUES DELIVRES
+PAR LES AUTORITES DE CERTIFICATION
+
+Article 19.- L’autorité de certification ayant conféré la validité à un certificat
+électronique ne peut se renier.
+Article 20.- (1) Un certificat électronique émis hors du territoire national produit
+les mêmes effets juridiques qu’un certificat qualifié émis au Cameroun à
+condition qu’il existe un acte de reconnaissance de l’autorité émettrice signé
+par le Ministre chargé des Télécommunications.
+(2) L’interopérabilité des certificats électroniques qualifiés est
+règlementée par un texte du Ministre chargé des Télécommunications.
+CHAPITRE VIII
+DU DOCUMENT ELECTRONIQUE
+
+Article 21.- Toute personne désirant apposer sa signature électronique sur un
+document peut créer cette signature par un dispositif fiable dont les
+caractéristiques techniques sont fixées par un texte du Ministre chargé des
+Télécommunications.
+Article 22.- Toute personne utilisant un dispositif de signature électronique
+doit :
+- prendre les précautions minimales qui sont fixées par le texte visé à
+l’article 21 ci-dessus, afin d’éviter toute utilisation illégale des
+éléments de cryptage ou des équipements personnels relatifs à sa
+signature ;
+- informer l’autorité de certification de toute utilisation illégitime de
+sa signature ;
+- veiller à la véracité de toutes les données qu’elle a déclarées au
+fournisseur de services de certification électronique et à toute
+personne à qui il a demandé de se fier à sa signature.
+Article 23.- En cas de manquement aux engagements prévus à l’article 22 cidessus, le titulaire de la signature est responsable du préjudice causé à autrui.
+
+

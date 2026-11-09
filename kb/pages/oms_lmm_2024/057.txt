@@ -1,0 +1,50 @@
+4 Design and development of general-purpose foundation models (LMMs)
+
+4.3
+
+Government laws, policies and public sector investments
+
+Several existing or potential laws or policies could be enforced or written to reduce or
+avoid risks during the design and development of general-purpose foundation models.
+Furthermore, governments could make public-sector investments to promote or support the
+ethical design and development of general-purpose foundation models.
+Laws and policies governing use of data: WHO supports application and enforcement of
+standards, including data protection rules, that govern how data have and will be used to
+train LMMs. Data protection laws are usually based on rights-based approaches and include
+standards for regulation of data-processing that both protect the rights of individuals and
+establish obligations for public and private data controllers and processers and include
+sanctions and remedies in case of actions that violate statutory rights. As data protection laws
+have been adopted in over 150 countries, they provide a solid foundation for the development
+of all AI technologies, including LMMs (1). A limitation of data protection laws is that most
+were enacted before the emergence of generative and other types and uses of AI, and data
+protection authorities may be unwilling to apply them too aggressively, as the original laws
+may not have had the same intent (120).
+One requirement of data protection that should be enforced, especially for health data used
+to train LMMs, is that the data are obtained and processed lawfully. This will often require
+provision of meaningful informed consent by a data subject for use of their data for the
+stated purpose. Any further processing should have its own legal basis, as further processing
+cannot be assumed to be compatible with the original purpose. Companies and other entities
+that have developed and released LMMs are already under scrutiny for potential use of data
+obtained without informed consent. The pursuit of ever-larger LMMs, requiring increasingly
+larger data sets, may lead developers to ignore legal requirements (83). This would also violate
+the WHO guiding principle of protecting human autonomy. Thus, the WHO expert group
+recommended that governments “should have clear data protection laws and regulations
+for the use of health data and protecting individual rights, including the right to meaningful
+informed consent”.
+Other government measures to oversee and regulate the collection and use of data for training
+LMMs include regulations for generative AI enacted by the Government of China that came into
+effect in August 2023. The Cyberspace Administration of China imposes several obligations,
+including that: (i) providers shall employ effective measures to avoid discrimination and bias in
+selecting training data, (ii) providers use clear labelling and assess the quality of data labelling;
+and (iii) developers take “effective measures” to meet the goals of authenticity, accuracy,
+objectivity and diversity of data (131). The requirements are not expected to be applied strictly
+to companies, which will be required only to take effective measures to ensure appropriate
+data quality. The measures will apply only to those companies that offer services to the
+Chinese public (132).
+Legislative provisions related to data could include requirements requirements to describe
+the data sources used to train a foundation model and to use data that are subject to data
+governance, including for suitability, bias and appropriate mitigation (133).
+
+39
+
+

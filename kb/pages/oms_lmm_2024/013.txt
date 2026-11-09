@@ -1,0 +1,69 @@
+Executive summary
+
+Table 2. Risks to health systems associated with use of LMMs in health care
+Type of risk
+
+Description
+
+Overestimation of the
+benefits of LMMs
+
+There may be a tendency to ‘technological solutionism’, or over-estimation
+of the benefits of LMMs while ignoring or downplaying challenges in its use,
+including its safety, efficacy and utility.
+
+Accessibility and
+affordability
+
+Equitable access to LMMs may be lacking for several reasons, including the
+“digital divide” and subscription fees to access LMMs.
+
+System-wide biases
+
+Use of ever-larger data sets could increase biases encoded in LMMs, which
+could be automated throughout a health-care system.
+
+Impacts on labour
+
+Use of LMMs could lead to job losses in some countries and require health
+workers to retrain and adjust to use of LMMs. Data annotation and filtering
+can lead to low wages and to untreated psychological distress.
+
+Dependence of health
+systems on ill-suited
+LMMs
+
+Dependence on LMMs could make health systems vulnerable if LMMs are
+not maintained or (in low- and middle-income countries) are updated only
+for use in high-income countries. Furthermore, lack of preservation and
+protection of privacy and confidentiality could undermine trust in healthcare systems by people who are not confident that their privacy will be
+protected.
+
+Cybersecurity risks
+
+Malicious attacks or hacking could undermine safety and trust in the use of
+LMMs in health care.
+
+commitments by such companies, with one another and with governments, could mitigate
+several risks in the short-term but are not an alternative to governmental oversight that might
+eventually be enacted.
+Another societal risk is the carbon and water footprints of LMMs, which like other forms of AI,
+require both significant energy and contribute to AI’s growing water footprint. While LMMs and
+other forms of AI can provide important societal benefits, the growing carbon footprint may
+become a major contributor to climate change, and increasing water consumption can have
+a further negative impact in water-stressed communities. Another societal risk associated
+with the emergence of LMMs is that, by providing plausible responses that are increasingly
+considered a source of knowledge, LMMs may eventually undermine human epistemic
+authority, including in the domains of health care, science and medicine.
+
+Ethics and governance of LMMs in health care and medicine
+LMMs can be considered products of a series (or chain) of decisions on programming and
+product development by one or more actors (Figure 2). Decisions made at each stage of an AI
+value chain may have both direct and indirect consequences on those who participate in the
+development, deployment and use of LMMs downstream. The decisions can be influenced and
+regulated by governments by enacting and enforcing laws and policies nationally, regionally
+and globally.
+
+xi
+
+

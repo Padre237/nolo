@@ -1,0 +1,42 @@
+28
+
+(2) L'homologation visée à l’alinéa 1 ci-dessus a pour objet,
+de garantir le respect des exigences essentielles et de vérifier la conformité
+des équipements terminaux et installations radioélectriques aux normes et
+standards en vigueur au Cameroun, ainsi que leur interopérabilité.
+(3) Un texte réglementaire définit les procédures
+d’homologation pour les installations radioélectriques destinées à être
+connectées aux réseaux de communications électroniques.
+Article 57.(1) Un texte réglementaire définit les seuils maxima
+d’exposition au rayonnement électromagnétique émis par les équipements
+utilisés dans les réseaux de communications électroniques ou tout autre
+équipement émetteur de rayonnements électromagnétiques, lorsque le
+public y est exposé.
+(2) Le respect de ces seuils peut être vérifié sur place par des
+organismes répondant aux exigences de qualité fixées par un texte
+réglementaire.
+CHAPITRE X
+DES PRESTATIONS DE CRYPTOGRAPHIE
+
+Article 58.- (1) La fourniture, l'exportation, l'importation ou l'utilisation
+de moyens ou de prestations de cryptographie associées à la transmission
+des informations sont soumises :
+- à déclaration préalable, lorsque ce moyen ou cette prestation
+a pour seul objet d'authentifier une communication ou
+d'assurer l'intégrité du message transmis ;
+- à autorisation préalable dans les autres cas.
+(2) Toutefois, les conditions énumérées à l'alinéa 1 ci-dessus
+ne sont pas applicables aux fonctions de cryptographie intégrées dans
+des logiciels d'applications sectorielles utilisés par les usagers.
+(3) Un texte particulier fixe les conditions dans lesquelles
+est souscrite la déclaration et accordée l'autorisation, mentionnées au
+présent article.
+TITRE V
+DES SERVITUDES DES COMMUNICATIONS ELECTRONIQUES
+
+Article 59.- Afin d’éviter des perturbations dans la propagation des
+ondes radioélectriques émises ou reçues par les centres de toute nature
+exploités ou contrôlés dans un but d’intérêt général, l’autorité
+administrative compétente doit instituer des servitudes.
+
+

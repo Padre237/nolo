@@ -1,0 +1,43 @@
+         B. Dans le District de Santé
+    Le PFS du DS/Data :
+•   Vérifie la qualité (complétude, validité, unicité, opportunité, précision, cohérence) des
+    données issues des FOSA : sont- elles suffisantes pour tirer des conclusions? Répondent-
+    elles aux normes, à la logique et aux critères définis ? y a-t-il des doublons ? les données
+    sont-elles disponibles aux moments opportuns ? sont-elles fiables? manque-t-il des
+    champs, y a-t-il des valeurs aberrantes ? sont -elles collectées de la même manière ?
+•   Fait une évaluation des risques de chaque signal transformé en évènement
+•   Actualise le tableau de synthèse des signaux : signaux validés (évènements), évènements
+    évalués,
+•   Il pose les questions d’analyse : Quel est le nombre d’évènements évalués? Quels types
+    d’évènements sont plus à risque et nécessitent une réponse rapide?
+•   En utilisant le guide SIMR, il procède aux analyses en temps (histogramme du nombre
+    d’évènements évalués par semaine épidémiologique), lieux (représentation des
+    évènements en fonction des aires dans un tableau ), personnes( pyramide d’âges,
+    diagramme pour le genre, camembert pour la comparaison des types d’évènements, Carte
+    du DS pour représenter les Aires de Santé les plus à risque, …) ;
+•   Transmet la synthèse des évènements et le rapport journalier au PFS de la DRSP ;
+•   Le cas échéant transmettra également la base de données suivi des contacts, au PFS de
+    la DRSP.
+         C. A la DRSP
+    Le CERPLE/Data :
+•   Vérifie la qualité (complétude, validité, unicité, opportunité, précision, cohérence) des
+    données issues des FOSA : sont- elles suffisantes pour tirer des conclusions? Répondent-
+    elles aux normes, à la logique et aux critères définis ? y a-t-il des doublons ? les données
+    sont-elles disponibles aux moments opportuns ? sont-elles fiables? manque-t-il des
+    champs, y a-t-il des valeurs aberrantes ? sont -elles collectées de la même manière ?
+•   Vérifie la qualité de l’évaluation des risques mené par le DS ;
+•   Il pose les questions d’analyse : Quel est le nombre d’évènements évalués? Quels types
+    d’évènements sont plus à risque et nécessitent une réponse rapide?
+•   Actualise la liste linéaire régionale des évènements des différents Districts de Santé ;
+•   En utilisant le guide SIMR, il procède aux analyses en temps (histogramme du nombre
+    d’évènements évalués par semaine épidémiologique) , lieux ( représentation des
+    évènements les plus à risques en fonction des DS sur une carte), personnes (pyramide
+    d’âges, diagramme pour le genre, camembert pour la comparaison des types
+    d’évènements)
+•   Élabore les SITREPS et les diffusent lorsque validés
+
+
+
+
+                                               59
+

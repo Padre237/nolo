@@ -1,0 +1,1077 @@
+# Règles de triage, version 2 — STATUT : UNDER_REVIEW (proposition, non validée cliniquement).
+# Sources : PCIME (OMS, 2001) et IITT (OMS, CICR, MSF), texte exact et fragments cités par règle.
+# Remplacera kb/rules/triage_signes_alerte.yaml après approbation (SF-001-04 à SF-001-07). Généré le 2026-11-04.
+schema: triage-regles/2
+version: 2.0.0
+statut: UNDER_REVIEW
+date: '2026-11-04'
+validateur_clinique: null
+mention_demo: REGLES_PCIME_IITT_NON_VALIDEES_CAMEROUN
+referentiel_symptomes: data/referentiels/symptomes.csv
+decisions:
+- D-006
+- D-012
+- D-018
+- D-020
+- D-021
+- D-022
+niveaux:
+- urgence
+- consultation_24h
+- consultation_48h
+- soins_courants
+tranches_age:
+- moins_8_jours
+- 8_jours_2_mois
+- 2_6_mois
+- 6_mois_2_ans
+- 2_5_ans
+- 5_11_ans
+- 12_17_ans
+- 18_50_ans
+- 51_70_ans
+- plus_70_ans
+parametres:
+  risque_paludisme:
+    valeur: eleve
+    statut: hypothese
+    dependance: DEP-005
+correspondance:
+  signe_general_danger:
+    niveau: urgence
+    priorite: immediate
+    statut: PROPOSITION (D-021)
+  rouge:
+    niveau: urgence
+    priorite: immediate
+    statut: PROPOSITION (D-021)
+  jaune:
+    niveau: urgence
+    priorite: rapide
+    statut: PROPOSITION (D-021)
+  jaune_pcime:
+    niveau: consultation_24h
+    statut: PROPOSITION (D-021)
+  aucune_regle:
+    niveau: consultation_48h
+    statut: PROPOSITION (D-021)
+    condition: au moins un symptôme saisi
+semantique:
+  monotonie: 'Chaque condition ne porte que sur la présence de jetons, de composites ou sur la tranche d''âge : ajouter un symptôme ne peut jamais
+    abaisser le niveau (ADR-005).'
+  niveau_retenu: Le plus élevé parmi les règles satisfaites (urgence > consultation_24h > consultation_48h > soins_courants) ; à niveau égal,
+    priorité immediate > rapide.
+  implications: Avant évaluation, les jetons sont complétés par la colonne « implique » du référentiel (fermeture transitive).
+  operateurs:
+    tous: tous présents
+    au_moins_un: au moins un présent
+    au_moins_n: au moins n parmi la liste
+    tous_groupes: au moins un jeton de chaque groupe
+    symptome_present: au moins un jeton saisi
+    duree_jours_min: durée déclarée ≥ valeur
+    parametre: paramètre de déploiement égal à la valeur
+  sans_criteres_rouges: 'La mention « (sans critères rouges) » de l''IITT est satisfaite par construction : un critère rouge l''emporte toujours.'
+exclusions:
+- jeton: agression_sexuelle
+  motif: Art. 48 de la loi 2024/017 (vie sexuelle) ; lecture conservatoire D-008
+  lacune: L13
+  fragments:
+  - CMR-LOI-2024-017::0048
+- jeton: priapisme
+  motif: 'Rattachement possible à la vie sexuelle : exclu en attente de l''avis du juriste (D-022)'
+  lacune: L13
+  fragments:
+  - CMR-LOI-2024-017::0048
+- jeton: signes_vitaux_haut_risque
+  motif: 'Étape 3 de l''IITT : mesures (FC, FR, température, SpO2, AVPU) impossibles sans appareil ; non utilisées en auto-orientation'
+  lacune: L5
+- jeton: violence_agressivite
+  motif: Critère d'établissement (comportement au service des urgences), sans objet en auto-orientation
+- jeton: pli_cutane_lent
+  motif: Signe d'examen clinique ; la règle « 2 des signes » est appliquée sur les 3 signes observables
+composites:
+  hypothermie_ou_fievre:
+    au_moins_un:
+    - fievre
+    note: 'hypothermie exclue : mesure de température nécessaire'
+    texte_source:
+    - hypothermie ou fièvre
+    fragments:
+    - INT-OMS-IITT-FR::0000
+  detresse_respiratoire_adulte:
+    tous:
+    - difficulte_respiratoire
+    au_moins_un:
+    - respiration_tres_rapide_ou_lente
+    - incapacite_parler_marcher
+    - confusion_somnolence_agitation
+    - muscles_accessoires
+    texte_source:
+    - 'Signes de détresse respiratoire — Adulte :'
+    fragments:
+    - INT-OMS-IITT-FR::0003
+  detresse_respiratoire_enfant:
+    tous:
+    - difficulte_respiratoire
+    au_moins_un:
+    - respiration_tres_rapide_ou_lente
+    - incapacite_parler_manger_teter
+    - battement_ailes_nez_geignement
+    - muscles_accessoires
+    texte_source:
+    - 'Signes de détresse respiratoire — Enfant :'
+    fragments:
+    - INT-OMS-IITT-FR::0003
+  traumatisme_haut_risque_contexte:
+    tous:
+    - traumatisme
+    au_moins_un:
+    - sous_anticoagulants
+    - grossesse
+    texte_source:
+    - Patient présentant un trouble de la coagulation ou sous anticoagulants
+    - Grossesse
+    fragments:
+    - INT-OMS-IITT-FR::0003
+  critere_rouge_grossesse:
+    tous:
+    - grossesse
+    au_moins_un:
+    - saignements_abondants
+    - douleur_abdominale_severe
+    - convulsions
+    - etat_conscience_altere
+    - cephalee_intense
+    - troubles_visuels_aigus
+    - accouchement_declenche
+    - traumatisme
+    texte_source:
+    - 'GROSSESSE AVEC AU MOINS UN DES CRITÈRES SUIVANTS :'
+    fragments:
+    - INT-OMS-IITT-FR::0000
+regles:
+- id: PCIME-SGD-01
+  outil: pcime
+  couleur_source: signe_general_danger
+  tranches: &id001
+  - 2_6_mois
+  - 6_mois_2_ans
+  - 2_5_ans
+  condition:
+    au_moins_un:
+    - incapable_de_boire_ou_teter
+  texte_source:
+  - L’enfant est-il capable de boire ou de téter ?
+  - Il faut soigner d’urgence un enfant qui présente un signe général de danger
+  fragments:
+  - INT-OMS-PCIME-MANUEL::0028
+  - INT-OMS-PCIME-MANUEL::0029
+- id: PCIME-SGD-02
+  outil: pcime
+  couleur_source: signe_general_danger
+  tranches: *id001
+  condition:
+    au_moins_un:
+    - vomit_tout
+  texte_source:
+  - L’enfant vomit-il tout ce qu’il avale ?
+  - Il faut soigner d’urgence un enfant qui présente un signe général de danger
+  fragments:
+  - INT-OMS-PCIME-MANUEL::0028
+  - INT-OMS-PCIME-MANUEL::0029
+- id: PCIME-SGD-03
+  outil: pcime
+  couleur_source: signe_general_danger
+  tranches: *id001
+  condition:
+    au_moins_un:
+    - convulsions
+  texte_source:
+  - L’enfant a-t-il des convulsions ?
+  - Il faut soigner d’urgence un enfant qui présente un signe général de danger
+  fragments:
+  - INT-OMS-PCIME-MANUEL::0028
+  - INT-OMS-PCIME-MANUEL::0029
+- id: PCIME-SGD-04
+  outil: pcime
+  couleur_source: signe_general_danger
+  tranches: *id001
+  condition:
+    au_moins_un:
+    - lethargie
+    - inconscient
+  texte_source:
+  - LÉTHARGIIQUE OU INCONSCIENT
+  - Il faut soigner d’urgence un enfant qui présente un signe général de danger
+  fragments:
+  - INT-OMS-PCIME-MANUEL::0029
+  - INT-OMS-PCIME-MANUEL::0040
+  - INT-OMS-PCIME-MANUEL::0051
+  - INT-OMS-PCIME-MANUEL::0071
+  - INT-OMS-PCIME-MANUEL::0223
+  - INT-OMS-PCIME-MANUEL::0028
+- id: PCIME-MFTG-01
+  outil: pcime
+  couleur_source: signe_general_danger
+  tranches: *id001
+  condition:
+    tous:
+    - fievre
+    - raideur_nuque
+  texte_source:
+  - Si l’enfant qui a de la fièvre présente un signe général de danger ou une raideur de nuque, classez-le dans la catégorie maladie fébrile très
+    grave
+  - Transférer d’URGENCE à l’hôpital
+  fragments:
+  - INT-OMS-PCIME-MANUEL::0063
+  - INT-OMS-PCIME-MANUEL::0064
+  - INT-OMS-PCIME-MANUEL::0065
+  - INT-OMS-PCIME-MANUEL::0066
+  - INT-OMS-PCIME-MANUEL::0037
+  - INT-OMS-PCIME-MANUEL::0046
+  - INT-OMS-PCIME-MANUEL::0047
+  - INT-OMS-PCIME-MANUEL::0069
+  - INT-OMS-PCIME-MANUEL::0070
+  - INT-OMS-PCIME-MANUEL::0076
+  - INT-OMS-PCIME-MANUEL::0082
+  - INT-OMS-PCIME-MANUEL::0083
+  - INT-OMS-PCIME-MANUEL::0098
+  - INT-OMS-PCIME-MANUEL::0108
+  - INT-OMS-PCIME-MANUEL::0116
+  - INT-OMS-PCIME-MANUEL::0117
+- id: PCIME-J-01
+  outil: pcime
+  couleur_source: jaune_pcime
+  tranches: *id001
+  condition:
+    au_moins_un:
+    - fievre
+    parametre:
+      risque_paludisme: eleve
+  texte_source:
+  - il faut classer l’enfant qui a de la fièvre
+  - placez-le dans la catégorie jaune
+  fragments:
+  - INT-OMS-PCIME-MANUEL::0063
+- id: PCIME-J-02
+  outil: pcime
+  couleur_source: jaune_pcime
+  tranches: *id001
+  condition:
+    tous:
+    - diarrhee
+    - sang_dans_selles
+  texte_source:
+  - du sang dans les selles dans la catégorie
+  fragments:
+  - INT-OMS-PCIME-MANUEL::0049
+- id: PCIME-J-03
+  outil: pcime
+  couleur_source: jaune_pcime
+  tranches: *id001
+  condition:
+    tous:
+    - diarrhee
+    duree_jours_min: 14
+  texte_source:
+  - Si l’enfant a la diarrhée depuis 14 jours ou plus
+  fragments:
+  - INT-OMS-PCIME-MANUEL::0049
+- id: IITT12-R-01
+  outil: iitt_12_ans_plus
+  couleur_source: rouge
+  tranches: &id002
+  - 12_17_ans
+  - 18_50_ans
+  - 51_70_ans
+  - plus_70_ans
+  condition:
+    au_moins_un:
+    - inconscient
+  texte_source:
+  - Inconscient
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-R-02
+  outil: iitt_12_ans_plus
+  couleur_source: rouge
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - stridor
+  texte_source:
+  - Stridor
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-R-03
+  outil: iitt_12_ans_plus
+  couleur_source: rouge
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - detresse_respiratoire_adulte
+    - cyanose
+  texte_source:
+  - Détresse respiratoire* ou cyanose centrale
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-R-04
+  outil: iitt_12_ans_plus
+  couleur_source: rouge
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - saignements_abondants
+  texte_source:
+  - Saignements abondants
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-R-05
+  outil: iitt_12_ans_plus
+  couleur_source: rouge
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - convulsions_actives
+  texte_source:
+  - Convulsions actives
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-R-06
+  outil: iitt_12_ans_plus
+  couleur_source: rouge
+  tranches: *id002
+  condition:
+    au_moins_n:
+      n: 2
+      parmi:
+      - etat_conscience_altere
+      - hypothermie_ou_fievre
+      - raideur_nuque
+      - cephalee
+  texte_source:
+  - '2 des signes suivants : état de conscience altéré ; hypothermie ou fièvre ; raideur cervicale ; maux de tête'
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-R-07
+  outil: iitt_12_ans_plus
+  couleur_source: rouge
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - traumatisme_haut_risque
+    - traumatisme_haut_risque_contexte
+  texte_source:
+  - Traumatisme à haut risque*
+  - RISQUE DE TRAUMATISMES SÉVÈRES
+  fragments:
+  - INT-OMS-IITT-FR::0000
+  - INT-OMS-IITT-FR::0003
+- id: IITT12-R-08
+  outil: iitt_12_ans_plus
+  couleur_source: rouge
+  tranches:
+  - plus_70_ans
+  condition:
+    tous:
+    - brulure
+  texte_source:
+  - Âge du brûlé < 2 ans ou > 70 ans
+  fragments:
+  - INT-OMS-IITT-FR::0003
+- id: IITT12-R-09
+  outil: iitt_12_ans_plus
+  couleur_source: rouge
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - empoisonnement_exposition
+  texte_source:
+  - Empoisonnement/ingestion ou exposition à des substances chimiques dangereuses*
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-R-10
+  outil: iitt_12_ans_plus
+  couleur_source: rouge
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - membre_menace
+  texte_source:
+  - Risque d'amputation*
+  - 'douloureux + au moins un des signes suivants : pâleur, faiblesse, engourdissement ou œdème massif après un traumatisme'
+  fragments:
+  - INT-OMS-IITT-FR::0000
+  - INT-OMS-IITT-FR::0003
+- id: IITT12-R-11
+  outil: iitt_12_ans_plus
+  couleur_source: rouge
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - morsure_serpent
+  texte_source:
+  - Morsure de serpent
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-R-12
+  outil: iitt_12_ans_plus
+  couleur_source: rouge
+  tranches:
+  - 51_70_ans
+  - plus_70_ans
+  condition:
+    au_moins_un:
+    - douleur_abdominale_aigue
+    - douleur_thoracique_aigue
+  texte_source:
+  - Douleur abdominale ou thoracique aiguë (> 50 ans)
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-R-13
+  outil: iitt_12_ans_plus
+  couleur_source: rouge
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - critere_rouge_grossesse
+  texte_source:
+  - 'GROSSESSE AVEC AU MOINS UN DES CRITÈRES SUIVANTS :'
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-J-01
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - gonflement_bouche_gorge_cou
+  texte_source:
+  - Gonflement/masse de la bouche, la gorge ou le cou
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-J-02
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - sifflement
+  texte_source:
+  - Sifflement (sans critères rouges)
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-J-03
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - vomit_tout
+    - diarrhee_continue
+  texte_source:
+  - Vomit tout ou diarrhée continue
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-J-04
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - incapacite_boire_se_nourrir
+  texte_source:
+  - Incapacité à boire ou se nourrir
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-J-05
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - paleur_severe
+  texte_source:
+  - Pâleur sévère (sans critères rouges)
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-J-06
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - saignements_continus
+  texte_source:
+  - Saignements continus (sans critères rouges)
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-J-07
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - evanouissement_recent
+  texte_source:
+  - Évanouissement récent
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-J-08
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - etat_conscience_altere
+    - agitation_irritabilite
+  texte_source:
+  - État de conscience altéré ou agitation (sans critères rouges)
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-J-09
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - alteration_etat_general
+  texte_source:
+  - Altération de l'état général récent
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-J-10
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - signes_neuro_focaux
+  texte_source:
+  - Signes neurologiques focaux aigus
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-J-11
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - troubles_visuels_aigus
+  texte_source:
+  - Troubles visuels aigus
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-J-12
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - douleur_severe
+  texte_source:
+  - Douleur sévère (sans critères rouges)
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-J-13
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - eruption_aggravation
+  texte_source:
+  - Nouvelle éruption cutanée qui s'aggrave au fil des heures ou desquamation (sans critères rouges)
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-J-14
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - deformation_membre
+  texte_source:
+  - Déformation d'un membre importante et visible
+  fragments:
+  - INT-OMS-IITT-FR::0000
+- id: IITT12-J-15
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - fracture_ouverte
+  texte_source:
+  - Fracture ouverte
+  fragments:
+  - INT-OMS-IITT-FR::0000
+  - INT-OMS-IITT-FR::0001
+- id: IITT12-J-16
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - luxation_suspectee
+  texte_source:
+  - Suspicion de luxation
+  fragments:
+  - INT-OMS-IITT-FR::0000
+  - INT-OMS-IITT-FR::0001
+- id: IITT12-J-17
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - traumatisme
+    - brulure
+  texte_source:
+  - Autre traumatisme/brûlures (sans critères rouges)
+  fragments:
+  - INT-OMS-IITT-FR::0000
+  - INT-OMS-IITT-FR::0001
+- id: IITT12-J-18
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - diagnostic_chirurgie_urgente
+  texte_source:
+  - Diagnostic connu nécessitant une intervention chirurgicale d'urgence
+  fragments:
+  - INT-OMS-IITT-FR::0000
+  - INT-OMS-IITT-FR::0001
+- id: IITT12-J-19
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - douleur_testiculaire
+  texte_source:
+  - Douleur testiculaire/scrotale aiguë ou priapisme
+  fragments:
+  - INT-OMS-IITT-FR::0000
+  - INT-OMS-IITT-FR::0001
+- id: IITT12-J-20
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - incapacite_uriner
+  texte_source:
+  - Incapacité à uriner
+  fragments:
+  - INT-OMS-IITT-FR::0000
+  - INT-OMS-IITT-FR::0001
+- id: IITT12-J-21
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - exposition_prophylaxie
+  texte_source:
+  - Exposition nécessitant une prophylaxie d'urgence (ex. morsure d'animal, blessure par piqûre d'aiguille)
+  fragments:
+  - INT-OMS-IITT-FR::0001
+- id: IITT12-J-22
+  outil: iitt_12_ans_plus
+  couleur_source: jaune
+  tranches: *id002
+  condition:
+    au_moins_un:
+    - grossesse_complications
+  texte_source:
+  - Grossesse adressée pour complications
+  fragments:
+  - INT-OMS-IITT-FR::0001
+- id: IITTM12-R-01
+  outil: iitt_moins_12_ans
+  couleur_source: rouge
+  tranches: &id003
+  - moins_8_jours
+  - 8_jours_2_mois
+  - 2_6_mois
+  - 6_mois_2_ans
+  - 2_5_ans
+  - 5_11_ans
+  condition:
+    au_moins_un:
+    - inconscient
+  texte_source:
+  - Ne réagit pas
+  fragments:
+  - INT-OMS-IITT-FR::0001
+- id: IITTM12-R-02
+  outil: iitt_moins_12_ans
+  couleur_source: rouge
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - stridor
+  texte_source:
+  - Stridor
+  fragments:
+  - INT-OMS-IITT-FR::0001
+- id: IITTM12-R-03
+  outil: iitt_moins_12_ans
+  couleur_source: rouge
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - detresse_respiratoire_enfant
+    - cyanose
+  texte_source:
+  - Détresse respiratoire* ou cyanose centrale
+  fragments:
+  - INT-OMS-IITT-FR::0001
+- id: IITTM12-R-04
+  outil: iitt_moins_12_ans
+  couleur_source: rouge
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - saignements_abondants
+  texte_source:
+  - Saignements abondants
+  fragments:
+  - INT-OMS-IITT-FR::0001
+- id: IITTM12-R-05
+  outil: iitt_moins_12_ans
+  couleur_source: rouge
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - extremites_froides
+  texte_source:
+  - Extrémités froides
+  fragments:
+  - INT-OMS-IITT-FR::0001
+- id: IITTM12-R-06
+  outil: iitt_moins_12_ans
+  couleur_source: rouge
+  tranches: *id003
+  condition:
+    au_moins_n:
+      n: 2
+      parmi:
+      - lethargie
+      - yeux_creuses
+      - boit_peu
+  texte_source:
+  - '2 des signes suivants : léthargie ; yeux creusés ; pli cutané qui s''efface très lentement ; boit peu'
+  fragments:
+  - INT-OMS-IITT-FR::0001
+- id: IITTM12-R-07
+  outil: iitt_moins_12_ans
+  couleur_source: rouge
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - convulsions_actives
+  texte_source:
+  - Convulsions actives
+  fragments:
+  - INT-OMS-IITT-FR::0001
+- id: IITTM12-R-08
+  outil: iitt_moins_12_ans
+  couleur_source: rouge
+  tranches: *id003
+  condition:
+    tous_groupes:
+    - - etat_conscience_altere
+      - agitation_irritabilite
+      - lethargie
+    - - raideur_nuque
+      - hypothermie_ou_fievre
+  texte_source:
+  - État de conscience altéré (confusion, agitation, irritabilité permanente ou léthargie) avec raideur de la nuque, hypothermie ou fièvre
+  fragments:
+  - INT-OMS-IITT-FR::0001
+- id: IITTM12-R-09
+  outil: iitt_moins_12_ans
+  couleur_source: rouge
+  tranches:
+  - moins_8_jours
+  condition:
+    symptome_present: true
+  texte_source:
+  - Nourrisson < 8 jours
+  fragments:
+  - INT-OMS-IITT-FR::0001
+- id: IITTM12-R-10
+  outil: iitt_moins_12_ans
+  couleur_source: rouge
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - traumatisme_haut_risque
+    - traumatisme_haut_risque_contexte
+  texte_source:
+  - Traumatisme à haut risque*
+  - RISQUE DE TRAUMATISMES SÉVÈRES
+  fragments:
+  - INT-OMS-IITT-FR::0001
+  - INT-OMS-IITT-FR::0002
+  - INT-OMS-IITT-FR::0003
+- id: IITTM12-R-11
+  outil: iitt_moins_12_ans
+  couleur_source: rouge
+  tranches:
+  - moins_8_jours
+  - 8_jours_2_mois
+  - 2_6_mois
+  - 6_mois_2_ans
+  condition:
+    tous:
+    - brulure
+  texte_source:
+  - Âge du brûlé < 2 ans ou > 70 ans
+  fragments:
+  - INT-OMS-IITT-FR::0003
+- id: IITTM12-R-12
+  outil: iitt_moins_12_ans
+  couleur_source: rouge
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - membre_menace
+  texte_source:
+  - Risque d'amputation*
+  fragments:
+  - INT-OMS-IITT-FR::0001
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-R-13
+  outil: iitt_moins_12_ans
+  couleur_source: rouge
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - douleur_testiculaire
+  texte_source:
+  - Douleur testiculaire/scrotale aiguë ou priapisme
+  fragments:
+  - INT-OMS-IITT-FR::0001
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-R-14
+  outil: iitt_moins_12_ans
+  couleur_source: rouge
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - morsure_serpent
+  texte_source:
+  - Morsure de serpent
+  fragments:
+  - INT-OMS-IITT-FR::0001
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-R-15
+  outil: iitt_moins_12_ans
+  couleur_source: rouge
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - empoisonnement_exposition
+  texte_source:
+  - Empoisonnement/ingestion ou exposition à des substances chimiques dangereuses*
+  fragments:
+  - INT-OMS-IITT-FR::0001
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-R-16
+  outil: iitt_moins_12_ans
+  couleur_source: rouge
+  tranches:
+  - 5_11_ans
+  condition:
+    au_moins_un:
+    - critere_rouge_grossesse
+  texte_source:
+  - Grossesse + critères rouges chez l'adulte
+  fragments:
+  - INT-OMS-IITT-FR::0001
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-J-01
+  outil: iitt_moins_12_ans
+  couleur_source: jaune
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - gonflement_bouche_gorge_cou
+  texte_source:
+  - Tout gonflement/masse de la bouche, la gorge ou le cou
+  fragments:
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-J-02
+  outil: iitt_moins_12_ans
+  couleur_source: jaune
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - sifflement
+  texte_source:
+  - Sifflement (sans critères rouges)
+  fragments:
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-J-03
+  outil: iitt_moins_12_ans
+  couleur_source: jaune
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - incapacite_boire_se_nourrir
+  texte_source:
+  - Incapacité à boire ou se nourrir
+  fragments:
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-J-04
+  outil: iitt_moins_12_ans
+  couleur_source: jaune
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - vomit_tout
+  texte_source:
+  - Vomit tout
+  fragments:
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-J-05
+  outil: iitt_moins_12_ans
+  couleur_source: jaune
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - diarrhee_continue
+  texte_source:
+  - Diarrhée continue
+  fragments:
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-J-06
+  outil: iitt_moins_12_ans
+  couleur_source: jaune
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - paleur_severe
+  texte_source:
+  - Pâleur sévère (sans critères rouges)
+  fragments:
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-J-07
+  outil: iitt_moins_12_ans
+  couleur_source: jaune
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - agitation_irritabilite
+    - lethargie
+  texte_source:
+  - Agitation, irritabilité permanente ou léthargie
+  fragments:
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-J-08
+  outil: iitt_moins_12_ans
+  couleur_source: jaune
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - douleur_severe
+  texte_source:
+  - Douleur sévère
+  fragments:
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-J-09
+  outil: iitt_moins_12_ans
+  couleur_source: jaune
+  tranches:
+  - 8_jours_2_mois
+  - 2_6_mois
+  condition:
+    symptome_present: true
+  texte_source:
+  - Tout nourrisson âgé de 8 jours à 6 mois
+  fragments:
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-J-10
+  outil: iitt_moins_12_ans
+  couleur_source: jaune
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - fonte_musculaire_severe
+    - oedeme_deux_pieds
+  texte_source:
+  - Malnutrition avec fonte musculaire sévère visible OU œdème aux deux pieds
+  fragments:
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-J-11
+  outil: iitt_moins_12_ans
+  couleur_source: jaune
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - traumatisme
+    - brulure
+  texte_source:
+  - Traumatisme/brûlures (sans critères rouges)
+  fragments:
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-J-12
+  outil: iitt_moins_12_ans
+  couleur_source: jaune
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - diagnostic_chirurgie_urgente
+  texte_source:
+  - Diagnostic connu nécessitant une intervention chirurgicale d'urgence
+  fragments:
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-J-13
+  outil: iitt_moins_12_ans
+  couleur_source: jaune
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - eruption_aggravation
+  texte_source:
+  - Nouvelle éruption cutanée qui s'aggrave au fil des heures ou desquamation (sans critères rouges)
+  fragments:
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-J-14
+  outil: iitt_moins_12_ans
+  couleur_source: jaune
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - exposition_prophylaxie
+  texte_source:
+  - Exposition nécessitant une prophylaxie d'urgence (ex. morsure d'animal)
+  fragments:
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-J-15
+  outil: iitt_moins_12_ans
+  couleur_source: jaune
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - grossesse
+  texte_source:
+  - Grossesse (sans critères rouges)
+  fragments:
+  - INT-OMS-IITT-FR::0002
+- id: IITTM12-J-16
+  outil: iitt_moins_12_ans
+  couleur_source: jaune
+  tranches: *id003
+  condition:
+    au_moins_un:
+    - cephalee
+  texte_source:
+  - Maux de tête (sans critères rouges)
+  fragments:
+  - INT-OMS-IITT-FR::0002

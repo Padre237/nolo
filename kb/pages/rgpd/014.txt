@@ -1,0 +1,80 @@
+L 119/14
+(71)
+
+FR
+
+Journal officiel de l'Union européenne
+
+4.5.2016
+
+La personne concernée devrait avoir le droit de ne pas faire l'objet d'une décision, qui peut comprendre une
+mesure, impliquant l'évaluation de certains aspects personnels la concernant, qui est prise sur le seul fondement
+d'un traitement automatisé et qui produit des effets juridiques la concernant ou qui, de façon similaire, l'affecte de
+manière significative, tels que le rejet automatique d'une demande de crédit en ligne ou des pratiques de
+recrutement en ligne sans aucune intervention humaine. Ce type de traitement inclut le «profilage» qui consiste en
+toute forme de traitement automatisé de données à caractère personnel visant à évaluer les aspects personnels
+relatifs à une personne physique, notamment pour analyser ou prédire des aspects concernant le rendement au
+travail de la personne concernée, sa situation économique, sa santé, ses préférences ou centres d'intérêt
+personnels, sa fiabilité ou son comportement, ou sa localisation et ses déplacements, dès lors qu'il produit des
+effets juridiques concernant la personne en question ou qu'il l'affecte de façon similaire de manière significative.
+Toutefois, la prise de décision fondée sur un tel traitement, y compris le profilage, devrait être permise lorsqu'elle
+est expressément autorisée par le droit de l'Union ou le droit d'un État membre auquel le responsable du
+traitement est soumis, y compris aux fins de contrôler et de prévenir les fraudes et l'évasion fiscale conformément
+aux règles, normes et recommandations des institutions de l'Union ou des organes de contrôle nationaux, et
+d'assurer la sécurité et la fiabilité d'un service fourni par le responsable du traitement, ou nécessaire à la
+conclusion ou à l'exécution d'un contrat entre la personne concernée et un responsable du traitement, ou si la
+personne concernée a donné son consentement explicite. En tout état de cause, un traitement de ce type devrait
+être assorti de garanties appropriées, qui devraient comprendre une information spécifique de la personne
+concernée ainsi que le droit d'obtenir une intervention humaine, d'exprimer son point de vue, d'obtenir une
+explication quant à la décision prise à l'issue de ce type d'évaluation et de contester la décision. Cette mesure ne
+devrait pas concerner un enfant.
+Afin d'assurer un traitement équitable et transparent à l'égard de la personne concernée, compte tenu des circons­
+tances particulières et du contexte dans lesquels les données à caractère personnel sont traitées, le responsable du
+traitement devrait utiliser des procédures mathématiques ou statistiques adéquates aux fins du profilage, appliquer
+les mesures techniques et organisationnelles appropriées pour faire en sorte, en particulier, que les facteurs qui
+entraînent des erreurs dans les données à caractère personnel soient corrigés et que le risques d'erreur soit réduit
+au minimum, et sécuriser les données à caractère personnel d'une manière qui tienne compte des risques
+susceptibles de peser sur les intérêts et les droits de la personne concernée et qui prévienne, entre autres, les effets
+discriminatoires à l'égard des personnes physiques fondées sur la l'origine raciale ou ethnique, les opinions
+politiques, la religion ou les convictions, l'appartenance syndicale, le statut génétique ou l'état de santé, ou l'orien­
+tation sexuelle, ou qui se traduisent par des mesures produisant un tel effet. La prise de décision et le profilage
+automatisés fondés sur des catégories particulières de données à caractère personnel ne devraient être autorisés
+que dans des conditions spécifiques.
+
+(72)
+
+Le profilage est soumis aux règles du présent règlement régissant le traitement des données à caractère personnel,
+par exemple le fondement juridique du traitement ou les principes en matière de protection des données. Le
+comité européen de la protection des données établi par le présent règlement (ci-après dénommé «comité») devrait
+pouvoir publier des directives à cet égard.
+
+(73)
+
+Des limitations à certains principes spécifiques ainsi qu'au droit à l'information, au droit d'accès aux données à
+caractère personnel, au droit de rectification ou d'effacement de ces données, au droit à la portabilité des données,
+au droit d'opposition, aux décisions fondées sur le profilage, ainsi qu'à la communication d'une violation de
+données à caractère personnel à une personne concernée et à certaines obligations connexes des responsables du
+traitement peuvent être imposées par le droit de l'Union ou le droit d'un État membre, dans la mesure nécessaire
+et proportionnée dans une société démocratique pour garantir la sécurité publique, y compris la protection de la
+vie humaine, particulièrement en réponse à des catastrophes d'origine naturelle ou humaine, la prévention des
+infractions pénales, les enquêtes et les poursuites en la matière ou l'exécution de sanctions pénales, y compris la
+protection contre les menaces pour la sécurité publique et la prévention de telles menaces ou de manquements à
+la déontologie des professions réglementées, et pour garantir d'autres objectifs d'intérêt public importants de
+l'Union ou d'un État membre, notamment un intérêt économique ou financier important de l'Union ou d'un État
+membre, la tenue de registres publics conservés pour des motifs d'intérêt public général, le traitement ultérieur de
+données à caractère personnel archivées pour fournir des informations spécifiques relatives au comportement
+politique dans le cadre des régimes des anciens États totalitaires ou la protection de la personne concernée ou des
+droits et libertés d'autrui, y compris la protection sociale, la santé publique et les finalités humanitaires. Il y a lieu
+que ces limitations respectent les exigences énoncées par la Charte et par la convention européenne de
+sauvegarde des droits de l'homme et des libertés fondamentales.
+
+(74)
+
+Il y a lieu d'instaurer la responsabilité du responsable du traitement pour tout traitement de données à caractère
+personnel qu'il effectue lui-même ou qui est réalisé pour son compte. Il importe, en particulier, que le responsable
+du traitement soit tenu de mettre en œuvre des mesures appropriées et effectives et soit à même de démontrer la
+conformité des activités de traitement avec le présent règlement, y compris l'efficacité des mesures. Ces mesures
+devraient tenir compte de la nature, de la portée, du contexte et des finalités du traitement ainsi que du risque
+que celui-ci présente pour les droits et libertés des personnes physiques.
+
+

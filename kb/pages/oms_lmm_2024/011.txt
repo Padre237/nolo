@@ -1,0 +1,51 @@
+Executive summary
+
+Figure 1: WHO consensus ethical principles for use of AI for health
+Consensus Principles
+
+Protect autonomy
+
+Promote human
+well-being, human safety
+and the public interest
+
+Ensure transparency,
+explainability and
+intelligibility
+
+Foster responsibility and
+accountability
+
+Ensure inclusiveness and
+equity
+
+Promote AI that is
+responsive and
+sustainable
+
+Applications, challenges and risks of large multi-modal models
+The potential applications of LMMs in health care are similar to those of other forms of AI, yet
+how LMMs are accessed and used is new, with both novel benefits and risks that societies,
+health systems and end-users may not yet be prepared to address fully. Table 1 summarizes
+the main applications of LMMs and their potential benefits and risks.
+The systemic risks associated with use of LMMs include risks that could affect health systems
+(Table 2).
+Broader regulatory and systemic risks could emerge with use of LMMs. One concern (being
+examined by several data protection authorities) is whether LMMs comply with existing legal
+or regulatory regimes, including international human rights obligations, and with national
+data protection regulations. Algorithms might not comply with such laws because of the way
+in which data are collected to train LMMs, the management and processing of data that have
+been collected (or put into LMMs by end users), the transparency and accountability of entities
+that develop LMMs, and the possibility that LMMs “hallucinate”. LMMs could also be noncompliant with consumer protection laws.
+Broader societal risks associated with the growing use of LMMs (including and beyond the
+use of such algorithms in health care) include the fact that LMMs are often developed and
+deployed by large technology companies, due partly to the significant computing, data,
+human and financial resource required for development of LMMs. This may reinforce the
+dominance of these companies vis-a-vis smaller enterprises and governments with respect
+to the development and use of AI, including the focus of AI research in the public and private
+sectors. Additional concerns about the potential dominance of large technology companies
+include insufficient corporate commitment to ethics and transparency. New voluntary
+
+ix
+
+

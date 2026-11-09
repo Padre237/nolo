@@ -1,0 +1,38 @@
+etab_id,nom,type,lat,lon,aire_id,ouvert_24h,horaires,telephone,agree,services,service_statut,fictif
+HOP-01,Hôpital régional fictif,hopital,4.04418,9.70134,AS-01,True,24h/24,+237 000 000 001,True,urgences;cardiologie;pediatrie;gynecologie_obstetrique;chirurgie;radiologie;laboratoire;banque_de_sang;infectiologie_vih;psychiatrie,verifie,True
+HOP-02,Hôpital de district fictif Nord,hopital,4.05948,9.66531,AS-11,True,24h/24,+237 000 000 002,True,urgences;pediatrie;gynecologie_obstetrique;medecine_generale;laboratoire;banque_de_sang,verifie,True
+HOP-03,Hôpital de district fictif Est,hopital,4.08185,9.77192,AS-03,True,24h/24,+237 000 000 003,True,urgences;medecine_generale;chirurgie;laboratoire;banque_de_sang;ophtalmologie,declare,True
+HOP-04,Centre hospitalier spécialisé fictif,hopital,4.09677,9.79815,AS-05,False,07:30-17:30,+237 000 000 004,True,neurologie;cardiologie;oncologie;radiologie,verifie,True
+CLI-05,Clinique fictive A,clinique,4.09089,9.72141,AS-11,False,08:00-20:00,+237 000 000 005,True,cardiologie;medecine_generale,declare,True
+CLI-06,Clinique fictive B,clinique,4.07508,9.71124,AS-11,False,08:00-20:00,+237 000 000 006,True,pediatrie;dermatologie,declare,True
+CLI-07,Clinique fictive C,clinique,4.00063,9.7251,AS-04,False,08:00-20:00,+237 000 000 007,True,ophtalmologie;orl,declare,True
+CLI-08,Clinique fictive D,clinique,4.0626,9.68787,AS-06,False,08:00-20:00,+237 000 000 008,True,dentisterie,declare,True
+CLI-09,Clinique fictive E,clinique,4.00195,9.73592,AS-07,False,08:00-20:00,+237 000 000 009,True,gynecologie_obstetrique;planification_familiale,declare,True
+CSI-10,Centre de santé fictif 1,centre_de_sante,4.05476,9.68204,AS-06,False,08:00-18:00,+237 000 000 010,True,medecine_generale;pediatrie;laboratoire;planification_familiale,declare,True
+CSI-11,Centre de santé fictif 2,centre_de_sante,4.06966,9.61941,AS-10,False,08:00-18:00,+237 000 000 011,True,medecine_generale;pediatrie;laboratoire,declare,True
+CSI-12,Centre de santé fictif 3,centre_de_sante,4.05941,9.62377,AS-04,False,08:00-18:00,+237 000 000 012,True,medecine_generale;pediatrie;laboratoire,declare,True
+CSI-13,Centre de santé fictif 4,centre_de_sante,4.12231,9.72968,AS-08,False,08:00-18:00,+237 000 000 013,True,medecine_generale;pediatrie;laboratoire;planification_familiale,declare,True
+CSI-14,Centre de santé fictif 5,centre_de_sante,4.07169,9.71543,AS-07,False,08:00-18:00,+237 000 000 014,True,medecine_generale;pediatrie;laboratoire,declare,True
+CSI-15,Centre de santé fictif 6,centre_de_sante,4.08172,9.72009,AS-03,False,08:00-18:00,+237 000 000 015,True,medecine_generale;pediatrie;laboratoire,declare,True
+CSI-16,Centre de santé fictif 7,centre_de_sante,4.07503,9.71225,AS-11,False,08:00-18:00,+237 000 000 016,True,medecine_generale;pediatrie;laboratoire;planification_familiale,declare,True
+CSI-17,Centre de santé fictif 8,centre_de_sante,4.0491,9.64296,AS-09,False,08:00-18:00,+237 000 000 017,True,medecine_generale;pediatrie;laboratoire,declare,True
+CTS-18,Centre de transfusion fictif,centre_transfusion,3.97051,9.70455,AS-04,False,07:30-15:30,+237 000 000 018,True,banque_de_sang,verifie,True
+PH-19,Pharmacie fictive 01,officine_agreee,4.0485,9.70436,AS-11,False,08:00-21:00,+237 000 000 019,True,,declare,True
+PH-20,Pharmacie fictive 02,officine_agreee,4.01816,9.64682,AS-09,False,08:00-21:00,+237 000 000 020,True,,declare,True
+PH-21,Pharmacie fictive 03,officine_agreee,4.04718,9.6971,AS-10,True,24h/24,+237 000 000 021,True,,declare,True
+PH-22,Pharmacie fictive 04,officine_agreee,4.03844,9.70353,AS-03,False,08:00-21:00,+237 000 000 022,True,,declare,True
+PH-23,Pharmacie fictive 05,officine_agreee,4.04719,9.69707,AS-11,False,08:00-21:00,+237 000 000 023,True,,declare,True
+PH-24,Pharmacie fictive 06,officine_agreee,4.04306,9.73056,AS-07,False,08:00-21:00,+237 000 000 024,True,,declare,True
+PH-25,Pharmacie fictive 07,officine_agreee,3.9849,9.71566,AS-07,False,08:00-21:00,+237 000 000 025,True,,declare,True
+PH-26,Pharmacie fictive 08,officine_agreee,4.08122,9.67765,AS-05,False,08:00-21:00,+237 000 000 026,True,,declare,True
+PH-27,Pharmacie fictive 09,officine_agreee,4.07059,9.70332,AS-12,False,08:00-21:00,+237 000 000 027,True,,declare,True
+PH-28,Pharmacie fictive 10,officine_agreee,4.11291,9.68821,AS-11,True,24h/24,+237 000 000 028,True,,declare,True
+PH-29,Pharmacie fictive 11,officine_agreee,4.07784,9.73972,AS-06,False,08:00-21:00,+237 000 000 029,True,,declare,True
+PH-30,Pharmacie fictive 12,officine_agreee,4.0178,9.64804,AS-02,False,08:00-21:00,+237 000 000 030,True,,declare,True
+PH-31,Pharmacie fictive 13,officine_agreee,4.02562,9.75929,AS-07,False,08:00-21:00,+237 000 000 031,True,,declare,True
+PH-32,Pharmacie fictive 14,officine_agreee,4.04958,9.71289,AS-12,False,08:00-21:00,+237 000 000 032,True,,declare,True
+PH-33,Pharmacie fictive 15,officine_agreee,4.12859,9.6935,AS-12,False,08:00-21:00,+237 000 000 033,True,,declare,True
+PH-34,Pharmacie fictive 16,officine_agreee,4.04354,9.74961,AS-06,False,08:00-21:00,+237 000 000 034,True,,declare,True
+PHH-35,Pharmacie de l'hôpital régional fictif,pharmacie_hospitaliere,4.04418,9.70134,AS-01,True,24h/24,+237 000 000 035,True,,verifie,True
+PHH-36,Pharmacie de l'hôpital de district fictif Nord,pharmacie_hospitaliere,4.05948,9.66531,AS-11,True,24h/24,+237 000 000 036,True,,verifie,True
+PHH-37,Pharmacie de l'hôpital de district fictif Est,pharmacie_hospitaliere,4.08185,9.77192,AS-03,True,24h/24,+237 000 000 037,True,,declare,True

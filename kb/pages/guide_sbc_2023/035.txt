@@ -1,0 +1,27 @@
+Figure 6 : Circuit des informations du niveau de la communauté vers les niveaux supérieurs
+
+Comme illustré à la Figure 6, au niveau périphérique, les ASCP et/ou les informateurs clés
+transmettent les signaux/cas communautaires aux PFS de l’AS ou du DS le cas échéant. Chaque
+signal/cas communautaire y sera trié et vérifié dans les 24 heures suivant sa capture. Lorsqu’un
+signal est vérifié, il devient un évènement. L’AS est responsable de la notification de tous les
+évènements au niveau du district. Au niveau régional et central, les centres d’appel et les unités
+de veille transmettent les signaux/cas communautaires captés aux PFS des DS. Chaque DS
+organise avec l’AS le tri et la vérification dans les 24 heures. L’ECD est chargée de faire
+l’évaluation des risques. Lorsqu’un signal/cas communautaire devient un évènement, il est
+enregistré et rentre directement dans la SIMR. Les évènements qui présentent un risque élevé
+doivent faire l’objet d’une enquête et d’une riposte dans les 48 heures suivant leur notification.
+La rétro-information permet la diffusion des décisions prises et le suivi des actions à tous les
+niveaux.
+
+    VII.    SUIVI ET EVALUATION
+Le suivi et l’évaluation de la performance sont un volet essentiel de tout programme de santé.
+Ils permettent aux personnes chargées de la mise en œuvre de la SBC de vérifier les progrès,
+d’orienter les décisions et les mesures correctives et de mettre à jour les plans relatifs au projet.
+En outre, ils contribuent à la redevabilité. La SBC est conçue pour assurer le suivi d’un résultat
+précis en matière de santé. De ce fait, le processus d’analyse aura pour objectif de suivre et
+
+
+
+
+                                                 34
+

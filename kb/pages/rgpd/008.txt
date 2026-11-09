@@ -1,0 +1,83 @@
+L 119/8
+
+FR
+
+Journal officiel de l'Union européenne
+
+4.5.2016
+
+soit dans une autre disposition du droit national ou du droit de l'Union, ainsi que le prévoit le présent règlement,
+y compris la nécessité de respecter l'obligation légale à laquelle le responsable du traitement est soumis ou la
+nécessité d'exécuter un contrat auquel la personne concernée est partie ou pour prendre des mesures précontrac­
+tuelles à la demande de la personne concernée.
+
+(41)
+
+Lorsque le présent règlement fait référence à une base juridique ou à une mesure législative, cela ne signifie pas
+nécessairement que l'adoption d'un acte législatif par un parlement est exigée, sans préjudice des obligations
+prévues en vertu de l'ordre constitutionnel de l'État membre concerné. Cependant, cette base juridique ou cette
+mesure législative devrait être claire et précise et son application devrait être prévisible pour les justiciables,
+conformément à la jurisprudence de la Cour de justice de l'Union européenne (ci-après dénommée «Cour de
+justice») et de la Cour européenne des droits de l'homme.
+
+(42)
+
+Lorsque le traitement est fondé sur le consentement de la personne concernée, le responsable du traitement
+devrait être en mesure de prouver que ladite personne a consenti à l'opération de traitement. En particulier, dans
+le cadre d'une déclaration écrite relative à une autre question, des garanties devraient exister afin de garantir que
+la personne concernée est consciente du consentement donné et de sa portée. Conformément à la directive
+93/13/CEE du Conseil (1), une déclaration de consentement rédigée préalablement par le responsable du
+traitement devrait être fournie sous une forme compréhensible et aisément accessible, et formulée en des termes
+clairs et simples, et elle ne devrait contenir aucune clause abusive. Pour que le consentement soit éclairé, la
+personne concernée devrait connaître au moins l'identité du responsable du traitement et les finalités du
+traitement auquel sont destinées les données à caractère personnel. Le consentement ne devrait pas être considéré
+comme ayant été donné librement si la personne concernée ne dispose pas d'une véritable liberté de choix ou
+n'est pas en mesure de refuser ou de retirer son consentement sans subir de préjudice.
+
+(43)
+
+Pour garantir que le consentement est donné librement, il convient que celui-ci ne constitue pas un fondement
+juridique valable pour le traitement de données à caractère personnel dans un cas particulier lorsqu'il existe un
+déséquilibre manifeste entre la personne concernée et le responsable du traitement, en particulier lorsque le
+responsable du traitement est une autorité publique et qu'il est improbable que le consentement ait été donné
+librement au vu de toutes les circonstances de cette situation particulière. Le consentement est présumé ne pas
+avoir été donné librement si un consentement distinct ne peut pas être donné à différentes opérations de
+traitement des données à caractère personnel bien que cela soit approprié dans le cas d'espèce, ou si l'exécution
+d'un contrat, y compris la prestation d'un service, est subordonnée au consentement malgré que celui-ci ne soit
+pas nécessaire à une telle exécution.
+
+(44)
+
+Le traitement devrait être considéré comme licite lorsqu'il est nécessaire dans le cadre d'un contrat ou de
+l'intention de conclure un contrat.
+
+(45)
+
+Lorsque le traitement est effectué conformément à une obligation légale à laquelle le responsable du traitement
+est soumis ou lorsqu'il est nécessaire à l'exécution d'une mission d'intérêt public ou relevant de l'exercice de
+l'autorité publique, le traitement devrait avoir un fondement dans le droit de l'Union ou dans le droit d'un État
+membre. Le présent règlement ne requiert pas de disposition légale spécifique pour chaque traitement individuel.
+Une disposition légale peut suffire pour fonder plusieurs opérations de traitement basées sur une obligation légale
+à laquelle le responsable du traitement est soumis ou lorsque le traitement est nécessaire pour l'exécution d'une
+mission d'intérêt public ou relevant de l'exercice de l'autorité publique. Il devrait également appartenir au droit de
+l'Union ou au droit d'un État membre de déterminer la finalité du traitement. Par ailleurs, ce droit pourrait
+préciser les conditions générales du présent règlement régissant la licéité du traitement des données à caractère
+personnel, établir les spécifications visant à déterminer le responsable du traitement, le type de données à
+caractère personnel faisant l'objet du traitement, les personnes concernées, les entités auxquelles les données à
+caractère personnel peuvent être communiquées, les limitations de la finalité, la durée de conservation et d'autres
+mesures visant à garantir un traitement licite et loyal. Il devrait, également, appartenir au droit de l'Union ou au
+droit d'un État membre de déterminer si le responsable du traitement exécutant une mission d'intérêt public ou
+relevant de l'exercice de l'autorité publique devrait être une autorité publique ou une autre personne physique ou
+morale de droit public ou, lorsque l'intérêt public le commande, y compris à des fins de santé, telles que la santé
+publique, la protection sociale et la gestion des services de soins de santé, de droit privé, telle qu'une association
+professionnelle.
+
+(46)
+
+Le traitement de données à caractère personnel devrait être également considéré comme licite lorsqu'il est
+nécessaire pour protéger un intérêt essentiel à la vie de la personne concernée ou à celle d'une autre personne
+
+(1) Directive 93/13/CEE du Conseil, du 5 avril 1993, concernant les clauses abusives dans les contrats conclus avec les consommateurs
+(JO L 95 du 21.4.1993, p. 29).
+
+

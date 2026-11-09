@@ -1,0 +1,16 @@
+{
+  "name": "Nolo — de vos signes à la bonne porte",
+  "short_name": "Nolo",
+  "description": "Orientation vers les soins, recherche de services, de médicaments et de sang.",
+  "lang": "fr",
+  "start_url": "./#/",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F3F5F2",
+  "theme_color": "#083F33",
+  "icons": [
+    { "src": "assets/icons/icone-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icone-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/icons/icone-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

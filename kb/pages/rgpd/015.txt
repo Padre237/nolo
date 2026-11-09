@@ -1,0 +1,87 @@
+4.5.2016
+
+FR
+
+Journal officiel de l'Union européenne
+
+L 119/15
+
+(75)
+
+Des risques pour les droits et libertés des personnes physiques, dont le degré de probabilité et de gravité varie,
+peuvent résulter du traitement de données à caractère personnel qui est susceptible d'entraîner des dommages
+physiques, matériels ou un préjudice moral, en particulier: lorsque le traitement peut donner lieu à une discrimi­
+nation, à un vol ou une usurpation d'identité, à une perte financière, à une atteinte à la réputation, à une perte de
+confidentialité de données protégées par le secret professionnel, à un renversement non autorisé du processus de
+pseudonymisation ou à tout autre dommage économique ou social important; lorsque les personnes concernées
+pourraient être privées de leurs droits et libertés ou empêchées d'exercer le contrôle sur leurs données à caractère
+personnel; lorsque le traitement concerne des données à caractère personnel qui révèlent l'origine raciale ou
+ethnique, les opinions politiques, la religion ou les convictions philosophiques, l'appartenance syndicale, ainsi que
+des données génétiques, des données concernant la santé ou des données concernant la vie sexuelle ou des
+données relatives à des condamnations pénales et à des infractions, ou encore à des mesures de sûreté connexes;
+lorsque des aspects personnels sont évalués, notamment dans le cadre de l'analyse ou de la prédiction d'éléments
+concernant le rendement au travail, la situation économique, la santé, les préférences ou centres d'intérêt
+personnels, la fiabilité ou le comportement, la localisation ou les déplacements, en vue de créer ou d'utiliser des
+profils individuels; lorsque le traitement porte sur des données à caractère personnel relatives à des personnes
+physiques vulnérables, en particulier les enfants; ou lorsque le traitement porte sur un volume important de
+données à caractère personnel et touche un nombre important de personnes concernées.
+
+(76)
+
+Il convient de déterminer la probabilité et la gravité du risque pour les droits et libertés de la personne concernée
+en fonction de la nature, de la portée, du contexte et des finalités du traitement. Le risque devrait faire l'objet
+d'une évaluation objective permettant de déterminer si les opérations de traitement des données comportent un
+risque ou un risque élevé.
+
+(77)
+
+Des directives relatives à la mise en œuvre de mesures appropriées et à la démonstration par le responsable du
+traitement ou le sous-traitant du respect du présent règlement, notamment en ce qui concerne l'identification du
+risque lié au traitement, leur évaluation en termes d'origine, de nature, de probabilité et de gravité, et l'identifi­
+cation des meilleures pratiques visant à atténuer le risque, pourraient être fournies notamment au moyen de
+codes de conduite approuvés, de certifications approuvées et de lignes directrices données par le comité ou d'indi­
+cations données par un délégué à la protection des données. Le comité peut également publier des lignes
+directrices relatives aux opérations de traitement considérées comme étant peu susceptibles d'engendrer un risque
+élevé pour les droits et libertés des personnes physiques et indiquer les mesures qui peuvent suffire dans de tels
+cas pour faire face à un tel risque.
+
+(78)
+
+La protection des droits et libertés des personnes physiques à l'égard du traitement des données à caractère
+personnel exige l'adoption de mesures techniques et organisationnelles appropriées pour garantir que les
+exigences du présent règlement sont respectées. Afin d'être en mesure de démontrer qu'il respecte le présent
+règlement, le responsable du traitement devrait adopter des règles internes et mettre en œuvre des mesures qui
+respectent, en particulier, les principes de protection des données dès la conception et de protection des données
+par défaut. Ces mesures pourraient consister, entre autres, à réduire à un minimum le traitement des données à
+caractère personnel, à pseudonymiser les données à caractère personnel dès que possible, à garantir la
+transparence en ce qui concerne les fonctions et le traitement des données à caractère personnel, à permettre à la
+personne concernée de contrôler le traitement des données, à permettre au responsable du traitement de mettre
+en place des dispositifs de sécurité ou de les améliorer. Lors de l'élaboration, de la conception, de la sélection et
+de l'utilisation d'applications, de services et de produits qui reposent sur le traitement de données à caractère
+personnel ou traitent des données à caractère personnel pour remplir leurs fonctions, il convient d'inciter les
+fabricants de produits, les prestataires de services et les producteurs d'applications à prendre en compte le droit à
+la protection des données lors de l'élaboration et de la conception de tels produits, services et applications et,
+compte dûment tenu de l'état des connaissances, à s'assurer que les responsables du traitement et les soustraitants sont en mesure de s'acquitter des obligations qui leur incombent en matière de protection des données.
+Les principes de protection des données dès la conception et de protection des données par défaut devraient
+également être pris en considération dans le cadre des marchés publics.
+
+(79)
+
+La protection des droits et libertés des personnes concernées, de même que la responsabilité des responsables du
+traitement et des sous-traitants, y compris dans le cadre de la surveillance exercée par les autorités de contrôle et
+des mesures prises par celles-ci, exige une répartition claire des responsabilités au titre du présent règlement, y
+compris lorsque le responsable du traitement détermine les finalités et les moyens du traitement conjointement
+avec d'autres responsables du traitement, ou lorsqu'une opération de traitement est effectuée pour le compte d'un
+responsable du traitement.
+
+(80)
+
+Lorsqu'un responsable du traitement ou un sous-traitant qui n'est pas établi dans l'Union traite des données à
+caractère personnel de personnes concernées qui se trouvent dans l'Union et que ses activités de traitement sont
+liées à l'offre de biens ou de services à ces personnes dans l'Union, qu'un paiement leur soit demandé ou non, ou
+au suivi de leur comportement, dans la mesure où celui-ci a lieu au sein de l'Union, il convient que le responsable
+du traitement ou le sous-traitant désigne un représentant, à moins que le traitement soit occasionnel, n'implique
+pas un traitement, à grande échelle, de catégories particulières de données à caractère personnel ou le traitement
+de données à caractère personnel relatives à des condamnations pénales et à des infractions, et soit peu
+
+

@@ -1,0 +1,49 @@
+5 Provision with general-purpose foundation models (LMMs)
+
+Impact assessments can reveal, for example, whether an AI technology might introduce
+system-wide bias, risk the privacy of users who share personal data or lead to manipulation
+of a user. Risks to privacy should be addressed by collaboration between providers and
+developers in developing LMMs that preserve individual privacy. Work on such an LMM
+is under way by one company and a hospital system in the USA, although the project is
+considered unlikely to succeed because the data cannot be fully de-identified (154). Impact
+assessments can also ensure that use of a general-purpose foundation model or application
+maintains humans in the loop to avoid automated decision-making in which a user receives
+false information or misinformation or a health-care provider or patient relies uncritically on
+the output of an LMM, which would be a form of automation bias.
+Governments may instead choose to use a risk-based framework for LMMs to be used in health
+care and medicine. For those functions that are considered to be higher risk, such as providing
+a prescription or mental health advice to a person with severe depression or use of an AI
+technology by a vulnerable or marginalized population, the burden of proof will be higher.
+There is concern that, if a government selects a risk-based approach, it will be considered
+sufficient or be used as a substitute for a human rights-based approach (153). A risk-based
+framework might exclude certain LMMs or applications from evaluation, which may appear to
+be low risk but could ultimately lead to harm.
+Additional questions include whether an AI regulatory assessment should apply to foundation
+models regardless of their eventual use, whether the assessment should apply only to the
+largest, most widely used foundation models (“systemic foundation models”7) and when such
+assessments should apply to providers.
+This guidance does not include a recommendation on whether all foundation models,
+regardless of how they are to be used, should be subjected to a risk-based and/or rights-based
+assessment. The guidance also does not recommend whether an AI regulatory assessment
+of general-purpose foundation models should apply only to the largest (systemic) LMMs.
+The expert group did note one concern about assessments designed to apply to all LMMs,
+irrespective of size, which is that it could “freeze in place” the dominance of the largest
+companies, as the standards may be such that only those companies can feasibly comply
+with them or that the standards best suit their business model and aims (155). This concern
+has gained the attention of competition authorities, which have found that first-movers may
+use “unfair methods of competition to entrench their current power or use that power to
+gain control over a new generative AI market” (141). Competition authorities are expected
+to exercise greater scrutiny of the use of LMMs, although they focus on the practices used by
+companies that develop LMMs (156).
+Providers should also be subject to AI regulatory assessments, as their use of an LMM may
+change its purpose and function from those determined by the developer but is controlled by
+the provider. Thus, if a general-purpose foundation model is adapted for use in health care or
+medicine by a provider, to which the developer agrees, both the developer and the provider
+7
+
+Presentation by Kai Zenner, European Parliament, Head of Office for Axel Voss, Conference on AI for Good, 5
+June 2023.
+
+49
+
+

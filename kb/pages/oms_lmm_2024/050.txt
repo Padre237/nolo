@@ -1,0 +1,46 @@
+32
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+The ethical principles defined by the WHO expert group (see above) provide guidance to
+stakeholders on the basic ethical requirements that should direct their decisions and actions
+in development, deployment and assessment of the use of LMMs in health care and medicine.
+The principles should be the basis for how governments, public sector agencies, researchers,
+companies and implementers govern the use of LMMs.
+Governance comprises the steering and rule-making functions of governments and other
+decision-makers, including international health agencies, for achieving national and global
+health policy conducive to universal health coverage. Governance is also a political process
+that involves balancing competing influences and demands (1). Current laws and policies are
+unlikely to suffice for effective management of the use of LMMs, as many were written before
+the release of earlier versions of LMMs. Governance of LMMs, as with overall governance of
+AI, involves applying current and new legislation and regulations, “soft law” (such as ethical
+principles), human rights obligations, codes of practice and internal procedures of companies,
+industry associations and standard-setting bodies.
+Currently, LMMs are deployed more quickly than our ability to fully understand their
+capability and frailty. An early suggestion for addressing concern about LMMs was for a ban
+or a moratorium on their development (118). While some countries do restrict the use of or
+even ban certain LMMs, most governments now seek to ensure that their use can be directed
+towards socially beneficial outcomes through appropriate governance. Leading AI companies
+have also called for careful, deliberative development of LMMs and other forms of AI. Neither
+governments nor companies, however, are immune to competition. Several governments
+are locked in an “arms race” to technological supremacy, while even AI companies that are
+calling for regulation are not immune to commercial pressure (119). While optimists consider
+that many of the challenges and risks of AI can be addressed through design, including everlarger data sets and more powerful algorithms, critics have pointed out that the limitations of
+LMMs are systemic and that increasing the size of training data and model parameters will not
+overcome shortcomings but will in fact amplify them (59).
+Governance of LMMs must keep pace with its rapid development and increasing uses and
+should privilege neither governments seeking a technological advantage nor companies
+seeking commercial gain. The initial suggestions and recommendations below place ethical
+principles and human rights obligations at the centre of appropriate governance, comprising
+both procedures and practices that could be introduced by companies and laws and policies
+enacted by governments.
+LMMs can be considered products of a series (or chain) of decisions on programming and
+product development by one or more actors. Decisions made at each stage of an AI value
+chain may have both direct and indirect consequences on those that participate in the
+development, deployment and use of LMMs downstream. The decisions can be influenced
+and regulated by governments that enact and enforce laws and policies nationally, regionally
+and globally. The AI value chain begins with integration of several inputs, which comprise the
+“AI infrastructure”, such as data, computing power and AI expertise, to the development of
+general-purpose foundation models. These models can be used directly by a user to perform
+
+

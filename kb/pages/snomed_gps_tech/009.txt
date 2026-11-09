@@ -1,0 +1,20 @@
+03/11/2026 11:03
+
+SNOMED International Documents
+
+Use of the Global Patient Set
+in a FHIR Terminology Server
+
+The Global Patient Set (GPS) may be used as a content source for a FHIR terminology
+server in environments where licensed access to the full SNOMED CT release is not
+available. In such configurations, the GPS supports identifier-level terminology services
+only and must not be treated as a substitute for a full SNOMED CT terminology server.
+GPS content used by a terminology server is typically prepared in advance from SNOMED
+CT RF2 releases using tooling such as the SNOMED CT GPS Term Extractor, which derives a
+flat, GPS-compatible dataset suitable for loading into terminology services.
+
+https://docs.snomed.org/implementation-guides/gps-implementation-guide/~gitbook/pdf?page=VZvwP1TLt1zd74otfVUl&only=yes&limi…
+
+9/11
+
+

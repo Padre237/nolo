@@ -1,0 +1,63 @@
+62
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+References
+1.
+
+Ethics and governance of artificial intelligence for health. Geneva: World Health
+Organization; 2021 (https://www.who.int/publications/i/item/9789240029200, accessed
+26 May 2023).
+
+2.
+
+Khullar D. Can A.I. treat mental illness? The New Yorker, 27 February 2023 (https://
+www.newyorker.com/magazine/2023/03/06/can-ai-treat-mental-illness, accessed 29
+May 2023).
+
+3.
+
+Acosta JN, Falcone GJ, Rajpurkar P, Topol EJ. Multimodal biomedical AI. Nat Med.
+2022;28(9):1773–84. doi:10.1038/s41591-022-01981-2.
+
+4.
+
+Hariri Y, Harris T, Raskin A. You can have the blue pill or the red pill, and we’re out of
+blue pills. The New York Times, 24 March 2023 (https://www.nytimes.com/2023/03/24/
+opinion/yuval-harari-ai-chatgpt.html, accessed 26 May 2023).
+
+5.
+
+Moor M, Banerjee O, Abad ZSH, Krumholz HM, Leskovec J, Topol EJ et al.
+Foundation models for generalist medical artificial intelligence, Nature.
+2023;616(7956):259–65. doi:10.1038/s41586-023-05881-4.
+
+6.
+
+Hu K. Chat GPT sets record for fastest growing user-base – analyst note. Reuters, 2
+February 2023 (https://www.reuters.com/technology/chatgpt-sets-record-fastestgrowing-user-base-analyst-note-2023-02-01/, accessed 26 May 2023).
+
+7.
+
+Weise K, Grant N. Microsoft and Google unveil A.I. tools for businesses. The New York
+Times, 16 March 2023 (https://www.nytimes.com/2023/03/16/technology/microsoftgoogle-ai-tools-businesses.html, accessed 26 May 2023).
+
+8.
+
+Yang Z. Chinese tech giant Baidu just released its answer to ChatGPT. MIT Technology
+Review, 16 March 2023 (https://www.technologyreview.com/2023/03/16/1069919/baiduernie-bot-chatgpt-launch/, accessed 26 May 2023).
+
+9.
+
+Murgia M, Bradshaw T. Musk to launch AI start-up to rival ChatGPT. Financial Times,
+15 April 2023 (https://www.ft.com/content/2a96995b-c799-4281-8b60-b235e84aefe4,
+accessed 26 May 2023).
+
+10.
+
+Heaven WD. The open-source AI boom is built on Big Tech’s handouts. How long
+will it last? MIT Technology Review, 12 May 2023 (https://www.technologyreview.
+com/2023/05/12/1072950/open-source-ai-google-openai-eleuther-meta/, accessed 26
+May 2023).
+
+

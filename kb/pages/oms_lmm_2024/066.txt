@@ -1,0 +1,46 @@
+48
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+personal information may be disclosed either accidentally or through prompts. Potential
+disclosures are the reason that many large companies, including technology companies that
+are developing and commercializing LMMs, prohibit their own employees from using such
+algorithms (149).
+Disclosures of data violate the developer's responsibility to protect autonomy. Developers
+may also violate data protection laws if sensitive data are held longer than permitted
+according to data minimization requirements (85). One developer allows users to opt out of
+any content they supply for refining its chatbot’s performance (150). Governments that permit
+use of LMMs should ensure that they set, extend and enforce data protection rules to cover
+the data entered into an LMM. The Chinese Government’s regulation for LMMs includes such a
+requirement, although the protection applies only to users in China (151).
+Assessment of general-purpose foundation models and/or applications used in health care:
+human rights law versus risk-based frameworks: Several legislative frameworks are being
+developed to evaluate and regulate AI technologies. One question with respect to such
+frameworks is whether AI technologies must satisfy human rights obligations (“fundamental
+rights” according to the European Union) or whether a different approach should be used,
+to assess AI technologies in a risk-based framework. The European Union, under the AI Act,
+has adopted a risk-based framework (152). A risk-based framework, it is argued, could help
+to identify the requirements or burden of proof that must be provided for a technology, the
+burden of proof increasing with the level of risk of the technology.
+All AI systems or tools used in health care and medicine should have to respect ethical
+obligations and human rights standards that affect, for example, a person’s dignity, autonomy
+or privacy. These include general-purpose foundation models. Human rights and ethical
+principles are non-negotiable and must be upheld, irrespective of the risk associated with an
+AI technology or the benefit it may confer (153). The fact that an AI algorithm is considered
+“low risk” does not exempt it from scrutiny, and a developer or provider should ensure the
+algorithm respects human rights and ethical obligations. A human rights impact assessment
+can be conducted to determine whether an LMM or an application adheres to such
+commitments and can therefore be used safely.
+The WHO guidance on the ethics and governance of AI for health (1) recommended that
+“governments should enact laws and policies that require government agencies and
+companies to conduct impact assessments of AI technologies, which should address ethics,
+human rights, safety and data protection, throughout the life cycle of an AI system”. The
+guidance also noted that “impact assessments should be audited by an independent third
+party before and after introduction of an AI technology and published” (1). The results of
+impact assessments should be disclosed publicly, while accounting for proprietary or sensitive
+information, and should be available to the public and groups that may be affected. In the
+same way as for audits (see above), impact assessments might have to be examined closely,
+especially if they are conducted by third parties that offer tools or services, to ensure that they
+are of adequate quality and rigour.
+
+

@@ -1,0 +1,47 @@
+14
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+• Inaccurate, incomplete or false statements: As in the use of LMMs by clinicians and
+health-care professionals, use of LMMs by patients and laypeople is associated
+with risks of false, biased, incomplete or inaccurate statements, including from AI
+programmes that claim to provide medical information. The risks are heightened
+when used by a person without medical expertise, who will have no basis for
+challenging the response, have no access to another source of information or when
+used by children (Box 2). Although people have used Internet searches to obtain
+medical information for several decades, an LMM can provide answers that will
+appear to be “correct”, with reference only to other LMMs (which carry the same risks)
+for a quick comparison.
+• Manipulation: Many LMM-powered chatbot applications have distinct approaches
+to chatbot dialogue, which is expected to become both more persuasive and
+more addictive (46), and chatbots may eventually be able to adapt conversational
+patterns to each user (41). Chatbots can provide responses to questions or engage in
+conversation to persuade individuals to undertake actions that go against their selfinterest or well-being (12). Several experts have called for urgent action to manage
+the potential negative consequences of chatbots, noting that they could become
+“emotionally manipulative” (47,48). One highly publicized case involved a person in
+Belgium with anxiety, who committed suicide after 6 weeks of intensive conversation
+with a chatbot (49).
+• Privacy: Use of LMMs by patients and laypeople may not be private and may not
+respect the confidentiality of personal and health information that they share.
+Users of LMMs for other purposes have tended to share sensitive information, such
+as company proprietary information (50). Data that are shared on an LMM do not
+necessarily disappear, as companies may use them to improve their AI models (50),
+even though there may be no legal basis for doing so, even though the data may
+eventually be removed from company servers (51). A related problem is sharing of
+information on an LMM with other users of the LMM, whether because the other user
+specifically requests the LMM to disclose such information (52) or, in the case of one
+LMM, mistaken disclosure of other people’s chat histories (even if not the substance
+of their conversations) (53). Thus, if a person’s identifiable medical information is fed
+into an LMM, it could be disclosed to third parties (54).
+• Degradation of interactions between clinicians, laypeople and patients: Use of LMMs
+by patients or their caregivers could change the physician–patient relationship
+fundamentally. The increase in Internet searches by patients during the past two
+decades has already changed these relationships, as patients can use the information
+they find to challenge or seek more information from their health-care provider.
+While an LMM could improve such dialogue, a patient or caregiver might decide to
+rely wholly on an LMM for prognosis and treatment and thereby reduce or eliminate
+appropriate reliance on professional medical judgement and support. A related
+concern is that, if an AI technology reduces contact between a provider and a
+patient, it could reduce the opportunities for clinicians to promote health and could
+
+

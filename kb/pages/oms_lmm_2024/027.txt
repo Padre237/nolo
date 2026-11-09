@@ -1,0 +1,42 @@
+2 Applications and challenges of use of LMMs in health
+
+data, although their datasets do include such information. For example, in several health-care
+systems in the USA, an LMM provided by one technology company is being pilot-tested to read
+messages from patients and to draft responses from doctors to reduce the time that medical
+staff spend in replying to patient queries. This practice is intended to decrease the burn-out of
+health-care workers, who field thousands of messages daily, and to enable them to focus on
+their clinical duties (“keyboard liberation”) (25). Thus, when a patient message is received, the
+LMM displays a draft reply based on both information from the patient and a version of their
+electronic medical history. While the AI is used only for some patient questions, the replies
+require heavy editing (25). Nevertheless, a study in the USA found that a Chat GPT-powered
+chatbot performed better than qualified doctors in responding to questions posed on an
+online forum. Of the 195 questions selected, independent evaluators preferred the chatbot
+responses to the physician responses in nearly 80% of cases (26). Chatbots should also be
+helpful in answering standardized “curb-side consult” questions and providing information
+and responses on the initial presentation of a patient or to summarize laboratory test
+results (27).
+Companies and universities are also developing LMMs trained with medical and health data
+or electronic health records, which include LMMs based on small data sets. For example,
+one LMM was trained on a dataset of an estimated 30 000 medical case reports to learn the
+relations between medical conditions and symptoms to assist in diagnoses (28). Another LMM
+was trained on a dataset of over 100 000 chest X-rays to identify abnormalities and eventually
+provide insights or identify conditions (29). Several LMMs that have been publicly evaluated
+were trained with an algorithm on millions of electronic health records and other sources
+of specialized and general medical knowledge. The approach improved the ability of an
+algorithm to process different forms of written medical information and to issue responses
+(“medical question answering”) (30).
+Several of the largest technology companies are adapting their general-purpose LMMs to ones
+that could assist in clinical diagnoses and care. One technology company is developing MedPaLM 2, which is intended to answer questions and summarize insights from medical texts and
+is now evolving to synthesize images (such as X-rays and mammograms) to write reports and
+respond to follow-up questions, to facilitate additional queries by clinicians, a functionality
+that could mitigate “peer disagreement” between a health-care worker and a computer (31).
+The long-term vision is to develop “generalist medical artificial intelligence”, which will allow
+health-care workers to dialogue flexibly with an LMM to generate responses according to
+customized, clinician-driven queries. Thus, a user could adapt a generalist medical AI model
+to a new task by describing what is required in common speech, without having to retrain
+the LMM or training the LMM to accept different types of unstructured data to generate a
+response (5).
+
+9
+
+

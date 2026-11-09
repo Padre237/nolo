@@ -1,0 +1,46 @@
+# Règles de triage de l'agent d'orientation (niveau d'urgence et type de structure)
+# STATUT : PROPOSITION DE L'ÉQUIPE, À VALIDER PAR UN CLINICIEN. Ce fichier n'est PAS un texte officiel.
+# Il s'inspire des signes généraux de danger de l'OMS (PCIME) et du bon sens clinique. Avant la soumission,
+# chaque règle doit être rattachée à un document de référence ouvert, ingéré dans la base de connaissances.
+# Le système ORIENTE vers un niveau de soins ; il ne pose aucun diagnostic et ne recommande aucun médicament
+# (les médicaments exigent une ordonnance au Cameroun depuis le 1er juillet 2024 : texte officiel à ingérer).
+
+niveaux:
+  URGENCE: "Aller immédiatement aux urgences ou appeler les secours ; ligne verte MINSANTE 1510 pour les signaux"
+  CONSULTATION_24H: "Consulter un centre de santé dans la journée"
+  CONSULTATION: "Consulter un centre de santé dans les prochains jours"
+  SURVEILLANCE: "Surveiller les symptômes ; consulter s'ils s'aggravent ou persistent"
+
+signes_urgence_tout_age:   # -> URGENCE
+  - douleur_thoracique
+  - difficulte_respiratoire_severe
+  - perte_de_conscience
+  - convulsions
+  - saignements          # avec fièvre : correspond aussi à la définition communautaire FHV
+  - raideur_nuque        # avec fièvre : correspond aussi à la définition communautaire MEN
+  - paralysie_membre_soudaine
+
+signes_urgence_enfant_moins_5_ans:   # signes généraux de danger (PCIME/OMS) -> URGENCE
+  - incapable_de_boire_ou_teter
+  - vomit_tout
+  - convulsions
+  - lethargie
+
+regles_consultation_24h:
+  - {si_tous: [fievre], age_max: 4}
+  - {si_tous: [fievre, eruption_cutanee]}
+  - {si_tous: [diarrhee, sang_dans_selles]}
+  - {si_tous: [toux], au_moins_un: [souffle_court, difficulte_respiratoire], age_max: 4}
+  - {si_tous: [morsure_animal]}
+  - {si_tous: [fievre, jaunissement_yeux]}
+
+regles_consultation:
+  - {si_tous: [toux], duree_jours_min: 14}
+  - {si_tous: [fievre], duree_jours_min: 3}
+  - {si_tous: [diarrhee_aqueuse]}
+
+cas_ambigus_a_escalader:   # validation humaine (agent de santé / téléconsultant)
+  - utilisateur_mineur_sans_adulte
+  - symptomes_hors_vocabulaire
+  - regles_contradictoires
+  - grossesse

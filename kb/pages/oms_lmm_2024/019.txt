@@ -1,0 +1,45 @@
+1 Introduction
+
+1 Introduction
+This guidance addresses the emerging uses of large multi-modal models (LMMs) for healthrelated applications.2 It includes the potential benefits and risks of use of LMMs in health care
+and medicine and approaches to the governance of LMMs that could best ensure compliance
+with guidelines and obligations for ethics, human rights and safety. The guidance builds
+on WHO guidance issued in June 2021 – Ethics and governance of artificial intelligence for
+health (1), which addressed the ethical challenges and risks of use of artificial intelligence (AI)
+in health, identified six principles for ensuring that AI is used to the public benefit of all
+countries, and issued recommendations to enhance the governance of AI for health in order to
+maximize the promise of the technology.
+AI refers to the capability of algorithms integrated into systems and tools to learn from data
+to perform automated tasks, without programming of each step explicitly by a human.
+Generative AI is a category of AI techniques in which machine learning models are used to
+train algorithms on data sets to create new outputs, such as text, images, videos and music.
+Generative AI models learn patterns and structures from training data and produce new data
+based on predictions made from the learnt patterns. Generative AI models can be improved
+by reinforcement learning with human feedback, wherein human trainers rank responses
+provided by generative AI models to train algorithms to issue responses that maximize how
+much humans will value the response. Generative AI has potential applications in various
+fields, including design, content generation, simulation and scientific discovery.
+Much attention has been focused on a specific type of generative AI, large language models,
+which receive one type of input – text – and provide a response that is also in text. Large
+language models are examples of large unimodal models, which are the basis for the
+operation of early versions of chatbots that integrate these models. Although large language
+models engage in dialogue, the models themselves have no conception of what they are
+producing. They merely predict the next word according to previous words, learnt patterns or
+combinations of words (2).
+This document addresses the growing use of LMMs (including large language models), which,
+for use in health care and medicine, are trained with highly diverse datasets, extending
+beyond text, and include biosensor, genomic, epigenomic, proteomic, imaging, clinical, social
+and environmental data (3). Therefore, LMMs can accept more than one type of input and
+generate outputs that are not limited to the type of data entered. LMMs are envisioned for
+diverse applications in health care and drug development.
+LMMs differ from previous types of AI and machine learning. While AI has already been
+integrated widely into many consumer applications, the outputs of most algorithms neither
+2
+
+For the purposes of this guidance, the terms “large-multi-modal models” and “general-purpose foundation models”
+are used interchangeably, the latter term being used particularly in discussions of governance. It is not yet known,
+however, whether LMMs can accomplish a wide range of tasks for general purposes.
+
+1
+
+

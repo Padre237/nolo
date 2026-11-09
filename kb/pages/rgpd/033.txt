@@ -1,0 +1,59 @@
+4.5.2016
+
+FR
+
+Journal officiel de l'Union européenne
+
+L 119/33
+
+2.
+Le présent règlement s'applique au traitement des données à caractère personnel relatives à des personnes
+concernées qui se trouvent sur le territoire de l'Union par un responsable du traitement ou un sous-traitant qui n'est pas
+établi dans l'Union, lorsque les activités de traitement sont liées:
+a) à l'offre de biens ou de services à ces personnes concernées dans l'Union, qu'un paiement soit exigé ou non desdites
+personnes; ou
+b) au suivi du comportement de ces personnes, dans la mesure où il s'agit d'un comportement qui a lieu au sein de
+l'Union.
+3.
+Le présent règlement s'applique au traitement de données à caractère personnel par un responsable du traitement
+qui n'est pas établi dans l'Union mais dans un lieu où le droit d'un État membre s'applique en vertu du droit interna­
+tional public.
+
+Article 4
+Définitions
+Aux fins du présent règlement, on entend par:
+1) «données à caractère personnel», toute information se rapportant à une personne physique identifiée ou identifiable
+(ci-après dénommée «personne concernée»); est réputée être une «personne physique identifiable» une personne
+physique qui peut être identifiée, directement ou indirectement, notamment par référence à un identifiant, tel qu'un
+nom, un numéro d'identification, des données de localisation, un identifiant en ligne, ou à un ou plusieurs éléments
+spécifiques propres à son identité physique, physiologique, génétique, psychique, économique, culturelle ou sociale;
+2) «traitement», toute opération ou tout ensemble d'opérations effectuées ou non à l'aide de procédés automatisés et
+appliquées à des données ou des ensembles de données à caractère personnel, telles que la collecte, l'enregistrement,
+l'organisation, la structuration, la conservation, l'adaptation ou la modification, l'extraction, la consultation, l'utili­
+sation, la communication par transmission, la diffusion ou toute autre forme de mise à disposition, le rappro­
+chement ou l'interconnexion, la limitation, l'effacement ou la destruction;
+3) «limitation du traitement», le marquage de données à caractère personnel conservées, en vue de limiter leur
+traitement futur;
+4) «profilage», toute forme de traitement automatisé de données à caractère personnel consistant à utiliser ces données
+à caractère personnel pour évaluer certains aspects personnels relatifs à une personne physique, notamment pour
+analyser ou prédire des éléments concernant le rendement au travail, la situation économique, la santé, les
+préférences personnelles, les intérêts, la fiabilité, le comportement, la localisation ou les déplacements de cette
+personne physique;
+5) «pseudonymisation», le traitement de données à caractère personnel de telle façon que celles-ci ne puissent plus être
+attribuées à une personne concernée précise sans avoir recours à des informations supplémentaires, pour autant que
+ces informations supplémentaires soient conservées séparément et soumises à des mesures techniques et organisa­
+tionnelles afin de garantir que les données à caractère personnel ne sont pas attribuées à une personne physique
+identifiée ou identifiable;
+6) «fichier», tout ensemble structuré de données à caractère personnel accessibles selon des critères déterminés, que cet
+ensemble soit centralisé, décentralisé ou réparti de manière fonctionnelle ou géographique;
+7) «responsable du traitement», la personne physique ou morale, l'autorité publique, le service ou un autre organisme
+qui, seul ou conjointement avec d'autres, détermine les finalités et les moyens du traitement; lorsque les finalités et
+les moyens de ce traitement sont déterminés par le droit de l'Union ou le droit d'un État membre, le responsable du
+traitement peut être désigné ou les critères spécifiques applicables à sa désignation peuvent être prévus par le droit
+de l'Union ou par le droit d'un État membre;
+8) «sous-traitant», la personne physique ou morale, l'autorité publique, le service ou un autre organisme qui traite des
+données à caractère personnel pour le compte du responsable du traitement;
+9) «destinataire», la personne physique ou morale, l'autorité publique, le service ou tout autre organisme qui reçoit
+communication de données à caractère personnel, qu'il s'agisse ou non d'un tiers. Toutefois, les autorités publiques
+
+

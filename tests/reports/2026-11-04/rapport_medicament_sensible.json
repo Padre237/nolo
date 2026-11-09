@@ -1,0 +1,65 @@
+{
+ "scenario": "medicament_sensible",
+ "version_politique": "1.3.0",
+ "gouvernance": true,
+ "etapes": [
+  {
+   "etape": 1,
+   "evenement": "Recherche de « tenofovir_lamivudine_dolutegravir » (antirétroviral)",
+   "attendu": "Classe sensible : le serveur BLOQUE la recherche (art. 48) avec repli « appareil » ; tuile de zone téléchargée sans la requête ; au moins une pharmacie agréée au stock frais (≤ 48 h) affichée dans le rayon de 5 km, avec la mention « Délivré sur ordonnance » ; la DCI n'apparaît jamais dans le journal",
+   "obtenu": "serveur : BLOQUE (art. 48, repli appareil) ; tuile de 247 stocks téléchargée sans requête ; recherche locale : 1 pharmacies (rayon 5.0 km), mention « Délivré sur ordonnance » ; la DCI n'apparaît nulle part dans le journal",
+   "conforme": true,
+   "ref_audit": "evt-e972f648-6e3a-4083-bd42-a545919fdad5"
+  },
+  {
+   "etape": 2,
+   "evenement": "L'utilisateur signale « introuvable » dans l'une d'elles",
+   "attendu": "Agent Conformité : pseudonymisation imposée, aucun lien utilisateur-médicament conservé ; score mis à jour",
+   "obtenu": "AUTORISE_AVEC_CONDITIONS ['retirer_dci', 'retirer_pseudonyme'] ; aucun lien utilisateur-médicament conservé",
+   "conforme": true,
+   "ref_audit": "evt-381483f6-066d-4d47-bd1f-583a9abad945"
+  }
+ ],
+ "decisions": [
+  {
+   "action": "ressources.rechercher_medicament",
+   "verdict": "BLOQUE",
+   "fragments": [
+    "CMR-LOI-2024-017::0048"
+   ],
+   "conditions": [],
+   "repli": "appareil",
+   "justification": "CATEGORIE_INTERDITE_ART48"
+  },
+  {
+   "action": "ressources.telecharger_tuile",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0048"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "TUILE_SANS_REQUETE"
+  },
+  {
+   "action": "fiabilite.enregistrer_signalement_sensible",
+   "verdict": "AUTORISE_AVEC_CONDITIONS",
+   "fragments": [
+    "CMR-LOI-2024-017::0048"
+   ],
+   "conditions": [
+    "retirer_dci",
+    "retirer_pseudonyme"
+   ],
+   "repli": null,
+   "justification": "SIGNALEMENT_SANS_TRACE_SENSIBLE"
+  }
+ ],
+ "violations": [],
+ "journal": {
+  "fichier": "tests/reports/2026-11-04/journal_medicament_sensible.jsonl",
+  "evenements": 3,
+  "chaine_valide": true,
+  "erreurs_chaine": []
+ }
+}

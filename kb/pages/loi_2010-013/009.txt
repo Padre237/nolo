@@ -1,0 +1,42 @@
+9
+
+59. Systèmes globaux de télécommunications par satellite
+(GMPCS) : système à satellite fixe ou mobile, à large bande ou à
+bande étroite, mondial ou régional, géostationnaire ou non
+géostationnaire, existant ou en projet, fournissant des services de
+communications électroniques directement ou indirectement aux
+utilisateurs finaux à partir d'une constellation de satellites ;
+60. Télécentre communautaire : infrastructure commune qui offre
+les services de communications électroniques à partir d’un terminal
+ou des terminaux mis à la disposition d’une communauté afin de lui
+permettre de communiquer à un prix abordable ;
+61. Télécommunications : toute transmission, émission ou réception
+de signes et signaux, d’écrits, d’images de sons ou de
+renseignements de toutes natures, par fil, optique, radioélectrique
+ou autre système électromagnétique ;
+62. Télédistribution : transmission ou retransmission de signaux de
+radiodiffusion reçus par satellite ou par un système au sol approprié
+ou produit localement à des abonnés à travers un réseau câblé ou
+hertzien ;
+63. Utilisateur : personne physique ou morale utilisant un service de
+communications électroniques à des fins privées ou professionnelles
+sans être nécessairement abonnée à ce service.
+TITRE II
+DU REGIME JURIDIQUE DES RESEAUX ET DES SERVICES
+DE COMMUNICATIONS ELECTRONIQUES
+
+Article 6.- (1) Sont du domaine exclusif de l'Etat et ne peuvent faire
+l’objet de concession :
+- la législation et la réglementation en matière de communications
+électroniques ;
+- la gestion du spectre des fréquences et des positions orbitales
+nationales.
+(2) Sont du domaine exclusif de l’Etat et peuvent faire l’objet de
+concession à une ou plusieurs personnes morales de droit public ou privé,
+dans les conditions définies à l’article 9 ci-dessous :
+- la construction et l’exploitation sur toute l’étendue du territoire
+national, des points d’atterrissement des câbles sous-marins ;
+- la construction et l’exploitation de téléports vers un ou plusieurs
+réseaux à satellites.
+
+

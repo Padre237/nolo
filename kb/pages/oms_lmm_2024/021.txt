@@ -1,0 +1,49 @@
+1 Introduction
+
+Thereafter, the provider can market a product or service based on the LMM to a customer (or
+“deployer”), such as a ministry of health, a health-care system, a hospital, a pharmaceutical
+company or even an individual, such as a health-care provider. The customer who acquires or
+licenses the product or application may then use it directly for patients, health-care providers,
+other entities in the health system or laypeople or in its own business. The value chain can
+be “vertically integrated”, so that a company (or other entity, such as a health system) that
+collects data and trains a general-purpose foundation model can modify the LMM for a
+particular use and provide the application directly to users.
+WHO recognizes the tremendous benefits that AI could provide to health systems, including
+improving public health and achieving universal health coverage. Yet, as described in the WHO
+guidance on the ethics and governance of AI for health (1), it entails significant risks that could
+both undermine public health and imperil individual dignity, privacy and human rights. Even
+though LMMs are relatively new, the speed of their uptake and diffusion led WHO to provide
+this guidance to ensure that they could potentially be used successfully and sustainably
+worldwide. WHO recognizes that this guidance is being issued at a time of many competing
+views about the potential benefits and risks of AI, the ethical principles that should apply to
+its design and use and approaches to governance and regulation. As the guidance is being
+issued shortly after the first applications of LMMs in health care and before successively more
+powerful models will be released, WHO will update the guidance to keep up with the rapid
+evolution of the technology, how society addresses its use and the health consequences of the
+use of LMMs beyond health care and medicine.
+
+1.1
+
+Significance of LMMs
+
+LMMs, although relatively new and untested, have had an inordinate impact on society in
+various domains, including health care and medicine. Chat GPT, a large-language model,
+successive versions of which have been released by a US technology company, was estimated
+to have 100 million monthly active users in January 2023, just 2 months after its launch. At the
+time, this made it the fastest-growing consumer application in history (6).
+Many companies are now developing LMMs or integrating LMMs into consumer applications,
+such as Internet search engines. Large technology companies are rapidly integrating LMMs
+into most applications or creating new ones (7,8). New companies, backed by millions of US
+dollars in private investment, are developing competing LMMs (9). Open-source LMMs are also
+emerging more quickly and inexpensively than those developed by the largest companies, due
+to the availability of such platforms (10).
+Even as the advent of LMMs is fuelling new investment in the technology sector, and new
+products are being released, some companies themselves admit that they do not fully
+understand why LMMs generate certain responses (11). Despite the use of reinforcement
+learning with human feedback, LMMs can generate outputs that are not always predictable
+or controlled, including LMMs taking part in “conversations”, which can be uncomfortable
+for users (12), or publishing content that is erroneous or otherwise faulty but highly
+
+3
+
+

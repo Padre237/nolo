@@ -1,0 +1,43 @@
+Executive summary
+
+components known as “plug-ins” to channel, filter and organize the LMMs into formal or
+regulated formats to generate “digestible” results.1
+Thereafter, the provider can market a product or service based on the LMM to a customer (or
+“deployer”), such as a ministry of health, a health-care system, a hospital, a pharmaceutical
+company or even an individual, such as a health-care provider. The customer who acquires or
+licenses the product or application may then use it directly for patients, health-care providers,
+other entities in the health system, lay people or in its own business. The value chain can be
+“vertically integrated”, so that a company (or other entity, such as a national health system)
+that collects data and trains a general-purpose foundation model can modify the LMM for a
+particular use and provide the application directly to users.
+Governance is a means for enshrining ethical principles and human rights obligations through
+existing laws and policies and through new or revised laws, norms, internal codes of practice
+and procedures for developers and international agreements and frameworks.
+One way of framing the governance of LMMs is in the three stages of the AI value chain: (i)
+the design and development of general-purpose foundation models or LMMs; (ii) provision
+of a service, application or product based on a general-purpose foundation model; and (iii)
+deployment of a health-care service or application. In this guidance, each phase is examined
+with respect to three areas of enquiry:
+• What risks (described above) should be addressed at each stage of the value chain,
+and which actors are best placed to address those risks?
+• What can a relevant actor do to address the risks, and which ethical principles must
+be upheld?
+• What is the role of government, including relevant laws, policies and regulations?
+Certain risks can be addressed at each phase of the AI value chain, and certain actors are likely
+to play more important roles in mitigating each risk and upholding ethical values. While there
+is likely to be disagreement and tension about where responsibility rests between developers,
+providers and deployers, there are clear areas in which each actor is best placed or is the only
+entity with the capacity to address a potential or actual risk.
+
+Design and development of general-purpose foundation models (LMMs)
+During the design and development of general-purpose foundation models, the responsibility
+rests with the developers. Governments bear the responsibility to set laws and standards to
+require or forbid certain practices. Section 4 of this guidance provides recommendations to
+help address risks and maximize benefits during the development of LMMs.
+1
+
+Communication from Leong Tze-Yun, WHO expert on the ethics and governance of AI for health.
+
+xiii
+
+

@@ -1,0 +1,44 @@
+24
+
+Article 69.- Est puni d’un emprisonnement de cinq (05) à dix (10) ans et d’une
+amende de 10.000.000 (dix millions) à 100.000.000 (cent millions) F CFA ou
+de l’une de ces deux peines seulement, celui qui accède sans droit, et en
+violation des mesures de sécurité, à l’ensemble ou à une partie d’un réseau de
+communications électroniques, d’un système d’information ou d’un équipement
+terminal, afin d’obtenir des informations ou des données, en relation avec un
+système d’information connecté à un autre système d’information.
+Article 70.- Est puni d’une amende de 1.000.000 (un million) à 5.000.000 (cinq
+millions) F CFA, celui qui provoque par saturation, l’attaque d’une ressource de
+réseau de communications électroniques ou d’un système d’information dans
+le but de l’effondrer en empêchant la réalisation des services attendus.
+Article 71.- Est puni d’un emprisonnement de deux (02) à cinq (05) ans et d’une
+amende de 1.000.000 (un million) à 25.000.000 (vingt cinq millions) F CFA,
+celui qui introduit sans droit, des données dans un système d’information ou
+dans un réseau de communications électroniques en vue de supprimer ou de
+modifier les données qui en sont contenues.
+Article 72.- Est puni des peines prévues par l’article 66 ci-dessus celui qui, de
+quelque manière que ce soit, sans droit, introduit, altère, efface, ou supprime,
+afin d’obtenir un bénéfice économique, les données électroniques, de manière
+à causer un préjudice patrimonial à autrui.
+Article 73.- (1) Est puni d’un emprisonnement deux (02) à dix (10) ans et d’une
+amende de 25.000.000 (vingt cinq millions) à 50.000.000 (cinquante millions)
+F CFA, ou de l’une de ces deux peines seulement, celui qui, par la voie d’un
+système d’information ou dans un réseau de communications contrefait, falsifie
+une carte de paiement, de crédit, ou de retrait ou fait usage ou tente de faire
+usage en connaissance de cause, d’une carte de paiement, de crédit ou de
+retrait contrefaite ou falsifiée.
+(2) Est puni des peines prévues à l’alinéa 1 ci-dessus, quiconque,
+en connaissance de cause, accepte de recevoir par voie de communications
+électroniques, un règlement au moyen d'une carte de paiement, de crédit ou de
+retrait contrefaite ou falsifiée.
+Article 74.- (1) Est puni d’un emprisonnement de un (01) à deux (02) ans et
+d’une amende de 1.000.000 (un million) à 5.000.000 (cinq millions) F CFA,
+quiconque, au moyen d’un procédé quelconque porte atteinte à l'intimité de la
+vie privée d'autrui en fixant, enregistrant ou transmettant, sans le
+consentement de leur auteur, les données électroniques ayant un caractère
+privé ou confidentiel.
+(2) Sont passibles des peines prévues à l’alinéa 1 ci-dessus les
+personnes qui, sans droit, interceptent des données personnelles lors de leur
+transmission d’un système d’information à un autre ;
+
+

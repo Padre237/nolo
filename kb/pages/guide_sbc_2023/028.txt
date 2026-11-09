@@ -1,0 +1,61 @@
+                                   Toute personne souffrant de la fièvre et du
+                                   jaunissement des yeux ou de la peau
+                                   (plantes des pieds, ongles, paumes des
+                                   mains, mains) ou décédée des suites d’une
+                                   maladie grave s’accompagnant de fièvre
+FJA /         Fièvre jaune /       ou de saignements.
+YEF           Yellow fever
+                                   Anyone suffering from fever and
+                                   yellowing of the eyes or skin (soles of the
+                                   feet, nails, palms of the hands, hands) or
+                                   who died following a serious illness
+                                   accompanied by fever or bleeding.
+
+
+
+
+                                   Définition communautaire des signaux
+Code         Signal (Signal)
+                                   / Community definition of signals
+
+        Deux personnes ou plus présentant un ou plusieurs signes/symptômes
+        similaires et issues du même milieu (ménage, lieu de travail, école,
+        rue, par exemple) en l’espace d’une seule semaine ;
+SC1
+        Two or more people with one or more similar signs/symptoms and
+        from the same environment (e.g. household, workplace, school, street)
+        within a single week;
+
+
+        Un ou plusieurs décès inexpliqués d'animaux en l’espace d’une
+        semaine dans la même communauté ;
+SC2
+        One or more unexplained animal deaths within a week in the same
+        community
+
+
+        Tout événement qui présente un risque pour la Santé Publique,
+        notamment des catastrophes (naturelles, provoquées ou
+        technologiques), ou des symptômes rarement observés ;
+SC3
+        Any event that presents a public health risk, including disasters
+        (natural, man-made or technological), or rarely observed symptoms;
+
+
+        Toute personne en provenance d’un autre pays arrivée dans une
+        communauté dans un délai maximum de deux semaines présentant des
+        signes de maladie ;
+SC4
+        Anyone from another country who arrived in a community within a
+        maximum of two weeks showing signs of illness;
+
+
+        Toute personne ou plus qui décèdent en communauté;
+SC5
+        Anyone or more people who dies in the community;
+
+
+
+
+                                                   27
+

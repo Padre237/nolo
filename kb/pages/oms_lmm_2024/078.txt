@@ -1,0 +1,43 @@
+60
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+8 International governance of
+LMMs
+Governments should support collective development of international rules for the governance
+of LMMs and other forms of AI used in health care, as such uses are proliferating globally. One
+example is the WHO global strategy on digital health 2020-2025. The process should include
+greater cooperation and collaboration within the United Nations system to respond to the
+opportunities and challenges of deploying AI in health care and of its wider application in
+society and the economy. Unless governments work together to set appropriate, enforceable
+standards, the number of LMMs and other forms of AI that do not meet appropriate legal,
+ethical and safety standards will increase, potentially causing harm if regulations and other
+types of protection are not introduced or are not properly enforced, whether willingly
+or because there are inadequate resources. WHO recently issued a new publication,
+in consultation with regulatory agencies worldwide, that outlines key principles that
+governments and regulatory authorities can follow to develop new guidance or adapt existing
+guidance on AI (164).
+International governance can avoid a “race to the bottom” among companies seeking a
+first-mover advantage in which standards of safety and efficacy are ignored, and among
+governments seeking advantage in the geopolitical race for technological supremacy. Thus,
+international governance can ensure that all companies meet minimum standards of safety
+and efficacy and also avoid introduction of regulations that provide a competitive advantage
+or disadvantage for either companies or governments. International governance can make
+governments accountable for their investments and participation in the development and
+deployment of AI-based systems and ensure that they introduce appropriate regulations
+that respect ethical principles, human rights and international law. The absence of globally
+enforceable standards may also have a negative impact on product adoption.
+International governance could take several forms. One suggestion is to establish a public
+research agency, funded by several governments, such as the European Organization for
+Nuclear Research, an international collaboration, with funding and human resources to
+pursue large, transformative projects the results of which are shared openly (165,166). In a
+separate proposal, it was suggested that such an entity could be charged with developing
+the most advanced, and most risky, forms of AI in a highly secure facility, making other
+attempts to build such forms of AI illegal (167). At present, such large-scale projects are not
+in the domain of publicly funded projects to generate public goods but are the purview of
+large technology companies in commercial competition with one another. Other leaders,
+including world leaders and technology executives, have called for AI to be treated similarly to
+nuclear weapons, with a global regulatory framework similar to treaties for the use of nuclear
+arms (109).
+
+

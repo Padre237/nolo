@@ -1,0 +1,9 @@
+AFFLUX MASSIF DE BLESSÉS — OUTIL DE TRIAGE INTÉGRÉ INTER-AGENCES (MC-IITT) — CATÉGORIES DE TRIAGE
+Point de triage initial. Le patient peut-il marcher ? Oui : VERT, puis évaluation (peut devenir ROUGE ou JAUNE). Non : critères rouges ?
+Critères rouges ? Oui : ROUGE, puis évaluation (peut devenir BLEU ou GRIS). Non : JAUNE, puis évaluation (peut devenir ROUGE).
+CRITÈRES ROUGES : A — obstruction des voies aériennes ; B — détresse respiratoire ; C — hémorragie majeure (massive ou catastrophique) OU absence de pouls radial OU TRC > 3 secondes ; D — état mental altéré ou inconscience ; brûlure grave (> 40 % de la surface corporelle totale) ; impression clinique défavorable.
+CRITÈRES BLEUS : remplit les critères de futilité des soins OU nécessite des soins palliatifs OU nécessite un traitement curatif dépassant la capacité actuelle.
+CRITÈRES GRIS : ne respire pas après libération des voies aériennes ET absence de pouls.
+ÉVALUATION : lorsque l'évaluation détaillée est retardée, répéter le triage en cas d'afflux massif (IITT). L'évaluation inclut ABCDE et les signes vitaux à haut risque. Réaliser un triage additionnel selon l'évaluation du patient ou en cas de préoccupation clinique.
+SIGNES VITAUX À HAUT RISQUE : FR > 12 ans < 10 ou > 30 ; 5-12 ans < 10 ou > 30 ; 1-4 ans < 20 ou > 40 ; < 1 an < 25 ou > 50. FC > 12 ans < 60 ou > 130 ; 5-12 ans < 70 ou > 140 ; 1-4 ans < 80 ou > 160 ; < 1 an < 90 ou > 180. Saturation en oxygène < 92 % ; signes d'hypoperfusion ; AVPU autre que A.
+© World Health Organization, Médecins Sans Frontières (MSF) and the International Committee of the Red Cross (ICRC). Some rights reserved. This work is available under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO licence (CC BY-NC-SA 3.0 IGO).

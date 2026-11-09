@@ -1,0 +1,47 @@
+18
+
+(2) Les fournisseurs de contenus des réseaux de communications
+électroniques et systèmes d’information, ont l’obligation de mettre en place
+des filtres pour faire face aux atteintes préjudiciables aux données
+personnelles et à la vie privée des utilisateurs.
+Article 47.- L’utilisation des réseaux de communications électroniques et des
+systèmes d’information aux fins de stocker les informations ou d’accéder à des
+informations stockées dans un équipement terminal d’une personne physique
+ou morale, ne peut se faire qu’avec son consentement préalable.
+Article 48.- (1) L’émission des messages électroniques à des fins de prospection
+en dissimulant l’identité de l’émetteur au nom duquel la communication est
+faite, ou sans indiquer une adresse valide à laquelle le destinataire peut
+transmettre une demande visant à obtenir l’arrêt de ces informations est
+interdite.
+(2) L’émission des messages électroniques en usurpant l’identité
+d’autrui est interdite.
+SECTION V
+DE L’INTERCEPTION DES COMMUNICATIONS ELECTRONIQUES
+
+Article 49.- Nonobstant les dispositions du Code de Procédure Pénale, en cas de
+crimes ou délits prévus dans la présente loi, l’Officier de Police Judiciaire peut
+intercepter, enregistrer ou transcrire toute communication électronique.
+Article 50.- Si les opérateurs de réseaux de communications électroniques ou
+les fournisseurs de services de communications électroniques procèdent au
+codage, à la compression ou au chiffrement des données transmises, les
+interceptions correspondantes sont fournies en clair aux services qui les ont
+requis.
+Article 51.- Les personnels des opérateurs des réseaux de communications
+électroniques ou des fournisseurs de services de communications électroniques
+sont astreints au secret professionnel quant aux réquisitions reçues.
+TITRE III
+DE LA CYBERCRIMINALITE
+CHAPITRE I
+DES DISPOSITIONS DU DROIT PROCESSUEL
+
+Article 52.- (1) En cas d’infraction cybernétique, les Officiers de Police
+Judiciaire à compétence générale et les agents habilités de l’Agence,
+procèdent aux enquêtes conformément aux dispositions du Code de Procédure
+Pénale.
+(2) Avant leur entrée en fonction, les agents habilités de l’Agence
+prêtent serment, devant le Tribunal de Première Instance compétent, selon la
+formule suivante : « Je jure de remplir loyalement mes fonctions et d’observer
+en tout les devoirs qu’elles m’imposent, de garder secrètes les informations
+dont j’ai eu connaissance à l’occasion ou dans l’exercice de mes fonctions ».
+
+

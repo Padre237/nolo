@@ -1,0 +1,8 @@
+# Preuve d'exécution — évaluation de la recherche documentaire (base v6 : 18 sources, 1 893 fragments, 22 questions)
+# Date : 2026-11-04T02:18:08+01:00
+$ python3 eval/run_eval.py --embed bm25 --k 5
+Document attendu dans le top 5 : 22/22 ; référence exacte : 22/22 (embedding=bm25)
+$ python3 eval/run_eval.py --embed bm25 --k 1
+Document attendu dans le top 1 : 18/22 ; référence exacte : 15/22 (embedding=bm25)
+$ python3 eval/run_eval.py --embed hash --k 5
+Document attendu dans le top 5 : 17/22 ; référence exacte : 13/22 (embedding=hash)

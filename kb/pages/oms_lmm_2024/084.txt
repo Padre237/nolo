@@ -1,0 +1,67 @@
+66
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+47.
+
+Smuha NA, De Ketalaere M, Coeckelbergh M, Dewitte P, Poullet Y. Open letter: We are not
+ready for manipulative AI – urgent need for action. KU Leuven, 31 March 2023 (https://
+www.law.kuleuven.be/ai-summer-school/open-brief/open-letter-manipulative-ai,
+accessed 29 May 2023).
+
+48.
+
+Cuthbertson A. “No, I’m not a robot”: ChatGPT successor tricks worker into thinking it
+is human. Independent, 15 March 2023 (https://www.independent.co.uk/tech/chatgptgpt4-ai-openai-b2301523.html, accessed 26 June 2023).
+
+49.
+
+Walker L. Belgian man dies by suicide following exchanges with chatbot, The Brussels
+Times, 28 March 2023 (https://www.brusselstimes.com/430098/belgian-man-commitssuicide-following-exchanges-with-chatgpt, accessed 29 May 2023).
+
+50.
+
+DeGuerin M. Oops: Samsung employees leaked confidential data to ChatGPT. Gizmodo, 6
+April 2023 (https://gizmodo.com/chatgpt-ai-samsung-employees-leak-data-1850307376,
+accessed 29 May 2023).
+
+51.
+
+Privacy policy. OpenAI, 27 April 2023 (https://openai.com/policies/privacy-policy,
+accessed 29 March 2023).
+
+52.
+
+Coles C. 11% of data employees paste into ChatGPT is confidential. Cyberhaven, 19 April
+2023 (https://www.cyberhaven.com/blog/4-2-of-workers-have-pasted-company-datainto-chatgpt/, accessed 29 May 2023).
+
+53.
+
+Mihalcik C. ChatGPT bug exposed some subscribers’ payment info. CNET, 24 March
+2023.(https://www.cnet.com/tech/services-and-software/chatgpt-bug-exposed-somesubscribers-payment-info/, accessed 29 May 2023).
+
+54.
+
+Moodley K, Rennie S. ChatGPT has many uses. Experts explore what this means
+for healthcare and medical research. The Conversation, 22 February 2023 (https://
+theconversation.com/chatgpt-has-many-uses-experts-explore-what-this-means-forhealthcare-and-medical-research-200283, accessed 2 June 2023).
+
+55.
+
+De Proost M, Pozzi G. Conversational artificial intelligence and the potential for epistemic
+injustice. Am J Bioethics. 2023;23(5):51–3. doi:10.1080/15265161.2023.2191020.
+
+56.
+
+Disability and employment. New York: United Nations, Department of Economic and
+Social Affairs (Disability); undates (https://www.un.org/development/desa/disabilities/
+resources/factsheet-on-persons-with-disabilities/disability-and-employment.html,
+accessed 11 September 2023).
+
+57.
+
+Whittaker M, Alper M, Bennett CL, Hendren S, Kaziunas L, Mills Met al. Disability,
+bias and AI. New York: AI Now Institute; 2019 (https://ainowinstitute.org/wp-content/
+uploads/2023/04/disabilitybiasai-2019.pdf, accessed 11 September 2023).
+
+

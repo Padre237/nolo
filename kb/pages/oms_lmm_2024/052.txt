@@ -1,0 +1,42 @@
+34
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+4 Design and development of
+general-purpose foundation
+models (LMMs)
+General-purpose foundation models are usually trained on a vast amount of data, requiring
+tremendous computing power. Development of LMMs also requires specialized human
+resources, including scientific and engineering expertise. The WHO guidance on ethics and
+governance of AI for health (1) recommends that developers of medical AI “should invest in
+measures to improve the design, oversight, reliability and self-regulation of their products”.
+Although most findings and recommendations below could apply to all general-purpose
+foundation models, the guidance is intended for such models that may be or are used in
+health care and medicine (either directly by a user or through an application or service).
+The recommendations below are also intended to guide the design and use of LMMs trained
+specifically for use in health care and medicine, which may be used directly by users or
+through an application or service.
+
+4.1
+
+Risks to be addressed during the development of generalpurpose foundation models (LMMs)
+
+The design and development of general-purpose foundation models can introduce
+serious risks that, if left uncorrected, could have either a broad societal impact or specific
+negative consequences on the users of an LMM. Elimination or mitigation of such risks is
+the responsibility of the developer, because it is only the developer who can (or could)
+make certain decisions during design and development, which are beyond of the control
+of providers and deployers that may use the algorithm (and which cannot be mitigated by
+correct use of the technology by a provider, deployer or user) (120). The decisions refer, for
+example, to the data used to train an LMM (121). Obligations to ensure data protection and
+quality and to mitigate bias are also outside the control of the downstream developer of an
+application (121), as are measures that might have to be introduced to ensure that LMMs do
+not issue “AI-fuelled toxicity” (122). Failure to hold the developers of LMMs accountable for
+such design flaws shields the companies with the most resources from, as one report noted,
+“responsibility to tackle problems…which their methods may be thoughtlessly baking in as
+they rush to dominate a new form of applied AI” (122).
+At least eight risks should be addressed by the developer of a general-purpose foundation
+model, including through government laws and regulations:
+• bias (associated with the design and training data);
+
+

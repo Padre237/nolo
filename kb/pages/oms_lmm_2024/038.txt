@@ -1,0 +1,43 @@
+20
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+3 Risks to health systems and
+society and ethical concerns
+about use of LMMs
+Whereas many risks and concerns associated with LMMs affect individual users (such as
+health-care professionals, patients, researchers or caregivers), they may also pose systemic
+risks. Emerging or anticipated risks associated with use of LMMs and other AI-based
+technologies in health care include: (i) risks that could affect a country’s health system, (ii)
+risks for regulation and governance and (iii) international societal concerns.
+
+3.1
+
+Health systems
+
+Health systems are based on six building blocks: service delivery, the health workforce,
+health information systems, access to essential medicines, financing, and leadership and
+governance (70). LMMs could directly or indirectly impact these building blocks. The risks
+associated with use of LMMs that could affect health systems are described below.
+
+Overestimating the benefits of LMMs and discounting risks
+Some people tend to overstate and overestimate what AI can do, which can result in the
+uptake of unproven products and services that have not been subjected to rigorous evaluation
+for safety and efficacy (1). This is due partly to the enduring appeal of “technological
+solutionism”, in which technologies such as AI and LMMs are considered to be “magic bullets”
+for removing deeper social, structural, economic and institutional barriers (1), before it is
+shown that such technologies are useful, safe and effective.
+LMMs are novel and untested and, as noted above, do not produce facts but information that
+resembles facts and may be inaccurate. They have been the subject of intense consumer,
+political and public interest but could lead policy-makers, providers and patients to
+overestimate their benefits and to dismiss the challenges and problems that LMMs could
+introduce. For policy-makers, it may not be possible to obtain the evidence necessary to
+determine how widely LMMs should be used until they are already developed and used.
+Use of an LMM should not be prioritized over AI-based technologies that are already in use
+or over non-AI or non-digital solutions that may be underfunded and underused but have
+proven therapeutic or public health benefits. Unbalanced health care policy and misguided
+investments, especially in resource-constrained low- and middle-income countries, can
+divert attention and resources from proven interventions and intensify the pressure on health
+ministries to reduce public expenditure on health care (1).
+
+

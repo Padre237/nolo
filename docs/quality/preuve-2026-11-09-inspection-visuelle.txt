@@ -1,0 +1,174 @@
+# Preuve — inspection visuelle réelle de Nolo
+# Date : 2026-11-09
+# Commande : python3 tools/inspecter.py /tmp/nolo-captures 360,390,768,1440
+# Navigateur : Google Chrome for Testing 153.0.8010.12  via Playwright (Python)
+# Contrôles par état et par largeur : débordement horizontal, cibles de moins de 44 px (hors colonnes de graphique), un seul h1 dans <main>, erreurs de console
+# Captures : non versionnées (156 PNG, /tmp/nolo-captures)
+
+
+=== 360px === erreurs console : []
+  01-bienvenue: OK
+  02-bienvenue-age: OK
+  03-bienvenue-parental: OK
+  04-bienvenue-fait: OK
+  05-accueil: OK
+  06-decrire-erreurs: OK
+  07-decrire-exemple: OK
+  08-verifier: OK
+  09-pistes: OK
+  10-ou-aller: OK
+  11-fiche: OK
+  12-verifier-danger: OK
+  13-urgence: OK
+  14-confidentiel: OK
+  15-hors-champ: OK
+  16-medicament: OK
+  17-sang: OK
+  18-service: OK
+  19-conditions: OK
+  20-mes-donnees: OK
+  21-pro-entree: OK
+  22-pro-accueil: OK
+  23-pro-stock: OK
+  24-pro-tendances: OK
+  25-pro-fiche: OK
+  26-pro-indicateurs: OK
+  27-pro-compte: OK
+  28-inscription-0: OK
+  29-inscription-1-erreurs: OK
+  31-hopital-services: OK
+  32-hopital-fiche: OK
+  33-recherche-dialyse: OK
+  34-ministere-entree: OK
+  35-ministere-carte: OK
+  36-ministere-signaux: OK
+  37-ministere-agrements: OK
+  38-ministere-offre: OK
+  39-ministere-politique: OK
+  30-home-en: OK
+
+=== 390px === erreurs console : []
+  01-bienvenue: OK
+  02-bienvenue-age: OK
+  03-bienvenue-parental: OK
+  04-bienvenue-fait: OK
+  05-accueil: OK
+  06-decrire-erreurs: OK
+  07-decrire-exemple: OK
+  08-verifier: OK
+  09-pistes: OK
+  10-ou-aller: OK
+  11-fiche: OK
+  12-verifier-danger: OK
+  13-urgence: OK
+  14-confidentiel: OK
+  15-hors-champ: OK
+  16-medicament: OK
+  17-sang: OK
+  18-service: OK
+  19-conditions: OK
+  20-mes-donnees: OK
+  21-pro-entree: OK
+  22-pro-accueil: OK
+  23-pro-stock: OK
+  24-pro-tendances: OK
+  25-pro-fiche: OK
+  26-pro-indicateurs: OK
+  27-pro-compte: OK
+  28-inscription-0: OK
+  29-inscription-1-erreurs: OK
+  31-hopital-services: OK
+  32-hopital-fiche: OK
+  33-recherche-dialyse: OK
+  34-ministere-entree: OK
+  35-ministere-carte: OK
+  36-ministere-signaux: OK
+  37-ministere-agrements: OK
+  38-ministere-offre: OK
+  39-ministere-politique: OK
+  30-home-en: OK
+
+=== 768px === erreurs console : []
+  01-bienvenue: OK
+  02-bienvenue-age: OK
+  03-bienvenue-parental: OK
+  04-bienvenue-fait: OK
+  05-accueil: OK
+  06-decrire-erreurs: OK
+  07-decrire-exemple: OK
+  08-verifier: OK
+  09-pistes: OK
+  10-ou-aller: OK
+  11-fiche: OK
+  12-verifier-danger: OK
+  13-urgence: OK
+  14-confidentiel: OK
+  15-hors-champ: OK
+  16-medicament: OK
+  17-sang: OK
+  18-service: OK
+  19-conditions: OK
+  20-mes-donnees: OK
+  21-pro-entree: OK
+  22-pro-accueil: OK
+  23-pro-stock: OK
+  24-pro-tendances: OK
+  25-pro-fiche: OK
+  26-pro-indicateurs: OK
+  27-pro-compte: OK
+  28-inscription-0: OK
+  29-inscription-1-erreurs: OK
+  31-hopital-services: OK
+  32-hopital-fiche: OK
+  33-recherche-dialyse: OK
+  34-ministere-entree: OK
+  35-ministere-carte: OK
+  36-ministere-signaux: OK
+  37-ministere-agrements: OK
+  38-ministere-offre: OK
+  39-ministere-politique: OK
+  30-home-en: OK
+
+=== 1440px === erreurs console : []
+  01-bienvenue: OK
+  02-bienvenue-age: OK
+  03-bienvenue-parental: OK
+  04-bienvenue-fait: OK
+  05-accueil: OK
+  06-decrire-erreurs: OK
+  07-decrire-exemple: OK
+  08-verifier: OK
+  09-pistes: OK
+  10-ou-aller: OK
+  11-fiche: OK
+  12-verifier-danger: OK
+  13-urgence: OK
+  14-confidentiel: OK
+  15-hors-champ: OK
+  16-medicament: OK
+  17-sang: OK
+  18-service: OK
+  19-conditions: OK
+  20-mes-donnees: OK
+  21-pro-entree: OK
+  22-pro-accueil: OK
+  23-pro-stock: OK
+  24-pro-tendances: OK
+  25-pro-fiche: OK
+  26-pro-indicateurs: OK
+  27-pro-compte: OK
+  28-inscription-0: OK
+  29-inscription-1-erreurs: OK
+  31-hopital-services: OK
+  32-hopital-fiche: OK
+  33-recherche-dialyse: OK
+  34-ministere-entree: OK
+  35-ministere-carte: OK
+  36-ministere-signaux: OK
+  37-ministere-agrements: OK
+  38-ministere-offre: OK
+  39-ministere-politique: OK
+  30-home-en: OK
+
+RÉSUMÉ : 156 mesures (4 largeurs) ; 0 état(s) avec défaut ; 0 erreur(s) de console
+code 0

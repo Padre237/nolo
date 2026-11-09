@@ -1,0 +1,45 @@
+19
+
+(3) Les Officiers de Police Judiciaire et les agents habilités de
+l’Agence peuvent, lors des investigations, accéder aux moyens de transport, à
+tout local à usage professionnel, à l'exclusion des domiciles privés, en vue de
+rechercher, de constater les infractions, de demander la communication de
+tous les documents professionnels et en prendre copie, recueillir, sur
+convocation ou sur place, les renseignements et justifications.
+Article 53.- (1) Les perquisitions en matière de cybercriminalité sont
+susceptibles de porter sur des données qui peuvent être des supports
+physiques ou des copies réalisées en présence des personnes qui assistent à la
+perquisition.
+(2) Lorsqu’une copie des données saisies a été faite, celle-ci peut
+être détruite sur instruction du Procureur de la République pour des raisons de
+sécurité.
+(3) Sur accord du Procureur de la République, seuls seront gardés
+sous scellé par l’Officier de Police Judiciaire, les objets, documents et données
+utilisées à la manifestation de la vérité.
+(4) Les personnes présentes lors de la perquisition peuvent être
+réquisitionnées de fournir les renseignements sur les objets, documents et
+données saisis.
+Article 54.- Les perquisitions et les saisies sont effectuées conformément aux
+dispositions du Code de Procédure Pénale en tenant compte du dépérissement
+des preuves.
+Article 55.- (1) Lorsqu'il apparaît que les données saisies ou obtenues au cours
+de l'enquête ou de l'instruction ont fait l'objet d'opérations de transformation
+empêchant d'accéder en clair ou sont de nature à compromettre les
+informations qu’elles contiennent, le Procureur de la République, le Juge
+d'Instruction ou la juridiction de jugement peuvent réquisitionner toute
+personne physique ou morale qualifiée, en vue d'effectuer les opérations
+techniques permettant d'obtenir la version en clair desdites données.
+(2) Lorsqu’un moyen de cryptographie a été utilisé, les autorités
+judiciaires peuvent exiger la convention secrète de déchiffrement du
+cryptogramme.
+Article 56.- La réquisition prévue à l’article 50 ci-dessus peut être faite à tout
+expert. Dans ce cas, son exécution est faite conformément aux dispositions du
+Code de procédure pénale relatives à la commission d’expert.
+Article 57.- (1) Les autorités judiciaires camerounaises peuvent donner
+commission rogatoire tant nationale qu’internationale, à toute personne morale
+ou physique pour rechercher les éléments constitutifs des infractions de
+cybercriminalité, dont au moins l’un des éléments constitutifs a été commis sur
+le territoire camerounais ou dont l’un des auteurs ou complices se trouve dans
+ledit territoire.
+
+

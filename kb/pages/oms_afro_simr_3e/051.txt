@@ -1,0 +1,65 @@
+produire des rapports électroniques, il devrait y avoir un format électronique compatible
+avec les méthodes utilisées au niveau du district, de la région et du pays. Dans la plupart
+des pays où existe la SIMR électronique, la version 2 du système d’informations sanitaires
+de district a souvent été utilisée comme système de données. S’il n’existe pas de système
+de rapports électroniques, s’assurer que les points focaux responsables de la gestion des
+données disposent d’un stock fiable de formulaires de collecte de données, de papier, de
+crayons de couleur, de papier graphique et de journaux de bord.
+8.
+
+Définir un mécanisme pour s’assurer que les données sont recueillies dans les délais
+prescrits et mettre en place un mécanisme de responsabilisation si les rapports ne sont pas
+soumis à temps.
+
+Analyse des données
+9.
+
+Définir les exigences en matière de gestion des données pour chaque site déclarant. Par
+exemple, élaborer et diffuser les procédures, y compris les échéances, afin que les sites de
+notification sachent qu’ils doivent faire rapport sur chaque période de déclaration (par
+exemple, chaque mois.)
+a)
+
+Calculer, compiler et communiquer les totaux récapitulatifs
+
+b)
+
+Vérifier périodiquement la qualité des données et éventuellement les nettoyer
+
+c)
+
+Analyser les données : produire des résumés hebdomadaires, mensuels,
+trimestriels ou annuels sous forme de tableaux, graphiques ou cartes
+
+d)
+
+Fournir une certaine interprétation à l’échelon supérieur suivant
+
+e)
+
+Soumettre les données au niveau suivant (SMS, courrier électronique, formulaires
+basés sur des fax/cas et la liste de lignes)
+
+f)
+
+Archiver et sécuriser les copies de sauvegarde des données
+
+g)
+
+Fournir un feedback et des recommandations aux points focaux communautaires, à
+tous les sites de notification concernés et aux dirigeants de la communauté, et faire le
+suivi de la mise en œuvre des recommandations.
+
+10. Décider si les formulaires actuels prennent en compte les priorités de la surveillance
+intégrée de la maladie et de la riposte. Par exemple, les formulaires actuels fournissent-ils
+les informations nécessaires pour détecter les problèmes et signaler une riposte aux
+maladies prioritaires ciblées pour la surveillance ?
+11. Rassembler et présenter des données pertinentes sur votre district qui peuvent être
+utilisées pour demander des ressources supplémentaires afin d’améliorer les activités de
+surveillance et de riposte. (Par exemple : Les agents de santé sont en mesure de
+documenter une augmentation des cas de paludisme ; ils savent qu’une réponse efficace
+est disponible avec des moustiquaires imprégnées d’insecticide. L’agent de surveillance du
+
+37
+
+

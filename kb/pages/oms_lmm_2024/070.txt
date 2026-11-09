@@ -1,0 +1,18 @@
+52
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+• Governments should ensure that LMMs or applications for supporting clinical
+decisions that are not yet approved for use not be used on an experimental basis
+outside an authorized clinical trial setting. Governments may facilitate controlled
+experimental uses of LMMs through regulatory “sandboxes”, which allow testing in a
+live environment in actual clinical settings, with safeguards and oversight to protect
+the health system from risks or unintended consequences.
+• Governments should use consumer protection laws to ensure that any negative
+consequences of use of LMMs and applications do not affect users, including patients.
+Consumer protection laws could be applied, for example, to prevent practices that
+would be tantamount to manipulation or to address the causes of other negative
+consequences of LMMs or applications in order to protect patients and their families
+from any current or future harm.
+
+

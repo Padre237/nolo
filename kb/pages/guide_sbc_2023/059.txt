@@ -1,0 +1,47 @@
+ XI.     Résultats attendus
+    •    Les informations utiles à la prise de décisions sont disponibles
+    •    Rapport de situation produit
+
+ XII. Délais impartis
+ En continue
+XIII.    Ressources
+         Humaines
+      • Points focaux surveillance                         • Data (Districts, régions,
+         épidémiologique à tous les niveaux                   nationaux)
+      • Unité veuille                                      • CERPLE
+ Équipements
+ • Kit de bureautique                        • Kit de communication (Tablette, téléphone,
+ • Logiciels (Excell, QGIS, R,                  modem internet, …)
+      KoboCollect, DHIS2)
+       Documents
+ • Guide SIMR
+ • Guide SBC
+ • Carnet de bord
+ • Plan d’analyse
+XIV. Procédure
+         A. Dans les Aires de Santé
+    Le PFS de l’AS /Data :
+ • Vérifie que les données à transmettre sont de bonne qualité (complétude, validité, unicité,
+    opportunité, précision, cohérence) : sont- elles suffisantes pour tirer des conclusions?
+    Répondent-elles aux normes, à la logique et aux critères définis ? y a-t-il des doublons ?
+    les données sont-elles disponibles aux moments opportuns ? sont-elles fiables? manque-
+    t-il des champs, y a-t-il des valeurs aberrantes ? sont-elles collectées de la même
+    manière ?
+ • Enregistre les signaux dans les carnets de bord ;
+ • Actualise le tableau de synthèse des signaux : Signaux reçus, signaux vérifiés, signaux
+    validés (évènements) ;
+ • Se rassure au quotidien d’avoir la source de toutes les données transmis. Ex : nombre de
+    signaux détectés = nombre de signaux vérifiés = nombre de signaux triés ;
+ • Intègre les signaux dans le DHIS2 ;
+ • Il pose les questions d’analyse : Quel est le nombre de signaux transformés en
+    évènements ? Quels types de signaux ont été transformés en évènements ?
+ • En utilisant le guide SIMR, il procède aux analyses en temps (histogramme du nombre
+    de signaux reçus par semaine épidémiologique) , lieux ( représentation des signaux en
+    fonction des villages/ quartiers / zones dans un tableau ), personnes( pyramide d’âges,
+    diagramme pour le genre, camembert pour la comparaison des types de signaux, …)
+ • Transmet la synthèse des alertes, le rapport journalier au PFS du DS
+
+
+
+                                               58
+

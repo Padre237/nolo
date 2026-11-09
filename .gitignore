@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Données d'exécution (service des établissements, démo locale)
+var/
+data/runtime/
+
+# Base de connaissances : sources brutes et index locaux (jamais publiés)
+kb/raw*/
+chroma_kb/
+*.pdf
+
+# Captures de l'inspection visuelle (la sortie datée va dans docs/quality/)
+nolo-captures/
+
+# Systèmes
+.DS_Store
+Thumbs.db

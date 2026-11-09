@@ -1,0 +1,14 @@
+03/11/2026 11:03
+
+SNOMED International Documents
+
+Semantic tags are derived from the FSN and can be used to:
+
+• Include or exclude concepts based on high-level meaning (e.g. disorders, findings,
+substances)
+
+https://docs.snomed.org/implementation-guides/gps-implementation-guide/~gitbook/pdf?page=VZvwP1TLt1zd74otfVUl&only=yes&limi…
+
+5/11
+
+

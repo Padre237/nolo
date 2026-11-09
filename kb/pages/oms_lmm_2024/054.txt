@@ -1,0 +1,45 @@
+36
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+As use of data for health care will probably require strict adherence to laws for informed
+consent, developers who train LMMs intended for use in health care and medicine might have
+to rely on smaller data sets (59). Smaller data sets might also be preferable to ensure the
+quality of data, that the data are diversified in order to avoid bias (59) and that they reflect the
+composition and reality of the population(s) that will be served by the LMM. Smaller data sets
+might, however, increase the risk of re-identification of individuals, which would expose them
+to current or future harm. Reliance on smaller data sets may have further benefits, including
+reducing the carbon and water footprints (112) of the models and also making it possible
+for smaller entities to participate in or develop LMMs that require fewer data, computing,
+human and financial resources (59). Regardless of the size of the data set, developers should
+undertake “data protection impact assessments”, which would, as required under the
+General Data Protection Regulation, require developers to assess the risks of data-processing
+operations to the rights and freedom of individuals and their impact on the protection of
+personal data (1) before processing such data. Collection of data from low- and middle-income
+countries could amount to “data colonialism”, in which data are used for commercial or noncommercial purposes without due respect for consent, privacy or autonomy (1).
+The assessments could extend beyond risks to privacy and include the quality of data, such as
+whether they are unbiased and accurate. AI researchers who examine or audit such datasets
+are reluctant to invest their resources, noting that, while creation of a data set for AI is simple,
+auditing is difficult, time-consuming and costly. As one researcher noted: “Doing the dirty
+work is just a lot harder” (124).
+Developers can take other measures to improve data quality and adhere to data protection
+laws. Irrespective of the model size, developers should, in contrast to how early LMMs were
+developed, train LMMs on data collected according to best-practice data protection rules.
+Developers should thus avoid using data from third-party sources such as data brokers, as
+their data may be old, biased, combined incorrectly or have other flaws that may not have
+been corrected (125). Careful collection of data could also ensure that an LMM does not violate
+copyright or data protection laws, for which there may be legal repercussions, such that
+certain LMMs could be labelled unlawful (126).
+If third-party data providers are used, they could, for example, be certified, in order to
+build trust and to ensure their expertise and legitimacy (127). All data used to train LMMs by
+developers, whether collected directly or from third parties, must be kept up to date. As noted
+above, some of the leading AI models were not trained with up-to-date data (38), which can
+jeopardize the performance of the model in health care and medicine, in which new evidence
+and information meaningfully affect decisions. Data sets should be updated and accurate so
+that LMMs are appropriate and relevant for the contexts in which they are used.
+It may be difficult to ensure that data are adequately transparent. Companies that launch
+new LMMs have become more and more opaque about the data used to train its models.
+One leading AI company that released a new LMM stated that: “Given both the competitive
+landscape and the safety implications of large-scale models like GPT-4, this report contains
+
+

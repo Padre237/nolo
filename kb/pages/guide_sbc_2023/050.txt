@@ -1,0 +1,48 @@
+      (impact), déterminer la probabilité de sa survenue, Calculer (quantitativement) ou
+      estimer (qualitativement) le niveau de risque et déterminer le niveau de Confiance
+      dans l’évaluation du risque.
+  ▪   Une fois que les informations suffisantes sont recueillies, le DS doit déterminer le
+      résultat de l’évaluation des risques (étape 3)
+
+
+
+
+IMPACT x              NON
+                                     MINEUR         MODÉRÉ         MAJEUR          FORT
+PROBABILITÉ        SIGNIFICATIF
+HAUTEMENT
+IMPROBABLE
+IMPROBABLE
+
+POSSIBLE
+
+PROBABLE
+
+TRÈS PROBABLE
+
+
+      Étape 3-Préparer le rapport de l’évaluation du risque et en communiquer les
+      conclusions
+      Il y a trois résultats possibles suite à une évaluation des risques :
+  ▪   Aucune nouvelle enquête ni action nécessaire lorsque l’évènement ne constitue pas
+      un risque pour la santé publique ;
+  ▪   L’évènement doit être surveillé. Cela est dû à l'une des raisons suivantes : Des
+      conséquences graves existent potentiellement ; aucun cas n’est survenu chez des
+      humains selon les informations récemment recueillies ; la mortalité/morbidité est
+      aussi élevée que prévue pour la maladie, la gravité des cas est faible.) ;
+  ▪   Une enquête et une riposte doivent être enclenchées. Cela est dû à l'une des raisons
+      suivantes : La mortalité/morbidité est plus élevée que prévue, les maladies sont
+      inattendues/nouvelles pour la communauté ; il y a des conséquences possibles sur le
+      commerce et/ou les voyages ; la gravité des cas est élevée ou plus élevée que prévue
+      pour la maladie ; l’évènement de Santé Publique entraîne une panique importante au
+      sein de la communauté ; Le nombre de cas est en augmentation, un décès maternel
+      possible.
+      Le rapport est ensuite élaboré en tenant compte des éléments suivants : Sommaire
+      narratif de l’équipe d’évaluation du risque, niveau de risque, preuve des motifs de la
+      décision, problèmes de perception, autres actions/interventions recommandées et
+      limitations (informations/lacunes dans les connaissances, autres).
+
+
+
+                                           49
+

@@ -1,0 +1,45 @@
+5 Provision with general-purpose foundation models (LMMs)
+
+applications, set common standards and regulations and prohibit applications that do not
+meet the standards and regulations from being deployed to the public.
+Developers and providers should bear the burden of proof, when required, to demonstrate
+that an AI technology intended for use in health care meets the minimum requirements set
+out in a law or policy. It should not be assumed that, given the known risks and challenges
+associated with LMMs, AI algorithms and applications with an LMM are safe and effective or
+that they are superior to AI or non-AI based approaches that are already in wide use.
+Several laws, policies and cross-cutting requirements that could apply to use of LMMs in
+health care and medicine are described below.
+Disclosure (transparency) requirements: Appropriate regulation requires not only that
+governments have the capacity and discretion to decide what they can assess and approve
+for use but also adequate information for conducting such an evaluation. Disclosure is
+necessary to both adequately regulate an AI technology and to ensure that other actors in the
+AI value chain can use the technology safely. For example, unless a developer discloses the
+performance of a general-purpose foundation model (such as its propensity to hallucinate), a
+provider may not have the necessary information to fine-tune the model or to avoid marketing
+the technology. Such forms of disclosure by a provider or developer can also assist users, such
+as medical providers, in deciding not to use an LMM that could provide incorrect information
+or to scrutinize outputs more carefully.
+Disclosure and transparency are WHO guiding principles, as well as measures to improve
+the “explainability” and intelligibility of an AI-based system, and should be required in the
+assessment of a general-purpose foundation model or application. The WHO guidance on
+the ethics and governance of AI for health (1) recommended that “government regulators
+should require the transparency of certain aspects of an AI technology, while accounting
+for proprietary rights, to improve oversight and assessment of safety and efficacy. This may
+include an AI technology’s source code, data inputs and analytical approach”. New forms of
+disclosure that are relevant for LMMs may include their performance in internal testing and
+their carbon and water footprints. Standards may also be required for “open weights”, which
+allow regulators, other developers, civil society and providers to understand the outputs of
+training an algorithm, or the knowledge that an LMM has obtained during its training (147,148).
+Several forms of disclosure could assist a provider, user or regulator, including describing the
+capability and limitations of a foundation model, evaluation of the model according to public
+or industry standard benchmarks and reporting the results of internal and external testing
+of the model and its optimization (134). Disclosures, particularly of the risks that may be
+associated with an LMM or application, could be advertised clearly, and has been compared by
+one researcher to a “nutrition label” (129).
+Data protection laws: The development of LMMs and how developers manage the data
+required to train an LMM may violate data protection laws. A separate problem is that data
+entered into an LMM or application to produce a specific output that may include sensitive
+
+47
+
+

@@ -1,0 +1,92 @@
+# Preuve d'exécution — génération et contrôle des données de triage
+# Outillage hors produit (tools/donnees/). Ce document NE prouve PAS le fonctionnement du produit :
+# l'extracteur et le moteur de SF-001-03 et SF-001-07 ne sont pas encore écrits.
+# Date : 2026-11-04T02:10:49+01:00 ; Python 3.13.18 ; PyYAML 6.0.3
+
+$ python3 tools/donnees/generer_referentiel_symptomes.py
+110 entrées ; 88 affichées ; 12 non observables ou avec appareil ; 2 exclues ; 525 expressions indexées, aucune ambiguë ; codes stables
+code de sortie : 0
+$ sha256sum data/referentiels/symptomes.csv
+800c09ae636b340e6cb29bccb564023505b5116b80da49385036e2a69c8d1042  data/referentiels/symptomes.csv
+$ python3 tools/donnees/generer_referentiel_symptomes.py   # seconde exécution (reproductibilité)
+code de sortie : 0
+$ cmp data/referentiels/symptomes.csv <copie de la première exécution>
+identique octet pour octet
+$ grep -m1 empreinte_sha256 data/referentiels/symptomes.meta.yaml   # empreinte déclarée
+empreinte_sha256: "800c09ae636b340e6cb29bccb564023505b5116b80da49385036e2a69c8d1042"
+$ python3 tools/donnees/generer_regles_triage_v2.py
+75 règles Counter({('iitt_12_ans_plus', 'jaune'): 22, ('iitt_moins_12_ans', 'rouge'): 16, ('iitt_moins_12_ans', 'jaune'): 16, ('iitt_12_ans_plus', 'rouge'): 13, ('pcime', 'signe_general_danger'): 5, ('pcime', 'jaune_pcime'): 3}) 5 composites
+code de sortie : 0
+$ sha256sum rules/triage_signes_alerte.v2.yaml data/referentiels/phrases_extraction_reference.json data/referentiels/historique/*.csv
+755d8627840394c6608f4c920772f6ce89d38ee95e9b4fe5d7facd809fc190bb  rules/triage_signes_alerte.v2.yaml
+b05fc159b774f5d411a96351c7a59038d9d9c45d20afc7e048cf0829d5b960ab  data/referentiels/phrases_extraction_reference.json
+609e556a00729367eff6daea2d74319789cb520143ca23dddfac5b4fa4303edd  data/referentiels/historique/symptomes-1.0.0.csv
+$ diff <(cut -d, -f1,2 data/referentiels/historique/symptomes-1.0.0.csv) <(cut -d, -f1,2 data/referentiels/symptomes.csv)
+110a111
+> SYM-110,diarrhee_avec_sang
+(stabilité des codes : seules des lignes ajoutées en fin de fichier sont admises)
+
+$ python3 tools/donnees/verifier_regles_triage_v2.py
+sources : 75 règles et 5 composites ; 90 textes sources retrouvés mot pour mot dans leurs fragments
+OK  adulte 58 ans, douleur thoracique aiguë (scénario 1) -> urgence (immediate, IITT12-R-12)
+OK  adulte 30 ans, douleur thoracique aiguë sans autre signe -> consultation_48h (None, aucune_regle)
+OK  adulte 30 ans, douleur thoracique + incapacité à parler en respirant mal -> urgence (immediate, IITT12-R-03)
+OK  enfant 3 ans, incapable de boire (PCIME) -> urgence (immediate, PCIME-SGD-01)
+OK  enfant 3 ans, fièvre seule (paludisme, PCIME jaune) -> consultation_24h (None, PCIME-J-01)
+OK  enfant 3 ans, fièvre + raideur de nuque (PCIME) -> urgence (immediate, PCIME-MFTG-01)
+OK  enfant 3 ans, diarrhée + sang dans les selles (dysenterie) -> consultation_24h (None, PCIME-J-02)
+OK  enfant 3 ans, diarrhée depuis 15 jours -> consultation_24h (None, PCIME-J-03)
+OK  nourrisson 5 jours, fièvre -> urgence (immediate, IITTM12-R-09)
+OK  nourrisson 3 mois, toux -> urgence (rapide, IITTM12-J-09)
+OK  adulte 40 ans, toux depuis 3 jours -> consultation_48h (None, aucune_regle)
+OK  adulte 40 ans, fièvre + raideur de nuque -> urgence (immediate, IITT12-R-06)
+OK  adulte 40 ans, morsure de chien -> urgence (rapide, IITT12-J-21)
+OK  adulte 30 ans enceinte, céphalée intense -> urgence (immediate, IITT12-R-13)
+OK  adulte 80 ans, brûlure -> urgence (immediate, IITT12-R-08)
+OK  enfant 8 ans, fièvre seule (aucune règle sourcée) -> consultation_48h (None, aucune_regle)
+OK  adulte 40 ans, respire mal + confus (détresse respiratoire, carte IITT) -> urgence (immediate, IITT12-R-03)
+OK  adulte 40 ans, confus seul (critère jaune IITT) -> urgence (rapide, IITT12-J-08)
+OK  enfant 3 ans, « diarrhée avec du sang » (jeton dérivé) -> consultation_24h (None, PCIME-J-02)
+monotonie : 0 violation(s) sur 5000
+jetons de triage sans règle (niveau par défaut) : ['douleur_dos', 'fatigue', 'toux']
+scénarios en échec : 0 sur 19
+accessibilité depuis la liste fermée : 0 jeton(s) inaccessible(s) []
+phrases de référence : 42 / 42 conformes
+patients.csv : 18 jetons, 0 absent(s) du référentiel []
+sbc_definitions.yaml : 24 jetons de symptômes (valeurs « evenement » exclues), 0 absent(s) []
+ancien triage_signes_alerte.yaml (remplacé par la v2, informatif) : jetons absents du référentiel : ['difficulte_respiratoire_severe', 'perte_de_conscience']
+témoins minimaux par règle : 390 / 390 conformes
+code de sortie : 0
+
+# Contrôles de mutation : le vérificateur DOIT échouer (code de sortie 1) sur des données dégradées, copies temporaires.
+## Mutation : référentiel 1.0.0 (scénario du jeton dérivé retiré : ce jeton n'existe pas en 1.0.0)
+KO  adulte 40 ans, respire mal + confus (détresse respiratoire, carte IITT) -> urgence (rapide, IITT12-J-08)
+scénarios en échec : 1 sur 18
+accessibilité depuis la liste fermée : 4 jeton(s) inaccessible(s) [('12_17_ans', 'confusion_somnolence_agitation'), ('18_50_ans', 'confusion_somnolence_agitation'), ('51_70_ans',
+KO  F02 il ne tète plus depuis hier -> ['incapacite_parler_manger_teter'] 0 attendu ['incapable_de_boire_ou_teter'] 0
+KO  F05 fièvre avec raideur de la nuque -> ['fievre'] 0 attendu ['fievre', 'raideur_nuque'] 0
+KO  F06 diarrhée avec du sang depuis deux jours -> ['diarrhee', 'saignements'] 0 attendu ['diarrhee', 'diarrhee_avec_sang', 'saignements'] 0
+KO  F12 il a un bleu sur le bras -> ['cyanose'] 0 attendu [] 1
+KO  F13 je suis épuisé -> ['alteration_etat_general'] 0 attendu ['fatigue'] 0
+KO  F14 il est tombé d'un arbre -> [] 1 attendu ['traumatisme'] 0
+KO  F15 chute de cheveux -> ['traumatisme'] 0 attendu [] 1
+KO  F16 elle est enceinte et elle a perdu les eaux -> ['grossesse'] 0 attendu ['accouchement_declenche', 'grossesse'] 0
+KO  F17 contractions musculaires dans les jambes -> ['accouchement_declenche'] 0 attendu [] 1
+KO  F18 brûlure au visage -> ['brulure'] 0 attendu ['brulure', 'brulure_visage_cou_circulaire'] 0
+KO  E02 he cannot drink anything -> ['incapacite_boire_se_nourrir'] 0 attendu ['incapable_de_boire_ou_teter'] 0
+KO  E04 bloody diarrhea since yesterday -> [] 1 attendu ['diarrhee', 'diarrhee_avec_sang'] 0
+KO  E11 I fall asleep easily -> ['traumatisme'] 0 attendu [] 1
+KO  E12 I feel fit today -> ['convulsions'] 0 attendu [] 1
+phrases de référence : 28 / 42 conformes
+témoins minimaux par règle : 390 / 390 conformes
+code de sortie : 1 (attendu : 1)
+## Mutation : paramètre risque_paludisme = faible
+KO  enfant 3 ans, fièvre seule (paludisme, PCIME jaune) -> consultation_48h (None, aucune_regle)
+scénarios en échec : 1 sur 19
+accessibilité depuis la liste fermée : 0 jeton(s) inaccessible(s) []
+phrases de référence : 42 / 42 conformes
+KO témoin PCIME-J-01 2_6_mois ['fievre'] -> urgence rapide IITTM12-J-09
+KO témoin PCIME-J-01 6_mois_2_ans ['fievre'] -> consultation_48h None aucune_regle
+KO témoin PCIME-J-01 2_5_ans ['fievre'] -> consultation_48h None aucune_regle
+témoins minimaux par règle : 387 / 390 conformes
+code de sortie : 1 (attendu : 1)

@@ -1,0 +1,49 @@
+4 Design and development of general-purpose foundation models (LMMs)
+
+• Governments might also consider requiring or creating incentives for developers
+to register early-stage AI algorithms or systems to be used in health care and
+medicine. Early registration could encourage publication of negative results, prevent
+publication bias or over-optimistic interpretation of results and facilitate integration
+of knowledge that benefits patients.
+Public infrastructure to develop LMMs in the public interest: As uses of LMMs for health
+proliferate, development of LMMs that adhere to ethical principles could be encouraged by
+the provision of not-for-profit or public infrastructure, including computing power and public
+datasets. Such infrastructure, which could be accessible to developers in the public, private
+and not-for-profit sectors, could require users to adhere to ethical principles and values in
+exchange for access. It could also help to avoid exclusive control of an LMM by a developer
+and "level the playing field" between the largest companies and developers that do not have
+access to such infrastructure and resources.
+Governments, subject to independent oversight, could construct infrastructure that is
+then used by developers to construct LMMs for health care and medicine. For example, an
+international team of 1000 academic volunteers, the company Hugging Face, and others,
+with funding from the French Government, trained an LMM called BLOOM with 175 billion
+parameters, which also required US$ 7 million of computing time (112).
+Efforts to level the playing field are also applicable to academia and its resource disadvantage.
+The Canadian Government’s national Advanced Research Computing Platform serves the
+country’s academic sector, the Chinese Government has approved a national computing
+power network system to enable academics and others to access data and computing power,
+and, in the USA, the National AI Research Resource task force has “proposed the creation of
+a public research cloud and public datasets” (101). There have also been calls by civil society
+in Europe for governments to play a more assertive role in build so-called “European Large
+Generative Models”, for which AI-specific computing, data infrastructure, science and research
+support would be provided by governments (135).
+
+4.4
+
+Open-source LMMs
+
+The role of open-source LMMs in integrating ethical principles and addressing known risks is
+uncertain. Generally, transparency and participation can be increased by using open-source
+software for the design of an AI technology or by making the source code of software publicly
+available (1). Open-source software is open to both contributions and feedback, which allows
+users to understand how the system works, to identify potential issues and to extend and
+adapt the software (1). Open-source LMMs may present an opportunity to address some
+concerns about use of LMMs in health care. As open-source models are neither proprietary
+nor closed, they allow smaller firms and entities, such as not-for-profit institutions, to design
+LMMs at lower cost (136). LMMs built on open-source models can be scrutinized, as the code
+and data are available for review. Engagement and policing by a community of users helps to
+ensure the robustness of open-source models in the long term (136).
+
+41
+
+

@@ -1,0 +1,46 @@
+7
+
+d’objets ;
+38. Radiodiffusion : radiocommunication dont les émissions sont
+destinées à être reçues directement par le public ;
+39. Réseau de collecte : ensemble d’installations permettant
+d’acheminer les communications électroniques et de fournir les
+services de communications électroniques entre le réseau de
+distribution et le réseau dorsal ;
+40. Réseau de distribution : ensemble d’installations permettant
+d’acheminer les communications électroniques et de fournir les
+services de communications électroniques depuis un équipement
+intelligent local vers l’abonné ;
+41. Réseau de communications électroniques ouvert au public :
+ensemble de réseaux de communications électroniques établis ou
+utilisés pour les besoins du public ;
+42. Réseau de communications électroniques : systèmes de
+transmission, actifs ou passifs et, le cas échéant, les équipements
+de commutation et de routage et les autres ressources qui
+permettent l’acheminement des signaux par câble, par voie
+hertzienne, par moyen optique ou par d’autres moyens
+électromagnétiques, comprenant les réseaux satellitaires, les
+réseaux terrestres fixes (avec commutation de circuits ou de
+paquets, y compris l’Internet) et mobiles, les systèmes utilisant le
+réseau électrique, pour autant qu’ils servent à la transmission de
+signaux, les réseaux utilisés pour la radiodiffusion sonore et
+télévisuelle et les réseaux câblés de télévision, quel que soit le type
+d’information transmise ;
+43. Réseau privé : réseau de communications électroniques réservé à
+un usage privé ou partagé par un groupe fermé d’usagers ;
+44. Réseau privé indépendant : réseau établi entre plusieurs
+domaines, sites ou propriétés privées et qui, de ce fait, emprunte le
+domaine public, y compris hertzien et/ou des sites ou des propriétés
+privées tierces ;
+45. Réseau privé interne : réseau de communications électroniques
+entièrement établi sur un même domaine, un même site ou une
+même propriété privée, sans emprunter ni le domaine public y
+compris l’espace hertzien, ni une propriété tierce ;
+46. Réseau privé virtuel : réseau de communications électroniques
+privé qui peut se servir de l'infrastructure d'un réseau public pour
+transmettre des données qui sont protégées grâce à l'utilisation de
+techniques de chiffrement ou d'encapsulation ;
+47. Réseau rural : réseau de communications électroniques
+entièrement établi pour les populations en milieu rural ;
+
+

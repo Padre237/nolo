@@ -1,0 +1,85 @@
+4.5.2016
+
+FR
+
+Journal officiel de l'Union européenne
+
+L 119/13
+
+données à caractère personnel les concernant, ou encore lorsque le traitement de leurs données à caractère
+personnel ne respecte pas d'une autre manière le présent règlement. Ce droit est pertinent, en particulier, lorsque
+la personne concernée a donné son consentement à l'époque où elle était enfant et n'était pas pleinement
+consciente des risques inhérents au traitement, et qu'elle souhaite par la suite supprimer ces données à caractère
+personnel, en particulier sur l'internet. La personne concernée devrait pouvoir exercer ce droit nonobstant le fait
+qu'elle n'est plus un enfant. Toutefois, la conservation ultérieure des données à caractère personnel devrait être
+licite lorsqu'elle est nécessaire à l'exercice du droit à la liberté d'expression et d'information, au respect d'une
+obligation légale, à l'exécution d'une mission d'intérêt public ou relevant de l'exercice de l'autorité publique dont
+est investi le responsable du traitement, pour des motifs d'intérêt public dans le domaine de la santé publique, à
+des fins archivistiques dans l'intérêt public, à des fins de recherche scientifique ou historique ou à des fins
+statistiques, ou à la constatation, à l'exercice ou à la défense de droits en justice.
+(66)
+
+Afin de renforcer le «droit à l'oubli» numérique, le droit à l'effacement devrait également être étendu de façon à ce
+que le responsable du traitement qui a rendu les données à caractère personnel publiques soit tenu d'informer les
+responsables du traitement qui traitent ces données à caractère personnel qu'il convient d'effacer tout lien vers ces
+données, ou toute copie ou reproduction de celles-ci. Ce faisant, ce responsable du traitement devrait prendre des
+mesures raisonnables, compte tenu des technologies disponibles et des moyens dont il dispose, y compris des
+mesures techniques afin d'informer les responsables du traitement qui traitent les données à caractère personnel
+de la demande formulée par la personne concernée.
+
+(67)
+
+Les méthodes visant à limiter le traitement de données à caractère personnel pourraient consister, entre autres, à
+déplacer temporairement les données sélectionnées vers un autre système de traitement, à rendre les données à
+caractère personnel sélectionnées inaccessibles aux utilisateurs, ou à retirer temporairement les données publiées
+d'un site internet. Dans les fichiers automatisés, la limitation du traitement devrait en principe être assurée par des
+moyens techniques de façon à ce que les données à caractère personnel ne fassent pas l'objet d'opérations de
+traitements ultérieures et ne puissent pas être modifiées. Le fait que le traitement des données à caractère
+personnel est limité devrait être indiqué de manière claire dans le fichier.
+
+(68)
+
+Pour renforcer encore le contrôle qu'elles exercent sur leurs propres données, les personnes concernées devraient
+aussi avoir le droit, lorsque des données à caractère personnel font l'objet d'un traitement automatisé, de recevoir
+les données à caractère personnel les concernant, qu'elles ont fournies à un responsable du traitement, dans un
+format structuré, couramment utilisé, lisible par machine et interopérable, et de les transmettre à un autre
+responsable du traitement. Il y a lieu d'encourager les responsables du traitement à mettre au point des formats
+interopérables permettant la portabilité des données. Ce droit devrait s'appliquer lorsque la personne concernée a
+fourni les données à caractère personnel sur la base de son consentement ou lorsque le traitement est nécessaire
+pour l'exécution d'un contrat. Il ne devrait pas s'appliquer lorsque le traitement est fondé sur un motif légal autre
+que le consentement ou l'exécution d'un contrat. De par sa nature même, ce droit ne devrait pas être exercé à
+l'encontre de responsables du traitement qui traitent des données à caractère personnel dans l'exercice de leurs
+missions publiques. Il ne devrait dès lors pas s'appliquer lorsque le traitement des données à caractère personnel
+est nécessaire au respect d'une obligation légale à laquelle le responsable du traitement est soumis ou à l'exécution
+d'une mission d'intérêt public ou relevant de l'exercice de l'autorité publique dont est investi le responsable du
+traitement. Le droit de la personne concernée de transmettre ou de recevoir des données à caractère personnel la
+concernant ne devrait pas créer, pour les responsables du traitement, d'obligation d'adopter ou de maintenir des
+systèmes de traitement qui sont techniquement compatibles. Lorsque, dans un ensemble de données à caractère
+personnel, plusieurs personnes sont concernées, le droit de recevoir les données à caractère personnel devrait
+s'entendre sans préjudice des droits et libertés des autres personnes concernées conformément au présent
+règlement. De plus, ce droit ne devrait pas porter atteinte au droit de la personne concernée d'obtenir
+l'effacement de données à caractère personnel ni aux limitations de ce droit comme le prévoit le présent
+règlement et il ne devrait pas, notamment, entraîner l'effacement de données à caractère personnel relatives à la
+personne concernée qui ont été fournies par celle-ci pour l'exécution d'un contrat, dans la mesure où et aussi
+longtemps que ces données à caractère personnel sont nécessaires à l'exécution de ce contrat. Lorsque c'est techni­
+quement possible, la personne concernée devrait avoir le droit d'obtenir que les données soient transmises
+directement d'un responsable du traitement à un autre.
+
+(69)
+
+Lorsque des données à caractère personnel pourraient être traitées de manière licite parce que le traitement est
+nécessaire à l'exécution d'une mission d'intérêt public ou relevant de l'exercice de l'autorité publique dont est
+investi le responsable du traitement, ou en raison des intérêts légitimes du responsable du traitement ou d'un
+tiers, les personnes concernées devraient néanmoins avoir le droit de s'opposer au traitement de toute donnée à
+caractère personnel en rapport avec leur situation particulière. Il devrait incomber au responsable du traitement
+de prouver que ses intérêts légitimes impérieux prévalent sur les intérêts ou les libertés et droits fondamentaux de
+la personne concernée.
+
+(70)
+
+Lorsque des données à caractère personnel sont traitées à des fins de prospection, la personne concernée devrait
+avoir le droit, à tout moment et sans frais, de s'opposer à ce traitement, y compris le profilage dans la mesure où
+il est lié à une telle prospection, qu'il s'agisse d'un traitement initial ou ultérieur. Ce droit devrait être explicitement
+porté à l'attention de la personne concernée et présenté clairement et séparément de toute autre information.
+
+

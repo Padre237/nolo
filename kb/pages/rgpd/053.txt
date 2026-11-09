@@ -1,0 +1,65 @@
+4.5.2016
+
+FR
+
+Journal officiel de l'Union européenne
+
+L 119/53
+
+2.
+La communication à la personne concernée visée au paragraphe 1 du présent article décrit, en des termes clairs et
+simples, la nature de la violation de données à caractère personnel et contient au moins les informations et mesures
+visées à l'article 33, paragraphe 3, points b), c) et d).
+3.
+La communication à la personne concernée visée au paragraphe 1 n'est pas nécessaire si l'une ou l'autre des
+conditions suivantes est remplie:
+a) le responsable du traitement a mis en œuvre les mesures de protection techniques et organisationnelles appropriées
+et ces mesures ont été appliquées aux données à caractère personnel affectées par ladite violation, en particulier les
+mesures qui rendent les données à caractère personnel incompréhensibles pour toute personne qui n'est pas autorisée
+à y avoir accès, telles que le chiffrement;
+b) le responsable du traitement a pris des mesures ultérieures qui garantissent que le risque élevé pour les droits et
+libertés des personnes concernées visé au paragraphe 1 n'est plus susceptible de se matérialiser;
+c) elle exigerait des efforts disproportionnés. Dans ce cas, il est plutôt procédé à une communication publique ou à une
+mesure similaire permettant aux personnes concernées d'être informées de manière tout aussi efficace.
+4.
+Si le responsable du traitement n'a pas déjà communiqué à la personne concernée la violation de données à
+caractère personnel la concernant, l'autorité de contrôle peut, après avoir examiné si cette violation de données à
+caractère personnel est susceptible d'engendrer un risque élevé, exiger du responsable du traitement qu'il procède à cette
+communication ou décider que l'une ou l'autre des conditions visées au paragraphe 3 est remplie.
+S ec ti on 3
+A na l y s e d ' im p ac t r el a tive à l a p ro te ctio n des do nné s e t c o nsu lt atio n pr é ala ble
+Article 35
+Analyse d'impact relative à la protection des données
+1.
+Lorsqu'un type de traitement, en particulier par le recours à de nouvelles technologies, et compte tenu de la nature,
+de la portée, du contexte et des finalités du traitement, est susceptible d'engendrer un risque élevé pour les droits et
+libertés des personnes physiques, le responsable du traitement effectue, avant le traitement, une analyse de l'impact des
+opérations de traitement envisagées sur la protection des données à caractère personnel. Une seule et même analyse peut
+porter sur un ensemble d'opérations de traitement similaires qui présentent des risques élevés similaires.
+2.
+Lorsqu'il effectue une analyse d'impact relative à la protection des données, le responsable du traitement demande
+conseil au délégué à la protection des données, si un tel délégué a été désigné.
+3.
+L'analyse d'impact relative à la protection des données visée au paragraphe 1 est, en particulier, requise dans les cas
+suivants:
+a) l'évaluation systématique et approfondie d'aspects personnels concernant des personnes physiques, qui est fondée sur
+un traitement automatisé, y compris le profilage, et sur la base de laquelle sont prises des décisions produisant des
+effets juridiques à l'égard d'une personne physique ou l'affectant de manière significative de façon similaire;
+b) le traitement à grande échelle de catégories particulières de données visées à l'article 9, paragraphe 1, ou de données
+à caractère personnel relatives à des condamnations pénales et à des infractions visées à l'article 10; ou
+c) la surveillance systématique à grande échelle d'une zone accessible au public.
+4.
+L'autorité de contrôle établit et publie une liste des types d'opérations de traitement pour lesquelles une analyse
+d'impact relative à la protection des données est requise conformément au paragraphe 1. L'autorité de contrôle
+communique ces listes au comité visé à l'article 68.
+5.
+L'autorité de contrôle peut aussi établir et publier une liste des types d'opérations de traitement pour lesquelles
+aucune analyse d'impact relative à la protection des données n'est requise. L'autorité de contrôle communique cette liste
+au comité.
+6.
+Avant d'adopter les listes visées aux paragraphes 4 et 5, l'autorité de contrôle compétente applique le mécanisme
+de contrôle de la cohérence visé à l'article 63, lorsque ces listes comprennent des activités de traitement liées à l'offre de
+biens ou de services à des personnes concernées ou au suivi de leur comportement dans plusieurs États membres, ou
+peuvent affecter sensiblement la libre circulation des données à caractère personnel au sein de l'Union.
+
+

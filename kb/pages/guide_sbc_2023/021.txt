@@ -1,0 +1,67 @@
+                                                          Le triage est le fait de déterminer qu’un signal
+                 Les informations rapportées
+                 correspondent-elles à un ou              respecte au moins un des critères prédéfinis (voir
+                 plusieurs signaux ?                      Figure 3)
+                                                          La vérification est le fait de déterminer si un signal
+                                                          est vrai (c.à.d. qu’il n’est pas une fausse alerte ou
+                 Le signal a-t-il déjà été                une fausse rumeur), et fiable. Dans le cadre de la
+                 rapporté (c.-à.-d. le signal est-        SBC, on ne peut pas toujours se fier aux
+                 il un doublon) ?
+                                                          informations venant des sources potentielles. Les
+                                                          critères de vérification comprennent l’observation
+                 Les informations rapportées              directe, le fait de poser des questions à l’ASCP
+                 correspondent-elles à quelque            pour s’assurer qu’il a compris correctement le
+                 chose qui s’est réellement               signal, la confirmation du signal par au moins deux
+                 produit ou à une rumeur ?                sources différentes, ou le fait qu’il soit ou non
+                                                          rapporté par une personne ou un lieu ayant une
+                                                          autorité médicale (docteur ou clinique).
+Figure 3: Questions à poser pendant le triage et la       La Figure 4 résume le processus de triage et
+vérification
+                                                          vérification, et explique quels peuvent être les
+                                                          résultats suite à chacune des étapes.
+Le processus de triage et de vérification permet de déterminer si le signal représente une
+menace pour la Santé Publique. Une fois que le signal est vérifié, il devient un évènement (voir
+Figure 4). Tous les évènements doivent être signalés immédiatement par l’AS au DS. Le triage
+et la vérification systématiques de tous les signaux détectés grâce à la SBC sont essentiels afin
+de ne pas surcharger le DS avec des fausses alertes ou des informations non fiables.
+
+
+
+
+                                                                                       •Une personne qui présente de la fièvre et
+                                                                                        des saignements est un cas suspecté de
+                                                                Évènement de santé
+ Écarter si...
+
+
+
+
+                                                                                        fièvre hémorragique;
+                                                                      publique si...
+
+
+
+
+                 •Une seule personne a de la fièvre et
+                  aucun autre symptôme ne                                              •Il y a plus d’un cas suspecté ayant des signes
+                  l’accompagne, tel que des                                             et des symptômes similaires;
+                  saignements                                                          •Une personne ayant récemment assisté à
+                                                                                        l’enterrement d’une personne ayant une
+                                                                                        maladie similaire;
+                                                                                       •Une ou plusieurs personnes sont mortes
+                                                                                       •Toute personne présentant de la fièvre
+                                                                                        accompagnée de vomissements, de selles
+                                                                                        liquides et de saignements inexpliqués (du
+                                                                                        nez, de la bouche, de la peau ou des yeux,
+                                                                                        ou présence de sang dans les urines ou les
+                                                                                        selles) ou qui en décède
+
+
+
+
+Figure 4:Exemple de guide pour la vérification d’un signal de communauté
+
+
+
+                                                         20
+

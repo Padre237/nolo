@@ -1,0 +1,69 @@
+L 119/52
+
+FR
+
+Journal officiel de l'Union européenne
+
+4.5.2016
+
+b) des moyens permettant de garantir la confidentialité, l'intégrité, la disponibilité et la résilience constantes des systèmes
+et des services de traitement;
+c) des moyens permettant de rétablir la disponibilité des données à caractère personnel et l'accès à celles-ci dans des
+délais appropriés en cas d'incident physique ou technique;
+d) une procédure visant à tester, à analyser et à évaluer régulièrement l'efficacité des mesures techniques et organisation­
+nelles pour assurer la sécurité du traitement.
+2.
+Lors de l'évaluation du niveau de sécurité approprié, il est tenu compte en particulier des risques que présente le
+traitement, résultant notamment de la destruction, de la perte, de l'altération, de la divulgation non autorisée de données
+à caractère personnel transmises, conservées ou traitées d'une autre manière, ou de l'accès non autorisé à de telles
+données, de manière accidentelle ou illicite.
+3.
+L'application d'un code de conduite approuvé comme le prévoit l'article 40 ou d'un mécanisme de certification
+approuvé comme le prévoit l'article 42 peut servir d'élément pour démontrer le respect des exigences prévues au
+paragraphe 1 du présent article.
+4.
+Le responsable du traitement et le sous-traitant prennent des mesures afin de garantir que toute personne physique
+agissant sous l'autorité du responsable du traitement ou sous celle du sous-traitant, qui a accès à des données à caractère
+personnel, ne les traite pas, excepté sur instruction du responsable du traitement, à moins d'y être obligée par le droit de
+l'Union ou le droit d'un État membre.
+
+Article 33
+Notification à l'autorité de contrôle d'une violation de données à caractère personnel
+1.
+En cas de violation de données à caractère personnel, le responsable du traitement en notifie la violation en
+question à l'autorité de contrôle compétente conformément à l'article 55, dans les meilleurs délais et, si possible,
+72 heures au plus tard après en avoir pris connaissance, à moins que la violation en question ne soit pas susceptible
+d'engendrer un risque pour les droits et libertés des personnes physiques. Lorsque la notification à l'autorité de contrôle
+n'a pas lieu dans les 72 heures, elle est accompagnée des motifs du retard.
+2.
+Le sous-traitant notifie au responsable du traitement toute violation de données à caractère personnel dans les
+meilleurs délais après en avoir pris connaissance.
+3.
+
+La notification visée au paragraphe 1 doit, à tout le moins:
+
+a) décrire la nature de la violation de données à caractère personnel y compris, si possible, les catégories et le nombre
+approximatif de personnes concernées par la violation et les catégories et le nombre approximatif d'enregistrements
+de données à caractère personnel concernés;
+b) communiquer le nom et les coordonnées du délégué à la protection des données ou d'un autre point de contact
+auprès duquel des informations supplémentaires peuvent être obtenues;
+c) décrire les conséquences probables de la violation de données à caractère personnel;
+d) décrire les mesures prises ou que le responsable du traitement propose de prendre pour remédier à la violation de
+données à caractère personnel, y compris, le cas échéant, les mesures pour en atténuer les éventuelles conséquences
+négatives.
+4.
+Si, et dans la mesure où, il n'est pas possible de fournir toutes les informations en même temps, les informations
+peuvent être communiquées de manière échelonnée sans autre retard indu.
+5.
+Le responsable du traitement documente toute violation de données à caractère personnel, en indiquant les faits
+concernant la violation des données à caractère personnel, ses effets et les mesures prises pour y remédier. La documen­
+tation ainsi constituée permet à l'autorité de contrôle de vérifier le respect du présent article.
+
+Article 34
+Communication à la personne concernée d'une violation de données à caractère personnel
+1.
+Lorsqu'une violation de données à caractère personnel est susceptible d'engendrer un risque élevé pour les droits et
+libertés d'une personne physique, le responsable du traitement communique la violation de données à caractère
+personnel à la personne concernée dans les meilleurs délais.
+
+

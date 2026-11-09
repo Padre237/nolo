@@ -1,0 +1,3 @@
+{"heure": "20:00", "destinataires": ["fiabilite"], "evenement": "Premiers signalements « introuvable » contre PH-20", "attendu": "Comptabilisés avec poids réduit (comptes de moins de 7 jours)"}
+{"heure": "21:50", "destinataires": ["fiabilite"], "evenement": "14 signalements négatifs en 2 h contre PH-20", "attendu": "Seuil de rafale dépassé (8 en 3 h) : gel de toute baisse du score ; transmission au modérateur humain ; journalisé"}
+{"heure": "J+1 09:00", "destinataires": ["moderateur", "pharmacie"], "evenement": "La pharmacie conteste ; le modérateur examine", "attendu": "Décision humaine tracée ; signalements de la campagne écartés ou retenus avec justification"}

@@ -1,0 +1,57 @@
+L 119/32
+
+FR
+
+Journal officiel de l'Union européenne
+
+4.5.2016
+
+ONT ADOPTÉ LE PRÉSENT RÈGLEMENT:
+CHAPITRE I
+
+Dispositions générales
+Article premier
+Objet et objectifs
+1.
+Le présent règlement établit des règles relatives à la protection des personnes physiques à l'égard du traitement des
+données à caractère personnel et des règles relatives à la libre circulation de ces données.
+2.
+Le présent règlement protège les libertés et droits fondamentaux des personnes physiques, et en particulier leur
+droit à la protection des données à caractère personnel.
+3.
+La libre circulation des données à caractère personnel au sein de l'Union n'est ni limitée ni interdite pour des
+motifs liés à la protection des personnes physiques à l'égard du traitement des données à caractère personnel.
+
+Article 2
+Champ d'application matériel
+1.
+Le présent règlement s'applique au traitement de données à caractère personnel, automatisé en tout ou en partie,
+ainsi qu'au traitement non automatisé de données à caractère personnel contenues ou appelées à figurer dans un fichier.
+2.
+
+Le présent règlement ne s'applique pas au traitement de données à caractère personnel effectué:
+
+a) dans le cadre d'une activité qui ne relève pas du champ d'application du droit de l'Union;
+b) par les États membres dans le cadre d'activités qui relèvent du champ d'application du chapitre 2 du titre V du traité
+sur l'Union européenne;
+c) par une personne physique dans le cadre d'une activité strictement personnelle ou domestique;
+d) par les autorités compétentes à des fins de prévention et de détection des infractions pénales, d'enquêtes et de
+poursuites en la matière ou d'exécution de sanctions pénales, y compris la protection contre des menaces pour la
+sécurité publique et la prévention de telles menaces.
+3.
+Le règlement (CE) no 45/2001 s'applique au traitement des données à caractère personnel par les institutions,
+organes et organismes de l'Union. Le règlement (CE) no 45/2001 et les autres actes juridiques de l'Union applicables
+audit traitement des données à caractère personnel sont adaptés aux principes et aux règles du présent règlement
+conformément à l'article 98.
+4.
+Le présent règlement s'applique sans préjudice de la directive 2000/31/CE, et notamment de ses articles 12 à 15
+relatifs à la responsabilité des prestataires de services intermédiaires.
+
+Article 3
+Champ d'application territorial
+1.
+Le présent règlement s'applique au traitement des données à caractère personnel effectué dans le cadre des activités
+d'un établissement d'un responsable du traitement ou d'un sous-traitant sur le territoire de l'Union, que le traitement ait
+lieu ou non dans l'Union.
+
+

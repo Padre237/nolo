@@ -1,0 +1,72 @@
+References
+
+35.
+
+Metz, Cade. Chatbots may 'hallucinate' more often than many realize, The New York
+Times, 6 November 2023 (https://www.nytimes.com/2023/11/06/technology/chatbotshallucination-rates.html, accessed 7 November 2023).
+
+36.
+
+Acar OA. AI prompt engineering isn’t the future, Harvard Business Review, 6 June 2023
+(https://hbr.org/2023/06/ai-prompt-engineering-isnt-the-future?registration=success,
+accessed 26 June 2023).
+
+37.
+
+GPT-4 system card. Open AI, 23 March 2023 (https://cdn.openai.com/papers/gpt-4system-card.pdf, accessed 28 May 2023).
+
+38.
+
+GPT-4. OpenAI, 14 March 2023 (https://openai.com/research/gpt-4, accessed 28
+May 2023).
+
+39.
+
+Radford A, Kleinman Z. ChatGPT can now access up-to-date information. BBC News,
+27 September 2022 (https://www.bbc.com/news/technology-66940771, accessed 1
+October 2023).
+
+40.
+
+Kruge S, Ostermaier A, Uhl M. The moral authority of ChatGPT.
+ArXiv:23101.07098. doi:10.48550/arXiv.23101.07098.
+
+41.
+
+Mickle T, Metz C, Grant N. The chatbots are here, and the internet industry is in a tizzy,
+The New York Times, 8 March 2023 (https://www.nytimes.com/2023/03/08/technology/
+chatbots-disrupt-internet-industry.html, accessed 29 May 2023).
+
+42.
+
+Woo M. Trial by artificial intelligence. Nature. 2019;573:S100–2 (https://media.nature.
+com/original/magazine-assets/d41586-019-02871-3/d41586-019-02871-3.pdf, accessed
+29 May 2023).
+
+43.
+
+Muralidharan V, Burgart A, Daneshjou D, Rose S. Recommendations for the use of
+pediatric data in artificial intelligence and machine learning ACCEPT-AI. npj Dig Med.
+2023;6:166. doi:10.1038/s41746-023-00898-5.
+
+44.
+
+Kasneci E, Sessler K, Küchemann S, Bannert M, Dementieva D, Fischer F et al. ChatGPT
+for good? On opportunities and challenges of large language models for education.
+Learning Individual Differences. 2023;103:102274. doi:10.1016/j.lindif.2023.102274.
+
+45.
+
+Reddy CD, Lopez L, Ouyang D, Zou JY, He B. Video-based deep learning for automated
+assessment of left ventricular ejection fraction in pediatric patients. J Am Soc
+Echocardiogr. 2023;36(5):482–9. doi:10.1016/j.echo.2023.01.015.
+
+46.
+
+Knight W. These ChatGPT rivals are designed to play with your emotions.
+Wired, 4 May 2023 (https://www.wired.com/story/fast-forward-chatgptrivals-emotions/#:~:text=12%3A00%20PM-,These%20ChatGPT%20Rivals%20
+Are%20Designed%20to%20Play%20With%20Your%20Emotions,%2C%20companionship%E2%80%94and%20even%20romance., accessed 29 May 2023).
+
+65
+
+

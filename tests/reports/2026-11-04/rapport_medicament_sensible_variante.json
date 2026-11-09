@@ -1,0 +1,77 @@
+{
+ "scenario": "medicament_sensible",
+ "version_politique": "1.3.0+variante",
+ "gouvernance": true,
+ "etapes": [
+  {
+   "etape": 1,
+   "evenement": "Recherche de « tenofovir_lamivudine_dolutegravir » (antirétroviral)",
+   "attendu": "Classe sensible : le serveur BLOQUE la recherche (art. 48) avec repli « appareil » ; tuile de zone téléchargée sans la requête ; au moins une pharmacie agréée au stock frais (≤ 48 h) affichée dans le rayon de 5 km, avec la mention « Délivré sur ordonnance » ; la DCI n'apparaît jamais dans le journal",
+   "obtenu": "AUTORISE_AVEC_CONDITIONS (RECHERCHE_AUTORISEE) : recherche exécutée CÔTÉ SERVEUR, 0 résultats, la DCI est entrée au journal",
+   "conforme": false,
+   "ref_audit": "evt-df48f2ea-4cd2-4277-a6f6-62db72c019b3"
+  },
+  {
+   "etape": 2,
+   "evenement": "L'utilisateur signale « introuvable » dans l'une d'elles",
+   "attendu": "Agent Conformité : pseudonymisation imposée, aucun lien utilisateur-médicament conservé ; score mis à jour",
+   "obtenu": "AUTORISE_AVEC_CONDITIONS ['retirer_dci', 'retirer_pseudonyme'] ; aucun lien utilisateur-médicament conservé",
+   "conforme": true,
+   "ref_audit": "evt-2117376f-45f4-494d-b86c-316975e1fcdd"
+  }
+ ],
+ "decisions": [
+  {
+   "action": "ressources.rechercher_medicament",
+   "verdict": "AUTORISE_AVEC_CONDITIONS",
+   "fragments": [
+    "CMR-LOI-2024-017::0048"
+   ],
+   "conditions": [
+    "derogation_art48_simulee"
+   ],
+   "repli": null,
+   "justification": "RECHERCHE_AUTORISEE"
+  },
+  {
+   "action": "fiabilite.enregistrer_signalement_sensible",
+   "verdict": "AUTORISE_AVEC_CONDITIONS",
+   "fragments": [
+    "CMR-LOI-2024-017::0048"
+   ],
+   "conditions": [
+    "retirer_dci",
+    "retirer_pseudonyme"
+   ],
+   "repli": null,
+   "justification": "SIGNALEMENT_SANS_TRACE_SENSIBLE"
+  }
+ ],
+ "violations": [
+  {
+   "type": "categorie_interdite_traitee",
+   "etape": null,
+   "detail": "ressources.rechercher_medicament autorisée avec catégories ['vie_sexuelle']"
+  }
+ ],
+ "journal": {
+  "fichier": "tests/reports/2026-11-04/journal_medicament_sensible_variante.jsonl",
+  "evenements": 2,
+  "chaine_valide": true,
+  "erreurs_chaine": []
+ },
+ "differences": [
+  {
+   "action": "ressources.rechercher_medicament",
+   "verdict_reference": "BLOQUE",
+   "verdict_variante": "AUTORISE_AVEC_CONDITIONS",
+   "note": "RECHERCHE_AUTORISEE"
+  },
+  {
+   "action": "ressources.telecharger_tuile",
+   "verdict_reference": "AUTORISE",
+   "verdict_variante": "(action absente du parcours)",
+   "note": "TUILE_SANS_REQUETE"
+  }
+ ]
+}

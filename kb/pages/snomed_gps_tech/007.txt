@@ -1,0 +1,41 @@
+03/11/2026 11:03
+
+SNOMED International Documents
+
+• Enable implementers to tailor GPS datasets to specific clinical or interoperability use
+cases
+
+The extractor acts as a bridge between the full GPS and implementation-friendly artifacts,
+such as value sets or lookup tables.
+
+Features
+The SNOMED CT GPS Term Extractor provides the following capabilities to support GPS
+content preparation:
+
+• Term extraction from RF2
+• Semantic tag–based filtering
+• Interactive web-based processing
+• Active status filtering
+• Command-line execution
+Term extraction from RF2
+The extractor provides a controlled mechanism for deriving GPS-ready datasets from
+SNOMED CT RF2 releases by standardising how concepts and terms are selected and
+represented. This supports repeatable dataset generation across releases and reduces
+the need for custom RF2 processing logic within implementations.
+The extracted output is designed to be stable and comparable over time, enabling
+consistent downstream use in exchange, indexing, and validation scenarios.
+Active Concept Management
+The extractor supports handling of concept lifecycle status, enabling implementations to:
+
+• Include both active and inactive concepts where historical traceability is required
+• Restrict outputs to active concepts only for current-state exchange and display use
+cases
+
+This allows implementers to align GPS datasets with their data governance and clinical
+safety requirements.
+
+https://docs.snomed.org/implementation-guides/gps-implementation-guide/~gitbook/pdf?page=VZvwP1TLt1zd74otfVUl&only=yes&limi…
+
+7/11
+
+

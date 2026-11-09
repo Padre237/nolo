@@ -1,0 +1,17 @@
+03/11/2026 11:03
+
+SNOMED International Documents
+
+Global Patient Set Tools
+Semantic Tag–Based Filtering
+
+SNOMED International makes available a tool to filter the downloaded GPS files based on
+a concept's fully specified name (FSN), which allows implementers to restrict GPS content
+to a specific clinical domain:
+https://ihtsdo.github.io/snomed-gps-extractor/
+
+https://docs.snomed.org/implementation-guides/gps-implementation-guide/~gitbook/pdf?page=VZvwP1TLt1zd74otfVUl&only=yes&limi…
+
+4/11
+
+

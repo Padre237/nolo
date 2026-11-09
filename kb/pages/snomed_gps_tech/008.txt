@@ -1,0 +1,39 @@
+03/11/2026 11:03
+
+SNOMED International Documents
+
+Output Characteristics
+The extractor produces GPS-compatible tab-separated files (TSV) designed to be:
+
+• Easy to inspect and validate
+• Simple to load into databases or terminology services
+• Straightforward to transform into other representations (e.g. FHIR ValueSet resources)
+The output intentionally avoids RF2-specific complexity and is suitable for use in systems that
+do not natively support RF2.
+
+Relationship to Full SNOMED CT Implementations
+The GPS term extractor does not generate:
+
+• Concept hierarchies
+• Attribute relationships
+• Subsumption or inference logic
+Implementations requiring full semantic reasoning or advanced terminology services
+should use a licensed SNOMED CT edition and a dedicated terminology server instead of
+GPS-derived artifacts.
+
+Operational Guidance
+Detailed operational guidance for installation, command-line usage, web interface
+operation, and configuration options is maintained in the GitHub repository for the
+SNOMED CT GPS Term Extractor. Implementers should refer to the repository
+documentation for the most current and authoritative instructions.
+
+Access the Term Extractor here:
+https://ihtsdo.github.io/snomed-gps-extractor/
+https://github.com/IHTSDO/snomed-gps-extractor
+
+Provide Feedback
+https://docs.snomed.org/implementation-guides/gps-implementation-guide/~gitbook/pdf?page=VZvwP1TLt1zd74otfVUl&only=yes&limi…
+
+8/11
+
+

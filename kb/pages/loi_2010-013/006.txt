@@ -1,0 +1,46 @@
+6
+
+27. Interopérabilité des équipements terminaux : aptitude des
+équipements terminaux à fonctionner avec le réseau et, avec
+d'autres équipements terminaux permettant d'accéder à un même
+service ;
+28. Installation, station ou équipement radioélectrique :
+installation, station ou équipement de communications électroniques
+qui utilise des fréquences hertziennes pour la propagation des
+ondes en espace libre. Au nombre des installations radioélectriques,
+figurent notamment, les réseaux utilisant les capacités de satellites ;
+29. Itinérance (Roaming) : service qui permet le transfert des
+communications d’un réseau d’attribution à un autre, tout en
+gardant le même numéro de téléphone ou permettant aux abonnés
+d’avoir accès à un ou plusieurs systèmes satellitaires ;
+30. Licence : titre représentant une opération administrative
+permettant, pour une durée déterminée, d’exercer suivant un cahier
+de charges, certaines activités dans le secteur des
+télécommunications et des technologies de l’information et de la
+communication ;
+31. Opérateur : personne physique ou morale exploitant un réseau de
+communications électroniques ouvert au public ou fournissant au
+public un service de communications électroniques ;
+32. Opérateur dominant : opérateur d’un réseau de communications
+électroniques ouvert au public dont la part de marché (pourcentage
+de recettes ou du trafic de cet opérateur par rapport aux recettes ou
+au trafic de tous les opérateurs) sur le segment de marché considéré
+est égale ou supérieure à un pourcentage à déterminer par l’Agence ;
+33. Opérateur de réseaux de communications électroniques :
+personne titulaire d’une concession ou d’une licence ;
+34. Point de terminaison : Point physique par lequel les utilisateurs
+accèdent à un réseau de communications électroniques ouvert au
+public. Ces points de raccordement font partie du réseau ;
+35. Portabilité des numéros : possibilité pour un abonné, d’utiliser le
+même numéro d’abonnement, indépendamment de l’opérateur ou
+de l’exploitant du réseau auquel il est abonné, et même dans le cas
+où il change d’opérateur ou d’exploitant ;
+36. Prestation de cryptographie : opération visant à la mise en
+œuvre, pour le compte d'autrui, de moyens de cryptographie ;
+37. Radiocommunication : transmission au moyen d’ondes
+radioélectriques, d’informations de toute nature, en particulier de
+sons, textes, images, signes conventionnels, expressions numériques
+ou analogiques, signaux de commande à distance, signaux destinés
+au repérage ou à la détermination de la position du mouvement
+
+

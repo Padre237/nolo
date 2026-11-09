@@ -1,0 +1,37 @@
+vi
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+External reviewers
+Oren Asman, Tel Aviv University, Tel Aviv, Israel; I. Glenn Cohen, Harvard Law School, Boston
+(MA), USA; Alexandrine Pirlot de Corbion, Privacy International, London, United Kingdom;
+Rodrigo Lins, Federal University of Pernambuco, Recife, Brazil; Doug McNair, Deputy Director,
+Integrated Development, Bill & Melinda Gates Foundation, Seattle (WA), USA; Keymanthri
+Moodley, Stellenbosch University, Cape Town, South Africa; Amir Tal, Tel Aviv University, Tel
+Aviv, Israel; Tom West, Privacy International, London, United Kingdom.
+
+External contributors
+Box 2 (Ethical considerations for the use of LMMs by children) of the guidance was drafted
+by Vijaytha Muralidharan, Alyssa Burgart, Roxana Daneshjou and Sherri Rose, Stanford
+University, Stanford (CA), USA. Box 3 (Ethical considerations associated with LMMs and
+their impact on individuals with disabilities) of the guidance was drafted by Yonah Welker,
+independent consultant, Geneva, Switzerland.
+All external reviewers, experts and contributors declared their interests in line with WHO
+policies. None of the interests declared were assessed to be significant.
+
+WHO
+Shada Al-Salamah, Technical Officer, Department of Digital Health and Innovation, Geneva;
+Mariam Otmani Del Barrio, Scientist, Special Programme on Tropical Diseases Research,
+Geneva; Marcelo D'Agostino, Unit Chief, Information Systems and Digital Health, WHO Regional
+Office for the Americas, Washington (DC); Jeremy Farrar, Chief Scientist, Geneva; Clayton
+Hamilton, Technical Officer, WHO Regional Office for Europe, Copenhagen, Denmark; Kanika
+Kalra, Consultant, Department of Digital Health and Innovation, Geneva; Ahmed Mohamed
+Amin Mandil, Coordinator, Research and Innovation, WHO Regional Office for the Eastern
+Mediterranean, Cairo; Issa T. Matta, Legal Affairs, Geneva; Jose Eduardo Diaz Mendoza,
+Consultant, Department of Digital Health and Innovation, Geneva; Mohammed Hassan Nour,
+Technical Officer, Department of Digital Health and Innovation, WHO Regional Office for
+the Eastern Mediterranean, Cairo; Denise Schalet, Technical Officer, Department of Digital
+Health and Innovation, Geneva; Yu Zhao, Technical Officer, Department of Digital Health and
+Innovation, Geneva.
+
+

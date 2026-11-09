@@ -1,0 +1,51 @@
+8
+
+l’architecture d’un réseau de communications électroniques, dans la
+conception d’un système d’information.
+Article 5.- Les termes et expressions non définis dans cette loi, conservent
+leurs définitions ou significations données par les instruments juridiques
+internationaux auxquels l’Etat du Cameroun a souscrit, notamment, la
+Constitution
+et
+la
+Convention
+de
+l’Union
+Internationale
+des
+Télécommunications, le Règlement des Radiocommunications et le Règlement
+des Télécommunications Internationales.
+TITRE II
+DE LA CYBERSECURITE
+CHAPITRE I
+DE LA POLITIQUE GENERALE DE SECURITE ELECTRONIQUE
+
+Article 6.- L'Administration chargée des Télécommunications élabore et met en
+œuvre, la politique de sécurité des communications électroniques en tenant
+compte de l'évolution technologique et des priorités du Gouvernement dans ce
+domaine.
+A ce titre, elle :
+ assure la promotion de la sécurité des réseaux de communications
+électroniques et des systèmes d’information ainsi que le suivi de
+l’évolution des questions liées à la sécurité et aux activités de
+certification ;
+ coordonne sur le plan national les activités concourant à la sécurisation
+et à la protection des réseaux de communications électroniques et des
+systèmes d’information ;
+ veille à la mise en place d’un cadre adéquat pour la sécurité des
+communications électroniques ;
+ arrête la liste des autorités de certification ;
+ assure la représentation du Cameroun aux instances internationales
+chargées des activités liées à la sécurisation et à la protection des
+réseaux de communications électroniques et des systèmes
+d’information.
+CHAPITRE II
+DE LA REGULATION ET DU SUIVI DES ACTIVITES DE SECURITE ELECTRONIQUE
+
+Article 7.- (1) L’Agence Nationale des Technologies de l’Information et de la
+Communication, ci-après désignée l’Agence, instituée par la loi régissant les
+communications électroniques au Cameroun, est chargée de la régulation des
+activités de sécurité électronique, en collaboration avec l’Agence de
+Régulation des Télécommunications.
+
+

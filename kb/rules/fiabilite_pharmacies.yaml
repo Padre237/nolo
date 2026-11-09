@@ -1,0 +1,46 @@
+# Fiabilité des déclarations de stock (et non « avis » sur la pharmacie)
+# STATUT : règles de conception de l'équipe. Aucune pharmacie ne paie pour être référencée ou classée.
+# Bases : loi 2024/017 (données de santé sensibles, consentement art. 9) ; principe OMS « bien-être, sécurité
+# et intérêt public » (Ethics & Governance of AI for Health, 2021). Les valeurs chiffrées sont des propositions.
+
+objet_mesure: "Le médicament déclaré disponible était-il réellement présent ? (fait vérifiable)"
+
+signalement:
+  choix_utilisateur:
+    trouve: {effet: positif}
+    introuvable_absent_du_stock: {effet: negatif}
+    non_delivre_ordonnance_manquante: {effet: neutre, message: "Rappel : la délivrance nécessite une ordonnance."}
+    non_delivre_autre_raison: {effet: neutre, revue_humaine: true}
+  validite:
+    declaration_recente_h: 6      # signalement négatif pénalisant seulement si la déclaration avait moins de 6 h
+    sinon: "compté comme « stock non à jour » (effet réduit à 0.25)"
+  limites:
+    un_par_utilisateur_pharmacie_medicament_jour: true
+    max_signalements_par_compte_jour: 5
+    comptes_recents_jours: 7       # signalements d'un compte de moins de 7 jours : poids 0.5
+
+score:
+  formule: "(positifs + 2) / (total + 4)"   # lissage : une pharmacie sans historique démarre à 50 %
+  fenetre_jours: 30
+  ponderation_temps: "poids = 0.5 ** (age_jours / 15)"   # les vérifications récentes pèsent davantage
+  affichage: "déclarations fiables à {score} % sur {n} vérifications (30 derniers jours)"
+  usage: "départage uniquement entre pharmacies proches ; la distance reste prioritaire"
+
+anti_manipulation:
+  rafale:
+    fenetre_h: 3
+    seuil_signalements_negatifs: 8
+    action: "geler toute baisse de score de la pharmacie et transmettre au modérateur humain"
+  auto_signalement: "signalements émis depuis la pharmacie elle-même (compte lié à l'établissement) : ignorés"
+  journalisation: "chaque gel, levée de gel et décision du modérateur est tracée dans le journal d'audit"
+
+droits_de_la_pharmacie:
+  contestation: true
+  delai_reponse_moderateur_h: 72
+  information: "la pharmacie voit son score et le détail anonymisé des signalements"
+
+protection_des_donnees:
+  identifiant_utilisateur: "pseudonyme (hachage salé), jamais l'identité"
+  position: "non conservée avec le signalement"
+  classes_sensibles: "signalement agrégé uniquement ; aucun lien entre l'utilisateur et le médicament conservé"
+  conservation_jours: 30

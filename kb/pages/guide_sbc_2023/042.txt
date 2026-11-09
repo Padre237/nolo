@@ -1,0 +1,59 @@
+                                   Combien de signaux/ cas                  1 _____
+                                   communautaires ont-ils été notifiés
+                                   dans les 24 heures ?
+Triage et vérification             Le signal notifié a-t-il déjà été        1 Oui 2 Non 3 NA
+                                   rapporté ?
+                                   Le signal notifié provient-il d’une      1 Oui 2 Non 3 NA
+                                   source fiable ?
+                                   Combien des signaux/ cas                 1 _____
+                                   communautaires notifiés ont été
+                                   transformés en évènements ?
+                                   Nombre total d’évènements dans           1 _____
+                                   les six derniers mois
+                                   Nombre d’évaluation de risques           1 _____
+                                   menée dans les six derniers mois
+                                   L’évènement déclaré fait-il partie       1 Oui 2 Non 3 NA
+                                   des maladies à déclaration
+                                   obligatoire ?
+                                   Les cas communautaires a-t-elle un       1 Oui 2 Non 3 NA
+Evaluation des risques             haut potentiel de propagation?
+                                   Une mortalité ou une morbidité plus      1 Oui 2 Non 3 NA
+                                   élevée que celle attendue a-t-elle été
+                                   signalée pour l’évènement ?
+                                   L’évènement dans les six derniers        1 Oui 2 Non 3 NA
+                                   mois est -il inhabituel ou inattendu
+                                   dans la communauté ?
+                                   La maladie a-t-elle des                  1 Oui 2 Non 3 NA
+                                   conséquences possibles sur la santé
+                                   humaine ?
+Riposte                            Nombre d’évènements dans les six         1 _____
+                                   derniers mois qui ont bénéficié
+                                   d’une réponse dans les 48 heures
+                                   après l’évaluation du risque
+
+
+
+          OUTIL 5 : Procédures Opérationnelles Standards
+
+
+
+                         1. Détection du signal / Cas communautaire
+
+          Code : 01/SBC/2023
+
+
+            I. Objectifs
+          Détecter tous les cas de maladie et évènement de Santé Publique dans les 24 heures suivant
+          leur apparition dans la communauté.
+           II. Public cible
+          Ce document s'adresse aux acteurs de la surveillance à tous les niveaux : Points Focaux
+          Surveillance, personnel de santé, ASCP, Informateurs Clés, membres de la communauté.
+
+          III. Prérequis de mise en œuvre
+          Connaitre les définitions communautaires de cas et des signaux
+
+
+
+
+                                                                 41
+

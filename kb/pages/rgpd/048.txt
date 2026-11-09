@@ -1,0 +1,66 @@
+L 119/48
+
+FR
+
+Journal officiel de l'Union européenne
+
+4.5.2016
+
+Article 25
+Protection des données dès la conception et protection des données par défaut
+1.
+Compte tenu de l'état des connaissances, des coûts de mise en œuvre et de la nature, de la portée, du contexte et
+des finalités du traitement ainsi que des risques, dont le degré de probabilité et de gravité varie, que présente le
+traitement pour les droits et libertés des personnes physiques, le responsable du traitement met en œuvre, tant au
+moment de la détermination des moyens du traitement qu'au moment du traitement lui-même, des mesures techniques
+et organisationnelles appropriées, telles que la pseudonymisation, qui sont destinées à mettre en œuvre les principes
+relatifs à la protection des données, par exemple la minimisation des données, de façon effective et à assortir le
+traitement des garanties nécessaires afin de répondre aux exigences du présent règlement et de protéger les droits de la
+personne concernée.
+2.
+Le responsable du traitement met en œuvre les mesures techniques et organisationnelles appropriées pour garantir
+que, par défaut, seules les données à caractère personnel qui sont nécessaires au regard de chaque finalité spécifique du
+traitement sont traitées. Cela s'applique à la quantité de données à caractère personnel collectées, à l'étendue de leur
+traitement, à leur durée de conservation et à leur accessibilité. En particulier, ces mesures garantissent que, par défaut, les
+données à caractère personnel ne sont pas rendues accessibles à un nombre indéterminé de personnes physiques sans
+l'intervention de la personne physique concernée.
+3.
+Un mécanisme de certification approuvé en vertu de l'article 42 peut servir d'élément pour démontrer le respect
+des exigences énoncées aux paragraphes 1 et 2 du présent article.
+
+Article 26
+Responsables conjoints du traitement
+1.
+Lorsque deux responsables du traitement ou plus déterminent conjointement les finalités et les moyens du
+traitement, ils sont les responsables conjoints du traitement. Les responsables conjoints du traitement définissent de
+manière transparente leurs obligations respectives aux fins d'assurer le respect des exigences du présent règlement,
+notamment en ce qui concerne l'exercice des droits de la personne concernée, et leurs obligations respectives quant à la
+communication des informations visées aux articles 13 et 14, par voie d'accord entre eux, sauf si, et dans la mesure, où
+leurs obligations respectives sont définies par le droit de l'Union ou par le droit de l'État membre auquel les responsables
+du traitement sont soumis. Un point de contact pour les personnes concernées peut être désigné dans l'accord.
+2.
+L'accord visé au paragraphe 1 reflète dûment les rôles respectifs des responsables conjoints du traitement et leurs
+relations vis-à-vis des personnes concernées. Les grandes lignes de l'accord sont mises à la disposition de la personne
+concernée.
+3.
+Indépendamment des termes de l'accord visé au paragraphe 1, la personne concernée peut exercer les droits que
+lui confère le présent règlement à l'égard de et contre chacun des responsables du traitement.
+
+Article 27
+Représentants des responsables du traitement ou des sous-traitants qui ne sont pas établis dans
+l'Union
+1.
+Lorsque l'article 3, paragraphe 2, s'applique, le responsable du traitement ou le sous-traitant désigne par écrit un
+représentant dans l'Union.
+2.
+
+L'obligation prévue au paragraphe 1 du présent article ne s'applique pas:
+
+a) à un traitement qui est occasionnel, qui n'implique pas un traitement à grande échelle des catégories particulières de
+données visées à l'article 9, paragraphe 1, ou un traitement de données à caractère personnel relatives à des condam­
+nations pénales et à des infractions visées à l'article 10, et qui n'est pas susceptible d'engendrer un risque pour les
+droits et libertés des personnes physiques, compte tenu de la nature, du contexte, de la portée et des finalités du
+traitement; ou
+b) à une autorité publique ou à un organisme public;
+
+

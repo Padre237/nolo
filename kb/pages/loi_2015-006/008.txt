@@ -1,0 +1,46 @@
+-
+
+d’assigner les ressources en adressage ;
+d’instruire les dossiers d’homologation des équipements terminaux et de
+préparer les décisions y afférentes ;
+- de délivrer les agréments ;
+- de garantir la protection des consommateurs ;
+- d’exercer toute autre mission d’intérêt général que pourrait lui confier le
+Gouvernement dans le secteur des télécommunications et des
+technologies de l’information et de la communication.
+(3) L’organisation et le fonctionnement de l’Agence visée à l’alinéa 1 cidessus sont fixés par décret du Président de la République.
+ARTICLE50.- (nouveau) (1) L'Agence attribue dans des conditions objectives,
+transparentes et non discriminatoires aux opérateurs qui le demandent, des
+adresses, des préfixes et des numéros, moyennant une redevance dont le
+montant est fixé par arrêté-conjoint des Ministres chargés des
+télécommunications et des finances.
+(2) La redevance visée à l'alinéa 1 ci-dessus est recouvrée par l'Agence
+de Régulation des Télécommunications et répartie suivant les modalités fixées
+par voie réglementaire.
+(3) Les conditions d'utilisation de ces adresses, préfixes, numéros ou
+blocs de numéros portent sur:
+-
+
+le type de service auquel l'utilisation des ressources est réservée;
+l'utilisation efficace et pertinente des numéros attribués;
+le paiement des redevances d'utilisation.
+
+(4) Les abonnés à un réseau de communications électroniques ouvert au
+public, ont droit au service de portabilité de numéros suivant les conditions fixées
+par voie réglementaire.
+(5) Les conditions de location, d'utilisation des adresses, des préfixes, des
+numéros ou des blocs de numéros prévus à l'alinéa 1 ci-dessus, sont précisées
+dans les règles de gestion éditées par l'Agence, le cas échéant, dans les cahiers
+de charges des opérateurs.
+ARTICLE 56.- (nouveau) (1) Les équipements terminaux de communications
+électroniques ouverts au public et les installations radioélectriques, qu'elles
+soient destinées ou non à être connectées aux réseaux de communications
+électroniques ouverts au public, sont soumis à homologation, dans les conditions
+prévues par la présente loi.
+(2) L'homologation visée à l’alinéa 1 ci-dessus a pour objet, de garantir le respect
+des exigences essentielles et de vérifier la conformité des équipements
+terminaux et installations radioélectriques aux normes et standards en vigueur au
+Cameroun, ainsi que leur interopérabilité.
+8
+
+

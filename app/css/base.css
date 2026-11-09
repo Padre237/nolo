@@ -1,0 +1,97 @@
+/* Nolo — socle : remise à zéro, typographie, surfaces du navigateur. */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--pierre);
+  color: var(--encre);
+  font-family: var(--police);
+  font-size: var(--t-corps);
+  line-height: var(--interligne);
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  accent-color: var(--foret);
+  caret-color: var(--foret);
+}
+img, svg { display: block; max-width: 100%; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+h1, h2, h3, h4, p, ul, ol, dl, dd, figure, fieldset { margin: 0; }
+ul[role="list"], ol[role="list"] { list-style: none; padding: 0; }
+fieldset { border: 0; padding: 0; min-width: 0; }
+legend { padding: 0; }
+table { border-collapse: collapse; width: 100%; }
+
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: var(--approche-titre);
+  line-height: 1.12;
+  text-wrap: balance;
+}
+p, li, dd { text-wrap: pretty; }
+
+.affiche { font-size: var(--t-affiche); font-weight: 800; line-height: 1.02; letter-spacing: -0.03em; }
+.titre { font-size: var(--t-titre); font-weight: 800; letter-spacing: -0.026em; }
+.titre-2 { font-size: var(--t-titre-2); font-weight: 700; letter-spacing: var(--approche-titre); line-height: 1.15; }
+.titre-3 { font-size: var(--t-titre-3); font-weight: 700; letter-spacing: -0.01em; line-height: 1.25; }
+.chapo { font-size: var(--t-corps); color: var(--texte-2); max-width: 46ch; }
+.note { font-size: var(--t-note); color: var(--texte-3); }
+p.note > svg:first-child, p.chapo > svg:first-child { display: inline-block; vertical-align: -3px; margin-right: 6px; }
+.mono { font-family: var(--police-mono); font-variant-numeric: tabular-nums; letter-spacing: 0; }
+.chiffres { font-variant-numeric: tabular-nums lining-nums; }
+
+a { color: var(--foret); text-underline-offset: .2em; text-decoration-thickness: 1.5px; }
+a:hover { color: var(--foret-profond); }
+
+::selection { background: var(--menthe-trait); color: var(--encre); }
+
+:focus { outline: none; }
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+.sombre :focus-visible { outline-color: var(--focus-sur-sombre); }
+[tabindex="-1"]:focus { outline: none; }
+
+/* Barres de défilement aux couleurs du monde */
+* { scrollbar-color: var(--menthe-trait) transparent; scrollbar-width: thin; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: var(--menthe-trait); border-radius: 10px; border: 3px solid var(--pierre); }
+::-webkit-scrollbar-track { background: transparent; }
+
+.vh {
+  position: absolute !important; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.lien-evitement {
+  position: absolute; left: var(--marge); top: -100px; z-index: 50;
+  padding: var(--e-3) var(--e-4); border-radius: var(--r-controle);
+  background: var(--foret-profond); color: #fff; text-decoration: none; font-weight: 700;
+}
+.lien-evitement:focus { top: var(--e-3); }
+
+[hidden] { display: none !important; }
+
+/* Transitions entre écrans : le trait de parcours reste en place, le contenu change. */
+@view-transition { navigation: none; }
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: 220ms; animation-timing-function: var(--courbe); }
+::view-transition-group(parcours) { animation-duration: 320ms; animation-timing-function: var(--courbe-dans-ecran); }
+::view-transition-group(entete) { animation: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body { background: #fff; }
+  .entete, .barre-securite, .pas-imprimer { display: none !important; }
+}

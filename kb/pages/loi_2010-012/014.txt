@@ -1,0 +1,44 @@
+14
+
+(3) Les mécanismes prévus à l’alinéa 2 ci-dessus, font l’objet
+d’approbation et de visa conforme par l’Agence.
+(4) Les plates-formes des systèmes d’information font l’objet de
+protection contre d’éventuels rayonnements et des intrusions qui pourraient
+compromettre l’intégrité des données transmises et contre toute autre attaque
+externe notamment par un système de détection d’intrusions.
+Article 27.- Les personnes morales dont l'activité est d'offrir un accès à des
+systèmes d’information sont tenues d’informer les usagers :
+- du danger encouru dans l’utilisation des systèmes d’information
+non sécurisés notamment pour les particuliers ;
+- de la nécessité d’installer des dispositifs de contrôle parental ;
+- des risques particuliers de violation de sécurité, notamment la
+famille générique des virus ;
+- de l’existence de moyens techniques permettant de restreindre
+l’accès à certains services et de leur proposer au moins l’un de ces
+moyens, notamment l’utilisation des systèmes d’exploitation les
+plus récents, les outils antivirus et contre les logiciels espions et
+trompeurs, l’activation des pare-feu personnels, de systèmes de
+détection d’intrusions et l’activation des mises à jour automatiques.
+Article 28.- (1) Les exploitants des systèmes d’information informent les
+utilisateurs de l’interdiction faite d’utiliser le réseau de communications
+électroniques pour diffuser des contenus illicites ou tout autre acte qui peut
+entamer la sécurité des réseaux ou des systèmes d’information.
+(2) L’interdiction porte également sur la conception de logiciel
+trompeur, de logiciel espion, de logiciel potentiellement indésirable ou de tout
+autre outil conduisant à un comportement frauduleux.
+Article 29.- (1) Les exploitants des systèmes d’information ont l’obligation de
+conserver les données de connexion et de trafic de leurs systèmes
+d’information pendant une période de dix (10) ans.
+(2) Les exploitants des systèmes d’information sont tenus d’installer
+des mécanismes de surveillance de contrôle d’accès aux données de leurs
+systèmes d’information. Les données conservées peuvent être accessibles lors
+des investigations judiciaires.
+(3) Les installations des exploitants des systèmes d’information
+peuvent faire l’objet de perquisition ou de saisie sur ordre d’une autorité
+judiciaire dans les conditions prévues par les lois et règlements en vigueur.
+Article 30.- (1) Les exploitants des systèmes d’information évaluent, révisent
+leurs systèmes de sécurité et introduisent en cas de nécessité les
+modifications appropriées dans leurs pratiques, mesures et techniques de
+sécurité en fonction de l’évolution des technologies.
+
+

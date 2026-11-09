@@ -1,0 +1,40 @@
+viii
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+Executive summary
+Artificial Intelligence (AI) refers to the capability of algorithms integrated into systems
+and tools to learn from data so that they can perform automated tasks without explicit
+programming of every step by a human. Generative AI is a category of AI techniques in
+which algorithms are trained on data sets that can be used to generate new content, such as
+text, images or video. This guidance addresses one type of generative AI, large multi-modal
+models (LMMs), which can accept one or more type of data input and generate diverse outputs
+that are not limited to the type of data fed into the algorithm. It has been predicted that LMMs
+will have wide use and application in health care, scientific research, public health and drug
+development. LMMs are also known as “general-purpose foundation models”, although it is
+not yet proven whether LMMs can accomplish a wide range of tasks and purposes.
+LMMs have been adopted faster than any consumer application in history. They are compelling
+because they facilitate human–computer interaction to mimic human communication and to
+generate responses to queries or data inputs that may appear human-like and authoritative.
+With rapid consumer adoption and uptake and in view of its potential to disrupt core social
+services and economic sectors, many large technology companies, start-ups and governments
+are investing in and competing to guide the development of generative AI.
+In 2021, WHO published comprehensive guidance (1) on the ethics and governance of AI for
+health. WHO consulted 20 leading experts in AI, who identified both potential benefits and
+potential risks of use of AI in health care and issued six principles arrived at by consensus for
+consideration in the policies and practices of governments, developers, and providers that
+are using AI. The principles should guide the development and deployment of AI in health care
+by a wide range of stakeholders, including governments, public sector agencies, researchers,
+companies and implementers. The principles are: (1) protect autonomy; (2) promote human
+well-being, human safety and the public interest; (3) ensure transparency, “explainability” and
+intelligibility; (4) foster responsibility and accountability; (5) ensure inclusiveness and equity;
+and (6) promote AI that is responsive and sustainable (Figure 1).
+WHO is issuing this guidance to assist Member States in mapping the benefits and challenges
+associated with use of LMMs for health and in developing policies and practices for
+appropriate development, provision and use. The guidance includes recommendations for
+governance, within companies, by governments and through international collaboration,
+aligned with the guiding principles. The principles and recommendations, which account
+for the unique ways in which humans can use generative AI for health, are the basis of
+this guidance.
+
+

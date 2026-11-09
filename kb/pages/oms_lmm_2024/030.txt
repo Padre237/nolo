@@ -1,0 +1,46 @@
+12
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+might use LMMs in making decisions for which there are competing ethical or moral
+considerations (20). LMMs such as Chat GPT may be very inconsistent as moral
+advisers, although, as recent experiments indicated, they can influence users’ moral
+judgement, even if users know that they are being advised by a chatbot (40). Use of
+LMMs for moral judgments could lead to “moral de-skilling”, as physicians become
+unable to make difficult judgements or decisions (20).
+• Skills degradation: There is a long-term risk that increased use of AI in medical
+practice will degrade or erode clinicians’ competence as medical professionals, as
+they increasingly transfer routine responsibilities and duties to computers. Loss of
+skills could result in physicians being unable to overrule or challenge an algorithm’s
+decision confidently or that, in the event of a network failure or security breach, a
+physician would be unable to complete certain medical tasks and procedures (1).
+• Informed consent: Increased use of LMMs, in person but especially virtually, should
+require that patients are made aware that an AI technology may be either assisting
+in a response or could eventually be responsible for generating a response that
+will mimic a clinician’s feedback. Yet, if and when LMMs and other forms of AI are
+merged into regular medical practice, patients or their caregivers, even if they are
+uncomfortable or unwilling to rely wholly or partially on an AI technology, may
+be unable to withhold consent for its use. This is true especially if other options
+(not based on AI) are not easily available or if the clinician who has handed over
+responsibility for such functions to a computer cannot provide medical care without
+use of AI.
+
+2.2
+
+Patient-centred applications
+
+AI is beginning to change how patients manage their own medical conditions. Patients already
+take significant responsibility for their own care, including taking medicines, improving their
+nutrition and diet, engaging in physical activity, caring for wounds or delivering injections.
+AI tools have been projected to increase self-care, including by the use of chatbots, health
+monitoring and risk prediction tools and systems designed for people with disabilities (1).
+LMMs could accelerate the trend towards use of AI by patients and laypeople for medical
+purposes. Individuals have used Internet searches to obtain medical information for two
+decades. Therefore, LMMs could play a central role in providing information to patients and
+laypeople, including by integrating them into Internet searches. Large language modelpowered chatbots could replace search engines for seeking information (41), including for
+self-diagnosis and before visiting a medical provider.
+LMM-powered chatbots, with increasingly diverse forms of data, could serve as highly
+personalized, broadly focused virtual health assistants. According to one study, “virtual
+health assistants can leverage individual profiles…to promote behaviour change, answer
+
+

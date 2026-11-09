@@ -1,0 +1,47 @@
+4 Design and development of general-purpose foundation models (LMMs)
+
+no further details about the architecture (including model size), hardware, training compute,
+dataset construction, training method, or similar” (128).
+Unwillingness to be transparent about data is, however, inconsistent with the WHO ethical
+principle of ensuring transparency, “explainability” and intelligibility. Developers should be
+transparent about the data they used to train a model so that downstream users, including
+those who fine-tune the LMM, use the LMM to develop a health-care application and those
+who use the LMM directly, are aware of any insufficiency or incompleteness of the training
+data set.
+When developers improve data quality by using data workers in low- and middle-income
+countries to screen the content for abusive, violent or offensive material and to annotate data,
+those workers should be paid a living wage and be provided with mental health services and
+other forms of counselling; and developers should introduce safeguards to protect workers
+from any distress. Governments should update their labour standards to extend benefits to all
+data workers, to promote a “level playing field” among companies and to ensure that labour
+standards are maintained and improved over time.
+Ethical design and design for values: One approach to integrating ethics and human rights
+standards into the development of AI technologies is “design for values”, a paradigm for
+basing design on the values of human dignity, freedom, equality and solidarity and for
+considering them non-functional requirements (1). Several recommendations in the original
+WHO expert guidance for the design of AI technologies, including “design for values”, bear
+repeating here.
+The guidance recommended that the design and development of AI technologies not be done
+solely by scientists and engineers and that “potential end-users and all direct and indirect
+stakeholders should be engaged from the early stages of AI development in structured
+inclusive, transparent design and given opportunities to raise ethical issues, voice concerns
+and provide input for the AI application under consideration” (1). Thus, in development of
+foundation models, people who might either use or benefit from the models could be involved
+in the initial development. One proposal is to introduce so-called “human oversight colleges”,
+which would facilitate inclusion of patient representatives in the development of an LMM that
+is intended to benefit a patient or caregiver, either directly or indirectly through a medical
+provider.6 Medical and health-care professionals, research scientists, patients, laypeople and
+vulnerable populations could also be included in the design of LMMs, labelling of data and
+testing. Inclusiveness in the design of the LMM could, for example, protect human autonomy,
+as the participation of medical providers could forestall or reduce automation bias by
+providers. Inclusive design could promote the WHO guiding principle of ensuring inclusiveness
+and equity, especially if design teams include diverse viewpoints by age, ability, race, ethnicity,
+sex or gender identity.
+
+6
+
+Communication from David Gruson, WHO expert on ethics and governance of AI for health.
+
+37
+
+

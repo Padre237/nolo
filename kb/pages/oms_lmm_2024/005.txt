@@ -1,0 +1,88 @@
+Contents
+
+Contents
+Acknowledgements.................................................................................................v
+Abbreviations.........................................................................................................vii
+Executive summary..............................................................................................viii
+1
+
+Introduction....................................................................................................1
+1.1
+
+Significance of LMMs.................................................................................. 3
+
+1.2
+
+WHO guidance on ethics and governance of AI for health....................... 4
+
+I.
+
+Applications, challenges and risks of LMMs...................................................7
+
+2
+
+Applications and challenges of use of LMMs in health..................................8
+
+3
+
+2.1
+
+Diagnosis and clinical care......................................................................... 8
+
+2.2
+
+Patient-centred applications................................................................... 12
+
+2.3
+
+Clerical functions and administrative tasks............................................ 16
+
+2.4
+
+Medical and nursing education................................................................17
+
+2.5
+
+Scientific and medical research and drug development.........................17
+
+Risks to health systems and society and ethical concerns about use
+of LMMs..........................................................................................................20
+3.1
+
+Health systems......................................................................................... 20
+
+3.2
+
+Compliance with regulatory and legal requirements............................. 23
+
+3.3
+
+Societal concerns and risks..................................................................... 24
+
+II.
+
+Ethics and governance of LMMs in health care and medicine.....................31
+
+4
+
+Design and development of general-purpose foundation models
+(LMMs)...........................................................................................................34
+4.1
+
+Risks to be addressed during the development of generalpurpose foundation models (LMMs)........................................................ 34
+
+4.2
+
+Measures developers can take to address risks with generalpurpose foundation models (LMMs)........................................................ 35
+
+4.3
+
+Government laws, policies and public sector investments.................... 39
+
+4.4
+
+Open-source LMMs....................................................................................41
+
+iii
+
+

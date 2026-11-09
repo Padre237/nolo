@@ -1,0 +1,55 @@
+4.5.2016
+
+Journal officiel de l'Union européenne
+
+FR
+
+L 119/35
+
+22) «autorité de contrôle concernée», une autorité de contrôle qui est concernée par le traitement de données à caractère
+personnel parce que:
+a) le responsable du traitement ou le sous-traitant est établi sur le territoire de l'État membre dont cette autorité de
+contrôle relève;
+b) des personnes concernées résidant dans l'État membre de cette autorité de contrôle sont sensiblement affectées
+par le traitement ou sont susceptibles de l'être; ou
+c) une réclamation a été introduite auprès de cette autorité de contrôle;
+23) «traitement transfrontalier»,
+a) un traitement de données à caractère personnel qui a lieu dans l'Union dans le cadre des activités d'établissements
+dans plusieurs États membres d'un responsable du traitement ou d'un sous-traitant lorsque le responsable du
+traitement ou le sous-traitant est établi dans plusieurs États membres; ou
+b) un traitement de données à caractère personnel qui a lieu dans l'Union dans le cadre des activités d'un établis­
+sement unique d'un responsable du traitement ou d'un sous-traitant, mais qui affecte sensiblement ou est
+susceptible d'affecter sensiblement des personnes concernées dans plusieurs États membres;
+24) «objection pertinente et motivée», une objection à un projet de décision quant à savoir s'il y a ou non violation du
+présent règlement ou si l'action envisagée en ce qui concerne le responsable du traitement ou le sous-traitant
+respecte le présent règlement, qui démontre clairement l'importance des risques que présente le projet de décision
+pour les libertés et droits fondamentaux des personnes concernées et, le cas échéant, le libre flux des données à
+caractère personnel au sein de l'Union;
+25) «service de la société de l'information», un service au sens de l'article 1er, paragraphe 1, point b), de la directive (UE)
+2015/1535 du Parlement européen et du Conseil (1);
+26) «organisation internationale», une organisation internationale et les organismes de droit public international qui en
+relèvent, ou tout autre organisme qui est créé par un accord entre deux pays ou plus, ou en vertu d'un tel accord.
+
+CHAPITRE II
+
+Principes
+Article 5
+Principes relatifs au traitement des données à caractère personnel
+1.
+
+Les données à caractère personnel doivent être:
+
+a) traitées de manière licite, loyale et transparente au regard de la personne concernée (licéité, loyauté, transparence);
+b) collectées pour des finalités déterminées, explicites et légitimes, et ne pas être traitées ultérieurement d'une manière
+incompatible avec ces finalités; le traitement ultérieur à des fins archivistiques dans l'intérêt public, à des fins de
+recherche scientifique ou historique ou à des fins statistiques n'est pas considéré, conformément à l'article 89,
+paragraphe 1, comme incompatible avec les finalités initiales (limitation des finalités);
+c) adéquates, pertinentes et limitées à ce qui est nécessaire au regard des finalités pour lesquelles elles sont traitées
+(minimisation des données);
+d) exactes et, si nécessaire, tenues à jour; toutes les mesures raisonnables doivent être prises pour que les données à
+caractère personnel qui sont inexactes, eu égard aux finalités pour lesquelles elles sont traitées, soient effacées ou
+rectifiées sans tarder (exactitude);
+(1) Directive (UE) 2015/1535 du Parlement européen et du Conseil du 9 septembre 2015 prévoyant une procédure d'information dans le
+domaine des réglementations techniques et des règles relatives aux services de la société de l'information (JO L 241 du 17.9.2015, p. 1).
+
+

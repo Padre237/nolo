@@ -1,0 +1,45 @@
+50
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+should comply with requirements for use of LMMs in health care and medicine. The regulatory
+burden on providers should be greater if their use of a product or application diverges
+substantially from or changes the foundation model in ways that are beyond the control of
+the developer.
+Medical device regulation: A government may determine that a general-purpose foundation
+model or application qualifies as a medical device. While there is little guidance on which
+LMMs qualify as medical devices, one regulator said that “LMMs only directed toward general
+purposes and whose developers make no claim that their software can be used for a medical
+purpose are unlikely to qualify as medical devices” (157). The regulator also noted, however,
+that: “LMMs that are developed for, or adapted, modified or directed toward specifically
+medical purposes are likely to qualify as medical devices. Additionally, where a developer
+makes claims that their LMM can be used for a medical purpose, this again is likely to mean
+the product qualifies as a medical device” (157).
+Chatbots based on LMMs that provide medical advice are likely to be characterized as medical
+devices under current European Union and US regulatory standards (158). The WHO guidance
+on the ethics and governance of AI for health (1) recommended that: “government regulators
+should require that an AI system’s performance be tested, and sound evidence obtained from
+prospective testing in randomized trials and not merely from comparison of the system to
+existing datasets in a laboratory”.
+If an LMM or application is to be regulated as a medical device, the developer and/or provider
+should bear the burden of proof by providing evidence that the device performs as marketed
+and that it meets the requirements of current or amended national laws. This may include
+various requirements, such as adhering to ethical obligations related to bias and privacy.
+Newly proposed regulations on AI technologies for medical devices in the European Union and
+the USA will probably integrate ethical principles related to the use of AI in health, including
+“explainability”, control of bias and transparency. It is unlikely that current chatbots that
+include LMMs could meet such standards (158).
+LMMs for clinical decision support are already being used experimentally. Although
+these LMMs include disclaimers, they do not obviate application of medical device laws,
+“which dictate that such experiments should take place only in an authorized clinical trial
+setting under appropriate controls to protect patients and to produce clinically relevant
+outcomes” (158). Governments could examine controlled experimental uses of such LMMs
+in regulatory “sandboxes”, which would allow testing in a live environment in actual clinical
+settings with safeguards and oversight to protect health systems from risks or unintended
+consequences. Such use may, however, be appropriate only in countries in which new healthcare products and services and their specifications are subject to formal regulation and data
+protection regulations (1).
+Consumer protection law: Governments should develop and use consumer protection laws
+to ensure that any negative consequences of LMMs and applications do not reach users and
+patients. Consumer protection laws could be applied, for example, to prevent practices that
+
+

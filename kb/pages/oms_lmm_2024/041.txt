@@ -1,0 +1,51 @@
+3 Risks to health systems and society and ethical concerns about use of LMMs
+
+causing it to behave in ways that the developer did not intend (82). A prompt injection could,
+for example, instruct an LMM designed to answer questions about a database to delete
+information from the database or to change the information. There is as yet no known solution
+to address this flaw. Even though prompt injections are currently used by security researchers
+to illustrate the challenges of LMMs, they could be used by malicious actors to steal data or to
+defraud users (83).
+
+3.2
+
+Compliance with regulatory and legal requirements
+
+Although new laws may be enacted to regulate the use of AI, certain existing laws and
+regulations, in particular data protection laws as well as international human rights
+obligations, are applicable to the development, provision and deployment of LMMs. Some
+LMMs, as currently developed and introduced for public use, may violate several major data
+protection laws, such as the European Union’s General Data Protection Regulation (84), which
+covers various rights, such as protection from automated decision-making. Such rights,
+protections and requirements must guide the development of AI (85).
+Some such violations have led to investigations of LMMs in European Union Member
+States (83) and elsewhere, such as in Canada (86). The violations have included: (i) LMMs
+scraped and used the personal data of individuals from the internet without their consent
+(and without a ‘legitimate interest’ for collecting such data) (87); (ii) LMMs that cannot inform
+people that they are using their data or give them the right to correct mistakes, to have their
+data erased (the “right to be forgotten”) or to object to use of such data (87); (iii) LMMs that
+are not fully transparent in their use of sensitive data provided to a chatbot or other consumer
+interface, although, by law, a user must be able to delete chat log data (83); (iv) LMMs that
+do not have an appropriate “age-gating” system to filter out users under the age of 13 and
+those aged 13–18 for whom parental consent has not been given (88); (v) LMMs that cannot
+prevent breaches of personal information (87); and (vi) LMMs that publish inaccurate personal
+information, due partly to hallucinations (89). Other possible contraventions of the General
+Data Protection Regulation include the “right to explanation” requirement, such that an
+entity that uses personal data for automated processing can explain how the system, such
+as an LMM, makes decisions.5 As noted above, companies cannot yet explain how LMMs
+make decisions, although some are working on approaches to satisfy the “explainability”
+requirement (90).
+Many violations are significant. They are associated with how LMMs were trained, how they are
+used and how they can be managed by a data controller. It is possible that LMMs may never
+be compliant with the General Data Protection Regulation or other data protection laws (91).
+A complaint filed in 2023 with the data protection authority of one European Union Member
+State alleged that the large language model of one company and the approach for which it
+was developed and is now operated systematically breached the General Data Protection
+Regulation (92).
+5
+
+See Article 15(1)(h) and Recital 71 of the General Data Protection Regulation.
+
+23
+
+

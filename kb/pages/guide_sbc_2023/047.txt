@@ -1,0 +1,54 @@
+ •    Kit bureautique (ordinateurs) ;
+ •    Matériels roulants (motos, véhicules…).
+      Documents
+     • Guide de la SBC ;                      •      Fiches de notification ;
+     • Annuaire       téléphonique     et     •      Registres des signaux ;
+        numérique ;                           •      Registre des rumeurs.
+     • Carte géographique.
+
+
+
+VII.    Procédure
+        Dans l’Aire de Santé
+    • Le PFS / Chef de l’AS en charge du triage et la vérification procède au triage et à la
+        vérification immédiatement après la notification d'un signal ou d'un cas
+        communautaire quel quelle que soit la source ;
+    • Le Chef de L’AS / PFS réceptionne les informations par téléphone ou à travers le
+        carnet de bord, les fiches de notification communautaires et les consigne dans un
+        registre de signaux/ rumeurs ;
+    • Il procède à un "tri" en posant les questions suivantes : Les informations rapportées
+        correspondent-elles à une ou plusieurs définitions de signaux ? Le signal a-t-il déjà
+        été rapporté (c.-à.-d. le signal est-il un doublon) ?
+    • Une fois le tri effectué, il s’en suit une vérification pour déterminer si le signal est
+        vrai (c.à.d. qu’il n’est pas une fausse alerte ou une fausse rumeur : fiable). Les
+        informations rapportées correspondent-elles à quelque chose qui s’est réellement
+        produit ou à une rumeur ?
+    • Les critères de vérification comprennent l’observation directe, le fait de poser des
+        questions à l’ASCP pour s’assurer qu’il a compris correctement le signal, la
+        confirmation du signal par au moins deux sources différentes, ou le fait qu’il soit
+        rapporté par une autorité médicale ;
+    • Une fois que le signal est vérifié, il devient un évènement et indiqué sur le registre
+        des signaux. Tous les évènements doivent être signalés immédiatement par l’AS au
+        DS ;
+    • Le Chef de l'Aire de santé/ PFS de santé notifie immédiatement les évènements au
+        DS et l’intègre dans le DHIS2.
+        Au Centre d’Appel
+    • Après réception du signal, il procède à un "tri" en posant les questions suivantes : Les
+        informations rapportées correspondent-elles à une ou plusieurs définitions de signaux
+        ou des cas communautaires ? Le signal / cas communautaire a-t-il déjà été rapporté
+        (c.-à.-d. le signal est-il un doublon) ?
+    • Une fois le signal capté, l’opérateur téléphonique informe le régulateur médical et il
+        s’en suit le processus de vérification pour déterminer si le signal est vrai (c.à.d. qu’il
+        n’est pas une fausse alerte ou une fausse rumeur : fiable) comme décrit ci-dessous :
+Si le centre d’Appel est au niveau central,
+    • Le téléopérateur saisi le niveau régional (coordonnateur du CERPLE) qui se charge
+        de contacter le District de santéconcerné pour une vérification immédiate et retour
+        d’information ;
+    • Selon l’urgence, le téléopérateur peut contacter directement le Chef de District et
+        informer le coordonnateur du CERPLE pour accompagner le Service de Santé du
+        District lors de la vérification et retour d’information
+
+
+
+                                               46
+

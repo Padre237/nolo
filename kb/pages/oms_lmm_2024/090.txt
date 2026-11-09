@@ -1,0 +1,37 @@
+72
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+113. Li P. Making AI less “thirsty”: Uncovering and addressing the secret water footprint of AI
+models. ArXiv. 2023;2304.03271v. doi:10.48550/arXiv.2304.03271.
+114. Syed N. The secret water footprint of AI technology. The Markup, 15 April 2023 (https://
+themarkup.org/hello-world/2023/04/15/the-secret-water-footprint-of-ai-technology,
+accessed 2 June 2023).
+115. Livingstone G. It’s pillage: Thirsty Uruguayans blast Google’s plan to exploit water
+supply. The Guardian, 11 July 2023 (https://www.theguardian.com/world/2023/jul/11/
+uruguay-drought-water-google-data-center, accessed 12 July 2023).
+116. Thornhill J. The sceptical case on generative AI. Financial Times, 17 August 2023.
+(https://www.ft.com/content/ed323f48-fe86-4d22-8151-eed15581c337, accessed 11
+September 2023).
+117. Marcus G. The imminent enshittification of the Internet. Substack, 16 August 2023
+(https://garymarcus.substack.com/p/the-imminent-enshittification-of, accessed 11
+September 2023).
+118. Pause giant AI experiments: An open letter. Narberth (PA): Future of Life Institute;
+2023 (https://futureoflife.org/open-letter/pause-giant-ai-experiments/, accessed 13
+June 2023).
+119. Perrigo B. DeepMind’s CEO helped take AI mainstream. Now he’s urging caution. Time,
+12 January 2023 (https://time.com/6246119/demis-hassabis-deepmind-interview/,
+accessed 13 June 2023).
+120. Lomas N. Unpacking the rules shaping generative AI. Tech Crunch, 13 April 2023 (https://
+techcrunch.com/2023/04/13/generative-ai-gdpr-enforcement/, accessed 13 June 2023).
+121. Mökander J, Schuett J, Kirk HR, Floridi L. Auditing large language models: a threelayered approach Soc Sci Res Netw. 2023. doi:10.2139/ssrn.4361607.
+122. Lomas N. Report details how Big Tech is leaning on EU not to regulate general purpose
+Ais. Tech Crunch, 23 February 2023 (https://techcrunch.com/2023/02/23/eu-ai-actlobbying-report/, accessed 20 June 2023).
+123. Sambasivan N, Kapania S, Highfill H, Akrong D, Paritosh P, Aroyo LM. “Everyone
+wants to do model work, not the data work.”: Data cascades in high-stakes AI. In:
+Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems, May
+2021. doi:10.1145/3411764.3445518.
+124. Browne G. AI is steeped in Big Tech’s digital colonialism. Wired, 25 May 2023 (https://
+www.wired.co.uk/article/abeba-birhane-ai-datasets, accessed 17 June 2023).
+
+

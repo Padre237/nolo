@@ -1,0 +1,50 @@
+AP       Affections Prioritaires
+ASLO     Associations Locales
+AS       Aire de Santé
+ASC      Agent de Santé Communautaire
+ASCP     Agent de Santé Communautaire Polyvalent
+ASLO     Associations Locales
+CBS      Chef Bureau Santé
+CDA      Chef Centre Documentation et des Archives
+CDS      Chef de District de Santé
+CERPLE   Centre Régional de Prévention et de Lutte contre les Epidémies
+CIS      Cellule des Informations Sanitaires
+CPC      Centre Pasteur du Cameroun
+CERC     Communication des Risques et Engagement Communautaire
+CSSD     Chef de Service de Santé de District
+CSSE     Chef Service de la Surveillance Epidémiologique
+CTD      Collectivité Territoriale Décentralisée
+DLMEP    Direction de la Lutte contre la Maladie, les Epidémies et les Pandémies
+DPML     Direction de la Pharmacie, du Médicament et des Laboratoires
+DRSP     Délégation Régionale de la Santé Publique
+DS       District de Santé
+DSF      Direction de la Santé Familiale
+EIIR     Equipe d’Investigation et d’Intervention Rapides
+FOSA     Formation Sanitaire
+LNSP     Laboratoire National de Santé Publique
+MAPE     Maladies à Potentiel Epidémique
+OBC      Organisation à Base Communautaire
+OMS      Organisation mondiale de la Santé
+ONSP     Observatoire National de Santé Publique
+PCI      Prévention et Contrôle de l’Infection
+PEV      Programme Elargi de Vaccination
+PF       Point Focal
+PFS      Point Focal Surveillance
+POS      Procédure Opérationnelle Standard
+PSF      Postes de Santé aux Frontières
+PTF      Partenaire Technique et Financier
+RSI      Règlement Sanitaire International
+SBC      Surveillance à Base Communautaire
+SDLEP    Sous-Direction de la Lutte contre les Epidémies et les Pandémies
+SDMPR    Surveillance des Décès Maternels, Périnatal et Riposte
+SIMR     Surveillance Intégrée de la Maladie et Riposte
+SR       Santé de la Reproduction
+USP      Urgences de Santé Publique
+USPPI    Urgence de Santé Publique de Portée Internationale
+VAD      Visite à Domicile
+
+
+
+
+                                           7
+

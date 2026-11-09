@@ -1,0 +1,44 @@
+5 Provision with general-purpose foundation models (LMMs)
+
+5 Provision with general-purpose
+foundation models (LMMs)
+The uses of general-purpose foundation models depend on whether a user prompts an
+LMM to generate health-care related outputs or a provider is permitted by the developer
+to integrate the LMM into a health-care related application, product or service. Either
+case introduces novel risks that must be addressed by developers, providers or both.
+Governments are responsible for assessing and regulating uses of such technologies before
+their deployment.
+
+5.1
+
+Risks to be addressed when providing a health-care
+service or application with a general-purpose foundation
+model (LMM)
+
+There is likely to be disagreement about whether both general-purpose foundation models
+and applications should be assessed and approved when they are used in a product for
+health-care purposes or used directly by a user. Several of the largest technology companies
+have been quietly lobbying government officials (for example in the European Union) to
+abandon an evaluation framework for LMMs and to focus oversight instead on applications
+that might be used in ways that a government might consider “risky” (145). This would concern
+both providers that generate and market health-care applications that include the foundation
+model, and users, such as a provider or patient, who choose to use the LMM directly or
+indirectly via an AI system. The companies argue that oversight of the general-purpose
+foundation model would “completely shift the burden” to developers and that others in the
+value chain should also assume responsibility (145).
+While it may not be appropriate to hold the developer of a general-purpose foundation
+model responsible for all uses of the LMM, it would also be inappropriate to place the burden
+solely on providers, deployers or users, as they will not have been involved in development
+of the model and may not understand the associated limitations and risks. This would allow
+developers of general-purpose foundation models, despite their significant power, resources,
+oversight and understanding of LMMs, to escape responsibility and would open a “massive
+hole” in attempts to govern AI technologies for health (145).
+A developer may seek to avoid use of an LMM for a health-care purpose (or another use). If
+a developer does not wish an LMM to be used for health or medical purposes (especially in
+clinical medicine), it could discourage such use either by preventing entities that develop
+applications for health or medicine to use (license) the LMM on an application programming
+interface, or, if the LMM is used directly by a user (provider or patient) for a health-care
+
+45
+
+

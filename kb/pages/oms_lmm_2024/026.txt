@@ -1,0 +1,44 @@
+8
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+2 Applications and challenges of
+use of LMMs in health
+Applications of AI for health include diagnosis, clinical care, research, drug development,
+health-care administration, public health and surveillance. Many applications of LMMs are not
+novel uses of AI; however, clinicians, patients, laypeople and health-care professionals and
+workers access and use LMMs differently. This section addresses the potential applications of
+LMMs in health care and the actual and expected challenges and risks associated with its use.
+Many applications and uses are still unproven and may ultimately not deliver the benefits that
+have been advertised.
+
+2.1
+
+Diagnosis and clinical care
+
+AI is already used in diagnosis and clinical care, for instance to assist diagnosis in fields such as
+radiology and medical imaging, tuberculosis and oncology. It had been hoped that clinicians
+could use AI to integrate patient records during consultation, to identify at-risk patients and
+as an aid in difficult treatment decisions and to catch clinical errors (1). LMMs could make
+it possible to extend use of AI-based systems throughout diagnosis and clinical care – both
+virtual and in-person consultations, with some experts expecting that LMMs “will be more
+important to doctors than the stethoscope in the past” (20). Several LMMs have passed the
+US medical licensing examination; however, passing a written medical test by regurgitating
+medical knowledge is not the same as providing safe, effective clinical services (21), and LMMs
+have failed tests with material not previously published online or that could be easily solved
+by children (22). One study of the clinical knowledge of a large language model concluded that
+“transitioning from a large language model that is used for answering medical questions to
+a tool that can be used by healthcare providers, administrators, and consumers will require
+considerable additional research to ensure the safety, reliability, efficacy and privacy of the
+technology” (23).
+Diagnosis is seen as a particularly promising area, because LMMs could be used to identify rare
+diagnoses or “unusual presentations” in complex cases (24). Doctors are already using Internet
+search engines, online resources and differential diagnosis generators, and LMMs would be an
+additional instrument for diagnosis. LMMs could also be used in routine diagnosis, to provide
+doctors with an additional opinion to ensure that obvious diagnoses are not ignored. All this
+can be done quickly, partly because an LMM can scan a patient’s full medical record much
+more quickly than can doctors (24).
+Several popular LMMs now being used in pilot programmes to support clinicians were not,
+however, trained specifically on electronic health records or medical or other relevant health
+
+

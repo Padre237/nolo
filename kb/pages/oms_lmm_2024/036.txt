@@ -1,0 +1,45 @@
+18
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+development, and to improve the recruitment, enrolment and monitoring of individuals
+during clinical trials.4
+LMMs are extending the ways in which AI can support scientific and medical research as
+well as drug discovery. LMMs can be used in a variety of aspects of scientific research. They
+can generate text to be used in a scientific article, for submitting manuscripts or in writing
+a peer review (34). They can be used to summarize texts, including summaries for academic
+papers, or can generate abstracts. LMMs can also be used to analyse and summarize data to
+gain new insights in clinical and scientific research. They can be used to edit text, improving
+the grammar, readability and conciseness of written documents such as articles and grant
+proposals. Additionally, LMMs can be used to gain insights from the data with which it was
+trained (34). One LMM, which was trained on millions of academic articles, is claimed to be
+able to analyse scientific research to answer questions, extract information or generate
+relevant text (64). LMMs are also used in drug discovery and specifically in de-novo drug design
+to develop new compounds with specific properties (65).
+
+Risks and challenges
+Leading medical and scientific journals have already responded to the emergence of LMMs,
+their potential and their impact on scientific research. For example, one academic publishing
+company has set two rules: (1) an LMM will not be accepted as a credited author on a research
+paper, and (2) researchers who use LMMs should document their use in the section on
+methods and in the acknowledgements (66). The World Association of Medical Editors has
+restricted authorship to humans (67).
+General concerns about use of LMMs in scientific research include the following:
+• Lack of accountability: The authorship of a scientific or medical research paper
+requires accountability, which cannot be assumed by AI tools (66). Lack of
+accountability was the basis for the decision of a major academic publisher and the
+World Association of Medical Editors not to accept an LMM as a credited author.
+• High-income country bias: Most of the scientific and medical research used to train
+LMMs is conducted in high-income countries. Thus, the outputs of any LMM query are
+likely to be biased towards a high-income country perspective (34). This can reinforce
+and possibly exacerbate the trend of ignoring and not citing research that originates
+from a low- or middle-income country (68), especially if the publication is written in
+non-Latin script.
+• Hallucination and/or misinformation: An LMM may “hallucinate” by summarizing or
+citing academic articles or other information that does not exist (69).
+
+4
+
+Ethics and governance of artificial intelligence in drug development. Geneva: World Health Organization; forthcoming.
+
+

@@ -1,0 +1,68 @@
+4.5.2016
+
+FR
+
+Journal officiel de l'Union européenne
+
+L 119/21
+
+d'inclure ces clauses dans un contrat plus large, tel qu'un contrat entre le sous-traitant et un autre sous-traitant, ni
+d'y ajouter d'autres clauses ou des garanties supplémentaires, à condition que celles-ci ne contredisent pas,
+directement ou indirectement, les clauses contractuelles types adoptées par la Commission ou par une autorité de
+contrôle et qu'elles ne portent pas atteinte aux libertés et droits fondamentaux des personnes concernées. Les
+responsables du traitement et les sous-traitants devraient être encouragés à fournir des garanties supplémentaires
+par l'intermédiaire d'engagements contractuels qui viendraient compléter les clauses types de protection.
+(110) Un groupe d'entreprises ou un groupe d'entreprises engagées dans une activité économique conjointe devrait
+pouvoir recourir à des règles d'entreprise contraignantes approuvées pour ses transferts internationaux de l'Union
+vers des entités du même groupe d'entreprises, ou du même groupe d'entreprises engagées dans une activité
+économique conjointe, à condition que ces règles d'entreprise incluent tous les principes essentiels et les droits
+opposables pour assurer des garanties appropriées pour les transferts ou catégories de transferts de données à
+caractère personnel.
+(111) Il y a lieu de prévoir la possibilité de transferts dans certains cas où la personne concernée a donné son
+consentement explicite, lorsque le transfert est occasionnel et nécessaire dans le cadre d'un contrat ou d'une
+action en justice, qu'il s'agisse d'une procédure judiciaire, administrative ou extrajudiciaire, y compris de
+procédures devant des organismes de régulation. Il convient également de prévoir la possibilité de transferts
+lorsque des motifs importants d'intérêt public établis par le droit de l'Union ou le droit d'un État membre
+l'exigent, ou lorsque le transfert intervient au départ d'un registre établi par la loi et destiné à être consulté par le
+public ou par des personnes ayant un intérêt légitime. Dans ce dernier cas, ce transfert ne devrait pas porter sur
+la totalité des données à caractère personnel ni sur des catégories entières de données contenues dans le registre
+et, lorsque celui-ci est destiné à être consulté par des personnes ayant un intérêt légitime, le transfert ne devrait
+être effectué qu'à la demande de ces personnes ou lorsqu'elles doivent en être les destinataires, compte dûment
+tenu des intérêts et des droits fondamentaux de la personne concernée.
+(112) Ces dérogations devraient s'appliquer en particulier aux transferts de données requis et nécessaires pour des
+motifs importants d'intérêt public, par exemple en cas d'échange international de données entre autorités de la
+concurrence, administrations fiscales ou douanières, entre autorités de surveillance financière, entre services
+chargés des questions de sécurité sociale ou relatives à la santé publique, par exemple aux fins de la recherche des
+contacts des personnes atteintes de maladies contagieuses ou en vue de réduire et/ou d'éliminer le dopage dans le
+sport. Le transfert de données à caractère personnel devrait également être considéré comme licite lorsqu'il est
+nécessaire pour protéger un intérêt essentiel pour la sauvegarde des intérêts vitaux, y compris l'intégrité physique
+ou la vie, de la personne concernée ou d'une autre personne, si la personne concernée se trouve dans l'incapacité
+de donner son consentement. En l'absence d'une décision d'adéquation, le droit de l'Union ou le droit d'un État
+membre peut, pour des motifs importants d'intérêt public, fixer expressément des limites au transfert de
+catégories particulières de données vers un pays tiers ou à une organisation internationale. Les États membres
+devraient notifier ces dispositions à la Commission. Tout transfert vers une organisation humanitaire interna­
+tionale de données à caractère personnel d'une personne concernée qui se trouve dans l'incapacité physique ou
+juridique de donner son consentement, en vue d'accomplir une mission relevant des conventions de Genève ou
+de respecter le droit humanitaire international applicable dans les conflits armés, pourrait être considéré comme
+nécessaire pour des motifs importants d'intérêt public ou parce que ce transfert est dans l'intérêt vital de la
+personne concernée.
+(113) Les transferts qui peuvent être qualifiés de non répétitifs et qui ne touchent qu'un nombre limité de personnes
+concernées pourraient également être autorisés aux fins des intérêts légitimes impérieux poursuivis par le
+responsable du traitement, lorsque ces intérêts prévalent sur les intérêts ou les libertés et droits fondamentaux de
+la personne concernée et lorsque le responsable du traitement a évalué toutes les circonstances entourant le
+transfert de données. Le responsable du traitement devrait accorder une attention particulière à la nature des
+données à caractère personnel, à la finalité et à la durée de la ou des opérations de traitement envisagées ainsi
+qu'à la situation dans le pays d'origine, le pays tiers et le pays de destination finale, et devrait prévoir des garanties
+appropriées pour protéger les libertés et droits fondamentaux des personnes physiques à l'égard du traitement de
+leurs données à caractère personnel. De tels transferts ne devraient être possibles que dans les cas résiduels dans
+lesquels aucun des autres motifs de transfert ne sont applicables. À des fins de recherche scientifique ou
+historique ou à des fins statistiques, il y a lieu de prendre en considération les attentes légitimes de la société en
+matière de progrès des connaissances. Le responsable du traitement devrait informer l'autorité de contrôle et la
+personne concernée du transfert.
+(114) En tout état de cause, lorsque la Commission ne s'est pas prononcée sur le caractère adéquat du niveau de
+protection des données dans un pays tiers, le responsable du traitement ou le sous-traitant devrait adopter des
+solutions qui garantissent aux personnes concernées des droits opposables et effectifs en ce qui concerne le
+traitement de leurs données dans l'Union une fois que ces données ont été transférées, de façon à ce que lesdites
+personnes continuent de bénéficier des droits fondamentaux et des garanties.
+
+

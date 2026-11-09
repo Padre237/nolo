@@ -1,0 +1,41 @@
+03/11/2026 11:03
+
+SNOMED International Documents
+
+Technical Application
+
+This chapter describes how the GPS may be accessed, deployed, and used in practice,
+while remaining within its intended scope and respecting SNOMED CT licensing
+requirements.
+The guidance in this chapter focuses on safe, predictable, and license-compliant use of
+SNOMED CT identifiers and terms.
+
+Accessing the Global Patient Set
+The GPS is made available by SNOMED International for download under a Creative
+Commons -NoDerivatives 4.0 International Public License
+
+(CC BY-ND 4.0).
+
+Access to the GPS:
+
+• does not require SNOMED CT Membership
+• does not require a SNOMED CT Affiliate License
+The GPS is accessed via the GPS page on the SNOMED International website.
+This distribution mechanism allows SNOMED International to:
+
+• publish authoritative GPS releases
+• notify users of updates and changes
+The GPS is distributed as a standalone release artifact and may be used independently of
+the full SNOMED CT release.
+
+Implementation Approaches and Key Considerations
+The GPS is designed to enable global access to SNOMED CT identifiers and terms, while
+preserving the licensing model for SNOMED CT as a semantic terminology.
+Implementers should clearly distinguish between:
+
+• identifier-level use, which is supported by the GPS, and
+https://docs.snomed.org/implementation-guides/gps-implementation-guide/~gitbook/pdf?page=VZvwP1TLt1zd74otfVUl&only=yes&limi…
+
+1/11
+
+

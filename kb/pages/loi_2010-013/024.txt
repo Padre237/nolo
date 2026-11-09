@@ -1,0 +1,44 @@
+24
+
+(5) Tout opérateur exploitant un réseau de téléphonie fixe
+ouvert au public publie chaque année une offre de référence pour l’accès
+dégroupé à sa boucle locale et aux ressources connexes, conformément à
+son cahier de charges.
+(6) Les ressources connexes recouvrent, notamment, les
+ressources associées à la fourniture de l’accès dégroupé à la boucle locale,
+telles que la co-localisation des câbles de connexion et les systèmes
+informatiques pertinents auxquels l’accès est nécessaire pour permettre à
+un bénéficiaire de fournir des services de base concurrentiels.
+(7) Les opérateurs titulaires de concession publient, suivant les
+conditions prévues dans leurs cahiers des charges, les catalogues
+d'interconnexion préalablement approuvés par l'Agence.
+Article 43.- (1) La demande d'interconnexion et d’accès au réseau ne
+peut être refusée si elle est justifiée au regard, d’une part, des besoins du
+demandeur, et d’autre part, des capacités de l'opérateur à la satisfaire.
+Tout refus d'interconnexion doit être motivé.
+demandeur.
+
+(2) Le coût de l'interconnexion est pris en charge par le
+
+(3) En cas de désaccord entre les parties, le différend est
+soumis à l'Agence.
+Article 44.- Les modalités de dégroupage de la boucle locale et de
+fourniture du service téléphonique au public sont fixées par un texte
+particulier.
+CHAPITRE V
+DU PARTAGE DES INFRASTRUCTURES
+
+Article 45.- Les infrastructures des réseaux de communications
+électroniques ouverts au public établies sur le domaine public, peuvent
+être utilisées par d’autres opérateurs pour la fourniture au public de tout
+service de communications électroniques.
+Article 46.- (1) Le partage d'infrastructures fait l'objet d'une convention
+entre les deux parties intéressées qui en déterminent notamment, les
+conditions techniques et financières, dans le respect des dispositions de la
+présente loi et de ses textes d'application. Cette convention est soumise
+au visa de l'Agence qui peut en demander la modification à tout moment,
+lorsqu’elle estime que les conditions d'interopérabilité des réseaux ne sont
+pas garanties. Ladite convention est, le cas échéant, publiée au journal
+d'annonces légales à l'initiative de l'Agence.
+
+

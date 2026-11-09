@@ -1,0 +1,170 @@
+# Définitions communautaires des cas et des signaux
+# Source officielle : MINSANTE – DLMEP, Guide de surveillance à base communautaire au Cameroun, septembre 2023,
+# Tableau 3 (pages imprimées 24 à 28).
+# URL : https://biblio-minsante.cm/server/api/core/bitstreams/29910031-e2c4-4992-95fc-28465fe7605d/content
+#
+# - "definition_officielle" : texte du guide (français), recopié depuis le PDF.
+# - "regle_machine" : INTERPRÉTATION DE L'ÉQUIPE pour l'agent de surveillance. Ce n'est pas un texte officiel :
+#   elle doit être présentée comme telle dans le rapport et validée par un épidémiologiste.
+
+source:
+  doc_id: CMR-MINSANTE-GUIDE-SBC-2023
+  titre: Guide de surveillance à base communautaire au Cameroun
+  autorite: MINSANTE – DLMEP
+  date: 2023-09
+
+definitions_cas:
+  - code: PFA
+    nom: Paralysie flasque aiguë
+    page: 24
+    definition_officielle: >-
+      Tout enfant de moins de 15 ans qui marchait ou rampait normalement et brusquement ne marche plus,
+      ne rampe plus, ou n'arrive plus à bouger normalement au moins un de ses membres (mains ou jambes).
+    regle_machine: {age_max: 14, tous: [paralysie_membre_soudaine]}
+  - code: DAA
+    nom: Diarrhée aqueuse aiguë
+    page: 24
+    definition_officielle: Toute personne présentant trois selles liquides ou plus au cours des dernières 24 heures.
+    regle_machine: {tous: [diarrhee_aqueuse], selles_24h_min: 3}
+  - code: FHV
+    nom: Fièvre hémorragique virale
+    page: 24
+    definition_officielle: >-
+      Toute personne ayant une maladie inexpliquée accompagnée de fièvre et de saignements ou toute personne
+      décédée des suites d'une maladie grave inexpliquée accompagnée de fièvre et des saignements.
+    regle_machine: {tous: [fievre, saignements]}
+  - code: MAPI
+    nom: Manifestation post-vaccinale indésirable
+    page: 25
+    definition_officielle: Toute personne présentant de la fièvre ou tout autre symptôme survenu après une vaccination.
+    regle_machine: {tous: [vaccination_recente], au_moins_un: [fievre, autre_symptome]}
+  - code: DYS
+    nom: Diarrhée sanglante (dysenterie)
+    page: 25
+    definition_officielle: >-
+      Toute personne faisant une diarrhée accompagnée de douleurs abdominales, avec présence de sang visible
+      dans les selles.
+    regle_machine: {tous: [diarrhee, douleur_abdominale, sang_dans_selles]}
+  - code: DRA
+    nom: Maladie du ver de Guinée (dracunculose)
+    page: 25
+    definition_officielle: >-
+      Toute personne présentant une lésion cutanée et vivant dans une zone endémique ou à risque de la maladie
+      du ver de Guinée, avec l'émergence d'un ver.
+    regle_machine: {tous: [lesion_cutanee, emergence_ver]}
+  - code: HEP
+    nom: Hépatite
+    page: 25
+    definition_officielle: Toute personne atteinte de fièvre accompagnée d'un jaunissement du blanc de l'œil.
+    regle_machine: {tous: [fievre, jaunissement_yeux]}
+  - code: MOR
+    nom: Morsure d'animaux (rage potentielle)
+    page: 25
+    definition_officielle: Toute personne mordue par un chien ou un autre mammifère.
+    regle_machine: {tous: [morsure_animal]}
+  - code: GRI
+    nom: Syndrome grippal
+    page: 25
+    definition_officielle: Toute personne présentant une fièvre accompagnée de toux, de maux de gorge ou d'un rhume.
+    regle_machine: {tous: [fievre], au_moins_un: [toux, maux_gorge, rhume]}
+  - code: ROU
+    nom: Rougeole
+    page: 25
+    definition_officielle: >-
+      Toute personne, notamment les jeunes enfants qui a une fièvre et une apparition des boutons sur la peau
+      (éruption) ; souvent, le nez coule, le malade tousse et les yeux deviennent rouges.
+    regle_machine: {tous: [fievre, eruption_cutanee]}
+  - code: MEN
+    nom: Méningite
+    page: 26
+    definition_officielle: Toute personne présentant de la fièvre et une raideur de la nuque.
+    regle_machine: {tous: [fievre, raideur_nuque]}
+  - code: DEM
+    nom: Décès maternel
+    page: 26
+    definition_officielle: >-
+      Décès d'une femme survenu au cours de la grossesse ou dans un délai de 42 jours après l'accouchement.
+    regle_machine: {evenement: deces, sexe: F, grossesse_ou_post_partum_jours_max: 42}
+  - code: DNN
+    nom: Décès néonatal
+    page: 26
+    definition_officielle: Tout décès d'un nouveau-né vivant survenu avant les 28 premiers jours complets de sa vie.
+    regle_machine: {evenement: deces, age_jours_max: 27}
+  - code: TNN
+    nom: Tétanos néonatal
+    page: 26
+    definition_officielle: >-
+      Tout nouveau-né qui est normal à la naissance, puis après 2 jours, devient raide et incapable de téter,
+      a des convulsions ou des crises.
+    regle_machine: {age_jours_min: 2, age_jours_max: 28, au_moins_un: [raideur, incapacite_teter, convulsions]}
+  - code: PNE
+    nom: Pneumonie
+    page: 26
+    definition_officielle: >-
+      Tout enfant de moins de cinq ans souffrant de toux et ayant le souffle court ou des difficultés respiratoires.
+    regle_machine: {age_max: 4, tous: [toux], au_moins_un: [souffle_court, difficulte_respiratoire]}
+  - code: TUB
+    nom: Tuberculose
+    page: 26
+    definition_officielle: Toute personne toussant depuis deux semaines ou plus.
+    regle_machine: {tous: [toux], duree_jours_min: 14}
+  - code: FTY
+    nom: Fièvre typhoïde
+    page: 26
+    definition_officielle: Toute personne présentant une fièvre persistante depuis au moins trois semaines.
+    regle_machine: {tous: [fievre], duree_jours_min: 21}
+  - code: FJA
+    nom: Fièvre jaune
+    page: 27
+    definition_officielle: >-
+      Toute personne souffrant de la fièvre et du jaunissement des yeux ou de la peau (plantes des pieds, ongles,
+      paumes des mains, mains) ou décédée des suites d'une maladie grave s'accompagnant de fièvre ou de saignements.
+    regle_machine: {tous: [fievre], au_moins_un: [jaunissement_yeux, jaunissement_peau]}
+
+definitions_signaux:
+  - code: SC1
+    page: 27
+    definition_officielle: >-
+      Deux personnes ou plus présentant un ou plusieurs signes/symptômes similaires et issues du même milieu
+      (ménage, lieu de travail, école, rue, par exemple) en l'espace d'une seule semaine.
+    regle_machine: {min_personnes: 2, meme_lieu: true, fenetre_jours: 7, symptomes_similaires_min: 1}
+  - code: SC2
+    page: 27
+    definition_officielle: Un ou plusieurs décès inexpliqués d'animaux en l'espace d'une semaine dans la même communauté.
+    regle_machine: {evenement: deces_animal_inexplique, min: 1, fenetre_jours: 7}
+  - code: SC3
+    page: 27
+    definition_officielle: >-
+      Tout événement qui présente un risque pour la Santé Publique, notamment des catastrophes (naturelles,
+      provoquées ou technologiques), ou des symptômes rarement observés.
+    regle_machine: {evaluation_humaine_requise: true}
+  - code: SC4
+    page: 27
+    definition_officielle: >-
+      Toute personne en provenance d'un autre pays arrivée dans une communauté dans un délai maximum de deux
+      semaines présentant des signes de maladie.
+    regle_machine: {voyage_international_jours_max: 14, au_moins_un_symptome: true}
+  - code: SC5
+    page: 27
+    definition_officielle: Toute personne ou plus qui décèdent en communauté.
+    regle_machine: {evenement: deces_communautaire, min: 1}
+  - code: SC6
+    page: 28
+    definition_officielle: >-
+      Toute maladie ou mort humaine consécutive à une exposition à des animaux et à des produits d'origine
+      animale, y compris de la volaille (par exemple, la consommation ou la manipulation).
+    regle_machine: {exposition_animale: true}
+  - code: SC7
+    page: 28
+    definition_officielle: Afflux de personnes ou d'animaux observé dans une zone / communauté donnée à un moment donné.
+    regle_machine: {evaluation_humaine_requise: true}
+  - code: SC8
+    page: 28
+    definition_officielle: Tout événement dans la communauté qui cause de l'anxiété dans la population.
+    regle_machine: {evaluation_humaine_requise: true}
+
+delais_officiels:  # chapitres VI et SOP 02 à 05 du guide
+  notification: "immédiatement ou dans les 24 heures suivant la détection"
+  triage_verification: "dans les 24 heures"
+  evaluation_risque: "dans les 48 heures après la détection"
+  investigation: "48 à 72 heures après confirmation"

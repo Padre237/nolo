@@ -1,0 +1,20 @@
+{
+  "avertissement": "Les 10 régions sont réelles ; les districts de santé sont fictifs en attendant la liste officielle (Q5).",
+  "regions": {
+    "adamaoua": {"fr": "Adamaoua", "en": "Adamawa"},
+    "centre": {"fr": "Centre", "en": "Centre"},
+    "est": {"fr": "Est", "en": "East"},
+    "extreme_nord": {"fr": "Extrême-Nord", "en": "Far North"},
+    "littoral": {"fr": "Littoral", "en": "Littoral"},
+    "nord": {"fr": "Nord", "en": "North"},
+    "nord_ouest": {"fr": "Nord-Ouest", "en": "North-West"},
+    "ouest": {"fr": "Ouest", "en": "West"},
+    "sud": {"fr": "Sud", "en": "South"},
+    "sud_ouest": {"fr": "Sud-Ouest", "en": "South-West"}
+  },
+  "districts_demo": {
+    "adamaoua": ["DS-DEMO-ADA-1"], "centre": ["DS-DEMO-CEN-1", "DS-DEMO-CEN-2"], "est": ["DS-DEMO-EST-1"],
+    "extreme_nord": ["DS-DEMO-EXN-1"], "littoral": ["DS-DEMO-LIT-1", "DS-DEMO-LIT-2"], "nord": ["DS-DEMO-NOR-1"],
+    "nord_ouest": ["DS-DEMO-NOO-1"], "ouest": ["DS-DEMO-OUE-1"], "sud": ["DS-DEMO-SUD-1"], "sud_ouest": ["DS-DEMO-SUO-1"]
+  }
+}

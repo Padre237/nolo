@@ -1,0 +1,47 @@
+4
+
+8.
+
+Attribution d'une bande de fréquences : inscription au tableau
+d'attribution des bandes de fréquences, d'une bande de fréquences
+déterminée, aux fins de son utilisation par un ou plusieurs services
+de radiocommunications de terre ou spatiale, ou par le service de
+radiocommunications dans les conditions spécifiques ;
+9. Autorisation : droit conféré par l’Etat à une personne physique ou
+morale pour exercer une activité donnée dans le secteur des
+Télécommunications et des Technologies de l’Information et de la
+Communication, emportant un certain nombre d’obligations.
+10. Boucle locale : circuit physique qui relie le point de terminaison chez
+l’abonné au répartiteur principal ou à toute autre installation
+équivalente d’un réseau de communications électroniques fixe ouvert
+au public ;
+11. Câble sous-marin : support physique de signaux de
+communications électroniques qui utilise le milieu marin comme voie
+de passage du câble. Il est dit « international » lorsqu'il relie deux ou
+plusieurs Etats ;
+12. Catalogue d’interconnexion : offre technique et tarifaire
+d’interconnexion publiée par les opérateurs de réseaux de
+communications électroniques ouverts au public.
+13. Co-localisation : fourniture d’un espace et des ressources
+techniques nécessaires à l’hébergement et à la connexion dans des
+conditions raisonnables des équipements pertinents d’un opérateur
+dans le cadre d’une offre de référence ;
+14. Comité interministériel : structure interministérielle chargée de
+l'attribution des bandes de fréquences de radiocommunication ;
+15. Communications électroniques : émission, transmission ou
+réception de signes, des signaux, d’écrits, d’images ou de sons, par
+voie électromagnétique ;
+16. Communications électroniques d’urgence : appels d’urgence
+ou communications électroniques en cas de catastrophe, de
+détresse et en situation d’urgence ;
+17. Consommateur : toute personne physique qui utilise ou demande
+un service de communication électronique accessible au public à des
+fins autres que professionnelles ;
+18. Cryptographie : ensemble des services mettant en œuvre les
+principes, moyens et méthodes de transformation de données dans
+le but de cacher leur contenu sémantique, d’établir leur
+authenticité, d’empêcher que leur modification passe inaperçue, de
+prévenir leur répudiation et d’empêcher leur utilisation non
+autorisée ;
+
+

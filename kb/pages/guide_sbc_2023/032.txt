@@ -1,0 +1,77 @@
+                                                          •    Participer à l’évaluation de risque ;                                   SIMR ;
+                                                          •    Participer à la réponse le cas échéant.                             •   Boite à images.
+
+Point Focal surveillance   •   Identifier les cas         •    Participer aux formations sur la surveillance ;                     •   Affiches
+de l’aire de santé (chef       Communautaires ;           •    Briefer les points focaux des FOSA sur la SBC ;                         d’hôpital ;
+l’aire de santé).          •   Trier et vérifier les      •    Aider le CDS à former les ASC et sensibiliser les hôpitaux ;        •   Affiches de
+                               signaux ;                  •    Réceptionner les signaux et notification des cas                        communauté ;
+                           •   Notifier les cas et les         communautaires ;                                                    •   DHIS2 ;
+                               évènements au PFS du       •    Renseigner le registre des signaux ;                                •   Fiches de synthèse
+                               District de Santé ;        •    Trier et vérifier les signaux rapportés ;                               hebdomadaire ;
+                           •   Intégrer les évènements    •    Notifier immédiatement les évènements au DS et intégrer dans le     •   Registre des
+                               dans le DHIS2 ;                 DHIS2 ;                                                                 signaux de l'AS ;
+                           •   Participer à               •    Participer aux enquêtes de Santé Publique de terrain ;              •   Guide et SOP de la
+                               l’enquête/évaluation de    •    Superviser des ASCP ;                                                   SBC ;
+                               risques.                   •    Elaborer et transmettre au DS la fiche de synthèse hebdomadaire     •   Guide technique
+                                                               SBC ;                                                                   SIMR ;
+                                                          •    Faire le feedback aux ASCP et PFS des FOSA ;                        •   Boite à images ;
+                                                          •    Participer à l’investigation.                                       •   Application
+                                                                                                                                       EWARS ;
+                                                                                                                                   •   RMA
+                                                                                                                                       Communautaire.
+                                                                District de Santé
+Equipe Cadre du District   •   Triage et évaluation       •    Organiser la vérification des signaux transformés en évènement ;s
+de Santé (PFS +Chief de                                   •    Participer à l’évaluation du risque ;                               •   Affiches de
+Service de Santé de                                       •    Organiser les investigations préliminaires de cas suspects et des       communauté ;
+District)                                                      évènements                                                          •   Affiches
+                                                                                                                                       d’hôpital ;
+                                                                                                                                   •   Modules de
+                                                                                                                                       formation de la
+                                                                                                                                       SBC ;
+                                                                                                                                   •   DHIS2 ;
+                                                                                                                                   •   Modèle pour
+                                                                                                                                       l’évaluation des
+                                                                                                                                       risques ;
+                                                                                                                                   •   Boite à outils
+                                                                                                                                       d'investigation ;
+                                                                                                                                   •   Grille de
+                                                                                                                                       supervision
+                                                                                                                                       SIMR ;
+                                                                                                                                   •   Base de données
+                                                                                                                                       SBC ;
+                                                                                                                                   •   Application
+                                                                                                                                       EWARS ;
+                                                                                                                                   •   Guide et SOP de la
+                                                                                                                                       SBC ;
+                                                                                                                                   •   Guide technique
+                                                                                                                                       SIMR.
+                                                                 Niveau Régional
+Délégation Régionale de    •   Réceptionner tous les      •    Participer aux formations sur la SBC ;                              •   DHIS2 ;
+la Santé Publique              rapports du DS ;           •    Réceptionner les plans d’action SBC des DS et élaborer celui de     •   Grille de
+(DRSP)                     •   Évaluation des risques          la Région ;                                                             supervision
+                               des évènements ;           •    Fournir une assistance pour l’évaluation de risques et les              SIMR ;
+                           •   Appui à l’évaluation des        enquêtes au DS si nécessaire ;                                      •   Guide et SOP de
+                               risques ;                  •    Réceptionner tous les rapports d’enquête et d’évaluation de             la SBC ;
+                           •   Fournir une assistance          risques envoyés par les DS ;                                        •   Guide technique
+                               d’enquête au DS ;          •    Signaler immédiatement tout évènement à risque élevé ;                  SIMR ;
+                           •   Notifier le niveau         •    Solliciter les demandes d’assistance supplémentaire en cas          •   Base de données
+                               national ;                      d’évènement de Santé Publique ;                                         SBC.
+                           •   Superviser les DS.         •    Réaliser une supervision intégrée des DS ;
+                                                          •    Faire le feedback aux PFS des DS.
+                                                                 Niveau Central
+Niveau Central             •   Coordonner les activités   • Faire le suivi général des activités de la SBC ;                       •   DHIS2 ;
+                               de la SBC ;                • Évaluer les risques des évènements signalés ;                          •   Grille de
+                           •   Notifier les USPPI ;       • Réceptionner les informations sur les épidémies potentielles et les        supervision
+                           •   Appuyer l’évaluation         enquêtes en cours au moyen de la base de données ;                         SIMR ;
+                               rapide des risques ;       • Effectuer un suivi et une visualisation en temps réel des données de   •   Guide et SOP de la
+                           •   Appuyer l’investigation      l’évènement ;                                                              SBC ;
+                               et la riposte aux          • Déployer l’équipe d’Investigation et d’Intervention Rapides du         •   Guide technique
+                               évènements ;                 niveau central si nécessaire ;                                             SIMR ;
+                           •   Communiquer sur les        • Réceptionner les résultats de laboratoire et assurer la                •   Base de données
+                               activités de la SBC ;        communication avec le DRSP ;                                               SBC.
+
+
+
+
+                                                                          31
+

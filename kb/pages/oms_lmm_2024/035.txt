@@ -1,0 +1,48 @@
+2 Applications and challenges of use of LMMs in health
+
+if oversight and review claim the time of a health-care professional, an LMM is still likely to
+be less burdensome than the status quo. Another problem is that LMMs can be inconsistent;
+slight changes to a prompt or question can generate a completely different electronic health
+record, although inconsistencies are expected to decrease over time (63).
+
+2.4
+
+Medical and nursing education
+
+LMMs are also projected to play a role in medical and nursing education. They could be used
+to create “dynamic texts” that, in comparison with generic texts, are tailored to the specific
+needs and questions of a student (63). LMMs integrated into chatbots can provide simulated
+conversations to improve clinician–patient communication and problem-solving, including
+practising medical interviewing, diagnostic reasoning and explaining treatment options. A
+chatbot could also be tailored to provide a student with various virtual patients, including
+those with disabilities or rare medical conditions. LMMs could also provide instruction, in
+which a medical student asks questions and receives responses accompanied by reasoning
+through a “chain-of-thought” including physiological and biological processes (63).
+
+Risks and challenges
+Although use of AI can improve or sharpen the training and skills of a health-care professional,
+it could also pose the risk that professionals suspend their judgement (or that of a human
+peer) in favour of that of a computer. If an LMM provides incorrect information or responses (or
+fabricates a response), it could affect the quality of medical education.
+An additional concern is that use of LMMs in education or to simplify administrative and
+clerical functions could place an additional burden on health-care workers who are not yet
+digitally literate and will have to develop new competence in use of AI-supported technologies
+in everyday practice (1). The new functionalities of LMMs are expected to require health-care
+professionals to continue retraining and adjusting (1). Developers may eventually introduce AIsupported technologies with communication interfaces that can be used easily by laypeople,
+such as natural language or vision.
+
+2.5
+
+Scientific and medical research and drug development
+
+AI is already used in scientific and clinical research and in drug development. With AI,
+electronic health records can be analysed to identify clinical practice patterns and to
+develop models of new clinical practice. Machine learning is also used in genomic medicine,
+for example to improve understanding of a disease and identify new biomarkers (1). AI
+is used in almost every stage of the drug development cycle, including to streamline
+compound screening, to predict the three-dimensional shape of a protein (the “protein
+folding problem”) (1), to predict the toxicity and effectiveness of compounds in preclinical
+
+17
+
+

@@ -1,0 +1,48 @@
+# Recherche explicite d'un service ou d'une spécialité
+# STATUT : règles de conception de l'équipe (pas un texte officiel).
+# Principe : le système ne redirige JAMAIS vers une spécialité à partir des symptômes.
+# La recherche par spécialité est une fonction séparée, déclenchée par l'utilisateur.
+
+recherche:
+  rayon_initial_km: 5
+  paliers_elargissement_km: [10, 20, 50]   # élargissement automatique, signalé à l'utilisateur
+  resultats_minimum: 3                     # en dessous, on passe au palier suivant
+  elargissement_manuel: true               # l'utilisateur peut élargir lui-même
+  tri: [ouvert_maintenant, distance_km]    # jamais de critère payant
+  champs_affiches: [nom, type, distance_km, ouvert_maintenant, horaires, telephone, service_statut, mis_a_jour_le]
+  position: {consentement_requis: true, arrondi_decimales: 2}   # ~1 km : minimisation (loi 2024/017)
+
+bandeau_fixe: "En cas d'urgence, rendez-vous aux urgences les plus proches."   # identique pour tous
+
+statut_service:
+  declare: "Déclaré par l'établissement"
+  verifie: "Vérifié (source officielle ou contrôle)"
+
+recherches_sensibles:   # révèlent une information de santé -> anonymes, aucune journalisation liée à l'identité
+  - psychiatrie
+  - oncologie
+  - infectiologie_vih
+  - addictologie
+  - gynecologie_obstetrique
+  - planification_familiale
+
+specialites:   # liste fermée ; synonymes saisis par l'utilisateur -> code
+  cardiologie: [cardiologie, cardiologue, coeur, cœur, cardiaque]
+  neurologie: [neurologie, neurologue, nerfs, cerveau]
+  pediatrie: [pediatrie, pédiatrie, pediatre, pédiatre, enfant, enfants, bebe, bébé]
+  gynecologie_obstetrique: [gynecologie, gynécologie, gynecologue, maternite, maternité, accouchement, obstetrique]
+  ophtalmologie: [ophtalmologie, ophtalmologue, yeux, oeil, œil, vue]
+  orl: [orl, oreille, nez, gorge]
+  dentisterie: [dentiste, dentaire, dents, stomatologie]
+  dermatologie: [dermatologie, dermatologue, peau]
+  chirurgie: [chirurgie, chirurgien, bloc operatoire]
+  urgences: [urgence, urgences, accident]
+  psychiatrie: [psychiatrie, psychiatre, sante mentale, santé mentale]
+  oncologie: [oncologie, cancer, cancerologie]
+  infectiologie_vih: [vih, sida, arv, infectiologie, cta]
+  radiologie: [radiologie, radio, scanner, echographie, échographie, irm]
+  laboratoire: [laboratoire, analyses, examens, prise de sang]
+  medecine_generale: [medecin, médecin, generaliste, généraliste, consultation]
+  planification_familiale: [planning familial, contraception, planification familiale]
+  addictologie: [addictologie, addiction, drogue, alcool]
+  banque_de_sang: [banque de sang, sang, transfusion]

@@ -1,0 +1,65 @@
+4.5.2016
+
+FR
+
+Journal officiel de l'Union européenne
+
+L 119/81
+
+Article 80
+Représentation des personnes concernées
+1.
+La personne concernée a le droit de mandater un organisme, une organisation ou une association à but non
+lucratif, qui a été valablement constitué conformément au droit d'un État membre, dont les objectifs statutaires sont
+d'intérêt public et est actif dans le domaine de la protection des droits et libertés des personnes concernées dans le cadre
+de la protection des données à caractère personnel les concernant, pour qu'il introduise une réclamation en son nom,
+exerce en son nom les droits visés aux articles 77, 78 et 79 et exerce en son nom le droit d'obtenir réparation visé à
+l'article 82 lorsque le droit d'un État membre le prévoit.
+2.
+Les États membres peuvent prévoir que tout organisme, organisation ou association visé au paragraphe 1 du
+présent article, indépendamment de tout mandat confié par une personne concernée, a, dans l'État membre en question,
+le droit d'introduire une réclamation auprès de l'autorité de contrôle qui est compétente en vertu de l'article 77, et
+d'exercer les droits visés aux articles 78 et 79 s'il considère que les droits d'une personne concernée prévus dans le
+présent règlement ont été violés du fait du traitement.
+
+Article 81
+Suspension d'une action
+1.
+Lorsqu'une juridiction compétente d'un État membre est informée qu'une action concernant le même objet a été
+intentée à l'égard d'un traitement effectué par le même responsable du traitement ou le même sous-traitant et est
+pendante devant une juridiction d'un autre État membre, elle contacte cette juridiction dans l'autre État membre pour
+confirmer l'existence d'une telle action.
+2.
+Lorsqu'une action concernant le même objet a été intentée à l'égard d'un traitement effectué par le même
+responsable du traitement ou le même sous-traitant et est pendante devant une juridiction d'un autre État membre, toute
+juridiction compétente autre que la juridiction saisie en premier lieu peut suspendre son action.
+3.
+Lorsque cette action est pendante devant des juridictions du premier degré, toute juridiction autre que la juridiction
+saisie en premier lieu peut également se dessaisir, à la demande de l'une des parties, à condition que la juridiction saisie
+en premier lieu soit compétente pour connaître des actions en question et que le droit applicable permette leur jonction.
+
+Article 82
+Droit à réparation et responsabilité
+1.
+Toute personne ayant subi un dommage matériel ou moral du fait d'une violation du présent règlement a le droit
+d'obtenir du responsable du traitement ou du sous-traitant réparation du préjudice subi.
+2.
+Tout responsable du traitement ayant participé au traitement est responsable du dommage causé par le traitement
+qui constitue une violation du présent règlement. Un sous-traitant n'est tenu pour responsable du dommage causé par le
+traitement que s'il n'a pas respecté les obligations prévues par le présent règlement qui incombent spécifiquement aux
+sous-traitants ou qu'il a agi en-dehors des instructions licites du responsable du traitement ou contrairement à celles-ci.
+3.
+Un responsable du traitement ou un sous-traitant est exonéré de responsabilité, au titre du paragraphe 2, s'il
+prouve que le fait qui a provoqué le dommage ne lui est nullement imputable.
+4.
+Lorsque plusieurs responsables du traitement ou sous-traitants ou lorsque, à la fois, un responsable du traitement
+et un sous-traitant participent au même traitement et, lorsque, au titre des paragraphes 2 et 3, ils sont responsables d'un
+dommage causé par le traitement, chacun des responsables du traitement ou des sous-traitants est tenu responsable du
+dommage dans sa totalité afin de garantir à la personne concernée une réparation effective.
+5.
+Lorsqu'un responsable du traitement ou un sous-traitant a, conformément au paragraphe 4, réparé totalement le
+dommage subi, il est en droit de réclamer auprès des autres responsables du traitement ou sous-traitants ayant participé
+au même traitement la part de la réparation correspondant à leur part de responsabilité dans le dommage,
+conformément aux conditions fixées au paragraphe 2.
+
+

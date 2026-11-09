@@ -1,0 +1,54 @@
+Si le Centre d’Appel est au niveau régional,
+    • Le téléopérateur saisi immédiatement le District de santé concerné pour une
+        vérification et retour d’information ;
+    • Les critères de vérification comprennent l’observation directe et le fait de poser des
+        questions. Les informations rapportées correspondent-elles à quelque chose qui s’est
+        réellement produit ou à une rumeur ?
+    • La confirmation du signal par au moins deux sources différentes, ou le fait qu’il soit
+        rapporté par une autorité médicale ;
+    • Une fois que le signal est vérifié, il devient un évènement et indiqué sur le registre
+        des signaux.
+
+
+
+
+          4. Evaluation des risques
+
+Code : 04/SBC/2023
+
+
+  I. Objectif
+Déterminer le niveau de risque d'un événement de Santé Publique et le niveau approprié
+d’investigation et de réponse.
+
+
+ II. Public cible
+Ce document s'adresse à toutes les personnes impliquées dans la surveillance
+épidémiologique du niveau périphérique au niveau central.
+
+
+ III.    Conditions à remplir
+     •   Être Formé sur l’évaluation des risques des évènements de Santé Publique ;
+     •   Être formé en Surveillance à base communautaire
+
+
+
+IV. Résultats attendus
+Chaque évènement de Santé Publique est évalué (niveau de risque) dans les 48 heures
+suivant la détection en communauté.
+
+
+ V. Délais impartis
+Dans les 48 heures suivant la détection de l’évènement de santé.
+
+
+
+ VI.  Resources
+      Humains
+•   CDS ;                             •   ASCP.
+
+
+
+
+                                             47
+

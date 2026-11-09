@@ -1,0 +1,42 @@
+28
+
+Article 85.- Est punie des peines prévues à l’article 84 ci-dessus, celui qui,
+chargé d'une mission de service public, agissant dans l'exercice ou à l'occasion
+de l'exercice de ses fonctions, détourne ou facilite le détournement, la
+suppression ou l’accès aux communications électroniques ou la révélation du
+contenu de ces communications.
+Article 86.- (1) Est puni des peines prévues l’article 71 ci-dessus, celui qui
+importe, détient, offre, cède, vend ou met à disposition, sous quelle que forme
+que ce soit, un programme informatique, un mot de passe, un code d’accès ou
+toutes données informatiques similaires conçus et ou spécialement adaptés,
+pour permettre d’accéder, à tout ou partie d’un réseau de communications
+électroniques ou d’un système d’information.
+(2) Est également puni des mêmes peines prévues à l’alinéa 1 cidessus, quiconque provoque une perturbation grave ou une interruption d’un
+réseau de communications électroniques ou d’un système d’information dans
+l’intention de porter atteinte à l’intégrité des données.
+Article 87.- Les auteurs de l'une des infractions prévues à l’article 86 ci-dessus
+encourent également les peines complémentaires suivantes :
+- la confiscation selon les modalités prévues par l'article 35 du Code
+Pénal, de tout objet ayant servi ou destiné à commettre l'infraction
+ou considéré comme en étant le produit, à l'exception des objets
+susceptibles de restitution ;
+- l'interdiction dans les conditions prévues par l'article 36 du Code
+Pénal, pour une durée de cinq (05) ans au moins, d'exercer une
+fonction publique ou une activité socioprofessionnelle, lorsque les
+faits ont été commis dans l'exercice ou à l'occasion de l'exercice
+des fonctions ;
+- la fermeture, dans les conditions prévues par l'article 34 du Code
+Pénal pour une durée de cinq (05) ans au moins, des
+établissements ou de l'un ou de plusieurs des établissements de
+l'entreprise ayant servi à commettre les faits incriminés ;
+- l'exclusion, pour une durée de cinq (05) ans au moins, des marchés
+publics.
+Article 88.- 1) Est puni d’un emprisonnement de (01) à cinq (05) ans et d’une
+amende de 100.000 (cent mille) à 1.000.000 (un million) F CFA ou de l’une de
+ces deux peines seulement, celui qui, ayant connaissance de la convention
+secrète de déchiffrement, d'un moyen de cryptographie susceptible d'avoir été
+utilisé pour préparer, faciliter ou commettre un crime ou un délit, refuse de
+remettre ladite convention aux autorités judiciaires ou de la mettre en œuvre,
+sur les réquisitions de ces autorités.
+
+

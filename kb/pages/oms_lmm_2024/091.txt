@@ -1,0 +1,38 @@
+References
+
+125. Baxter K, Schelsinger, N. Managing the risks of generative AI. Harvard Business Review,
+6 June 2023 (https://hbr.org/2023/06/managing-the-risks-of-generative-ai, accessed 17
+June 2023).
+126. Samuelson P. Generative AI meets copyright. Science. 2023;381(6654):158–61.
+doi:10.1126/science.adi0656.
+127. El-Mhamdi E, Farhadkhani S, Guerraoui R, Gupta N, Hoang L, Pinot R et al. On the
+impossible safety of large AI models. arXiv. 2209.15259v2. doi:10.48550.arXiv.2209.15259.
+128. Open AI. GPT-4 technical report. arXiv:2303.08774v3. doi:10.48550/arXiv.2302.08774.
+129. Murgia M. Open AI’s red team: experts hired to “break” ChatGPT. Financial Times, 14
+April 2023 (https://www.ft.com/content/0876687a-f8b7-4b39-b513-5fee942831e8,
+accessed 10 July 2023).
+130. Clegg N. Openness on AI is the way forward for tech. Financial Times, 11 July 2023
+(https://www.ft.com/content/ac3b585a-ce50-43d1-b71d-14dfe6dce999, accessed 11
+July 2023).
+131. Huang S, Toner H, Haluza Z, Creemers R, Webster G. Measures for the management of
+generative artificial intelligence services (draft for comment) (translation). DigiChina.
+Palo Alto (CA): Stanford University, Program on Geopolitics; 2023 (https://digichina.
+stanford.edu/work/translation-measures-for-the-management-of-generative-artificialintelligence-services-draft-for-comment-april-2023/, accessed 17 June 2023).
+132. Ye J. China says generative AI rules to apply only to products for the public. Reuters,
+13 July 2023 (https://www.reuters.com/technology/china-issues-temporary-rulesgenerative-ai-services-2023-07-13/, accessed 13 July 2023).
+133. Bommasani R, Klyman K, Zhang D, Liang P. Do foundation model providers comply
+with the draft EU AI Act? Palo Alto (CA): Stanford University, Human-centered Artifical
+Intelligence; 2021 (https://crfm.stanford.edu/2023/06/15/eu-ai-act.html, accessed 17
+June 2023).
+134. Amendments adopted by the European Parliament on 14 June 2023 on the proposal for
+a regulation of the European Parliament and of the Council on laying down harmonised
+rules on artificial intelligence (Artificial Intelligence Act) and amending certain Union
+legislative acts. Strasbourg: European Parliament; 2023 (https://www.europarl.europa.
+eu/doceo/document/TA-9-2023-0236_EN.html, accessed 10 July 2023).
+135. Beyond ChatGPT: How can Europe become a leader in generative AI? Kaiserslautern:
+German Research Centre for Artificial Intelligence; 2023. (https://www.dfki.de/en/
+web/news/jenseits-von-chatgpt-wie-kann-europa-bei-der-generativen-ki-einefuehrungsposition-uebernehmen, accessed 17 June 2023).
+
+73
+
+

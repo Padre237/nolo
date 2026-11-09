@@ -1,0 +1,46 @@
+13
+
+CHAPITRE IX
+DE LA PROTECTION DES RESEAUX DE COMMUNICATIONS ELECTRONIQUES,
+DES SYSTEMES D’INFORMATION ET DE LA VIE PRIVEE DES PERSONNES
+SECTION I
+DE LA PROTECTION DES RESEAUX DE COMMUNICATIONS ELECTRONIQUES
+
+Article 24.- Les opérateurs des réseaux de communications électroniques et
+les fournisseurs de services de communications électroniques doivent prendre
+toutes les mesures techniques et administratives nécessaires pour garantir la
+sécurité des services offerts. A cet effet, ils sont tenus d’informer les usagers :
+- du danger encouru en cas d’utilisation de leurs réseaux ;
+- des risques particuliers de violation de la sécurité notamment, les
+dénis de service distribués, le re-routage anormal, les pointes de
+trafic, le trafic et les ports inhabituels, les écoutes passives et
+actives, les intrusions et tout autre risque ;
+- de l’existence de moyens techniques permettant d’assurer la
+sécurité de leurs communications.
+Article 25.- (1) Les opérateurs de réseaux et les fournisseurs de services de
+communications électroniques ont l’obligation de conserver les données de
+connexion et de trafic pendant une période de dix (10) ans.
+(2) Les opérateurs de réseaux et les fournisseurs de services de
+communications électroniques installent des mécanismes de surveillance de
+trafic des données de leurs réseaux. Ces données peuvent être accessibles lors
+des investigations judiciaires.
+(3) La responsabilité des opérateurs de réseaux et celles des
+fournisseurs de services de communications électroniques est engagée si
+l’utilisation des données prévue à l’alinéa 2 ci-dessus porte atteinte aux
+libertés individuelles des usagers.
+SECTION II
+DE LA PROTECTION DES SYSTEMES D’INFORMATION
+
+Article 26.- (1) Les exploitants des systèmes d’information prennent toutes les
+mesures techniques et administratives afin de garantir la sécurité des services
+offerts. A cet effet, ils se dotent de systèmes normalisés leur permettant
+d’identifier, d’évaluer, de traiter et de gérer continûment les risques liés à la
+sécurité des systèmes d’information dans le cadre des services offerts
+directement ou indirectement.
+(2) Les exploitants des systèmes d’information mettent en place
+des mécanismes techniques pour faire face aux atteintes préjudiciables à la
+disponibilité permanente des systèmes, à leur intégrité, à leur authentification,
+à leur non répudiation par des utilisateurs tiers, à la confidentialité des
+données et à la sécurité physique.
+
+

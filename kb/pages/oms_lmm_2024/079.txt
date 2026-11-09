@@ -1,0 +1,28 @@
+8 International governance of LMMs
+
+Whatever the form of international governance that is taken forward, it is imperative that it
+not be shaped solely by high-income countries or by high-income countries that work mostly
+or solely with the world’s largest technology companies (168). Standards developed by and for
+high-income countries and technology firms, whether for all applications of AI or for specific
+use of LMMs in health care and medicine, will leave most of humanity, in low- and middleincome countries, with no role or voice in shaping the standards. This would render future AI
+technologies potentially dangerous or ineffective in the very countries that might ultimately
+benefit the most.
+International governance of AI could require that all stakeholders cooperate through
+networked multilateralism, as proposed by the United Nations Secretary-General in 2019 (169),
+which would bring together the United Nations family, international financial institutions,
+regional organizations, trading blocs and others, including civil society, cities, businesses,
+local authorities and young people, to work more closely, effectively and inclusively. Placing
+ethics and human rights at the centre of the development and deployment of LMMs could
+make a substantial contribution towards achievement of universal health coverage.
+
+Recommendation:
+• Governments should support collective development of international rules for the
+governance of AI. Whatever the form of governance, it must not be shaped solely by
+high-income countries or by high-income countries working mostly or solely with
+the world’s largest technology companies, as that approach would leave most of
+humanity, in low- and middle-income countries, without a role or voice in shaping
+international governance of AI.
+
+61
+
+

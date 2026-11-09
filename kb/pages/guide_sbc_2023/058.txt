@@ -1,0 +1,46 @@
+ •    Les ASLO et leaders communautaires mobilisent la communauté dans les lieux de
+      rassemblement (marchés, églises, mosquées, associations ;
+ •    Remplissage des fiches de collecte des données et transmettent aux ASCP ;
+ •    Les radios communautaires sont briefées, reçoivent les spots et les microprogrammes de
+      communication ;
+ •    Les radios élaborent le plan de diffusion des spots, organisent des émissions interactives ;
+ •        Elles diffusent les spots, les microprogrammes, rédigent les rapports de diffusion et les
+      transmettent aux Points Focaux communication du District ;
+ •
+ •    Les blogueurs :
+ •    Assistent au briefing, reçoivent les contenus web et capsules vidéo. ;
+ •    Développent des contenus en respectant les orientations données par le niveau Central ;
+ •    Diffusent les contenus web et les capsules ;
+ •    Remplissent les fiches de collecte des données et partagent des rapports.
+
+
+
+              9. Analyse des données
+
+
+
+ Code : 09/SBC/2023
+
+
+VIII.    Objectif
+ Examiner les données issues de la communauté afin de produire des informations utiles
+ pour la prise de décisions
+
+
+ IX. Public cible
+ Ce document s’adresse à toutes les personnes impliquées dans la gestion des données de
+ surveillance à tous les niveaux de la pyramide sanitaire
+
+
+     X.      Prérequis pour la mise en œuvre
+       •     Personnel formé au Nettoyage, à la transformation et la modélisation des
+             données ;
+       •     Connaissance de base à l’utilisation du pack logiciel MS Office ;
+       •     Connaissance de base en épidémiologie ;
+       •     Connaissance de base à l’utilisation du DHIS2 (saisie et analyse des données).
+
+
+
+
+                                                  57
+

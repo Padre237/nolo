@@ -1,0 +1,59 @@
+         Source du risque
+
+
+
+
+         Informations sur l’évènement (Cocher les affirmations correspondantes à cet évènement)
+                   L’évènement comprend une suspicion de maladies à déclaration obligatoire sous 24 ou 48 heures par la SIMR
+                   La maladie suspectée a un haut potentiel de propagation (p. ex., le choléra)
+                   Une mortalité ou une morbidité plus élevée que celle attendue a été signalée pour l’évènement
+                   L’évènement est inhabituel ou inattendu dans la communauté
+                   Il un foyer de cas avec des symptômes similaires
+                   La maladie a des conséquences possibles sur le commerce ou les voyages
+                   La maladie a des conséquences possibles sur la santé humaine
+         Types de risques
+                   Chimique
+                   Biologique
+                   Radionucléaire
+                   Autre (A Precisez) :
+                    ____________________________________________________________________________________________
+         Matrice de gravité des risques (Cochez la case correspondante)
+           IMPACT x                         NON
+                                                                  MINEUR               MODÉRÉ                MAJEUR                FORT
+           PROBABILITÉ                  SIGNIFICATIF
+           HAUTEMENT
+           IMPROBABLE
+           IMPROBABLE
+
+           POSSIBLE
+
+           PROBABLE
+
+           TRÈS PROBABLE
+         Conclusion de l’évaluation
+                   Aucune nouvelle enquête ni action nécessaire
+                   L’évènement doit être surveillé
+                   Une enquête et une riposte doivent être enclenchées.
+
+
+
+
+        OUTIL 4 : GRILLE DE SUPERVISION DE LA SURVEILLANCE A BASE COMMUNAUTAIRE
+          Niveau de la pyramide sanitaire : 1 Communauté 2 District de santé 3 Région
+
+    ELEMENTS/ACTIVITES                    QUESTIONS DE                   REPONSE                                                COMMENTAIRE
+        ESSENTIELS                                                                                                                (La cause du
+                                          SUPERVISION                                                                              problème)
+                                 Mise en œuvre la Surveillance à base communautaire
+Les activités de la SBC doivent être     Existe-t-il au moins une copie            1 Oui 2 Non 3 NA
+clairement définies                      physique des POS de la SBC ?
+                                               (vérifier la disponibilité)
+                                         Existe-t-il au moins une copie            1 Oui 2 Non 3 NA
+                                         physique du guide de la SBC ?
+                                         (vérifier la disponibilité)
+
+
+
+
+                                                                           39
+

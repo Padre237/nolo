@@ -1,0 +1,48 @@
+2
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+require nor invite participation of the customer or user, except for rudimentary forms of
+AI integrated into social media platforms that curate user-generated content to capture
+attention (4). Another difference between LMMs and other forms of AI is their versatility.
+Previous and existing AI models, including for medical uses, are designed for specific tasks
+and are therefore inflexible. They can execute only tasks defined in the training set and its
+labels (5) and cannot adapt or carry out other functions without retraining with a different
+dataset. Thus, even though more than 500 AI models for clinical medicine have been approved
+by the Food and Drug Administration in the USA (5), most are approved for only one or two
+narrow tasks. In contrast, LMMs are trained on various datasets and can be used in numerous
+tasks, including some for which they were not explicitly trained (5).
+LMMs usually have an interface and format that facilitate human–computer algorithm
+interactions that might mimic human communication and which can therefore lead users to
+imbue the algorithm with human-like qualities. Thus, the way in which LMMs are used and
+the content they generate and provide as responses, which may appear to be “human-like”,
+are different from those of other forms of AI and have contributed to the unprecedented
+public adoption of LMMs. Furthermore, because the responses they provide appear to
+be authoritative, many users uncritically accept them as correct, even if an LMM cannot
+guarantee a correct response and cannot integrate ethical norms or moral reasoning into the
+responses it generates. While this guidance illustrates the different ways in which LMMs are
+used (or imagined for use) in health care and medicine, they are already used in numerous
+domains, including education, finance, communications and computer science.
+LMMs can be considered products of a series (or chain) of decisions on programming and
+product development by one or more actors. Decisions made at each stage of an AI value
+chain may have both direct and indirect consequences on those that participate in the
+development, deployment and use of LMMs downstream. The decisions can be influenced
+and regulated by governments that enact and enforce laws and policies nationally, regionally
+and globally.
+The AI value chain often begins in a large technology company. The developer could also be a
+university, a small technology company, a national health system, public-private consortiums
+or other entities that have the resources and capacity to use several inputs, which comprise
+“AI infrastructure”, such as data, computing power and AI expertise, to develop generalpurpose foundation models. These models can be used directly by a user to perform various,
+often unanticipated tasks (including those related to health care). Several general-purpose
+foundation models are trained specifically for use in health care and medicine.
+A general-purpose foundation model can be used by a third party (a “provider”) through an
+active programming interface for a specific purpose or use. This involves (i) fine-tuning a new
+LMM, which may require additional training of the foundation model; (ii) integrating the LMM
+into applications or a larger software system to provide a service to users; or (iii) integrating
+components known as “plug-ins” to channel, filter and organize the LMMs into formal or
+regulated formats to generate “digestible” results.3
+3
+
+Communication from Leong Tze-Yun, WHO expert on the ethics and governance of AI for health.
+
+

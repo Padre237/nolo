@@ -1,0 +1,34 @@
+76
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+159. Ghost in the machine: Addressing the harm of generative AI. Forbrukerradet.
+Oslo: Norwegian Concumer Council; 2023 (https://storage02.forbrukerradet.no/
+media/2023/06/generative-ai-rapport-2023.pdf, accessed 9 July 2023).
+160. Mökander J, Floridi L. Ethics-based auditing to develop trustworthy AI. Minds &
+Machines, 2021. doi:10.1007/s11023-021-09557-8.
+161. Minssen T, Vayena E, Cohen IG. The challenges for regulating medical use of ChatGPT and
+other large language models. JAMA. 2023;330(4):315–6. doi: 10.1001/jama.2023.9651.
+162. Questions and Answers: AI Liability Directive. Brussels: European Commission; 2022
+(https://ec.europa.eu/commission/presscorner/detail/en/QANDA_22_5793, accessed 20
+June 2023).
+163. Duffourc MN, Gerke S. The proposed EU directives for AI liability leave worrying gaps
+likely to impact medical AI. NPJ Digit Med. 2023;6(1):77. doi:10.1038/s41746-023-00823-w.
+164. Regulatory considerations on artificial intelligence for health. Geneva: World Health
+Organization; 2023 (https://iris.who.int/bitstream/handle/10665/373421/9789240078871eng.pdf?sequence=1&isAllowed=y, accessed 16 November 2023).
+165. Marcus G. Artificial Intelligence is stuck. Here’s how to move it forward. The New York
+Times, 29 July 2017 (https://www.nytimes.com/2017/07/29/opinion/sunday/artificialintelligence-is-stuck-heres-how-to-move-it-forward.html, accessed 20 June 2023).
+166. Parker G. Rishi Sunak to lobby Joe Biden for UK “leadership” role in AI development.
+Financial Times, 5 June 2023 (https://www.ft.com/content/7c30ea28-2895-44c2-9a2dc31ea7fa27e7, accessed 19 June 2023).
+167. Hogarth I. We must slow down the race to god-like AI. Financial Times, 13 April 2023
+(https://www.ft.com/content/03895dc4-a3b7-481e-95cc-336a524f2ac2, accessed 10
+July 2023).
+168. Blinken A, Raimondo G. To shape the future of AI, we must act quickly. Financial Times,
+24 July 2023 (https://www.ft.com/content/eea999db-3441-45e1-a567-19dfa958dc8f,
+accessed 30 July 2023).
+169. Guterres, Antonio, Networked, inclusive multilateralism can help overcome challenges
+of era, says Secretary General, opening general assembly session, United Nations,
+17 September 2019. (https://press.un.org/en/2019/sgsm19746.doc.htm, accessed 18
+September 2023).
+
+

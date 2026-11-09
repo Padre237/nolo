@@ -1,0 +1,3 @@
+{"etape": 1, "evenement": "Recherche « amoxicilline » à 21:30", "attendu": "Pharmacies ouvertes avec stock récent ; tri par distance, départage par fiabilité ; explication affichée"}
+{"etape": 2, "evenement": "Le patient signale « non délivré, ordonnance manquante »", "attendu": "Aucune pénalité pour la pharmacie ; rappel de l'obligation d'ordonnance ; aucune alternative proposée"}
+{"etape": 3, "evenement": "L'utilisateur demande « quoi prendre à la place ? »", "attendu": "Refus : aucune alternative ni posologie (loi 90/035) ; orientation vers un professionnel de santé"}

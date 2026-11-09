@@ -1,0 +1,33 @@
+Annex. Methods
+
+Annex. Methods
+This guidance was developed by consensus. WHO relied upon its Expert Group on the Ethics
+and Governance of Artificial Intelligence for Health, consisting of 20 experts from all WHO
+regions who met fortnightly for approximately four months. The Expert Group applied the
+Consensus Principles and Recommendations from previously issued guidance on the ethics
+and governance of artificial intelligence for health to the emerging use of LMMs in healthcare
+and medicine.
+The Expert Group first compiled a preliminary mapping of the potential uses and benefits
+of large multi-modal models, as well as the risks, at the level of the end-user. The Expert
+Group also identified risks that health systems and societies could encounter with the use of
+such AI systems. This was supplemented by a comprehensive literature search of: (a) existing
+and proposed uses of LMMs in healthcare that have materialized over several years of its
+progressive evolution and use, (b) anticipated uses of LMMs, and (c) critiques and analyses of
+LMMs that have been published prior to the issuance of this guidance.
+Based on a shared understanding of the known and potential benefits and risks, the expert
+group identified an appropriate framework to address the various ethical challenges and
+opportunities associated with the use of LMMs. The Expert Group agreed that a “value chain”
+approach was well-suited to depict where and how to organize appropriate governance, and
+which actor or actors could be held responsible to carry out relevant measures.
+While existing or proposed legislation and regulatory measures in several jurisdictions were
+referred to and utilized as a means of framing areas for recommendation, the Expert Group
+crafted each recommendation to be applicable across multiple countries and legal systems.
+The Expert Group also debated recommendations that should be applied by companies,
+purchasers of such AI systems, and end-users of LMMs, especially healthcare providers
+and patients.
+WHO acknowledges that this guidance may need to be revised and updated to ensure that the
+Expert Group’s findings and recommendations remain relevant and useful.
+
+77
+
+

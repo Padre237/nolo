@@ -1,0 +1,32 @@
+References
+
+103. A new partnership to promote responsible AI. Google Blogs, 26 July 2023 (https://blog.
+google/outreach-initiatives/public-policy/google-microsoft-openai-anthropic-frontiermodel-forum/#:~:text=Anthropic%2C%20Google%2C%20Microsoft%20and%20
+OpenAI%20are%20launching%20the%20Frontier%20Model,development%20of%20
+frontier%20AI%20models, accessed 29 July 2023).
+104. Fact sheet: Biden–Harris Administration secures voluntary commitments from leading
+artificial intelligence companies to manage the risks posed by AI. Washington DC: The
+White House, 21 July 2023 (https://www.whitehouse.gov/briefing-room/statementsreleases/2023/07/21/fact-sheet-biden-harris-administration-secures-voluntarycommitments-from-leading-artificial-intelligence-companies-to-manage-the-risksposed-by-ai/, accessed 29 July 2023).
+105. Volpicelli G. Europe pitches AI pact to curtail the booming tech’s risk. Politico, 26
+May 2023 (https://www.politico.eu/article/big-tech-rumble-europe-global-artificialintelligence-debate-ai-pact/, accessed 29 July 2023).
+106. Grant N, Weise K. In AI race, Microsoft and Google choose speed over caution. The New
+York Times, 7 April 2023 (https://www.nytimes.com/2023/04/07/technology/ai-chatbotsgoogle-microsoft.html, accessed 2 June 2023).
+107. Center for Research on Foundation Models. The Foundation Model Transparency Index,
+2023. (https://crfm.stanford.edu/fmti/, accessed 21 October 2023).
+108. Schiffer Z, Newton C. Microsoft lays off team that taught employees how to make AI tools
+responsibly. The Verge, 14 March 2023.(https://www.theverge.com/2023/3/13/23638823/
+microsoft-ethics-society-team-responsible-ai-layoffs, accessed 2 June 2023).
+109. Milmo D. Google chief warns AI could be harmful if deployed wrongly. The Guardian,
+17 April 2023 (https://www.theguardian.com/technology/2023/apr/17/google-chief-aiharmful-sundar-pichai, accessed 2 June 2023).
+110. Fiesler C. AI has social consequences, but who pays the price? Tech companies’ problem
+with ethical debt. The Conversation, 19 April 2023 (https://theconversation.com/ai-hassocial-consequences-but-who-pays-the-price-tech-companies-problem-with-ethicaldebt-203375, accessed 2 June 2023).
+111. Criddle, Cristina and Murphy, Hannah, Meta disbands protein-folding team in shift
+towards commercial AI, Financial Times, 7 August 2023. (https://www.ft.com/
+content/919c05d2-b894-4812-aa1a-dd2ab6de794a?accessToken=zwAGBZuoWVwkdORnAXSuJRIEtOqGt0qtt55Sg.MEQCIA1QQ1iG8KPAnuDAuPvt-Ngds3OzxL1lt0FnaVbAQFtAiAZvHnmKD_fABj8ZzLTNXRp1v7V38nTcUf_pPxAPdx16A&sharetype=gift&to
+ken=3ac5a132-e08e-412e-bc3c-08edea8a7417, accessed 18 September 2023).
+112. Ananthaswamy A. In AI, is bigger always better? Nature, 8 March 2023 (https://www.
+nature.com/articles/d41586-023-00641-w, accessed 2 June 2023).
+
+71
+
+

@@ -1,0 +1,87 @@
+L 119/6
+
+FR
+
+Journal officiel de l'Union européenne
+
+4.5.2016
+
+(30)
+
+Les personnes physiques peuvent se voir associer, par les appareils, applications, outils et protocoles qu'elles
+utilisent, des identifiants en ligne tels que des adresses IP et des témoins de connexion («cookies») ou d'autres
+identifiants, par exemple des étiquettes d'identification par radiofréquence. Ces identifiants peuvent laisser des
+traces qui, notamment lorsqu'elles sont combinées aux identifiants uniques et à d'autres informations reçues par
+les serveurs, peuvent servir à créer des profils de personnes physiques et à identifier ces personnes.
+
+(31)
+
+Les autorités publiques auxquelles des données à caractère personnel sont communiquées conformément à une
+obligation légale pour l'exercice de leurs fonctions officielles, telles que les autorités fiscales et douanières, les
+cellules d'enquête financière, les autorités administratives indépendantes ou les autorités des marchés financiers
+responsables de la réglementation et de la surveillance des marchés de valeurs mobilières ne devraient pas être
+considérées comme des destinataires si elles reçoivent des données à caractère personnel qui sont nécessaires
+pour mener une enquête particulière dans l'intérêt général, conformément au droit de l'Union ou au droit d'un
+État membre. Les demandes de communication adressées par les autorités publiques devraient toujours être
+présentées par écrit, être motivées et revêtir un caractère occasionnel, et elles ne devraient pas porter sur l'inté­
+gralité d'un fichier ni conduire à l'interconnexion de fichiers. Le traitement des données à caractère personnel par
+les autorités publiques en question devrait être effectué dans le respect des règles applicables en matière de
+protection des données en fonction des finalités du traitement.
+
+(32)
+
+Le consentement devrait être donné par un acte positif clair par lequel la personne concernée manifeste de façon
+libre, spécifique, éclairée et univoque son accord au traitement des données à caractère personnel la concernant,
+par exemple au moyen d'une déclaration écrite, y compris par voie électronique, ou d'une déclaration orale. Cela
+pourrait se faire notamment en cochant une case lors de la consultation d'un site internet, en optant pour
+certains paramètres techniques pour des services de la société de l'information ou au moyen d'une autre
+déclaration ou d'un autre comportement indiquant clairement dans ce contexte que la personne concernée
+accepte le traitement proposé de ses données à caractère personnel. Il ne saurait dès lors y avoir de consentement
+en cas de silence, de cases cochées par défaut ou d'inactivité. Le consentement donné devrait valoir pour toutes
+les activités de traitement ayant la ou les mêmes finalités. Lorsque le traitement a plusieurs finalités, le
+consentement devrait être donné pour l'ensemble d'entre elles. Si le consentement de la personne concernée est
+donné à la suite d'une demande introduite par voie électronique, cette demande doit être claire et concise et ne
+doit pas inutilement perturber l'utilisation du service pour lequel il est accordé.
+
+(33)
+
+Souvent, il n'est pas possible de cerner entièrement la finalité du traitement des données à caractère personnel à
+des fins de recherche scientifique au moment de la collecte des données. Par conséquent, les personnes
+concernées devraient pouvoir donner leur consentement en ce qui concerne certains domaines de la recherche
+scientifique, dans le respect des normes éthiques reconnues en matière de recherche scientifique. Les personnes
+concernées devraient pouvoir donner leur consentement uniquement pour ce qui est de certains domaines de la
+recherche ou de certaines parties de projets de recherche, dans la mesure où la finalité visée le permet.
+
+(34)
+
+Les données génétiques devraient être définies comme les données à caractère personnel relatives aux caractéris­
+tiques génétiques héréditaires ou acquises d'une personne physique, résultant de l'analyse d'un échantillon
+biologique de la personne physique en question, notamment une analyse des chromosomes, de l'acide désoxyribo­
+nucléique (ADN) ou de l'acide ribonucléique (ARN), ou de l'analyse d'un autre élément permettant d'obtenir des
+informations équivalentes.
+
+(35)
+
+Les données à caractère personnel concernant la santé devraient comprendre l'ensemble des données se
+rapportant à l'état de santé d'une personne concernée qui révèlent des informations sur l'état de santé physique
+ou mentale passé, présent ou futur de la personne concernée. Cela comprend des informations sur la personne
+physique collectées lors de l'inscription de cette personne physique en vue de bénéficier de services de soins de
+santé ou lors de la prestation de ces services au sens de la directive 2011/24/UE du Parlement européen et du
+Conseil (1) au bénéfice de cette personne physique; un numéro, un symbole ou un élément spécifique attribué à
+une personne physique pour l'identifier de manière unique à des fins de santé; des informations obtenues lors du
+test ou de l'examen d'une partie du corps ou d'une substance corporelle, y compris à partir de données
+génétiques et d'échantillons biologiques; et toute information concernant, par exemple, une maladie, un handicap,
+un risque de maladie, les antécédents médicaux, un traitement clinique ou l'état physiologique ou biomédical de
+la personne concernée, indépendamment de sa source, qu'elle provienne par exemple d'un médecin ou d'un autre
+professionnel de la santé, d'un hôpital, d'un dispositif médical ou d'un test de diagnostic in vitro.
+
+(36)
+
+L'établissement principal d'un responsable du traitement dans l'Union devrait être le lieu de son administration
+centrale dans l'Union, à moins que les décisions quant aux finalités et aux moyens du traitement des données à
+caractère personnel soient prises dans un autre établissement du responsable du traitement dans l'Union, auquel
+
+(1) Directive 2011/24/UE du Parlement européen et du Conseil du 9 mars 2011 relative à l'application des droits des patients en matière de
+soins de santé transfrontaliers (JO L 88 du 4.4.2011, p. 45).
+
+

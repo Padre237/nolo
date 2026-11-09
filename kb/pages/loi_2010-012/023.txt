@@ -1,0 +1,46 @@
+23
+
+(2) Est puni des peines prévues à l’alinéa 1 ci-dessus, tout accès
+non autorisé, à l’ensemble ou à une partie d’un réseau de communications
+électroniques ou d’un système d’information ou d’un équipement terminal.
+(3) Les peines prévues à l’alinéa 1 ci-dessus sont doublées, en cas
+d’accès illicite portant atteinte à l’intégrité, la confidentialité, la disponibilité
+du réseau de communications électroniques ou du système d’information.
+(4) Est puni des mêmes peines prévues à l’alinéa 1 ci-dessus, celui
+qui, sans droit, permet l’accès dans un réseau de communications
+électroniques ou dans un système d’information par défi intellectuel.
+Article 66.- (1) Est puni d’un emprisonnement de deux (02) à cinq (05) ans et
+d’une amende de 1.000.000 (un million) à 2.000.000 (deux millions) F CFA ou de
+l’une de ces deux peines seulement, celui qui entraîne la perturbation ou
+l’interruption du fonctionnement d’un réseau de communications électroniques
+ou d’un équipement terminal, en introduisant, transmettant, endommageant,
+effaçant, détériorant, modifiant, supprimant ou rendant inaccessibles les
+données.
+(2) Sont passibles des mêmes peines prévues à l’alinéa 1 ci-dessus,
+les personnes qui font usage d’un logiciel trompeur ou indésirable en vue
+d’effectuer des opérations sur un équipement terminal d’un utilisateur sans en
+informer au préalable celui-ci de la nature exacte des opérations que ledit
+logiciel est susceptible d’endommager.
+(3) Est puni des mêmes peines prévues à alinéa 1 ci-dessus, celui
+qui, à l’aide d’un logiciel potentiellement indésirable collecte, tente de
+collecter ou facilite l’une de ces opérations pour accéder aux informations de
+l’opérateur ou du fournisseur d’un réseau ou de service électronique afin de
+commettre des infractions.
+Article 67.- Constitue une atteinte à l’intégrité d’un réseau de communications
+électroniques ou d’un système d’information et punie des peines prévues à
+l’article 66, alinéa 1 ci-dessus, le fait de provoquer une perturbation grave ou
+une interruption de fonctionnement d’un réseau de communications
+électroniques d’un équipement terminal par l’introduction, la transmission, la
+modification, la suppression, l’altération des données.
+Article 68.- (1) Est puni d’un emprisonnement de cinq (05) à dix (10) ans et
+d’une amende de 10.000.000 (dix millions) à 50.000.000 (cinquante millions) F
+CFA ou de l’une de ces deux peines seulement, celui qui accède ou se
+maintient, frauduleusement, dans tout ou partie d'un réseau de
+communications électroniques ou d’un système d’information en transmettant,
+endommageant, provoquant une perturbation grave ou une interruption du
+fonctionnement dudit système ou dudit réseau.
+(2) Les peines prévues à l’alinéa 1 ci-dessus sont doublées s’il en
+est résulté, soit la suppression ou la modification des données contenues dans
+le système d’information, soit une altération de son fonctionnement.
+
+

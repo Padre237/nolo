@@ -1,0 +1,64 @@
+spec,exigence,sources,lacune,test
+001-orientation-symptomes,FR-101,INT-OMS-PCIME-MANUEL::0028 ; INT-UE-AI-ACT-2024-1689::0203,L5,T-101 (à écrire)
+001-orientation-symptomes,FR-102,CMR-LOI-90-035::0012 ; INT-OMS-LMM-2024::0007,L5,T-102 (à écrire)
+001-orientation-symptomes,FR-103,INT-SNOMED-GPS-TECH::0000,—,T-103 (à écrire)
+001-orientation-symptomes,FR-104,INT-OMS-PCIME-MANUEL::0028,L5,T-104 (à écrire)
+001-orientation-symptomes,FR-105,CMR-LOI-2024-017::0044 ; CMR-LOI-2024-017::0062,L1,T-105 (à écrire)
+001-orientation-symptomes,FR-106,CMR-LOI-2024-017::0011,L2,T-106 (à écrire)
+001-orientation-symptomes,FR-107,CMR-LOI-2024-017::0011,—,T-107 (à écrire)
+001-orientation-symptomes,FR-108,CMR-LOI-2024-017::0044,—,T-108 (à écrire)
+001-orientation-symptomes,FR-109,INT-UE-AI-ACT-2024-1689::0088 ; INT-OMS-ETHIQUE-IA-SANTE-2021::0050,—,T-109 (à écrire)
+001-orientation-symptomes,FR-110,INT-UE-AI-ACT-2024-1689::0032,L7,voir spec 007 (T-706)
+001-orientation-symptomes,FR-111,CMR-LOI-2024-017::0048,L11,T-111 (à écrire)
+001-orientation-symptomes,FR-112,CMR-LOI-2024-017::0005 ; CMR-LOI-2024-017::0062,L11,T-112 (à écrire)
+001-orientation-symptomes,FR-113,INT-OMS-PCIME-MANUEL::0028,"L5, V7",T-113 (à écrire)
+001-orientation-symptomes,FR-114,— (source externe dans policy.yaml),—,T-114 (à écrire)
+002-surveillance-syndromique,FR-201,CMR-LOI-2024-017::0011,L4,T-201
+002-surveillance-syndromique,"FR-202, FR-208",CMR-LOI-2024-017::0062 ; INT-OMS-RSI-2005-AMENDE-2022::0054,L1,T-202
+002-surveillance-syndromique,FR-203,CMR-MINSANTE-GUIDE-SBC-2023::0028,L6,T-203
+002-surveillance-syndromique,FR-204,CMR-MINSANTE-GUIDE-SBC-2023::0018 ; INT-UE-AI-ACT-2024-1689::0035,L6,T-204
+002-surveillance-syndromique,FR-205,CMR-MINSANTE-GUIDE-SBC-2023::0018 ; INT-OMS-RSI-2005-AMENDE-2022::0012,—,T-205
+002-surveillance-syndromique,FR-206,CMR-LOI-2024-017::0011 ; INT-OMS-RSI-2005-AMENDE-2022::0054,L4,T-206
+002-surveillance-syndromique,FR-209,INT-OMS-RSI-2005-AMENDE-2022::0012,L4,T-209
+002-surveillance-syndromique,FR-207,INT-OMS-AFRO-SIMR-3E-INTRO::0003 ; CMR-LOI-2024-017::0020,"L12, V5",T-207
+003-recherche-specialite,"FR-302, FR-303",— (choix équipe),L8,"test_services.py : neurologue, cœur"
+003-recherche-specialite,FR-301,—,—,test_services.py : saisie inconnue
+003-recherche-specialite,FR-304,INT-OMS-LMM-2024::0007,L5,T-304 à écrire
+003-recherche-specialite,FR-305,CMR-LOI-2024-017::0011 ; CMR-LOI-2024-017::0048,"L1, L2, V1",test_services.py : psychiatrie (partiel) ; T-305 à écrire
+003-recherche-specialite,FR-306,INT-OMS-ETHIQUE-IA-SANTE-2021::0002,—,test_services.py : psychiatrie
+003-recherche-specialite,FR-307,CMR-LOI-2024-017::0062,L1,T-307 à écrire
+003-recherche-specialite,FR-308,CMR-LOI-2024-017::0048,L11,T-308 à écrire
+004-recherche-medicament,FR-401,CMR-LOI-90-035::0049,L9,test_services.py : établissements agréés
+004-recherche-medicament,FR-402,— (format proposé),L9,T-402 à écrire
+004-recherche-medicament,FR-403,CMR-LOI-90-035::0012,V3,test_services.py : amoxicilline
+004-recherche-medicament,FR-404,CMR-LOI-90-035::0012 ; CMR-LOI-90-035::0017,L8,test_services.py : alternative refusée ; T-404 (50 formulations) à écrire
+004-recherche-medicament,FR-405,CMR-LOI-2024-017::0011,L2,test_services.py : ARV (partiel)
+004-recherche-medicament,FR-406,CMR-LOI-90-035::0017,L8,T-406 à écrire
+004-recherche-medicament,FR-407,CMR-LOI-90-035::0072,—,T-407 à écrire
+004-recherche-medicament,FR-408,CMR-LOI-2024-017::0048,L11,T-408 à écrire (vérifier qu'aucune DCI sensible n'apparaît dans les requêtes ni le journal)
+005-recherche-sang,"FR-501, FR-502",— (textes transfusion à collecter),"L9, V4",test_services.py : O-
+005-recherche-sang,FR-503,—,V4,T-503 à écrire
+005-recherche-sang,FR-504,INT-OMS-ETHIQUE-IA-SANTE-2021::0002,—,test_services.py : appel au don
+005-recherche-sang,FR-505,INT-OMS-PCIME-MANUEL::0028,L5,T-505 à écrire
+006-fiabilite-pharmacies,FR-601 à FR-604,— (choix équipe),L10,test_services.py : PH-25
+006-fiabilite-pharmacies,FR-605,CMR-LOI-90-035::0017,L8,T-605 à écrire
+006-fiabilite-pharmacies,FR-606,CMR-LOI-2024-017::0044,L10,test_services.py : PH-20
+006-fiabilite-pharmacies,FR-607,CMR-LOI-2024-017::0044,L10,"T-607 à écrire (dans le délai, hors délai, dépassement 72 h)"
+006-fiabilite-pharmacies,FR-610,— (choix équipe),L10,"T-610 à écrire (application sur 7 jours, exclusion si infondée)"
+006-fiabilite-pharmacies,FR-608,CMR-LOI-2024-017::0011,—,T-608 à écrire
+006-fiabilite-pharmacies,FR-609,CMR-LOI-2024-017::0048,L11,T-609 à écrire
+007-gouvernance-conformite-audit,FR-701,— (Y.3172 nœud P),L7,T-701
+007-gouvernance-conformite-audit,"FR-702, FR-703",CMR-LOI-2024-017::0011 ; CMR-LOI-2024-017::0034,"L2, L3",T-702
+007-gouvernance-conformite-audit,FR-704,CMR-LOI-2024-017::0044 ; CMR-LOI-2024-017::0062,L1,T-704
+007-gouvernance-conformite-audit,FR-705,CMR-LOI-2024-017::0033 ; CMR-MINSANTE-PSNSN-2026-2030::0005,L3,T-705
+007-gouvernance-conformite-audit,FR-706,INT-UE-AI-ACT-2024-1689::0032 ; CMR-LOI-2010-012::0034,V2,T-706
+007-gouvernance-conformite-audit,FR-707,CMR-LOI-2024-017::0033,L3,T-707
+007-gouvernance-conformite-audit,FR-708,CMR-LOI-2024-017::0034 ; INT-UE-RGPD-2016-679::0143,L3,T-708
+007-gouvernance-conformite-audit,FR-709,—,L7,T-709
+007-gouvernance-conformite-audit,FR-710,—,—,T-710
+007-gouvernance-conformite-audit,FR-711,CMR-LOI-2024-017::0011,L4,T-711
+007-gouvernance-conformite-audit,FR-714,CMR-LOI-2024-017::0020 ; INT-UE-RGPD-2016-679::0050,L12,T-714
+007-gouvernance-conformite-audit,FR-715,CMR-LOI-2024-017::0020,L12,T-715
+007-gouvernance-conformite-audit,FR-712,CMR-LOI-2024-017::0048 ; CMR-LOI-2024-017::0062,"L11, V6",T-712
+007-gouvernance-conformite-audit,FR-713,CMR-LOI-2024-017::0048,L11,T-713
+007-gouvernance-conformite-audit,SC-704,—,—,eval/run_eval.py

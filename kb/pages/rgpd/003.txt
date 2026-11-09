@@ -1,0 +1,90 @@
+4.5.2016
+
+FR
+
+Journal officiel de l'Union européenne
+
+L 119/3
+
+(11)
+
+Une protection effective des données à caractère personnel dans l'ensemble de l'Union exige de renforcer et de
+préciser les droits des personnes concernées et les obligations de ceux qui effectuent et déterminent le traitement
+des données à caractère personnel, ainsi que de prévoir, dans les États membres, des pouvoirs équivalents de
+surveillance et de contrôle du respect des règles relatives à la protection des données à caractère personnel et des
+sanctions équivalentes pour les violations.
+
+(12)
+
+L'article 16, paragraphe 2, du traité sur le fonctionnement de l'Union européenne donne mandat au Parlement
+européen et au Conseil pour fixer les règles relatives à la protection des personnes physiques à l'égard du
+traitement des données à caractère personnel ainsi que les règles relatives à la libre circulation des données à
+caractère personnel.
+
+(13)
+
+Afin d'assurer un niveau cohérent de protection des personnes physiques dans l'ensemble de l'Union, et d'éviter
+que des divergences n'entravent la libre circulation des données à caractère personnel au sein du marché intérieur,
+un règlement est nécessaire pour garantir la sécurité juridique et la transparence aux opérateurs économiques, y
+compris les micro, petites et moyennes entreprises, pour offrir aux personnes physiques de tous les États
+membres un même niveau de droits opposables et d'obligations et de responsabilités pour les responsables du
+traitement et les sous-traitants, et pour assurer une surveillance cohérente du traitement des données à caractère
+personnel, et des sanctions équivalentes dans tous les États membres, ainsi qu'une coopération efficace entre les
+autorités de contrôle des différents États membres. Pour que le marché intérieur fonctionne correctement, il est
+nécessaire que la libre circulation des données à caractère personnel au sein de l'Union ne soit ni limitée ni
+interdite pour des motifs liés à la protection des personnes physiques à l'égard du traitement des données à
+caractère personnel. Pour tenir compte de la situation particulière des micro, petites et moyennes entreprises, le
+présent règlement comporte une dérogation pour les organisations occupant moins de 250 employés en ce qui
+concerne la tenue de registres. Les institutions et organes de l'Union, et les États membres et leurs autorités de
+contrôle sont en outre encouragés à prendre en considération les besoins spécifiques des micro, petites et
+moyennes entreprises dans le cadre de l'application du présent règlement. Pour définir la notion de micro, petites
+et moyennes entreprises, il convient de se baser sur l'article 2 de l'annexe de la recommandation 2003/361/CE de
+la Commission (1).
+
+(14)
+
+La protection conférée par le présent règlement devrait s'appliquer aux personnes physiques, indépendamment de
+leur nationalité ou de leur lieu de résidence, en ce qui concerne le traitement de leurs données à caractère
+personnel. Le présent règlement ne couvre pas le traitement des données à caractère personnel qui concernent les
+personnes morales, et en particulier des entreprises dotées de la personnalité juridique, y compris le nom, la
+forme juridique et les coordonnées de la personne morale.
+
+(15)
+
+Afin d'éviter de créer un risque grave de contournement, la protection des personnes physiques devrait être
+neutre sur le plan technologique et ne devrait pas dépendre des techniques utilisées. Elle devrait s'appliquer aux
+traitements de données à caractère personnel à l'aide de procédés automatisés ainsi qu'aux traitements manuels, si
+les données à caractère personnel sont contenues ou destinées à être contenues dans un fichier. Les dossiers ou
+ensembles de dossiers de même que leurs couvertures, qui ne sont pas structurés selon des critères déterminés ne
+devraient pas relever du champ d'application du présent règlement.
+
+(16)
+
+Le présent règlement ne s'applique pas à des questions de protection des libertés et droits fondamentaux ou de
+libre flux des données à caractère personnel concernant des activités qui ne relèvent pas du champ d'application
+du droit de l'Union, telles que les activités relatives à la sécurité nationale. Le présent règlement ne s'applique pas
+au traitement des données à caractère personnel par les États membres dans le contexte de leurs activités ayant
+trait à la politique étrangère et de sécurité commune de l'Union.
+
+(17)
+
+Le règlement (CE) no 45/2001 du Parlement européen et du Conseil (2) s'applique au traitement des données à
+caractère personnel par les institutions, organes et organismes de l'Union. Le règlement (CE) no 45/2001 et les
+autres actes juridiques de l'Union applicables audit traitement des données à caractère personnel devraient être
+adaptés aux principes et aux règles fixés dans le présent règlement et appliqués à la lumière du présent règlement.
+Pour mettre en place un cadre de protection des données solide et cohérent dans l'Union, il convient, après
+l'adoption du présent règlement, d'apporter les adaptations nécessaires au règlement (CE) no 45/2001 de manière
+à ce que celles-ci s'appliquent en même temps que le présent règlement.
+
+(18)
+
+Le présent règlement ne s'applique pas aux traitements de données à caractère personnel effectués par une
+personne physique au cours d'activités strictement personnelles ou domestiques, et donc sans lien avec une
+
+(1) Recommandation de la Commission du 6 mai 2003 concernant la définition des micro, petites et moyennes entreprises [C(2003) 1422]
+(JO L 124 du 20.5.2003, p. 36).
+(2) Règlement (CE) no 45/2001 du Parlement européen et du Conseil du 18 décembre 2000 relatif à la protection des personnes physiques à
+l'égard du traitement des données à caractère personnel par les institutions et organes communautaires et à la libre circulation de ces
+données (JO L 8 du 12.1.2001, p. 1).
+
+

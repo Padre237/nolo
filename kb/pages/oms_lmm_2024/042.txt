@@ -1,0 +1,47 @@
+24
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+Many violations of data protection may also violate consumer protection laws (93). More
+broadly, if these problems cannot be resolved, they are also in direct contravention of the
+WHO guiding principles on use of AI in health, including the principles of protecting autonomy
+and of ensuring transparency, “explainability” and intelligibility.
+The inability of companies to abide by existing laws may be the reason for the expression of
+serious concern about forthcoming AI regulations by some companies. In response to the
+planned introduction by the European Union of an Act on AI, the head of a major company
+stated that it might be unable to offer its key LMM product in Europe, as it might not be able
+to comply with its regulations (94). This ultimatum could result in the erosion of privacy rights
+and other protections, or provision of health care which will depend on the willingness of a
+country to forego certain human rights.
+
+3.3
+
+Societal concerns and risks
+
+Like other AI technologies, LMMs are expected to have broader societal impacts, beyond the
+health system, that cannot be addressed by one law or policy. They include the likelihood
+that LMMs will reinforce the power and authority of a small group of technology companies
+(and their executives) that are at the forefront of commercializing LMMs. LMMs may also
+have a negative impact on the environment and climate, due to the carbon and water used
+in training and using LMMs. Such technologies quickly become “entangled with the lives of
+billions of people at a pace faster than cultures can safely absorb them” (4), including in the
+domains of health care and medicine, before humans can ensure that AI technologies do not
+displace our epistemic authority with information, evidence and recommendations that are
+often inaccurate, false or biased and lack any moral or contextual reasoning. There is also
+serious concern that LMMs could augment technology-facilitated gender-based violence,
+including cyber-bullying, hate speech and non-consensual use of images and videos, such as
+“deep fakes”. The latter risk is not addressed in this report, but it merits broader consideration
+by WHO, as it has serious negative implications for the health and well-being of populations,
+especially adolescent girls and women, who are targeted by such uses of AI (95).
+
+Challenges related to large technology companies
+The emergence of LMMs, which continue to grow larger with more and more parameters, has
+reinforced the dominance and centrality of a few large technology companies that develop
+and deploy AI (96). Few companies and governments have the human and financial resources,
+expertise, data and computing power to develop increasingly sophisticated LMMs (96).
+Computing power and investment in LMMs have increased, and, with the demand for AI
+growing, recruiting “AI talent” is expensive (97,98). LMMs that contain the most powerful
+microchips available require many computers and thousands of chips working together to be
+trained, the computers working non-stop for weeks or even months (99).
+
+

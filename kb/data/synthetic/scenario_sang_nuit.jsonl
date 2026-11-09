@@ -1,0 +1,3 @@
+{"heure": "22:00", "destinataires": ["ressources"], "evenement": "Recherche du groupe O- (contexte : hémorragie, nuit)", "attendu": "Triage : URGENCE -> orientation vers les urgences d'abord ; banques à 5 km : O- en rupture"}
+{"heure": "22:01", "destinataires": ["ressources", "orchestrateur"], "evenement": "Élargissement du rayon", "attendu": "Centre de transfusion fictif : O- disponible mais fermé la nuit -> contact de l'établissement ; message « délivrance sur prescription uniquement »"}
+{"heure": "22:02", "destinataires": ["ressources"], "evenement": "O- en tension dans la zone", "attendu": "Appel au don déclenché pour le groupe O- (sans collecte de données de donneurs)"}

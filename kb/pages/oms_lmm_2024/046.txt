@@ -1,0 +1,44 @@
+28
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+LMMs also have a significant water-use footprint. Training of an early LMM in a large
+technology company consumed 700 000 L of fresh water, which would have been even greater
+at other data centres (113). Although many developers are increasingly aware of their carbon
+footprint, many are not aware of their water footprint (114). A short conversation by an LMM
+(20–50 questions and answers) requires the equivalent of a 500-mL bottle of water. The overall
+water footprint of training an LMM, comprising all the water consumed, including AI server
+manufacture, transport and chipmaking, may be significantly larger. (114). Data centres can
+stress local water supplies. For example, the data centre of one company used more than 25%
+of all the water in a city in Oregon, USA (114). Another large technology company is planning to
+construct a data centre in a country that is in the midst of severe drought, such that residents
+are obliged to drink salty water (115). Tracking water footprints is difficult, because, while there
+is greater awareness, measurement and transparency about carbon footprints, companies are
+not equally transparent about their water footprint or do not measure it (114).
+
+“Dangerous” algorithms that displace the epistemic authority of humans
+A more general societal risk associated with the emergence of LMMs is that, by providing
+plausible responses that are increasingly considered a source of knowledge, LMMs may
+eventually undermine the epistemic authority of humans, including in the domains of health
+care, science and medicine. LMMs do not in fact generate knowledge or understand what they
+are “saying” or have any moral or contextual reasoning in answering questions.
+If the concerns persist, societies may not be prepared for the consequences of computergenerated reasoning. Earlier forms of AI that supplied information through social media
+algorithms spread misinformation, with negative impacts on mental health and increased
+polarization and division (4). Even as technology companies issue repeated warnings of the
+dangers of LMMs, they continue to release them directly into society without safeguards
+or regulatory oversight in ways that could not just displace human control of knowledge
+production but reduce the ability of humans to use knowledge safely, in health care, medicine
+and elsewhere, in systems on which societies depend. Such harm could affect people and
+communities in resource-poor settings in particular, as their data are unlikely to have been
+used to train an AI system, thereby reducing the accuracy of the responses. Such groups
+might, however, be likely to follow the advice of an AI system, especially if no health-care
+professional or medical provider is available to contextualize or correct an LMM-generated
+response that is false or inaccurate.
+Release of ever-more imperfect information or disinformation into the public domain and
+knowledge bases by LMMs could eventually lead to “model collapse”, whereby LMMs trained
+on inaccurate or false information also pollute public sources of information, such as the
+Internet (116,117). To avert such a scenario while maximizing the benefits of LMMs in health
+care and other areas of social importance, governments, civil society and the private sector
+must steer these technologies towards the common good.
+
+

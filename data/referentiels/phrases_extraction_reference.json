@@ -1,0 +1,398 @@
+{
+ "description": "Jeu de référence de l'extracteur lexical (SF-001-03, CA-001-03-03, TEST-001-03-05). Jetons attendus AVANT fermeture par « implique » ; non_code selon la segmentation du design §6.",
+ "statut": "UNDER_REVIEW",
+ "version": "1.0.0",
+ "date": "2026-11-04",
+ "referentiel": "data/referentiels/symptomes.csv (version 1.1.0)",
+ "phrases": [
+  {
+   "id": "F01",
+   "langue": "fr",
+   "texte": "mon enfant a des convulsions",
+   "jetons_attendus": [
+    "convulsions"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "F02",
+   "langue": "fr",
+   "texte": "il ne tète plus depuis hier",
+   "jetons_attendus": [
+    "incapable_de_boire_ou_teter"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "F03",
+   "langue": "fr",
+   "texte": "elle ne peut pas boire et elle vomit tout",
+   "jetons_attendus": [
+    "incapable_de_boire_ou_teter",
+    "vomit_tout"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "F04",
+   "langue": "fr",
+   "texte": "il est tout mou et difficile à réveiller",
+   "jetons_attendus": [
+    "lethargie"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "F05",
+   "langue": "fr",
+   "texte": "fièvre avec raideur de la nuque",
+   "jetons_attendus": [
+    "fievre",
+    "raideur_nuque"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "F06",
+   "langue": "fr",
+   "texte": "diarrhée avec du sang depuis deux jours",
+   "jetons_attendus": [
+    "diarrhee",
+    "diarrhee_avec_sang",
+    "saignements"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "F07",
+   "langue": "fr",
+   "texte": "mal à la poitrine depuis ce soir et je respire mal",
+   "jetons_attendus": [
+    "difficulte_respiratoire",
+    "douleur_thoracique"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "F08",
+   "langue": "fr",
+   "texte": "douleur à la poitrine apparue récemment",
+   "jetons_attendus": [
+    "douleur_thoracique",
+    "douleur_thoracique_aigue"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "F09",
+   "langue": "fr",
+   "texte": "il s’est évanoui ce matin",
+   "jetons_attendus": [
+    "evanouissement_recent"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "F10",
+   "langue": "fr",
+   "texte": "elle saigne beaucoup",
+   "jetons_attendus": [
+    "saignements",
+    "saignements_abondants"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "F11",
+   "langue": "fr",
+   "texte": "il a les lèvres bleues",
+   "jetons_attendus": [
+    "cyanose"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "F12",
+   "langue": "fr",
+   "texte": "il a un bleu sur le bras",
+   "jetons_attendus": [],
+   "non_code_attendu": 1
+  },
+  {
+   "id": "F13",
+   "langue": "fr",
+   "texte": "je suis épuisé",
+   "jetons_attendus": [
+    "fatigue"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "F14",
+   "langue": "fr",
+   "texte": "il est tombé d'un arbre",
+   "jetons_attendus": [
+    "traumatisme"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "F15",
+   "langue": "fr",
+   "texte": "chute de cheveux",
+   "jetons_attendus": [],
+   "non_code_attendu": 1
+  },
+  {
+   "id": "F16",
+   "langue": "fr",
+   "texte": "elle est enceinte et elle a perdu les eaux",
+   "jetons_attendus": [
+    "accouchement_declenche",
+    "grossesse"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "F17",
+   "langue": "fr",
+   "texte": "contractions musculaires dans les jambes",
+   "jetons_attendus": [],
+   "non_code_attendu": 1
+  },
+  {
+   "id": "F18",
+   "langue": "fr",
+   "texte": "brûlure au visage",
+   "jetons_attendus": [
+    "brulure",
+    "brulure_visage_cou_circulaire"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "F19",
+   "langue": "fr",
+   "texte": "mordu par un chien",
+   "jetons_attendus": [
+    "morsure_animal"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "F20",
+   "langue": "fr",
+   "texte": "il respire très vite avec tirage",
+   "jetons_attendus": [
+    "muscles_accessoires",
+    "respiration_tres_rapide_ou_lente"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "F21",
+   "langue": "fr",
+   "texte": "mal à la poitrine, et j'ai des fourmis dans les doigts",
+   "jetons_attendus": [
+    "douleur_thoracique"
+   ],
+   "non_code_attendu": 1
+  },
+  {
+   "id": "E01",
+   "langue": "en",
+   "texte": "my baby is having seizures",
+   "jetons_attendus": [
+    "convulsions"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "E02",
+   "langue": "en",
+   "texte": "he cannot drink anything",
+   "jetons_attendus": [
+    "incapable_de_boire_ou_teter"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "E03",
+   "langue": "en",
+   "texte": "fever and stiff neck",
+   "jetons_attendus": [
+    "fievre",
+    "raideur_nuque"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "E04",
+   "langue": "en",
+   "texte": "bloody diarrhea since yesterday",
+   "jetons_attendus": [
+    "diarrhee",
+    "diarrhee_avec_sang"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "E05",
+   "langue": "en",
+   "texte": "wheezing and coughing",
+   "jetons_attendus": [
+    "sifflement",
+    "toux"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "E06",
+   "langue": "en",
+   "texte": "sudden chest pain",
+   "jetons_attendus": [
+    "douleur_thoracique",
+    "douleur_thoracique_aigue"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "E07",
+   "langue": "en",
+   "texte": "she fainted at work",
+   "jetons_attendus": [
+    "evanouissement_recent"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "E08",
+   "langue": "en",
+   "texte": "heavy bleeding after delivery",
+   "jetons_attendus": [
+    "saignements",
+    "saignements_abondants"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "E09",
+   "langue": "en",
+   "texte": "blue lips",
+   "jetons_attendus": [
+    "cyanose"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "E10",
+   "langue": "en",
+   "texte": "I had a fall from height",
+   "jetons_attendus": [
+    "chute_deux_fois_hauteur",
+    "traumatisme"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "E11",
+   "langue": "en",
+   "texte": "I fall asleep easily",
+   "jetons_attendus": [],
+   "non_code_attendu": 1
+  },
+  {
+   "id": "E12",
+   "langue": "en",
+   "texte": "I feel fit today",
+   "jetons_attendus": [],
+   "non_code_attendu": 1
+  },
+  {
+   "id": "E13",
+   "langue": "en",
+   "texte": "very fast breathing and grunting",
+   "jetons_attendus": [
+    "battement_ailes_nez_geignement",
+    "respiration_tres_rapide_ou_lente"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "E14",
+   "langue": "en",
+   "texte": "snake bite on the leg",
+   "jetons_attendus": [
+    "morsure_serpent"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "E15",
+   "langue": "en",
+   "texte": "unresponsive and not waking up",
+   "jetons_attendus": [
+    "inconscient"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "E16",
+   "langue": "en",
+   "texte": "severe headache and confused",
+   "jetons_attendus": [
+    "cephalee",
+    "cephalee_intense",
+    "etat_conscience_altere"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "E17",
+   "langue": "en",
+   "texte": "yellow eyes",
+   "jetons_attendus": [
+    "jaunissement_yeux"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "E18",
+   "langue": "en",
+   "texte": "swollen feet",
+   "jetons_attendus": [
+    "oedeme_deux_pieds"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "E19",
+   "langue": "en",
+   "texte": "smoke inhalation in a house fire",
+   "jetons_attendus": [
+    "brulure_inhalation"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "E20",
+   "langue": "en",
+   "texte": "she is pregnant and labour has started",
+   "jetons_attendus": [
+    "accouchement_declenche",
+    "grossesse"
+   ],
+   "non_code_attendu": 0
+  },
+  {
+   "id": "E21",
+   "langue": "en",
+   "texte": "stomach ache and loose stools",
+   "jetons_attendus": [
+    "diarrhee",
+    "douleur_abdominale"
+   ],
+   "non_code_attendu": 0
+  }
+ ]
+}

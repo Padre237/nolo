@@ -1,0 +1,44 @@
+4 Design and development of general-purpose foundation models (LMMs)
+
+• privacy (of training and other input data);
+• labour concerns (outsourced filtering of data to remove offensive content);
+• the carbon and water footprints;
+• false information, hate speech or misinformation;
+• safety and cybersecurity; and
+• preserving the epistemic authority of humans
+• exclusive control of LMMs
+
+4.2
+
+Measures developers can take to address risks with
+general-purpose foundation models (LMMs)
+
+A developer could use many measures or practices to address such risks, whether as a
+commitment to ethical principles or policies or to meet the requirements of governments.
+AI expertise (scientific and engineering personnel): A developer can ensure that its scientific
+and programming personnel can identify and avoid risks. The WHO ethics guidance (1) made
+several recommendations for the training of scientific and engineering personnel and on the
+inclusiveness of the design process. In particular, the WHO expert group recommended that
+developers consider “licensing or certification requirements for developers of ‘high-risk’ AI,
+including AI for health”.
+Companies and other entities that develop an LMM that shall or could be used in health care,
+scientific research or medicine should consider certification or training to align themselves
+with requirements in the medical profession and also to increase trust in their products and
+services (1). Any standards, introduced and enforced by either developers or professional
+societies, should be written in collaboration with or by government regulators and should
+be consistent with the WHO ethical principle of promoting human well-being, safety and the
+public interest. Developers that do not intend but can foresee that their LMM might be used in
+health may wish to ensure internal expertise to anticipate and address such uses.
+Data: While human resources and computing power are essential for the development of
+LMMs, data are probably the most critical infrastructure requirement. The quality and type
+of data used to train LMMs determine whether it meets core ethical principles and legal
+requirements (123). Although AI developers have agreed in qualitative surveys that data
+quality “matters” and require a significant commitment of time, work related to data is often
+under-valued, which can have significant negative repercussions for AI in “high-stakes”
+domains such as health care and medicine (123). If data are not of the appropriate quality,
+several WHO guiding principles could be violated, including the promotion of human wellbeing, safety and the public interest and the principle of ensuring inclusiveness and equity if
+the data are biased.
+
+35
+
+

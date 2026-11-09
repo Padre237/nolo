@@ -1,0 +1,66 @@
+L 119/60
+
+FR
+
+Journal officiel de l'Union européenne
+
+4.5.2016
+
+b) pris l'engagement de respecter les critères visés à l'article 42, paragraphe 5, et approuvés par l'autorité de contrôle qui
+est compétente en vertu de l'article 55 ou 56 ou par le comité, en vertu de l'article 63;
+c) mis en place des procédures en vue de la délivrance, de l'examen périodique et du retrait d'une certification, de labels
+et de marques en matière de protection des données;
+d) établi des procédures et des structures pour traiter les réclamations relatives aux violations de la certification ou à la
+manière dont la certification a été ou est appliquée par un responsable du traitement ou un sous-traitant, et pour
+rendre ces procédures et structures transparentes à l'égard des personnes concernées et du public; et
+e) démontré, à la satisfaction de l'autorité de contrôle compétente, que leurs tâches et leurs missions n'entraînent pas de
+conflit d'intérêts.
+3.
+L'agrément des organismes de certification visés aux paragraphes 1 et 2 du présent article se fait sur la base de
+critères approuvés par l'autorité de contrôle qui est compétente en vertu de l'article 55 ou 56 ou, par le comité en vertu
+de l'article 63. En cas d'agrément en application du paragraphe 1, point b), du présent article, ces exigences complètent
+celles prévues dans le règlement (CE) no 765/2008 et les règles techniques qui décrivent les méthodes et procédures des
+organismes de certification.
+4.
+Les organismes de certification visés au paragraphe 1 sont chargés de procéder à l'évaluation appropriée
+conduisant à la délivrance de la certification ou au retrait de cette certification, sans préjudice de la responsabilité du
+responsable du traitement ou du sous-traitant en ce qui concerne le respect du présent règlement. L'agrément est délivré
+pour une durée maximale de cinq ans et peut être renouvelé dans les mêmes conditions tant que l'organisme de certifi­
+cation satisfait aux exigences énoncées au présent article.
+5.
+Les organismes de certification visés au paragraphe 1 communiquent aux autorités de contrôle compétentes les
+raisons de la délivrance ou du retrait de la certification demandée.
+6.
+Les exigences visées au paragraphe 3 du présent article et les critères visés à l'article 42, paragraphe 5, sont publiés
+par les autorités de contrôle sous une forme aisément accessible. Les autorités de contrôle transmettent aussi ces
+exigences et ces critères au comité. Le comité consigne dans un registre tous les mécanismes de certification et les labels
+en matière de protection des données et les met à la disposition du public par tout moyen approprié.
+7.
+Sans préjudice du chapitre VIII, l'autorité de contrôle compétente ou l'organisme national d'accréditation révoque
+l'agrément d'un organisme de certification en application du paragraphe 1 du présent article si les conditions d'agrément
+ne sont pas ou ne sont plus réunies ou si les mesures prises par l'organisme de certification constituent une violation du
+présent règlement.
+8.
+La Commission est habilitée à adopter des actes délégués en conformité avec l'article 92, aux fins de préciser les
+exigences à prendre en considération en ce qui concerne les mécanismes de certification en matière de protection des
+données visés à l'article 42, paragraphe 1.
+9.
+La Commission peut adopter des actes d'exécution visant à fixer des normes techniques pour les mécanismes de
+certification, les labels et les marques en matière de protection des données, ainsi que les mécanismes aux fins de la
+promotion et de la reconnaissance de ces mécanismes de certification, labels et marques. Ces actes d'exécution sont
+adoptés en conformité avec la procédure d'examen visée à l'article 93, paragraphe 2.
+
+CHAPITRE V
+
+Transferts de données à caractère personnel vers des pays tiers ou à des organisations internationales
+Article 44
+Principe général applicable aux transferts
+Un transfert, vers un pays tiers ou à une organisation internationale, de données à caractère personnel qui font ou sont
+destinées à faire l'objet d'un traitement après ce transfert ne peut avoir lieu que si, sous réserve des autres dispositions du
+présent règlement, les conditions définies dans le présent chapitre sont respectées par le responsable du traitement et le
+sous-traitant, y compris pour les transferts ultérieurs de données à caractère personnel au départ du pays tiers ou de
+l'organisation internationale vers un autre pays tiers ou à une autre organisation internationale. Toutes les dispositions
+du présent chapitre sont appliquées de manière à ce que le niveau de protection des personnes physiques garanti par le
+présent règlement ne soit pas compromis.
+
+

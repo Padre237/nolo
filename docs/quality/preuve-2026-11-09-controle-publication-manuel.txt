@@ -1,0 +1,61 @@
+# Preuve — contrôle manuel avant publication (FR-2307, FR-2308, FR-2309)
+# Date : 2026-11-09T08:08Z
+# Contrôle manuel en attendant tools/controle_publication.py (TASK-017-02-02).
+
+$ ls LICENSE THIRD_PARTY_NOTICES.md README.md README.fr.md .gitignore requirements.txt
+.gitignore
+LICENSE
+README.fr.md
+README.md
+THIRD_PARTY_NOTICES.md
+requirements.txt
+--> code de sortie : 0
+
+$ find . -name '*.pdf' -not -path './.git/*' | wc -l
+0
+--> code de sortie : 0
+
+$ grep -rIlE 'BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY|ghp_[A-Za-z0-9]{20,}|sk-[A-Za-z0-9]{20,}|AKIA[0-9A-Z]{16}|xox[bp]-' --exclude-dir=.git . | wc -l
+0
+--> code de sortie : 0
+
+$ grep -rIhoE '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}' --exclude-dir=.git . | sort -u
+autre@demo.cm
+b@demo.cm
+boisvert@demo.nolo
+c@demo.cm
+carrefour-neuf@demo.nolo
+contact@pharmacie-demo.cm
+d@demo.cm
+e@demo.cm
+nouvelle@demo.cm
+--> code de sortie : 0
+
+$ grep -rl 'INT-OMS-AFRO-SBC-2014' --exclude-dir=.git . | sort
+./THIRD_PARTY_NOTICES.md
+./docs/quality/preuve-2026-11-09-controle-publication-manuel.txt
+./docs/quality/preuve-2026-11-09-suites.txt
+./docs/specifications/feature-011-base-connaissances/sf-011-07-version-publique/requirements.md
+./docs/specifications/feature-011-base-connaissances/sf-011-08-base-embarquee/requirements.md
+./docs/specifications/feature-017-livrables/sf-017-02-depot/requirements.md
+./kb/README.md
+./kb/sources.json
+./tools/verifier_base.py
+--> code de sortie : 0
+
+$ grep -c 'INT-OMS-AFRO-SBC-2014' kb/kb_chunks.jsonl
+0
+--> code de sortie : 1
+
+$ ls kb/pages | grep -c sbc_2014
+0
+--> code de sortie : 1
+
+$ grep -nE '__pycache__|var/|data/runtime/|kb/raw|\*\.pdf' .gitignore
+2:__pycache__/
+12:var/
+13:data/runtime/
+16:kb/raw*/
+18:*.pdf
+--> code de sortie : 0
+

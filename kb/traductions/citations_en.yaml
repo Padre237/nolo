@@ -1,0 +1,449 @@
+# Traductions anglaises des fragments cités par la démonstration (D-027).
+# Règles :
+#  - le texte officiel en français reste la seule référence ; une traduction « non_officielle » ne le remplace jamais
+#    et s'affiche toujours avec la mention ci-dessous ;
+#  - chaque entrée est liée à l'empreinte SHA-256 du champ `text` du fragment dans kb_chunks.jsonl :
+#    si le fragment change (relecture, correction), le contrôle échoue et la traduction doit être revue ;
+#  - portée « integrale » : tout le fragment ; « extrait » : seuls les passages listés, recopiés mot pour mot du fragment
+#    (erreurs de reconnaissance de texte comprises), sont traduits ;
+#  - entre crochets [ ] : note du traducteur (passage illisible, mot reconstitué, tampon non traduit) ;
+#  - textes internationaux dont la version anglaise officielle est connue (OMS, UE) : on ne traduit pas, on la verse dans
+#    la base (statut « version_anglaise_officielle_a_verser ») ;
+#  - textes camerounais : la traduction non officielle est provisoire ; quand une version anglaise officielle est repérée,
+#    le champ `version_anglaise_officielle` l'indique, et elle remplacera la traduction dès qu'elle sera versée dans la base.
+# Contrôle : python3 traductions/verifier_traductions.py (depuis le dossier kb/).
+version: "1.1.0"   # 1.1.0 : 8 fragments de la loi 2019/019 reliés à sa version anglaise officielle
+date: "2026-11-07"
+statut: UNDER_REVIEW
+traducteur: "Claude (assistant IA), à relire par un membre bilingue de l'équipe"
+mention_non_officielle: "Unofficial translation, for information only. The French text is the only authentic version used by this system."
+statuts_admis: [non_officielle, anglais_officiel_dans_la_source, original_anglais, version_anglaise_officielle_a_verser, anglais_officiel_dans_la_base]
+# anglais_officiel_dans_la_base : la version anglaise officielle du texte est versée ; `chunk_id_en` désigne le fragment
+# anglais correspondant, affiché à la place de toute traduction (ajouté le 2026-11-07, loi 2019/019).
+
+entrees:
+
+  - chunk_id: CMR-LOI-2024-017::0011
+    reference_en: "Law No. 2024/017 of 23 December 2024, Section 9"
+    statut_traduction: non_officielle
+    version_anglaise_officielle: "Law No. 2024/017 of 23 December 2024, English version on prc.cm (signalée par la note de collecte du 2026-11-06 ; à verser, remplacera cette traduction)"
+    portee: integrale
+    qualite_source: ocr_abime
+    empreinte_sha256_fragment: "5e584c19d2fb34540f23d7679499eb3e2928ec689b534a666cfd79b96272a24f"
+    relu_par: null
+    traduction_en: >-
+      SECTION 9.- (1) The processing of personal data shall be subject to the prior, free, informed, specific and
+      unambiguous consent of the data subject. (2) However, this requirement of prior consent may be waived where the
+      processing is necessary: - for compliance with a legal obligation to which the controller is subject; - for the
+      performance of a task carried out in the public interest or falling within the exercise of [text garbled in the
+      OCR source: « l'Autorité de protection des données à caractère perso »] vested in the controller or in the third
+      party to whom [the data are] disclosed; - for the protection of the health of the data subject [end of line
+      illegible in the OCR source] natural person. (3) The consent of a minor [under] eighteen (18) years of age shall
+      be valid only if it is supported by that of [his or her father,] mother or legal representative [partly
+      illegible in the OCR source].
+
+  - chunk_id: CMR-LOI-2024-017::0020
+    reference_en: "Law No. 2024/017 of 23 December 2024, Section 19"
+    statut_traduction: non_officielle
+    version_anglaise_officielle: "Law No. 2024/017 of 23 December 2024, English version on prc.cm (signalée par la note de collecte du 2026-11-06 ; à verser, remplacera cette traduction)"
+    portee: integrale
+    qualite_source: relu_sur_texte_officiel
+    empreinte_sha256_fragment: "e275aaa2d25e38af603ba4aeb5d14cb63df6512b10ecfb76abfd07af8b3e463a"
+    relu_par: null
+    traduction_en: >-
+      SECTION 19.- (1) The processing of personal data shall be subject to obtaining prior authorisation issued by
+      the Personal Data Protection Authority. (2) Any process of interconnection and interoperability of files of
+      sensitive data, relating to minors, shall be subject to obtaining prior authorisation issued by the Personal
+      Data Protection Authority. [The comma after « sensibles » is in the French text; the team reads subsection 2
+      broadly, see point V5 of the gap register.] (3) The terms and conditions for issuing the authorisation referred
+      to in subsections 1 and 2 above shall be laid down by regulation.
+
+  - chunk_id: CMR-LOI-2024-017::0033
+    reference_en: "Law No. 2024/017 of 23 December 2024, Section 32"
+    statut_traduction: non_officielle
+    version_anglaise_officielle: "Law No. 2024/017 of 23 December 2024, English version on prc.cm (signalée par la note de collecte du 2026-11-06 ; à verser, remplacera cette traduction)"
+    portee: integrale
+    qualite_source: ocr_abime
+    empreinte_sha256_fragment: "30c102a17efc2e03f354d0c8b91acde313690d5718caab932ae2861231c244c3"
+    relu_par: null
+    traduction_en: >-
+      SECTION 32.- (1) The transfer of [personal] da[ta to a] foreign [State], or to an internat[ional]
+      organisation, [is subject to obtaining] a prior authorisation issued [by the Auth]ority for the protection of
+      personal data under conditions making it possible to guarantee the exercise of [the rights — the rest of the
+      subsection is garbled in the OCR source; the bracketed words are reconstructed from scattered pieces of the
+      OCR text and must be checked against the official text]. (2) [Before issuing] the said authorisation, the
+      [Personal Data Protection] Authority shall first ensure: - [the prior entry into force] of a legal instrument
+      signed with the [State of] destination of the transferred personal data, [...] with the competent
+      administrations and bodies; - that the entity seeking to import the personal data is subject to binding
+      security rules on the protection of the said data; - that the importing and exporting entities concerned have
+      previously subscribed to standard contractual clauses on the international transfer of personal data, issued
+      and published by the Personal Data Protection Authority. [Stamp of the certified true copy, not translated.]
+      (3) The terms and conditions for issuing the authorisation provided for in subsection 1 above shall be laid
+      down by regulation.
+
+  - chunk_id: CMR-LOI-2024-017::0034
+    reference_en: "Law No. 2024/017 of 23 December 2024, Section 33"
+    statut_traduction: non_officielle
+    version_anglaise_officielle: "Law No. 2024/017 of 23 December 2024, English version on prc.cm (signalée par la note de collecte du 2026-11-06 ; à verser, remplacera cette traduction)"
+    portee: integrale
+    qualite_source: lisible
+    empreinte_sha256_fragment: "b3fc10d5d33819f174db5a4913a24050ce290c6bfde4da0f8471ad3bcbf51104"
+    relu_par: null
+    traduction_en: >-
+      SECTION 33.- (1) Any type of processing likely to result in a high risk to the rights and freedoms of natural
+      persons shall be subject to the prior carrying out of an assessment of the impact of the envisaged processing
+      operations on the protection of personal data. (2) The conditions and terms for carrying out the impact
+      assessment referred to in subsection 1 above shall be laid down by regulation.
+
+  - chunk_id: CMR-LOI-2024-017::0044
+    reference_en: "Law No. 2024/017 of 23 December 2024, Section 44"
+    statut_traduction: non_officielle
+    version_anglaise_officielle: "Law No. 2024/017 of 23 December 2024, English version on prc.cm (signalée par la note de collecte du 2026-11-06 ; à verser, remplacera cette traduction)"
+    portee: integrale
+    qualite_source: ocr_abime
+    empreinte_sha256_fragment: "bde6d54e4b47e0d36ca5a75ffc87889de23b93ad41a7c85fb49322d2ab907a53"
+    relu_par: null
+    traduction_en: >-
+      SECTION 44.- (1) The data subject shall have the right to object to any decision based solely on the automated
+      processing of his or her personal data, including profiling. (2) The provisions of subsection 1 above shall not
+      apply where: [stamp of the certified true copy, not translated] - the data subject has been informed of the use
+      of the automated decision-making system and has given his or her prior, explicit and informed consent; - the
+      processing is authorised by law, provided that the law lays down appropriate measures to safeguard the rights
+      and freedoms and the legitimate interests of the data subject. (3) The data subject shall also have the right:
+      - to obtain human intervention on the part of the [controller — partly illegible in the OCR source]; - to
+      express his or her point of view; - to contest the decision based on the [automated] process[ing — the end of
+      the subsection is cut off in this fragment].
+
+  - chunk_id: CMR-LOI-2024-017::0048
+    reference_en: "Law No. 2024/017 of 23 December 2024, Section 48"
+    statut_traduction: non_officielle
+    version_anglaise_officielle: "Law No. 2024/017 of 23 December 2024, English version on prc.cm (signalée par la note de collecte du 2026-11-06 ; à verser, remplacera cette traduction)"
+    portee: integrale
+    qualite_source: relu_sur_texte_officiel
+    empreinte_sha256_fragment: "9a1e7621bb63b462166dbec99527fdfe5b9e2d5377d813b7ac66088131bc621f"
+    relu_par: null
+    traduction_en: >-
+      SECTION 48.- (1) It shall be prohibited to carry out any processing of data relating to religious,
+      philosophical, political or trade-union opinions and activities, to racial or ethnic, linguistic or regional
+      origin, to sexual life, to genetics and to biometrics in matters of health. (2) It shall be prohibited to
+      process personal data in the context of banking transactions without the prior authorisation of the competent
+      administrations and bodies, under the conditions and in accordance with the procedures laid down by the laws
+      in force.
+
+  - chunk_id: CMR-LOI-2024-017::0062
+    reference_en: "Law No. 2024/017 of 23 December 2024, Sections 65 and 66"
+    statut_traduction: non_officielle
+    version_anglaise_officielle: "Law No. 2024/017 of 23 December 2024, English version on prc.cm (signalée par la note de collecte du 2026-11-06 ; à verser, remplacera cette traduction)"
+    portee: integrale
+    qualite_source: ocr_abime
+    empreinte_sha256_fragment: "ae8b754c18d7fa64765b9f2e40d374064340d761d41c31da17d6bdf674d20d18"
+    relu_par: null
+    traduction_en: >-
+      SECTION 65.- Any controller or processor who carries out or causes to be carried out processing of personal
+      data for profiling purposes shall be punished with imprisonment of three (03) to ten (10) years and a fine of
+      one million (1 000 000) to twenty million (20 000 000) CFA francs, or with only one of these two penalties.
+      [The heading of Section 66 and the beginning of its subsection 1 are illegible in the OCR source.] [...] and
+      with a fine of five hundred thousand (500 000) to five million [...] CFA francs, or with only one of these two
+      penalties, [the controller] or the processor who stores or keeps in [computerised] memory or otherwise, without
+      the express consent of the data subject, [...] sensitive data within the meaning of this law. (2) The penalties
+      provided for in [subsection 1 above] shall apply to anyone who carries out or causes to be carried out the
+      recovery of deleted personal data [partly illegible in the OCR source].
+
+  - chunk_id: CMR-LOI-2024-017::0068
+    reference_en: "Law No. 2024/017 of 23 December 2024, Section 72"
+    statut_traduction: non_officielle
+    version_anglaise_officielle: "Law No. 2024/017 of 23 December 2024, English version on prc.cm (signalée par la note de collecte du 2026-11-06 ; à verser, remplacera cette traduction)"
+    portee: integrale
+    qualite_source: lisible
+    empreinte_sha256_fragment: "df5e0d9400ab4420c1ecf62189f0bdcd650db3db387816aabb16f82e5163115a"
+    relu_par: null
+    traduction_en: >-
+      SECTION 72.- The processing of personal data relating, in particular, to security, defence, health, justice and
+      civil status shall be governed by specific texts, as necessary.
+
+  - chunk_id: CMR-LOI-2024-017::0005
+    reference_en: "Law No. 2024/017 of 23 December 2024, Section 5 (definitions), extracts"
+    statut_traduction: non_officielle
+    version_anglaise_officielle: "Law No. 2024/017 of 23 December 2024, English version on prc.cm (signalée par la note de collecte du 2026-11-06 ; à verser, remplacera cette traduction)"
+    portee: extrait
+    qualite_source: ocr_abime
+    empreinte_sha256_fragment: "de7c6cf2eafdd6739e9706dd23d6f420aa84cb90afb622b2d026230798cf08b4"
+    relu_par: null
+    passages:
+      - texte_source: "Consente ute manifestation de volonté expresse, non équivoque, non contrain et éclairée par une information claire, précise et complète, par laquelle la personne concernée, ou son représentant légal, accepte que ses données à caractère personnel fassent l'objet d’un traitement."
+        traduction_en: >-
+          Consent: any express, unequivocal, unconstrained and informed expression of will, based on clear, precise
+          and complete information, [the beginning of the definition is partly illegible in the OCR source] by which
+          the data subject, or his or her legal representative, agrees to his or her personal data being processed.
+      - texte_source: "Donnée sensible : information relative notamment aëx opinions et activités religieuses, philosophiques, politiques, syndicales, aux ions bancaires, à l'origine raciale ou ethnique, linguistique ou régienale, à à vie sexuelle, à la génétique, à la biométrie, à la santé, aux poursfiites judicfäires et aux sanctions pénales."
+        traduction_en: >-
+          Sensitive data: information relating, in particular, to religious, philosophical, political or trade-union
+          opinions and activities, to [banking transac]tions, to racial or ethnic, linguistic or regional origin, to
+          sexual life, to genetics, to biometrics, to health, to legal proceedings and to criminal sanctions.
+
+  - chunk_id: CMR-LOI-90-035::0012
+    reference_en: "Law No. 90/035 of 10 August 1990 (pharmacist profession), Sections 13 and 14"
+    statut_traduction: non_officielle
+    portee: integrale
+    qualite_source: ocr_abime
+    empreinte_sha256_fragment: "7a59ff643d4832560e98ffef9c50dd009798b3bdee3c34f6e47f25bfe3c97945"
+    relu_par: null
+    traduction_en: >-
+      Section 13.- The following shall be reserved to pharmacists: a) the preparation of: articles and medicines
+      intended for use in human medicine; dressing materials [and … — illegible in the OCR source] presented as
+      conforming to the pharmacopoeia; insecticides and acaricides intended to be applied to humans; products intended
+      for the maintenance or application of contact lenses; products and reagents packaged for sale to the public
+      which, without being covered by Section 15 below, are nevertheless intended for medical diagnosis; b) wholesale,
+      retail sale and any supply to the public of the products and articles listed in the preceding paragraph; c) the
+      sale of medicinal plants listed in the pharmacopoeia; d) the importation, holding and commercial exploitation
+      of all the products referred to in this Section. [The fragment continues with Section 14, whose heading is
+      badly recognised:] Section 14.- The preparation and supply of vaccines, sera and allergens, where they are
+      specially prepared for a single individual, may be carried out by any person approved by the authority
+      responsible for public health.
+
+  - chunk_id: CMR-LOI-90-035::0013
+    reference_en: "Law No. 90/035 of 10 August 1990 (pharmacist profession), Section 15"
+    statut_traduction: non_officielle
+    portee: integrale
+    qualite_source: lisible
+    empreinte_sha256_fragment: "d8fcb934975e227e3e576543df3bf46fb76ea356b3988e06be9e624c8b66dfca"
+    relu_par: null
+    traduction_en: >-
+      Section 15.- (1) A medicine shall mean any substance or composition presented as having curative or preventive
+      properties with regard to human or animal diseases, as well as any product that may be administered to humans
+      or animals with a view to making a medical diagnosis or to restoring, correcting or modifying their organic
+      functions. (2) The following shall in particular be considered as medicines: products containing a substance
+      having a therapeutic action within the meaning of subsection 1 above or containing poisonous substances at
+      non-exempted doses and concentrations; dietetic products which contain in their composition chemical or
+      biological substances that do not themselves constitute foods, but whose presence gives these products either
+      special properties sought in dietetic therapy or the properties of test meals. (3) Products used for
+      disinfecting premises and for dental prostheses shall not be considered as medicines.
+
+  - chunk_id: CMR-LOI-90-035::0014
+    reference_en: "Law No. 90/035 of 10 August 1990 (pharmacist profession), Section 16"
+    statut_traduction: non_officielle
+    portee: integrale
+    qualite_source: ocr_abime
+    empreinte_sha256_fragment: "89c76fafce665740838076a0200a9a4588b1875c11fe778c9082704a3a9d2ac6"
+    relu_par: null
+    traduction_en: >-
+      Section 16.- Whoever knowingly carries out operations reserved to pharmacists without meeting the conditions
+      laid down by this law shall be liable to a fine of five hundred thousand (500 000) to two million (2 000 000)
+      CFA francs and to imprisonment of six (06) days to six (06) months, or to only one of these two penalties. The
+      court shall, in addition, order the closure of the establishment and the confiscation of all articles,
+      medicines and substances used to support this irregular activity. [Chapter heading that follows in the
+      fragment:] Chapter 4 – Prohibition of certain agreements between pharmacists and members of certain
+      professions.
+
+  - chunk_id: CMR-LOI-90-035::0017
+    reference_en: "Law No. 90/035 of 10 August 1990 (pharmacist profession), Section 19"
+    statut_traduction: non_officielle
+    portee: integrale
+    qualite_source: lisible
+    empreinte_sha256_fragment: "0c080930ee41986d0707f20c5aed55def12dc7bf674c1915cb5b807c20c4df44"
+    relu_par: null
+    traduction_en: >-
+      Section 19.- Advertising concerning medicines and pharmaceutical establishments shall be authorised only under
+      the conditions laid down by the supervising authority after consultation of the Council of the Order of
+      Pharmacists.
+
+  - chunk_id: CMR-LOI-90-035::0049
+    reference_en: "Law No. 90/035 of 10 August 1990 (pharmacist profession), Section 52"
+    statut_traduction: non_officielle
+    portee: integrale
+    qualite_source: lisible
+    empreinte_sha256_fragment: "55f2f97c1da3a14400e27a0f3b552453a1c5321fc343ed7fe3f82e63a6a28fff"
+    relu_par: null
+    traduction_en: >-
+      Section 52.- The sale to the public of any medicines, products and accessories referred to in Section 15 above
+      through commercial houses, purchasing groups or establishments owned or managed by persons who do not hold the
+      pharmacist's diploma shall be prohibited, with the exception of those provided for in Section 37.
+
+  - chunk_id: CMR-LOI-90-035::0050
+    reference_en: "Law No. 90/035 of 10 August 1990 (pharmacist profession), Section 53"
+    statut_traduction: non_officielle
+    portee: integrale
+    qualite_source: ocr_abime
+    empreinte_sha256_fragment: "fae85ca30b6f8573788849d262fea18ed44b3713de4fa8f78be9ab8479682210"
+    relu_par: null
+    traduction_en: >-
+      Section 53.- Any [sale — the source reads « délit », probably « débit »], display or distribution of medicines
+      on the public highway, at fairs [and] markets is prohibited to any person, even one holding the pharmacist's
+      diploma.
+
+  - chunk_id: CMR-LOI-90-035::0072
+    reference_en: "Law No. 90/035 of 10 August 1990 (pharmacist profession), Section 75"
+    statut_traduction: non_officielle
+    portee: integrale
+    qualite_source: ocr_abime
+    empreinte_sha256_fragment: "1a3235fe7ba77a510b0d42f8fff564fc032041a6794ddfb8815835d8e438be85"
+    relu_par: null
+    traduction_en: >-
+      Section 75.- It shall be prohibited for any person to engage in acts likely to cause or facilitate abortion,
+      namely: displaying, offering, selling, putting up for sale, having sold, distributing or having distributed in
+      any manner whatsoever, remedies and substances, « intra-urinaires » probes [as printed in the source] and other
+      similar articles; making speeches in public places or meetings; selling, putting up for sale, offering, even by
+      non-public means, displaying, posting, distributing on the public highway or in public places, distributing at
+      home, handing over under wrapper or in an envelope, closed or not, to the post or to any other agent for the
+      distribution or transport, books, writings, printed matter, announcements, posters, drawings, images or
+      emblems; advertising medical or so-called medical practices [the fragment ends here].
+
+  - chunk_id: CMR-LOI-2010-012::0034
+    reference_en: "Law No. 2010/012 of 21 December 2010 (cybersecurity and cybercrime), Section 29"
+    statut_traduction: non_officielle
+    portee: integrale
+    qualite_source: lisible
+    empreinte_sha256_fragment: "387e2d5c3aecdf40105b1d20faed3c104814561c7990bcce5cec1bc63310036c"
+    relu_par: null
+    traduction_en: >-
+      Section 29.- (1) Operators of information systems shall be required to retain the connection and traffic data
+      of their information systems for a period of ten (10) years. (2) Operators of information systems shall install
+      mechanisms for monitoring access control to the data of their information systems. The data retained may be
+      accessed during judicial investigations. (3) The facilities of operators of information systems may be searched
+      or seized on the order of a judicial authority under the conditions provided for by the laws and regulations in
+      force.
+
+  - chunk_id: CMR-MINSANTE-GUIDE-SBC-2023::0018
+    reference_en: "MINSANTE, Community-based surveillance guide (2023), steps of community-based surveillance, extracts"
+    statut_traduction: non_officielle
+    version_anglaise_officielle: "MINSANTE, Community-based surveillance guide (2023), English version: https://biblio-minsante.cm/items/d79ce4e7-61b6-4e2f-8e81-2b9e41b201f4 (à verser, remplacera cette traduction)"
+    portee: extrait
+    qualite_source: lisible
+    empreinte_sha256_fragment: "c497856ad72db4841ad0d638375e3326e49da8a45bab182cdb66c1761a0f4dd3"
+    relu_par: null
+    passages:
+      - texte_source: "Un membre de la communauté ou un ASCP détecte un cas communautaire ou un signal"
+        traduction_en: "A community member or a community health worker (ASCP) detects a community case or a signal."
+      - texte_source: "La notification des cas et signaux doit être effectuée immédiatement ou dans les 24 heures Notification suivant leur détection au niveau communautaire."
+        traduction_en: "Cases and signals must be notified immediately or within 24 hours of their detection at community level. [The word « Notification » in the middle of the French sentence is a figure label captured by text extraction.]"
+      - texte_source: "Le chef de l'aire de santé fait le triage des cas suspects et signaux afin de détecter les informations présentant un risque pour la santé et les soumettre à la vérification."
+        traduction_en: "The head of the health area triages suspected cases and signals in order to detect information presenting a health risk and to submit it for verification."
+
+  - chunk_id: CMR-MINSANTE-GUIDE-SBC-2023::0028
+    reference_en: "MINSANTE, Community-based surveillance guide (2023), community definitions of signals SC1 to SC7"
+    statut_traduction: anglais_officiel_dans_la_source
+    portee: integrale
+    qualite_source: lisible
+    empreinte_sha256_fragment: "4add3e797f953af4c5bccf3222c7600e1834a9e151ff76a4e12164806ee05c03"
+    relu_par: null
+    note: "The guide gives each community definition in French and in English; the English wording of the source is displayed as is."
+
+  - chunk_id: CMR-MINSANTE-GUIDE-SBC-2023::0047
+    reference_en: "MINSANTE, Community-based surveillance guide (2023), detection by community members, extract"
+    statut_traduction: non_officielle
+    version_anglaise_officielle: "MINSANTE, Community-based surveillance guide (2023), English version: https://biblio-minsante.cm/items/d79ce4e7-61b6-4e2f-8e81-2b9e41b201f4 (à verser, remplacera cette traduction)"
+    portee: extrait
+    qualite_source: lisible
+    empreinte_sha256_fragment: "94d24ffd39428b9d7d6a66cfee4848456e2c829a48166e093c313204c562e123"
+    relu_par: null
+    passages:
+      - texte_source: "Tout membre de la communauté ou informateur clé peut détecter une situation représentant une menace pour la santé (groupe de personne ayant les mêmes symptômes, décès inexpliqués de personnes survenus au cours d’une même semaine, décès de groupes d’animaux, situations inhabituelles…) et informer l’ASCP ou le responsable de la structure sanitaire la plus proche."
+        traduction_en: >-
+          Any community member or key informant may detect a situation representing a threat to health (a group of
+          people with the same symptoms, unexplained deaths of people occurring within the same week, deaths of groups
+          of animals, unusual situations…) and inform the community health worker (ASCP) or the head of the nearest
+          health facility.
+
+  - chunk_id: CMR-MINSANTE-PSNSN-2026-2030::0005
+    reference_en: "MINSANTE, National Digital Health Strategic Plan 2026-2030, definition of key terms, extract"
+    statut_traduction: non_officielle
+    portee: extrait
+    qualite_source: lisible
+    empreinte_sha256_fragment: "99301563362882b50113693af147accf3fd5851c7e294941b1e1f76ee423d663"
+    relu_par: null
+    passages:
+      - texte_source: "Souveraineté numérique/des données de santé : principe selon lequel les données de santé sont soumises aux lois et réglementations du pays où elles sont générées, stockées ou traitées. Il garantit que les patients et l’État conservent le contrôle, la confidentialité et la gouvernance sur ces données."
+        traduction_en: >-
+          Digital / health data sovereignty: the principle according to which health data are subject to the laws and
+          regulations of the country in which they are generated, stored or processed. It ensures that patients and
+          the State retain control, confidentiality and governance over these data.
+
+  - chunk_id: INT-OMS-RSI-2005-AMENDE-2022::0054
+    reference_en: "International Health Regulations (2005), Article 45"
+    statut_traduction: version_anglaise_officielle_a_verser
+    portee: integrale
+    empreinte_sha256_fragment: "9c7cdea2f833ab7a3d7eee3969f75b495766b0eeaa8f8253cd5b890bee1c707f"
+    source_anglaise: "WHO, International Health Regulations (2005), official English text (third edition and 2014/2022 amendments)"
+
+  - chunk_id: INT-OMS-RSI-2005-AMENDE-2022::0012
+    reference_en: "International Health Regulations (2005), notification article"
+    statut_traduction: version_anglaise_officielle_a_verser
+    portee: integrale
+    empreinte_sha256_fragment: "2befb36a9e6100757a31c8b1964d6066f297c5aea90023f46790a51d8e99a3de"
+    source_anglaise: "WHO, International Health Regulations (2005), official English text"
+
+  - chunk_id: INT-UE-AI-ACT-2024-1689::0032
+    reference_en: "Regulation (EU) 2024/1689 (Artificial Intelligence Act), Article 12"
+    statut_traduction: version_anglaise_officielle_a_verser
+    portee: integrale
+    empreinte_sha256_fragment: "8fd11e2fafda0dc7918c04d14cd91a2c8c6e94ff8de9db37fc3019eaa90414aa"
+    source_anglaise: "EUR-Lex, Regulation (EU) 2024/1689, English language version"
+
+  - chunk_id: INT-OMS-IITT-FR::0000
+    reference_en: "WHO/ICRC/MSF Interagency Integrated Triage Tool, 12 years and over"
+    statut_traduction: version_anglaise_officielle_a_verser
+    portee: integrale
+    empreinte_sha256_fragment: "36e721d5565862553968b1d9693991ea5ce754a3b5db7eea6f923c494011fc0a"
+    source_anglaise: "WHO/ICRC/MSF, Interagency Integrated Triage Tool (English original of the French version held in the base)"
+
+  - chunk_id: INT-OMS-LMM-2024::0007
+    reference_en: "WHO, Guidance on large multi-modal models (2024)"
+    statut_traduction: original_anglais
+    portee: integrale
+    empreinte_sha256_fragment: "626e6a84bb2513f0494bfe8c57ff2766915c0a49664ce5fb79b43b11fbd89a41"
+
+  - chunk_id: CMR-LOI-2019-019::0002
+    reference_en: "Law No. 2019/019 of 24 December 2019, Section 2"
+    statut_traduction: anglais_officiel_dans_la_base
+    portee: integrale
+    chunk_id_en: CMR-LOI-2019-019-EN::0002
+    empreinte_sha256_fragment: "90c917587bcce826b7d57737e674be50dd30cc6d78400b75dbd1d46a3cdb2cc5"
+
+  - chunk_id: CMR-LOI-2019-019::0003
+    reference_en: "Law No. 2019/019 of 24 December 2019, Section 3"
+    statut_traduction: anglais_officiel_dans_la_base
+    portee: integrale
+    chunk_id_en: CMR-LOI-2019-019-EN::0003
+    empreinte_sha256_fragment: "259355acfb3e3c4ea451bb9ed425423981eedb6e49ca51adf798416cd0269525"
+
+  - chunk_id: CMR-LOI-2019-019::0004
+    reference_en: "Law No. 2019/019 of 24 December 2019, Section 4"
+    statut_traduction: anglais_officiel_dans_la_base
+    portee: integrale
+    chunk_id_en: CMR-LOI-2019-019-EN::0004
+    empreinte_sha256_fragment: "b037c4994a0ef4214c4ff702f59f054be15c614696d9187640dbc3d171de28d2"
+
+  - chunk_id: CMR-LOI-2019-019::0005
+    reference_en: "Law No. 2019/019 of 24 December 2019, Section 5"
+    statut_traduction: anglais_officiel_dans_la_base
+    portee: integrale
+    chunk_id_en: CMR-LOI-2019-019-EN::0005
+    empreinte_sha256_fragment: "a6e64fb109c8377980f86d8ff7789728d71b12572b631a460a13240cefc48bf4"
+
+  - chunk_id: CMR-LOI-2019-019::0007
+    reference_en: "Law No. 2019/019 of 24 December 2019, Section 7"
+    statut_traduction: anglais_officiel_dans_la_base
+    portee: integrale
+    chunk_id_en: CMR-LOI-2019-019-EN::0007
+    empreinte_sha256_fragment: "63b1075353eda2330a5f2a48b104331ed5d54c19691fede1b7c3f93d638fe66e"
+
+  - chunk_id: CMR-LOI-2019-019::0013
+    reference_en: "Law No. 2019/019 of 24 December 2019, Section 13"
+    statut_traduction: anglais_officiel_dans_la_base
+    portee: integrale
+    chunk_id_en: CMR-LOI-2019-019-EN::0013
+    empreinte_sha256_fragment: "08ab7277d1e5cf8f8bc161f19b56fd5354f3c183c402f03bafa4b38a5288d45a"
+
+  - chunk_id: CMR-LOI-2019-019::0015
+    reference_en: "Law No. 2019/019 of 24 December 2019, Section 15"
+    statut_traduction: anglais_officiel_dans_la_base
+    portee: integrale
+    chunk_id_en: CMR-LOI-2019-019-EN::0015
+    empreinte_sha256_fragment: "100608c036a6f56a2c4080929ea60b6fd5b6d8d2ae197f49e67c634d59ccab51"
+
+  - chunk_id: CMR-LOI-2019-019::0024
+    reference_en: "Law No. 2019/019 of 24 December 2019, Section 24"
+    statut_traduction: anglais_officiel_dans_la_base
+    portee: integrale
+    chunk_id_en: CMR-LOI-2019-019-EN::0024
+    empreinte_sha256_fragment: "8d16f6b1913d65460ae767d5803863782b975b59f47d61e57b98262f3d0668df"

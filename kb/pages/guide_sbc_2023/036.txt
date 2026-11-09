@@ -1,0 +1,49 @@
+       d’évaluer « l’impact ». Il est généralement recommandé, aux fins du suivi et de l’évaluation de
+       la SBC, d’utiliser deux approches complémentaires.
+
+       1. Indicateurs de performance
+       Les indicateurs de performance sont utiles, car ils aident à déterminer si la SBC obtient les
+       résultats attendus ou si certains aspects doivent être renforcés. Le cadre de suivi et évaluation
+       définit les indicateurs, les calculs et les méthodes de collecte de données de la SBC. Il doit être
+       associé à un tableau de suivi des indicateurs simples, qui permet aux responsables de la
+       surveillance de suivre les résultats et simplifie l’établissement des rapports. La plupart des
+       indicateurs de performance de la SBC peuvent être calculés sur la base des données issues de
+       la surveillance, combinées à des documents tels que les registres des ASCP, les rapports de
+       formation, les plans et les rapports de mise en œuvre. Des logiciels peuvent être programmés
+       pour réaliser les calculs et faire un rapport sur les indicateurs chaque semaine, mois ou
+       trimestre, selon le besoin. Il est conseillé d’adopter une approche réaliste, en particulier au
+       moment de fixer les objectifs.
+
+       2. Analyses et suivi des données conduits par la communauté
+       Il peut être intéressant d’aider la communauté à réaliser ses propres analyses de données. En
+       particulier dans le cas de la SFE, mais également dans celui de la SFI, il est utile de voir l’impact
+       des activités menées par les communautés. On peut leur fournir du matériel simple pour noter
+       les types de déclencheurs qu’elles ont signalé, les mesures qui ont été prises en conséquence,
+       ainsi que les épidémies et les événements qui ont touché la communauté mais n’ont pas donné
+       lieu à une alerte, afin que les déclencheurs puissent être ajustés. Durant une épidémie, le fait
+       de tenir, au niveau local, des registres des cas signalés à la FOSA/DS constitue un moyen, pour
+       la communauté, de savoir si le nombre de cas augmente ou diminue et de favoriser la prise de
+       mesures préventives à un stade précoce.
+
+       Indicateurs de la Surveillance à Base Communautaire
+       Tableau 5: Indicateurs de la Surveillance à base communautaire
+                                                                                   Éléments   de    la
+                                                             Objectifs/
+                                                                                   formule                   Source de
+ Activités/Interventions           Indicateurs               résultats
+                                                                            Dénominateur                    vérification
+                                                             attendus                    Numérateur
+COMMUNAUTES
+Détection                  Nombre de signaux et des         Au moins 1      _           _                 Carnet de bord
+                           cas communautaires détectés signal / cas                                       de l’ASCP
+                           par ASCP par semaine             communautaire                                Registre des signaux
+                                                            détecté par                                  de l’AS.
+                                                            semaine
+                           Nombre de signaux et des         Au moins 1                  _                 Carnet de bord
+                           cas communautaires détectés signal / cas                                       de l’ASCP ;
+                           par les informateurs clés et les communautaire                                 Registre des
+
+
+
+                                                              35
+

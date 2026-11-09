@@ -1,0 +1,159 @@
+Ethics and governance of artificial intelligence for health:
+Large multi-modal models
+Risks to be addressed
+Development phase
+
+Bias
+
+Privacy
+
+What can be done, and by who
+Developer actions
+Certification/training for programmers
+
+Have and enforce strong data protection laws
+
+Data protection impact assessments
+
+Issue target product profiles
+
+Training data collected with ‘best-practice’ data
+protection rules
+
+Labor
+concerns
+
+Carbon and
+water footprints
+
+Training data are refreshed, up-to-date, and
+context-appropriate
+
+Epistemic authority
+of humans
+
+Safety and
+cyber-security
+
+Exclusive
+control of LMMs
+
+Provision phase
+
+Mandate outcomes (predictability, interpretability, corrigibility, safety, cybersecurity)
+Introduce pre-certification programmes to
+identify and avoid ethical risks
+Conduct audits during early AI development
+
+Ensure transparency of training data
+Fair wages and support to data workers
+
+False information
+or misinformation
+
+Government actions
+
+Involve diverse stakeholders in design
+
+Require developers to address carbon and water
+footprints
+Require developers to label AI-generated
+content for users
+
+Design for accuracy and predictability
+
+Encourage or require early-stage registration of
+algorithms
+
+Design for values based on consensus principles
+and ethical norms
+
+Invest in or provide public or not-for-profit
+infrastructure
+
+Design to improve energy efficiency of models
+
+Promote open-source LMMs with funding
+
+Government actions
+Assign regulatory agency to assess and approve LMMs for health
+
+System-wide
+bias
+
+False information
+or misinformation
+
+Require transparency, including source code and data inputs
+Enforce data protection laws for user-inputted data
+Mandate ethical and human rights standards, irrespective of risk or benefit
+
+Manipulation
+
+Privacy
+
+Enact laws requiring impact assessments, audited by third parties and disclosed publicly
+Require proof of performance and compliance with medical device regulations
+Prohibit non-trial experimental use; explore regulatory sandboxes for controlled testing
+
+Automation
+bias
+
+Apply consumer protection laws to prevent negative impacts on end-users and patients
+
+Deployment phase
+Inaccurate or
+false responses
+
+Bias
+
+Deployer actions
+
+Government actions
+
+Avoid using LMMs in inappropriate settings
+
+Mandate independent post-release audits and
+impact assessments for LMM deployment
+
+Communicate known risks, errors and harms
+with clear warnings and measures
+Enforce affordability and availability by ensuring
+pricing and languages offered are inclusive
+
+Privacy
+
+Accessibility
+and affordability
+
+Labour and
+employment
+
+Automation
+bias
+
+Hold developers or providers responsible for
+false or toxic information
+Enforce operational disclosures, including
+technical documentation
+Train healthcare workers on LMM
+decision-making, avoiding bias, patient
+engagement and cybersecurity risks
+Facilitate public participation through human
+oversight colleges to ensure appropriate use
+Engage the public to understand data sharing,
+assess social/cultural acceptability, improve
+AI literacy, and gauge acceptable LMM uses
+
+Quality of patient
+- professional
+interaction
+
+Skills
+degradation
+
+Use procurement authority to encourage
+transparency and responsible practices by value
+chain actors
+
+

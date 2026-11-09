@@ -1,0 +1,58 @@
+1.2.2 Surveillance des événements et surveillance basée sur les indicateurs comme épine
+dorsale de la stratégie SIMR
+La surveillance des événements et la surveillance basée sur les indicateurs sont des
+composantes de l’alerte précoce, de la riposte et du renseignement épidémiologique,
+intégrées dans la stratégie de la SIMR. L’EBS et l’IBS se complètent l’un l’autre, mais avec
+des rôles et des objectifs distincts. L’EBS est plus susceptible de recevoir des alertes pour
+détecter rapidement les petites épidémies, tandis que l’IBS est plus à même de surveiller les
+tendances des maladies au fil du temps et est utile pour signaler le début des épidémies
+saisonnières régulières de maladies endémiques, en utilisant des seuils d’alerte et
+d’épidémie. L’IBS peut ne pas être utile pour les petits événements parce qu’ils sont soit
+calculés en moyenne dans les grandes séries de données ou perdus dans les petites. L’EBS
+est également plus à même de détecter des épidémies dans des zones où l’accès au soin de
+santé est limité. Dans le contexte de la stratégie SIMR, le flux des informations provenant de
+l’EBS suit les mêmes lignes de compte-rendu que l’IBS, c’est-à-dire de la communauté au
+sous-district/district, à la région/province et au niveau national. L’EBS et l’IBS sont appliqués
+à tous les niveaux du système de santé – communautaire, établissement de santé, régional
+ou provincial de district et national (figure 2.)
+Figure 2. Niveaux d’application et de compte-rendu de l’EBS et de l’IBS dans le contexte de la SIMR
+Au niveau national :
+•
+•
+
+Mise en œuvre de l’EBS en utilisant des centres d’appel et le balayage des médias à l’USPPI
+Supervise la mise en œuvre de l’EBS et de l’IBS à tous les niveaux
+
+Niveau régional/provincial :
+•
+•
+
+Mise en œuvre de l’EBS en utilisant les centres d’appel et le balayage des médias
+Supervise la mise en œuvre de l’EBS et de l’IBS eu niveau du district
+
+Niveau du district :
+•
+•
+
+L’équipe de gestion sanitaire de district assure la mise en œuvre de l’EBS en utilisant les centres d’appel et le
+balayage des médias
+Supervise la mise en œuvre de l’EBS et de l’IBS au niveau de l’établissement de santé et de la communauté
+
+Niveau du sous-district/établissement de santé :
+•
+•
+
+Les gestionnaires des établissements de santé assurent la mise en œuvre de l’IBS et l’EBS dans les établissements de
+santé
+Supervision de l’EBS et de l’IBS au niveau de la communauté
+
+Niveau de la communauté :
+•
+•
+
+Les personnes focales de la CBS mettent en œuvre l’EBS et l’IBS au niveau de la communauté
+Détecte et notifie les alertes aux établissements de santé les plus proches
+
+7
+
+

@@ -1,0 +1,44 @@
+17
+
+- elle sélectionne ou modifie les contenus faisant l'objet de la
+transmission.
+(2) Toute personne assurant dans le seul but de rendre plus efficace
+leur transmission ultérieure, une activité de stockage automatique,
+intermédiaire et temporaire des contenus qu'un prestataire transmet, ne peut
+voir sa responsabilité civile ou pénale engagée en raison de ces contenus que
+dans le cas où elle a modifié ces contenus, ne s'est pas conformée à leurs
+conditions d'accès et aux règles usuelles concernant leur mise à jour ou a
+entravé l'utilisation licite et usuelle de la technologie utilisée pour obtenir les
+données.
+SECTION IV
+DE LA PROTECTION DE LA VIE PRIVEE DES PERSONNES
+
+Article 41.- Toute personne a droit au respect de sa vie privée. Les juges
+peuvent prendre les mesures conservatoires, notamment le séquestre et la
+saisie pour empêcher ou faire cesser une atteinte à la vie privée.
+Article 42.- La confidentialité des communications acheminées à travers les
+réseaux de communications électroniques et les systèmes d’information, y
+compris les données relatives au trafic, est assurée par les opérateurs et
+exploitants des réseaux de communications électroniques et des systèmes
+d’information.
+Article 43.- Le fournisseur de contenus est responsable des contenus véhiculés
+par son système d’information, notamment lorsque ces contenus portent
+atteinte à la dignité humaine, à l’honneur et à la vie privée.
+Article 44.- (1) Interdiction est faite à toute personne physique ou morale
+d’écouter, d’intercepter, de stocker les communications et les données
+relatives au trafic y afférent, ou de les soumettre à tout autre moyen
+d’interception ou de surveillance, sans le consentement des utilisateurs
+concernés, sauf lorsque cette personne y est légalement autorisée.
+(2) Toutefois, le stockage technique préalable à l’acheminement
+de toute communication est autorisé aux opérateurs et exploitants des réseaux
+de communications électroniques, sans préjudice du principe de
+confidentialité.
+Article 45.- L’enregistrement des communications et des données de trafic y
+afférentes, effectué dans le cadre professionnel en vue de fournir la preuve
+numérique d’une communication électronique est autorisé.
+Article 46.- (1) Les fournisseurs de contenus des réseaux de communications
+électroniques et systèmes d’information, sont tenus de conserver les contenus
+ainsi que les données stockées dans leurs installations pendant une durée de
+dix (10) ans.
+
+

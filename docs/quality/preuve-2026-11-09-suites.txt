@@ -1,0 +1,849 @@
+# Preuve — exécution des suites du dépôt Nolo
+# Date : 2026-11-09T07:43Z
+# Environnement : Python 3.13.18, node v22.23.4, pytest 9.1.1
+# Les rapports de scénarios réécrits pendant l'exécution (tests/reports/2026-11-04/) sont restaurés à la fin : ce sont les preuves du 2026-11-04.
+# Note : « orientation_urgente --sans-gouvernance » sort avec le code 1 par construction (aucune violation à contre-démontrer : le triage reste sur l'appareil) ; la contre-démonstration porte sur S2 et S3 (CA-007-14-01, question ouverte Q-007-14-01).
+# Croisement : chaque test marqué « Exécuté … preuve-2026-11-09-suites.txt » dans docs/specifications/ cite un nom de test ou une commande présents ci-dessous (108 sur 108).
+
+==================================================================
+$ python3 -m pytest -v -p no:cacheprovider
+------------------------------------------------------------------
+============================= test session starts ==============================
+platform linux -- Python 3.13.18, pytest-9.1.1, pluggy-1.6.0 -- /usr/local/bin/python3
+rootdir: /home/claude/depot-nolo
+configfile: pytest.ini
+testpaths: tests
+plugins: platformdirs-4.13.5, anyio-4.15.1
+collecting ... collected 84 items
+
+tests/integration/test_scenarios_demo.py::test_cli_triage_sur_appareil_json PASSED [  1%]
+tests/integration/test_scenarios_demo.py::test_scenario_orientation_urgente PASSED [  2%]
+tests/integration/test_scenarios_demo.py::test_scenario_medicament_sensible_gouvernance PASSED [  3%]
+tests/integration/test_scenarios_demo.py::test_scenario_medicament_sensible_sans_gouvernance PASSED [  4%]
+tests/integration/test_scenarios_demo.py::test_scenario_regroupement_gouvernance PASSED [  5%]
+tests/integration/test_scenarios_demo.py::test_scenario_regroupement_sans_gouvernance PASSED [  7%]
+tests/integration/test_scenarios_demo.py::test_variante_et_si_derogation_art48 PASSED [  8%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[M041618186649L-True] PASSED [  9%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[m041618186649l-True] PASSED [ 10%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[M 0416 1818 6649 L-True] PASSED [ 11%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[P041618186649Q-True] PASSED [ 13%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[M04161818664L-False] PASSED [ 14%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[041618186649L-False] PASSED [ 15%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[M041618186649-False] PASSED [ 16%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[M0416181866A9L-False] PASSED [ 17%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[MM41618186649L-False] PASSED [ 19%]
+tests/python/test_etablissements.py::test_ca_ets_01_format_niu[-False] PASSED [ 20%]
+tests/python/test_etablissements.py::test_ca_ets_01_inscription_refuse_niu_mal_forme PASSED [ 21%]
+tests/python/test_etablissements.py::test_ca_ets_02_niu_et_email_uniques PASSED [ 22%]
+tests/python/test_etablissements.py::test_ca_ets_03_sans_code_pas_de_connexion_ni_fiche PASSED [ 23%]
+tests/python/test_etablissements.py::test_code_a_usage_unique PASSED     [ 25%]
+tests/python/test_etablissements.py::test_mot_de_passe_jamais_en_clair PASSED [ 26%]
+tests/python/test_etablissements.py::test_mot_de_passe_refuse[court-E-ETS-MDP-COURT] PASSED [ 27%]
+tests/python/test_etablissements.py::test_mot_de_passe_refuse[abcM041618186649Lxyz-E-ETS-MDP-CONTIENT-NIU] PASSED [ 28%]
+tests/python/test_etablissements.py::test_fiche_questions_masquees_non_enregistrees PASSED [ 29%]
+tests/python/test_etablissements.py::test_fiche_champs_conditionnels_obligatoires PASSED [ 30%]
+tests/python/test_etablissements.py::test_fiche_exige_photo_de_facade PASSED [ 32%]
+tests/python/test_etablissements.py::test_type_non_disponible_dans_cette_livraison PASSED [ 33%]
+tests/python/test_etablissements.py::test_ca_ets_05_niu_absent_de_la_liste_reste_invisible PASSED [ 34%]
+tests/python/test_etablissements.py::test_ca_ets_06_decision_du_verificateur PASSED [ 35%]
+tests/python/test_etablissements.py::test_niu_de_la_liste_simulee_verifie_automatiquement PASSED [ 36%]
+tests/python/test_etablissements.py::test_ca_ets_07_rapport_ligne_par_ligne PASSED [ 38%]
+tests/python/test_etablissements.py::test_import_csv_point_virgule_et_formules PASSED [ 39%]
+tests/python/test_etablissements.py::test_ca_ets_08_formats_refuses[stock.pdf-%PDF-1.7 ...-E-STOCK-FORMAT] PASSED [ 40%]
+tests/python/test_etablissements.py::test_ca_ets_08_formats_refuses[stock.xlsx-%PDF-1.7 deguise-E-STOCK-FORMAT] PASSED [ 41%]
+tests/python/test_etablissements.py::test_ca_ets_08_formats_refuses[photo.jpg-\xff\xd8\xff\xe0 rien-E-STOCK-FORMAT] PASSED [ 42%]
+tests/python/test_etablissements.py::test_ca_ets_08_formats_refuses[faux.xlsx-PK\x03\x04 pas un classeur-E-STOCK-FICHIER-ILLISIBLE] PASSED [ 44%]
+tests/python/test_etablissements.py::test_ca_ets_08_formats_refuses[vide.csv-nom;quantite\nx;1\n-E-STOCK-ENTETE] PASSED [ 45%]
+tests/python/test_etablissements.py::test_import_avant_fiche_refuse PASSED [ 46%]
+tests/python/test_etablissements.py::test_modele_xlsx_relu_par_l_import PASSED [ 47%]
+tests/python/test_etablissements.py::test_ca_ets_09_expiration_et_confirmation PASSED [ 48%]
+tests/python/test_etablissements.py::test_ca_ets_10_metadonnees_supprimees PASSED [ 50%]
+tests/python/test_etablissements.py::test_photo_exige_la_case_et_un_vrai_format PASSED [ 51%]
+tests/python/test_etablissements.py::test_ca_ets_11_blocage_apres_5_echecs PASSED [ 52%]
+tests/python/test_etablissements.py::test_ca_ets_12_changement_sensible PASSED [ 53%]
+tests/python/test_etablissements.py::test_recherche_sensible_jamais_traitee_par_le_serveur PASSED [ 54%]
+tests/python/test_etablissements.py::test_recherche_tri_ouvert_puis_distance_et_rupture_exclue PASSED [ 55%]
+tests/python/test_etablissements.py::test_compte_desactive_invisible_puis_reactive PASSED [ 57%]
+tests/python/test_etablissements.py::test_apercu_public_cache_les_references_du_verificateur PASSED [ 58%]
+tests/python/test_etablissements.py::test_journal_chaine_et_historique PASSED [ 59%]
+tests/python/test_etablissements.py::test_journal_refuse_les_champs_interdits PASSED [ 60%]
+tests/python/test_tendances.py::test_ca_tend_01_une_recherche_un_compteur_rien_d_autre PASSED [ 61%]
+tests/python/test_tendances.py::test_recherche_non_satisfaite_comptee_comme_telle PASSED [ 63%]
+tests/python/test_tendances.py::test_ca_tend_02_recherches_sensibles_jamais_comptees PASSED [ 64%]
+tests/python/test_tendances.py::test_ca_tend_03_localisation_par_l_arrondissement_et_le_code_ins PASSED [ 65%]
+tests/python/test_tendances.py::test_ca_tend_04_repli_a_15_km PASSED     [ 66%]
+tests/python/test_tendances.py::test_zone_sans_code_valide_au_niveau_national_seulement PASSED [ 67%]
+tests/python/test_tendances.py::test_ca_tend_05_seuil_et_arrondi PASSED  [ 69%]
+tests/python/test_tendances.py::test_ca_tend_06_semaines_completes_seulement PASSED [ 70%]
+tests/python/test_tendances.py::test_semaine_en_cours_jamais_montree PASSED [ 71%]
+tests/python/test_tendances.py::test_ca_tend_07_demande_non_satisfaite PASSED [ 72%]
+tests/python/test_tendances.py::test_agregation_par_code_ins PASSED      [ 73%]
+tests/python/test_tendances.py::test_tendance_hausse_seulement_au_dela_des_seuils PASSED [ 75%]
+tests/python/test_tendances.py::test_serie_hebdomadaire PASSED           [ 76%]
+tests/python/test_tendances.py::test_ca_tend_08_reserve_aux_etablissements_verifies PASSED [ 77%]
+tests/python/test_tendances.py::test_parametres_invalides[args0-E-TEND-ZONE] PASSED [ 78%]
+tests/python/test_tendances.py::test_parametres_invalides[args1-E-TEND-ZONE] PASSED [ 79%]
+tests/python/test_tendances.py::test_parametres_invalides[args2-E-TEND-TYPE] PASSED [ 80%]
+tests/python/test_tendances.py::test_ca_tend_09_aucune_valeur_brute_ni_route_brute PASSED [ 82%]
+tests/python/test_tendances.py::test_indicateurs PASSED                  [ 83%]
+tests/python/test_tendances.py::test_carte_d_un_arrondissement_couvre_son_departement PASSED [ 84%]
+tests/unit/test_gouvernance.py::test_politique_valeur_source_et_variante PASSED [ 85%]
+tests/unit/test_gouvernance.py::test_resolution_du_mode PASSED           [ 86%]
+tests/unit/test_gouvernance.py::test_journal_chaine_et_verification PASSED [ 88%]
+tests/unit/test_gouvernance.py::test_journal_rejette_les_champs_interdits PASSED [ 89%]
+tests/unit/test_gouvernance.py::test_pseudonyme_hmac_stable_et_non_reversible PASSED [ 90%]
+tests/unit/test_gouvernance.py::test_art48_bloque_quel_que_soit_le_consentement PASSED [ 91%]
+tests/unit/test_gouvernance.py::test_derogation_simulee_change_le_verdict PASSED [ 92%]
+tests/unit/test_gouvernance.py::test_table_des_modes PASSED              [ 94%]
+tests/unit/test_gouvernance.py::test_chaque_decision_cite_un_fragment_ou_bloque_sans_fondement PASSED [ 95%]
+tests/unit/test_gouvernance.py::test_transfert_hors_pays PASSED          [ 96%]
+tests/unit/test_gouvernance.py::test_mineur_sans_consentement_parental PASSED [ 97%]
+tests/unit/test_gouvernance.py::test_orchestrateur_journalise_et_execute PASSED [ 98%]
+tests/unit/test_gouvernance.py::test_hors_demo_l_entree_n_est_pas_conservee PASSED [100%]
+
+============================== 84 passed in 7.67s ==============================
+--> code de sortie : 0
+
+==================================================================
+$ bash -c node --test tests/js/*.test.mjs
+------------------------------------------------------------------
+TAP version 13
+# Subtest: CA-ETS-13 : catalogues FR et EN aux mêmes clés, sans valeur vide
+ok 1 - CA-ETS-13 : catalogues FR et EN aux mêmes clés, sans valeur vide
+  ---
+  duration_ms: 2.419849
+  type: 'test'
+  ...
+# Subtest: Toute clé utilisée par la console existe dans le catalogue
+ok 2 - Toute clé utilisée par la console existe dans le catalogue
+  ---
+  duration_ms: 1.696936
+  type: 'test'
+  ...
+# Subtest: Chaque question, option, motif, action et code d'erreur du serveur a son libellé
+ok 3 - Chaque question, option, motif, action et code d'erreur du serveur a son libellé
+  ---
+  duration_ms: 155.122913
+  type: 'test'
+  ...
+# Subtest: Parité des conditions de la fiche entre JavaScript et Python (500 jeux de réponses)
+ok 4 - Parité des conditions de la fiche entre JavaScript et Python (500 jeux de réponses)
+  ---
+  duration_ms: 44.583088
+  type: 'test'
+  ...
+# Subtest: chargement : 110 entrées, codes et jetons uniques, snomed vide (TEST-001-03-01)
+ok 5 - chargement : 110 entrées, codes et jetons uniques, snomed vide (TEST-001-03-01)
+  ---
+  duration_ms: 6.566693
+  type: 'test'
+  ...
+# Subtest: FR-113 : refus hors mode démo tant que validateur_clinique est vide
+ok 6 - FR-113 : refus hors mode démo tant que validateur_clinique est vide
+  ---
+  duration_ms: 4.073231
+  type: 'test'
+  ...
+# Subtest: exclusions : agression_sexuelle et priapisme absents des 10 listes et de l'index (TEST-001-03-03)
+ok 7 - exclusions : agression_sexuelle et priapisme absents des 10 listes et de l'index (TEST-001-03-03)
+  ---
+  duration_ms: 14.374233
+  type: 'test'
+  ...
+# Subtest: paquet invalide refusé : jeton dupliqué, code modifié, snomed rempli, expression ambiguë (TEST-001-03-04)
+ok 8 - paquet invalide refusé : jeton dupliqué, code modifié, snomed rempli, expression ambiguë (TEST-001-03-04)
+  ---
+  duration_ms: 5.14731
+  type: 'test'
+  ...
+# Subtest: liste fermée de 5_11_ans : critères adultes de la règle grossesse accessibles (CA-001-03-02)
+ok 9 - liste fermée de 5_11_ans : critères adultes de la règle grossesse accessibles (CA-001-03-02)
+  ---
+  duration_ms: 2.824746
+  type: 'test'
+  ...
+# Subtest: 19 scénarios nommés : même niveau, même priorité, même règle
+ok 10 - 19 scénarios nommés : même niveau, même priorité, même règle
+  ---
+  duration_ms: 2.856906
+  type: 'test'
+  ...
+# Subtest: 42 phrases de référence : mêmes jetons, même non_code (TEST-001-03-05)
+ok 11 - 42 phrases de référence : mêmes jetons, même non_code (TEST-001-03-05)
+  ---
+  duration_ms: 8.762711
+  type: 'test'
+  ...
+# Subtest: listes fermées : mêmes jetons pour chacune des 10 tranches (TEST-001-03-02, TEST-001-03-13)
+ok 12 - listes fermées : mêmes jetons pour chacune des 10 tranches (TEST-001-03-02, TEST-001-03-13)
+  ---
+  duration_ms: 9.615968
+  type: 'test'
+  ...
+# Subtest: fermetures transitives identiques (TEST-001-03-07)
+ok 13 - fermetures transitives identiques (TEST-001-03-07)
+  ---
+  duration_ms: 0.160513
+  type: 'test'
+  ...
+# Subtest: 400 tirages aléatoires : parité stricte du moteur
+ok 14 - 400 tirages aléatoires : parité stricte du moteur
+  ---
+  duration_ms: 9.048411
+  type: 'test'
+  ...
+# Subtest: monotonie : ajouter un jeton n'abaisse jamais le niveau (ADR-005)
+ok 15 - monotonie : ajouter un jeton n'abaisse jamais le niveau (ADR-005)
+  ---
+  duration_ms: 44.33287
+  type: 'test'
+  ...
+1..15
+# tests 15
+# suites 0
+# pass 15
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 559.865263
+--> code de sortie : 0
+
+==================================================================
+$ bash -c cd app && node --test tests/*.test.mjs
+------------------------------------------------------------------
+TAP version 13
+# Subtest: CA-CONS-01 : aucune case → refus
+ok 1 - CA-CONS-01 : aucune case → refus
+  ---
+  duration_ms: 0.87906
+  type: 'test'
+  ...
+# Subtest: CA-CONS-02 : une case sans âge → refus
+ok 2 - CA-CONS-02 : une case sans âge → refus
+  ---
+  duration_ms: 0.169843
+  type: 'test'
+  ...
+# Subtest: CA-CONS-03 : mineur sans accord → refus ; avec accord → accepté
+ok 3 - CA-CONS-03 : mineur sans accord → refus ; avec accord → accepté
+  ---
+  duration_ms: 0.398939
+  type: 'test'
+  ...
+# Subtest: CA-CONS-04 : sans partage → trois finalités à faux
+ok 4 - CA-CONS-04 : sans partage → trois finalités à faux
+  ---
+  duration_ms: 1.409972
+  type: 'test'
+  ...
+# Subtest: CA-CONS-05 : exactement cinq champs
+ok 5 - CA-CONS-05 : exactement cinq champs
+  ---
+  duration_ms: 0.156502
+  type: 'test'
+  ...
+# Subtest: CA-CONS-06 : absent, illisible ou autre version → redemander
+ok 6 - CA-CONS-06 : absent, illisible ou autre version → redemander
+  ---
+  duration_ms: 0.141117
+  type: 'test'
+  ...
+# Subtest: Reformulation : expression camerounaise « le corps chauffe » → fièvre ; négation reconnue
+ok 7 - Reformulation : expression camerounaise « le corps chauffe » → fièvre ; négation reconnue
+  ---
+  duration_ms: 7.562221
+  type: 'test'
+  ...
+# Subtest: Reformulation en anglais
+ok 8 - Reformulation en anglais
+  ---
+  duration_ms: 2.360228
+  type: 'test'
+  ...
+# Subtest: FR-DX-03 : signe de danger → urgence, aucune piste
+ok 9 - FR-DX-03 : signe de danger → urgence, aucune piste
+  ---
+  duration_ms: 2.831631
+  type: 'test'
+  ...
+# Subtest: FR-DX-03 : réponse « oui » à une question de sécurité → urgence
+ok 10 - FR-DX-03 : réponse « oui » à une question de sécurité → urgence
+  ---
+  duration_ms: 0.477322
+  type: 'test'
+  ...
+# Subtest: FR-DX-05 : diarrhée seule ou fièvre + frissons → hors champ
+ok 11 - FR-DX-05 : diarrhée seule ou fièvre + frissons → hors champ
+  ---
+  duration_ms: 0.292223
+  type: 'test'
+  ...
+# Subtest: FR-DX-06 : piste art. 48 → message neutre, jamais de nom
+ok 12 - FR-DX-06 : piste art. 48 → message neutre, jamais de nom
+  ---
+  duration_ms: 0.500415
+  type: 'test'
+  ...
+# Subtest: FR-DX-04 : au plus 3 pistes, triées par score
+ok 13 - FR-DX-04 : au plus 3 pistes, triées par score
+  ---
+  duration_ms: 1.096844
+  type: 'test'
+  ...
+# Subtest: FR-DX-17 : le besoin le plus élevé l’emporte ; enfant → pédiatrie
+ok 14 - FR-DX-17 : le besoin le plus élevé l’emporte ; enfant → pédiatrie
+  ---
+  duration_ms: 0.236851
+  type: 'test'
+  ...
+# Subtest: FR-DX-19 : structure couvrante, ouverte avant fermée ; repli avec manque
+ok 15 - FR-DX-19 : structure couvrante, ouverte avant fermée ; repli avec manque
+  ---
+  duration_ms: 0.807328
+  type: 'test'
+  ...
+# Subtest: FR-ETS-07 : un établissement non vérifié n’apparaît jamais
+ok 16 - FR-ETS-07 : un établissement non vérifié n’apparaît jamais
+  ---
+  duration_ms: 0.214406
+  type: 'test'
+  ...
+# Subtest: Recherche de médicament : rupture et lignes de plus de 48 h exclues
+ok 17 - Recherche de médicament : rupture et lignes de plus de 48 h exclues
+  ---
+  duration_ms: 0.1208
+  type: 'test'
+  ...
+# Subtest: CA-ETS-01 : format du NIU
+ok 18 - CA-ETS-01 : format du NIU
+  ---
+  duration_ms: 0.316191
+  type: 'test'
+  ...
+# Subtest: CA-ETS-04 : officine sans questions H ni B ; hôpital H8 = non sans H8a ni onglet sang
+ok 19 - CA-ETS-04 : officine sans questions H ni B ; hôpital H8 = non sans H8a ni onglet sang
+  ---
+  duration_ms: 0.218389
+  type: 'test'
+  ...
+# Subtest: FR-ETS-05 : une réponse à une question masquée n’est pas enregistrée
+ok 20 - FR-ETS-05 : une réponse à une question masquée n’est pas enregistrée
+  ---
+  duration_ms: 0.102482
+  type: 'test'
+  ...
+# Subtest: CA-ETS-07 et 08 : rapport d’import, quatre motifs distincts ; PDF refusé
+ok 21 - CA-ETS-07 et 08 : rapport d’import, quatre motifs distincts ; PDF refusé
+  ---
+  duration_ms: 0.47251
+  type: 'test'
+  ...
+# Subtest: FR-ETS-10 : expiration à 48 h, alerte 12 h avant
+ok 22 - FR-ETS-10 : expiration à 48 h, alerte 12 h avant
+  ---
+  duration_ms: 0.132647
+  type: 'test'
+  ...
+# Subtest: CA-TEND-05 : 3 → « moins de 5 » ; 23 → 25
+ok 23 - CA-TEND-05 : 3 → « moins de 5 » ; 23 → 25
+  ---
+  duration_ms: 0.063918
+  type: 'test'
+  ...
+# Subtest: CA-TEND-07 : rupture d’artésunate visible dans la demande non satisfaite à Douala V
+ok 24 - CA-TEND-07 : rupture d’artésunate visible dans la demande non satisfaite à Douala V
+  ---
+  duration_ms: 0.673266
+  type: 'test'
+  ...
+# Subtest: Mêmes clés en français et en anglais
+ok 25 - Mêmes clés en français et en anglais
+  ---
+  duration_ms: 5.667673
+  type: 'test'
+  ...
+# Subtest: Aucune valeur vide ; listes de même longueur
+ok 26 - Aucune valeur vide ; listes de même longueur
+  ---
+  duration_ms: 2.672174
+  type: 'test'
+  ...
+# Subtest: FR-DX-04 : le mot « probabilité » n’apparaît dans aucun catalogue
+ok 27 - FR-DX-04 : le mot « probabilité » n’apparaît dans aucun catalogue
+  ---
+  duration_ms: 0.779409
+  type: 'test'
+  ...
+# Subtest: Typographie française : espace fine avant ? et insécable dans « 18 ans »
+ok 28 - Typographie française : espace fine avant ? et insécable dans « 18 ans »
+  ---
+  duration_ms: 1.193072
+  type: 'test'
+  ...
+# Subtest: Seuil de publication : moins de 5 → rien ; sinon arrondi à 5
+ok 29 - Seuil de publication : moins de 5 → rien ; sinon arrondi à 5
+  ---
+  duration_ms: 0.747108
+  type: 'test'
+  ...
+# Subtest: CUSUM : les deux regroupements injectés sont détectés, et seulement eux
+ok 30 - CUSUM : les deux regroupements injectés sont détectés, et seulement eux
+  ---
+  duration_ms: 6.564822
+  type: 'test'
+  ...
+# Subtest: Annexe 2 du RSI : deux « oui » sur quatre déclenchent la notification
+ok 31 - Annexe 2 du RSI : deux « oui » sur quatre déclenchent la notification
+  ---
+  duration_ms: 0.207042
+  type: 'test'
+  ...
+# Subtest: « Et si » : baisser le seuil publie des cases fines ; agréger au district retarde la détection
+ok 32 - « Et si » : baisser le seuil publie des cases fines ; agréger au district retarde la détection
+  ---
+  duration_ms: 1.722646
+  type: 'test'
+  ...
+# Subtest: Carte : les 10 régions ont un tracé
+ok 33 - Carte : les 10 régions ont un tracé
+  ---
+  duration_ms: 0.179267
+  type: 'test'
+  ...
+1..33
+# tests 33
+# suites 0
+# pass 33
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 287.637778
+--> code de sortie : 0
+
+==================================================================
+$ python3 tools/scenarios/executer.py --scenario orientation_urgente
+------------------------------------------------------------------
+
+━━━ Scénario « orientation_urgente » — politique 1.3.0 — gouvernance ACTIVE ━━━
+
+▶ 1 — Personne de 58 ans, sans consentement d'orientation, écrit « douleur poitrine soudaine » : triage exécuté sur l'appareil
+  attendu : Niveau urgence, priorité immédiate, règle IITT12-R-12 citée avec ses fragments ; aucun symptôme envoyé au serveur (FR-112)
+  obtenu  : urgence (immediate, IITT12-R-12) — fragments ['INT-OMS-IITT-FR::0000'] ; 0 événement serveur (le texte n'a pas quitté l'appareil)
+  ✓ conforme
+
+▶ 2 — L'appareil demande la journalisation de la décision de triage
+  attendu : Journalisation par empreinte : l'événement d'audit ne contient ni texte libre ni symptôme nominatif ; chaîne du journal valide
+  obtenu  : AUTORISE (JOURNAL_DEMO_COMPLET) ; journal sans texte libre ; chaîne valide
+  ✓ conforme  (audit : evt-2be40564-b9d6-4758-993a-6e1dd0944b1b)
+
+▶ 3 — Demande des structures d'urgence proches (position arrondie à 2 décimales)
+  attendu : Structure avec urgences ouverte renvoyée ; numéros d'urgence affichés sans le 111 (statut a_confirmer) ; mention de démonstration
+  obtenu  : 3 structures d'urgence ; la plus proche : Hôpital régional fictif à 0.49 km ; numéros ['119', '112', '1510'] (111 absent) ; mention : Règles issues de la PCIME (OMS) et de l'…
+  ✓ conforme  (audit : evt-07912056-052b-4410-8715-7c9d6f531de6)
+
+Journal : 2 événements chaînés, chaîne valide (tests/reports/2026-11-04/journal_orientation_urgente.jsonl)
+✓ aucune violation détectée
+
+Rapport : tests/reports/2026-11-04/rapport_orientation_urgente.json
+--> code de sortie : 0
+
+==================================================================
+$ python3 tools/scenarios/executer.py --scenario orientation_urgente --sans-gouvernance
+------------------------------------------------------------------
+FR-710 : agent Conformité remplacé par un agent qui autorise tout ; le journal reste actif.
+
+━━━ Scénario « orientation_urgente » — politique 1.3.0 — gouvernance DÉSACTIVÉE (FR-710) ━━━
+
+▶ 1 — Personne de 58 ans, sans consentement d'orientation, écrit « douleur poitrine soudaine » : triage exécuté sur l'appareil
+  attendu : Niveau urgence, priorité immédiate, règle IITT12-R-12 citée avec ses fragments ; aucun symptôme envoyé au serveur (FR-112)
+  obtenu  : urgence (immediate, IITT12-R-12) — fragments ['INT-OMS-IITT-FR::0000'] ; 0 événement serveur (le texte n'a pas quitté l'appareil)
+  ✓ conforme
+
+▶ 2 — L'appareil demande la journalisation de la décision de triage
+  attendu : Journalisation par empreinte : l'événement d'audit ne contient ni texte libre ni symptôme nominatif ; chaîne du journal valide
+  obtenu  : AUTORISE (GOUVERNANCE_DESACTIVEE) ; journal sans texte libre ; chaîne valide
+  ✓ conforme  (audit : evt-dad91c14-fcbb-4668-8ed5-411a1a2276b8)
+
+▶ 3 — Demande des structures d'urgence proches (position arrondie à 2 décimales)
+  attendu : Structure avec urgences ouverte renvoyée ; numéros d'urgence affichés sans le 111 (statut a_confirmer) ; mention de démonstration
+  obtenu  : 3 structures d'urgence ; la plus proche : Hôpital régional fictif à 0.49 km ; numéros ['119', '112', '1510'] (111 absent) ; mention : Règles issues de la PCIME (OMS) et de l'…
+  ✓ conforme  (audit : evt-05ebe318-f0b7-413b-b239-752a871c481a)
+
+Journal : 2 événements chaînés, chaîne valide (tests/reports/2026-11-04/journal_orientation_urgente_sans_gouvernance.jsonl)
+✓ aucune violation détectée
+
+Rapport : tests/reports/2026-11-04/rapport_orientation_urgente_sans_gouvernance.json
+--> code de sortie : 1
+
+==================================================================
+$ python3 tools/scenarios/executer.py --scenario medicament_sensible
+------------------------------------------------------------------
+
+━━━ Scénario « medicament_sensible » — politique 1.3.0 — gouvernance ACTIVE ━━━
+
+▶ 1 — Recherche de « tenofovir_lamivudine_dolutegravir » (antirétroviral)
+  attendu : Classe sensible : le serveur BLOQUE la recherche (art. 48) avec repli « appareil » ; tuile de zone téléchargée sans la requête ; au moins une pharmacie agréée au stock frais (≤ 48 h) affichée dans le rayon de 5 km, avec la mention « Délivré sur ordonnance » ; la DCI n'apparaît jamais dans le journal
+  obtenu  : serveur : BLOQUE (art. 48, repli appareil) ; tuile de 247 stocks téléchargée sans requête ; recherche locale : 1 pharmacies (rayon 5.0 km), mention « Délivré sur ordonnance » ; la DCI n'apparaît nulle part dans le journal
+  ✓ conforme  (audit : evt-5c6444e7-1629-4705-a904-37a78aef0bc7)
+
+▶ 2 — L'utilisateur signale « introuvable » dans l'une d'elles
+  attendu : Agent Conformité : pseudonymisation imposée, aucun lien utilisateur-médicament conservé ; score mis à jour
+  obtenu  : AUTORISE_AVEC_CONDITIONS ['retirer_dci', 'retirer_pseudonyme'] ; aucun lien utilisateur-médicament conservé
+  ✓ conforme  (audit : evt-8e3e09ef-b1ac-46e7-8c08-ac2ddd46b9b7)
+
+Journal : 3 événements chaînés, chaîne valide (tests/reports/2026-11-04/journal_medicament_sensible.jsonl)
+✓ aucune violation détectée
+
+Rapport : tests/reports/2026-11-04/rapport_medicament_sensible.json
+--> code de sortie : 0
+
+==================================================================
+$ python3 tools/scenarios/executer.py --scenario medicament_sensible --sans-gouvernance
+------------------------------------------------------------------
+FR-710 : agent Conformité remplacé par un agent qui autorise tout ; le journal reste actif.
+
+━━━ Scénario « medicament_sensible » — politique 1.3.0 — gouvernance DÉSACTIVÉE (FR-710) ━━━
+
+▶ 1 — Recherche de « tenofovir_lamivudine_dolutegravir » (antirétroviral)
+  attendu : Classe sensible : le serveur BLOQUE la recherche (art. 48) avec repli « appareil » ; tuile de zone téléchargée sans la requête ; au moins une pharmacie agréée au stock frais (≤ 48 h) affichée dans le rayon de 5 km, avec la mention « Délivré sur ordonnance » ; la DCI n'apparaît jamais dans le journal
+  obtenu  : AUTORISE (GOUVERNANCE_DESACTIVEE) : recherche exécutée CÔTÉ SERVEUR, 1 résultats, la DCI est entrée au journal
+  ✗ NON CONFORME  (audit : evt-96ce0f95-f2f2-4247-a783-10b3bda4ec58)
+
+▶ 2 — L'utilisateur signale « introuvable » dans l'une d'elles
+  attendu : Agent Conformité : pseudonymisation imposée, aucun lien utilisateur-médicament conservé ; score mis à jour
+  obtenu  : AUTORISE [] ; aucun lien utilisateur-médicament conservé — MAIS la DCI est au journal
+  ✗ NON CONFORME  (audit : evt-0402ab99-78d8-400f-b96a-599f4124de2c)
+
+Journal : 2 événements chaînés, chaîne valide (tests/reports/2026-11-04/journal_medicament_sensible_sans_gouvernance.jsonl)
+⛔ 2 violation(s) détectée(s) :
+   - recherche_sensible_journalisee : la DCI sensible « tenofovir_lamivudine_dolutegravir » figure dans le journal d'audit
+   - categorie_interdite_traitee : ressources.rechercher_medicament autorisée avec catégories ['vie_sexuelle']
+
+Rapport : tests/reports/2026-11-04/rapport_medicament_sensible_sans_gouvernance.json
+--> code de sortie : 0
+
+==================================================================
+$ python3 tools/scenarios/executer.py --scenario regroupement
+------------------------------------------------------------------
+
+━━━ Scénario « regroupement » — politique 1.3.0 — gouvernance ACTIVE ━━━
+
+▶ J1 09:00 — 3 déclarations 'fièvre + éruption' dans l'aire AS-07, dont 2 enfants de la même école
+  attendu : Signal SC1 détecté ; statut 'signal à trier' ; transmission au chef d'aire (délai 24 h)
+  obtenu  : signal SIG-AS-07-S18-fievre_eruption (SC1, 3 cas) au statut « a_trier » ; carte publique vide (3 < seuil 5)
+  ✓ conforme
+
+▶ J1 18:00 — Le chef d'aire n'a pas encore vérifié le signal
+  attendu : Rappel du délai de triage de 24 h (SOP 03) ; aucune alerte publique
+  obtenu  : rappel au chef d'aire : triage « dans les 24 heures » ; aucune alerte publique
+  ✓ conforme
+
+▶ J2 10:00 — 12 déclarations cumulées ; un ASCP confirme 4 cas par visite à domicile
+  attendu : Signal vérifié par 2 sources -> événement ; évaluation du risque à lancer sous 48 h (SOP 04)
+  obtenu  : signal validé par le point focal (jeton:PF-01) ; statut « valide » ; évaluation du risque sous 48 h
+  ✓ conforme  (audit : evt-8a11dce1-fe1d-48ca-a665-79b072ce81ce)
+
+▶ J2 15:00 — Le district demande la liste nominative et les positions GPS exactes des déclarants
+  attendu : Agent APDP saisi : données de santé = données sensibles (loi 2024/017)
+  obtenu  : BLOQUE (DONNEES_INDIVIDUELLES_INTERDITES), repli « agregat » ; fragments ['CMR-LOI-2024-017::0011', 'INT-OMS-RSI-2005-AMENDE-2022::0054']
+  ✓ conforme  (audit : evt-5fb25b24-ad76-4051-bd4f-ef5812bab57d)
+
+▶ J2 16:00 — Demande d'accès aux données individuelles
+  attendu : Refus des positions exactes ; données agrégées par aire ; contact individuel via l'ASCP seulement ; journalisé
+  obtenu  : agrégats par aire transmis : [{'aire_id': 'AS-07', 'semaine': 18, 'syndrome': 'fievre_eruption', 'cas_publie': 12}] ; contact individuel via l'ASCP seulement
+  ✓ conforme  (audit : evt-6f782a3a-f38e-42f3-a214-24a9e5d4b864)
+
+▶ J3 11:00 — Un journaliste local relaie une rumeur d'épidémie (SC8 : anxiété dans la population)
+  attendu : Pas de communication par le système ; renvoi vers la communication officielle (SOP 08)
+  obtenu  : aucune communication émise par le système ; renvoi vers la communication officielle du district (SOP 08)
+  ✓ conforme
+
+▶ J4 09:00 — 21 cas cumulés ; prélèvements envoyés au laboratoire
+  attendu : Riposte sous 48 h ; notification vers la région (CERPLE) ; rappel des obligations RSI ; validation humaine tracée
+  obtenu  : export agrégé AUTORISE_AVEC_CONDITIONS ['maquette'] ; 21 cas ; validation humaine tracée (jeton:PF-01) ; rappel RSI : notification sous 24 h après évaluation
+  ✓ conforme  (audit : evt-bb3cba3b-6b76-4df3-b197-efdfdbecdf18)
+
+Journal : 25 événements chaînés, chaîne valide (tests/reports/2026-11-04/journal_regroupement.jsonl)
+✓ aucune violation détectée
+
+Rapport : tests/reports/2026-11-04/rapport_regroupement.json
+--> code de sortie : 0
+
+==================================================================
+$ python3 tools/scenarios/executer.py --scenario regroupement --sans-gouvernance
+------------------------------------------------------------------
+FR-710 : agent Conformité remplacé par un agent qui autorise tout ; le journal reste actif.
+
+━━━ Scénario « regroupement » — politique 1.3.0 — gouvernance DÉSACTIVÉE (FR-710) ━━━
+
+▶ J1 09:00 — 3 déclarations 'fièvre + éruption' dans l'aire AS-07, dont 2 enfants de la même école
+  attendu : Signal SC1 détecté ; statut 'signal à trier' ; transmission au chef d'aire (délai 24 h)
+  obtenu  : signal SIG-AS-07-S18-fievre_eruption (SC1, 3 cas) au statut « a_trier » ; carte publique vide (3 < seuil 5)
+  ✓ conforme
+
+▶ J1 18:00 — Le chef d'aire n'a pas encore vérifié le signal
+  attendu : Rappel du délai de triage de 24 h (SOP 03) ; aucune alerte publique
+  obtenu  : rappel au chef d'aire : triage « dans les 24 heures » ; aucune alerte publique
+  ✓ conforme
+
+▶ J2 10:00 — 12 déclarations cumulées ; un ASCP confirme 4 cas par visite à domicile
+  attendu : Signal vérifié par 2 sources -> événement ; évaluation du risque à lancer sous 48 h (SOP 04)
+  obtenu  : 12 cas ; AUCUNE validation humaine (gouvernance désactivée)
+  ✗ NON CONFORME
+
+▶ J2 15:00 — Le district demande la liste nominative et les positions GPS exactes des déclarants
+  attendu : Agent APDP saisi : données de santé = données sensibles (loi 2024/017)
+  obtenu  : AUTORISE : 12 lignes INDIVIDUELLES transmises au district
+  ✗ NON CONFORME  (audit : evt-7c5d6ef9-1c55-45e3-8fe6-ecd493322faa)
+
+▶ J2 16:00 — Demande d'accès aux données individuelles
+  attendu : Refus des positions exactes ; données agrégées par aire ; contact individuel via l'ASCP seulement ; journalisé
+  obtenu  : agrégats par aire transmis : [{'aire_id': 'AS-07', 'semaine': 18, 'syndrome': 'fievre_eruption', 'cas_publie': 12}] ; contact individuel via l'ASCP seulement
+  ✓ conforme  (audit : evt-e2cf5120-0e5d-4327-afa4-b54e9c7b48fa)
+
+▶ J3 11:00 — Un journaliste local relaie une rumeur d'épidémie (SC8 : anxiété dans la population)
+  attendu : Pas de communication par le système ; renvoi vers la communication officielle (SOP 08)
+  obtenu  : aucune communication émise par le système ; renvoi vers la communication officielle du district (SOP 08)
+  ✓ conforme
+
+▶ J4 09:00 — 21 cas cumulés ; prélèvements envoyés au laboratoire
+  attendu : Riposte sous 48 h ; notification vers la région (CERPLE) ; rappel des obligations RSI ; validation humaine tracée
+  obtenu  : export agrégé AUTORISE [] ; 21 cas ; validation humaine ABSENTE ; rappel RSI : notification sous 24 h après évaluation
+  ✓ conforme  (audit : evt-d3ddb874-2e01-4456-b61a-62b89cd1c3fe)
+
+Journal : 24 événements chaînés, chaîne valide (tests/reports/2026-11-04/journal_regroupement_sans_gouvernance.jsonl)
+⛔ 2 violation(s) détectée(s) :
+   - donnees_individuelles_transmises : 12 lignes individuelles (positions précises) transmises au district
+   - signal_sans_validation_humaine : publication alors que SIG-AS-07-S18-fievre_eruption n'a pas été validé par le point focal
+
+Rapport : tests/reports/2026-11-04/rapport_regroupement_sans_gouvernance.json
+--> code de sortie : 0
+
+==================================================================
+$ python3 tools/scenarios/executer.py --scenario medicament_sensible --politique config/variantes/et-si-derogation-art48.yaml
+------------------------------------------------------------------
+Variante « et si » : Et si une dérogation encadrée à l'art. 48 existait pour la santé ? (FR-707, en mémoire seulement)
+
+━━━ Scénario « medicament_sensible » — politique 1.3.0+variante — gouvernance ACTIVE ━━━
+
+▶ 1 — Recherche de « tenofovir_lamivudine_dolutegravir » (antirétroviral)
+  attendu : Classe sensible : le serveur BLOQUE la recherche (art. 48) avec repli « appareil » ; tuile de zone téléchargée sans la requête ; au moins une pharmacie agréée au stock frais (≤ 48 h) affichée dans le rayon de 5 km, avec la mention « Délivré sur ordonnance » ; la DCI n'apparaît jamais dans le journal
+  obtenu  : AUTORISE_AVEC_CONDITIONS (RECHERCHE_AUTORISEE) : recherche exécutée CÔTÉ SERVEUR, 0 résultats, la DCI est entrée au journal
+  ✗ NON CONFORME  (audit : evt-c0d0e597-9c4a-4311-a801-10594f89d96e)
+
+▶ 2 — L'utilisateur signale « introuvable » dans l'une d'elles
+  attendu : Agent Conformité : pseudonymisation imposée, aucun lien utilisateur-médicament conservé ; score mis à jour
+  obtenu  : AUTORISE_AVEC_CONDITIONS ['retirer_dci', 'retirer_pseudonyme'] ; aucun lien utilisateur-médicament conservé
+  ✓ conforme  (audit : evt-20dfb046-9a03-45da-915b-f4a474f23c2f)
+
+Journal : 2 événements chaînés, chaîne valide (tests/reports/2026-11-04/journal_medicament_sensible_variante.jsonl)
+⛔ 1 violation(s) détectée(s) :
+   - categorie_interdite_traitee : ressources.rechercher_medicament autorisée avec catégories ['vie_sexuelle']
+
+Δ Différences avec la politique de référence (2) :
+   - ressources.rechercher_medicament : BLOQUE → AUTORISE_AVEC_CONDITIONS (RECHERCHE_AUTORISEE)
+   - ressources.telecharger_tuile : AUTORISE → (action absente du parcours) (TUILE_SANS_REQUETE)
+
+Rapport : tests/reports/2026-11-04/rapport_medicament_sensible_variante.json
+--> code de sortie : 0
+
+==================================================================
+$ python3 tools/scenarios/executer.py --scenario regroupement --politique config/variantes/et-si-autorisation-apdp.yaml
+------------------------------------------------------------------
+Variante « et si » : Et si l'autorisation APDP (art. 19) était obtenue ? (FR-707, en mémoire seulement)
+
+━━━ Scénario « regroupement » — politique 1.3.0+variante — gouvernance ACTIVE ━━━
+
+▶ J1 09:00 — 3 déclarations 'fièvre + éruption' dans l'aire AS-07, dont 2 enfants de la même école
+  attendu : Signal SC1 détecté ; statut 'signal à trier' ; transmission au chef d'aire (délai 24 h)
+  obtenu  : signal SIG-AS-07-S18-fievre_eruption (SC1, 3 cas) au statut « a_trier » ; carte publique vide (3 < seuil 5)
+  ✓ conforme
+
+▶ J1 18:00 — Le chef d'aire n'a pas encore vérifié le signal
+  attendu : Rappel du délai de triage de 24 h (SOP 03) ; aucune alerte publique
+  obtenu  : rappel au chef d'aire : triage « dans les 24 heures » ; aucune alerte publique
+  ✓ conforme
+
+▶ J2 10:00 — 12 déclarations cumulées ; un ASCP confirme 4 cas par visite à domicile
+  attendu : Signal vérifié par 2 sources -> événement ; évaluation du risque à lancer sous 48 h (SOP 04)
+  obtenu  : signal validé par le point focal (jeton:PF-01) ; statut « valide » ; évaluation du risque sous 48 h
+  ✓ conforme  (audit : evt-61012dc3-3d04-4c54-b9ea-7226578a0778)
+
+▶ J2 15:00 — Le district demande la liste nominative et les positions GPS exactes des déclarants
+  attendu : Agent APDP saisi : données de santé = données sensibles (loi 2024/017)
+  obtenu  : BLOQUE (DONNEES_INDIVIDUELLES_INTERDITES), repli « agregat » ; fragments ['CMR-LOI-2024-017::0011', 'INT-OMS-RSI-2005-AMENDE-2022::0054']
+  ✓ conforme  (audit : evt-a1bd2f95-c172-4225-a060-d3e5b43a3778)
+
+▶ J2 16:00 — Demande d'accès aux données individuelles
+  attendu : Refus des positions exactes ; données agrégées par aire ; contact individuel via l'ASCP seulement ; journalisé
+  obtenu  : agrégats par aire transmis : [{'aire_id': 'AS-07', 'semaine': 18, 'syndrome': 'fievre_eruption', 'cas_publie': 12}] ; contact individuel via l'ASCP seulement
+  ✓ conforme  (audit : evt-1f9ed898-ab22-4a98-ab80-574ddef71153)
+
+▶ J3 11:00 — Un journaliste local relaie une rumeur d'épidémie (SC8 : anxiété dans la population)
+  attendu : Pas de communication par le système ; renvoi vers la communication officielle (SOP 08)
+  obtenu  : aucune communication émise par le système ; renvoi vers la communication officielle du district (SOP 08)
+  ✓ conforme
+
+▶ J4 09:00 — 21 cas cumulés ; prélèvements envoyés au laboratoire
+  attendu : Riposte sous 48 h ; notification vers la région (CERPLE) ; rappel des obligations RSI ; validation humaine tracée
+  obtenu  : export agrégé AUTORISE_AVEC_CONDITIONS ['maquette'] ; 21 cas ; validation humaine tracée (jeton:PF-01) ; rappel RSI : notification sous 24 h après évaluation
+  ✓ conforme  (audit : evt-c964cf38-adc9-4f1e-85d9-363fa0ae6cee)
+
+Journal : 25 événements chaînés, chaîne valide (tests/reports/2026-11-04/journal_regroupement_variante.jsonl)
+✓ aucune violation détectée
+
+Rapport : tests/reports/2026-11-04/rapport_regroupement_variante.json
+--> code de sortie : 0
+
+==================================================================
+$ python3 tools/demo/construire_paquet.py
+------------------------------------------------------------------
+src/client/ondevice/paquet_triage.json : 110 entrées, 75 règles, 3 numéros d'urgence, sha256 7ee2485c500b…
+--> code de sortie : 0
+
+==================================================================
+$ cmp src/client/ondevice/paquet_triage.json (copie avant exécution)
+------------------------------------------------------------------
+--> code de sortie : 0
+
+==================================================================
+$ python3 tools/donnees/verifier_regles_triage_v2.py
+------------------------------------------------------------------
+sources : 75 règles et 5 composites ; 90 textes sources retrouvés mot pour mot dans leurs fragments
+OK  adulte 58 ans, douleur thoracique aiguë (scénario 1) -> urgence (immediate, IITT12-R-12)
+OK  adulte 30 ans, douleur thoracique aiguë sans autre signe -> consultation_48h (None, aucune_regle)
+OK  adulte 30 ans, douleur thoracique + incapacité à parler en respirant mal -> urgence (immediate, IITT12-R-03)
+OK  enfant 3 ans, incapable de boire (PCIME) -> urgence (immediate, PCIME-SGD-01)
+OK  enfant 3 ans, fièvre seule (paludisme, PCIME jaune) -> consultation_24h (None, PCIME-J-01)
+OK  enfant 3 ans, fièvre + raideur de nuque (PCIME) -> urgence (immediate, PCIME-MFTG-01)
+OK  enfant 3 ans, diarrhée + sang dans les selles (dysenterie) -> consultation_24h (None, PCIME-J-02)
+OK  enfant 3 ans, diarrhée depuis 15 jours -> consultation_24h (None, PCIME-J-03)
+OK  nourrisson 5 jours, fièvre -> urgence (immediate, IITTM12-R-09)
+OK  nourrisson 3 mois, toux -> urgence (rapide, IITTM12-J-09)
+OK  adulte 40 ans, toux depuis 3 jours -> consultation_48h (None, aucune_regle)
+OK  adulte 40 ans, fièvre + raideur de nuque -> urgence (immediate, IITT12-R-06)
+OK  adulte 40 ans, morsure de chien -> urgence (rapide, IITT12-J-21)
+OK  adulte 30 ans enceinte, céphalée intense -> urgence (immediate, IITT12-R-13)
+OK  adulte 80 ans, brûlure -> urgence (immediate, IITT12-R-08)
+OK  enfant 8 ans, fièvre seule (aucune règle sourcée) -> consultation_48h (None, aucune_regle)
+OK  adulte 40 ans, respire mal + confus (détresse respiratoire, carte IITT) -> urgence (immediate, IITT12-R-03)
+OK  adulte 40 ans, confus seul (critère jaune IITT) -> urgence (rapide, IITT12-J-08)
+OK  enfant 3 ans, « diarrhée avec du sang » (jeton dérivé) -> consultation_24h (None, PCIME-J-02)
+monotonie : 0 violation(s) sur 5000
+jetons de triage sans règle (niveau par défaut) : ['douleur_dos', 'fatigue', 'toux']
+scénarios en échec : 0 sur 19
+accessibilité depuis la liste fermée : 0 jeton(s) inaccessible(s) []
+phrases de référence : 42 / 42 conformes
+patients.csv : 18 jetons, 0 absent(s) du référentiel []
+sbc_definitions.yaml : 24 jetons de symptômes (valeurs « evenement » exclues), 0 absent(s) []
+ancien triage_signes_alerte.yaml (remplacé par la v2, informatif) : jetons absents du référentiel : ['difficulte_respiratoire_severe', 'perte_de_conscience']
+témoins minimaux par règle : 390 / 390 conformes
+--> code de sortie : 0
+
+==================================================================
+$ python3 -I kb/eval/run_eval.py --embed bm25
+------------------------------------------------------------------
+Q01 [OK ] Conformité      -> CMR-LOI-2024-017 Article 69
+Q02 [OK ] Conformité      -> CMR-LOI-2024-017 Article 9
+Q03 [OK ] Orchestrateur   -> CMR-LOI-2024-017 Article 44
+Q04 [OK ] Conformité      -> CMR-LOI-2024-017 Article 33
+Q05 [OK ] Conformité      -> CMR-MINSANTE-PSNSN-2026-2030 5.5.1 AXE STRATEGIQUE 1 : LEADERSHIP
+Q06 [OK ] Ressources      -> CMR-LOI-90-035 Article 16
+Q07 [OK ] Conformité      -> CMR-LOI-2010-012 Article 29
+Q08 [OK ] Surveillance    -> CMR-MINSANTE-GUIDE-SBC-2023 1. Maladies prioritaires pour la SBC
+Q09 [OK ] District        -> CMR-MINSANTE-GUIDE-SBC-2023 I. Objectif
+Q10 [OK ] District        -> INT-OMS-RSI-2005-AMENDE-2022 Article 6
+Q11 [OK ] APDP            -> INT-UE-AI-ACT-2024-1689 Article 78 (partie 1/2)
+Q12 [OK ] Conformité      -> INT-UE-RGPD-2016-679 Article 22
+Q13 [OK ] Triage          -> INT-UE-AI-ACT-2024-1689 Annexe III (partie 2/4)
+Q14 [OK ] Journal d'audit -> INT-UE-AI-ACT-2024-1689 Article 12
+Q15 [OK ] Triage          -> INT-OMS-PCIME-MANUEL CHAPITRE 6
+Q16 [OK ] Conformité      -> INT-OMS-ETHIQUE-IA-SANTE-2021 7.2 Engagement and role of the public an
+Q17 [OK ] Conformité      -> CMR-LOI-2024-017 Article 48
+Q18 [OK ] Conformité      -> CMR-LOI-2024-017 Article 48
+Q19 [OK ] Conformité      -> CMR-LOI-2024-017 Article 19
+Q20 [OK ] Conformité      -> CMR-LOI-2010-012 Article 74
+Q21 [OK ] Triage          -> INT-OMS-IITT-FR 
+Q22 [OK ] Triage          -> INT-OMS-PCIME-MANUEL 15.1 COMMENT RECHERCHER L’INFECTION BACT
+Q23 [NON] Conseiller      -> INT-UE-RGPD-2016-679 Préambule et considérants
+Q24 [DOC] Conseiller      -> CMR-LOI-90-035 Article 75
+Q25 [DOC] Conseiller      -> CMR-LOI-90-035 Article 30
+Q26 [DOC] Conseiller      -> CMR-LOI-2010-012 Article 53
+Q27 [OK ] Conseiller      -> CMR-LOI-2010-012 Article 86
+Q28 [OK ] Conseiller      -> INT-UE-RGPD-2016-679 Préambule et considérants
+Q29 [OK ] Conseiller      -> CMR-MINSANTE-GUIDE-SBC-2023 1. Maladies prioritaires pour la SBC
+Q30 [NON] Conseiller      -> CMR-MINSANTE-PSNSN-2026-2030 4.1.2.5 SERVICES ET APPLICATIONS
+Q31 [NON] Conseiller      -> INT-OMS-LMM-2024 1 Introduction
+Q32 [NON] Conseiller      -> INT-OMS-ETHIQUE-IA-SANTE-2021 9. ELEMENTS OF A FRAMEWORK FOR GOVERNANC
+Q33 [NON] Conseiller      -> INT-OMS-ETHIQUE-IA-SANTE-2021 6. ETHICAL CHALLENGES TO USE OF ARTIFICI
+Q34 [NON] Conseiller      -> INT-OMS-ETHIQUE-IA-SANTE-2021 6. ETHICAL CHALLENGES TO USE OF ARTIFICI
+Q35 [OK ] Conseiller      -> INT-UE-RGPD-2016-679 Préambule et considérants
+Q36 [DOC] Conseiller      -> CMR-LOI-90-036 Article 16
+Q37 [OK ] Conseiller      -> CMR-LOI-2019-019 Article 5
+Q38 [NON] Conseiller      -> INT-OMS-LMM-2024 2 Applications and challenges of
+Q39 [OK ] Conseiller      -> CMR-LOI-2019-019-EN Section 13
+Q40 [OK ] Conseiller      -> CMR-LOI-2019-019-EN Section 5
+
+Document attendu dans le top 5 : 33/40 ; référence exacte : 29/40 (embedding=bm25)
+--> code de sortie : 0
+
+==================================================================
+$ python3 -I kb/traductions/verifier_traductions.py
+------------------------------------------------------------------
+citations : 34 entrées — anglais_officiel_dans_la_base : 8, anglais_officiel_dans_la_source : 1, non_officielle : 20, original_anglais : 1, version_anglaise_officielle_a_verser : 4
+glossaire : 38 entrées, 141 expressions anglaises, 66 termes français, 66 retrouvés dans la base
+conforme
+--> code de sortie : 0
+
+==================================================================
+$ python3 -I kb/services/test_services.py
+------------------------------------------------------------------
+OK  neurologue -> neurologie, rayon élargi à 50 km, 1 résultat(s) (le plus proche à 12.1 km)
+OK  « cœur » -> cardiologie, 3 résultats, aucun critère payant
+OK  psychiatrie : recherche sensible + bandeau d'urgence fixe
+OK  saisie inconnue : aucun résultat inventé
+OK  PH-20 : rafale détectée (14 négatifs en 3 h) -> baisse gelée, score affiché 78 %, revue humaine
+OK  PH-25 réellement peu fiable : 65 % contre [79, 85, 89]
+OK  amoxicilline : 5 pharmacie(s) ; 1re : Classée 1 : à 0.7 km, stock déclaré il y a 5 h, déclarations fiables à 88 % sur 22 vérifications
+OK  seuls des établissements agréés apparaissent
+OK  ARV : classe sensible, 2 résultat(s)
+OK  demande d'alternative : refusée
+OK  O- : 1 banque(s) disponible(s) à 50 km ; appel au don déclenché
+
+11/11 tests réussis
+--> code de sortie : 0
+
+==================================================================
+$ python3 tools/verifier_base.py --reconstruire
+------------------------------------------------------------------
+2034 fragments ; 21 documents ; 71 fragments cités contrôlés
+reconstruction : identique octet pour octet
+conforme
+--> code de sortie : 0
+
+==================================================================
+$ bash -c echo "PDF dans le dépôt : $(find . -name '*.pdf' -not -path './.git/*' | wc -l)"
+------------------------------------------------------------------
+PDF dans le dépôt : 0
+--> code de sortie : 0
+
+==================================================================
+$ bash -c echo "Occurrences de INT-OMS-AFRO-SBC-2014 dans kb/ : $(grep -rl 'INT-OMS-AFRO-SBC-2014' kb | wc -l)"
+------------------------------------------------------------------
+Occurrences de INT-OMS-AFRO-SBC-2014 dans kb/ : 2
+--> code de sortie : 0
+
+==================================================================
+$ python3 tools/sdd_index.py
+------------------------------------------------------------------
+118 tâches restantes ; 37 écarts
+--> code de sortie : 0
+
+==================================================================
+$ python3 tools/trace.py
+------------------------------------------------------------------
+146 dossiers, 482 exigences, 277 tâches, 414 tests ; 0 erreur(s), 0 avertissement(s)
+--> code de sortie : 0
+

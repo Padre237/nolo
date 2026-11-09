@@ -1,0 +1,50 @@
+3
+
+8)
+
+Atteinte à l’intégrité : fait de provoquer intentionnellement une
+perturbation grave ou une interruption de fonctionnement d’un système
+d’information, d’un réseau de communications électroniques ou d’un
+équipement terminal, en introduisant, transmettant, endommageant,
+effaçant, détériorant, modifiant, supprimant ou rendant inaccessibles des
+données ;
+9) Audit de sécurité : examen méthodique des composantes et des acteurs
+de la sécurité, de la politique, des mesures, des solutions, des procédures
+et des moyens mis en œuvre par une organisation, pour sécuriser son
+environnement, effectuer des contrôles de conformité, des contrôles
+d’évaluation de l’adéquation des moyens (organisationnels, techniques,
+humains, financiers) investis au regard des risques encourus,
+d’optimisation, de rationalité et de performance.
+10) Authentification : critère de sécurité défini par un processus mis en
+œuvre notamment pour vérifier l’identité d’une personne physique ou
+morale et s’assurer que l’identité fournie correspond à l’identité de cette
+personne préalablement enregistrée ;
+11) Autorité de certification : autorité de confiance chargée de créer et
+d’attribuer des clés publiques et privées ainsi que des certificats
+électroniques ;
+12) Autorité de Certification Racine : Organisme investi de la mission
+d’accréditation des autorités de certification, de la validation de la
+politique de certification des autorités de certification accréditées, de la
+vérification et de la signature de leurs certificats respectifs ;
+13) Certificat électronique : document électronique sécurisé par la signature
+électronique de la personne qui l’a émis et qui atteste après constat, la
+véracité de son contenu ;
+14) Certificat électronique qualifié : certificat électronique émis par une
+autorité de certification agréée ;
+15) Certification électronique" : émission de certificat électronique
+16) Chiffrement : procédé grâce auquel on transforme à l’aide d’une
+convention secrète appelée clé, des informations claires en informations
+inintelligibles par des tiers n’ayant pas la connaissance de la clé ;
+17) Clé : dans un système de chiffrement, elle correspond à une valeur
+mathématique, un mot, une phrase, qui permet, grâce à l’algorithme de
+chiffrement, de chiffrer ou de déchiffrer un message ;
+18) Clé privée : clé utilisée dans les mécanismes de chiffrement
+asymétriques (ou chiffrement à clé publique), qui appartient à une entité
+et qui doit être secrète ;
+19) Clé publique : clé servant au chiffrement d’un message dans un système
+asymétrique et donc librement diffusée ;
+20) Clé secrète : clé connue de l’émetteur et du destinataire servant de
+chiffrement et de déchiffrement des messages et utilisant le mécanisme
+de chiffrement symétrique ;
+
+

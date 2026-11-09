@@ -1,0 +1,34 @@
+References
+
+147. Sijbrandij Sid. AI weights are not “open source”. Open Core Ventures, 27 June 2023.
+(https://opencoreventures.com/blog/2023-06-27-ai-weights-are-not-open-source/,
+accessed 29 July 2023).
+148. Meeker H. Towards an open weights definition. Copyleft Currents, 8 June 2023 (https://
+heathermeeker.com/2023/06/08/toward-an-open-weights-definition/, accessed 29
+July 2023).
+149. Dastin J, Tong A. Google, one of AI’s biggest backers, warns its own staff about chatbots.
+Reuters, 15 June 2023 (https://www.reuters.com/technology/google-one-ais-biggestbackers-warns-own-staff-about-chatbots-2023-06-15/, accessed 9 July 2023).
+150. Kanter GP, Packel EA. Health care privacy risks of AI chatbots. JAMA.
+2023;330(4):311–2. doi:10.1001/jama.2023.9618.
+151. Interim measures for the management of generative artificial intelligence services.
+Beijing: Cyberspace Administration of China; 13 2023. (http://www.cac.gov.cn/202307/13/c_1690898327029107.htm, accessed 29 July 2023).
+152. Satariano A. E.U. agrees on landmark artificial intelligence rules. The New York Times,
+8 December 2023 (https://www.nytimes.com/2023/12/08/technology/eu-ai-actregulation.html, accessed 15 December 2023).
+153. The EU should regulate on the basis of rights, not risks. Access Now, 17 February 2021
+(https://www.accessnow.org/eu-regulation-ai-risk-based-approach/, accessed 21
+June 2023).
+154. Marks M, Haupt CE. AI chatbots, health privacy, and challenges to HIPAA
+compliance JAMA. 2023;330(4):309–10. doi: 10.1001/jama.2023.9458.
+155. Marcus G. Two models of AI oversight – and how things could go deeply wrong.
+Substack, 8 June 2023 (https://garymarcus.substack.com/p/two-models-of-ai-oversightand-how, accessed 17 June 2023).
+156. Kang C, Metz C. FTC opens investigation into Chat GPT maker over technology’s potential
+harms. The New York Times, 13 July 2023 (https://www.nytimes.com/2023/07/13/
+technology/chatgpt-investigation-ftc-openai.html, accessed 29 July 2023).
+157. Ordish J. Large language models and software as a medical device. MedRegs blogs,
+3 March 2023 (https://medregs.blog.gov.uk/2023/03/03/large-language-models-andsoftware-as-a-medical-device/, accessed 19 June 2023).
+158. Gilbert S, Harvey H, Melvin T, Vollebregt E, Wicks P. Large language model AI chatbots
+require approval as medical devices. Nat Med. 2023. doi:10.1038/s41591-023-02412-6.
+
+75
+
+

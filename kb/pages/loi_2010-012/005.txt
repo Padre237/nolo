@@ -1,0 +1,49 @@
+5
+
+35) Déchiffrement : opération inverse du chiffrement ;
+36) Déni de service : attaque par saturation d’une ressource du système
+d’information ou du réseau de communications électroniques, afin qu’il
+s’effondre et ne puisse plus réaliser les services attendus de lui ;
+37) Déni de service distribué : attaque simultanée des ressources du
+système d’information ou du réseau de communications électroniques,
+afin de les saturer et amplifier les effets d’entrave ;
+38) Disponibilité : critère de sécurité permettant que les ressources des
+réseaux de communications électroniques, des systèmes d’information
+ou des équipements terminaux soient accessibles et utilisables selon
+les besoins (le facteur temps) ;
+39) Dispositif de création de signature électronique : ensemble
+d’équipements et/ou logiciels privés de cryptage, homologués par une
+autorité compétente, configurés pour la création d’une signature
+électronique ;
+40) Dispositif de vérification de signature électronique" : ensemble
+d’équipements et/ou logiciels publics de cryptage, homologués par une
+autorité compétente, permettant la vérification par une autorité de
+certification d’une signature électronique ;
+41) Données : représentation de faits, d’informations ou de notions sous une
+forme susceptible d’être traitée par un équipement terminal, y compris
+un programme permettant à ce dernier d’exécuter une fonction ;
+42) Données de connexion : ensemble de données relatives au processus
+d’accès dans une communication électronique ;
+43) "Données de trafic : données ayant trait à une communication
+électronique indiquant l’origine, la destination, l’itinéraire, l’heure, la
+date, la taille et la durée de la communication ou le type du service sousjacent ;
+44) Equipement terminal : appareil, installation ou ensemble d’installations
+destiné à être connecté à un point de terminaison d’un système
+d’information et émettant, recevant, traitant, ou stockant des données
+d’information ;
+45) Fiabilité : aptitude d’un système d’information ou d’un réseau de
+télécommunications à fonctionner sans incident pendant un temps
+suffisamment long ;
+46) Fournisseur des services de communications électroniques : personne
+physique ou morale fournissant les prestations consistant entièrement
+ou principalement en la fourniture de communications électroniques ;
+47) Gravité de l’impact : appréciation du niveau de gravité d’un incident,
+pondéré par sa fréquence d’apparition ;
+48) Intégrité des données : critère de sécurité définissant l’état d’un réseau
+de communications électroniques, d’un système d’information ou d’un
+équipement terminal qui est demeuré intact et permet de s’assurer que
+les ressources n’ont pas été altérées (modifiées ou détruites) d’une
+façon tant intentionnelle qu’accidentelle, de manière à assurer leur
+exactitude, leur fiabilité et leur pérennité ;
+
+

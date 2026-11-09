@@ -1,0 +1,81 @@
+4.5.2016
+
+FR
+
+Journal officiel de l'Union européenne
+
+L 119/9
+
+physique. Le traitement de données à caractère personnel fondé sur l'intérêt vital d'une autre personne physique
+ne devrait en principe avoir lieu que lorsque le traitement ne peut manifestement pas être fondé sur une autre
+base juridique. Certains types de traitement peuvent être justifiés à la fois par des motifs importants d'intérêt
+public et par les intérêts vitaux de la personne concernée, par exemple lorsque le traitement est nécessaire à des
+fins humanitaires, y compris pour suivre des épidémies et leur propagation, ou dans les cas d'urgence
+humanitaire, notamment les situations de catastrophe naturelle et d'origine humaine.
+
+(47)
+
+Les intérêts légitimes d'un responsable du traitement, y compris ceux d'un responsable du traitement à qui les
+données à caractère personnel peuvent être communiquées, ou d'un tiers peuvent constituer une base juridique
+pour le traitement, à moins que les intérêts ou les libertés et droits fondamentaux de la personne concernée ne
+prévalent, compte tenu des attentes raisonnables des personnes concernées fondées sur leur relation avec le
+responsable du traitement. Un tel intérêt légitime pourrait, par exemple, exister lorsqu'il existe une relation
+pertinente et appropriée entre la personne concernée et le responsable du traitement dans des situations telles
+que celles où la personne concernée est un client du responsable du traitement ou est à son service. En tout état
+de cause, l'existence d'un intérêt légitime devrait faire l'objet d'une évaluation attentive, notamment afin de
+déterminer si une personne concernée peut raisonnablement s'attendre, au moment et dans le cadre de la collecte
+des données à caractère personnel, à ce que celles-ci fassent l'objet d'un traitement à une fin donnée. Les intérêts
+et droits fondamentaux de la personne concernée pourraient, en particulier, prévaloir sur l'intérêt du responsable
+du traitement lorsque des données à caractère personnel sont traitées dans des circonstances où les personnes
+concernées ne s'attendent raisonnablement pas à un traitement ultérieur. Étant donné qu'il appartient au
+législateur de prévoir par la loi la base juridique pour le traitement des données à caractère personnel par les
+autorités publiques, cette base juridique ne devrait pas s'appliquer aux traitements effectués par des autorités
+publiques dans l'accomplissement de leurs missions. Le traitement de données à caractère personnel strictement
+nécessaire à des fins de prévention de la fraude constitue également un intérêt légitime du responsable du
+traitement concerné. Le traitement de données à caractère personnel à des fins de prospection peut être considéré
+comme étant réalisé pour répondre à un intérêt légitime.
+
+(48)
+
+Les responsables du traitement qui font partie d'un groupe d'entreprises ou d'établissements affiliés à un
+organisme central peuvent avoir un intérêt légitime à transmettre des données à caractère personnel au sein du
+groupe d'entreprises à des fins administratives internes, y compris le traitement de données à caractère personnel
+relatives à des clients ou des employés. Les principes généraux régissant le transfert de données à caractère
+personnel, au sein d'un groupe d'entreprises, à une entreprise située dans un pays tiers ne sont pas remis en
+cause.
+
+(49)
+
+Le traitement de données à caractère personnel dans la mesure strictement nécessaire et proportionnée aux fins
+de garantir la sécurité du réseau et des informations, c'est-à-dire la capacité d'un réseau ou d'un système d'infor­
+mation de résister, à un niveau de confiance donné, à des événements accidentels ou à des actions illégales ou
+malveillantes qui compromettent la disponibilité, l'authenticité, l'intégrité et la confidentialité de données à
+caractère personnel conservées ou transmises, ainsi que la sécurité des services connexes offerts ou rendus
+accessibles via ces réseaux et systèmes, par des autorités publiques, des équipes d'intervention en cas d'urgence
+informatique (CERT), des équipes d'intervention en cas d'incidents de sécurité informatique (CSIRT), des
+fournisseurs de réseaux et de services de communications électroniques et des fournisseurs de technologies et
+services de sécurité, constitue un intérêt légitime du responsable du traitement concerné. Il pourrait s'agir, par
+exemple, d'empêcher l'accès non autorisé à des réseaux de communications électroniques et la distribution de
+codes malveillants, et de faire cesser des attaques par «déni de service» et des dommages touchant les systèmes de
+communications informatiques et électroniques.
+
+(50)
+
+Le traitement de données à caractère personnel pour d'autres finalités que celles pour lesquelles les données à
+caractère personnel ont été collectées initialement ne devrait être autorisé que s'il est compatible avec les finalités
+pour lesquelles les données à caractère personnel ont été collectées initialement. Dans ce cas, aucune base
+juridique distincte de celle qui a permis la collecte des données à caractère personnel n'est requise. Si le traitement
+est nécessaire à l'exécution d'une mission d'intérêt public ou relevant de l'exercice de l'autorité publique dont est
+investi le responsable du traitement, le droit de l'Union ou le droit d'un État membre peut déterminer et préciser
+les missions et les finalités pour lesquelles le traitement ultérieur devrait être considéré comme compatible et
+licite. Le traitement ultérieur à des fins archivistiques dans l'intérêt public, à des fins de recherche scientifique ou
+historique ou à des fins statistiques devrait être considéré comme une opération de traitement licite compatible.
+La base juridique prévue par le droit de l'Union ou le droit d'un État membre en ce qui concerne le traitement de
+données à caractère personnel peut également constituer la base juridique pour un traitement ultérieur. Afin
+d'établir si les finalités d'un traitement ultérieur sont compatibles avec celles pour lesquelles les données à
+caractère personnel ont été collectées initialement, le responsable du traitement, après avoir respecté toutes les
+exigences liées à la licéité du traitement initial, devrait tenir compte, entre autres: de tout lien entre ces finalités et
+les finalités du traitement ultérieur prévu; du contexte dans lequel les données à caractère personnel ont été
+collectées, en particulier les attentes raisonnables des personnes concernées, en fonction de leur relation avec le
+
+

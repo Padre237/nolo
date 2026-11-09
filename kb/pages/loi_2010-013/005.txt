@@ -1,0 +1,52 @@
+5
+
+19. Dégroupage de la boucle locale : prestation qui inclut des
+prestations associées, notamment celle de co-localisation offerte par
+un exploitant de réseau de communications électroniques ouvert au
+public, pour permettre à un exploitant tiers de réseau de
+communications électroniques d’accéder à tout ou partie des éléments
+de la boucle locale du premier exploitant pour desservir directement
+ses abonnés ;
+20. Equipement terminal : appareil, toute installation ou tout ensemble
+d'installations destiné à être connecté à un point de terminaison d'un
+réseau et qui émet, reçoit ou traite des signaux de communications
+électroniques. Ne sont pas visés, les équipements permettant
+d'accéder à des services de communication audiovisuelle diffusés par
+voie hertzienne ou distribués par câble, sauf dans le cas où ces
+équipements permettent d'accéder également à d’autres services de
+communications électroniques ;
+21. Exploitant d’infrastructures alternatives : personne morale de
+droit public ou société concessionnaire de service public, disposant
+d’infrastructures ou de droit pouvant supporter ou contribuer à
+supporter les réseaux de communications électroniques, sans qu’elle
+ne soit elle-même exploitant des réseaux de communications
+électroniques ouverts au public ;
+22. Fourniture d’un réseau de communications électroniques :
+mise en place, exploitation, surveillance ou mise à disposition d’un
+réseau de communications électroniques ;
+23. Gestion du spectre des fréquences radioélectriques :
+ensemble d'actions administratives et techniques visant à assurer
+une
+utilisation
+rationnelle
+du
+spectre
+des
+fréquences
+radioélectriques par les utilisateurs ;
+24. Homologation : opération d’expertise et de vérification effectuée
+par un organisme agréé pour attester que le prototype des
+équipements et des systèmes de communications électroniques
+répond à la réglementation et aux spécifications techniques en
+vigueur ;
+25. Infrastructures alternatives : Installation ou ensemble
+d’installations exploitées par les concessionnaires de service public
+et pouvant assurer ou contribuer à assurer soit la transmission, soit
+la transmission et l’acheminement de signaux de communications ;
+26. Interconnexion : forme particulière d’accès consistant en la
+liaison physique et logique des réseaux publics de communications
+électroniques utilisées par un même opérateur ou un opérateur
+différent, afin de permettre aux utilisateurs de communiquer entre
+eux ou bien d’accéder aux services fournis par un autre opérateur ;
+
+

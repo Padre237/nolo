@@ -1,0 +1,59 @@
+{
+ "scenario": "medicament_sensible",
+ "version_politique": "1.3.0",
+ "gouvernance": false,
+ "etapes": [
+  {
+   "etape": 1,
+   "evenement": "Recherche de « tenofovir_lamivudine_dolutegravir » (antirétroviral)",
+   "attendu": "Classe sensible : le serveur BLOQUE la recherche (art. 48) avec repli « appareil » ; tuile de zone téléchargée sans la requête ; au moins une pharmacie agréée au stock frais (≤ 48 h) affichée dans le rayon de 5 km, avec la mention « Délivré sur ordonnance » ; la DCI n'apparaît jamais dans le journal",
+   "obtenu": "AUTORISE (GOUVERNANCE_DESACTIVEE) : recherche exécutée CÔTÉ SERVEUR, 1 résultats, la DCI est entrée au journal",
+   "conforme": false,
+   "ref_audit": "evt-c49be53a-2291-40e1-bab1-2420bae035e5"
+  },
+  {
+   "etape": 2,
+   "evenement": "L'utilisateur signale « introuvable » dans l'une d'elles",
+   "attendu": "Agent Conformité : pseudonymisation imposée, aucun lien utilisateur-médicament conservé ; score mis à jour",
+   "obtenu": "AUTORISE [] ; aucun lien utilisateur-médicament conservé — MAIS la DCI est au journal",
+   "conforme": false,
+   "ref_audit": "evt-c93f21e4-7e31-4ff0-9fd2-8706e00c64d4"
+  }
+ ],
+ "decisions": [
+  {
+   "action": "ressources.rechercher_medicament",
+   "verdict": "AUTORISE",
+   "fragments": [],
+   "conditions": [],
+   "repli": null,
+   "justification": "GOUVERNANCE_DESACTIVEE"
+  },
+  {
+   "action": "fiabilite.enregistrer_signalement_sensible",
+   "verdict": "AUTORISE",
+   "fragments": [],
+   "conditions": [],
+   "repli": null,
+   "justification": "GOUVERNANCE_DESACTIVEE"
+  }
+ ],
+ "violations": [
+  {
+   "type": "recherche_sensible_journalisee",
+   "etape": null,
+   "detail": "la DCI sensible « tenofovir_lamivudine_dolutegravir » figure dans le journal d'audit"
+  },
+  {
+   "type": "categorie_interdite_traitee",
+   "etape": null,
+   "detail": "ressources.rechercher_medicament autorisée avec catégories ['vie_sexuelle']"
+  }
+ ],
+ "journal": {
+  "fichier": "tests/reports/2026-11-04/journal_medicament_sensible_sans_gouvernance.jsonl",
+  "evenements": 2,
+  "chaine_valide": true,
+  "erreurs_chaine": []
+ }
+}

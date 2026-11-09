@@ -1,0 +1,50 @@
+8
+
+48. Revente de trafic : acte qui consiste en l’achat de minutes en
+gros auprès d’un opérateur concessionnaire, en vue de les revendre
+au détail à sa propre clientèle ;
+49. Sélection du transporteur : mécanisme qui permet à un
+utilisateur de choisir entre un ou un ensemble d’exploitants de
+réseaux publics de communications électroniques autorisés ou de
+fournisseurs de services de télécommunications autorisés, pour
+acheminer une partie ou l’intégralité de ses appels ;
+50. Service à valeur ajoutée : service offert au public à travers les
+réseaux publics de communications électroniques au moyen des
+systèmes informatiques permettant l’accès aux données relatives aux
+domaines spécifiques en vue de les consulter ou de les échanger ;
+51. Service de transmission de données : service de simple
+transport de données, sans y ajouter aucun traitement ;
+52. Service de communications électroniques : prestation
+consistant entièrement ou principalement en la fourniture de
+communications électroniques ;
+53. Service support : service de simple transport d’informations dont
+l’objet est, soit de transmettre, soit de transmettre et d’acheminer
+des signaux entre points de terminaison d’un réseau de
+communications électroniques, sans faire subir à ces signaux des
+traitements autres que ceux nécessaires à leur transmission, à leur
+acheminement et au contrôle de ces fonctions ;
+54. Service
+téléphonique ouvert
+au
+public :
+exploitation
+commerciale pour le public du transfert direct de la voix en temps
+réel entre utilisateurs fixes ou mobiles ;
+55. Service télex : exploitation commerciale du transfert direct, par
+échange de signaux de nature télégraphique, de messages
+dactylographiés, entre des utilisateurs aux points de terminaison
+d'un réseau de communications électroniques ;
+56. Service Universel : ensemble minimal des services définis de
+bonne qualité qui est accessible à l’ensemble de la population dans
+les conditions tarifaires abordables indépendamment de la
+localisation géographique ;
+57. Servitude : droit permettant de mettre en place des infrastructures
+et tout équipement sur, au-dessus ou au-dessous des propriétés
+privées ;
+58. Servitude radioélectrique : servitude qui consiste en une
+limitation de la hauteur des obstacles dans les zones définies autour
+des centres d’émission ou de réception, afin de prévenir toute
+perturbation des ondes radioélectriques émises ou reçues par ces
+centres ;
+
+

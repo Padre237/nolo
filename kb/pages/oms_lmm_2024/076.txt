@@ -1,0 +1,43 @@
+58
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+7 Liability for LMMs
+As LMMs gain broader use in health care and medicine, errors, misuse and ultimately harm
+to individuals are inevitable. Liability rules will have to be used to compensate individuals
+for such harm, with establishment of new forms of redress when current approaches are
+insufficient or out of date.
+The design, development, quality assurance and deployment of AI technologies involve
+various entities, each of which plays a distinct role. This can complicate assignment of
+liability. Developers may demand that downstream entities, such as providers and deployers,
+be liable for any harm resulting from use of an LMM, while downstream entities may claim
+that previous actions, such as choice of the data used to train an algorithm, are the cause.
+Developers and providers may also claim that, once a medical AI technology has been
+approved for use by a regulator, they should no longer be held liable for harm (regulatory
+pre-emption) (1). Establishment of liability along the value chain is a challenge for lawmakers
+and policy-makers.
+A critical function of rules for civil liability is to ensure that a victim of damage can
+claim compensation and redress, no matter how difficult it may be to assign blame and
+responsibility among the entities involved in development and deployment of an AI
+technology. If victims find it too difficult to obtain compensation, there can be no justice and
+no incentive for parties in the AI value chain to avoid such harm in the future. The rules should
+also ensure that the compensation is adequate for the harm suffered.
+The European Union in its proposed AI Liability Directive simplifies the burden of proof by a
+victim by introducing a “presumption of causality” (162). Thus, if a victim can demonstrate
+that one or more entities did not comply with an obligation relevant to the harm and that
+a causal link with AI performance is likely, the court can presume that non-compliance
+was the cause of the damage (162). The onus is thus placed on the liable party to rebut the
+presumption, for example by indicating another party as the cause of the damage. The
+scope of the legislation is not limited to the original maker of an AI system but includes any
+participant in the AI value chain (162). When all the actors in the AI value chain are held jointly
+liable, they can demonstrate their effectiveness in assessing and mitigating risks in order to
+reduce their liability.
+It is still possible, however, that a liability regime does not provide full clarity and redress for
+injuries caused by AI-driven products and services, especially if an individual does not know
+that a LMM was used in making a medical decision. New rules may leave gaps in liability
+for injuries caused by AI-driven medical technologies (163). As LMMs are highly speculative,
+poorly understood and being rushed to market, governments may wish to consider LMMs
+used in health care as products for which developers, providers and deployers will be held to
+a strict liability standard. Holding these actors accountable for any error might ensure that a
+
+

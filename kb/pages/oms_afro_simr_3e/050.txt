@@ -1,0 +1,80 @@
+exemple, une exigence minimale serait de déclarer tous les cas et tous les décès se
+rapportant aux maladies et affections sélectionnées.
+
+6.
+
+a)
+
+Indiquer les maladies ou affections qui doivent être signalées immédiatement et
+communiquer la liste aux formations sanitaires du district.
+
+b)
+
+Définir les moyens de communication des données au district (par téléphone,
+formulaire ou de vive voix). Si déclaration la déclaration est faite électroniquement,
+tous les établissements ont-ils accès à des ordinateurs et à des modems ? Préciser
+comment la déclaration électronique devrait être faite et si des formulaires papier
+seront utilisés pour recueillir les données, comment la transcription se fera du
+formulaire papier au formulaire électronique.
+
+c)
+
+Définir la fréquence à laquelle les données requises doivent être communiquées.
+
+d)
+
+Définir un mécanisme de rétroaction entre les districts et les échelons supérieurs
+(région et district.)
+
+Définir les outils de gestion des données disponibles dans le district et comment ils doivent
+être utilisés dans un système intégré. Définir la fréquence à laquelle les outils doivent être
+utilisés pour signaler les maladies, les affections ou les événements. Les outils peuvent
+comprendre :
+a)
+
+des formulaires de rapport de surveillance des cas ;
+
+b)
+
+des formulaires de rapport de surveillance diagnostique (si les soins sont dispensés
+au point de service) et de rapport de surveillance des ’échantillons de laboratoire ;
+
+c)
+
+des formulaires ou journaux de suivi des échantillons (au sein du laboratoire) et aussi
+des formulaires ou journaux de référence des échantillons ;
+
+d)
+
+des listes de lignes à utiliser lors des flambées épidémiques, tout en assurant une
+saisie complète des variables provenant d’autres secteurs non humains ;
+
+e)
+
+des formulaires de recherche des contacts ;
+
+f)
+
+des tableaux pour l’enregistrement des totaux sommaires :
+i)
+ii)
+iii)
+iv)
+v)
+vi)
+
+7.
+
+des formulaires de rapports hebdomadaires de routine
+des formulaires de rapports mensuels de routine
+des formulaires de rapports trimestriels de routine
+des graphiques pour l’analyse temporelle des données
+des cartes pour l’analyse des données sur les lieux
+des graphiques pour l’analyse des données par personne
+
+Mettre périodiquement à jour la disponibilité des fournitures nécessaires pour la
+surveillance à chaque site de déclaration. (Note : Si un site de déclaration a la capacité de
+
+36
+
+

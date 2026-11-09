@@ -1,0 +1,75 @@
+                     •Un membre de la communauté ou un ASCP détecte un cas communautaire ou un signal
+   Etape1             (prédéfini). L'ASCP transmet l'information au Chef de l'Aire de Santé.
+  Detection
+
+
+              •Notifier les cas et signaux c’est entrer en communication avec le point focal FOSA/DS pour l’en
+               informer.
+  Etape 2     •La notification des cas et signaux doit être effectuée immédiatement ou dans les 24 heures
+ Notification  suivant leur détection au niveau communautaire.
+
+
+                     •Le chef de l'aire de santé fait le triage des cas suspects et signaux afin de détecter les
+                      informations présentant un risque pour la santé et les soumettre à la vérification.
+   Etape 3           • une fois les cas et signaux vérifiés, ils sont transformé en événènents et transmis au district de
+  Triage et           santé
+ Verification
+
+
+                     •Une équipe de Santé Publique en collaboration avec les responsables de l'Aire de santé, fait la
+  Etape 4             descente en communauté pour enquêter et déterminer le niveau de risque pour la population et
+ Evaluation           proposer les mesures d'intervention appropriées.
+ des risques
+
+
+
+                    •Une réponse rapide et efficace est apportée à la communauté.
+   Etape 5          • Les ressources sont mobilisées à différents niveaux pour assurer une reponse appropriée
+   Riposte           (locales, nationales, internationales).
+
+
+
+Figure 2: Étapes de la Surveillance à Base Communautaire.
+
+     Données SFI                             Information SFI
+
+      Détection des cas                      Ddétection des signaux
+      communautaires
+
+
+         Triage                                     Triage
+
+                                                       Filtrage
+       Analyse des données
+
+                                                     Sélection
+         Interpretation
+          des données
+
+
+
+
+                              Vérification
+
+
+
+                           Evènement
+
+
+
+                          Evaluation du risque
+
+
+                                Alerte
+
+
+                           Communication
+
+
+
+Figure 3 – Processus de l’intelligence épidémiologique
+
+
+
+                                                                      18
+

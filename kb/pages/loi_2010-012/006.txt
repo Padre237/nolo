@@ -1,0 +1,50 @@
+6
+
+49) Interception illégale : accès sans en avoir le droit ou l’autorisation, aux
+données d’un réseau de communications électroniques, d’un système
+d’information ou d’un équipement terminal ;
+50) Interception légale : accès autorisé aux données d’un réseau de
+communications électroniques, d’un système d’information ou d’un
+équipement terminal
+51) Intrusion par intérêt : accès intentionnel et sans droit dans un réseau de
+communications électroniques ou dans un système d’information, dans
+le but soit de nuire soit de tirer un bénéfice économique, financier,
+industriel, sécuritaire ou de souveraineté ;
+52) Intrusion par défi intellectuel: accès intentionnel et sans droit dans un
+réseau de communications électroniques ou dans un système
+d’information, dans le but de relever un défi intellectuel pouvant
+contribuer à l’amélioration des performances du système de sécurité de
+l’organisation ;
+53) Logiciel trompeur : logiciel effectuant des opérations sur un équipement
+terminal d’un utilisateur sans informer préalablement cet utilisateur de
+la nature exacte des opérations que le logiciel va effectuer sur son
+équipement terminal ou sans demander à l’utilisateur s’il consent à ce
+que le logiciel procède à ces opérations ;
+54) Logiciel espion : type particulier de logiciel trompeur collectant les
+informations personnelles (sites web les plus visités, mots de passe,
+etc.) auprès d’un utilisateur du réseau de communications
+électroniques ;
+55) Logiciel potentiellement indésirable : logiciel présentant des
+caractéristiques d’un logiciel trompeur ou d’un logiciel espion ;
+56) Message clair" : version intelligible d’un message et compréhensible par
+tous ;
+57) Moyen de cryptographie : équipement ou logiciel conçu ou modifié pour
+transformer des données, qu'il s'agisse d'informations ou de signaux, à
+l'aide de conventions secrètes ou pour réaliser une opération inverse
+avec ou sans convention secrète afin de garantir la sécurité du stockage
+ou de la transmission de données, et d'assurer leur confidentialité et le
+contrôle de leur intégrité ;
+58) Non répudiation : critère de sécurité assurant la disponibilité de preuves
+qui peuvent être opposées à un tiers et utilisées pour prouver la
+traçabilité d’une communication électronique qui a eu lieu ;
+59) Politique de certification : ensemble de règles identifiées, définissant
+les exigences auxquelles l’autorité de certification se conforme dans la
+mise en place de ses prestations et indiquant l’applicabilité d’un service
+de certification à une communauté particulière et/ou à une classe
+d’applications avec des exigences de sécurité communes ;
+60) Politique de sécurité : référentiel de sécurité établi par une organisation,
+reflétant sa stratégie de sécurité et spécifiant les moyens de la réaliser ;
+61) Prestation de cryptographie : opération visant à la mise en œuvre, pour
+le compte d'autrui, de moyens de cryptographie ;
+
+

@@ -1,0 +1,43 @@
+16
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+2.3
+
+Clerical functions and administrative tasks
+
+LMMs are beginning to be used to assist health professionals in clerical, administrative and
+financial aspects of practising medicine. Medicine exposes physicians and other healthcare professionals in many settings to ever-growing paperwork for numerous obligations
+for recording patient information and data in electronic health records, billing in private,
+insurance or public health-care systems and other administrative tasks. While many such
+obligations, such as completing electronic health records, were intended to “liberate” healthcare professionals, most are now a major cause of physician and health-worker burn-out (59).
+According to one study, documentation constituted one fourth to one half of a doctor’s time
+and one fifth of a nurse’s time (59).
+LMMs have been singled out as a means of returning to health-care professionals their most
+valuable commodity – time – both to reduce burn-out, to allocate more time to providing care
+to each patient or to see more patients. One physician who used software that encodes an
+LMM to document patient visits reported that “AI has allowed me, as a physician, to be 100
+percent present for my patients” and that the software had freed up to 2 h daily (60).
+Examples of current and anticipated uses of LMMs include:
+• better communication to assist in translation or improving clinician–patient
+communication by simplifying medical jargon and making communication more
+“patient-friendly” (34);
+• to fill in missing information in electronic health records (61); and
+• with other forms of AI, to draft clinical notes after each patient visit (virtual or in
+person) (62).
+• Use of LMMs is also expected to include pre-emptive writing of automated
+prescriptions and appointments, billing codes, scheduling of tests, pre-authorization
+by insurance companies, procedure notes and discharge summaries (5). As more
+sophisticated LMMs are developed, they could be used for even more complex
+clerical note-taking, such as with radiologists, by “automatically draft(ing) radiology
+reports that both describe abnormalities and relevant normal findings, while taking
+into account the patient’s history…these models can provide further assistance to
+clinicians by pairing text reports with interactive visualization, such as by highlighting
+the region described by each phase” (5).
+
+Risks and challenges
+As with other uses of LMMs, serious errors could arise, due to inaccuracies, mistakes (for
+example in transcription, translation or simplification) or “hallucinations”. It is therefore
+important that most clerical and administrative functions not be completely automated. Even
+
+

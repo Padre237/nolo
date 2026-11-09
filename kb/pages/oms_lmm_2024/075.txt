@@ -1,0 +1,43 @@
+6 Deployment with general-purpose foundation models (LMMs)
+
+• In accordance with information obtained from either developers or providers,
+deployers should not use an LMM or application in a setting that is inappropriate
+because of biases in the training data, contextual bias that renders the LMM
+inappropriate for a particular setting, or other potential errors or risks, such as
+inaccurate, false or toxic content published by an LMM, that are known to the
+deployer and can be avoided.
+• Deployers should communicate any risks that they should reasonably know could
+result from use of an LMM, as well as errors that have caused harm to users; such
+warnings should not be in fine print (or easy to miss). In some circumstances, a
+deployer may be responsible, even if not required by a law or regulation, to suspend
+use of or to remove the LMM or application from the market to avoid future harm.
+• Deployers should improve the affordability and accessibility of an LMM, by ensuring
+that pricing or subscription fees for use of an LMM are in line with the capability of
+a government or other user to pay, and should ensure that appropriate LMMs are
+trained and offered in languages and scripts that reach people who are otherwise
+ignored or excluded from the benefits of technology. Deployers should request
+providers and developers to ensure that current and future LMMs are developed with
+various languages.
+• Governments should facilitate the participation of health-care professionals and
+patients, in “human oversight colleges” to ensure that new LMMs and applications
+used in making clinical decision are used appropriately and do not undermine the
+rights of patients.
+• Ministries of health and universities (health science faculties) should train health-care
+professionals and clinicians: (i) to understand how LMMs make decisions (and the
+limits of understanding how such decisions are made), (ii) to identify and understand
+concerns about appropriate use, (iii) in methods to avoid automation bias, (iv) to
+engage with and educate patients who may be or are considering use of LMMs, and (v)
+on the cybersecurity risks associated with use of LMMs.
+• Governments, health service providers, health researchers and funders should
+engage the public so that they understand different forms of data-sharing and use,
+can comment on whether and how LMMs are socially and culturally acceptable and
+can fully express their concerns and expectations. Further, the literacy of the public
+in AI technology should be improved to enable them to identify acceptable uses and
+types of LMMs.
+• Governments that supply an LMM or application through a health system should
+ensure that their procurement authority fosters certain practices by developers,
+providers and deployers, including transparency.
+
+57
+
+

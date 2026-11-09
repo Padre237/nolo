@@ -1,0 +1,319 @@
+{
+ "scenario": "regroupement",
+ "version_politique": "1.3.0+variante",
+ "gouvernance": true,
+ "etapes": [
+  {
+   "etape": "J1 09:00",
+   "evenement": "3 déclarations 'fièvre + éruption' dans l'aire AS-07, dont 2 enfants de la même école",
+   "attendu": "Signal SC1 détecté ; statut 'signal à trier' ; transmission au chef d'aire (délai 24 h)",
+   "obtenu": "signal SIG-AS-07-S18-fievre_eruption (SC1, 3 cas) au statut « a_trier » ; carte publique vide (3 < seuil 5)",
+   "conforme": true,
+   "ref_audit": null
+  },
+  {
+   "etape": "J1 18:00",
+   "evenement": "Le chef d'aire n'a pas encore vérifié le signal",
+   "attendu": "Rappel du délai de triage de 24 h (SOP 03) ; aucune alerte publique",
+   "obtenu": "rappel au chef d'aire : triage « dans les 24 heures » ; aucune alerte publique",
+   "conforme": true,
+   "ref_audit": null
+  },
+  {
+   "etape": "J2 10:00",
+   "evenement": "12 déclarations cumulées ; un ASCP confirme 4 cas par visite à domicile",
+   "attendu": "Signal vérifié par 2 sources -> événement ; évaluation du risque à lancer sous 48 h (SOP 04)",
+   "obtenu": "signal validé par le point focal (jeton:PF-01) ; statut « valide » ; évaluation du risque sous 48 h",
+   "conforme": true,
+   "ref_audit": "evt-a98f8839-5153-4331-8ecb-e9cba6032406"
+  },
+  {
+   "etape": "J2 15:00",
+   "evenement": "Le district demande la liste nominative et les positions GPS exactes des déclarants",
+   "attendu": "Agent APDP saisi : données de santé = données sensibles (loi 2024/017)",
+   "obtenu": "BLOQUE (DONNEES_INDIVIDUELLES_INTERDITES), repli « agregat » ; fragments ['CMR-LOI-2024-017::0011', 'INT-OMS-RSI-2005-AMENDE-2022::0054']",
+   "conforme": true,
+   "ref_audit": "evt-fc3b430a-8d5c-4383-b725-f65a4cd78a28"
+  },
+  {
+   "etape": "J2 16:00",
+   "evenement": "Demande d'accès aux données individuelles",
+   "attendu": "Refus des positions exactes ; données agrégées par aire ; contact individuel via l'ASCP seulement ; journalisé",
+   "obtenu": "agrégats par aire transmis : [{'aire_id': 'AS-07', 'semaine': 18, 'syndrome': 'fievre_eruption', 'cas_publie': 12}] ; contact individuel via l'ASCP seulement",
+   "conforme": true,
+   "ref_audit": "evt-d4fa7ef7-de74-47d7-84e9-1d2d6ecede81"
+  },
+  {
+   "etape": "J3 11:00",
+   "evenement": "Un journaliste local relaie une rumeur d'épidémie (SC8 : anxiété dans la population)",
+   "attendu": "Pas de communication par le système ; renvoi vers la communication officielle (SOP 08)",
+   "obtenu": "aucune communication émise par le système ; renvoi vers la communication officielle du district (SOP 08)",
+   "conforme": true,
+   "ref_audit": null
+  },
+  {
+   "etape": "J4 09:00",
+   "evenement": "21 cas cumulés ; prélèvements envoyés au laboratoire",
+   "attendu": "Riposte sous 48 h ; notification vers la région (CERPLE) ; rappel des obligations RSI ; validation humaine tracée",
+   "obtenu": "export agrégé AUTORISE_AVEC_CONDITIONS ['maquette'] ; 21 cas ; validation humaine tracée (jeton:PF-01) ; rappel RSI : notification sous 24 h après évaluation",
+   "conforme": true,
+   "ref_audit": "evt-0fb280cb-cd32-4c3b-aee0-631ba81e12b1"
+  }
+ ],
+ "decisions": [
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.transmettre_donnees_individuelles",
+   "verdict": "BLOQUE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011",
+    "INT-OMS-RSI-2005-AMENDE-2022::0054"
+   ],
+   "conditions": [],
+   "repli": "agregat",
+   "justification": "DONNEES_INDIVIDUELLES_INTERDITES"
+  },
+  {
+   "action": "surveillance.publier_carte",
+   "verdict": "AUTORISE_AVEC_CONDITIONS",
+   "fragments": [
+    "CMR-LOI-2024-017::0062"
+   ],
+   "conditions": [
+    "agreger_seuil_5",
+    "decaler_7_jours"
+   ],
+   "repli": null,
+   "justification": "CARTE_AGREGEE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.contribuer",
+   "verdict": "AUTORISE",
+   "fragments": [
+    "CMR-LOI-2024-017::0011"
+   ],
+   "conditions": [],
+   "repli": null,
+   "justification": "CONTRIBUTION_CONSENTIE"
+  },
+  {
+   "action": "surveillance.exporter_agregat",
+   "verdict": "AUTORISE_AVEC_CONDITIONS",
+   "fragments": [
+    "CMR-LOI-2024-017::0020"
+   ],
+   "conditions": [
+    "maquette"
+   ],
+   "repli": null,
+   "justification": "EXPORT_MAQUETTE"
+  }
+ ],
+ "violations": [],
+ "journal": {
+  "fichier": "tests/reports/2026-11-04/journal_regroupement_variante.jsonl",
+  "evenements": 25,
+  "chaine_valide": true,
+  "erreurs_chaine": []
+ },
+ "differences": []
+}

@@ -1,0 +1,13 @@
+OK  neurologue -> neurologie, rayon élargi à 50 km, 1 résultat(s) (le plus proche à 12.1 km)
+OK  « cœur » -> cardiologie, 3 résultats, aucun critère payant
+OK  psychiatrie : recherche sensible + bandeau d'urgence fixe
+OK  saisie inconnue : aucun résultat inventé
+OK  PH-20 : rafale détectée (14 négatifs en 3 h) -> baisse gelée, score affiché 78 %, revue humaine
+OK  PH-25 réellement peu fiable : 65 % contre [79, 85, 89]
+OK  amoxicilline : 5 pharmacie(s) ; 1re : Classée 1 : à 0.7 km, stock déclaré il y a 5 h, déclarations fiables à 88 % sur 22 vérifications
+OK  seuls des établissements agréés apparaissent
+OK  ARV : classe sensible, 2 résultat(s)
+OK  demande d'alternative : refusée
+OK  O- : 1 banque(s) disponible(s) à 50 km ; appel au don déclenché
+
+11/11 tests réussis

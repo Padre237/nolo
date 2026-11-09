@@ -1,0 +1,50 @@
+iv
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+5
+
+6
+
+Provision with general-purpose foundation models (LMMs)......................45
+5.1
+
+Risks to be addressed when providing a health-care service or
+application with a general-purpose foundation model (LMM).............. 45
+
+5.2
+
+Measures that governments can introduce to address such risks
+and ethical principles that should be upheld......................................... 46
+
+Deployment with general-purpose foundation models (LMMs).................53
+6.1
+
+Risks to be addressed when deploying a health-care service or
+application with a general-purpose foundation model (LMM).............. 53
+
+6.2
+
+On-going responsibilities of developers and providers during
+deployment.............................................................................................. 54
+
+6.3
+
+Responsibilities of deployers................................................................... 54
+
+6.4
+
+Government programmes and practices................................................ 55
+
+7
+
+Liability for LMMs..........................................................................................58
+
+8
+
+International governance of LMMs...............................................................60
+
+References.............................................................................................................62
+Annex. Methods.....................................................................................................77
+
+

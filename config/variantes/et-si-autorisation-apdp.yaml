@@ -1,0 +1,6 @@
+# Simulation « et si » (FR-707, L12) : l'APDP est opérationnelle et l'autorisation de l'art. 19 est obtenue.
+description: "Et si l'autorisation APDP (art. 19) était obtenue ?"
+changements:
+  autorisation_prealable.traitement_donnees_personnelles.autorisation_apdp_obtenue: true
+  autorisation_prealable.traitement_donnees_personnelles.reference_autorisation: "APDP-SIM-0001"
+  etat_institutionnel.apdp_operationnelle: true

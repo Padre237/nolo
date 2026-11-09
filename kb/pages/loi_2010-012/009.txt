@@ -1,0 +1,42 @@
+9
+
+(2) L'Agence prévue à l'alinéa 1 ci-dessus, assure pour le compte de
+l’Etat, la régulation, le contrôle et le suivi des activités liées à la sécurité des
+systèmes d’information et des réseaux de communications électroniques, et à
+la certification électronique. A ce titre, elle a notamment pour missions :
+ d’instruire les demandes d’accréditation et de préparer les cahiers de
+charges des autorités de certification et de les soumettre à la signature
+du Ministre chargé des Télécommunications ;
+ de contrôler la conformité des signatures électroniques émises ;
+ de participer à l’élaboration de la politique nationale de sécurité des
+réseaux de communications électroniques et de certification ;
+ d’émettre un avis consultatif sur les textes touchant à son domaine de
+compétence ;
+ de contrôler les activités de sécurité des réseaux de communications
+électroniques, des systèmes d’information et de certification ;
+ d’instruire les demandes d’homologation des moyens de
+cryptographie et de délivrer les certificats d’homologation des
+équipements de sécurité ;
+ de préparer les conventions de reconnaissance mutuelle avec les parties
+étrangères et de les soumettre à la signature du Ministre chargé des
+Télécommunications ;
+ d’assurer la veille technologique et d'émettre des alertes et
+recommandations en matière de sécurité des réseaux de
+communications électroniques et de certification ;
+ de participer aux activités de recherche, de formation et d’études
+afférentes à la sécurité des réseaux de communications électroniques,
+des systèmes d’information et de certification ;
+ de s’assurer de la régularité, de l’effectivité des audits de sécurité des
+systèmes d’information suivant les normes en la matière, des
+organismes publics et des autorités de certification ;
+ d’assurer la surveillance, la détection et l’information aux risques
+informatiques et cybercriminels ;
+ d’exercer toute autre mission d’intérêt général que pourrait lui confier
+l’autorité de tutelle.
+(3) Un décret du Premier Ministre précise les modalités d’application
+des dispositions de l’alinéa 1 ci-dessus.
+Article 8.- (1) L’Agence est l’Autorité de Certification Racine.
+(2) L’Agence est l’autorité de certification de l’Administration
+Publique.
+
+

@@ -1,0 +1,24 @@
+Q01 [OK ] Conformité      -> CMR-LOI-2024-017 Article 69
+Q02 [OK ] Conformité      -> CMR-LOI-2024-017 Article 9
+Q03 [OK ] Orchestrateur   -> CMR-LOI-2024-017 Article 44
+Q04 [OK ] Conformité      -> CMR-LOI-2024-017 Article 33
+Q05 [OK ] Conformité      -> CMR-MINSANTE-PSNSN-2026-2030 5.5.1 AXE STRATEGIQUE 1 : LEADERSHIP
+Q06 [OK ] Ressources      -> CMR-LOI-90-035 Article 16
+Q07 [OK ] Conformité      -> CMR-LOI-2010-012 Article 29
+Q08 [OK ] Surveillance    -> CMR-MINSANTE-GUIDE-SBC-2023 1. Maladies prioritaires pour la SBC
+Q09 [OK ] District        -> CMR-MINSANTE-GUIDE-SBC-2023 I. Objectif
+Q10 [OK ] District        -> INT-OMS-RSI-2005-AMENDE-2022 Article 6
+Q11 [OK ] APDP            -> INT-UE-AI-ACT-2024-1689 Article 78 (partie 1/2)
+Q12 [OK ] Conformité      -> INT-UE-RGPD-2016-679 Article 22
+Q13 [OK ] Triage          -> INT-UE-AI-ACT-2024-1689 Annexe III (partie 2/4)
+Q14 [OK ] Journal d'audit -> INT-UE-AI-ACT-2024-1689 Article 12
+Q15 [OK ] Triage          -> INT-OMS-PCIME-MANUEL CHAPITRE 6
+Q16 [OK ] Conformité      -> INT-OMS-ETHIQUE-IA-SANTE-2021 7.2 Engagement and role of the public an
+Q17 [OK ] Conformité      -> CMR-LOI-2024-017 Article 48
+Q18 [OK ] Conformité      -> CMR-LOI-2024-017 Article 48
+Q19 [OK ] Conformité      -> CMR-LOI-2024-017 Article 19
+Q20 [OK ] Conformité      -> CMR-LOI-2010-012 Article 74
+Q21 [OK ] Triage          -> INT-OMS-IITT-FR 
+Q22 [OK ] Triage          -> INT-OMS-PCIME-MANUEL 15.1 COMMENT RECHERCHER L’INFECTION BACT
+
+Document attendu dans le top 5 : 22/22 ; référence exacte : 22/22 (embedding=bm25)

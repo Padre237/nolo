@@ -1,0 +1,29 @@
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+various, often unanticipated tasks (including those related to health care). Several generalpurpose foundation models are trained specifically for use in health care and medicine.
+Appropriate governance of LMMs used in health care and medicine should be defined at each
+stage of the value chain, from collection of data to deployment of applications in health care.
+Therefore, the three critical stages of the AI value chain discussed are:
+the design and development of general-purpose foundation models (design and
+development phase);
+• definition of a service, application or product with a general-purpose foundation
+model (provision phase); and
+• deployment of a health-care service application or service (deployment phase).
+At each stage of the AI value chain, the following questions are asked.
+• Which actor (the developer, the provider and/or the deployer) is best placed to
+address relevant risks? What risks should be addressed in the AI value chain?
+• How can the relevant actor(s) address such risks? What ethical principles must
+they uphold?
+• What is the role of a government in addressing risks? What laws, policies or
+investment might a government introduce or apply to require actors in the AI value
+chain to uphold specific ethical principles?
+During the design and development phase, the focus is on the practices that developers
+can introduce to uphold ethical commitments and norms and government policies and
+investments. During the provision phase, the focus is on the measures that governments
+can introduce to assess and regulate use of LMMs in health care and medicine. During the
+deployment phase, measures are used by governments and all actors in the value chain to
+ensure that any potential or actual harm to users is identified and avoided.
+
+33
+
+

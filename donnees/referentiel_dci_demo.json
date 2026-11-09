@@ -1,0 +1,52 @@
+{
+  "version": "0.1.0-demo",
+  "avertissement": "Référentiel de démonstration (D-015 : table fictive). Les noms commerciaux sont inventés. La liste des produits exclus au titre de l'art. 75 de la loi 90/035 et celle des classes sensibles (art. 48 de la loi 2024/017) sont des propositions à valider par le juriste et un pharmacien.",
+  "dci": [
+    {"code": "paracetamol", "fr": "Paracétamol", "en": "Paracetamol"},
+    {"code": "ibuprofene", "fr": "Ibuprofène", "en": "Ibuprofen"},
+    {"code": "diclofenac", "fr": "Diclofénac", "en": "Diclofenac"},
+    {"code": "amoxicilline", "fr": "Amoxicilline", "en": "Amoxicillin"},
+    {"code": "amoxicilline_acide_clavulanique", "fr": "Amoxicilline + acide clavulanique", "en": "Amoxicillin + clavulanic acid"},
+    {"code": "ceftriaxone", "fr": "Ceftriaxone", "en": "Ceftriaxone"},
+    {"code": "ciprofloxacine", "fr": "Ciprofloxacine", "en": "Ciprofloxacin"},
+    {"code": "cotrimoxazole", "fr": "Cotrimoxazole", "en": "Co-trimoxazole"},
+    {"code": "metronidazole", "fr": "Métronidazole", "en": "Metronidazole"},
+    {"code": "artemether_lumefantrine", "fr": "Artéméther + luméfantrine", "en": "Artemether + lumefantrine"},
+    {"code": "artesunate", "fr": "Artésunate", "en": "Artesunate"},
+    {"code": "quinine", "fr": "Quinine", "en": "Quinine"},
+    {"code": "sro", "fr": "Sels de réhydratation orale", "en": "Oral rehydration salts"},
+    {"code": "zinc", "fr": "Sulfate de zinc", "en": "Zinc sulfate"},
+    {"code": "fer_acide_folique", "fr": "Fer + acide folique", "en": "Iron + folic acid"},
+    {"code": "albendazole", "fr": "Albendazole", "en": "Albendazole"},
+    {"code": "mebendazole", "fr": "Mébendazole", "en": "Mebendazole"},
+    {"code": "fluconazole", "fr": "Fluconazole", "en": "Fluconazole"},
+    {"code": "omeprazole", "fr": "Oméprazole", "en": "Omeprazole"},
+    {"code": "metformine", "fr": "Metformine", "en": "Metformin"},
+    {"code": "glibenclamide", "fr": "Glibenclamide", "en": "Glibenclamide"},
+    {"code": "insuline_humaine", "fr": "Insuline humaine", "en": "Human insulin"},
+    {"code": "amlodipine", "fr": "Amlodipine", "en": "Amlodipine"},
+    {"code": "hydrochlorothiazide", "fr": "Hydrochlorothiazide", "en": "Hydrochlorothiazide"},
+    {"code": "furosemide", "fr": "Furosémide", "en": "Furosemide"},
+    {"code": "salbutamol", "fr": "Salbutamol", "en": "Salbutamol"},
+    {"code": "prednisolone", "fr": "Prednisolone", "en": "Prednisolone"},
+    {"code": "loratadine", "fr": "Loratadine", "en": "Loratadine"},
+    {"code": "diazepam", "fr": "Diazépam", "en": "Diazepam"},
+    {"code": "oxytocine", "fr": "Ocytocine", "en": "Oxytocin"},
+    {"code": "tenofovir_lamivudine_dolutegravir", "fr": "Ténofovir + lamivudine + dolutégravir", "en": "Tenofovir + lamivudine + dolutegravir", "sensible": true},
+    {"code": "levonorgestrel", "fr": "Lévonorgestrel", "en": "Levonorgestrel", "sensible": true},
+    {"code": "medroxyprogesterone", "fr": "Médroxyprogestérone injectable", "en": "Injectable medroxyprogesterone", "sensible": true},
+    {"code": "ethinylestradiol_levonorgestrel", "fr": "Éthinylestradiol + lévonorgestrel", "en": "Ethinylestradiol + levonorgestrel", "sensible": true}
+  ],
+  "exclus_art75": [
+    {"code": "mifepristone", "fr": "Mifépristone", "en": "Mifepristone"},
+    {"code": "misoprostol", "fr": "Misoprostol", "en": "Misoprostol", "note": "À valider : le misoprostol a aussi d'autres indications (hémorragie du post-partum)."}
+  ],
+  "noms_commerciaux_fictifs": {
+    "paraxon demo": "paracetamol",
+    "amoxidemo": "amoxicilline",
+    "palustop demo": "artemether_lumefantrine",
+    "ibudemo": "ibuprofene"
+  },
+  "formes": ["comprime", "gelule", "sirop", "suspension", "injectable", "pommade", "suppositoire", "sachet", "autre"],
+  "niveaux": ["disponible", "faible", "rupture"]
+}

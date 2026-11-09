@@ -1,0 +1,42 @@
+xiv
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+Provision with general-purpose foundation models (LMMs)
+During provision of a service or application, governments are responsible for defining the
+requirements and obligations of both developers and providers to address specific risks
+associated with AI-based systems to be used in health-care settings. Section 5 of this report
+provides recommendations to address risks and maximize benefits during provision of
+services and applications for health care with LMMs.
+
+Deployment with general-purpose foundation models (LMMs)
+Even if relevant laws, policies and ethical practices are applied during development and
+provision of an LMM, risks will materialize during their use due partly to the unpredictability
+of LMMs and the responses they provide, the possibility that a user applies a general-purpose
+foundation model in a way that neither the developer nor the provider had anticipated,
+and because LMM outputs may change over time. Section 6 of this report provides
+recommendations with respect to risks and challenges that should be addressed during use of
+LMMs and applications.
+
+Liability for LMMs
+As LMMs gain broader use in health care and medicine, errors, misuse and ultimately harm
+to individuals are inevitable. Therefore, liability rules might ensure that users harmed by
+an LMM are adequately compensated or have other forms of redress to both reduce the
+burden of proof by a user who is harmed, ensuring that such individuals are adequately and
+fairly compensated.
+Governments can do so by introducing a presumption of causality. They might also consider
+introducing a strict liability standard for any harm that results from deployment of an LMM.
+Although strict liability rules may ensure compensation for those who suffer harm, they may
+also discourage use of increasingly sophisticated LMMs. Governments might also consider
+no-fault, no-liability compensation funds.
+
+International governance of LMMs
+Governments must work together to build new institutional structures and rules to ensure
+that international governance keeps pace with globalization of these technologies. They
+should also ensure stronger cooperation and collaboration within the United Nations system
+to respond to the opportunities and challenges for deploying AI in health care, as well as its
+wider applications in society and the economy.
+International governance is necessary to ensure that all governments are accountable for
+their investments and participation in the development and deployment of AI-based systems
+
+

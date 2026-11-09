@@ -1,0 +1,45 @@
+20
+
+(2) Sous réserve des règles de réciprocité entre le Cameroun et les
+pays étrangers liés par un accord de coopération judiciaire, les commissions
+rogatoires sont exécutées conformément aux dispositions du Code de Procédure
+Pénale.
+Article 58.- (1) Les personnes physiques ou morales qui fournissent des
+prestations de cryptographie visant à assurer une fonction de confidentialité,
+sont tenues de remettre aux Officiers de Police Judiciaire ou aux agents habilités
+de l’Agence, sur leur demande, les conventions permettant le déchiffrement des
+données transformées au moyen des prestations qu'elles ont fournies.
+(2) Les Officiers de Police Judiciaire et agents habilités de l’Agence
+peuvent demander aux fournisseurs des prestations visés à l’alinéa 1 ci-dessus
+de mettre eux-mêmes en œuvre ces conventions, sauf si ceux-ci démontrent
+qu'ils ne sont pas en mesure de satisfaire à de telles réquisitions.
+Article 59.- (1) Lorsque les nécessités de l'enquête ou de l'instruction le
+justifient, l'audition ou l'interrogatoire d'une personne et/ou la confrontation
+entre plusieurs personnes, peuvent être effectuées en plusieurs points du
+territoire national se trouvant reliés par des moyens de communications
+électroniques garantissant la confidentialité de la transmission. Il est dressé,
+dans chacun des lieux, un Procès-verbal des opérations qui y ont été
+effectuées. Ces opérations peuvent faire l’objet d’enregistrement audiovisuel
+et/ou sonore.
+(2) Lorsque les circonstances l’exigent, l’interprétation peut être
+faite au cours d’une audition, d’un interrogatoire ou d’une confrontation par des
+moyens de communications électroniques.
+(3) Les dispositions du présent article sont également applicables
+pour l'exécution simultanée, sur un point du territoire national et sur un point
+situé à l'extérieur, des demandes d'entraide émanant des autorités judiciaires
+étrangères ou des actes d'entraide réalisés à l'étranger sur demande des
+autorités judiciaires camerounaises.
+(4) Les modalités d'application du présent article sont définies par
+voie réglementaire.
+CHAPITRE II
+DES INFRACTIONS ET DES SANCTIONS
+
+Article 60.- (1) Lorsqu'une autorité de certification ne respecte pas les
+obligations auxquelles elle est assujettie, l’Agence peut, après avoir mis la
+structure en demeure de présenter ses observations, prononcer l'interdiction de
+mise en circulation du moyen de cryptographie concerné.
+(2) L'interdiction de mise en circulation est applicable sur
+l'ensemble du territoire national. Elle emporte en outre pour le fournisseur,
+l'obligation de procéder au retrait des :
+
+

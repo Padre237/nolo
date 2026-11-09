@@ -1,0 +1,46 @@
+2 Applications and challenges of use of LMMs in health
+
+Box 2. Ethical considerations for the use of LMMs by children
+While broad guidance has recently been published for safe, ethical use of paediatric data
+in AI and machine learning (ACCEPT-AI) (43), special consideration must be given to the
+potential impacts of use of LMMs by children.
+The wide availability of open LMMs provides access by users of various ages. There is,
+however, limited evidence on how children engage with or use LMMs. While the potential
+opportunities and drawbacks of LMM use have been discussed in wider educational
+contexts (44), it is unclear how such engagement by children affects their mental or
+physical well-being. Their use of LMMs must be monitored over time to understand the
+benefits and potential harms.
+Laws and policies on paediatric consent, assent and stipulations for legal parental
+involvement differ among and within countries. Thus, lack of cohesive, unified, global,
+child-specific regulation and oversight could result in unidentified, unmonitored harm,
+especially from use of LMMs.
+Specifically, it is not clear how accurately LMMs generalize paediatric health. Studies
+have shown that generalization of adult data sets to the paediatric population may
+be limited. Paediatric data should therefore be kept separate in testing and training
+datasets (45).
+Developers should include demographic information on training data that includes age
+and must be encouraged to provide clear descriptors of target populations, including
+age ranges, for appropriate, safe engagement with LMMs, as relevant. When legally
+possible, LMMs should be improved by including appropriate engagement and feedback
+from young users.
+
+One technology company states on the system card for its LMM (GPT-4): “We found
+that GPT-4-early and GPT-4-launch exhibit many of the same limitations as earlier
+language models, such as producing biased and unreliable content” (37). LMMs can be
+limited by the end date of data with which the algorithm was trained, although some
+LMMs can now access up-to-date information from the Internet. For example, Chat
+GPT-4 was trained on data up to September 2021 (38) but can now search or browse
+the Internet for up-to-date information (39). This could, however, lead to generation
+of more false or inaccurate information. The previous “end-date” prevented
+introduction of false newly published material (39). In medicine, both up-to-date and
+highly accurate information is critical for meeting standards of care as well as for
+understanding certain diseases.
+• Automation bias: Concern that LMMs generate false, inaccurate or biased responses
+is heightened by the fact that, as with other forms of AI, LMMs are likely to encourage
+automation bias in experts and health-care professionals (and patients, see below).
+In automation bias, a clinician may overlook errors that should have been spotted
+by a human (1). There is also concern that physicians and health-care workers
+
+11
+
+

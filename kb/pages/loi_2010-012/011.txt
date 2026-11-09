@@ -1,0 +1,44 @@
+11
+
+CHAPITRE V
+DE LA CERTIFICATION ELECTRONIQUE
+
+Article 15.- (1) Les certificats électroniques qualifiés ne sont valables que pour
+les objets pour lesquels ils ont été émis.
+(2) Les dispositifs de création et de vérification des certificats
+qualifiés sont du point de vue technologique neutres, normalisés, homologués
+et interopérables.
+Article 16.- (1) Les autorités de certification sont responsables du préjudice causé
+aux personnes qui se sont fiées aux certificats présentés par elles comme
+qualifiés dans chacun des cas suivants :
+ les informations contenues dans le certificat, à la date de sa délivrance,
+étaient inexactes ;
+ les données prescrites pour que le certificat puisse être regardé comme
+qualifié étaient incomplètes ;
+ la délivrance du certificat qualifié n'a pas donné lieu à la vérification que
+le signataire détient la convention privée correspondant à la convention
+publique de ce certificat ;
+ les autorités de certification et les prestataires de certification n'ont
+pas, le cas échéant, fait procéder à l'enregistrement de la révocation du
+certificat qualifié et tenu cette information à la disposition des tiers.
+(2) Les autorités de certification ne sont pas responsables du
+préjudice causé par un usage du certificat qualifié dépassant les limites fixées
+à son utilisation ou à la valeur des transactions pour lesquelles il peut être
+utilisé, à condition que ces limites figurent dans le certificat qualifié et soient
+accessibles aux utilisateurs.
+(3) Les autorités de certification doivent justifier d'une garantie
+financière suffisante, spécialement affectée au paiement des sommes qu'elles
+pourraient devoir aux personnes s'étant fiées raisonnablement aux certificats
+qualifiés qu'elles délivrent, ou d'une assurance garantissant les conséquences
+pécuniaires de leur responsabilité civile professionnelle.
+CHAPITRE VI
+DE LA SIGNATURE ELECTRONIQUE
+
+Article 17.- La signature électronique avancée a la même valeur juridique que
+la signature manuscrite et produit les mêmes effets que cette dernière.
+Article 18.- Une signature électronique avancée doit remplir les conditions ciaprès:
+ les données afférentes à la création de la signature sont liées
+exclusivement au signataire et sont sous son contrôle exclusif ;
+ toute modification à elle apportée, est facilement décelable ;
+
+

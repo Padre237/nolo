@@ -1,0 +1,58 @@
+4.5.2016
+
+FR
+
+Journal officiel de l'Union européenne
+
+L 119/37
+
+traitement, y compris les mesures visant à garantir un traitement licite et loyal, telles que celles prévues dans d'autres
+situations particulières de traitement comme le prévoit le chapitre IX. Le droit de l'Union ou le droit des États membres
+répond à un objectif d'intérêt public et est proportionné à l'objectif légitime poursuivi.
+4.
+Lorsque le traitement à une fin autre que celle pour laquelle les données ont été collectées n'est pas fondé sur le
+consentement de la personne concernée ou sur le droit de l'Union ou le droit d'un État membre qui constitue une
+mesure nécessaire et proportionnée dans une société démocratique pour garantir les objectifs visés à l'article 23,
+paragraphe 1, le responsable du traitement, afin de déterminer si le traitement à une autre fin est compatible avec la
+finalité pour laquelle les données à caractère personnel ont été initialement collectées, tient compte, entre autres:
+a) de l'existence éventuelle d'un lien entre les finalités pour lesquelles les données à caractère personnel ont été collectées
+et les finalités du traitement ultérieur envisagé;
+b) du contexte dans lequel les données à caractère personnel ont été collectées, en particulier en ce qui concerne la
+relation entre les personnes concernées et le responsable du traitement;
+c) de la nature des données à caractère personnel, en particulier si le traitement porte sur des catégories particulières de
+données à caractère personnel, en vertu de l'article 9, ou si des données à caractère personnel relatives à des condam­
+nations pénales et à des infractions sont traitées, en vertu de l'article 10;
+d) des conséquences possibles du traitement ultérieur envisagé pour les personnes concernées;
+e) de l'existence de garanties appropriées, qui peuvent comprendre le chiffrement ou la pseudonymisation.
+
+Article 7
+Conditions applicables au consentement
+1.
+Dans les cas où le traitement repose sur le consentement, le responsable du traitement est en mesure de démontrer
+que la personne concernée a donné son consentement au traitement de données à caractère personnel la concernant.
+2.
+Si le consentement de la personne concernée est donné dans le cadre d'une déclaration écrite qui concerne
+également d'autres questions, la demande de consentement est présentée sous une forme qui la distingue clairement de
+ces autres questions, sous une forme compréhensible et aisément accessible, et formulée en des termes clairs et simples.
+Aucune partie de cette déclaration qui constitue une violation du présent règlement n'est contraignante.
+3.
+La personne concernée a le droit de retirer son consentement à tout moment. Le retrait du consentement ne
+compromet pas la licéité du traitement fondé sur le consentement effectué avant ce retrait. La personne concernée en est
+informée avant de donner son consentement. Il est aussi simple de retirer que de donner son consentement.
+4.
+Au moment de déterminer si le consentement est donné librement, il y a lieu de tenir le plus grand compte de la
+question de savoir, entre autres, si l'exécution d'un contrat, y compris la fourniture d'un service, est subordonnée au
+consentement au traitement de données à caractère personnel qui n'est pas nécessaire à l'exécution dudit contrat.
+
+Article 8
+Conditions applicables au consentement des enfants en ce qui concerne les services de la société
+de l'information
+1.
+Lorsque l'article 6, paragraphe 1, point a), s'applique, en ce qui concerne l'offre directe de services de la société de
+l'information aux enfants, le traitement des données à caractère personnel relatives à un enfant est licite lorsque l'enfant
+est âgé d'au moins 16 ans. Lorsque l'enfant est âgé de moins de 16 ans, ce traitement n'est licite que si, et dans la
+mesure où, le consentement est donné ou autorisé par le titulaire de la responsabilité parentale à l'égard de l'enfant.
+Les États membres peuvent prévoir par la loi un âge inférieur pour ces finalités pour autant que cet âge inférieur ne soit
+pas en-dessous de 13 ans.
+
+

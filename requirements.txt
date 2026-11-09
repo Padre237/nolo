@@ -1,0 +1,15 @@
+# Python 3 (testé en 3.13). Les minimums sont les versions de l'environnement de vérification du 2026-11-09 ;
+# des versions plus anciennes n'ont pas été testées.
+PyYAML>=6.0.3
+pytest>=9.1
+starlette>=1.7
+uvicorn>=0.54
+Pillow>=12.3
+openpyxl>=3.1.5
+
+# Facultatif : inspection visuelle (tools/inspecter.py), avec Chrome installé
+# playwright>=1.63
+
+# Facultatif, poste de l'équipe : recherche par embeddings (kb/ingest_chroma.py)
+# chromadb
+# ollama

@@ -1,0 +1,58 @@
+70
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+92.
+
+Lomas N. ChatGPT maker OpenAI accused of string of data protection breaches in GDPR
+complaint filed by privacy researcher. TechCrunch, 30 August 2023. (https://consent.
+yahoo.com/v2/collectConsent?sessionId=3_cc-session_6bdecae4-d7b6-448f-8e26e7805c03b964, accessed 11 September 2023).
+
+93.
+
+Fung B. The FTC should investigate Open AI and block GPT over “deceptive” behaviour,
+AI policy group claims. CNN, 30 March 2023. (https://edition.cnn.com/2023/03/30/tech/
+ftc-openai-gpt-ai-think-tank/index.html, accessed 2 June 2023).
+
+94.
+
+Waters R, Murgia M, Espinoza J. Open AI warns over split with Europe as AI regulation
+advances. Financial Times, 25 May 2023 (https://www.ft.com/content/5814b408-811149a9-8885-8a8434022352, accessed 1 June 2023).
+
+95.
+
+Technology-facilitated gender-based violence: Making all spaces safe. New York: United
+Nations Population Fund; 2021 (https://www.unfpa.org/publications/technologyfacilitated-gender-based-violence-making-all-spaces-safe, accessed 1 October 2023).
+
+96.
+
+Murgia M. DeepMind reinvents itself for AI counterattack. Financial Times, 2 May 2023
+(https://ft.pressreader.com/v99c/20230502/281724093873699, accessed 2 June 2023).
+
+97.
+
+Schaake M. Regulating AI will put companies and governments at loggerheads, Financial
+Times, 2 May 2023 (https://www.ft.com/content/7ef4811d-79bb-4b4f-b28f-b46430f0c9ff,
+accessed 2 June 2023).
+
+98.
+
+Metz, Cade. Tech giants are paying huge salaries for scarce A.I. talent, The New York
+Times, 22 October 2017 (https://www.nytimes.com/2017/10/22/technology/artificialintelligence-experts-salaries.html).
+
+99.
+
+Leswing K. Google reveals its newest AI supercomputer, says it beats Nvidia. CNBC,
+5 April 2023. (https://www.cnbc.com/2023/04/05/google-reveals-its-newest-aisupercomputer-claims-it-beats-nvidia-.html, accessed 2 June 2023)
+
+100. Ahuja K. Antitrust has role in policing AI landscape. Financial Times, 10 April 2023
+(https://www.ft.com/content/953817f5-5bc4-49e1-b583-977cc4780eca, accessed 2
+June 2023).
+101. Ahmed N, Wahed M, Thompson NC. The growing influence of industry in AI research.
+Science. 2023;379(6635):884–6. doi:10.1126/science.ade2420.
+102. Røttingen JA, Regmi S, Eide M, Young AJ, Viergever RF, Ardal C et al.
+Mapping of available health research and development data: What’s there,
+what’s missing, and what role is there for a global observatory? Lancet.
+2013;382(9900):1286–307. doi:10.1016/S0140-6736(13)61046-6.
+
+

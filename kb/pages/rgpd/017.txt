@@ -1,0 +1,83 @@
+4.5.2016
+
+FR
+
+Journal officiel de l'Union européenne
+
+L 119/17
+
+protégées par le secret professionnel ou tout autre dommage économique ou social important. En conséquence,
+dès que le responsable du traitement apprend qu'une violation de données à caractère personnel s'est produite, il
+convient qu'il le notifie à l'autorité de contrôle dans les meilleurs délais et, lorsque c'est possible, 72 heures au
+plus tard après en avoir pris connaissance, à moins qu'il ne puisse démontrer, conformément au principe de
+responsabilité, qu'il est peu probable que la violation en question engendre un risque pour les droits et libertés
+des personnes physiques. Si une telle notification ne peut avoir lieu dans ce délai de 72 heures, la notification
+devrait être assortie des motifs du retard et des informations peuvent être fournies de manière échelonnée sans
+autre retard indu.
+(86)
+
+Le responsable du traitement devrait communiquer une violation de données à caractère personnel à la personne
+concernée dans les meilleurs délais lorsque cette violation est susceptible d'engendrer un risque élevé pour les
+droits et libertés de la personne physique afin qu'elle puisse prendre les précautions qui s'imposent. La communi­
+cation devrait décrire la nature de la violation des données à caractère personnel et formuler des recomman­
+dations à la personne physique concernée pour atténuer les effets négatifs potentiels. Il convient que de telles
+communications aux personnes concernées soient effectuées aussi rapidement qu'il est raisonnablement possible
+et en coopération étroite avec l'autorité de contrôle, dans le respect des directives données par celle-ci ou par
+d'autres autorités compétentes, telles que les autorités répressives. Par exemple, la nécessité d'atténuer un risque
+immédiat de dommage pourrait justifier d'adresser rapidement une communication aux personnes concernées,
+alors que la nécessité de mettre en œuvre des mesures appropriées empêchant la poursuite de la violation des
+données à caractère personnel ou la survenance de violations similaires peut justifier un délai plus long pour la
+communication.
+
+(87)
+
+Il convient de vérifier si toutes les mesures de protection techniques et organisationnelles appropriées ont été
+mises en œuvre pour établir immédiatement si une violation des données à caractère personnel s'est produite et
+pour informer rapidement l'autorité de contrôle et la personne concernée. Il convient d'établir que la notification
+a été faite dans les meilleurs délais, compte tenu en particulier de la nature et de la gravité de la violation des
+données à caractère personnel et de ses conséquences et effets négatifs pour la personne concernée. Une telle
+notification peut amener une autorité de contrôle à intervenir conformément à ses missions et à ses pouvoirs
+fixés par le présent règlement.
+
+(88)
+
+Lors de la fixation de règles détaillées concernant la forme et les procédures applicables à la notification des
+violations de données à caractère personnel, il convient de tenir dûment compte des circonstances de cette
+violation, y compris du fait que les données à caractère personnel étaient ou non protégées par des mesures de
+protection techniques appropriées, limitant efficacement la probabilité d'usurpation d'identité ou d'autres formes
+d'abus. Par ailleurs, ces règles et procédures devraient tenir compte des intérêts légitimes des autorités répressives
+lorsqu'une divulgation prématurée risquerait d'entraver inutilement l'enquête sur les circonstances de la violation
+des données à caractère personnel.
+
+(89)
+
+La directive 95/46/CE prévoyait une obligation générale de notifier les traitements de données à caractère
+personnel aux autorités de contrôle. Or, cette obligation génère une charge administrative et financière, sans pour
+autant avoir systématiquement contribué à améliorer la protection des données à caractère personnel. Ces
+obligations générales de notification sans distinction devraient dès lors être supprimées et remplacées par des
+procédures et des mécanismes efficaces ciblant plutôt les types d'opérations de traitement susceptibles d'engendrer
+un risque élevé pour les droits et libertés des personnes physiques, du fait de leur nature, de leur portée, de leur
+contexte et de leurs finalités. Ces types d'opérations de traitement peuvent inclure ceux qui, notamment,
+impliquent le recours à de nouvelles technologies ou qui sont nouveaux et pour lesquels aucune analyse d'impact
+relative à la protection des données n'a été effectuée au préalable par le responsable du traitement, ou qui
+deviennent nécessaires compte tenu du temps écoulé depuis le traitement initial.
+
+(90)
+
+Dans de tels cas, une analyse d'impact relative à la protection des données devrait être effectuée par le
+responsable du traitement, préalablement au traitement, en vue d'évaluer la probabilité et la gravité particulières
+du risque élevé, compte tenu de la nature, de la portée, du contexte et des finalités du traitement et des sources
+du risque. Cette analyse d'impact devrait comprendre, notamment, les mesures, garanties et mécanismes envisagés
+pour atténuer ce risque, assurer la protection des données à caractère personnel et démontrer le respect du
+présent règlement.
+
+(91)
+
+Cela devrait s'appliquer en particulier aux opérations de traitement à grande échelle qui visent à traiter un volume
+considérable de données à caractère personnel au niveau régional, national ou supranational, qui peuvent affecter
+un nombre important de personnes concernées et qui sont susceptibles d'engendrer un risque élevé, par exemple,
+en raison de leur caractère sensible, lorsque, en conformité avec l'état des connaissances technologiques, une
+nouvelle technique est appliquée à grande échelle, ainsi qu'à d'autres opérations de traitement qui engendrent un
+risque élevé pour les droits et libertés des personnes concernées, en particulier lorsque, du fait de ces opérations,
+
+

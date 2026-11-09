@@ -1,0 +1,59 @@
+OUTIL DE TRIAGE INTÉGRÉ INTER-AGENCES : ÂGE < 12 ANS
+ÉTAPE 1 : CHERCHER DES CRITÈRES ROUGES
+• Ne réagit pas
+A&B : VOIES AÉRIENNES ET RESPIRATION
+• Stridor
+• Détresse respiratoire* ou cyanose centrale
+C : CIRCULATION
+• Temps de recoloration capillaire > 3 s
+• Pouls faible et rapide
+• Saignements abondants
+• Extrémités froides
+• 2 des signes suivants : léthargie ; yeux creusés ; pli cutané qui s'efface très lentement ; boit peu
+D : ÉTAT NEUROLOGIQUE
+• Convulsions actives
+• État de conscience altéré (confusion, agitation, irritabilité permanente ou léthargie) avec raideur de la nuque, hypothermie ou fièvre
+• Hypoglycémie (si connue)
+AUTRE
+• Nourrisson < 8 jours
+• Âge < 2 mois et temp. < 36 °C ou > 39 °C
+• Traumatisme à haut risque*
+• Risque d'amputation*
+• Douleur testiculaire/scrotale aiguë ou priapisme
+• Morsure de serpent
+• Empoisonnement/ingestion ou exposition à des substances chimiques dangereuses*
+• Grossesse + critères rouges chez l'adulte
+Si OUI : TRANSFERT IMMÉDIAT EN ZONE DE DÉCHOCAGE. Si NON : étape 2.
+ÉTAPE 2 : CHERCHER DES CRITÈRES JAUNES
+A&B : VOIES AÉRIENNES ET RESPIRATION
+• Tout gonflement/masse de la bouche, la gorge ou le cou
+• Sifflement (sans critères rouges)
+C : CIRCULATION
+• Incapacité à boire ou se nourrir
+• Vomit tout
+• Diarrhée continue
+• Déshydratation
+• Pâleur sévère (sans critères rouges)
+D : ÉTAT NEUROLOGIQUE
+• Agitation, irritabilité permanente ou léthargie
+• Douleur sévère
+AUTRE
+• Tout nourrisson âgé de 8 jours à 6 mois
+• Malnutrition avec fonte musculaire sévère visible OU œdème aux deux pieds
+• Traumatisme/brûlures (sans critères rouges)
+• Agression sexuelle
+• Diagnostic connu nécessitant une intervention chirurgicale d'urgence
+• Nouvelle éruption cutanée qui s'aggrave au fil des heures ou desquamation (sans critères rouges)
+• Exposition nécessitant une prophylaxie d'urgence (ex. morsure d'animal)
+• Grossesse (sans critères rouges)
+• Maux de tête (sans critères rouges)
+Si OUI : TRANSFERT EN ZONE DE TRAITEMENT. Si NON : étape 3.
+ÉTAPE 3 : CHERCHER DES CRITÈRES VITAUX À HAUT RISQUE
+• Temp < 36° ou > 39°
+• SpO2 < 92 %
+• AVPU autre que A
+• FR élevée : < 1 an 50 ; 1-4 ans 40 ; 5-12 ans 30. FR faible : < 1 an 25 ; 1-4 ans 20 ; 5-12 ans 10
+• FC élevée : < 1 an 180 ; 1-4 ans 160 ; 5-12 ans 140. FC faible : < 1 an < 90 ; 1-4 ans < 80 ; 5-12 ans < 70
+Si OUI : les patients présentant un trouble clinique ou des signes vitaux à haut risque nécessitent un examen immédiat par le médecin superviseur ou d'être sur-triés en jaune ou en rouge. Si NON : TRANSFERT EN ZONE DE SOINS AMBULATOIRES, OU EN ZONE D'ATTENTE.
+* Cf. carte de référence.
+Développé par l'Organisation Mondiale de la Santé, le Comité International de la Croix-Rouge, Médecins Sans Frontières.

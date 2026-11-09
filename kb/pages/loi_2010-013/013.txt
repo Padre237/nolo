@@ -1,0 +1,46 @@
+13
+
+(4) Le titulaire d’une licence peut fournir au public les services
+à valeur ajoutée liés à sa licence, selon les modalités définies par voie
+réglementaire.
+Article 11.- Le titulaire de la licence est assujetti au paiement de
+redevances et contributions dont les modalités sont précisées par la
+réglementation en vigueur ainsi que dans les cahiers de charges.
+Article 12.- En raison de contraintes techniques inhérentes à la disponibilité
+des fréquences, l’Administration chargée des Télécommunications peut
+soumettre la délivrance d’une licence en vue de l’établissement et/ou de
+l’exploitation d’un réseau radioélectrique de communications électroniques
+ouvert au public à une procédure d’appel à concurrence.
+Article 13.- Les activités en matière de communications électroniques
+menées sur le territoire national par les institutions étrangères et les
+organismes jouissant de la personnalité de droit international, s’exercent
+conformément aux accords signés et ratifiés par la République du
+Cameroun. Ces activités sont soumises à l’obtention d’une licence,
+conformément à la présente loi, sauf stipulation contraire desdits accords.
+SECTION III
+DE L’AGREMENT
+
+Article 14.- (1) Sont soumis à l’obtention d’un agrément :
+- l’activité d’installateur des équipements et infrastructures des
+communications électroniques ;
+- les laboratoires d’essai et mesures des équipements des
+communications électroniques ;
+- l’homologation des équipements terminaux qui sont destinés à être
+raccordés à un réseau public de communications électroniques ;
+- les installations radioélectriques.
+(2) Les modalités d’obtention de l’agrément sont fixées par
+voie réglementaire.
+CHAPITRE II
+DU REGIME DE LA DECLARATION
+
+Article 15.- (1) Sont soumis à une déclaration préalable contre
+récépissé, les activités suivantes :
+-
+
+la fourniture au public de services à valeur ajoutée ;
+la fourniture au public du service Internet ;
+la revente du trafic téléphonique ;
+tout service de communications électroniques à partir des terminaux
+de systèmes globaux de communication par satellite (GMPCS) ;
+
+

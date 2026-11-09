@@ -1,0 +1,36 @@
+03/11/2026 11:03
+
+SNOMED International Documents
+
+• treating each SNOMED CT identifier as an opaque, standalone code
+• avoiding assumptions about relationships between concepts
+• not inferring broader, narrower, or related meanings
+• storing the GPS release version alongside stored identifiers
+Where systems operate in both licensed and unlicensed environments, GPS-based
+functionality should be clearly separated from functionality that relies on the full SNOMED
+CT release.
+This separation supports:
+
+• licensing compliance
+• predictable system behaviour
+• clear communication of system capabilities
+Operational Considerations
+Operational use of the GPS should take the following into account:
+
+Version Management
+Systems should track which GPS release is in use, particularly when storing data longterm.
+
+Handling Inactive Concepts
+Concepts may become inactive between GPS releases. Systems should define local
+policies for the display and handling of inactive identifiers.
+
+Coexistence with Local Codes
+GPS identifiers may coexist with local codes or classifications to support continuity of care
+and local workflows.
+Provide Feedback
+
+https://docs.snomed.org/implementation-guides/gps-implementation-guide/~gitbook/pdf?page=VZvwP1TLt1zd74otfVUl&only=yes&limi…
+
+3/11
+
+

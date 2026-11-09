@@ -1,0 +1,39 @@
+03/11/2026 11:03
+
+SNOMED International Documents
+
+Supported Terminology Server Capabilities
+When configured with GPS-derived content, a FHIR terminology server may support a
+limited set of operations that rely solely on identifiers and human-readable terms,
+including:
+
+•
+•
+•
+
+$lookup for SNOMED CT concept identifiers
+$validate-code to confirm identifier validity and active status
+$expand for value sets uploaded by the user
+
+Responses are limited to concept identifiers and associated term information and must
+not include semantic relationships, hierarchies, or inferred data.
+
+Capabilities Not Supported Using the GPS
+A FHIR terminology server configured with the GPS must not support terminology services
+that require access to SNOMED CT semantics.
+This includes, but is not limited to:
+
+• subsumption testing
+• hierarchical navigation or expansion
+• $expand operations based on SNOMED CT hierarchies
+• use of Expression Constraint Language (ECL)
+• semantic value set expansion
+• reasoning or inference
+All such capabilities require licensed access to the full SNOMED CT release.
+Provide Feedback
+
+https://docs.snomed.org/implementation-guides/gps-implementation-guide/~gitbook/pdf?page=VZvwP1TLt1zd74otfVUl&only=yes&li…
+
+11/11
+
+

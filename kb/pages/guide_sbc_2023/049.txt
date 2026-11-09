@@ -1,0 +1,54 @@
+•  Points focaux surveillance
+   épidémiologique (Niveau
+   central, DS, DRSP) ;
+    Equipements
+ • Outil d’évaluation ;       •    Kit de communication ;
+• Kit de bureautique ;        •    Matériel roulant.
+
+
+
+     Documents
+•   Guide technique SIMR ; • Guide SBC ;
+•   Outil d’évaluation des • Modules de formation de la
+    risques ;                SBC.
+•   DHIS2 ;
+
+
+
+VII.    Procédure
+    ▪   L’évaluation du risque est effectuée après la confirmation d'un événement ;
+    ▪   Quelle que soit la source d'information, l’évaluation doit être effectuée au niveau du
+        DS et, le cas échéant appuyée, par le niveau régional et central.
+    ▪   La mise en œuvre se fait en trois étapes :
+        Étape 1 - Formuler des questions sur les risques
+    ▪   Les questions aident à définir la portée de l’évaluation et à prioriser les activités ;
+    ▪   La principale question a posé durant un événement de Santé Publique aigu est « quel
+        est le risque de Santé Publique présenté par l’événement... Exemples de questions à
+        poser lorsque l’on réalise une évaluation des risques :
+    ▪   L’évènement comprend-il une suspicion de maladies à déclaration obligatoire sous
+        24 heures par la SIMR ?
+    ▪    L’évènement est-il inhabituel ou inattendu dans la communauté ?
+        Étape 2 -Entreprendre une évaluation du risque (composantes)
+    ▪   Il s’agit d’évaluer le danger : Peut inclure des risques (Chimiques, Biologiques,
+        Environnementaux, Radionucléaires) et la confirmation par le laboratoire, si possible.
+        Evaluer le danger : décrire en détail (caractérisation clinique, temps, lieu, personne)
+        et liste des causes possibles. Il faut respecter la multisectorialité et la
+        multidisciplinarité dans l’évaluation de risque d’un évènement.
+    ▪   Évaluer le(s) exposition(s) de la population (ou individuelle) au danger potentiel.
+        Pour ce faire, il convient de répondre aux questions suivantes : Combien de personnes
+        peuvent potentiellement être exposées au risque ? Combien d’entre elles sont
+        potentiellement à risque d’être infectées ?
+    ▪   Évaluer le contexte (vulnérabilités et facteurs spécifiques de menace qui augmentent
+        ou diminuent le risque). Informations requises :
+            ▪ Mode de transmission ;
+            ▪ Degré d’infectiosité (virulence): Shigella,Choléra
+            ▪ Période de contagiosité ;
+            ▪ Immunité de la population (vaccination et exposition précédente) ;
+            ▪ Présence du vecteur / de l’hôte / réservoir.
+
+    ▪   Assignation du niveau de risque (caractérisation du risque) : Synthétiser les
+        informations recueillies, déterminer la gravité potentielle du résultat - Conséquences
+
+
+                                              48
+

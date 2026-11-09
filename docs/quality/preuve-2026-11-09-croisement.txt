@@ -1,0 +1,8 @@
+# Preuve — croisement des statuts d'exécution et de la preuve des suites (FR-2322)
+# Date : 2026-11-09T07:45Z
+
+$ python3 tools/croiser_preuves.py docs/quality/preuve-2026-11-09-suites.txt
+preuve : preuve-2026-11-09-suites.txt
+vérifiés : 111
+problèmes : 0
+--> code de sortie : 0

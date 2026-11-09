@@ -1,0 +1,44 @@
+40
+
+TITRE VII
+DISPOSITIONS DIVERSES, TRANSITOIRES ET FINALES
+Article 96.- (1) Il est créé par la présente loi, un organisme dénommé
+«Agence Nationale des Technologies de l’Information et de la
+Communication « ANTIC », chargé de la promotion et du suivi de l’action
+des pouvoirs publics en matière des technologies de l’informatuion et de
+la communication.
+A ce titre, l’ANTIC a pour missions, notamment :
+- d’élaborer et de suivre la mise en œuvre de la stratégie nationale
+de développement des technologies de l’information et de la
+communication ;
+- d’identifier les besoins communs des services publics en matière
+d’équipements informatiques et logiciels ;
+- de veiller à l’harmonisation des standards techniques et de
+proposer des référentiels techniques, afin de favoriser
+l’interopérabilité entre les systèmes d’information ;
+- de fournir son expertise aux administrations pour la conception
+et le développement de leurs objets techniques ;
+- de coordonner la réalisation et d’assurer le suivi des sites
+Internet, Intranet et Extranet de l’Etat et des organismes
+publics ;
+- de concourir à la formation technique des formateurs des
+universités, lycées, collèges, écoles normales et écoles
+primaires ;
+- de participer aux actions de formation des personnels de l’Etat
+dans le domaine des technologies de l’information et de la
+communication, en émettant des recommandations sur le
+contenu des formations techniques et sur les programmes de
+examens professionnels et des concours ;
+- d’entretenir des relations de coopération technique avec des
+organismes internationaux publics ou privés agissant dans ce
+domaine, suivant les modalités prévues par la législation en
+vigueur.
+Dans cette perspective, elle est chargée de
+l’enregistrement des noms de domaines «.cm» ;
+- de mettre en place des mécanismes pour régler des litiges d’une
+part, entre les opérateurs des technologies de l’information et de
+la communication et d’autre part, entre opérateurs et utilisateurs,
+pour les problèmes spécifiquement liés aux contenus et à la
+qualité de service (spamming, phishing, hacking) ;
+
+

@@ -1,0 +1,44 @@
+2 Applications and challenges of use of LMMs in health
+
+Box 3. Ethical considerations associated with LMMs and their impact on individuals
+with disabilities
+In the past, individuals with disabilities have been excluded from workplaces,
+educational systems and appropriate medical support (56) and therefore from data
+sets used to train AI systems. The systems may discriminate against individuals with
+facial asymmetry, different gesticulation, styles of communication, behaviour and
+action patterns. The groups that are most severely affected are people with disabilities,
+cognitive or sensory impairments or autism spectrum disorder (57).
+Such bias and exclusion may apply to generative AI. For example, LMMs may introduce a
+negative connotation or sentiment to keywords or phrases associated with “disability”
+in a patient’s description or biography (58). Chatbots may recognize an individual with
+a disability as “not alive”, “non-human” or “emotionally flat” because of a different
+behaviour or pattern of actions. Speech recognition systems may be less accurate for
+individuals with speech impairments, leading to misinterpretation.
+Addressing and overcoming biases related to disability require interventions throughout
+the development of AI: inclusion of people with disabilities in the development and
+design of AI systems; audits to evaluate disability bias in a dataset and the performance
+of an AI system; and ensuring that legislation designed to protect and promote the
+rights of people with disabilities takes into account the challenges associated with AI
+technologies, while also ensuring laws and policies to regulate AI for probable challenges
+and barriers faced by people with disabilities with increased use of AI-based systems.
+AI-specific legislation could include “disability-specific” categorization, including how
+specific spectrums and conditions are affected by AI systems.
+
+health-related questions, triage symptoms, or communicate with healthcare providers when
+appropriate” (3). Specific LMM-powered chatbots could provide treatment in, for example,
+mental health (2).
+A third application of patient-centred LMMs could be for identifying clinical trials or for
+enrolment in such trials (28). While AI-based programmes already assist both patients and
+clinical trial researchers in identifying a match (42), LMMs could be used in the same way
+by using a patient’s relevant medical data (28). This use of AI could both lower the cost of
+recruitment and increase speed and efficiency, while giving individuals more opportunities to
+seek appropriate trials and treatment that are difficult to identify and access through other
+channels (42).
+
+Risks and challenges
+The ease with which LMMs can be used by individuals may portend significant risks, such as
+those listed below.
+
+13
+
+

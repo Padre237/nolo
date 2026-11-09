@@ -1,0 +1,72 @@
+64
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+23.
+
+Singhal K, Azizi S, Tu T, Mahdavi SS, Wei J, Chung HW et al. Large language models
+encode clinical knowledge. Nature. 2023;620:172–80. doi:10.1038/s41586-023-06291-2.
+
+24.
+
+Kulkarni PA, Singh H. Artificial intelligence in clinical diagnosis: opportunities,
+challenges, and hype. JAMA. 2023;330(4):317–8. doi:10.1001/jama.2023.11440.
+
+25.
+
+Subbamaran N. ChatGPT will see you now: Doctors using AI to answer patient questions.
+Wall Street Journal, 28 April 2023 (https://www.wsj.com/articles/dr-chatgpt-physiciansare-sending-patients-advice-using-ai-945cf60b, accessed 28 May 2023).
+
+26.
+
+Ayers JW, Poliak A, Dredze M, Leas EC, Zhu Z, Kelley JB et al. Comparing
+physician and artificial intelligence chatbot responses to patient questions
+posted to a public social media forum. JAMA Intern Med. 2023; 183(6):589–96.
+doi: 10.1001/jamainternmed.2023.1838.
+
+27.
+
+Lee P, Bubeck S, Petro J. Benefits, limits, and risks of GPT-4 as an AI chatbot for
+medicine. New Engl J Med. 2023;388(13):1233–9. doi: 10.1056/NEJMsr2214184.
+
+28.
+
+The potential of large language models in healthcare: Improving quality of care and
+patient outcomes, Medium, 7 December 2022. (https://medium.com/@BuildGP/thepotential-of-large-language-models-in-healthcare-improving-quality-of-care-andpatient-6e8b6262d5ca, accessed 28 May 2023).
+
+29.
+
+Rajpurkar P, Irvin J, Zhu K, Yang B, Mehta H, Duan T et al. CheXNet: radiologistlevel pneumonia detection on chest X-rays with deep learning. arXiv.
+2017;1711.05225vv3. doi:10.48550/arXiv.1711.05225.
+
+30.
+
+Yang X, Chen A, PourNejatian N, Shin HC, Smith KE, Parisien C et al. A
+large language model for electronic health records. npj Digit Med.
+2022;5:194. doi:10.1038/s41746-022-00742-2.
+
+31.
+
+Ghahramani Z. Introducing PaLM 2. The Keyword, 10 May 2023 (https://blog.google/
+technology/ai/google-palm-2-ai-large-language-model/, accessed 28 May 2023).
+
+32.
+
+Weise K, Metz C. When A.I. chatbots hallucinate. The New York Times, 9 May 2023
+(https://www.nytimes.com/2023/05/01/business/ai-chatbots-hallucination.html,
+accessed 1 June 2023).
+
+33.
+
+Bender EM, Gebru T, McMillan-Major A, Mitchell M. On the dangers of stochastic
+parrots: Can language models be too big? In: Proceedings of the 2021 ACM
+Conference on Fairness, Accountability, and Transparency, March 2021, pp. 610–23.
+doi: 10.1145/3442188.3445922.
+
+34.
+
+Li H, Moon JT, Purkayastha S, Celi LA, Trivedi H, Gichoya JW. Ethics of large
+language models in medicine and medical research. Lancet Digit Health.
+2023;5(6):e333–5. doi:10.1016/s2589-7500(23)00083-3.
+
+

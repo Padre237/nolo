@@ -1,0 +1,47 @@
+1 Introduction
+
+have and will continue to arise with respect to this new technology. The challenges, principles
+and recommendations were the basis for the expert group’s approach to LMMs presented in
+this guidance.
+
+Box 1. Brief overview of WHO consensus ethical principles for use of AI for health
+• Protect autonomy: Humans should remain in control of health-care systems
+and medical decisions. Providers have the information necessary to use AI
+systems safely and effectively. People understand the role that AI systems play
+in their care. Data privacy and confidentiality are protected by valid informed
+consent through appropriate legal frameworks for data protection.
+• Promote human well-being, human safety and the public interest:
+Designers of AI satisfy regulatory requirements for safety, accuracy and efficacy
+for well-defined uses or indications. Measures of quality control in practice and
+quality improvement in the use of AI over time should be available. AI is not
+used if it results in mental or physical harm that could be avoided by use of an
+alternative practice or approach.
+• Ensure transparency, “explainability” and intelligibility: AI technologies
+should be intelligible or understandable to developers, medical professions,
+patients, users and regulators. Sufficient information is published or
+documented before the design or deployment of AI, and the information
+facilitates meaningful public consultation and debate on how the AI is designed
+and how it should or should not be used. AI is explainable according to the
+capacity of those to whom it is explained.
+• Foster responsibility and accountability to ensure that AI is used under
+appropriate conditions and by appropriately trained people. Patients and
+clinicians evaluate development and deployment of AI. Regulatory principles
+are applied upstream and downstream of the algorithm by establishing points
+of human supervision. Appropriate mechanisms are available for questioning
+and for redress for individuals and groups that are adversely affected by
+decisions based on AI.
+• Ensure inclusiveness and equity: AI is designed and shared to encourage
+the widest possible, appropriate, equitable use and access, irrespective of
+age, sex, gender identity, income, race, ethnicity, sexual orientation, ability or
+other characteristics. AI is available for use not only in high-income settings
+but also in low- and middle-income countries. AI does not encode biases to
+the disadvantage of identifiable groups. AI minimizes inevitable disparities in
+power. AI is monitored and evaluated to identify disproportionate effects on
+specific groups of people.
+• Promote AI that is responsive and sustainable: AI technologies are
+consistent with the wider promotion of the sustainability of health systems, the
+environment and workplaces.
+
+5
+
+

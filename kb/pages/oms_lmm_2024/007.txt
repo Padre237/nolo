@@ -1,0 +1,39 @@
+Acknowledgements
+
+Acknowledgements
+Development of this World Health Organization (WHO) guidance was led by Andreas Reis
+(co-lead of the Health Ethics and Governance unit in the Department of Research for Health)
+and Sameer Pujari (Department of Digital Health and Innovation), under the overall guidance
+of John Reeder (Director, Research for Health), Alain Labrique (Director, Digital Health and
+Innovation) and Jeremy Farrar (Chief Scientist).
+Rohit Malpani (consultant, France) was the lead writer. The co-chairs of the WHO expert group
+on ethics and governance of AI for health, Effy Vayena (ETH Zurich, Switzerland) and Partha
+Majumder (Indian Statistical Institute and National Institute of Biomedical Genomics, India),
+provided overall guidance on drafting of the report and leadership of the expert group.
+WHO is grateful to the following individuals who contributed to development of this guidance.
+
+WHO expert group on ethics and governance of AI for health
+Najeeb Al Shorbaji, eHealth Development Association, Amman, Jordan; Maria Paz Canales,
+Global Partners Digital, Santiago de Chile, Chile; Arisa Ema, University of Tokyo, Tokyo, Japan;
+Amel Ghouila, Bill & Melinda Gates Foundation, Seattle (WA), USA; Jennifer Gibson, WHO
+Collaborating Centre for Bioethics, University of Toronto, Toronto, Canada; Kenneth Goodman,
+Institute of Bioethics and Health Policy, University of Miami Miller School of Medicines, Miami
+(FL), USA; Malavika Jayaram, Digital Asia Hub, Singapore; Daudi Jjingo, Makerere University,
+Kampala, Uganda; Tze Yun Leong, National University of Singapore, Singapore; Alex John
+London, Carnegie Mellon University, Pittsburgh (PA), USA; Partha Majumder, Indian Statistical
+Institute and National Institute of Biomedical Genomics, Kolkata, India; Thilidzi Marwala,
+University of Johannesburg, Johannesburg, South Africa; Roli Mathur, Indian Council of
+Medical Research, Bangalore, India; Timo Minssen, Centre for Advanced Studies in Biomedical
+Innovation Law, Faculty of Law, University of Copenhagen, Copenhagen, Denmark; Andrew
+Morris, Health Data Research UK, London, United Kingdom; Daniela Paolotti, ISI Foundation,
+Turin, Italy; Jerome Singh, University of Kwa-Zulu Natal, Durban, South Africa; Jeroen van
+den Hoven, University of Delft, Delft, Netherlands (Kingdom of the); Effy Vayena, ETH Zurich,
+Zurich, Switzerland; Robyn Whittaker, University of Auckland, Auckland, New Zealand; and Yi
+Zeng, Chinese Academy of Sciences, Beijing, China.
+
+Observers
+David Gruson, Luminess, Paris, France; Lee Hibbard, Council of Europe, Strasbourg, France
+
+v
+
+

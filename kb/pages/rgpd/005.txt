@@ -1,0 +1,86 @@
+4.5.2016
+
+FR
+
+Journal officiel de l'Union européenne
+
+L 119/5
+
+(23)
+
+Afin de garantir qu'une personne physique ne soit pas exclue de la protection à laquelle elle a droit en vertu du
+présent règlement, le traitement de données à caractère personnel relatives à des personnes concernées qui se
+trouvent dans l'Union par un responsable du traitement ou un sous-traitant qui n'est pas établi dans l'Union
+devrait être soumis au présent règlement lorsque les activités de traitement sont liées à l'offre de biens ou de
+services à ces personnes, qu'un paiement soit exigé ou non. Afin de déterminer si un tel responsable du
+traitement ou sous-traitant offre des biens ou des services à des personnes concernées qui se trouvent dans
+l'Union, il y a lieu d'établir s'il est clair que le responsable du traitement ou le sous-traitant envisage d'offrir des
+services à des personnes concernées dans un ou plusieurs États membres de l'Union. Alors que la simple accessi­
+bilité du site internet du responsable du traitement, d'un sous-traitant ou d'un intermédiaire dans l'Union, d'une
+adresse électronique ou d'autres coordonnées, ou l'utilisation d'une langue généralement utilisée dans le pays tiers
+où le responsable du traitement est établi ne suffit pas pour établir cette intention, des facteurs tels que l'utilisation
+d'une langue ou d'une monnaie d'usage courant dans un ou plusieurs États membres, avec la possibilité de
+commander des biens et des services dans cette autre langue ou la mention de clients ou d'utilisateurs qui se
+trouvent dans l'Union, peuvent indiquer clairement que le responsable du traitement envisage d'offrir des biens ou
+des services à des personnes concernées dans l'Union.
+
+(24)
+
+Le traitement de données à caractère personnel de personnes concernées qui se trouvent dans l'Union par un
+responsable du traitement ou un sous-traitant qui n'est pas établi dans l'Union devrait également être soumis au
+présent règlement lorsque ledit traitement est lié au suivi du comportement de ces personnes dans la mesure où il
+s'agit de leur comportement au sein de l'Union. Afin de déterminer si une activité de traitement peut être
+considérée comme un suivi du comportement des personnes concernées, il y a lieu d'établir si les personnes
+physiques sont suivies sur internet, ce qui comprend l'utilisation ultérieure éventuelle de techniques de traitement
+des données à caractère personnel qui consistent en un profilage d'une personne physique, afin notamment de
+prendre des décisions la concernant ou d'analyser ou de prédire ses préférences, ses comportements et ses
+dispositions d'esprit.
+
+(25)
+
+Lorsque le droit d'un État membre s'applique en vertu du droit international public, le présent règlement devrait
+s'appliquer également à un responsable du traitement qui n'est pas établi dans l'Union, par exemple qui se trouve
+auprès de la représentation diplomatique ou consulaire d'un État membre.
+
+(26)
+
+Il y a lieu d'appliquer les principes relatifs à la protection des données à toute information concernant une
+personne physique identifiée ou identifiable. Les données à caractère personnel qui ont fait l'objet d'une pseudo­
+nymisation et qui pourraient être attribuées à une personne physique par le recours à des informations supplé­
+mentaires devraient être considérées comme des informations concernant une personne physique identifiable.
+Pour déterminer si une personne physique est identifiable, il convient de prendre en considération l'ensemble des
+moyens raisonnablement susceptibles d'être utilisés par le responsable du traitement ou par toute autre personne
+pour identifier la personne physique directement ou indirectement, tels que le ciblage. Pour établir si des moyens
+sont raisonnablement susceptibles d'être utilisés pour identifier une personne physique, il convient de prendre en
+considération l'ensemble des facteurs objectifs, tels que le coût de l'identification et le temps nécessaire à celle-ci,
+en tenant compte des technologies disponibles au moment du traitement et de l'évolution de celles-ci. Il n'y a dès
+lors pas lieu d'appliquer les principes relatifs à la protection des données aux informations anonymes, à savoir les
+informations ne concernant pas une personne physique identifiée ou identifiable, ni aux données à caractère
+personnel rendues anonymes de telle manière que la personne concernée ne soit pas ou plus identifiable. Le
+présent règlement ne s'applique, par conséquent, pas au traitement de telles informations anonymes, y compris à
+des fins statistiques ou de recherche.
+
+(27)
+
+Le présent règlement ne s'applique pas aux données à caractère personnel des personnes décédées. Les États
+membres peuvent prévoir des règles relatives au traitement des données à caractère personnel des personnes
+décédées.
+
+(28)
+
+La pseudonymisation des données à caractère personnel peut réduire les risques pour les personnes concernées et
+aider les responsables du traitement et les sous-traitants à remplir leurs obligations en matière de protection des
+données. L'introduction explicite de la pseudonymisation dans le présent règlement ne vise pas à exclure toute
+autre mesure de protection des données.
+
+(29)
+
+Afin d'encourager la pseudonymisation dans le cadre du traitement des données à caractère personnel, des
+mesures de pseudonymisation devraient être possibles chez un même responsable du traitement, tout en
+permettant une analyse générale, lorsque celui-ci a pris les mesures techniques et organisationnelles nécessaires
+afin de garantir, pour le traitement concerné, que le présent règlement est mis en œuvre, et que les informations
+supplémentaires permettant d'attribuer les données à caractère personnel à une personne concernée précise soient
+conservées séparément. Le responsable du traitement qui traite les données à caractère personnel devrait indiquer
+les personnes autorisées à cet effet chez un même responsable du traitement.
+
+

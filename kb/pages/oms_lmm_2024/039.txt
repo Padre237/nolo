@@ -1,0 +1,46 @@
+3 Risks to health systems and society and ethical concerns about use of LMMs
+
+Accessibility and affordability
+Several factors can undermine equitable access to LMMs that could provide benefits to
+providers and patients. One is the digital divide, which limits use of digital tools to certain
+countries, regions or segments of a population. The digital divide leads to other disparities,
+many of which affect the use of AI, and AI itself can reinforce and exacerbate disparity. Another
+factor that could undermine access to LMMs is that, unlike the Internet, many LMMs are
+available only by paying a fee or subscription, as both developing and operating an LMM can
+be expensive. It has been estimated that Chat GPT costs US$ 700 000 per day to operate (71).
+Some companies are introducing subscription fees for new versions of LMMs (72), which could
+make certain LMMs unaffordable, not just in low- and middle-income countries, but also for
+individuals, health systems or local governments in resource-poor settings in high-income
+countries (54). Conversely, poor people, in all countries, could be limited to using LMMs as a
+“cost-effective solution”, whereas access to “real” health-care professionals will be limited
+to wealthier individuals. A third factor is that most LMMs, at present, operate only in English.
+Thus, while they can receive inputs and provide outputs in other languages, they are more
+likely to generate false information or misinformation (73).
+
+System-wide biases
+As noted above, the data sets used to train AI models are biased, as many exclude girls and
+women, ethnic minorities, elderly people, rural communities and disadvantaged groups.
+In general, AI is biased towards the populations for which there are most data, so that, in
+unequal societies, AI may disadvantage a minority population (1). Biases are likely to increase
+with the scale of a model (74), which may be a particular problem with LMMs, as the data
+used to train successive models continues to increase, even though so-called smaller LMMs
+are being developed. Bias could introduce discrimination throughout a health-care system,
+affecting people’s access to basic goods, including health services and high-quality care (75).
+At the same time, LMMs are likely to include data that could “push back” against forms of bias
+and stereotyping. Researchers have found that prompting a model not to rely on stereotyping
+had a dramatic positive effect on the algorithm’s response (74).
+
+Impact on labour and employment
+An investment bank estimated that LMMs will eventually result in the loss (or “degradation”)
+of at least 300 million jobs (76). A report by the Organisation for Economic Co-operation
+and Development noted that, in its member countries, the occupations at highest risk from
+AI-driven automation are highly skilled jobs, due partly to use of LMMs and specifically that
+“occupations in finance, medicine, and legal activities…may suddenly find themselves at risk
+of automation from AI” (77). For many countries, however, health care is not an industry but
+a core government function, and health-care workers might not be replaced by technology.
+Furthermore, many countries continue to have shortages of health-care workers (1), including
+in the aftermath of the coronavirus disease 2019 pandemic (78). WHO has estimated that, by
+
+21
+
+

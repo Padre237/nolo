@@ -1,0 +1,44 @@
+46
+
+Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models
+
+purpose, by blocking queries or attaching a clear warning to any responses that include
+health or medical information and to direct users to information or services that can provide
+appropriate assistance.
+If such measures are not taken or if the developer intends that users apply its LMM for
+health care, either directly or indirectly through a provider, the developer will have specific
+responsibilities that only it can satisfy. Furthermore, both developers and providers have
+further obligations to address the risks associated with use of LMMs in health care.
+The responsibilities, detailed below, are defined in government-mandated laws, policies and
+regulations, as it is governments that must ultimately determine whether an AI-based system
+should be permitted for use in health care. Developers and providers must also fulfil mutual
+responsibilities if an LMM is to be used in health care. Such responsibilities could be defined by
+governments or negotiated between the two parties through a contract if laws have not been
+written or updated to account for them.
+Major risks that must be addressed before deployment include system-wide bias, false
+information or hallucinations for health-care uses, privacy of data entered into an LMM,
+manipulation and automation bias.
+
+5.2
+
+Measures that governments can introduce to address such
+risks and ethical principles that should be upheld
+
+The speed of development of LMMs and of applications that include an LMM requires that
+governments rapidly develop regulations and specific criteria for using these AI algorithms
+in health-care systems and for other scientific and medical purposes. The approach should
+consist of assessment and approval of AI technologies intended for use in health care or
+medicine by a regulatory agency, such as a medical device or pharmaceutical agency,
+although governments could establish a new agency for this purpose. One challenge for lowand middle-income countries is that their regulatory agencies are already under-resourced
+and overwhelmed by pharmaceutical regulation.
+The government of at least one high-income country has agreed with the largest technology
+companies that its foundation models will be assessed in a voluntary public evaluation, with
+disclosure of outcomes to provide information to the public and researchers about the models
+and to encourage the companies to correct any errors (146); however, a voluntary approach is
+likely to be neither sufficient nor sustainable.
+Evaluation of LMMs and applications should not address only the AI systems or algorithms
+used in the health-care system, as there are also significant risks associated with the use of
+LMMs and applications in a grey zone between clinical and “wellness” applications. Given the
+rapid proliferation of such technologies, governments should, at least initially, identify such
+
+

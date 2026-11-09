@@ -1,0 +1,46 @@
+3 Risks to health systems and society and ethical concerns about use of LMMs
+
+As the cost of training, deploying and maintaining LMMs continues to rise, there is a risk
+of “industrial capture” by a few companies of what is potentially a building block of many
+products and services (including in health care) in a way that could crowd out universities
+(academics), start-ups and even governments (100). In research on AI, there is already
+compelling evidence that the largest companies are crowding out both universities
+and governments.
+One indication is where doctoral graduates in AI are choosing to work. Presently,
+“unprecedented” numbers are choosing to work in companies. While, in 2004, only about 20%
+of graduates went into industry, by 2020, almost 70% were in industry (101). Faculty members
+who specialize in AI are being hired away from universities to work in industry, the number
+having risen by eight times since 2006, not only in the USA but also in other countries (101).
+Industry has also come to dominate both governments and academia with respect to
+computing power and the use of large datasets. In 2021, industry models were 29 times
+larger than academic models (101). Furthermore, raw spending, especially by high-income
+governments, lags far behind that of industry. As noted in one study: “In 2021, nondefense
+US government agencies allocated US$ 1.5 billion on AI. In that same year, the European
+Commission planned to spend €1 billion (US$ 1.2 billion). By contrast, globally, industry spent
+more than US$ 340 billion on AI in 2021, vastly outpacing public investment” (101).
+The dominance of “AI inputs” means that large technology companies also now dominate
+outputs and outcomes. The industry share of the largest AI models increased from 11% in 2010
+to 96% in 2021, while the number of research reports with one or more industry co-authors
+increased by 16% between 2000 and 2020 (101).
+The dominance of large technology companies defines not only the applications and uses
+of AI but also, increasingly, the priorities for early-stage research (101). The dominance of
+industry and lack of government investment also mean that alternatives for important AI
+technologies that are in the public interest, including health care and medicine, could become
+increasingly rare in the absence of appropriate public investment. This differs from the case in
+the pharmaceutical sector, for example, where there is substantial government, not-for-profit
+and philanthropic investment in research and development, especially in the critical early
+stages of drug development and also for late-stage development of certain therapeutics (102).
+Companies will therefore increasingly oversee operation of the systems that underpin our
+economies and social sectors, including health care, raising concern about the ability of
+citizens and officials to manage their lives (101).
+In the absence of alternatives and of regulation (which may take several years to be fully
+implemented, even if laws are enacted in 2023), how large technology companies make
+internal decisions and how they relate to societies and governments becomes more and more
+relevant. Companies might start to address various concerns, in partnership, through, for
+example, the Frontier Model Forum (103) or with the governments of high-income countries,
+including several voluntary commitments with the US Government (104) and forthcoming
+commitments with the European Union (105).
+
+25
+
+

@@ -1,0 +1,84 @@
+L 119/18
+
+FR
+
+Journal officiel de l'Union européenne
+
+4.5.2016
+
+il est plus difficile pour ces personnes d'exercer leurs droits. Une analyse d'impact relative à la protection des
+données devrait également être effectuée lorsque des données à caractère personnel sont traitées en vue de
+prendre des décisions relatives à des personnes physiques spécifiques à la suite d'une évaluation systématique et
+approfondie d'aspects personnels propres à des personnes physiques sur la base du profilage desdites données ou
+à la suite du traitement de catégories particulières de données à caractère personnel, de données biométriques ou
+de données relatives à des condamnations pénales et à des infractions, ou encore à des mesures de sûreté
+connexes. Une analyse d'impact relative à la protection des données est de même requise aux fins de la
+surveillance à grande échelle de zones accessibles au public, en particulier lorsque des dispositifs opto-électro­
+niques sont utilisés, ou pour toute autre opération pour laquelle l'autorité de contrôle compétente considère que
+le traitement est susceptible d'engendrer un risque élevé pour les droits et libertés des personnes concernées, en
+particulier parce qu'elles empêchent ces personnes d'exercer un droit ou de bénéficier d'un service ou d'un
+contrat, ou parce qu'elles sont effectuées systématiquement à grande échelle. Le traitement de données à caractère
+personnel ne devrait pas être considéré comme étant à grande échelle si le traitement concerne les données à
+caractère personnel de patients ou de clients par un médecin, un autre professionnel de la santé ou un avocat
+exerçant à titre individuel. Dans de tels cas, une analyse d'impact relative à la protection des données ne devrait
+pas être obligatoire.
+(92)
+
+Il existe des cas dans lesquels il peut être raisonnable et économique d'élargir la portée de l'analyse d'impact
+relative à la protection des données au-delà d'un projet unique, par exemple lorsque des autorités publiques ou
+organismes publics entendent mettre en place une application ou une plateforme de traitement commune, ou
+lorsque plusieurs responsables du traitement envisagent de créer une application ou un environnement de
+traitement communs à tout un secteur ou segment professionnel, ou pour une activité transversale largement
+utilisée.
+
+(93)
+
+Au moment de l'adoption du droit d'un État membre qui fonde l'exercice des missions de l'autorité publique ou
+de l'organisme public concernés et qui règlemente l'opération ou l'ensemble d'opérations de traitement
+spécifiques, les États membres peuvent estimer qu'une telle analyse est nécessaire préalablement aux activités de
+traitement.
+
+(94)
+
+Lorsqu'il ressort d'une analyse d'impact relative à la protection des données que, en l'absence des garanties, de
+mesures de sécurité et de mécanismes pour atténuer le risque, le traitement engendrerait un risque élevé pour les
+droits et libertés des personnes physiques et que le responsable du traitement est d'avis que le risque ne peut être
+atténué par des moyens raisonnables compte tenu des techniques disponibles et des coûts de mise en œuvre, il y
+a lieu de consulter l'autorité de contrôle avant le début des opérations de traitement. Certains types de traitements
+et l'ampleur et la fréquence des traitements sont susceptibles d'engendrer un tel risque élevé et peuvent également
+causer un dommage ou porter atteinte aux droits et libertés d'une personne physique. L'autorité de contrôle
+devrait répondre à la demande de consultation dans un délai déterminé. Toutefois, l'absence de réaction de
+l'autorité de contrôle dans le délai imparti devrait être sans préjudice de toute intervention de sa part effectuée
+dans le cadre de ses missions et de ses pouvoirs prévus par le présent règlement, y compris le pouvoir d'interdire
+des opérations de traitement. Dans le cadre de ce processus de consultation, les résultats d'une analyse d'impact
+relative à la protection des données réalisée en ce qui concerne le traitement en question peuvent être soumis à
+l'autorité de contrôle, notamment les mesures envisagées pour atténuer le risque pour les droits et libertés des
+personnes physiques.
+
+(95)
+
+Le sous-traitant devrait aider le responsable du traitement, si nécessaire et sur demande, à assurer le respect des
+obligations découlant de la réalisation des analyses d'impact relatives à la protection des données et de la
+consultation préalable de l'autorité de contrôle.
+
+(96)
+
+L'autorité de contrôle devrait également être consultée au stade de la préparation d'une mesure législative ou
+réglementaire qui prévoit le traitement de données à caractère personnel, afin d'assurer que le traitement prévu
+respecte le présent règlement et, en particulier, d'atténuer le risque qu'il comporte pour la personne concernée.
+
+(97)
+
+Lorsque le traitement est réalisé par une autorité publique, à l'exception des juridictions ou des autorités
+judiciaires indépendantes agissant dans l'exercice de leur fonction juridictionnelle, lorsque, dans le secteur privé, il
+est effectué par un responsable du traitement dont les activités de base consistent en opérations de traitement
+exigeant un suivi régulier et systématique à grande échelle des personnes concernées, ou lorsque les activités de
+base du responsable du traitement ou du sous-traitant consistent en un traitement à grande échelle de catégories
+particulières de données à caractère personnel et de données relatives à des condamnations pénales et à des
+infractions, une personne possédant des connaissances spécialisées de la législation et des pratiques en matière de
+protection des données devrait aider le responsable du traitement ou le sous-traitant à vérifier le respect, au
+niveau interne, du présent règlement. Dans le secteur privé, les activités de base d'un responsable du traitement
+ont trait à ses activités principales et ne concernent pas le traitement des données à caractère personnel en tant
+qu'activité auxiliaire. Le niveau de connaissances spécialisées requis devrait être déterminé notamment en fonction
+
+
