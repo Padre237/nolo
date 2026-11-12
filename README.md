@@ -21,6 +21,21 @@ In Cameroon, the first health decision is usually made at home, without guidance
 | Agents | The **Compliance agent** and the **orchestrator** decide every personal-data action. There are four verdicts. `AUTORISE`, `AUTORISE_AVEC_CONDITIONS` and `BLOQUE` cite the legal fragment; `BLOQUE_SANS_FONDEMENT` blocks an action that is outside the catalogue or has no legal basis to cite. Every decision goes into a SHA-256-chained audit log. A replay mode runs the system *without* governance to show which violations it would commit. A "How Nolo decided" panel shows each step, agent and cited article. | Built in the app (JavaScript), parity-tested against the Python reference |
 | Rights adviser "Mes droits santé" | Extractive answers that cite the knowledge base, or a refusal when there is no basis. | Built in the app (`#/droits`) |
 
+## Agents at a glance
+
+Each agent owns one task and is tested alone. Unlike a chatbot, no generated text decides: verdicts come from versioned rules or counts, cite a source, and are logged and replayable. The technical report (§8) also says where each agent can be reused.
+
+| Agent | What it does in Nolo | Data and tools | Works with |
+|---|---|---|---|
+| Orchestrator | Routes each request; acts only after a Compliance verdict; logs every decision | Agent registry; chained audit log | All agents |
+| Compliance | Checks mode, consent, profiling and destination, then the action's rules; four verdicts, each citing its legal fragment. It applies rules derived from the law; the authority remains the APDP or MINSANTE | `policy.yaml` 1.4.0; knowledge-base fragments | Orchestrator; all agents |
+| Triage | On the phone: turns the person's words into signs, asks safety questions, raises the emergency alert; never lowers urgency | 75 IMCI/IITT rules; 110 French/English signs | Orchestrator; Resources |
+| Resources | Finds a verified facility, specialty, medicine or blood, open first, then nearest; sensitive searches stay on the phone | Facility profiles; district tile | Availability; Reliability |
+| Availability | Takes stock and blood levels from licensed facilities only; rejects unknown INNs and banned products; 48 h expiry | CSV/XLSX import; INN list | Resources; Compliance |
+| Reliability | Scores pharmacies from "found / not found" reports; smoothed, frozen on bursts, human-moderated | Pseudonymous (HMAC) reports | Resources; moderator |
+| Surveillance | Counts consented signs per area, week and syndrome; CUSUM raises a "to verify" signal (SC1–SC8); no count below 5 | Aggregates; MINSANTE 2023 community-surveillance guide | Compliance; focal point |
+| Rights adviser | Answers health and data-rights questions with cited extracts of the law, or says no text applies | BM25; French/English glossary | Orchestrator |
+
 ## How it is built
 
 **The law is executable.**
@@ -41,9 +56,13 @@ In Cameroon, the first health decision is usually made at home, without guidance
 
 ## Quick start
 
-Requirements: Python 3 (tested with 3.13) and Node 22. Python packages are listed in `requirements.txt`. The app itself needs no dependency and no build step.
+Requirements: Python 3.12 or later (tested with 3.12 and 3.13), Node 22, and a Chromium-based browser. The app itself needs no dependency and no build step; the Python packages for the checks and the facility service are in `requirements.txt`. No proprietary component is needed; ChromaDB and Ollama (embedding search) are optional.
 
 ```bash
+# Install (once)
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+export PATH="$PWD/.venv/bin:$PATH"
+
 # The Nolo app (PWA)
 python3 -m http.server 8765 --bind 127.0.0.1 -d app     # open http://127.0.0.1:8765/
 
@@ -65,6 +84,18 @@ python3 -I kb/eval/run_eval.py --embed bm25             # retrieval evaluation (
 python3 tools/lancer_demo.py --neuf --avec-tendances     # http://127.0.0.1:8000
 ```
 
+## Demo scenarios (in the app)
+
+Open http://127.0.0.1:8765/ in a Chromium-based browser. Every screen exists in French and English: switch with the FR / EN button at the top. The report (§5) details the governance scenarios S1–S3.
+
+1. **Orientation.** Accept the consent purposes, tap "Describe how I feel" (`#/decrire`), choose the first example (or type "J'ai de la fièvre et je tousse depuis 3 jours"), answer the safety questions, then open "Where to go": a suitable facility with the reason, and a summary for the health worker.
+2. **Emergency.** Choose the second example: a danger sign triggers the emergency alert (119, 112). Open "How Nolo decided" to see each step, its agent, its Y.3172 node and the cited article.
+3. **Article 48 protection.** Type "Fever, skin rash, swollen glands, sore throat and tiredness for a week.": Nolo names nothing and points to a confidential test at the nearest health centre.
+4. **Searches.** Medicine (`#/chercher/medicament`, e.g. paracetamol) and blood (`#/chercher/sang`): sensitive searches run on the phone and are never counted.
+5. **Health facility.** From the home screen, "I am a health facility", then the demo account: stock, CSV import, demand trends.
+6. **Ministry console** (`#/ministere`): syndromic signals; the coordination cell, where the district asks for names and Compliance blocks it; the audit log (tamper with one entry, then verify the chain); "With or without governance" (0 violations against 6); "Policy and gaps" with the what-if simulation.
+7. **Rights adviser** (`#/droits`): pick an example question; the answer is made of cited passages only.
+
 ## Verified results (9 November 2026)
 
 | Check | Result | Evidence |
@@ -84,6 +115,13 @@ Limits are stated in the specifications. Examples:
 - the visual inspection checks layout, not screen content (73 UI tests are "captured, not verified");
 - BM25 over the whole base misses English questions on French-only laws; in the app, a query glossary reaches them (5/5 on a small set);
 - ChromaDB and Ollama measurements must be run on the team's machine.
+
+## Next steps after the hackathon
+
+- **Validation.** A clinician validates the triage labels and levels, a lawyer the reading of the law; until then, the rules run in demo mode only.
+- **Regulators.** Share the gap register and the what-if tool with MINSANTE, MINPOSTEL and the APDP. Run the no-personal-data mode now; the full mode only with an Article 19 authorization.
+- **Standards and research.** Propose the consent-and-purpose node and inter-agent accountability to ITU-T SG13 (Y.3172) and to the AI Readiness Framework; publish the L13 finding.
+- **Product.** On-device DDXPlus model, public epidemiological map, official English versions of the laws (L14), then a pilot in one health district in the no-personal-data mode.
 
 ## Repository map
 
